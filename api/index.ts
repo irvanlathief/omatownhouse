@@ -7,13 +7,16 @@ import { createContext } from "../server/_core/context";
 // Vercel serverless entry point for the OMA Townhouse API.
 //
 // This mirrors the Express app built in server/_core/index.ts, but without the
-// dev-only Vite middleware or the long-running `server.listen()` call — on
-// Vercel each request is handled by this function. The client (Vite SPA) is
-// served separately as static assets from dist/public (see vercel.json).
+// dev-only Vite middleware or the long-running server.listen() call. On Vercel
+// each request is handled by this function. The client (Vite SPA) is served
+// separately as static assets from dist/public (see vercel.json).
 //
-// The catch-all filename ([...path].ts) makes Vercel route every /api/* request
-// here with the original URL preserved, so the routes registered below
-// (/api/oauth/callback and /api/trpc/*) match exactly as they do locally.
+// Routing: vercel.json rewrites every /api/* request to this function. The
+// rewrite is required because tRPC procedure paths contain a dot (for example
+// /api/trpc/lifestyle.list); Vercel would otherwise treat the dotted segment as
+// a static file and return 404 before reaching the function. The rewrite
+// preserves the original request URL, so the routes below (/api/oauth/callback
+// and /api/trpc/*) match exactly as they do locally.
 
 const app = express();
 
