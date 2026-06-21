@@ -1,0 +1,148 @@
+{
+  "domain": "Bali off-plan property",
+  "targetModule": "server/content/lifestyleArticles.ts",
+  "keywordThemes": ["off-plan", "location", "investment", "lifestyle"],
+  "notes": "ATP = Answer The Public question wheel (who/what/when/where/why/how/can/are + for/with/near/vs). Lower priority number is published first. Status: pending | drafting | review | published | blocked.",
+  "queue": [
+    {
+      "id": "offplan-what-is",
+      "status": "pending",
+      "priority": 1,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is off-plan property in Bali?",
+      "targetKeywords": ["Bali off-plan property", "off-plan villa Bali", "buying off-plan Bali"],
+      "relatedQuestions": [
+        "How does off-plan payment work in Bali?",
+        "Is buying off-plan property in Bali safe?",
+        "Off-plan vs completed property in Bali, which is better?"
+      ],
+      "proposedSlug": "what-is-off-plan-property-bali",
+      "proposedTitle": "",
+      "category": "investment",
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "invest-freehold-vs-leasehold",
+      "status": "pending",
+      "priority": 2,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Freehold vs leasehold in Bali, what is the difference?",
+      "targetKeywords": ["freehold vs leasehold Bali", "PT PMA freehold Bali", "leasehold Bali foreigners"],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Bali?",
+        "What is a PT PMA and how does it own property?",
+        "How long are Bali leaseholds and can they be extended?"
+      ],
+      "proposedSlug": "freehold-vs-leasehold-bali",
+      "proposedTitle": "",
+      "category": "investment",
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "invest-rental-yield-tabanan",
+      "status": "pending",
+      "priority": 3,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "What rental yield can you expect in Tabanan, Bali?",
+      "targetKeywords": ["Bali rental yield", "Tabanan property ROI", "capital appreciation Bali"],
+      "relatedQuestions": [
+        "Are Bali villas a good investment in 2026?",
+        "What drives capital appreciation near Canggu and Tabanan?",
+        "How is rental managed for an off-plan villa?"
+      ],
+      "proposedSlug": "rental-yield-tabanan-bali",
+      "proposedTitle": "",
+      "category": "investment",
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "location-where-is-kaba-kaba",
+      "status": "pending",
+      "priority": 4,
+      "theme": "location",
+      "atpType": "where",
+      "primaryQuestion": "Where is Kaba Kaba and how far is it from Canggu?",
+      "targetKeywords": ["Kaba Kaba Bali", "Tabanan property", "property near Canggu"],
+      "relatedQuestions": [
+        "Kaba Kaba vs Canggu for living and investment?",
+        "How do you get from Kaba Kaba to the airport?",
+        "What is the area around Kaba Kaba like?"
+      ],
+      "proposedSlug": "where-is-kaba-kaba-bali",
+      "proposedTitle": "",
+      "category": "lifestyle",
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "location-what-is-nuanu",
+      "status": "pending",
+      "priority": 5,
+      "theme": "location",
+      "atpType": "what",
+      "primaryQuestion": "What is Nuanu Creative City and why does it matter for nearby property?",
+      "targetKeywords": ["Nuanu Creative City", "Nuanu Bali", "property near Nuanu"],
+      "relatedQuestions": [
+        "What is inside Nuanu Creative City?",
+        "How far is Nuanu from Kaba Kaba?",
+        "Does Nuanu affect nearby land values?"
+      ],
+      "proposedSlug": "what-is-nuanu-creative-city",
+      "proposedTitle": "",
+      "category": "development",
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "lifestyle-relocate-with-family",
+      "status": "pending",
+      "priority": 6,
+      "theme": "lifestyle",
+      "atpType": "can",
+      "primaryQuestion": "Can you relocate to Bali with a family near Kaba Kaba?",
+      "targetKeywords": ["relocating to Bali with family", "living in Kaba Kaba", "Bali international schools Tabanan"],
+      "relatedQuestions": [
+        "What international schools are near Kaba Kaba?",
+        "What is healthcare like near Tabanan?",
+        "What does it cost to live near Canggu?"
+      ],
+      "proposedSlug": "relocating-to-bali-with-family-kaba-kaba",
+      "proposedTitle": "",
+      "category": "family",
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "offplan-why-buy",
+      "status": "pending",
+      "priority": 7,
+      "theme": "off-plan",
+      "atpType": "why",
+      "primaryQuestion": "Why buy off-plan instead of a finished villa in Bali?",
+      "targetKeywords": ["why buy off-plan Bali", "off-plan discount Bali", "off-plan payment stages"],
+      "relatedQuestions": [
+        "What are the risks of buying off-plan in Bali?",
+        "How much cheaper is off-plan than completed?",
+        "What protections exist for off-plan buyers?"
+      ],
+      "proposedSlug": "why-buy-off-plan-bali",
+      "proposedTitle": "",
+      "category": "investment",
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    }
+  ]
+}

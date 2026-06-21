@@ -135,6 +135,41 @@ const BLOG_IMAGES = [
   GALLERY_IMAGES[6].url,
 ];
 
+// Homepage FAQ. These mirror the FAQPage JSON-LD in client/index.html exactly;
+// keep both in sync so structured data matches visible content.
+const FAQ_ITEMS = [
+  {
+    question: "Where is OMA Townhouse located?",
+    answer:
+      "OMA Townhouse is in Kaba Kaba, Tabanan, Bali, about 25 minutes from Canggu and 10 to 15 minutes from Nuanu, Luna Beach Club and Kedungu Beach.",
+  },
+  {
+    question: "Can foreigners buy property at OMA Townhouse?",
+    answer:
+      "Yes. OMA Townhouse offers freehold through a PT PMA company structure as well as 25 and 40 year leasehold options, the routes foreign buyers commonly use in Bali.",
+  },
+  {
+    question: "How much does OMA Townhouse cost?",
+    answer:
+      "Pricing ranges from 115,000 USD for a 25 year leasehold to 265,000 USD for freehold, with standard prices up to 310,000 USD. Treat these as a guide and confirm current pricing with the team.",
+  },
+  {
+    question: "Is Kaba Kaba a good place to buy off-plan property in Bali?",
+    answer:
+      "Land in Kaba Kaba is priced up to 70 percent below Canggu while major projects like the 44 hectare Nuanu Creative City and incoming hotel brands reshape the area. Returns are never guaranteed, so treat projections as ranges.",
+  },
+  {
+    question: "What is the difference between freehold and leasehold here?",
+    answer:
+      "Freehold via PT PMA gives long term ownership through an Indonesian company, while leasehold gives the right to use the property for a fixed 25 or 40 year term at a lower entry price.",
+  },
+  {
+    question: "How far is OMA Townhouse from the beach and Canggu?",
+    answer:
+      "Kedungu Beach and Luna Beach Club at Nuanu are 10 to 15 minutes away, and central Canggu is about 25 minutes by car.",
+  },
+];
+
 export default function Home() {
   const [displayedText, setDisplayedText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
@@ -404,7 +439,7 @@ export default function Home() {
             Discover OMA Townhouse, a stunning modern tropical residence nestled in the serene village of Kaba Kaba, Tabanan. This property offers the perfect blend of Balinese tranquility and contemporary luxury.
           </p>
           <p>
-            Wake up to breathtaking rice field views and mountain vistas, yet remain just 25 minutes from Canggu's world-class restaurants, beaches, and nightlife. Kaba Kaba represents Bali's best-kept secret – where land prices are up to 70% lower than Canggu, but the area is rapidly developing.
+            Wake up to breathtaking rice field views and mountain vistas, yet remain just 25 minutes from Canggu's world-class restaurants, beaches, and nightlife. Kaba Kaba represents Bali's best-kept secret, where land prices are up to 70% lower than Canggu, but the area is rapidly developing.
           </p>
           <p>
             Whether you're looking for a personal retreat or a high-yield investment property, OMA Townhouse offers exceptional value with premium finishes, private pool options, and professional rental management available.
@@ -598,6 +633,34 @@ export default function Home() {
         <h3 className="text-lg font-semibold text-gray-900 mb-2">Living in Kaba Kaba</h3>
         <p className="text-gray-600 text-sm mb-6">All the best of Canggu lifestyle, without the crowds. Here's what's nearby.</p>
         
+        {/* Distance Summary - Stacks vertically on mobile */}
+        <div className="bg-gray-50 rounded-xl p-4 mb-8">
+          <h4 className="font-medium text-gray-900 mb-3">Distance from OMA Townhouse</h4>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
+            {DISTANCE_DATA.map((item, idx) => (
+              <a
+                key={idx}
+                href={getDirectionsUrl(item.coords)}
+                data-external="true"
+                className="flex justify-between items-center py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors group"
+              >
+                <span className="text-gray-600 flex items-center gap-2">
+                  <Navigation className="w-3 h-3 text-gray-400 group-hover:text-gray-600 transition-colors" />
+                  {item.url ? (
+                    <span className="underline underline-offset-2 decoration-gray-300 group-hover:decoration-gray-600">{item.name}</span>
+                  ) : (
+                    <span>{item.name}</span>
+                  )}
+                </span>
+                <span className="text-gray-900 font-medium flex items-center gap-1">
+                  {item.distance}
+                  <ExternalLink className="w-3 h-3 text-gray-300 group-hover:text-gray-500 transition-colors" />
+                </span>
+              </a>
+            ))}
+          </div>
+        </div>
+
         <div className="space-y-8">
           {lifestyleArticles && lifestyleArticles.length > 0 ? (
             lifestyleArticles.map((article, idx) => (
@@ -642,30 +705,15 @@ export default function Home() {
           )}
         </div>
 
-        {/* Distance Summary - Stacks vertically on mobile */}
-        <div className="mt-8 bg-gray-50 rounded-xl p-4">
-          <h4 className="font-medium text-gray-900 mb-3">Distance from OMA Townhouse</h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-            {DISTANCE_DATA.map((item, idx) => (
-              <a
-                key={idx}
-                href={getDirectionsUrl(item.coords)}
-                data-external="true"
-                className="flex justify-between items-center py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors group"
-              >
-                <span className="text-gray-600 flex items-center gap-2">
-                  <Navigation className="w-3 h-3 text-gray-400 group-hover:text-gray-600 transition-colors" />
-                  {item.url ? (
-                    <span className="underline underline-offset-2 decoration-gray-300 group-hover:decoration-gray-600">{item.name}</span>
-                  ) : (
-                    <span>{item.name}</span>
-                  )}
-                </span>
-                <span className="text-gray-900 font-medium flex items-center gap-1">
-                  {item.distance}
-                  <ExternalLink className="w-3 h-3 text-gray-300 group-hover:text-gray-500 transition-colors" />
-                </span>
-              </a>
+        {/* FAQ - mirrors the FAQPage JSON-LD in index.html for search and AI engines */}
+        <div className="mt-10">
+          <h4 className="font-medium text-gray-900 mb-3">Frequently asked questions</h4>
+          <div className="border-t border-gray-200">
+            {FAQ_ITEMS.map((item, idx) => (
+              <div key={idx} className="py-3 border-b border-gray-200">
+                <p className="text-sm font-medium text-gray-900">{item.question}</p>
+                <p className="text-sm text-gray-600 mt-1 leading-relaxed">{item.answer}</p>
+              </div>
             ))}
           </div>
         </div>
