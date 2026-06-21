@@ -1,7 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "vite build",
+  "buildCommand": "vite build && esbuild server/_core/serverlessApp.ts --bundle --platform=node --packages=external --format=esm --outfile=api/_handler.mjs",
   "outputDirectory": "dist/public",
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api" },
