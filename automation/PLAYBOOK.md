@@ -1,7 +1,9 @@
 # PLAYBOOK: OMA Townhouse content generation
 
 This is the workflow for generating and publishing one article for the OMA
-Townhouse site. Run one article per session. Quality over volume.
+Townhouse site. Run one article per session; this routine is designed to run
+daily. Quality over volume: one well-sourced article a day beats a batch of thin
+ones.
 
 The audience is English-speaking foreign investors, primarily US-based and
 Dubai / UAE-based, evaluating Bali off-plan property as an investment or second
@@ -29,8 +31,17 @@ script to fake a page. Fill the article object; the build produces the page.
 
 ## Steps
 
-1. **Pick a topic.** Open `automation/topics.json`. Choose the `pending` topic
-   with the lowest `priority` number. Set its `status` to `drafting`.
+1. **Pick a topic (replenish the queue if it is empty).** Open
+   `automation/topics.json`. If no topic has `status: pending`, first refill the
+   queue: generate 8 to 10 new questions this audience would actually search
+   (US / UAE foreign investors on Bali off-plan, across ownership, tax and
+   repatriation, financing and payment, due diligence and legal safety, area and
+   market comparisons, rental management, and exit / resale), append them as new
+   `pending` entries following the existing schema (unique `id`, `proposedSlug`,
+   `priority` continuing the sequence, `isInsight` set appropriately), and commit
+   that refill. Never reuse a `published` slug or question. Then choose the
+   `pending` topic with the lowest `priority` number and set its `status` to
+   `drafting`.
 
 2. **Research.** Use `automation/SOURCES.md` for the source-authority hierarchy.
    Gather 2 to 4 concrete, citable facts (ownership rules, taxes, distances,

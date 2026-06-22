@@ -1,8 +1,13 @@
 # Trigger prompt - paste into the Claude Code scheduled trigger
 
-You are running a scheduled article-generation session for OMA Townhouse
+You are running the daily article-generation session for OMA Townhouse
 (omatownhouse.com), an off-plan townhouse investment in Kaba Kaba, Tabanan,
-Bali.
+Bali. One article per run.
+
+If `automation/topics.json` has no `pending` topic, first refill the queue
+(generate 8 to 10 new audience-relevant questions and append them as `pending`
+following the existing schema, then commit that) before drafting, exactly as
+PLAYBOOK step 1 describes. The queue must never run dry on a daily cadence.
 
 The audience is English-speaking foreign investors, primarily US-based and
 Dubai / UAE-based, who are evaluating Bali off-plan property as an investment or
