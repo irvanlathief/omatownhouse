@@ -1262,6 +1262,13 @@ var LIFESTYLE_ARTICLES = [
     category: "development",
     imageUrl: "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028072074/RFpzOLCapYdEXOzx.webp",
     sortOrder: 6,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-01-20",
+    citations: [
+      { label: "Nuanu Creative City (official site)", url: "https://www.nuanu.com" },
+      { label: "Alila Hotels by Hyatt", url: "https://www.hyatt.com/brands/alila" }
+    ],
     metaDescription: "Tabanan and Kaba Kaba are drawing investment: Alila Hotels, the 44 hectare Nuanu Creative City and quality-tourism policy are reshaping the area.",
     body: `<p>Why buy off-plan in Tabanan rather than a finished villa in Canggu? Look at who is moving in. <a href="https://www.instagram.com/alilahotels/" data-external="true">Alila Hotels</a> is opening in the Tabanan area, and when established luxury operators commit, land values tend to follow.</p><p><a href="https://www.nuanu.com" data-external="true">Nuanu Creative City</a> is a 44 hectare development 10 to 15 minutes from OMA, bringing coworking, international schools, wellness venues and <a href="https://www.instagram.com/lunabeachclub/" data-external="true">Luna Beach Club</a> to the doorstep. That is a large, funded build happening next door rather than a forecast on a brochure.</p><p>The Tabanan government is promoting quality tourism, meaning higher-end, lower-density development that protects the landscape. Early Canggu buyers saw their land multiply over the cycle, and off-plan pricing in Kaba Kaba is positioned against that same pattern today. None of this is a guarantee, so treat the figures as ranges and not as financial advice, but the direction of travel is hard to miss.</p>`,
     venues: [
@@ -1298,6 +1305,116 @@ var LIFESTYLE_ARTICLES = [
         answer: "Yes. Grow International School in Kedungu is about 10 minutes away, and ProEd Global School at Nuanu is 10 to 15 minutes from OMA Townhouse."
       }
     ]
+  },
+  {
+    slug: "foreigners-buy-property-bali",
+    title: "Can US and Dubai Investors Buy Property in Bali?",
+    category: "investment",
+    imageUrl: "/blog/blog-nuanu-creative.webp",
+    sortOrder: 8,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-02-03",
+    layoutVariant: "qa",
+    metaDescription: "Can US and Dubai investors buy property in Bali? Yes, through leasehold, Hak Pakai or a PT PMA company. Here is how each route works for foreign buyers.",
+    body: `<p>Yes, foreigners can invest in Bali property, including buyers from the United States and the United Arab Emirates. What changes is the structure, not the eligibility. Indonesian law does not let a foreign individual hold freehold (Hak Milik) land title, so overseas buyers use one of a few established routes instead.</p><p>The first is leasehold, where you hold the right to use a property for a fixed term, commonly 25 or 40 years, often with an agreed extension. The entry price is lower and the paperwork is simpler, which is why many first-time buyers start here. OMA Townhouse offers 25 and 40 year leasehold on this basis.</p><p>The second is Hak Pakai, a right-to-use title available to a foreigner who holds an Indonesian residence permit such as a KITAS or KITAP. The third is a foreign-owned company, a <a href="https://oss.go.id" data-external="true">PT PMA</a>, which can hold Hak Guna Bangunan, the right to build and use the land. A PT PMA is the route most buyers take when they want freehold-style control and the ability to run the property as a rental business. OMA offers freehold through this structure.</p><p>For a US citizen or a Dubai-based investor, the practical point is that your nationality does not block any of these. You work within the same framework as every other foreign buyer. Money you transfer into Indonesia is reported through the banking system, so keep clean records of the funds you bring in.</p><p>This is general information and not legal or tax advice. Permit categories and rules change, so confirm the current position with a licensed Indonesian notary (PPAT) and the OMA Townhouse team before you commit.</p>`,
+    venues: [],
+    citations: [
+      { label: "Indonesia Investment Coordinating Board (BKPM)", url: "https://www.bkpm.go.id" },
+      { label: "Online Single Submission (OSS) company portal", url: "https://oss.go.id" }
+    ],
+    gallery: [
+      { url: "/blog/blog-nuanu-creative.webp", alt: "Development near Kaba Kaba, Tabanan" },
+      { url: "/blog/rice-terraces.jpg", alt: "Rice terraces in Tabanan, Bali" }
+    ],
+    faq: [
+      {
+        question: "Can a US citizen buy property in Bali?",
+        answer: "Yes. US citizens use the same routes as other foreigners: leasehold for a fixed term, Hak Pakai with an Indonesian residence permit, or a PT PMA company for freehold-style ownership."
+      },
+      {
+        question: "Can foreigners own freehold land in Bali?",
+        answer: "Not as individuals. Freehold (Hak Milik) is reserved for Indonesian citizens. Foreigners reach freehold-style control through a PT PMA company that holds Hak Guna Bangunan."
+      },
+      {
+        question: "Do I need to live in Bali to buy?",
+        answer: "No. The leasehold and PT PMA routes do not require residency. Hak Pakai does require an Indonesian residence permit such as a KITAS or KITAP."
+      }
+    ]
+  },
+  {
+    slug: "bali-vs-dubai-property",
+    title: "Bali vs Dubai Property for Foreign Investors",
+    category: "investment",
+    imageUrl: "/blog/kedungu-beach.jpg",
+    sortOrder: 9,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-02-17",
+    metaDescription: "Bali vs Dubai property for foreign investors: Dubai allows direct freehold, Bali uses leasehold or a PT PMA company. Compare ownership, entry price and tax.",
+    body: `<p>For a foreign investor choosing between Bali and Dubai, the clearest difference is ownership. In Dubai you can buy freehold as a foreigner in designated freehold zones, a right set out in the emirate's 2002 property reforms, and hold the title in your own name. In Bali you cannot hold freehold as an individual. You use leasehold, a Hak Pakai right-to-use title, or a PT PMA company, the same routes covered in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>.</p><p>Entry price is the next split. Dubai's established freehold districts tend to start higher in absolute terms. Emerging Bali areas such as Tabanan sit lower, which is part of the off-plan case. At OMA Townhouse, leasehold starts at 115,000 USD and freehold via PT PMA at 265,000 USD, and land in this area runs well below Canggu prices.</p><p>Both markets draw international rental demand, so the question is less about which is busier and more about where your capital fits. Rental yields move with season, management quality and location, so treat any figure you read as a range rather than a promise.</p><p>Tax also differs. The UAE has no personal income tax, while Indonesia taxes rental income, so a Bali rental needs that built into the numbers. A Dubai buyer used to tax-free rental should plan for it rather than be caught out by it.</p><p>Neither market is universally better. Dubai offers direct freehold and a tax-light setup. Bali offers a lower entry point and a different lifestyle, with ownership handled through leasehold or a company. This is general information, not financial, legal or tax advice, so confirm current rules and pricing with a qualified adviser and the OMA Townhouse team.</p>`,
+    venues: [],
+    citations: [
+      { label: "Dubai Land Department", url: "https://dubailand.gov.ae" },
+      { label: "Indonesia Investment Coordinating Board (BKPM)", url: "https://www.bkpm.go.id" }
+    ],
+    gallery: [
+      { url: "/blog/kedungu-beach.jpg", alt: "Kedungu Beach near Tabanan, Bali" },
+      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba" }
+    ],
+    faq: [
+      {
+        question: "Is Bali or Dubai better for property investment?",
+        answer: "Neither is universally better. Dubai allows direct foreign freehold and has no personal income tax. Bali has a lower entry point but uses leasehold or a PT PMA company and taxes rental income. The right choice depends on your budget and goals."
+      },
+      {
+        question: "Can foreigners own freehold in Dubai but not Bali?",
+        answer: "Yes. Dubai lets foreigners own freehold in designated zones. Indonesia reserves freehold for citizens, so foreign buyers in Bali use leasehold, Hak Pakai or a PT PMA company."
+      },
+      {
+        question: "Are Bali rental yields higher than in Dubai?",
+        answer: "Yields in both markets vary with location, season and management, so treat any single figure as a range. This is not financial advice."
+      }
+    ]
+  },
+  {
+    slug: "tax-for-foreign-property-owners-bali",
+    title: "Bali Rental Income Tax for Foreign Owners",
+    category: "investment",
+    imageUrl: "/blog/blog-rice-field.webp",
+    sortOrder: 10,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-06-22",
+    layoutVariant: "qa",
+    metaDescription: "How is a Bali rental taxed for a foreign owner? Non-residents face 20 percent PPh 26 on gross rent. A PT PMA pays 22 percent corporate tax on net profit.",
+    body: `<p>What tax do foreign property owners pay on a Bali rental? Two main lines apply. If you hold the villa in your own name as a non-resident, Indonesia withholds 20 percent of the gross rent under Article 26 of the income tax law, known as PPh 26. If you hold the property through a PT PMA company instead, the company pays 22 percent corporate income tax on net profit and you take the cash out as a dividend.</p><p>If you become an Indonesian tax resident, by spending 183 days or more in any 12 month period, the rule shifts to <a href="https://www.pajak.go.id/en/node/34297" data-external="true">PPh Pasal 4 ayat 2</a>, a 10 percent final tax on the gross rent from land and buildings. The legal basis is Government Regulation 34/2017.</p><p>Short-term holiday rental also pulls in a local tax, PHR, charged by the regency at up to 10 percent of accommodation revenue. The annual property tax, PBB (Pajak Bumi dan Bangunan), is set as a small percent of the government-assessed value, known as the NJOP. Rates vary by regency and generally sit in a 0.1 to 0.5 percent band on the taxable base. The Directorate General of Taxes covers the framework on its <a href="https://www.pajak.go.id/en/node/57517" data-external="true">PBB page</a>.</p><p>Repatriating rental income from Indonesia is routine when the paperwork is clean. PT PMA dividends paid to a foreign shareholder carry a 20 percent withholding tax under PPh 26, often reduced under a treaty if you provide a Certificate of Domicile. The company must also file quarterly LKPM reports to BKPM as a condition of operating and remitting profit. For a US owner the cleared funds land in your home account in USD. For a Dubai-based owner the UAE does not tax personal income, so once the Indonesian side is settled the receipt is clean.</p><p>One practical comparison. A Dubai freehold throws off rent in your own name with no local income tax. A Bali villa pays Indonesian tax first, then the after-tax cash comes home. None of this is tax advice, so confirm your position with a qualified Indonesian tax adviser and the OMA Townhouse team before you commit. The same routes are covered in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>.</p>`,
+    venues: [],
+    citations: [
+      { label: "Directorate General of Taxes: PPh Pasal 4 ayat 2 (rental of land and buildings)", url: "https://www.pajak.go.id/en/node/34297" },
+      { label: "Directorate General of Taxes: Pajak Bumi dan Bangunan (PBB)", url: "https://www.pajak.go.id/en/node/57517" },
+      { label: "PwC Worldwide Tax Summaries: Indonesia individual income", url: "https://taxsummaries.pwc.com/indonesia/individual/income-determination" },
+      { label: "ILA Global Consulting: real estate tax in Indonesia", url: "https://ilaglobalconsulting.com/real-estate-tax-indonesia/" }
+    ],
+    gallery: [
+      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba, Tabanan" },
+      { url: "/blog/rice-terraces.jpg", alt: "Tabanan rice terraces, Bali" },
+      { url: "/blog/blog-nuanu-creative.webp", alt: "Nuanu Creative City near Kaba Kaba" }
+    ],
+    faq: [
+      {
+        question: "How is rental income taxed for foreigners in Indonesia?",
+        answer: "Non-residents face a 20 percent withholding tax on gross rent under Article 26 (PPh 26). Indonesian tax residents pay a 10 percent final tax on gross rent from land and buildings under PPh Pasal 4 ayat 2. A PT PMA holds the asset as a company and pays 22 percent corporate income tax on net profit instead."
+      },
+      {
+        question: "Can a US or UAE owner repatriate Bali rental income?",
+        answer: "Yes. PT PMA profits and dividends can be transferred abroad once Indonesian tax is settled and quarterly LKPM reports are filed with BKPM. Dividends to a foreign shareholder carry a 20 percent withholding tax, sometimes reduced under a tax treaty if a Certificate of Domicile is provided."
+      },
+      {
+        question: "Is there annual property tax (PBB) in Bali?",
+        answer: "Yes. PBB (Pajak Bumi dan Bangunan) is the annual land and building tax. Rates depend on the regency and the government-assessed value (NJOP), generally falling in a 0.1 to 0.5 percent band on the taxable base."
+      }
+    ]
   }
 ];
 
@@ -1311,7 +1428,20 @@ function toClientArticle(a, id) {
     category: a.category,
     imageUrl: a.imageUrl,
     sortOrder: a.sortOrder,
-    lastRefreshed: a.publishedAt ? new Date(a.publishedAt) : null
+    lastRefreshed: a.publishedAt ? new Date(a.publishedAt) : null,
+    metaDescription: a.metaDescription ?? null,
+    faq: a.faq ?? [],
+    heroImage: a.heroImage ?? null,
+    gallery: a.gallery ?? [],
+    citations: a.citations ?? [],
+    showMap: a.showMap ?? null,
+    mapCoords: a.mapCoords ?? null,
+    layoutVariant: a.layoutVariant ?? null,
+    readingTime: a.readingTime ?? null,
+    author: a.author ?? null,
+    publishedAt: a.publishedAt ?? null,
+    updatedAt: a.updatedAt ?? null,
+    isInsight: a.isInsight ?? false
   };
 }
 async function seedArticles() {
@@ -1343,16 +1473,35 @@ var lifestyleRouter = router({
       return [...LIFESTYLE_ARTICLES].sort((x, y) => x.sortOrder - y.sortOrder).map((a, i) => toClientArticle(a, i + 1));
     }
     const articles = await db.select().from(lifestyleArticles).where(eq2(lifestyleArticles.isActive, 1)).orderBy(asc(lifestyleArticles.sortOrder));
-    return articles.map((a) => ({
-      id: a.id,
-      slug: a.slug,
-      title: a.title,
-      content: JSON.parse(a.content),
-      category: a.category,
-      imageUrl: a.imageUrl,
-      sortOrder: a.sortOrder,
-      lastRefreshed: a.lastRefreshed
-    }));
+    return articles.map((a) => {
+      const content = JSON.parse(a.content);
+      return {
+        id: a.id,
+        slug: a.slug,
+        title: a.title,
+        content,
+        category: a.category,
+        imageUrl: a.imageUrl,
+        sortOrder: a.sortOrder,
+        lastRefreshed: a.lastRefreshed,
+        // Blog/insights fields are not stored as columns; surface any that were
+        // persisted in the JSON content, otherwise fall back to defaults so the
+        // shape matches the static branch (toClientArticle).
+        metaDescription: content.metaDescription ?? null,
+        faq: content.faq ?? [],
+        heroImage: content.heroImage ?? null,
+        gallery: content.gallery ?? [],
+        citations: content.citations ?? [],
+        showMap: content.showMap ?? null,
+        mapCoords: content.mapCoords ?? null,
+        layoutVariant: content.layoutVariant ?? null,
+        readingTime: content.readingTime ?? null,
+        author: content.author ?? null,
+        publishedAt: content.publishedAt ?? null,
+        updatedAt: content.updatedAt ?? null,
+        isInsight: content.isInsight ?? false
+      };
+    });
   }),
   // Refresh content using AI (called by scheduled task or admin)
   refresh: publicProcedure.mutation(async () => {

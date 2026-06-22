@@ -56,43 +56,6 @@ function MapSection({ article }: { article: BlogArticle }) {
   );
 }
 
-function GallerySection({ article }: { article: BlogArticle }) {
-  if (!article.gallery || article.gallery.length === 0) return null;
-  return (
-    <section className="py-6 border-t border-gray-200">
-      <h2 className="text-lg font-semibold text-gray-900 mb-4">Around the area</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-        {article.gallery.map((img, idx) => (
-          <figure key={idx} className="m-0">
-            <div className="aspect-video rounded-xl overflow-hidden bg-gray-100">
-              <img
-                src={img.url}
-                alt={img.alt || article.title}
-                className="w-full h-full object-cover"
-                loading="lazy"
-              />
-            </div>
-            {(img.caption || img.credit) && (
-              <figcaption className="text-gray-500 text-xs mt-1">
-                {img.caption}
-                {img.caption && img.credit ? " " : ""}
-                {img.credit &&
-                  (img.sourceUrl ? (
-                    <a href={img.sourceUrl} data-external="true" className="underline underline-offset-2">
-                      {img.credit}
-                    </a>
-                  ) : (
-                    <span>{img.credit}</span>
-                  ))}
-              </figcaption>
-            )}
-          </figure>
-        ))}
-      </div>
-    </section>
-  );
-}
-
 function VenuesSection({ article }: { article: BlogArticle }) {
   if (!article.venues || article.venues.length === 0) return null;
   return (
@@ -172,8 +135,6 @@ export function BlogArticleView({ article }: { article: BlogArticle }) {
         return <BodySection key="body" article={article} />;
       case "map":
         return <MapSection key="map" article={article} />;
-      case "gallery":
-        return <GallerySection key="gallery" article={article} />;
       case "venues":
         return <VenuesSection key="venues" article={article} />;
       case "faq":
