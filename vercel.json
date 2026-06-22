@@ -1,9 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "framework": null,
-  "buildCommand": "vite build && esbuild scripts/prerender-blog.ts --bundle --platform=node --format=esm --jsx=automatic --packages=external --outfile=dist/_prerender.mjs && node dist/_prerender.mjs && esbuild server/_core/serverlessApp.ts --bundle --platform=node --packages=external --format=esm --outfile=api/_handler.mjs",
+  "buildCommand": "pnpm vercel-build",
   "outputDirectory": "dist/public",
-  "cleanUrls": true,
   "rewrites": [
     { "source": "/api/(.*)", "destination": "/api" },
     { "source": "/((?!api/|blog/).*)", "destination": "/index.html" }

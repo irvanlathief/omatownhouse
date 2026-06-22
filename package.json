@@ -9,6 +9,7 @@
   "scripts": {
     "dev": "NODE_ENV=development tsx watch server/_core/index.ts",
     "prerender:blog": "esbuild scripts/prerender-blog.ts --bundle --platform=node --format=esm --jsx=automatic --packages=external --outfile=dist/_prerender.mjs && node dist/_prerender.mjs",
+    "vercel-build": "vite build && pnpm prerender:blog && esbuild server/_core/serverlessApp.ts --bundle --platform=node --packages=external --format=esm --outfile=api/_handler.mjs",
     "build": "vite build && pnpm prerender:blog && esbuild server/_core/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist",
     "start": "NODE_ENV=production node dist/index.js",
     "check": "tsc --noEmit",
