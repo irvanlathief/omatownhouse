@@ -7,7 +7,7 @@
   "queue": [
     {
       "id": "tax-foreign-owners-bali",
-      "status": "pending",
+      "status": "drafting",
       "priority": 1,
       "theme": "tax",
       "atpType": "what",
@@ -19,7 +19,7 @@
         "Is there annual property tax (PBB) in Bali?"
       ],
       "proposedSlug": "tax-for-foreign-property-owners-bali",
-      "proposedTitle": "",
+      "proposedTitle": "Bali Rental Income Tax for Foreign Owners",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
