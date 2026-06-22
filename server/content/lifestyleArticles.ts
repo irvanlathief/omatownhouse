@@ -24,6 +24,21 @@ export interface FaqItem {
   answer: string;
 }
 
+export interface GalleryImage {
+  url: string; // served from client/public/blog/* or an absolute URL
+  alt?: string;
+  caption?: string;
+  credit?: string;
+  sourceUrl?: string;
+}
+
+export interface Citation {
+  label: string;
+  url: string;
+}
+
+export type LayoutVariant = "standard" | "gallery" | "map" | "qa";
+
 export interface LifestyleArticleSeed {
   slug: string;
   title: string;
@@ -35,6 +50,20 @@ export interface LifestyleArticleSeed {
   metaDescription?: string;
   faq?: FaqItem[];
   publishedAt?: string; // ISO date, used for sitemap lastmod / sorting
+
+  // Blog / Insights fields. All optional and additive: existing articles stay
+  // valid, and the prerendered /blog/:slug page fills sensible defaults (hero
+  // and gallery by category, layout variant by slug hash) when these are unset.
+  isInsight?: boolean; // surfaced in the homepage Insights row
+  heroImage?: string; // hero image for the blog page
+  gallery?: GalleryImage[]; // relevant, topic-specific images
+  citations?: Citation[]; // Tier 1 / Tier 2 sources, shown as "Sources"
+  showMap?: boolean; // embed a map of the area on the blog page
+  mapCoords?: string; // "lat,lng" centre for the embedded map
+  layoutVariant?: LayoutVariant; // overrides the slug-hash default
+  readingTime?: number; // minutes; estimated from body when unset
+  author?: string;
+  updatedAt?: string; // ISO date, defaults to publishedAt
 }
 
 // OMA Townhouse coordinates, used for Google Maps directions links.
@@ -172,6 +201,13 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     imageUrl:
       "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028072074/RFpzOLCapYdEXOzx.webp",
     sortOrder: 6,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-01-20",
+    citations: [
+      { label: "Nuanu Creative City (official site)", url: "https://www.nuanu.com" },
+      { label: "Alila Hotels by Hyatt", url: "https://www.hyatt.com/brands/alila" },
+    ],
     metaDescription:
       "Tabanan and Kaba Kaba are drawing investment: Alila Hotels, the 44 hectare Nuanu Creative City and quality-tourism policy are reshaping the area.",
     body: `<p>Why buy off-plan in Tabanan rather than a finished villa in Canggu? Look at who is moving in. <a href="https://www.instagram.com/alilahotels/" data-external="true">Alila Hotels</a> is opening in the Tabanan area, and when established luxury operators commit, land values tend to follow.</p><p><a href="https://www.nuanu.com" data-external="true">Nuanu Creative City</a> is a 44 hectare development 10 to 15 minutes from OMA, bringing coworking, international schools, wellness venues and <a href="https://www.instagram.com/lunabeachclub/" data-external="true">Luna Beach Club</a> to the doorstep. That is a large, funded build happening next door rather than a forecast on a brochure.</p><p>The Tabanan government is promoting quality tourism, meaning higher-end, lower-density development that protects the landscape. Early Canggu buyers saw their land multiply over the cycle, and off-plan pricing in Kaba Kaba is positioned against that same pattern today. None of this is a guarantee, so treat the figures as ranges and not as financial advice, but the direction of travel is hard to miss.</p>`,
@@ -212,6 +248,85 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
         question: "Are there international schools near Kaba Kaba?",
         answer:
           "Yes. Grow International School in Kedungu is about 10 minutes away, and ProEd Global School at Nuanu is 10 to 15 minutes from OMA Townhouse.",
+      },
+    ],
+  },
+  {
+    slug: "foreigners-buy-property-bali",
+    title: "Can US and Dubai Investors Buy Property in Bali?",
+    category: "investment",
+    imageUrl: "/blog/blog-nuanu-creative.webp",
+    sortOrder: 8,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-02-03",
+    layoutVariant: "qa",
+    metaDescription:
+      "Can US and Dubai investors buy property in Bali? Yes, through leasehold, Hak Pakai or a PT PMA company. Here is how each route works for foreign buyers.",
+    body: `<p>Yes, foreigners can invest in Bali property, including buyers from the United States and the United Arab Emirates. What changes is the structure, not the eligibility. Indonesian law does not let a foreign individual hold freehold (Hak Milik) land title, so overseas buyers use one of a few established routes instead.</p><p>The first is leasehold, where you hold the right to use a property for a fixed term, commonly 25 or 40 years, often with an agreed extension. The entry price is lower and the paperwork is simpler, which is why many first-time buyers start here. OMA Townhouse offers 25 and 40 year leasehold on this basis.</p><p>The second is Hak Pakai, a right-to-use title available to a foreigner who holds an Indonesian residence permit such as a KITAS or KITAP. The third is a foreign-owned company, a <a href="https://oss.go.id" data-external="true">PT PMA</a>, which can hold Hak Guna Bangunan, the right to build and use the land. A PT PMA is the route most buyers take when they want freehold-style control and the ability to run the property as a rental business. OMA offers freehold through this structure.</p><p>For a US citizen or a Dubai-based investor, the practical point is that your nationality does not block any of these. You work within the same framework as every other foreign buyer. Money you transfer into Indonesia is reported through the banking system, so keep clean records of the funds you bring in.</p><p>This is general information and not legal or tax advice. Permit categories and rules change, so confirm the current position with a licensed Indonesian notary (PPAT) and the OMA Townhouse team before you commit.</p>`,
+    venues: [],
+    citations: [
+      { label: "Indonesia Investment Coordinating Board (BKPM)", url: "https://www.bkpm.go.id" },
+      { label: "Online Single Submission (OSS) company portal", url: "https://oss.go.id" },
+    ],
+    gallery: [
+      { url: "/blog/blog-nuanu-creative.webp", alt: "Development near Kaba Kaba, Tabanan" },
+      { url: "/blog/rice-terraces.jpg", alt: "Rice terraces in Tabanan, Bali" },
+    ],
+    faq: [
+      {
+        question: "Can a US citizen buy property in Bali?",
+        answer:
+          "Yes. US citizens use the same routes as other foreigners: leasehold for a fixed term, Hak Pakai with an Indonesian residence permit, or a PT PMA company for freehold-style ownership.",
+      },
+      {
+        question: "Can foreigners own freehold land in Bali?",
+        answer:
+          "Not as individuals. Freehold (Hak Milik) is reserved for Indonesian citizens. Foreigners reach freehold-style control through a PT PMA company that holds Hak Guna Bangunan.",
+      },
+      {
+        question: "Do I need to live in Bali to buy?",
+        answer:
+          "No. The leasehold and PT PMA routes do not require residency. Hak Pakai does require an Indonesian residence permit such as a KITAS or KITAP.",
+      },
+    ],
+  },
+  {
+    slug: "bali-vs-dubai-property",
+    title: "Bali vs Dubai Property for Foreign Investors",
+    category: "investment",
+    imageUrl: "/blog/kedungu-beach.jpg",
+    sortOrder: 9,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-02-17",
+    metaDescription:
+      "Bali vs Dubai property for foreign investors: Dubai allows direct freehold, Bali uses leasehold or a PT PMA company. Compare ownership, entry price and tax.",
+    body: `<p>For a foreign investor choosing between Bali and Dubai, the clearest difference is ownership. In Dubai you can buy freehold as a foreigner in designated freehold zones, a right set out in the emirate's 2002 property reforms, and hold the title in your own name. In Bali you cannot hold freehold as an individual. You use leasehold, a Hak Pakai right-to-use title, or a PT PMA company, the same routes covered in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>.</p><p>Entry price is the next split. Dubai's established freehold districts tend to start higher in absolute terms. Emerging Bali areas such as Tabanan sit lower, which is part of the off-plan case. At OMA Townhouse, leasehold starts at 115,000 USD and freehold via PT PMA at 265,000 USD, and land in this area runs well below Canggu prices.</p><p>Both markets draw international rental demand, so the question is less about which is busier and more about where your capital fits. Rental yields move with season, management quality and location, so treat any figure you read as a range rather than a promise.</p><p>Tax also differs. The UAE has no personal income tax, while Indonesia taxes rental income, so a Bali rental needs that built into the numbers. A Dubai buyer used to tax-free rental should plan for it rather than be caught out by it.</p><p>Neither market is universally better. Dubai offers direct freehold and a tax-light setup. Bali offers a lower entry point and a different lifestyle, with ownership handled through leasehold or a company. This is general information, not financial, legal or tax advice, so confirm current rules and pricing with a qualified adviser and the OMA Townhouse team.</p>`,
+    venues: [],
+    citations: [
+      { label: "Dubai Land Department", url: "https://dubailand.gov.ae" },
+      { label: "Indonesia Investment Coordinating Board (BKPM)", url: "https://www.bkpm.go.id" },
+    ],
+    gallery: [
+      { url: "/blog/kedungu-beach.jpg", alt: "Kedungu Beach near Tabanan, Bali" },
+      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba" },
+    ],
+    faq: [
+      {
+        question: "Is Bali or Dubai better for property investment?",
+        answer:
+          "Neither is universally better. Dubai allows direct foreign freehold and has no personal income tax. Bali has a lower entry point but uses leasehold or a PT PMA company and taxes rental income. The right choice depends on your budget and goals.",
+      },
+      {
+        question: "Can foreigners own freehold in Dubai but not Bali?",
+        answer:
+          "Yes. Dubai lets foreigners own freehold in designated zones. Indonesia reserves freehold for citizens, so foreign buyers in Bali use leasehold, Hak Pakai or a PT PMA company.",
+      },
+      {
+        question: "Are Bali rental yields higher than in Dubai?",
+        answer:
+          "Yields in both markets vary with location, season and management, so treat any single figure as a range. This is not financial advice.",
       },
     ],
   },

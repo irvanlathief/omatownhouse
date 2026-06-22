@@ -7,6 +7,9 @@ import { eq, asc } from "drizzle-orm";
 import { LIFESTYLE_ARTICLES, type LifestyleArticleSeed } from "./content/lifestyleArticles";
 
 // Map a static seed article into the shape the client expects from `list`.
+// The blog/insights fields (faq, heroImage, gallery, citations, layoutVariant,
+// etc.) are passed through so the homepage Insights row and the /blog/:slug
+// page can render them; they are optional, so existing articles stay valid.
 function toClientArticle(a: LifestyleArticleSeed, id: number) {
   return {
     id,
@@ -17,6 +20,19 @@ function toClientArticle(a: LifestyleArticleSeed, id: number) {
     imageUrl: a.imageUrl,
     sortOrder: a.sortOrder,
     lastRefreshed: a.publishedAt ? new Date(a.publishedAt) : null,
+    metaDescription: a.metaDescription ?? null,
+    faq: a.faq ?? [],
+    heroImage: a.heroImage ?? null,
+    gallery: a.gallery ?? [],
+    citations: a.citations ?? [],
+    showMap: a.showMap ?? null,
+    mapCoords: a.mapCoords ?? null,
+    layoutVariant: a.layoutVariant ?? null,
+    readingTime: a.readingTime ?? null,
+    author: a.author ?? null,
+    publishedAt: a.publishedAt ?? null,
+    updatedAt: a.updatedAt ?? null,
+    isInsight: a.isInsight ?? false,
   };
 }
 
@@ -63,16 +79,35 @@ export const lifestyleRouter = router({
       .where(eq(lifestyleArticles.isActive, 1))
       .orderBy(asc(lifestyleArticles.sortOrder));
 
-    return articles.map((a) => ({
-      id: a.id,
-      slug: a.slug,
-      title: a.title,
-      content: JSON.parse(a.content),
-      category: a.category,
-      imageUrl: a.imageUrl,
-      sortOrder: a.sortOrder,
-      lastRefreshed: a.lastRefreshed,
-    }));
+    return articles.map((a) => {
+      const content = JSON.parse(a.content);
+      return {
+        id: a.id,
+        slug: a.slug,
+        title: a.title,
+        content,
+        category: a.category,
+        imageUrl: a.imageUrl,
+        sortOrder: a.sortOrder,
+        lastRefreshed: a.lastRefreshed,
+        // Blog/insights fields are not stored as columns; surface any that were
+        // persisted in the JSON content, otherwise fall back to defaults so the
+        // shape matches the static branch (toClientArticle).
+        metaDescription: content.metaDescription ?? null,
+        faq: content.faq ?? [],
+        heroImage: content.heroImage ?? null,
+        gallery: content.gallery ?? [],
+        citations: content.citations ?? [],
+        showMap: content.showMap ?? null,
+        mapCoords: content.mapCoords ?? null,
+        layoutVariant: content.layoutVariant ?? null,
+        readingTime: content.readingTime ?? null,
+        author: content.author ?? null,
+        publishedAt: content.publishedAt ?? null,
+        updatedAt: content.updatedAt ?? null,
+        isInsight: content.isInsight ?? false,
+      };
+    });
   }),
 
   // Refresh content using AI (called by scheduled task or admin)

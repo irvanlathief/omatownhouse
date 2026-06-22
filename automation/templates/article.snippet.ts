@@ -23,4 +23,19 @@ export const ARTICLE: LifestyleArticleSeed = {
     // { question: "", answer: "" }, // 2 to 4 items drawn from the topic relatedQuestions
   ],
   publishedAt: "", // today, ISO date e.g. "2026-06-21"
+
+  // Blog / Insights fields. The build turns this object into a prerendered
+  // /blog/<slug> page; these control its media and where it surfaces.
+  isInsight: true, // true for investor-facing posts (shown in the homepage Insights row); omit for pure lifestyle
+  author: "OMA Townhouse",
+  heroImage: "", // e.g. "/blog/blog-nuanu-creative.webp" (a real file in client/public/blog)
+  gallery: [
+    // { url: "/blog/your-image.webp", alt: "", credit: "", sourceUrl: "" },
+  ],
+  citations: [
+    // { label: "Source name", url: "https://..." }, // Tier 1 / Tier 2 sources behind your facts
+  ],
+  // showMap: true,        // defaults on when the article has venues; set with mapCoords for a non-venue map
+  // mapCoords: "-8.0000,115.0000",
+  // layoutVariant: "qa",  // optional: gallery | map | qa | standard. Omit to pick one from the slug.
 };
