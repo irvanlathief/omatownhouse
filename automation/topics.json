@@ -7,7 +7,7 @@
   "queue": [
     {
       "id": "tax-foreign-owners-bali",
-      "status": "drafting",
+      "status": "published",
       "priority": 1,
       "theme": "tax",
       "atpType": "what",
@@ -23,8 +23,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-06-22",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/2"
     },
     {
       "id": "buy-bali-remotely",
