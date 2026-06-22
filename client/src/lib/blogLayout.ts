@@ -168,14 +168,14 @@ export type BlogSection = "body" | "map" | "gallery" | "venues" | "faq" | "sourc
 export function sectionOrder(variant: BlogLayoutVariant): BlogSection[] {
   switch (variant) {
     case "gallery":
-      return ["gallery", "body", "venues", "map", "faq", "sources"];
+      return ["body", "venues", "map", "faq", "sources"];
     case "map":
-      return ["map", "body", "venues", "gallery", "faq", "sources"];
+      return ["map", "body", "venues", "faq", "sources"];
     case "qa":
-      return ["body", "faq", "venues", "gallery", "map", "sources"];
+      return ["body", "faq", "venues", "map", "sources"];
     case "standard":
     default:
-      return ["body", "map", "gallery", "venues", "faq", "sources"];
+      return ["body", "map", "venues", "faq", "sources"];
   }
 }
 

@@ -1,10 +1,13 @@
-import { useState, useEffect, useRef, useMemo } from "react";
+import { useState, useMemo } from "react";
 import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
-import { 
-  Send, Loader2, ArrowRight, ChevronLeft, ChevronRight, X,
-  Home as HomeIcon, Image, DollarSign, MapPin, Wifi, Car, Waves, 
-  TreePine, Shield, Star, Check, MessageCircle, ChevronDown,
+import { SiteHeader } from "@/components/SiteHeader";
+import { useAskAiChat } from "@/hooks/useAskAiChat";
+import { ChatPanel, ChatSheet, ChatDocViewer } from "@/components/AskAiChat";
+import {
+  ChevronLeft, ChevronRight,
+  MapPin, Wifi, Car, Waves,
+  TreePine, Shield, Star, Check, MessageCircle,
   ExternalLink, Navigation
 } from "lucide-react";
 
@@ -21,58 +24,6 @@ const InstagramIcon = ({ className }: { className?: string }) => (
     <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
   </svg>
 );
-import { Streamdown } from "streamdown";
-
-// Rich message renderer that handles images and links in chat
-const RichChatMessage = ({ content }: { content: string }) => {
-  // Split content by image markdown pattern
-  const parts = content.split(/(!\[.*?\]\(.*?\))/);
-  
-  return (
-    <div className="text-sm leading-relaxed space-y-2">
-      {parts.map((part, idx) => {
-        // Check if this part is an image
-        const imgMatch = part.match(/!\[(.*?)\]\((.*?)\)/);
-        if (imgMatch) {
-          return (
-            <img 
-              key={idx}
-              src={imgMatch[2]} 
-              alt={imgMatch[1]} 
-              className="rounded-lg w-full max-w-[280px] mt-1 mb-1" 
-              loading="lazy"
-            />
-          );
-        }
-        // Regular text with markdown - use Streamdown for links etc
-        if (part.trim()) {
-          return (
-            <div key={idx} className="prose prose-gray prose-sm max-w-none [&_a]:text-gray-900 [&_a]:underline [&_a]:underline-offset-2 [&_a]:font-medium [&_img]:rounded-lg [&_img]:max-w-full">
-              <Streamdown>{part}</Streamdown>
-            </div>
-          );
-        }
-        return null;
-      })}
-    </div>
-  );
-};
-import { DocumentViewer } from "@/components/DocumentViewer";
-
-interface Message {
-  id: string;
-  role: "user" | "assistant";
-  content: string;
-}
-
-const WELCOME_TEXT = "Hey, welcome to OMA Townhouse.\n\nAre you looking to invest in Kaba Kaba, Bali?";
-
-const QUICK_DOCS = [
-  { id: "layout", name: "Layouts", icon: HomeIcon },
-  { id: "renders", name: "Renders", icon: Image },
-  { id: "pricing", name: "Pricing", icon: DollarSign },
-  { id: "location", name: "Location", icon: MapPin },
-];
 
 const GALLERY_IMAGES = [
   { id: 1, alt: "OMA Townhouse Exterior", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene22.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene22_thumb.webp" },
@@ -172,154 +123,14 @@ const FAQ_ITEMS = [
 ];
 
 export default function Home() {
-  const [displayedText, setDisplayedText] = useState("");
-  const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const [messages, setMessages] = useState<Message[]>([]);
-  const [inputValue, setInputValue] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
-  const [showDocuments, setShowDocuments] = useState(false);
-  const [selectedDocId, setSelectedDocId] = useState<string | undefined>();
-  const [leadCollected, setLeadCollected] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [isChatOpen, setIsChatOpen] = useState(false);
-  const messagesEndRef = useRef<HTMLDivElement>(null);
-
-  const chatMutation = trpc.chat.send.useMutation();
+  const chat = useAskAiChat();
   const { data: lifestyleArticles } = trpc.lifestyle.list.useQuery();
   // Investor-focused posts surfaced in the Insights row (links to /blog/:slug).
   const insightArticles = useMemo(
     () => (lifestyleArticles ?? []).filter((a) => a.isInsight),
     [lifestyleArticles],
   );
-
-  // Typing animation effect
-  useEffect(() => {
-    if (displayedText.length < WELCOME_TEXT.length) {
-      const timeout = setTimeout(() => {
-        setDisplayedText(WELCOME_TEXT.slice(0, displayedText.length + 1));
-      }, 30);
-      return () => clearTimeout(timeout);
-    } else {
-      setIsTypingComplete(true);
-    }
-  }, [displayedText]);
-
-  // Auto-scroll to bottom when new messages arrive
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
-
-  // Prevent body scroll when chat is open on mobile
-  useEffect(() => {
-    if (isChatOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
-    return () => {
-      document.body.style.overflow = '';
-    };
-  }, [isChatOpen]);
-
-  const handleSendMessage = async () => {
-    if (!inputValue.trim() || isLoading) return;
-
-    const userMessage: Message = {
-      id: Date.now().toString(),
-      role: "user",
-      content: inputValue.trim(),
-    };
-
-    setMessages((prev) => [...prev, userMessage]);
-    setInputValue("");
-    setIsLoading(true);
-
-    try {
-      const response = await chatMutation.mutateAsync({
-        message: userMessage.content,
-        history: messages.map((m) => ({ role: m.role, content: m.content })),
-      });
-
-      const assistantMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        role: "assistant",
-        content: response.reply,
-      };
-
-      setMessages((prev) => [...prev, assistantMessage]);
-      
-      if (response.leadCollected) {
-        setLeadCollected(true);
-      }
-    } catch (error) {
-      console.error("Chat error:", error);
-      const errorMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        role: "assistant",
-        content: "I apologize, but I'm having trouble responding right now. Please try again.",
-      };
-      setMessages((prev) => [...prev, errorMessage]);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const handleKeyPress = (e: React.KeyboardEvent) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      handleSendMessage();
-    }
-  };
-
-  const openDocument = (docId: string) => {
-    setSelectedDocId(docId);
-    setShowDocuments(true);
-  };
-
-  const handleInterestClick = async (tierName: string, price: string) => {
-    // On mobile, open the chat sheet first
-    setIsChatOpen(true);
-
-    const interestMessage = `I'm interested in the ${tierName} option at ${price}. Can you help me with the next steps?`;
-
-    const userMessage: Message = {
-      id: Date.now().toString(),
-      role: "user",
-      content: interestMessage,
-    };
-
-    setMessages((prev) => [...prev, userMessage]);
-    setIsLoading(true);
-
-    try {
-      const response = await chatMutation.mutateAsync({
-        message: interestMessage,
-        history: messages.map((m) => ({ role: m.role, content: m.content })),
-      });
-
-      const assistantMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        role: "assistant",
-        content: response.reply,
-      };
-
-      setMessages((prev) => [...prev, assistantMessage]);
-
-      if (response.leadCollected) {
-        setLeadCollected(true);
-      }
-    } catch (error) {
-      console.error("Chat error:", error);
-      const errorMessage: Message = {
-        id: (Date.now() + 1).toString(),
-        role: "assistant",
-        content: "I apologize, but I'm having trouble responding right now. Please try again.",
-      };
-      setMessages((prev) => [...prev, errorMessage]);
-    } finally {
-      setIsLoading(false);
-    }
-  };
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % GALLERY_IMAGES.length);
@@ -329,88 +140,9 @@ export default function Home() {
     setCurrentImageIndex((prev) => (prev - 1 + GALLERY_IMAGES.length) % GALLERY_IMAGES.length);
   };
 
-  // Chat component for desktop sidebar
-  const DesktopChat = () => (
-    <div className="bg-white rounded-xl border border-gray-200 shadow-lg flex flex-col h-[520px]">
-      <div className="p-4 border-b border-gray-100">
-        <h3 className="font-semibold text-gray-900">Ask about OMA Townhouse</h3>
-        <p className="text-sm text-gray-500">AI-powered property assistant</p>
-      </div>
-
-      <div className="flex-1 overflow-y-auto chat-scroll p-4 space-y-3">
-        <div className="flex justify-start">
-          <div className="bg-gray-100 px-3 py-2 rounded-2xl rounded-tl-md max-w-[90%]">
-            <p className="text-gray-800 whitespace-pre-line text-sm leading-relaxed">
-              {displayedText}
-              {!isTypingComplete && <span className="typing-cursor ml-0.5 text-gray-400">|</span>}
-            </p>
-          </div>
-        </div>
-
-        {messages.map((message) => (
-          <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
-            <div className={`px-3 py-2 rounded-2xl max-w-[90%] ${
-              message.role === "user" ? "bg-gray-900 text-white rounded-tr-md" : "bg-gray-100 text-gray-800 rounded-tl-md"
-            }`}>
-              {message.role === "assistant" ? (
-                <RichChatMessage content={message.content} />
-              ) : (
-                <p className="text-sm leading-relaxed">{message.content}</p>
-              )}
-            </div>
-          </div>
-        ))}
-
-        {isLoading && (
-          <div className="flex justify-start">
-            <div className="bg-gray-100 px-3 py-2 rounded-2xl rounded-tl-md">
-              <div className="flex items-center gap-1">
-                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
-              </div>
-            </div>
-          </div>
-        )}
-
-        {leadCollected && (
-          <div className="flex justify-center">
-            <div className="bg-gray-900 text-white px-3 py-1.5 rounded-full text-xs">We'll be in touch soon ✓</div>
-          </div>
-        )}
-
-        <div ref={messagesEndRef} />
-      </div>
-
-      <div className="px-4 pb-2">
-        <div className="flex gap-1.5 overflow-x-auto pb-1">
-          {QUICK_DOCS.map((doc) => (
-            <button key={doc.id} onClick={() => openDocument(doc.id)}
-              className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 whitespace-nowrap text-xs font-medium transition-colors">
-              <doc.icon className="w-3 h-3" />
-              {doc.name}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      <div className="p-4 border-t border-gray-100">
-        <div className="flex gap-2">
-          <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} onKeyPress={handleKeyPress}
-            placeholder="Ask anything..." disabled={isLoading}
-            className="flex-1 bg-gray-100 rounded-full px-4 py-2.5 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900/10 text-sm transition-all" />
-          <button onClick={handleSendMessage} disabled={!inputValue.trim() || isLoading}
-            className="bg-gray-900 hover:bg-black text-white rounded-full w-10 h-10 flex items-center justify-center transition-all disabled:opacity-40 disabled:cursor-not-allowed">
-            <ArrowRight className="w-4 h-4" />
-          </button>
-        </div>
-        <p className="text-center text-gray-400 text-[10px] mt-2">AI-powered • Verify info with our team</p>
-      </div>
-    </div>
-  );
-
-  // Property content component (shared between mobile and desktop)
-  const PropertyContent = ({ isMobile = false }: { isMobile?: boolean }) => (
+  // Property content rendered via a helper function (NOT a component) so that
+  // page re-renders (e.g. while typing in the chat) never remount it.
+  const renderPropertyContent = (isMobile = false) => (
     <>
       {/* Title Section */}
       <div className={`${isMobile ? 'px-4 pt-4' : ''} pb-6 border-b border-gray-200`}>
@@ -564,7 +296,7 @@ export default function Home() {
               <span className="text-gray-500">$135,000</span>
             </div>
             <button
-              onClick={() => handleInterestClick('25-Year Leasehold', '$115,000')}
+              onClick={() => chat.sendInterest('25-Year Leasehold', '$115,000')}
               className="w-full bg-gray-900 hover:bg-black text-white py-2.5 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-4 h-4" />
@@ -589,7 +321,7 @@ export default function Home() {
               <span className="text-gray-500">$189,000</span>
             </div>
             <button
-              onClick={() => handleInterestClick('40-Year Leasehold', '$161,000')}
+              onClick={() => chat.sendInterest('40-Year Leasehold', '$161,000')}
               className="w-full bg-gray-900 hover:bg-black text-white py-2.5 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-4 h-4" />
@@ -614,7 +346,7 @@ export default function Home() {
               <span className="text-gray-500">$310,000</span>
             </div>
             <button
-              onClick={() => handleInterestClick('Freehold (PT PMA)', '$265,000')}
+              onClick={() => chat.sendInterest('Freehold (PT PMA)', '$265,000')}
               className="w-full bg-gray-900 hover:bg-black text-white py-2.5 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
             >
               <MessageCircle className="w-4 h-4" />
@@ -801,7 +533,7 @@ export default function Home() {
         </div>
 
         {/* Property Content */}
-        <PropertyContent isMobile />
+        {renderPropertyContent(true)}
 
         {/* Footer spacer */}
         <div className="h-8" />
@@ -813,7 +545,7 @@ export default function Home() {
             <p className="font-semibold text-gray-900">Contact for pricing</p>
           </div>
           <button
-            onClick={() => setIsChatOpen(true)}
+            onClick={() => chat.openMobile()}
             className="bg-gray-900 hover:bg-black text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 transition-colors"
           >
             <MessageCircle className="w-4 h-4" />
@@ -821,131 +553,14 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Bottom Sheet Chat */}
-        {isChatOpen && (
-          <>
-            {/* Backdrop */}
-            <div 
-              className="fixed inset-0 bg-black/50 z-50 transition-opacity"
-              onClick={() => setIsChatOpen(false)}
-            />
-            
-            {/* Sheet */}
-            <div className="fixed inset-x-0 bottom-0 z-50 bg-white rounded-t-2xl max-h-[90vh] flex flex-col animate-in slide-in-from-bottom duration-300">
-              {/* Handle */}
-              <div className="flex justify-center py-2">
-                <div className="w-10 h-1 bg-gray-300 rounded-full" />
-              </div>
-              
-              {/* Header */}
-              <div className="flex items-center justify-between px-4 pb-3 border-b border-gray-100">
-                <div>
-                  <h3 className="font-semibold text-gray-900">Ask about OMA Townhouse</h3>
-                  <p className="text-xs text-gray-500">AI-powered property assistant</p>
-                </div>
-                <button 
-                  onClick={() => setIsChatOpen(false)}
-                  className="w-8 h-8 rounded-full bg-gray-100 flex items-center justify-center"
-                >
-                  <X className="w-4 h-4" />
-                </button>
-              </div>
-
-              {/* Messages */}
-              <div className="flex-1 overflow-y-auto chat-scroll p-4 space-y-3 min-h-[300px] max-h-[50vh]">
-                <div className="flex justify-start">
-                  <div className="bg-gray-100 px-3 py-2 rounded-2xl rounded-tl-md max-w-[85%]">
-                    <p className="text-gray-800 whitespace-pre-line text-sm leading-relaxed">
-                      {displayedText}
-                      {!isTypingComplete && <span className="typing-cursor ml-0.5 text-gray-400">|</span>}
-                    </p>
-                  </div>
-                </div>
-
-                {messages.map((message) => (
-                  <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
-                    <div className={`px-3 py-2 rounded-2xl max-w-[85%] ${
-                      message.role === "user" ? "bg-gray-900 text-white rounded-tr-md" : "bg-gray-100 text-gray-800 rounded-tl-md"
-                    }`}>
-                      {message.role === "assistant" ? (
-                        <RichChatMessage content={message.content} />
-                      ) : (
-                        <p className="text-sm leading-relaxed">{message.content}</p>
-                      )}
-                    </div>
-                  </div>
-                ))}
-
-                {isLoading && (
-                  <div className="flex justify-start">
-                    <div className="bg-gray-100 px-3 py-2 rounded-2xl rounded-tl-md">
-                      <div className="flex items-center gap-1">
-                        <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                        <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                        <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
-                      </div>
-                    </div>
-                  </div>
-                )}
-
-                {leadCollected && (
-                  <div className="flex justify-center">
-                    <div className="bg-gray-900 text-white px-3 py-1.5 rounded-full text-xs">We'll be in touch soon ✓</div>
-                  </div>
-                )}
-
-                <div ref={messagesEndRef} />
-              </div>
-
-              {/* Quick docs */}
-              <div className="px-4 pb-2">
-                <div className="flex gap-1.5 overflow-x-auto pb-1">
-                  {QUICK_DOCS.map((doc) => (
-                    <button key={doc.id} onClick={() => openDocument(doc.id)}
-                      className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 whitespace-nowrap text-xs font-medium transition-colors">
-                      <doc.icon className="w-3 h-3" />
-                      {doc.name}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Input */}
-              <div className="p-4 border-t border-gray-100 pb-8">
-                <div className="flex gap-2">
-                  <input type="text" value={inputValue} onChange={(e) => setInputValue(e.target.value)} onKeyPress={handleKeyPress}
-                    placeholder="Ask anything about OMA..." disabled={isLoading}
-                    className="flex-1 bg-gray-100 rounded-full px-4 py-3 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900/10 text-sm transition-all" />
-                  <button onClick={handleSendMessage} disabled={!inputValue.trim() || isLoading}
-                    className="bg-gray-900 hover:bg-black text-white rounded-full w-12 h-12 flex items-center justify-center transition-all disabled:opacity-40 disabled:cursor-not-allowed">
-                    <ArrowRight className="w-5 h-5" />
-                  </button>
-                </div>
-                <p className="text-center text-gray-400 text-[10px] mt-2">AI-powered • Verify info with our team</p>
-              </div>
-            </div>
-          </>
-        )}
+        {/* Mobile chat sheet (opened by the Ask AI bar above) */}
+        <ChatSheet chat={chat} />
       </div>
 
       {/* Desktop View - Airbnb Style */}
       <div className="hidden lg:block min-h-screen bg-white">
         {/* Header */}
-        <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
-          <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-            <h1 className="text-xl font-semibold text-gray-900">OMA Townhouse</h1>
-            <div className="flex items-center gap-4">
-            <a href="https://wa.me/" data-external="true" className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900">
-              <WhatsAppIcon className="w-4 h-4" />
-              WhatsApp
-            </a>
-            <a href="https://instagram.com/omatownhouse" data-external="true" className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900">
-              <InstagramIcon className="w-4 h-4" />
-              Instagram
-            </a>
-            </div>
-          </div>
-        </header>
+        <SiteHeader />
 
         {/* Photo Gallery */}
         <section className="max-w-7xl mx-auto px-6 py-6">
@@ -975,13 +590,13 @@ export default function Home() {
           <div className="flex gap-12">
             {/* Left Column - Property Content */}
             <div className="flex-1 max-w-2xl">
-              <PropertyContent />
+              {renderPropertyContent(false)}
             </div>
 
             {/* Right Column - Sticky Chat */}
             <div className="w-[380px] flex-shrink-0">
               <div className="sticky top-24">
-                <DesktopChat />
+                <ChatPanel chat={chat} />
               </div>
             </div>
           </div>
@@ -995,15 +610,8 @@ export default function Home() {
         </footer>
       </div>
 
-      {/* Document Viewer Modal */}
-      <DocumentViewer
-        isOpen={showDocuments}
-        onClose={() => {
-          setShowDocuments(false);
-          setSelectedDocId(undefined);
-        }}
-        documentId={selectedDocId}
-      />
+      {/* Document Viewer Modal (driven by chat state) */}
+      <ChatDocViewer chat={chat} />
     </>
   );
 }
