@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef, useMemo } from "react";
+import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { 
   Send, Loader2, ArrowRight, ChevronLeft, ChevronRight, X,
@@ -185,6 +186,11 @@ export default function Home() {
 
   const chatMutation = trpc.chat.send.useMutation();
   const { data: lifestyleArticles } = trpc.lifestyle.list.useQuery();
+  // Investor-focused posts surfaced in the Insights row (links to /blog/:slug).
+  const insightArticles = useMemo(
+    () => (lifestyleArticles ?? []).filter((a) => a.isInsight),
+    [lifestyleArticles],
+  );
 
   // Typing animation effect
   useEffect(() => {
@@ -717,6 +723,42 @@ export default function Home() {
             ))}
           </div>
         </div>
+
+        {/* Insights / Blog - investor-focused posts in a horizontal scroll row,
+            each linking to its prerendered /blog/:slug page. Sits directly
+            below the FAQ; the lifestyle cards above are unchanged. */}
+        {insightArticles.length > 0 && (
+          <div className="mt-10 pt-8 border-t border-gray-200">
+            <h3 className="text-lg font-semibold text-gray-900 mb-2">Insights</h3>
+            <p className="text-gray-600 text-sm mb-5">
+              Guides for foreign investors looking at Bali off-plan property.
+            </p>
+            <div className="flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x">
+              {insightArticles.map((article) => (
+                <Link
+                  key={article.id}
+                  href={`/blog/${article.slug}`}
+                  className="group shrink-0 w-64 snap-start"
+                >
+                  <div className="aspect-video rounded-xl overflow-hidden mb-3 bg-gray-100">
+                    <img
+                      src={article.heroImage || article.imageUrl || BLOG_IMAGES[0]}
+                      alt={article.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                  <h4 className="font-medium text-gray-900 text-sm leading-snug group-hover:underline underline-offset-2 decoration-gray-300">
+                    {article.title}
+                  </h4>
+                  {article.readingTime ? (
+                    <p className="text-gray-400 text-xs mt-1">{article.readingTime} min read</p>
+                  ) : null}
+                </Link>
+              ))}
+            </div>
+          </div>
+        )}
       </div>
     </>
   );

@@ -1,25 +1,69 @@
 {
-  "domain": "Bali off-plan property",
+  "domain": "Bali off-plan property for foreign investors",
   "targetModule": "server/content/lifestyleArticles.ts",
-  "keywordThemes": ["off-plan", "location", "investment", "lifestyle"],
-  "notes": "ATP = Answer The Public question wheel (who/what/when/where/why/how/can/are + for/with/near/vs). Lower priority number is published first. Status: pending | drafting | review | published | blocked.",
+  "audience": "English-speaking foreign investors, primarily US-based and Dubai / UAE-based, evaluating Bali off-plan property as an investment or second home. Front-load the public answer to the exact question they would search, and compare Bali to alternatives they know (US markets, Dubai) where it helps.",
+  "keywordThemes": ["off-plan", "foreign-ownership", "tax", "investment", "location", "lifestyle"],
+  "notes": "ATP = Answer The Public question wheel (who/what/when/where/why/how/can/are + for/with/near/vs). Lower priority number is published first. Status: pending | drafting | review | published | blocked. Investor-facing topics should set isInsight=true on the article. Foreign-ownership and tax topics are top of funnel for this audience, so they lead.",
   "queue": [
     {
-      "id": "offplan-what-is",
+      "id": "tax-foreign-owners-bali",
       "status": "pending",
       "priority": 1,
-      "theme": "off-plan",
+      "theme": "tax",
       "atpType": "what",
-      "primaryQuestion": "What is off-plan property in Bali?",
-      "targetKeywords": ["Bali off-plan property", "off-plan villa Bali", "buying off-plan Bali"],
+      "primaryQuestion": "What tax do foreign property owners pay on a Bali rental, and how do they get the income out?",
+      "targetKeywords": ["Bali property tax foreigners", "Bali rental income tax", "repatriating rental income Indonesia"],
       "relatedQuestions": [
-        "How does off-plan payment work in Bali?",
-        "Is buying off-plan property in Bali safe?",
-        "Off-plan vs completed property in Bali, which is better?"
+        "How is rental income taxed for foreigners in Indonesia?",
+        "Can a US or UAE owner repatriate Bali rental income?",
+        "Is there annual property tax (PBB) in Bali?"
       ],
-      "proposedSlug": "what-is-off-plan-property-bali",
+      "proposedSlug": "tax-for-foreign-property-owners-bali",
       "proposedTitle": "",
       "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "buy-bali-remotely",
+      "status": "pending",
+      "priority": 2,
+      "theme": "foreign-ownership",
+      "atpType": "how",
+      "primaryQuestion": "How do you buy Bali off-plan property remotely from the US or Dubai?",
+      "targetKeywords": ["buy Bali property remotely", "buy off-plan Bali from abroad", "buy property Bali from USA"],
+      "relatedQuestions": [
+        "Do you need to fly to Bali to buy off-plan?",
+        "How do due diligence and notary (PPAT) steps work remotely?",
+        "How are off-plan payments transferred internationally?"
+      ],
+      "proposedSlug": "buy-bali-off-plan-property-remotely",
+      "proposedTitle": "",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "good-investment-2026",
+      "status": "pending",
+      "priority": 3,
+      "theme": "investment",
+      "atpType": "are",
+      "primaryQuestion": "Is Bali off-plan property a good investment for foreigners in 2026?",
+      "targetKeywords": ["Bali property investment 2026", "is Bali a good investment", "Bali off-plan returns"],
+      "relatedQuestions": [
+        "What are the risks for a foreign off-plan buyer in Bali?",
+        "How do Bali yields compare to US rental markets?",
+        "What protects an off-plan buyer if the build slips?"
+      ],
+      "proposedSlug": "is-bali-off-plan-a-good-investment-2026",
+      "proposedTitle": "",
+      "category": "investment",
+      "isInsight": true,
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
@@ -27,19 +71,41 @@
     {
       "id": "invest-freehold-vs-leasehold",
       "status": "pending",
-      "priority": 2,
-      "theme": "investment",
+      "priority": 4,
+      "theme": "foreign-ownership",
       "atpType": "vs",
-      "primaryQuestion": "Freehold vs leasehold in Bali, what is the difference?",
+      "primaryQuestion": "Freehold vs leasehold in Bali for a foreign buyer, what is the difference?",
       "targetKeywords": ["freehold vs leasehold Bali", "PT PMA freehold Bali", "leasehold Bali foreigners"],
       "relatedQuestions": [
-        "Can foreigners own freehold property in Bali?",
-        "What is a PT PMA and how does it own property?",
-        "How long are Bali leaseholds and can they be extended?"
+        "Which is better for a US or UAE buyer, leasehold or PT PMA?",
+        "How long are Bali leaseholds and can they be extended?",
+        "What happens to a leasehold at the end of the term?"
       ],
       "proposedSlug": "freehold-vs-leasehold-bali",
       "proposedTitle": "",
       "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "offplan-what-is",
+      "status": "pending",
+      "priority": 5,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is off-plan property in Bali, and how does it work for a foreign buyer?",
+      "targetKeywords": ["Bali off-plan property", "off-plan villa Bali", "buying off-plan Bali"],
+      "relatedQuestions": [
+        "How does off-plan payment work in Bali?",
+        "Is buying off-plan property in Bali safe for a foreigner?",
+        "Off-plan vs completed property in Bali, which is better?"
+      ],
+      "proposedSlug": "what-is-off-plan-property-bali",
+      "proposedTitle": "",
+      "category": "investment",
+      "isInsight": true,
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
@@ -47,19 +113,20 @@
     {
       "id": "invest-rental-yield-tabanan",
       "status": "pending",
-      "priority": 3,
+      "priority": 6,
       "theme": "investment",
       "atpType": "how",
-      "primaryQuestion": "What rental yield can you expect in Tabanan, Bali?",
+      "primaryQuestion": "What rental yield can a foreign owner expect in Tabanan, Bali?",
       "targetKeywords": ["Bali rental yield", "Tabanan property ROI", "capital appreciation Bali"],
       "relatedQuestions": [
-        "Are Bali villas a good investment in 2026?",
+        "How do Tabanan yields compare to Canggu?",
         "What drives capital appreciation near Canggu and Tabanan?",
         "How is rental managed for an off-plan villa?"
       ],
       "proposedSlug": "rental-yield-tabanan-bali",
       "proposedTitle": "",
       "category": "investment",
+      "isInsight": true,
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
@@ -67,7 +134,7 @@
     {
       "id": "location-where-is-kaba-kaba",
       "status": "pending",
-      "priority": 4,
+      "priority": 7,
       "theme": "location",
       "atpType": "where",
       "primaryQuestion": "Where is Kaba Kaba and how far is it from Canggu?",
@@ -79,7 +146,8 @@
       ],
       "proposedSlug": "where-is-kaba-kaba-bali",
       "proposedTitle": "",
-      "category": "lifestyle",
+      "category": "location",
+      "isInsight": false,
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
@@ -87,7 +155,7 @@
     {
       "id": "location-what-is-nuanu",
       "status": "pending",
-      "priority": 5,
+      "priority": 8,
       "theme": "location",
       "atpType": "what",
       "primaryQuestion": "What is Nuanu Creative City and why does it matter for nearby property?",
@@ -100,6 +168,7 @@
       "proposedSlug": "what-is-nuanu-creative-city",
       "proposedTitle": "",
       "category": "development",
+      "isInsight": true,
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
@@ -107,7 +176,7 @@
     {
       "id": "lifestyle-relocate-with-family",
       "status": "pending",
-      "priority": 6,
+      "priority": 9,
       "theme": "lifestyle",
       "atpType": "can",
       "primaryQuestion": "Can you relocate to Bali with a family near Kaba Kaba?",
@@ -120,6 +189,7 @@
       "proposedSlug": "relocating-to-bali-with-family-kaba-kaba",
       "proposedTitle": "",
       "category": "family",
+      "isInsight": false,
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
@@ -127,7 +197,7 @@
     {
       "id": "offplan-why-buy",
       "status": "pending",
-      "priority": 7,
+      "priority": 10,
       "theme": "off-plan",
       "atpType": "why",
       "primaryQuestion": "Why buy off-plan instead of a finished villa in Bali?",
@@ -140,9 +210,52 @@
       "proposedSlug": "why-buy-off-plan-bali",
       "proposedTitle": "",
       "category": "investment",
+      "isInsight": true,
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
+    },
+    {
+      "id": "foreign-ownership-can-buy",
+      "status": "published",
+      "priority": 0,
+      "theme": "foreign-ownership",
+      "atpType": "can",
+      "primaryQuestion": "Can US and Dubai investors buy property in Bali?",
+      "targetKeywords": ["can foreigners buy property Bali", "can a US citizen buy property in Bali", "PT PMA Hak Pakai leasehold"],
+      "relatedQuestions": [
+        "Can a US citizen buy property in Bali?",
+        "Can foreigners own freehold land in Bali?",
+        "Do I need to live in Bali to buy?"
+      ],
+      "proposedSlug": "foreigners-buy-property-bali",
+      "proposedTitle": "Can US and Dubai Investors Buy Property in Bali?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-02-03",
+      "prUrl": "seeded with the blog feature"
+    },
+    {
+      "id": "bali-vs-dubai",
+      "status": "published",
+      "priority": 0,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Dubai property for foreign investors, how do they compare?",
+      "targetKeywords": ["Bali vs Dubai property", "Bali or Dubai investment", "Dubai freehold vs Bali leasehold"],
+      "relatedQuestions": [
+        "Is Bali or Dubai better for property investment?",
+        "Can foreigners own freehold in Dubai but not Bali?",
+        "Are Bali rental yields higher than in Dubai?"
+      ],
+      "proposedSlug": "bali-vs-dubai-property",
+      "proposedTitle": "Bali vs Dubai Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-02-17",
+      "prUrl": "seeded with the blog feature"
     }
   ]
 }

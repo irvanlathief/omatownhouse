@@ -40,3 +40,12 @@ used as a source for a fact.
 If you cannot find a Tier 1 or Tier 2 source for a numeric or legal claim, do
 not publish that claim. Choose a different angle or mark the topic `blocked` in
 topics.json with a short reason.
+
+## Citing on the page
+
+Put the sources behind your facts in the article `citations` array (label plus
+URL). They render as a "Sources" list on the `/blog/<slug>` page. Prefer the
+single highest-authority, highest-relevance source per claim rather than a long
+link dump. For the US / UAE investor audience, the foreign-ownership and tax
+claims (Hak Pakai, PT PMA, leasehold terms, rental tax, Dubai freehold) are the
+ones that most need a Tier 1 or Tier 2 citation, so lead with those.
