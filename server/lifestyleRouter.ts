@@ -36,26 +36,58 @@ function toClientArticle(a: LifestyleArticleSeed, id: number) {
   };
 }
 
-// Seed the database with the static articles if the table is empty.
+// Serialise an article seed into the content JSON stored in MySQL. Includes the
+// blog/insights fields so the DB read path returns the same shape as the static
+// path (otherwise isInsight, faq, heroImage etc. silently default to false/null
+// and the homepage Insights row goes empty).
+function seedContentJson(article: LifestyleArticleSeed) {
+  return JSON.stringify({
+    body: article.body,
+    venues: article.venues,
+    metaDescription: article.metaDescription,
+    faq: article.faq,
+    isInsight: article.isInsight,
+    heroImage: article.heroImage,
+    gallery: article.gallery,
+    citations: article.citations,
+    showMap: article.showMap,
+    mapCoords: article.mapCoords,
+    layoutVariant: article.layoutVariant,
+    readingTime: article.readingTime,
+    author: article.author,
+    publishedAt: article.publishedAt,
+    updatedAt: article.updatedAt,
+  });
+}
+
+// Seed the database with the static articles. Inserts any article whose slug is
+// not already in the table, so newly added LIFESTYLE_ARTICLES entries surface on
+// the next cold start. (The earlier version only seeded when the table was
+// empty, which left new articles permanently absent from production.)
 async function seedArticles() {
   const db = await getDb();
   if (!db) return;
 
-  const existing = await db.select().from(lifestyleArticles).limit(1);
-  if (existing.length > 0) return; // Already seeded
+  const existing = await db
+    .select({ slug: lifestyleArticles.slug })
+    .from(lifestyleArticles);
+  const existingSlugs = new Set(existing.map((row) => row.slug));
 
-  for (const article of LIFESTYLE_ARTICLES) {
+  const toInsert = LIFESTYLE_ARTICLES.filter((a) => !existingSlugs.has(a.slug));
+  if (toInsert.length === 0) return;
+
+  for (const article of toInsert) {
     await db.insert(lifestyleArticles).values({
       slug: article.slug,
       title: article.title,
-      content: JSON.stringify({ body: article.body, venues: article.venues }),
+      content: seedContentJson(article),
       category: article.category,
       imageUrl: article.imageUrl || null,
       sortOrder: article.sortOrder,
       isActive: 1,
     });
   }
-  console.log("[Lifestyle] Seeded", LIFESTYLE_ARTICLES.length, "articles");
+  console.log("[Lifestyle] Seeded", toInsert.length, "new articles");
 }
 
 // Seed on module load

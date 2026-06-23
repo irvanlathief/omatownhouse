@@ -460,7 +460,7 @@ export default function Home() {
             each linking to its prerendered /blog/:slug page. Sits directly
             below the FAQ; the lifestyle cards above are unchanged. */}
         {insightArticles.length > 0 && (
-          <div className="mt-10 pt-8 border-t border-gray-200">
+          <div className="mt-10 pt-8">
             <h3 className="text-lg font-semibold text-gray-900 mb-2">Insights</h3>
             <p className="text-gray-600 text-sm mb-5">
               Guides for foreign investors looking at Bali off-plan property.
