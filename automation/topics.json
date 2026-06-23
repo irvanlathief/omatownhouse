@@ -7,7 +7,7 @@
   "queue": [
     {
       "id": "tax-foreign-owners-bali",
-      "status": "drafting",
+      "status": "published",
       "priority": 1,
       "theme": "tax",
       "atpType": "what",
@@ -23,12 +23,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-06-22",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/2"
     },
     {
       "id": "buy-bali-remotely",
-      "status": "pending",
+      "status": "drafting",
       "priority": 2,
       "theme": "foreign-ownership",
       "atpType": "how",
@@ -40,7 +40,7 @@
         "How are off-plan payments transferred internationally?"
       ],
       "proposedSlug": "buy-bali-off-plan-property-remotely",
-      "proposedTitle": "",
+      "proposedTitle": "How to Buy Bali Off-Plan Property Remotely",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
