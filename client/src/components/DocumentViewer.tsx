@@ -48,15 +48,20 @@ const DOCUMENTS: Document[] = [
     description: "Photorealistic views of the townhouse",
     icon: ImageIcon,
     type: "render",
+    // Captions and ordering match the GALLERY_IMAGES list in client/src/pages/Home.tsx
+    // so the chat shows the same scene labels the homepage gallery uses.
     pages: [
-      { kind: "image", image: `${RENDER_CDN}/Scene22.webp`, caption: "Exterior at dusk", alt: "OMA Townhouse exterior render" },
-      { kind: "image", image: `${RENDER_CDN}/Scene23.webp`, caption: "Living room with rice field view", alt: "Living room render" },
-      { kind: "image", image: `${RENDER_CDN}/Scene26.webp`, caption: "Pool deck and outdoor lounge", alt: "Pool area render" },
-      { kind: "image", image: `${RENDER_CDN}/Scene32.webp`, caption: "Master bedroom suite", alt: "Master bedroom render" },
-      { kind: "image", image: `${RENDER_CDN}/Scene33.webp`, caption: "Kitchen and dining", alt: "Kitchen render" },
-      { kind: "image", image: `${RENDER_CDN}/Scene41.webp`, caption: "Terrace over the rice fields", alt: "Terrace render" },
-      { kind: "image", image: `${RENDER_CDN}/Scene52.webp`, caption: "Bathroom suite", alt: "Bathroom render" },
-      { kind: "image", image: `${RENDER_CDN}/Scene77.webp`, caption: "Aerial twilight view of the plot", alt: "Aerial render" },
+      { kind: "image", image: `${RENDER_CDN}/Scene22.webp`, caption: "Exterior", alt: "OMA Townhouse exterior" },
+      { kind: "image", image: `${RENDER_CDN}/Scene23.webp`, caption: "Living room", alt: "Living room interior" },
+      { kind: "image", image: `${RENDER_CDN}/Scene26.webp`, caption: "Pool area", alt: "Pool area" },
+      { kind: "image", image: `${RENDER_CDN}/Scene32.webp`, caption: "Bedroom", alt: "Bedroom view" },
+      { kind: "image", image: `${RENDER_CDN}/Scene33.webp`, caption: "Kitchen", alt: "Kitchen area" },
+      { kind: "image", image: `${RENDER_CDN}/Scene39.webp`, caption: "Outdoor space", alt: "Outdoor space" },
+      { kind: "image", image: `${RENDER_CDN}/Scene41.webp`, caption: "Terrace", alt: "Terrace view" },
+      { kind: "image", image: `${RENDER_CDN}/Scene51.webp`, caption: "Bathroom", alt: "Bathroom" },
+      { kind: "image", image: `${RENDER_CDN}/Scene52.webp`, caption: "Garden", alt: "Garden view" },
+      { kind: "image", image: `${RENDER_CDN}/Scene76.webp`, caption: "Night view", alt: "Night view" },
+      { kind: "image", image: `${RENDER_CDN}/Scene77.webp`, caption: "Aerial view", alt: "Aerial view" },
     ],
   },
   {

@@ -18,8 +18,6 @@ export const WELCOME_TEXT =
   "Hey, welcome to OMA Townhouse.\n\nAre you looking to invest in Kaba Kaba, Bali?";
 
 export function useAskAiChat() {
-  const [displayedText, setDisplayedText] = useState("");
-  const [isTypingComplete, setIsTypingComplete] = useState(false);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
@@ -31,17 +29,11 @@ export function useAskAiChat() {
 
   const chatMutation = trpc.chat.send.useMutation();
 
-  // Typing animation for the welcome message.
-  useEffect(() => {
-    if (displayedText.length < WELCOME_TEXT.length) {
-      const timeout = setTimeout(() => {
-        setDisplayedText(WELCOME_TEXT.slice(0, displayedText.length + 1));
-      }, 30);
-      return () => clearTimeout(timeout);
-    } else {
-      setIsTypingComplete(true);
-    }
-  }, [displayedText]);
+  // The welcome message is shown statically. The earlier typewriter animation
+  // pulled attention on landing; the static text keeps the chat looking ready
+  // without grabbing focus.
+  const displayedText = WELCOME_TEXT;
+  const isTypingComplete = true;
 
   // Auto-scroll to the latest message.
   useEffect(() => {
