@@ -28,7 +28,7 @@
     },
     {
       "id": "buy-bali-remotely",
-      "status": "drafting",
+      "status": "published",
       "priority": 2,
       "theme": "foreign-ownership",
       "atpType": "how",
@@ -44,8 +44,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-06-23",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/5"
     },
     {
       "id": "good-investment-2026",
