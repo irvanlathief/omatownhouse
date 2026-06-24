@@ -1,4 +1,5 @@
-import { Home as HomeIcon, Image, DollarSign, MapPin, HelpCircle, ArrowRight, X } from "lucide-react";
+import { Home as HomeIcon, Image, DollarSign, MapPin, HelpCircle, ArrowRight, X, type LucideIcon } from "lucide-react";
+import type { ReactElement } from "react";
 import { Streamdown } from "streamdown";
 import { DocumentViewer } from "@/components/DocumentViewer";
 import type { AskAiChat } from "@/hooks/useAskAiChat";
@@ -59,38 +60,141 @@ function StarterPrompts({ chat }: { chat: AskAiChat }) {
   );
 }
 
-// Renders an assistant message, handling inline image markdown and links.
-function RichChatMessage({ content }: { content: string }) {
-  const parts = content.split(/(!\[.*?\]\(.*?\))/);
+// Pricing tiers shown by the ```pricing``` block. Names + prices match the
+// homepage pricing CTAs so chat.sendInterest fires a consistent lead message.
+const PRICING_TIERS = [
+  { name: "25-Year Leasehold", price: "$115,000" },
+  { name: "40-Year Leasehold", price: "$161,000" },
+  { name: "Freehold (PT PMA)", price: "$265,000" },
+];
+
+// Labels/icons for the ```docs``` block. Ids must match DocumentViewer + the
+// system prompt's allowed ids.
+const DOC_LABELS: Record<string, { name: string; icon: LucideIcon }> = {
+  layout: { name: "Floor plans", icon: HomeIcon },
+  renders: { name: "3D renders", icon: Image },
+  pricing: { name: "Price list", icon: DollarSign },
+  location: { name: "Location map", icon: MapPin },
+};
+
+// Tappable follow-up questions. Clicking sends the chip text as the next message.
+function ChipRow({ items, chat }: { items: string[]; chat: AskAiChat }) {
   return (
-    <div className="text-sm leading-relaxed space-y-2">
-      {parts.map((part, idx) => {
-        const imgMatch = part.match(/!\[(.*?)\]\((.*?)\)/);
-        if (imgMatch) {
-          return (
-            <img
-              key={idx}
-              src={imgMatch[2]}
-              alt={imgMatch[1]}
-              className="rounded-lg w-full max-w-[280px] mt-1 mb-1"
-              loading="lazy"
-            />
-          );
-        }
-        if (part.trim()) {
-          return (
-            <div
-              key={idx}
-              className="prose prose-gray prose-sm max-w-none [&_a]:text-gray-900 [&_a]:underline [&_a]:underline-offset-2 [&_a]:font-medium [&_img]:rounded-lg [&_img]:max-w-full"
-            >
-              <Streamdown>{part}</Streamdown>
-            </div>
-          );
-        }
-        return null;
+    <div className="flex flex-wrap gap-1.5 pt-0.5">
+      {items.slice(0, 5).map((item, i) => (
+        <button
+          key={i}
+          onClick={() => chat.askQuestion(item)}
+          disabled={chat.isLoading}
+          className="px-3 py-1.5 rounded-full bg-white border border-gray-200 hover:border-gray-400 hover:bg-gray-50 text-gray-700 text-xs font-medium transition-colors disabled:opacity-50"
+        >
+          {item}
+        </button>
+      ))}
+    </div>
+  );
+}
+
+// Buttons that open the document viewer inline (floor plans, renders, etc).
+function DocButtons({ ids, chat }: { ids: string[]; chat: AskAiChat }) {
+  const valid = ids.filter((id) => DOC_LABELS[id]);
+  if (valid.length === 0) return null;
+  return (
+    <div className="flex flex-wrap gap-1.5 pt-0.5">
+      {valid.map((id) => {
+        const Icon = DOC_LABELS[id].icon;
+        return (
+          <button
+            key={id}
+            onClick={() => chat.openDocument(id)}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gray-900 text-white hover:bg-black text-xs font-medium transition-colors"
+          >
+            <Icon className="w-3 h-3" />
+            {DOC_LABELS[id].name}
+          </button>
+        );
       })}
     </div>
   );
+}
+
+// Pricing tiers as cards, each with its own "I'm interested" lead CTA.
+function PricingCards({ chat }: { chat: AskAiChat }) {
+  return (
+    <div className="flex flex-col gap-1.5 pt-0.5">
+      {PRICING_TIERS.map((tier) => (
+        <div
+          key={tier.name}
+          className="flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-white border border-gray-200"
+        >
+          <div>
+            <div className="text-sm font-medium text-gray-900">{tier.name}</div>
+            <div className="text-xs text-gray-500">from {tier.price}</div>
+          </div>
+          <button
+            onClick={() => chat.sendInterest(tier.name, tier.price)}
+            disabled={chat.isLoading}
+            className="px-3 py-1.5 rounded-full bg-gray-900 text-white hover:bg-black text-xs font-medium whitespace-nowrap transition-colors disabled:opacity-50"
+          >
+            I'm interested
+          </button>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function TextBlock({ text }: { text: string }) {
+  return (
+    <div className="prose prose-gray prose-sm max-w-none [&_a]:text-gray-900 [&_a]:underline [&_a]:underline-offset-2 [&_a]:font-medium [&_img]:rounded-lg [&_img]:max-w-full">
+      <Streamdown>{text}</Streamdown>
+    </div>
+  );
+}
+
+// Renders an assistant message: plain text/markdown plus inline interactive
+// blocks (chips, pricing cards, doc buttons) and image markdown, in order.
+function RichChatMessage({ content, chat }: { content: string; chat: AskAiChat }) {
+  const re =
+    /```chips\s*([\s\S]*?)```|```docs\s*([\s\S]*?)```|```pricing[^\n]*\n?```|(!\[.*?\]\(.*?\))/g;
+  const nodes: ReactElement[] = [];
+  let last = 0;
+  let key = 0;
+  let m: RegExpExecArray | null;
+
+  while ((m = re.exec(content)) !== null) {
+    const before = content.slice(last, m.index);
+    if (before.trim()) nodes.push(<TextBlock key={key++} text={before} />);
+
+    if (m[1] !== undefined) {
+      const items = m[1].split(/[|\n]/).map((s) => s.trim()).filter(Boolean);
+      if (items.length) nodes.push(<ChipRow key={key++} items={items} chat={chat} />);
+    } else if (m[2] !== undefined) {
+      const ids = m[2].split(/[|,\n]/).map((s) => s.trim().toLowerCase()).filter(Boolean);
+      nodes.push(<DocButtons key={key++} ids={ids} chat={chat} />);
+    } else if (m[3]) {
+      const img = m[3].match(/!\[(.*?)\]\((.*?)\)/);
+      if (img) {
+        nodes.push(
+          <img
+            key={key++}
+            src={img[2]}
+            alt={img[1]}
+            className="rounded-lg w-full max-w-[280px] mt-1 mb-1"
+            loading="lazy"
+          />
+        );
+      }
+    } else {
+      nodes.push(<PricingCards key={key++} chat={chat} />);
+    }
+    last = re.lastIndex;
+  }
+
+  const tail = content.slice(last);
+  if (tail.trim()) nodes.push(<TextBlock key={key++} text={tail} />);
+
+  return <div className="text-sm leading-relaxed space-y-2">{nodes}</div>;
 }
 
 function MessageList({ chat, maxWidth }: { chat: AskAiChat; maxWidth: string }) {
@@ -117,7 +221,7 @@ function MessageList({ chat, maxWidth }: { chat: AskAiChat; maxWidth: string }) 
             }`}
           >
             {message.role === "assistant" ? (
-              <RichChatMessage content={message.content} />
+              <RichChatMessage content={message.content} chat={chat} />
             ) : (
               <p className="text-sm leading-relaxed">{message.content}</p>
             )}
