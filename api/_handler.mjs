@@ -66,7 +66,12 @@ var ENV = {
   ownerOpenId: process.env.OWNER_OPEN_ID ?? "",
   isProduction: process.env.NODE_ENV === "production",
   forgeApiUrl: process.env.BUILT_IN_FORGE_API_URL ?? "",
-  forgeApiKey: process.env.BUILT_IN_FORGE_API_KEY ?? ""
+  forgeApiKey: process.env.BUILT_IN_FORGE_API_KEY ?? "",
+  // Gemini (Google) is the chat LLM provider. Set GEMINI_API_KEY in the
+  // deployment environment. Optional overrides: GEMINI_BASE_URL, GEMINI_MODEL.
+  geminiApiKey: process.env.GEMINI_API_KEY ?? process.env.GOOGLE_API_KEY ?? "",
+  geminiApiUrl: process.env.GEMINI_BASE_URL ?? "",
+  geminiModel: process.env.GEMINI_MODEL ?? ""
 };
 
 // server/db.ts
@@ -642,10 +647,14 @@ var normalizeToolChoice = (toolChoice, tools) => {
   }
   return toolChoice;
 };
-var resolveApiUrl = () => ENV.forgeApiUrl && ENV.forgeApiUrl.trim().length > 0 ? `${ENV.forgeApiUrl.replace(/\/$/, "")}/v1/chat/completions` : "https://forge.manus.im/v1/chat/completions";
+var DEFAULT_GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/openai";
+var resolveApiUrl = () => {
+  const base = ENV.geminiApiUrl && ENV.geminiApiUrl.trim().length > 0 ? ENV.geminiApiUrl : DEFAULT_GEMINI_BASE;
+  return `${base.replace(/\/$/, "")}/chat/completions`;
+};
 var assertApiKey = () => {
-  if (!ENV.forgeApiKey) {
-    throw new Error("OPENAI_API_KEY is not configured");
+  if (!ENV.geminiApiKey) {
+    throw new Error("GEMINI_API_KEY is not configured");
   }
 };
 var normalizeResponseFormat = ({
@@ -690,7 +699,7 @@ async function invokeLLM(params) {
     response_format
   } = params;
   const payload = {
-    model: "gemini-2.5-flash",
+    model: ENV.geminiModel && ENV.geminiModel.trim().length > 0 ? ENV.geminiModel : "gemini-2.5-flash",
     messages: messages.map(normalizeMessage)
   };
   if (tools && tools.length > 0) {
@@ -703,10 +712,7 @@ async function invokeLLM(params) {
   if (normalizedToolChoice) {
     payload.tool_choice = normalizedToolChoice;
   }
-  payload.max_tokens = 32768;
-  payload.thinking = {
-    "budget_tokens": 128
-  };
+  payload.max_tokens = 8192;
   const normalizedResponseFormat = normalizeResponseFormat({
     responseFormat,
     response_format,
@@ -720,7 +726,7 @@ async function invokeLLM(params) {
     method: "POST",
     headers: {
       "content-type": "application/json",
-      authorization: `Bearer ${ENV.forgeApiKey}`
+      authorization: `Bearer ${ENV.geminiApiKey}`
     },
     body: JSON.stringify(payload)
   });
@@ -1452,6 +1458,47 @@ var LIFESTYLE_ARTICLES = [
       {
         question: "How are off-plan payments transferred internationally?",
         answer: "You wire USD or AED from your home bank. The funds convert to IDR on arrival because Bank Indonesia Regulation 17/3/PBI/2015 requires domestic property transactions to settle in rupiah. Payments typically stage 10 to 20 percent at signing, then at foundation, roof and handover."
+      }
+    ]
+  },
+  {
+    slug: "is-bali-off-plan-a-good-investment-2026",
+    title: "Is Bali Off-Plan a Good Investment in 2026?",
+    category: "investment",
+    imageUrl: "/blog/blog-rice-field.webp",
+    sortOrder: 12,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-06-24",
+    layoutVariant: "qa",
+    metaDescription: "Is Bali off-plan property a good investment for foreigners in 2026? Yields, the new Tabanan land conversion rule, and how Bali stacks up against US benchmarks.",
+    body: `<p>Bali off-plan property can be a sound investment for a foreign buyer in 2026, but the answer turns on the ownership structure and where you buy. The market split is now clear. Professionally managed villas in supply-constrained pockets are holding occupancy, while oversupplied corridors like central Canggu have compressed on nightly rate. Off-plan in an emerging area such as Tabanan is where the lower land basis still leaves room to grow.</p><p>On yields, place numbers in context. <a href="https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q1-2026-bali-hotel" data-external="true">Colliers</a> puts Bali gross villa yields in roughly a 4.4 to 6.9 percent band, with managed luxury operators reporting higher net figures once season and management quality are accounted for. Treat any figure as a range. By comparison, US residential gross yields averaged about 6.56 percent in late 2025 according to the <a href="https://www.globalpropertyguide.com/north-america/united-states/rental-yields" data-external="true">Global Property Guide</a>, and <a href="https://www.attomdata.com/news/market-trends/single-family-rental/2026-single-family-rental-market-report/" data-external="true">ATTOM's 2026 read</a> shows single-family rental yields falling in roughly 55 percent of US counties.</p><p>The bigger 2026 shift is regulatory. Bali Governor's Instruction Number 5 of 2025, in force from 2 December 2025, prohibits the conversion of productive rice fields to tourism use across six regencies that include Tabanan. <a href="https://thebalisun.com/balancing-land-conversion-and-tourism-development-to-be-key-focus-for-bali-in-2026/" data-external="true">The Bali Sun</a> walks through the policy, and <a href="https://emerhub.com/news/bali-criminalizes-rice-field-conversions/" data-external="true">Emerhub</a> covers the legal teeth, including penalties under Law 41 of 2009. Projects already licensed on non-agricultural land continue. For an off-plan buyer on a permitted, non-rice-paddy site, the practical effect is a cap on future competing supply that over time supports rate and resale.</p><p>Demand is still moving. Bali drew 6.94 million foreign visitors in 2025 and the provincial 2026 target is 6.63 million, per the plan covered by <a href="https://jakartaglobe.id/lifestyle/bali-targets-66-million-international-visitors-in-2026" data-external="true">Jakarta Globe</a>. A villa in Tabanan within 25 to 30 minutes of Canggu rents on the spillover of the busier corridor while you carry the lower land basis.</p><p>Risks are real. Off-plan delivery can slip, and the 2024 to 2025 villa oversupply has pressured nightly rate on weaker product. Mitigate by picking a developer with a track record. Tie the payment schedule to construction milestones, and check that the title sits on properly zoned, non-agricultural land before you sign. Foreigners hold through leasehold, Hak Pakai or a PT PMA company, as covered in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>; rental income is then taxed under the rules in our <a href="/blog/tax-for-foreign-property-owners-bali">rental income tax guide</a>. This is general information and not financial, legal or tax advice. Confirm the specifics with a qualified Indonesian notary and the OMA Townhouse team before you commit.</p>`,
+    venues: [],
+    citations: [
+      { label: "Colliers Quarterly Property Market Report Q1 2026 Bali Hotel", url: "https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q1-2026-bali-hotel" },
+      { label: "Global Property Guide: United States residential rental yields", url: "https://www.globalpropertyguide.com/north-america/united-states/rental-yields" },
+      { label: "ATTOM Data: 2026 Single-Family Rental Market Report", url: "https://www.attomdata.com/news/market-trends/single-family-rental/2026-single-family-rental-market-report/" },
+      { label: "The Bali Sun: Balancing Land Conversion and Tourism Development in 2026", url: "https://thebalisun.com/balancing-land-conversion-and-tourism-development-to-be-key-focus-for-bali-in-2026/" },
+      { label: "Emerhub: Bali Criminalizes Rice Field Conversions", url: "https://emerhub.com/news/bali-criminalizes-rice-field-conversions/" },
+      { label: "Jakarta Globe: Bali Targets 6.6 Million International Visitors in 2026", url: "https://jakartaglobe.id/lifestyle/bali-targets-66-million-international-visitors-in-2026" }
+    ],
+    gallery: [
+      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba, Tabanan" },
+      { url: "/blog/rice-terraces.jpg", alt: "Tabanan rice terraces, Bali" },
+      { url: "/blog/blog-nuanu-creative.webp", alt: "Nuanu Creative City development near Kaba Kaba" }
+    ],
+    faq: [
+      {
+        question: "What are the risks for a foreign off-plan buyer in Bali?",
+        answer: "The main risks are delivery delays, title or zoning issues, and rate compression in oversupplied micro-markets. Mitigate by choosing a developer with a track record, a payment schedule tied to construction milestones, and a clean non-agricultural title that complies with Bali Governor's Instruction Number 5 of 2025."
+      },
+      {
+        question: "How do Bali yields compare to US rental markets?",
+        answer: "Independent trackers put Bali gross villa yields in roughly a 4 to 7 percent band, with managed luxury operators reporting higher net figures. US residential gross yields averaged about 6.56 percent in late 2025 according to the Global Property Guide, and ATTOM's 2026 read shows single-family yields falling in roughly 55 percent of US counties. Treat any figure as a range, not a promise."
+      },
+      {
+        question: "What protects an off-plan buyer if the build slips?",
+        answer: "Most protection sits in the PPJB, the binding pre-sale agreement, which fixes price, payment schedule and delivery date and sets penalties for late delivery. Stage payments against construction milestones and consider third-party escrow at around 1 to 2 percent of the deal. This is general information, not legal advice."
       }
     ]
   }

@@ -7,4 +7,9 @@ export const ENV = {
   isProduction: process.env.NODE_ENV === "production",
   forgeApiUrl: process.env.BUILT_IN_FORGE_API_URL ?? "",
   forgeApiKey: process.env.BUILT_IN_FORGE_API_KEY ?? "",
+  // Gemini (Google) is the chat LLM provider. Set GEMINI_API_KEY in the
+  // deployment environment. Optional overrides: GEMINI_BASE_URL, GEMINI_MODEL.
+  geminiApiKey: process.env.GEMINI_API_KEY ?? process.env.GOOGLE_API_KEY ?? "",
+  geminiApiUrl: process.env.GEMINI_BASE_URL ?? "",
+  geminiModel: process.env.GEMINI_MODEL ?? "",
 };
