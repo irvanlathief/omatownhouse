@@ -128,7 +128,14 @@ export default function Home() {
   const { data: lifestyleArticles } = trpc.lifestyle.list.useQuery();
   // Investor-focused posts surfaced in the Insights row (links to /blog/:slug).
   const insightArticles = useMemo(
-    () => (lifestyleArticles ?? []).filter((a) => a.isInsight),
+    () =>
+      (lifestyleArticles ?? [])
+        .filter((a) => a.isInsight)
+        .sort(
+          (a, b) =>
+            (b.publishedAt ?? "").localeCompare(a.publishedAt ?? "") ||
+            b.sortOrder - a.sortOrder,
+        ),
     [lifestyleArticles],
   );
 
