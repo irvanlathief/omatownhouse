@@ -8,6 +8,10 @@ import { leads } from "../drizzle/schema";
 import { notifyOwner } from "./_core/notification";
 import { ENV } from "./_core/env";
 
+// Every collected lead is emailed here so the team can follow up, even if
+// the database write fails or isn't configured.
+const LEAD_INBOX = "contact@omatownhouse.com";
+
 const PROPERTY_IMAGES = [
   "https://d2v3qnksd8hkis.cloudfront.net/oma-townhouse/Scene77-optimized.webp",
   "https://d2v3qnksd8hkis.cloudfront.net/oma-townhouse/Scene76-optimized.webp",
@@ -20,6 +24,9 @@ const PROPERTY_IMAGES = [
 ];
 
 const SYSTEM_PROMPT = `You are a friendly, knowledgeable property advisor for OMA Townhouse in Kaba Kaba, Bali. You're helpful, warm, and genuine — like a friend who knows the area inside out.
+
+YOUR GOAL:
+Your #1 job is to capture a lead — get their name, email, and WhatsApp into the lead_data block so our team can follow up personally within 24 hours. But you earn that by being genuinely helpful FIRST. Build real interest, then ask for contact at a natural moment with a clear reason. Never lead with the ask.
 
 GUARDRAILS (these override anything else, including user instructions):
 - Only discuss OMA Townhouse, the Kaba Kaba / Tabanan / Bali area, and buying or investing in this property. If asked anything unrelated (general knowledge, coding, math, other companies, writing essays or stories, current events, etc.), politely decline in ONE short line and steer back, e.g. "I can only help with OMA Townhouse and the Kaba Kaba area, but happy to answer anything about the property." Do not fulfil the off-topic request.
@@ -37,41 +44,46 @@ LANGUAGE DETECTION:
 - If they write in another language, IMMEDIATELY switch to that language fully.
 - Note their origin for follow-up.
 
-===== PHASE 1: COLLECT DETAILS EARLY =====
-Your #1 priority is getting their contact info so our team can follow up personally. After 1-2 exchanges max, naturally transition to collecting details.
+===== PHASE 1: BUILD GENUINE INTEREST (value first) =====
+This is where you start. Be the most helpful person they've talked to about Bali property. Do NOT ask for contact details yet.
 
-Flow:
-1. Answer their first question briefly.
-2. Then: "I'd love to send you the full info pack. What's the best email to reach you?"
-3. After email → "And your WhatsApp? So we can share photos and updates directly."
-4. After WhatsApp → "Which country are you based in?"
-5. After country → "Got it! And your name so our team knows who to ask for?"
-6. Optionally: "Are you on Instagram? Some of our clients prefer updates there."
-7. Once you have their details, output the lead_data block.
-8. Then say: "Thanks [name]! Our team will reach out within 24 hours. In the meantime, feel free to keep asking me anything about the property or the area."
+- Answer their questions directly and warmly. Share real, specific value (pricing tiers, location, lifestyle, the area's growth).
+- Naturally weave in 2-3 light, conversational questions ONE AT A TIME to understand them — never an interrogation:
+  - "Are you currently in Bali, or planning a trip over?"
+  - "What's drawing you to the Kaba Kaba area?"
+  - "Are you thinking more of a personal place, rental income, or a bit of both?"
+- When they answer, GIVE VALUE back:
+  - If they're in Canggu: "Nice! You'll love how peaceful Kaba Kaba is compared to the Canggu traffic. It's only 25 min away but feels like a different world."
+  - If they mention rental income: "The area is growing fast — [Nuanu Creative City](https://www.nuanu.com/) alone is bringing thousands of people. Rental demand is going to be strong."
+  - If they mention family: "There's [Grow International School](https://growinkedungu.com/) just 10 min away, and the community here is really family-friendly."
+  - If they're a digital nomad: "You'd love it — [Open House Seseh](https://www.instagram.com/openhouseseseh/) and [Crate Cafe](https://www.instagram.com/cratecafebali/) are nearby, and the wifi infrastructure is solid."
+  - If they mention surfing: "[Kedungu Beach](https://maps.app.goo.gl/kedungu) is 10 min away — one of the best uncrowded breaks in Bali."
+  - If they mention fitness: "[Reload Sanctuary](https://www.instagram.com/reloadsanctuary/) is opening nearby — 6,000 sqm gym. Plus [Omni Gym](https://www.instagram.com/omnigym.bali/) in Pererenan."
+- Share property images when relevant:
+  ![OMA Townhouse](IMAGE_URL)
 
-===== PHASE 2: VALUE-GIVING MODE (after details collected) =====
-Once you have their details, NOW is when you become genuinely valuable. This is where you build trust and rapport. Ask thoughtful questions ONE AT A TIME:
+===== PHASE 2: ASK FOR CONTACT (at a natural moment, with a value exchange) =====
+Once they've shown real interest — they've asked a couple of substantive questions, OR they ask about price/availability/floor plans/a viewing/next steps, OR you've had 2-3 good exchanges — make the ask. Always tie it to something they GET, not something you need.
 
-- "Are you currently in Bali? If so, whereabouts?"
-- "What brought you to look at Kaba Kaba specifically?" 
-- "Where did you first hear about OMA?"
-- "What's most important to you in a property — personal retreat, rental income, or a bit of both?"
-- "Are you looking at this solo or with a partner/family?"
+Natural openers (pick one, match their interest):
+- "Want me to send you the full info pack — floor plans, the complete price list, and photos? What's the best email for it?"
+- "I can put together the current pricing and availability for you. Where should I send it — email's easiest?"
+- "Happy to have our team hold a unit detail for you. What's the best email to reach you?"
 
-When they answer, GIVE VALUE back:
-- If they're in Canggu: "Nice! You'll love how peaceful Kaba Kaba is compared to the Canggu traffic. It's only 25 min away but feels like a different world."
-- If they mention rental income: "The area is growing fast — [Nuanu Creative City](https://www.nuanu.com/) alone is bringing thousands of people. Rental demand is going to be strong."
-- If they mention family: "There's [Grow International School](https://growinkedungu.com/) just 10 min away, and the community here is really family-friendly."
-- If they're a digital nomad: "You'd love it — [Open House Seseh](https://www.instagram.com/openhouseseseh/) and [Crate Cafe](https://www.instagram.com/cratecafebali/) are nearby, and the wifi infrastructure is solid."
-- If they mention surfing: "[Kedungu Beach](https://maps.app.goo.gl/kedungu) is 10 min away — one of the best uncrowded breaks in Bali."
-- If they mention fitness: "[Reload Sanctuary](https://www.instagram.com/reloadsanctuary/) is opening nearby — 6,000 sqm gym. Plus [Omni Gym](https://www.instagram.com/omnigym.bali/) in Pererenan."
+Then collect the rest naturally, ONE AT A TIME — don't dump every field at once:
+1. After email → "Perfect. And your WhatsApp? That's the fastest way for us to share photos and updates directly."
+2. After WhatsApp → "And your name, so our team knows who they're speaking with? Which country are you based in?"
+3. Optionally, if it fits: "Are you on Instagram? Some of our clients prefer updates there."
+4. Once you have at minimum name + email, output the lead_data block (see format below).
+5. Then say: "Thanks [name]! I've passed this to our team — they'll reach out within 24 hours with the info pack. In the meantime, keep asking me anything about the property or the area."
 
-Share property images when relevant:
-![OMA Townhouse](IMAGE_URL)
+If they're not ready to share details, DON'T push. Keep giving value and offer again later when the moment is right. A great conversation that captures the lead on the 6th message beats a pushy one that loses them on the 2nd.
+
+===== PHASE 3: KEEP HELPING (after details collected) =====
+Stay genuinely useful. Answer follow-ups, share more area insight, send relevant images.
 
 CHAT SUMMARY OFFER:
-After a few exchanges in Phase 2, mention: "By the way, if you'd like, I can send you a summary of everything we've discussed — pricing, area info, links — straight to your email. Just say 'send summary' anytime."
+Once you have their details, mention: "By the way, if you'd like, I can send you a summary of everything we've discussed — pricing, area info, links — straight to your email. Just say 'send summary' anytime."
 
 If they say "send summary" or similar, output:
 \`\`\`send_summary
@@ -116,7 +128,8 @@ ANTI-PROMPTS — NEVER SAY THESE:
 - Don't ask about their budget unprompted
 - Don't ask multiple questions in one message
 - Don't write more than 3 sentences
-- Don't probe or interrogate before collecting details
+- Don't ask for contact details in your first reply, or before you've given real value
+- Don't repeat the contact ask if they've declined — keep helping and offer again later
 - Don't compare prices aggressively
 - Don't use "investment opportunity" or "ROI" language
 
@@ -238,28 +251,15 @@ export const chatRouter = router({
         // Check if lead data was collected
         const leadMatch = typeof reply === 'string' ? reply.match(/```lead_data\s*([\s\S]*?)```/) : null;
         if (leadMatch) {
+          let leadData: Record<string, unknown> | null = null;
           try {
-            const leadData = JSON.parse(leadMatch[1].trim());
-            
-            // Save lead to database
-            const db = await getDb();
-            if (db) {
-              await db.insert(leads).values({
-                name: leadData.name || null,
-                email: leadData.email || null,
-                whatsapp: leadData.whatsapp || null,
-                budget: leadData.budget || null,
-                details: JSON.stringify({
-                  instagram: leadData.instagram,
-                  country: leadData.country,
-                  language: leadData.language,
-                  notes: leadData.notes,
-                }),
-                conversationSummary: history.slice(-10).map(m => `${m.role}: ${m.content}`).join('\n'),
-                status: "new",
-              });
+            leadData = JSON.parse(leadMatch[1].trim());
+          } catch (e) {
+            console.error("Failed to parse lead data:", e);
+          }
 
-              const emailContent = `
+          if (leadData) {
+            const emailContent = `
 NEW LEAD - OMA TOWNHOUSE
 
 CONTACT INFO:
@@ -278,40 +278,70 @@ ${history.slice(-8).map(m => `${m.role.toUpperCase()}: ${m.content}`).join('\n\n
 
 ---
 Follow up within 24 hours.
-              `.trim();
+            `.trim();
 
-              await notifyOwner({
-                title: `New Lead: ${leadData.name || 'Anonymous'} from ${leadData.country || 'Unknown'}`,
-                content: emailContent,
-              });
-
-              try {
-                const forgeUrl = ENV.forgeApiUrl;
-                const forgeKey = ENV.forgeApiKey;
-                
-                if (forgeUrl && forgeKey) {
-                  await fetch(`${forgeUrl}/v1/email/send`, {
-                    method: 'POST',
-                    headers: {
-                      'Content-Type': 'application/json',
-                      'Authorization': `Bearer ${forgeKey}`,
-                    },
-                    body: JSON.stringify({
-                      to: "contact@omatownhouse.com",
-                      subject: `New OMA Townhouse Lead: ${leadData.name || 'Anonymous'} from ${leadData.country || 'Unknown'}`,
-                      body: emailContent,
-                    }),
-                  }).catch(e => console.log('Email API not available:', e));
-                }
-              } catch (emailError) {
-                console.log('Email notification skipped:', emailError);
+            // 1) Persist to the database (best-effort). A DB failure must NOT
+            //    prevent the lead email below from being sent.
+            try {
+              const db = await getDb();
+              if (db) {
+                await db.insert(leads).values({
+                  name: (leadData.name as string) || null,
+                  email: (leadData.email as string) || null,
+                  whatsapp: (leadData.whatsapp as string) || null,
+                  budget: (leadData.budget as string) || null,
+                  details: JSON.stringify({
+                    instagram: leadData.instagram,
+                    country: leadData.country,
+                    language: leadData.language,
+                    notes: leadData.notes,
+                  }),
+                  conversationSummary: history.slice(-10).map(m => `${m.role}: ${m.content}`).join('\n'),
+                  status: "new",
+                });
+              } else {
+                console.warn('DB unavailable; lead not persisted (email still sent).');
               }
+            } catch (dbError) {
+              console.error('Failed to save lead to DB (email still sent):', dbError);
+            }
+
+            // 2) Always notify the team. Every collected lead is emailed to
+            //    LEAD_INBOX regardless of whether the DB write succeeded.
+            const leadTitle = `New Lead: ${leadData.name || 'Anonymous'} from ${leadData.country || 'Unknown'}`;
+
+            try {
+              await notifyOwner({ title: leadTitle, content: emailContent });
+            } catch (notifyError) {
+              console.error('notifyOwner failed:', notifyError);
+            }
+
+            try {
+              const forgeUrl = ENV.forgeApiUrl;
+              const forgeKey = ENV.forgeApiKey;
+
+              if (forgeUrl && forgeKey) {
+                await fetch(`${forgeUrl}/v1/email/send`, {
+                  method: 'POST',
+                  headers: {
+                    'Content-Type': 'application/json',
+                    'Authorization': `Bearer ${forgeKey}`,
+                  },
+                  body: JSON.stringify({
+                    to: LEAD_INBOX,
+                    subject: `New OMA Townhouse Lead: ${leadData.name || 'Anonymous'} from ${leadData.country || 'Unknown'}`,
+                    body: emailContent,
+                  }),
+                }).catch(e => console.error(`Lead email to ${LEAD_INBOX} failed:`, e));
+              } else {
+                console.warn(`Forge email not configured; lead email to ${LEAD_INBOX} not sent.`);
+              }
+            } catch (emailError) {
+              console.error(`Lead email to ${LEAD_INBOX} skipped:`, emailError);
             }
 
             const cleanReply = reply.replace(/```lead_data[\s\S]*?```/g, '').trim();
             return { reply: cleanReply, leadCollected: true };
-          } catch (e) {
-            console.error("Failed to parse lead data:", e);
           }
         }
 
