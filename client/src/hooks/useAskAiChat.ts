@@ -35,9 +35,14 @@ export function useAskAiChat() {
   const displayedText = WELCOME_TEXT;
   const isTypingComplete = true;
 
-  // Auto-scroll to the latest message.
+  // Keep the message list pinned to the latest message WITHOUT scrolling the
+  // page. scrollIntoView bubbles up and hijacks the window scroll (and fired on
+  // mount, jumping the page down to the chat), so instead we set the scroll
+  // container's scrollTop directly. Skip the first render (no messages yet).
   useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
+    if (messages.length === 0) return;
+    const container = messagesEndRef.current?.parentElement;
+    if (container) container.scrollTop = container.scrollHeight;
   }, [messages]);
 
   // Lock body scroll while the mobile sheet is open.
