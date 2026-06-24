@@ -420,7 +420,7 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     slug: "is-bali-off-plan-a-good-investment-2026",
     title: "Is Bali Off-Plan a Good Investment in 2026?",
     category: "investment",
-    imageUrl: "/blog/blog-rice-field.webp",
+    imageUrl: "/blog/nuanu-creative-city.jpg",
     sortOrder: 12,
     isInsight: true,
     author: "OMA Townhouse",

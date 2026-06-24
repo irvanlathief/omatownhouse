@@ -138,6 +138,12 @@ export default function Home() {
         ),
     [lifestyleArticles],
   );
+  // Lifestyle area guides (gyms, cafes, beach clubs, schools) shown as their own
+  // carousel row linking to /blog/:slug. Investor posts live in the Insights row.
+  const lifestyleCards = useMemo(
+    () => (lifestyleArticles ?? []).filter((a) => !a.isInsight),
+    [lifestyleArticles],
+  );
 
   const nextImage = () => {
     setCurrentImageIndex((prev) => (prev + 1) % GALLERY_IMAGES.length);
@@ -406,49 +412,36 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="space-y-8">
-          {lifestyleArticles && lifestyleArticles.length > 0 ? (
-            lifestyleArticles.map((article, idx) => (
-              <article key={article.id} className="group">
+        {/* Lifestyle area guides as a horizontal scroll row of cards, each
+            linking to its /blog/:slug page (no full bodies on the homepage). */}
+        {lifestyleCards.length > 0 ? (
+          <div className="flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x">
+            {lifestyleCards.map((article, idx) => (
+              <Link
+                key={article.id}
+                href={`/blog/${article.slug}`}
+                className="group shrink-0 w-64 snap-start"
+              >
                 <div className="aspect-video rounded-xl overflow-hidden mb-3 bg-gray-100">
-                  <img 
-                    src={article.imageUrl || BLOG_IMAGES[idx % BLOG_IMAGES.length]} 
-                    alt={article.title} 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" 
+                  <img
+                    src={article.imageUrl || BLOG_IMAGES[idx % BLOG_IMAGES.length]}
+                    alt={article.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     loading="lazy"
                   />
                 </div>
-                <h4 className="font-medium text-gray-900 mb-2">{article.title}</h4>
-                <div 
-                  className="text-gray-600 text-sm leading-relaxed [&_a]:text-gray-900 [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-gray-300 hover:[&_a]:decoration-gray-900 [&_a]:transition-colors"
-                  dangerouslySetInnerHTML={{ __html: article.content.body }}
-                />
-                
-                {/* Venue distance chips */}
-                {article.content.venues && article.content.venues.length > 0 && (
-                  <div className="flex flex-wrap gap-2 mt-3">
-                    {article.content.venues.map((venue: { name: string; distance: string; coords: string; url?: string }, vIdx: number) => (
-                      <a
-                        key={vIdx}
-                        href={getDirectionsUrl(venue.coords)}
-                        data-external="true"
-                        className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-gray-50 border border-gray-200 text-xs text-gray-600 hover:bg-gray-100 hover:border-gray-300 transition-colors"
-                      >
-                        <Navigation className="w-3 h-3" />
-                        <span className="font-medium text-gray-800">{venue.name}</span>
-                        <span className="text-gray-400">•</span>
-                        <span>{venue.distance}</span>
-                      </a>
-                    ))}
-                  </div>
-                )}
-              </article>
-            ))
-          ) : (
-            // Fallback static content while loading
-            <div className="text-gray-400 text-sm">Loading lifestyle content...</div>
-          )}
-        </div>
+                <h4 className="font-medium text-gray-900 text-sm leading-snug group-hover:underline underline-offset-2 decoration-gray-300">
+                  {article.title}
+                </h4>
+                {article.readingTime ? (
+                  <p className="text-gray-400 text-xs mt-1">{article.readingTime} min read</p>
+                ) : null}
+              </Link>
+            ))}
+          </div>
+        ) : (
+          <div className="text-gray-400 text-sm">Loading lifestyle content...</div>
+        )}
 
         {/* FAQ - mirrors the FAQPage JSON-LD in index.html for search and AI engines */}
         <div className="mt-10">
