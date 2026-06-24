@@ -213,6 +213,19 @@ const normalizeToolChoice = (
 // GEMINI_BASE_URL if ever needed.
 const DEFAULT_GEMINI_BASE = "https://generativelanguage.googleapis.com/v1beta/openai";
 
+// Transient upstream statuses worth retrying: 408 timeout, 429 rate limit, and
+// 500/502/503/504 server/gateway errors. Gemini returns 503 "this model is
+// currently experiencing high demand" under load — a quick retry usually clears
+// it instead of surfacing "having trouble responding" to the visitor.
+const RETRYABLE_LLM_STATUS = new Set([408, 429, 500, 502, 503, 504]);
+const MAX_LLM_RETRIES = 2; // up to 3 attempts total
+
+const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+// Exponential backoff with jitter: ~0.5s then ~1s before the retries.
+const retryDelayMs = (attempt: number) =>
+  Math.round(500 * Math.pow(2, attempt) * (0.75 + Math.random() * 0.5));
+
 const resolveApiUrl = () => {
   const base =
     ENV.geminiApiUrl && ENV.geminiApiUrl.trim().length > 0
@@ -319,21 +332,49 @@ export async function invokeLLM(params: InvokeParams): Promise<InvokeResult> {
     payload.response_format = normalizedResponseFormat;
   }
 
-  const response = await fetch(resolveApiUrl(), {
-    method: "POST",
-    headers: {
-      "content-type": "application/json",
-      authorization: `Bearer ${ENV.geminiApiKey}`,
-    },
-    body: JSON.stringify(payload),
-  });
+  const url = resolveApiUrl();
+  const body = JSON.stringify(payload);
 
-  if (!response.ok) {
+  let lastError: Error | null = null;
+  for (let attempt = 0; attempt <= MAX_LLM_RETRIES; attempt++) {
+    let response: Response;
+    try {
+      response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+          authorization: `Bearer ${ENV.geminiApiKey}`,
+        },
+        body,
+      });
+    } catch (networkErr) {
+      // Network failure (DNS, reset, timeout) — treat as transient and retry.
+      lastError =
+        networkErr instanceof Error ? networkErr : new Error(String(networkErr));
+      if (attempt < MAX_LLM_RETRIES) {
+        await sleep(retryDelayMs(attempt));
+        continue;
+      }
+      throw lastError;
+    }
+
+    if (response.ok) {
+      return (await response.json()) as InvokeResult;
+    }
+
     const errorText = await response.text();
-    throw new Error(
+    lastError = new Error(
       `LLM invoke failed: ${response.status} ${response.statusText} – ${errorText}`
     );
+
+    // Retry transient upstream errors; surface everything else immediately.
+    if (RETRYABLE_LLM_STATUS.has(response.status) && attempt < MAX_LLM_RETRIES) {
+      await sleep(retryDelayMs(attempt));
+      continue;
+    }
+
+    throw lastError;
   }
 
-  return (await response.json()) as InvokeResult;
+  throw lastError ?? new Error("LLM invoke failed after retries");
 }
