@@ -49,7 +49,7 @@
     },
     {
       "id": "good-investment-2026",
-      "status": "drafting",
+      "status": "published",
       "priority": 3,
       "theme": "investment",
       "atpType": "are",
@@ -61,12 +61,12 @@
         "What protects an off-plan buyer if the build slips?"
       ],
       "proposedSlug": "is-bali-off-plan-a-good-investment-2026",
-      "proposedTitle": "",
+      "proposedTitle": "Is Bali Off-Plan a Good Investment in 2026?",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-06-24",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/11"
     },
     {
       "id": "invest-freehold-vs-leasehold",
