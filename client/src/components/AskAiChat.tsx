@@ -1,4 +1,4 @@
-import { Home as HomeIcon, Image, DollarSign, MapPin, ArrowRight, X } from "lucide-react";
+import { Home as HomeIcon, Image, DollarSign, MapPin, HelpCircle, ArrowRight, X } from "lucide-react";
 import { Streamdown } from "streamdown";
 import { DocumentViewer } from "@/components/DocumentViewer";
 import type { AskAiChat } from "@/hooks/useAskAiChat";
@@ -13,6 +13,51 @@ const QUICK_DOCS = [
   { id: "pricing", name: "Pricing", icon: DollarSign },
   { id: "location", name: "Location", icon: MapPin },
 ];
+
+// Starter prompts shown in the empty chat. Most visitors arrive wanting one of
+// these three things, so we surface them as one-tap conversation openers.
+const STARTER_PROMPTS = [
+  {
+    label: "About the townhouse",
+    icon: HomeIcon,
+    text: "Tell me about the OMA Townhouse: the size, layout, and what's included.",
+  },
+  {
+    label: "What's Kaba Kaba like?",
+    icon: MapPin,
+    text: "What's the Kaba Kaba area like, and what's nearby?",
+  },
+  {
+    label: "How does buying work?",
+    icon: HelpCircle,
+    text: "How does buying work here? Leasehold vs freehold, and what's the process.",
+  },
+  {
+    label: "Pricing",
+    icon: DollarSign,
+    text: "What are the current prices and any early-bird promos?",
+  },
+];
+
+// One-tap conversation openers, only while the chat is still empty.
+function StarterPrompts({ chat }: { chat: AskAiChat }) {
+  if (chat.messages.length > 0) return null;
+  return (
+    <div className="flex flex-col gap-1.5 pt-1">
+      {STARTER_PROMPTS.map((p) => (
+        <button
+          key={p.label}
+          onClick={() => chat.askQuestion(p.text)}
+          disabled={chat.isLoading}
+          className="flex items-center gap-2 px-3 py-2 rounded-2xl bg-white border border-gray-200 hover:border-gray-400 hover:bg-gray-50 text-gray-700 text-sm text-left transition-colors disabled:opacity-50"
+        >
+          <p.icon className="w-3.5 h-3.5 text-gray-400 shrink-0" />
+          {p.label}
+        </button>
+      ))}
+    </div>
+  );
+}
 
 // Renders an assistant message, handling inline image markdown and links.
 function RichChatMessage({ content }: { content: string }) {
@@ -59,6 +104,8 @@ function MessageList({ chat, maxWidth }: { chat: AskAiChat; maxWidth: string }) 
           </p>
         </div>
       </div>
+
+      <StarterPrompts chat={chat} />
 
       {chat.messages.map((message) => (
         <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>

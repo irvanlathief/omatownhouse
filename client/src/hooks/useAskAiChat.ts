@@ -15,7 +15,7 @@ export interface ChatMessage {
 }
 
 export const WELCOME_TEXT =
-  "Hey, welcome to OMA Townhouse.\n\nAre you looking to invest in Kaba Kaba, Bali?";
+  "Hey, welcome to OMA Townhouse.\n\nHappy to walk you through the townhouse, the Kaba Kaba area, or how buying here works. What's on your mind?";
 
 export function useAskAiChat() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
@@ -131,6 +131,13 @@ export function useAskAiChat() {
     );
   };
 
+  // Starter prompts shown in the empty chat: fire a ready-made question so a
+  // visitor can get going in one tap instead of having to think of what to ask.
+  const askQuestion = (text: string) => {
+    if (isLoading) return;
+    void sendContent(text);
+  };
+
   const openMobile = () => setIsChatOpen(true);
 
   return {
@@ -151,6 +158,7 @@ export function useAskAiChat() {
     handleKeyPress,
     openDocument,
     sendInterest,
+    askQuestion,
     openMobile,
   };
 }
