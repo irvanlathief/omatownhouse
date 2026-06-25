@@ -9,49 +9,48 @@ export type EmailMessage = {
 };
 
 /**
- * Send a transactional email via Mailgun's HTTP API.
+ * Send a transactional email via Resend's HTTP API — the same email service
+ * used by the zurichbiotech project.
  *
- * Returns `true` on success, `false` if Mailgun isn't configured or the send
+ * Returns `true` on success, `false` if Resend isn't configured or the send
  * fails. Callers should treat email as best-effort and never let a failure
  * here break the request — leads are still persisted to the database.
  */
 export async function sendEmail(msg: EmailMessage): Promise<boolean> {
-  const apiKey = ENV.mailgunApiKey;
-  const domain = ENV.mailgunDomain;
+  const apiKey = ENV.resendApiKey;
 
-  if (!apiKey || !domain) {
+  if (!apiKey) {
     console.warn(
-      "[email] Mailgun not configured (set MAILGUN_API_KEY and MAILGUN_DOMAIN); email not sent."
+      "[email] Resend not configured (set RESEND_API_KEY); email not sent."
     );
     return false;
   }
 
-  const base = (ENV.mailgunApiBase || "https://api.mailgun.net").replace(/\/$/, "");
-  const from = ENV.mailgunFrom || `OMA Townhouse <contact@${domain}>`;
-
-  const form = new URLSearchParams();
-  form.set("from", from);
-  form.set("to", msg.to);
-  form.set("subject", msg.subject);
-  form.set("text", msg.text);
-  if (msg.replyTo) {
-    form.set("h:Reply-To", msg.replyTo);
+  const replyTo = msg.replyTo || ENV.resendReplyTo;
+  const body: Record<string, unknown> = {
+    from: ENV.resendFromEmail,
+    to: [msg.to],
+    subject: msg.subject,
+    text: msg.text,
+  };
+  if (replyTo) {
+    body.reply_to = replyTo;
   }
 
   try {
-    const response = await fetch(`${base}/v3/${domain}/messages`, {
+    const response = await fetch("https://api.resend.com/emails", {
       method: "POST",
       headers: {
-        authorization: `Basic ${Buffer.from(`api:${apiKey}`).toString("base64")}`,
-        "content-type": "application/x-www-form-urlencoded",
+        authorization: `Bearer ${apiKey}`,
+        "content-type": "application/json",
       },
-      body: form.toString(),
+      body: JSON.stringify(body),
     });
 
     if (!response.ok) {
       const detail = await response.text().catch(() => "");
       console.error(
-        `[email] Mailgun send failed (${response.status} ${response.statusText})${
+        `[email] Resend send failed (${response.status} ${response.statusText})${
           detail ? `: ${detail}` : ""
         }`
       );
@@ -60,7 +59,7 @@ export async function sendEmail(msg: EmailMessage): Promise<boolean> {
 
     return true;
   } catch (error) {
-    console.error("[email] Mailgun send error:", error);
+    console.error("[email] Resend send error:", error);
     return false;
   }
 }
