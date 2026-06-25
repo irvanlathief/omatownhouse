@@ -465,7 +465,10 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     slug: "freehold-vs-leasehold-bali",
     title: "Freehold vs Leasehold in Bali for Foreign Buyers",
     category: "investment",
-    imageUrl: "/blog/blog-nuanu-creative.webp",
+    // Rice terraces (land/ownership theme) keep this card distinct in the
+    // Insights row; blog-nuanu-creative.webp is already used by the
+    // foreigners-buy-property-bali insight card.
+    imageUrl: "/blog/rice-terraces.jpg",
     sortOrder: 13,
     isInsight: true,
     author: "OMA Townhouse",
