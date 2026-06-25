@@ -234,6 +234,16 @@
   animation: blink 1s infinite;
 }
 
+/* Carousels driven by arrow buttons hide the native scrollbar but keep
+   horizontal scrolling (touch swipe, programmatic scrollBy) intact. */
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 /* Custom scrollbar - minimal Airbnb style */
 .chat-scroll::-webkit-scrollbar {
   width: 4px;

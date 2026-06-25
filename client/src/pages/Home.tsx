@@ -1,4 +1,4 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
 import { SiteHeader } from "@/components/SiteHeader";
@@ -121,6 +121,74 @@ const FAQ_ITEMS = [
       "Kedungu Beach and Luna Beach Club at Nuanu are 10 to 15 minutes away, and central Canggu is about 25 minutes by car.",
   },
 ];
+
+// Horizontal card row navigated with left/right arrows instead of a visible
+// scrollbar. Touch swipe still works; the arrows page through on desktop and
+// fade out at each end. Used by the lifestyle and Insights rows below.
+function CardCarousel({
+  children,
+  ariaLabel,
+}: {
+  children: React.ReactNode;
+  ariaLabel: string;
+}) {
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [atStart, setAtStart] = useState(true);
+  const [atEnd, setAtEnd] = useState(false);
+
+  const updateBounds = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setAtStart(el.scrollLeft <= 1);
+    setAtEnd(el.scrollLeft + el.clientWidth >= el.scrollWidth - 1);
+  };
+
+  // Recompute on mount and whenever the card set changes (async-loaded data).
+  useEffect(() => {
+    updateBounds();
+  }, [children]);
+
+  const page = (dir: number) => {
+    const el = scrollRef.current;
+    if (!el) return;
+    // Advance by roughly the visible width so each click reveals a fresh set.
+    const amount = Math.max(el.clientWidth * 0.8, 272);
+    el.scrollBy({ left: dir * amount, behavior: "smooth" });
+  };
+
+  const arrowBase =
+    "hidden sm:flex absolute top-[72px] -translate-y-1/2 z-10 w-9 h-9 items-center justify-center rounded-full bg-white border border-gray-200 shadow-md text-gray-700 hover:bg-gray-50 transition-opacity disabled:opacity-0 disabled:pointer-events-none";
+
+  return (
+    <div className="relative">
+      <div
+        ref={scrollRef}
+        onScroll={updateBounds}
+        className="flex gap-4 overflow-x-auto no-scrollbar pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x"
+      >
+        {children}
+      </div>
+      <button
+        type="button"
+        aria-label={`Scroll ${ariaLabel} backward`}
+        onClick={() => page(-1)}
+        disabled={atStart}
+        className={`${arrowBase} left-1`}
+      >
+        <ChevronLeft className="w-5 h-5" />
+      </button>
+      <button
+        type="button"
+        aria-label={`Scroll ${ariaLabel} forward`}
+        onClick={() => page(1)}
+        disabled={atEnd}
+        className={`${arrowBase} right-1`}
+      >
+        <ChevronRight className="w-5 h-5" />
+      </button>
+    </div>
+  );
+}
 
 export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -415,7 +483,7 @@ export default function Home() {
         {/* Lifestyle area guides as a horizontal scroll row of cards, each
             linking to its /blog/:slug page (no full bodies on the homepage). */}
         {lifestyleCards.length > 0 ? (
-          <div className="flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x">
+          <CardCarousel ariaLabel="lifestyle guides">
             {lifestyleCards.map((article, idx) => (
               <Link
                 key={article.id}
@@ -438,7 +506,7 @@ export default function Home() {
                 ) : null}
               </Link>
             ))}
-          </div>
+          </CardCarousel>
         ) : (
           <div className="text-gray-400 text-sm">Loading lifestyle content...</div>
         )}
@@ -465,7 +533,7 @@ export default function Home() {
             <p className="text-gray-600 text-sm mb-5">
               Guides for foreign investors looking at Bali off-plan property.
             </p>
-            <div className="flex gap-4 overflow-x-auto pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x">
+            <CardCarousel ariaLabel="insights">
               {insightArticles.map((article) => (
                 <Link
                   key={article.id}
@@ -488,7 +556,7 @@ export default function Home() {
                   ) : null}
                 </Link>
               ))}
-            </div>
+            </CardCarousel>
           </div>
         )}
       </div>
