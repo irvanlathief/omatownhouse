@@ -295,6 +295,20 @@ export const chatRouter = router({
           }
 
           if (leadData) {
+            // Full transcript of the entire conversation (every turn), so the
+            // team gets complete context — not just the last few messages.
+            // Includes the visitor's latest message and the advisor's reply
+            // (with the hidden lead_data block stripped out).
+            const assistantReply = reply.replace(/```lead_data[\s\S]*?```/g, '').trim();
+            const fullTranscript = [
+              ...history,
+              { role: "user" as const, content: message },
+              { role: "assistant" as const, content: assistantReply },
+            ]
+              .filter((m) => m.content && m.content.trim())
+              .map((m) => `${m.role === "user" ? "Visitor" : "OMA"}: ${m.content}`)
+              .join("\n\n");
+
             const emailContent = `
 NEW LEAD - OMA TOWNHOUSE
 
@@ -309,8 +323,8 @@ Preferred Language: ${leadData.language || 'English'}
 NOTES:
 ${leadData.notes || 'None'}
 
-CONVERSATION SUMMARY:
-${history.slice(-8).map(m => `${m.role.toUpperCase()}: ${m.content}`).join('\n\n')}
+FULL CONVERSATION:
+${fullTranscript}
 
 ---
 Follow up within 24 hours.
@@ -332,7 +346,7 @@ Follow up within 24 hours.
                     language: leadData.language,
                     notes: leadData.notes,
                   }),
-                  conversationSummary: history.slice(-10).map(m => `${m.role}: ${m.content}`).join('\n'),
+                  conversationSummary: fullTranscript,
                   status: "new",
                 });
               } else {
@@ -376,8 +390,7 @@ Follow up within 24 hours.
               console.error(`Lead email to ${LEAD_INBOX} skipped:`, emailError);
             }
 
-            const cleanReply = reply.replace(/```lead_data[\s\S]*?```/g, '').trim();
-            return { reply: cleanReply, leadCollected: true };
+            return { reply: assistantReply, leadCollected: true };
           }
         }
 
