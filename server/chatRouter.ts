@@ -6,11 +6,11 @@ import { rateLimit, getClientIp } from "./_core/rateLimit";
 import { getDb } from "./db";
 import { leads } from "../drizzle/schema";
 import { notifyOwner } from "./_core/notification";
+import { sendEmail } from "./_core/email";
 import { ENV } from "./_core/env";
 
-// Every collected lead is emailed here so the team can follow up, even if
-// the database write fails or isn't configured.
-const LEAD_INBOX = "contact@omatownhouse.com";
+// Where lead notifications go is configured via ENV.leadNotifyEmail
+// (LEAD_NOTIFY_EMAIL), defaulting to contact@omatownhouse.com.
 
 const PROPERTY_IMAGES = [
   "https://d2v3qnksd8hkis.cloudfront.net/oma-townhouse/Scene77-optimized.webp",
@@ -257,24 +257,15 @@ export const chatRouter = router({
             
             // Build a nice chat summary
             const summaryContent = buildChatSummary(history, message, summaryData.name);
-            
-            // Send summary email
-            const forgeUrl = ENV.forgeApiUrl;
-            const forgeKey = ENV.forgeApiKey;
-            
-            if (forgeUrl && forgeKey && summaryData.email) {
-              await fetch(`${forgeUrl}/v1/email/send`, {
-                method: 'POST',
-                headers: {
-                  'Content-Type': 'application/json',
-                  'Authorization': `Bearer ${forgeKey}`,
-                },
-                body: JSON.stringify({
-                  to: summaryData.email,
-                  subject: `Your OMA Townhouse Chat Summary`,
-                  body: summaryContent,
-                }),
-              }).catch(e => console.log('Summary email failed:', e));
+
+            // Send the summary to the visitor via Mailgun (best-effort).
+            if (summaryData.email) {
+              await sendEmail({
+                to: summaryData.email,
+                subject: `Your OMA Townhouse Chat Summary`,
+                text: summaryContent,
+                replyTo: ENV.leadNotifyEmail,
+              });
             }
 
             const cleanReply = reply.replace(/```send_summary[\s\S]*?```/g, '').trim();
@@ -356,38 +347,47 @@ Follow up within 24 hours.
               console.error('Failed to save lead to DB (email still sent):', dbError);
             }
 
-            // 2) Always notify the team. Every collected lead is emailed to
-            //    LEAD_INBOX regardless of whether the DB write succeeded.
+            // 2) Notify the team. Best-effort owner notification through the
+            //    legacy Manus channel (no-op when Forge isn't configured)...
             const leadTitle = `New Lead: ${leadData.name || 'Anonymous'} from ${leadData.country || 'Unknown'}`;
-
             try {
               await notifyOwner({ title: leadTitle, content: emailContent });
             } catch (notifyError) {
               console.error('notifyOwner failed:', notifyError);
             }
 
-            try {
-              const forgeUrl = ENV.forgeApiUrl;
-              const forgeKey = ENV.forgeApiKey;
+            // ...and the reliable path: email the lead + full transcript to the
+            // team via Mailgun. Reply-To is set to the visitor so the team can
+            // respond to them directly.
+            const teamEmailed = await sendEmail({
+              to: ENV.leadNotifyEmail,
+              subject: `New OMA Townhouse Lead: ${leadData.name || 'Anonymous'} from ${leadData.country || 'Unknown'}`,
+              text: emailContent,
+              replyTo: typeof leadData.email === 'string' ? leadData.email : undefined,
+            });
+            if (!teamEmailed) {
+              console.warn(`Lead email to ${ENV.leadNotifyEmail} not sent (Mailgun unconfigured or failed).`);
+            }
 
-              if (forgeUrl && forgeKey) {
-                await fetch(`${forgeUrl}/v1/email/send`, {
-                  method: 'POST',
-                  headers: {
-                    'Content-Type': 'application/json',
-                    'Authorization': `Bearer ${forgeKey}`,
-                  },
-                  body: JSON.stringify({
-                    to: LEAD_INBOX,
-                    subject: `New OMA Townhouse Lead: ${leadData.name || 'Anonymous'} from ${leadData.country || 'Unknown'}`,
-                    body: emailContent,
-                  }),
-                }).catch(e => console.error(`Lead email to ${LEAD_INBOX} failed:`, e));
-              } else {
-                console.warn(`Forge email not configured; lead email to ${LEAD_INBOX} not sent.`);
-              }
-            } catch (emailError) {
-              console.error(`Lead email to ${LEAD_INBOX} skipped:`, emailError);
+            // 3) Auto-confirm to the visitor so they know we received their
+            //    details and will follow up. Best-effort; never blocks the reply.
+            if (typeof leadData.email === 'string' && leadData.email.includes('@')) {
+              const visitorName = (leadData.name as string) || 'there';
+              await sendEmail({
+                to: leadData.email,
+                subject: `Thanks for reaching out about OMA Townhouse`,
+                replyTo: ENV.leadNotifyEmail,
+                text: [
+                  `Hi ${visitorName},`,
+                  ``,
+                  `Thanks for your interest in OMA Townhouse in Kaba Kaba, Bali. We've got your details and a member of our team will reach out within 24 hours with the info pack: floor plans, the full price list, and photos.`,
+                  ``,
+                  `In the meantime, if you have any questions, just reply to this email and we'll get right back to you.`,
+                  ``,
+                  `Warm regards,`,
+                  `The OMA Townhouse Team`,
+                ].join('\n'),
+              });
             }
 
             return { reply: assistantReply, leadCollected: true };
