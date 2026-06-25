@@ -461,4 +461,47 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "freehold-vs-leasehold-bali",
+    title: "Freehold vs Leasehold in Bali for Foreign Buyers",
+    category: "investment",
+    imageUrl: "/blog/blog-nuanu-creative.webp",
+    sortOrder: 13,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-06-25",
+    layoutVariant: "qa",
+    metaDescription:
+      "Freehold vs leasehold in Bali for a foreign buyer: PT PMA holds HGB for up to 80 years, leasehold runs 25 to 30 years per term with negotiated extension.",
+    body: `<p>For a foreign buyer in Bali, freehold and leasehold are not what they would be in the US or the UAE. Indonesian law reserves freehold, called Hak Milik, for Indonesian citizens only under Article 21(1) of the 1960 Basic Agrarian Law, so a foreign individual cannot hold it. The two routes that actually work for a foreign buyer are a PT PMA, an Indonesian company you own that holds <a href="https://www.aseanbriefing.com/news/indonesias-omnibus-law-relaxed-foreign-ownership-laws-on-real-estate/" data-external="true">Hak Guna Bangunan (HGB)</a> on the land, and leasehold (Hak Sewa), where you hold the right to use a property for a fixed term.</p><p>The PT PMA freehold route gives the strongest claim a foreigner can hold in Bali. Under Government Regulation 18 of 2021, HGB is granted for an initial 30 years, extendable for 20 years, then renewable for another 30 years, for up to 80 years. The asset belongs to the company, so on exit you can transfer the property out of the PT PMA or sell the company shares. Setup is heavier: <a href="https://www.cekindo.com/blog/minimum-capital-investment-in-indonesia" data-external="true">BKPM Regulation 5 of 2025</a> lowered the minimum paid-up capital to IDR 2.5 billion, around 150,000 USD, with a 10 billion IDR total investment plan per business code still required.</p><p>Leasehold is the simpler entry. Any foreigner can sign a Hak Sewa without an Indonesian residence permit and without forming a company. Bali leases commonly run 25 to 30 years per agreement, and an extension clause is usually negotiated up front to push the effective term toward 70 to 80 years. There is no statutory cap on lease length in Indonesian law, but many notaries decline to draft a single-term lease beyond 30 years. At OMA Townhouse, leasehold runs at 25 or 40 years with extension built in, and freehold via PT PMA is offered as a separate price band.</p><p>Which fits depends on your goal. A long-hold rental you intend to pass on tends to fit the PT PMA freehold route. A second home with a clean exit and a lower entry price tends to fit leasehold. Hak Pakai, a right-to-use title held in your own name, sits between the two and needs a KITAS or KITAP residence permit. Ownership routes are also covered in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>. This is general information, not legal advice, so confirm the current rules with a licensed Indonesian notary (PPAT) and the OMA Townhouse team before you commit.</p>`,
+    venues: [],
+    citations: [
+      { label: "Indonesia Basic Agrarian Law (UU No. 5 of 1960)", url: "https://faolex.fao.org/docs/pdf/ins3920.pdf" },
+      { label: "ASEAN Briefing: Indonesia's Omnibus Law on Real Estate Ownership", url: "https://www.aseanbriefing.com/news/indonesias-omnibus-law-relaxed-foreign-ownership-laws-on-real-estate/" },
+      { label: "Cekindo: PT PMA Minimum Capital in Indonesia (2026)", url: "https://www.cekindo.com/blog/minimum-capital-investment-in-indonesia" },
+      { label: "Emerhub: Investing in Leasehold vs Freehold Properties in Bali", url: "https://emerhub.com/bali/understanding-investing-in-leasehold-vs-freehold-properties-in-bali/" },
+    ],
+    gallery: [
+      { url: "/blog/blog-nuanu-creative.webp", alt: "Nuanu Creative City near Kaba Kaba, Bali" },
+      { url: "/blog/rice-terraces.jpg", alt: "Tabanan rice terraces, Bali" },
+      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba" },
+    ],
+    faq: [
+      {
+        question: "Which is better for a US or UAE buyer, leasehold or PT PMA?",
+        answer:
+          "There is no single answer. A US or UAE buyer who wants a long-hold rental run as a business tends to take the PT PMA freehold route, since HGB runs up to 80 years and the asset transfers via company shares on exit. A buyer who wants a simpler entry, lower setup cost and no Indonesian company tends to take leasehold. This is general information, not legal or financial advice.",
+      },
+      {
+        question: "How long are Bali leaseholds and can they be extended?",
+        answer:
+          "Bali leases commonly run 25 to 30 years per single agreement. Most contracts include an extension clause that pushes the effective term toward 70 to 80 years. There is no statutory cap in Indonesian law, but many notaries decline to draft a single-term lease beyond 30 years.",
+      },
+      {
+        question: "What happens to a leasehold at the end of the term?",
+        answer:
+          "Without an exercised extension, the land and any built improvements revert to the landowner at the end of the lease term. That is why the extension mechanism, the renewal price and the dispute clauses in the original Hak Sewa agreement matter as much as the headline length.",
+      },
+    ],
+  },
 ];
