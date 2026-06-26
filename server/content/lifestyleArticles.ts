@@ -507,4 +507,46 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "what-is-off-plan-property-bali",
+    title: "What Is Off-Plan Property in Bali?",
+    category: "investment",
+    imageUrl: "/blog/blog-nuanu-creative.webp",
+    sortOrder: 14,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-06-26",
+    layoutVariant: "qa",
+    metaDescription:
+      "What is off-plan property in Bali? A unit bought before completion via a PPJB pre-sale agreement, with payments staged against construction milestones.",
+    body: `<p>Off-plan property in Bali is a unit you buy before it is finished, often before construction starts, secured through a PPJB (Perjanjian Pengikatan Jual Beli), a binding pre-sale agreement that fixes the price, payment schedule and delivery date while the developer builds. You pay in stages tied to the build rather than handing over the full price on day one, and you take possession once the unit is complete and the title is ready to transfer.</p><p>Indonesian law puts a floor under how early a developer can sell this way. Under Article 10(1) of <a href="https://peraturan.bpk.go.id/Details/128152/permen-pupr-no-11prtm2019-tahun-2019" data-external="true">Permen PUPR No. 11/PRT/M/2019</a>, a developer cannot sign a PPJB until physical construction has reached at least 20 percent completion, alongside clear land certainty and a building permit already in hand. A reservation deposit ahead of that point is routine. The binding PPJB itself is meant to wait until the threshold is met.</p><p>The building permit referenced above is the PBG (Persetujuan Bangunan Gedung), introduced by <a href="https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021" data-external="true">PP No. 16 of 2021</a> to replace the older IMB system. A developer who cannot show a PBG for the land has not cleared the basic legal step that off-plan buyers are relying on, so asking to see it before you sign anything is a reasonable, ordinary request.</p><p>Price is the other half of why buyers choose off-plan. <a href="https://www.exotiqproperty.com/blog/buying-off-plan-property-in-bali" data-external="true">Exotiq Property</a> notes that off-plan payment plans in Bali run construction-linked, where each instalment matches a building milestone, or time-linked, where payments fall on a fixed calendar regardless of progress, and that construction-linked is the safer structure for a buyer. Early off-plan pricing sits below the cost of an equivalent finished villa, since the developer is selling future delivery rather than a turnkey asset, though the discount is a range that varies by project and is not a guaranteed return.</p><p>Off-plan is not risk free. Builds can slip, and a thin developer can stall. Weigh that against a finished property, which costs more upfront but removes the construction and delivery risk entirely. Stage your payments against the milestones in the PPJB, confirm the PBG and land certificate before you sign, and use a licensed Indonesian notary (PPAT) throughout. Ownership routes for a foreign buyer are covered in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>, and the remote buying process in our <a href="/blog/buy-bali-off-plan-property-remotely">guide to buying off-plan remotely</a>. This is general information, not legal or financial advice, so confirm the specifics of any project with a licensed notary before you commit.</p>`,
+    venues: [],
+    citations: [
+      { label: "Permen PUPR No. 11/PRT/M/2019: Sistem Perjanjian Pendahuluan Jual Beli Rumah", url: "https://peraturan.bpk.go.id/Details/128152/permen-pupr-no-11prtm2019-tahun-2019" },
+      { label: "PP No. 16 Tahun 2021: Peraturan Pelaksanaan UU No. 28/2002 tentang Bangunan Gedung", url: "https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021" },
+      { label: "Exotiq Property: Buying Off Plan Property in Bali", url: "https://www.exotiqproperty.com/blog/buying-off-plan-property-in-bali" },
+    ],
+    gallery: [
+      { url: "/blog/blog-nuanu-creative.webp", alt: "Off-plan development under construction near Kaba Kaba" },
+      { url: "/blog/rice-terraces.jpg", alt: "Tabanan rice terraces, Bali" },
+      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba, Tabanan" },
+    ],
+    faq: [
+      {
+        question: "How does off-plan payment work in Bali?",
+        answer:
+          "Off-plan payments in Bali are usually staged, either construction-linked, where each instalment matches a building milestone such as foundation, structure and roof, or time-linked, where payments fall on a fixed calendar. A reservation deposit comes first, then the PPJB locks in the schedule once the project clears the legal construction threshold for that agreement. Construction-linked plans give the buyer more protection if the build slows down.",
+      },
+      {
+        question: "Is buying off-plan property in Bali safe for a foreigner?",
+        answer:
+          "It can be, provided the basics are in place. Confirm the developer holds a PBG (building approval) and a clean land certificate, that the PPJB only follows the legal construction threshold under Permen PUPR No. 11/PRT/M/2019, and that payments are staged against verified progress. A licensed Indonesian notary (PPAT) should review every document before you sign.",
+      },
+      {
+        question: "Off-plan vs completed property in Bali, which is better?",
+        answer:
+          "Neither is universally better. Off-plan usually costs less upfront and lets a buyer lock in current pricing ahead of completion, but it carries construction and delivery risk. A completed property costs more but removes that risk immediately. The right choice depends on your timeline, budget and tolerance for build risk.",
+      },
+    ],
+  },
 ];
