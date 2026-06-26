@@ -112,7 +112,7 @@
     },
     {
       "id": "invest-rental-yield-tabanan",
-      "status": "pending",
+      "status": "published",
       "priority": 6,
       "theme": "investment",
       "atpType": "how",
@@ -124,12 +124,12 @@
         "How is rental managed for an off-plan villa?"
       ],
       "proposedSlug": "rental-yield-tabanan-bali",
-      "proposedTitle": "",
+      "proposedTitle": "Rental Yield in Tabanan, Bali: What to Expect",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-06-26",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/21"
     },
     {
       "id": "location-where-is-kaba-kaba",
