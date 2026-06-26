@@ -545,4 +545,49 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "rental-yield-tabanan-bali",
+    title: "Rental Yield in Tabanan, Bali: What to Expect",
+    category: "investment",
+    imageUrl: "/blog/real-estate-growth-chart.webp",
+    sortOrder: 15,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-06-26",
+    layoutVariant: "qa",
+    metaDescription:
+      "What rental yield can you expect in Tabanan, Bali? Colliers puts Bali gross villa yields at 4.4 to 6.9 percent, plus what actually drives appreciation nearby.",
+    body: `<p>The rental yield a foreign owner buying off-plan in Tabanan should expect sits inside Bali's published gross villa yield range, roughly 4.4 to 6.9 percent according to <a href="https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q1-2026-bali-hotel" data-external="true">Colliers' Q1 2026 Bali Hotel report</a>, treated as a range, not a promise. No tracker breaks that figure out for Tabanan specifically, since the area is still building its own rental history, so the island-wide band is the honest starting point, with the outcome on any villa shaped by occupancy ramp-up, management quality and micro-location.</p><p>Canggu is the comparison every Tabanan buyer makes. The same Colliers report finds that villas in supply-constrained pockets are holding occupancy, while oversupplied corridors, central Canggu among them, have compressed on nightly rate after the 2024 to 2025 building wave. Tabanan has not been overbuilt, so fewer villas are chasing the same demand, which is why an off-plan unit there can reach stabilized occupancy without competing against a saturated strip of near identical listings.</p><p>Capital appreciation here rests on two concrete events, not a hope that prices follow Canggu's. Bali Governor's Instruction Number 5 of 2025, in force from 2 December 2025, bans converting productive rice fields to tourism use across six regencies including Tabanan, per <a href="https://thebalisun.com/balancing-land-conversion-and-tourism-development-to-be-key-focus-for-bali-in-2026/" data-external="true">The Bali Sun</a> and the legal detail in <a href="https://emerhub.com/news/bali-criminalizes-rice-field-conversions/" data-external="true">Emerhub's coverage</a>. That caps future tourism supply on agricultural land, the opposite of what fueled overbuilding elsewhere. Separately, <a href="https://www.nuanu.com" data-external="true">Nuanu Creative City</a>, a 44 hectare development with schools, coworking and a beach club a short drive from Kaba Kaba, is already funded and under construction, the kind of project that tends to lift land values nearby; see our <a href="/blog/hotels-development">guide to why Tabanan is drawing investment</a>.</p><p>A foreign individual cannot legally rent out a Bali villa directly. The compliant route runs through a PT PMA holding a Villa license under KBLI 55193, licensed through Indonesia's OSS system under Government Regulation 28 of 2025, with a valid NIB in place before the unit takes bookings, per <a href="https://emerhub.com/bali/renting-out-villa-in-bali/" data-external="true">Emerhub's guide to renting out a Bali villa</a>. Most owners then hand bookings to a licensed villa management company. <a href="https://ilaglobalconsulting.com/foreigners-rent-out-property-bali/" data-external="true">ILA Global Consulting</a> puts typical pricing at 10 to 20 percent of rental revenue depending on service level, on top of any booking platform commission, so build that into any projection before comparing it to the headline Colliers range. This is general information, not financial or legal advice. Ownership structure is covered in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a> and rental income tax in our <a href="/blog/tax-for-foreign-property-owners-bali">tax guide</a>; confirm current licensing requirements with the OMA Townhouse team and a licensed Indonesian notary before you commit.</p>`,
+    venues: [],
+    citations: [
+      { label: "Colliers Quarterly Property Market Report Q1 2026 Bali Hotel", url: "https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q1-2026-bali-hotel" },
+      { label: "The Bali Sun: Balancing Land Conversion and Tourism Development in 2026", url: "https://thebalisun.com/balancing-land-conversion-and-tourism-development-to-be-key-focus-for-bali-in-2026/" },
+      { label: "Emerhub: Bali Criminalizes Rice Field Conversions", url: "https://emerhub.com/news/bali-criminalizes-rice-field-conversions/" },
+      { label: "Nuanu Creative City (official site)", url: "https://www.nuanu.com" },
+      { label: "Emerhub: A Guide to Renting out Villas in Bali as a Foreign Investor", url: "https://emerhub.com/bali/renting-out-villa-in-bali/" },
+      { label: "ILA Global Consulting: How To Rent Out Property As A Foreign Investor In Bali", url: "https://ilaglobalconsulting.com/foreigners-rent-out-property-bali/" },
+    ],
+    gallery: [
+      { url: "/blog/real-estate-growth-chart.webp", alt: "Model houses on a real estate growth chart", credit: "Artful Homes / Pexels", sourceUrl: "https://www.pexels.com/photo/20208884/" },
+      { url: "/blog/tabanan-rice-terrace-aerial.webp", alt: "Aerial view of rice terraces near Tabanan, Bali", credit: "Tom Fisk / Pexels", sourceUrl: "https://www.pexels.com/photo/36810327/" },
+      { url: "/blog/balinese-villa-garden-pavilion.webp", alt: "Traditional Balinese villa pavilion set in a tropical garden", credit: "Onna Bugeisha / Pexels", sourceUrl: "https://www.pexels.com/photo/36107525/" },
+    ],
+    faq: [
+      {
+        question: "How do Tabanan yields compare to Canggu?",
+        answer:
+          "No published tracker breaks Bali yields out by sub-regency, so there is no separate Tabanan figure to set against Canggu. What is documented, per Colliers, is that supply-constrained pockets are holding occupancy while oversupplied corridors such as central Canggu have compressed on nightly rate after the 2024 to 2025 building wave. Tabanan's lower density today is the practical reason it has room to perform well as the area matures.",
+      },
+      {
+        question: "What drives capital appreciation near Canggu and Tabanan?",
+        answer:
+          "Two concrete drivers, not just a hope that prices follow Canggu. Bali Governor's Instruction Number 5 of 2025 bans new tourism development on productive rice fields across six regencies including Tabanan, capping future competing supply. Nuanu Creative City, a 44 hectare development with schools, coworking and a beach club minutes from Kaba Kaba, is already funded and under construction, the kind of project that tends to lift land values nearby.",
+      },
+      {
+        question: "How is rental managed for an off-plan villa?",
+        answer:
+          "A foreign individual cannot rent out a Bali villa directly. The compliant structure is a PT PMA holding a Villa license under KBLI 55193, licensed through Indonesia's OSS system under Government Regulation 28 of 2025, with day to day bookings handled by a licensed villa management company for a fee that commonly runs 10 to 20 percent of revenue.",
+      },
+    ],
+  },
 ];
