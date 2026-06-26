@@ -198,12 +198,15 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     slug: "hotels-development",
     title: "Why Tabanan and Kaba Kaba Are Drawing Investment",
     category: "development",
-    imageUrl:
-      "https://files.manuscdn.com/user_upload_by_module/session_file/310419663028072074/RFpzOLCapYdEXOzx.webp",
+    imageUrl: "/blog/nuanu-creative-city.jpg",
     sortOrder: 6,
     isInsight: true,
     author: "OMA Townhouse",
     publishedAt: "2026-01-20",
+    gallery: [
+      { url: "/blog/luna-beach-club.jpg", alt: "Luna Beach Club at Nuanu Creative City near Kaba Kaba" },
+      { url: "/blog/tabanan-villa-construction.webp", alt: "New villa development underway near Kaba Kaba, Tabanan" },
+    ],
     citations: [
       { label: "Nuanu Creative City (official site)", url: "https://www.nuanu.com" },
       { label: "Alila Hotels by Hyatt", url: "https://www.hyatt.com/brands/alila" },
