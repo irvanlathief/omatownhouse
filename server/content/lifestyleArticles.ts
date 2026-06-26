@@ -255,7 +255,7 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     slug: "foreigners-buy-property-bali",
     title: "Can US and Dubai Investors Buy Property in Bali?",
     category: "investment",
-    imageUrl: "/blog/blog-nuanu-creative.webp",
+    imageUrl: "/blog/bali-villa-tropical-pool.webp",
     sortOrder: 8,
     isInsight: true,
     author: "OMA Townhouse",
@@ -270,8 +270,8 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       { label: "Online Single Submission (OSS) company portal", url: "https://oss.go.id" },
     ],
     gallery: [
-      { url: "/blog/blog-nuanu-creative.webp", alt: "Development near Kaba Kaba, Tabanan" },
-      { url: "/blog/rice-terraces.jpg", alt: "Rice terraces in Tabanan, Bali" },
+      { url: "/blog/property-contract-signing.webp", alt: "Signing a Bali property purchase agreement" },
+      { url: "/blog/bali-villa-aerial-pool.webp", alt: "Aerial view of a Bali villa and private pool" },
     ],
     faq: [
       {
@@ -295,7 +295,7 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     slug: "bali-vs-dubai-property",
     title: "Bali vs Dubai Property for Foreign Investors",
     category: "investment",
-    imageUrl: "/blog/kedungu-beach.jpg",
+    imageUrl: "/blog/dubai-skyline-day.webp",
     sortOrder: 9,
     isInsight: true,
     author: "OMA Townhouse",
@@ -309,8 +309,8 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       { label: "Indonesia Investment Coordinating Board (BKPM)", url: "https://www.bkpm.go.id" },
     ],
     gallery: [
-      { url: "/blog/kedungu-beach.jpg", alt: "Kedungu Beach near Tabanan, Bali" },
-      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba" },
+      { url: "/blog/bali-villa-garden-pool.webp", alt: "Bali villa with a garden and private pool" },
+      { url: "/blog/dubai-skyline-sunset.webp", alt: "Dubai skyline and Burj Khalifa at sunset" },
     ],
     faq: [
       {
@@ -334,7 +334,7 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     slug: "tax-for-foreign-property-owners-bali",
     title: "Bali Rental Income Tax for Foreign Owners",
     category: "investment",
-    imageUrl: "/blog/blog-rice-field.webp",
+    imageUrl: "/blog/tax-prep-checklist.webp",
     sortOrder: 10,
     isInsight: true,
     author: "OMA Townhouse",
@@ -351,9 +351,8 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       { label: "ILA Global Consulting: real estate tax in Indonesia", url: "https://ilaglobalconsulting.com/real-estate-tax-indonesia/" },
     ],
     gallery: [
-      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba, Tabanan" },
-      { url: "/blog/rice-terraces.jpg", alt: "Tabanan rice terraces, Bali" },
-      { url: "/blog/blog-nuanu-creative.webp", alt: "Nuanu Creative City near Kaba Kaba" },
+      { url: "/blog/tax-form-calculator.webp", alt: "Income tax form with a calculator" },
+      { url: "/blog/bali-villa-loungers.webp", alt: "Bali rental villa with poolside loungers" },
     ],
     faq: [
       {
@@ -377,7 +376,7 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     slug: "buy-bali-off-plan-property-remotely",
     title: "How to Buy Bali Off-Plan Property Remotely",
     category: "investment",
-    imageUrl: "/blog/digital-nomad-cafe.webp",
+    imageUrl: "/blog/house-under-construction.webp",
     sortOrder: 11,
     isInsight: true,
     author: "OMA Townhouse",
@@ -394,9 +393,8 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       { label: "Conventus Law: Apostille Convention In Full Effect In Indonesia", url: "https://conventuslaw.com/report/apostille-convention-finally-in-full-effect-in-indonesia/" },
     ],
     gallery: [
-      { url: "/blog/digital-nomad-cafe.webp", alt: "Foreign buyer working remotely from a Bali cafe" },
-      { url: "/blog/blog-nuanu-creative.webp", alt: "Nuanu Creative City development near Kaba Kaba" },
-      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba, Tabanan" },
+      { url: "/blog/buyer-remote-laptop.webp", alt: "Foreign buyer reviewing property documents on a laptop" },
+      { url: "/blog/architectural-floor-plan.webp", alt: "Architectural floor plan of an off-plan villa" },
     ],
     faq: [
       {
@@ -420,7 +418,7 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     slug: "is-bali-off-plan-a-good-investment-2026",
     title: "Is Bali Off-Plan a Good Investment in 2026?",
     category: "investment",
-    imageUrl: "/blog/nuanu-creative-city.jpg",
+    imageUrl: "/blog/off-plan-construction.webp",
     sortOrder: 12,
     isInsight: true,
     author: "OMA Townhouse",
@@ -439,9 +437,8 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       { label: "Jakarta Globe: Bali Targets 6.6 Million International Visitors in 2026", url: "https://jakartaglobe.id/lifestyle/bali-targets-66-million-international-visitors-in-2026" },
     ],
     gallery: [
-      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba, Tabanan" },
-      { url: "/blog/rice-terraces.jpg", alt: "Tabanan rice terraces, Bali" },
-      { url: "/blog/blog-nuanu-creative.webp", alt: "Nuanu Creative City development near Kaba Kaba" },
+      { url: "/blog/bali-villa-white-pool.webp", alt: "Modern Bali villa with a private pool" },
+      { url: "/blog/blueprint-compass.webp", alt: "Architectural blueprint with a drafting compass" },
     ],
     faq: [
       {
@@ -465,10 +462,7 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     slug: "freehold-vs-leasehold-bali",
     title: "Freehold vs Leasehold in Bali for Foreign Buyers",
     category: "investment",
-    // Rice terraces (land/ownership theme) keep this card distinct in the
-    // Insights row; blog-nuanu-creative.webp is already used by the
-    // foreigners-buy-property-bali insight card.
-    imageUrl: "/blog/rice-terraces.jpg",
+    imageUrl: "/blog/property-contract-signature.webp",
     sortOrder: 13,
     isInsight: true,
     author: "OMA Townhouse",
@@ -485,9 +479,8 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       { label: "Emerhub: Investing in Leasehold vs Freehold Properties in Bali", url: "https://emerhub.com/bali/understanding-investing-in-leasehold-vs-freehold-properties-in-bali/" },
     ],
     gallery: [
-      { url: "/blog/blog-nuanu-creative.webp", alt: "Nuanu Creative City near Kaba Kaba, Bali" },
-      { url: "/blog/rice-terraces.jpg", alt: "Tabanan rice terraces, Bali" },
-      { url: "/blog/blog-rice-field.webp", alt: "Rice fields near Kaba Kaba" },
+      { url: "/blog/bali-villa-aframe.webp", alt: "A-frame Bali villa with a private pool" },
+      { url: "/blog/lease-document-signing.webp", alt: "Signing a Bali leasehold agreement" },
     ],
     faq: [
       {
