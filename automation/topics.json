@@ -70,7 +70,7 @@
     },
     {
       "id": "invest-freehold-vs-leasehold",
-      "status": "drafting",
+      "status": "published",
       "priority": 4,
       "theme": "foreign-ownership",
       "atpType": "vs",
@@ -82,16 +82,16 @@
         "What happens to a leasehold at the end of the term?"
       ],
       "proposedSlug": "freehold-vs-leasehold-bali",
-      "proposedTitle": "",
+      "proposedTitle": "Freehold vs Leasehold in Bali for Foreign Buyers",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-06-25",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/17"
     },
     {
       "id": "offplan-what-is",
-      "status": "pending",
+      "status": "published",
       "priority": 5,
       "theme": "off-plan",
       "atpType": "what",
@@ -103,11 +103,11 @@
         "Off-plan vs completed property in Bali, which is better?"
       ],
       "proposedSlug": "what-is-off-plan-property-bali",
-      "proposedTitle": "",
+      "proposedTitle": "What Is Off-Plan Property in Bali?",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-06-26",
       "prUrl": null
     },
     {
