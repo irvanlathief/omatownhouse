@@ -133,7 +133,7 @@
     },
     {
       "id": "location-where-is-kaba-kaba",
-      "status": "pending",
+      "status": "published",
       "priority": 7,
       "theme": "location",
       "atpType": "where",
@@ -145,12 +145,12 @@
         "What is the area around Kaba Kaba like?"
       ],
       "proposedSlug": "where-is-kaba-kaba-bali",
-      "proposedTitle": "",
+      "proposedTitle": "Where Is Kaba Kaba, Bali? Distance to Canggu",
       "category": "location",
       "isInsight": false,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-06-27",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/22"
     },
     {
       "id": "location-what-is-nuanu",

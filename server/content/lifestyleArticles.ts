@@ -590,4 +590,52 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "where-is-kaba-kaba-bali",
+    title: "Where Is Kaba Kaba, Bali? Distance to Canggu",
+    category: "location",
+    imageUrl: "/blog/tanah-lot-temple-coast.webp",
+    sortOrder: 16,
+    isInsight: false,
+    author: "OMA Townhouse",
+    publishedAt: "2026-06-27",
+    layoutVariant: "map",
+    metaDescription:
+      "Where is Kaba Kaba, Bali? It sits in Tabanan Regency, about 20 to 25 minutes from Canggu, 10 minutes from Tanah Lot and roughly an hour from the airport.",
+    body: `<p>Kaba Kaba is a village in Kediri district, Tabanan Regency, on Bali's south west coast, about 20 to 25 minutes by car from the heart of Canggu and 10 to 15 minutes from the closer Nuanu and Seseh stretch of coastline. It sits inland from the beach road, surrounded by rice terraces rather than beachfront traffic, which is the main reason land here costs a fraction of Canggu's.</p><p>Administratively the village borders Nyambu to the north, Cepaka to the east, Munggu in neighboring Badung Regency to the south and Buwit to the west, according to <a href="https://kabakaba.desa.id/artikel/2024/8/27/profil-wilayah-desa-kaba-kaba" data-external="true">Desa Kaba-kaba's own village profile</a>. The same profile puts it about 10 km from Tabanan town, the regency capital, and 21 km from Denpasar. <a href="https://en.wikipedia.org/wiki/Tanah_Lot" data-external="true">Tanah Lot</a>, Bali's well known sea temple, sits in the same Kediri district, a drive of roughly 10 minutes.</p><p>That distance is also the off-plan thesis. <a href="https://www.nuanu.com" data-external="true">Nuanu Creative City</a>, a 44 hectare development with schools, coworking and a beach club, is 10 to 15 minutes away and already under construction, and early Canggu buyers are the reference point most people in Tabanan use for what land near a growing hub can become; see our <a href="/blog/hotels-development">guide to why Tabanan is drawing investment</a>. None of that is a guarantee, and any return should be read as a range rather than a promise.</p><p>For a buyer flying in from the US or Dubai, <a href="https://ngurahraiairport.com/" data-external="true">Ngurah Rai International Airport</a>, known as DPS, is about 25 km away, roughly an hour by car depending on traffic, the same drive any Canggu villa owner already makes. Once you are on the ground, Kaba Kaba functions less like a remote outpost and more like a quieter neighborhood a short ring road away from everything Bali's south coast offers.</p>`,
+    venues: [
+      { name: "Tanah Lot Temple", distance: "10 min", coords: "-8.6212,115.0868", url: "https://en.wikipedia.org/wiki/Tanah_Lot" },
+      { name: "Canggu (Berawa/Batu Bolong)", distance: "20-25 min", coords: "-8.6478,115.1385", url: "https://maps.google.com/?q=Canggu+Bali" },
+      { name: "Nuanu Creative City", distance: "10-15 min", coords: "-8.5950,115.1100", url: "https://www.nuanu.com" },
+      { name: "Ngurah Rai International Airport (DPS)", distance: "55-65 min", coords: "-8.7467,115.1667", url: "https://ngurahraiairport.com/" },
+    ],
+    citations: [
+      { label: "Desa Kaba-kaba: Profil Wilayah Desa (official village profile)", url: "https://kabakaba.desa.id/artikel/2024/8/27/profil-wilayah-desa-kaba-kaba" },
+      { label: "Tanah Lot - Wikipedia", url: "https://en.wikipedia.org/wiki/Tanah_Lot" },
+      { label: "Nuanu Creative City (official site)", url: "https://www.nuanu.com" },
+      { label: "I Gusti Ngurah Rai International Airport (official)", url: "https://ngurahraiairport.com/" },
+    ],
+    gallery: [
+      { url: "/blog/tanah-lot-temple-coast.webp", alt: "Tanah Lot sea temple on the Bali coast near Kaba Kaba", credit: "Tina P. / Pexels", sourceUrl: "https://www.pexels.com/photo/scenic-view-of-tanah-lot-temple-in-bali-34136174/" },
+      { url: "/blog/bali-rural-road-rice-fields.webp", alt: "Rural road winding through rice terraces in Bali", credit: "Agung Pandit Wiguna / Pexels", sourceUrl: "https://www.pexels.com/photo/aerial-view-of-a-road-and-rice-terraces-17716415/" },
+      { url: "/blog/canggu-beach-sunset-crowd.webp", alt: "Crowded Canggu beach at sunset, Bali", credit: "Peggy Anke / Pexels", sourceUrl: "https://www.pexels.com/photo/people-at-the-beach-during-sunset-5289209/" },
+    ],
+    faq: [
+      {
+        question: "Kaba Kaba vs Canggu for living and investment?",
+        answer:
+          "Kaba Kaba is about 20 to 25 minutes from central Canggu by car, so you trade walking distance to the beach for land at a fraction of Canggu's price, set in a working rice field village. For investment, that price gap combined with the Nuanu development nearby is the underlying case; for living, expect a quieter, more local daily routine.",
+      },
+      {
+        question: "How do you get from Kaba Kaba to the airport?",
+        answer:
+          "By car. Ngurah Rai International Airport, known as DPS, is roughly 25 km away, about an hour's drive depending on traffic, the same route used by villa owners in Canggu and Seminyak.",
+      },
+      {
+        question: "What is the area around Kaba Kaba like?",
+        answer:
+          "Rural and agricultural, with rice terraces rather than beachfront development. Tanah Lot temple is about 10 minutes away, the Nuanu and Seseh coastline is 10 to 15 minutes away, and central Canggu is 20 to 25 minutes away.",
+      },
+    ],
+  },
 ];
