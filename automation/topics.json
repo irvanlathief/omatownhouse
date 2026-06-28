@@ -154,7 +154,7 @@
     },
     {
       "id": "location-what-is-nuanu",
-      "status": "pending",
+      "status": "published",
       "priority": 8,
       "theme": "location",
       "atpType": "what",
@@ -166,11 +166,11 @@
         "Does Nuanu affect nearby land values?"
       ],
       "proposedSlug": "what-is-nuanu-creative-city",
-      "proposedTitle": "",
+      "proposedTitle": "What Is Nuanu Creative City, Bali? Property Impact",
       "category": "development",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-06-28",
       "prUrl": null
     },
     {

@@ -638,4 +638,47 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "what-is-nuanu-creative-city",
+    title: "What Is Nuanu Creative City, Bali? Property Impact",
+    category: "development",
+    imageUrl: "/blog/bali-coastal-cliff-tabanan.webp",
+    sortOrder: 17,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-06-28",
+    metaDescription:
+      "Nuanu Creative City is a 44 hectare creative hub on Tabanan coast near Kaba Kaba, with schools, wellness and a beach club shaping nearby land values.",
+    body: `<p>Nuanu Creative City is a 44 hectare development on Bali's Tabanan coast built around art, education and wellness rather than the usual resort retail mix, and it matters to a Kaba Kaba buyer because a funded build of this size moving in next door is a stronger signal than any sales brochure. <a href="https://www.nuanu.com" data-external="true">Nuanu</a> sits between Nyanyi Beach and Tanah Lot Temple in Tabanan Regency, about 10 to 15 minutes from OMA Townhouse.</p><p>The project was founded in 2020 by Sergey Solonin, the entrepreneur behind the Russian payments company Qiwi, with construction starting in 2021 and the first school campus opening in 2023. The site now mixes a boutique hotel, the Luna Beach Club, a wellness and spa complex, sound healing and yoga spaces, an alpaca farm and a butterfly breeding program aimed at local biodiversity. A second hotel, the four star X Hotel, is set to open in late 2026, one of about 18 more projects underway toward a planned total near 50 spaces across the site. Nuanu has pledged to keep two-thirds of the land as natural landscape rather than build it out completely.</p><p>For property nearby, the case is straightforward rather than guaranteed: when an operator commits dozens of projects and a school to one stretch of coast over several years, land around it tends to draw more buyers and more services, the same pattern that played out as Canggu grew. Treat any future price move as a range, not a promise, and read it alongside our <a href="/blog/hotels-development">guide to why Tabanan is drawing investment</a> rather than on its own. None of this is financial advice.</p>`,
+    venues: [
+      { name: "Nuanu Creative City", distance: "10-15 min", coords: "-8.5950,115.1100", url: "https://www.nuanu.com" },
+      { name: "Tanah Lot Temple", distance: "10 min", coords: "-8.6212,115.0868", url: "https://en.wikipedia.org/wiki/Tanah_Lot" },
+    ],
+    citations: [
+      { label: "Nuanu Creative City (official site)", url: "https://www.nuanu.com" },
+      { label: "The Urban List: Delve Into Art, Nature and Innovation at Nuanu Creative City", url: "https://www.theurbanlist.com/a-list/nuanu-creative-city-bali" },
+    ],
+    gallery: [
+      { url: "/blog/bali-coastal-cliff-tabanan.webp", alt: "Limestone cliffs along Bali's coastline", credit: "ArtHouse Studio / Pexels", sourceUrl: "https://www.pexels.com/photo/verdant-balangan-cliff-in-bali-overlooking-blue-ocean-4534136/" },
+      { url: "/blog/balinese-garden-sculpture.webp", alt: "Traditional Balinese stone sculpture in a tropical garden", credit: "hakki Ulucay / Pexels", sourceUrl: "https://www.pexels.com/photo/balinese-ganesha-statue-in-lush-tropical-garden-35070472/" },
+      { url: "/blog/bali-tropical-rainforest-foliage.webp", alt: "Dense tropical rainforest foliage in Bali", credit: "Kyle Vermeulen / Pexels", sourceUrl: "https://www.pexels.com/photo/lush-tropical-foliage-in-bali-s-rainforest-34710865/" },
+    ],
+    faq: [
+      {
+        question: "What is inside Nuanu Creative City?",
+        answer:
+          "A boutique hotel, the Luna Beach Club, a wellness and spa complex, an international school campus, sound healing and yoga spaces, an alpaca farm and a butterfly breeding program, with a second hotel and more projects planned through 2026 and beyond.",
+      },
+      {
+        question: "How far is Nuanu from Kaba Kaba?",
+        answer:
+          "About 10 to 15 minutes by car from OMA Townhouse, on the same stretch of Tabanan coast between Nyanyi Beach and Tanah Lot Temple.",
+      },
+      {
+        question: "Does Nuanu affect nearby land values?",
+        answer:
+          "A development of this scale tends to draw more buyers and services to the surrounding area over time, the same pattern seen as Canggu grew. That is a pattern, not a guarantee, so treat any projection as a range and not financial advice.",
+      },
+    ],
+  },
 ];
