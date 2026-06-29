@@ -175,7 +175,7 @@
     },
     {
       "id": "lifestyle-relocate-with-family",
-      "status": "pending",
+      "status": "published",
       "priority": 9,
       "theme": "lifestyle",
       "atpType": "can",
@@ -187,12 +187,12 @@
         "What does it cost to live near Canggu?"
       ],
       "proposedSlug": "relocating-to-bali-with-family-kaba-kaba",
-      "proposedTitle": "",
+      "proposedTitle": "Relocating to Bali With a Family Near Kaba Kaba",
       "category": "family",
       "isInsight": false,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-06-29",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/24"
     },
     {
       "id": "offplan-why-buy",
