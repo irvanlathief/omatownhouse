@@ -26,4 +26,9 @@ export const ENV = {
   // Where the team's lead notifications go. Defaults to the public contact
   // address; set LEAD_NOTIFY_EMAIL to your dotdesign inbox to deliver directly.
   leadNotifyEmail: process.env.LEAD_NOTIFY_EMAIL ?? "contact@omatownhouse.com",
+  // Shared access code for the /investors page. Visitors enter this alongside
+  // their contact details to unlock the gated content. Share it personally
+  // (WhatsApp / email) with qualified investors. Leave unset and the page
+  // remains accessible only to a hard-coded default for dev.
+  investorAccessCode: (process.env.INVESTOR_ACCESS_CODE ?? "OMA2026").trim(),
 };
