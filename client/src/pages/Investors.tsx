@@ -607,23 +607,23 @@ function InvestorContent() {
             />
             <Qa
               q="How safe is the title and the legal structure?"
-              a="The parent title sits on properly zoned, non-agricultural land, registered with the National Land Agency (BPN). Buyers go through a licensed Indonesian notary (PPAT). For leasehold, the Hak Sewa agreement spells out the term, the extension clause and dispute mechanics. For freehold via PT PMA, the company holds Hak Guna Bangunan (HGB) under PP 18/2021, which runs up to 80 years. We can introduce independent legal review on request before any deposit."
+              a="The land is freehold. Sertifikat Hak Milik (SHM), Indonesia's strongest title, registered at BPN in the founder's own name as an Indonesian citizen. That is the cleanest position the land can sit in; foreign buyers then layer on top via either a notarized lease from the SHM holder or PT PMA holding Hak Guna Bangunan under PP 18/2021. We don't post the certificate publicly because land-title screenshots are a known vector for impersonation fraud in Bali, but the SHM, the parent title chain, the PPAT engagement and any company documents are shared directly in a serious conversation, and independent legal review is welcome before any deposit."
             />
             <Qa
               q="What about Bali oversupply? Aren't there already too many villas?"
-              a="The oversupply is concentrated in central Canggu, where rate has compressed on weak product. Tabanan is a different market: lower land basis, less competing inventory, and Bali Governor's Instruction 5 of 2025 prohibits new rice-field conversion across six regencies including Tabanan, which caps future competing supply on agricultural land. OMA's site is on permitted non-agricultural land, so the policy works in the owner's favour."
+              a="Kaba Kaba is not for everyone. That's the point. Canggu is busier, faster, more crowded, and the rate compression on weak villa product reflects that. OMA isn't built to compete in that fight. It is built for buyers who specifically want the slower end of Bali, with Canggu still 25 minutes away when they want it. The audience self-selects, and Bali Governor's Instruction 5 of 2025, which prohibits new rice-field conversion across six regencies including Tabanan, caps future competing supply on agricultural land. The quieter corridor stays quieter."
             />
             <Qa
-              q="What's the realistic net yield, not the slide?"
-              a="The scenarios on this page are gross-revenue based, with the 18% management benchmark, fixed core ops and a 7% utilities/reserve already netted off. Indonesian tax sits below that: a PT PMA pays 22% corporate tax on net profit, or non-residents face 20% PPh 26 on gross rent in own name. We are happy to walk you through the after-tax figure for your structure on a call, including the realistic OTA commission and seasonality drag."
+              q="What's the realistic net yield after tax, not the slide?"
+              a="The scenarios on this page are already net of the 18% management benchmark, fixed core ops and a 7% utilities reserve. Indonesian tax sits below that. A PT PMA pays 22% corporate income tax on net profit, then dividends to a foreign shareholder carry 20% PPh 26 withholding, often reduced to 10 to 15% under a tax treaty with a Certificate of Domicile. A non-resident holding in own name faces 20% PPh 26 on gross rent under Article 26. On the base case of ~USD 29,700 net of operations, that lands in roughly the USD 18,500 to USD 23,000 range in your home account after Indonesian withholding, depending on structure and treaty. Still a meaningful after-tax yield on USD 250,000, but not the headline number. We walk through the exact figure for your structure on a call."
             />
             <Qa
               q="How do I exit when the time comes?"
-              a="Two routes. A leasehold owner transfers the remaining lease term via a notarized assignment, similar to selling the lease itself. A PT PMA freehold owner can either sell the company shares (transferring the underlying HGB asset to the buyer) or transfer the HGB out and sell as an Indonesian asset. Both routes are routine; we share comparable resale data on request."
+              a="Two routes, both well-trodden. A leasehold owner transfers the remaining term via a notarized assignment, the same mechanism used to sell freehold here, and because Tabanan land values have been moving with the corridor's policy and infrastructure story, mid-term leasehold transfers in this area have typically traded inline with the underlying land, often profitably. A PT PMA freehold owner can sell the company shares (transferring the underlying HGB cleanly) or transfer the HGB out and sell as an Indonesian asset. Comparable resale data shared on request."
             />
             <Qa
               q="Why isn't a bigger Bali developer doing this?"
-              a="The Tabanan corridor only became investable on the policy and infrastructure shifts of the last 12 to 18 months: the rice-field conversion ban, the Nuanu Creative City build-out, and the published transit planning. Most established Bali developers are anchored in saturated south markets. OMA is small on purpose: one site, design-led, repeatable. The product is the differentiation, not the inventory volume."
+              a="The Tabanan corridor only became investable on the policy and infrastructure shifts of the last 12 to 18 months: the rice-field conversion ban, the Nuanu Creative City build-out, and the published transit planning. Most established Bali developers are anchored in saturated south markets, where they are now defending price rather than chasing a quieter corridor. OMA is small on purpose: one site, design-led, repeatable. The product is the differentiation, not the inventory volume."
             />
           </div>
         </div>
@@ -688,7 +688,16 @@ function InvestorContent() {
               first owner and the next, not for a brochure.
             </p>
             <p>
-              <strong className="text-gray-900">What we own.</strong> We're a
+              <strong className="text-gray-900">First project, deliberately.</strong>{" "}
+              OMA Townhouse in Kaba Kaba is OMA's first development. That's a
+              feature, not a footnote. The founder is on every detail; the
+              land is held in his own name as freehold (SHM); staged payments,
+              milestone inspections, optional escrow and direct founder
+              access are built into the structure precisely because we know
+              what an early-buyer position means.
+            </p>
+            <p>
+              <strong className="text-gray-900">What we own.</strong> We are a
               small team. That means you talk to the people who actually decide
               things. If you want to dig into the build spec, the operator
               terms, or the underwriting line by line, we'll do that on a call.
