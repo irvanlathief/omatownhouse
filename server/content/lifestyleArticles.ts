@@ -681,4 +681,58 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "relocating-to-bali-with-family-kaba-kaba",
+    title: "Relocating to Bali With a Family Near Kaba Kaba",
+    category: "family",
+    imageUrl: "/blog/family-pool-tropical-villa.webp",
+    sortOrder: 18,
+    isInsight: false,
+    author: "OMA Townhouse",
+    publishedAt: "2026-06-29",
+    metaDescription:
+      "You can relocate to Bali with a family near Kaba Kaba on a Second Home Visa or dependent KITAS, with schools at Grow or ProEd and Kasih Ibu Hospital nearby.",
+    body: `<p>Yes, you can relocate to Bali with a family near Kaba Kaba. Most families use one of two legal routes: a Second Home Visa held by one parent, or a Dependent KITAS sponsored by a spouse who already holds a work or investor permit. Neither requires living in Bali full time first, but both need paperwork ready before you move.</p><p>The Second Home Visa, KITAS index E33, lets a foreigner live in Indonesia for 5 or 10 years without a local sponsor, according to <a href="https://emerhub.com/indonesia/indonesian-second-home-visa/" data-external="true">Emerhub's guide to the visa</a>. It is non-working, and the financial bar is real: within 90 days of arrival you must show a deposit of at least USD 130,000 in a state-owned Indonesian bank, or own Indonesian property worth at least USD 1,000,000. A spouse and children under 18 can be added as dependents on the same application, which is the route most off-plan buyers use once their unit is registered.</p><p>If only one parent qualifies on income or investment grounds, for example through a PT PMA, the rest of the family typically joins on a Dependent KITAS instead. <a href="https://www.cekindo.com/blog/dependent-visa-indonesia" data-external="true">Cekindo's guide to the dependent visa</a> notes the sponsor must hold a valid KITAS or KITAP and show sufficient financial capability, and the dependent permit is valid for 6 to 12 months, renewed in line with the sponsor's own permit. Applications for either route run through the <a href="https://evisa.imigrasi.go.id" data-external="true">official Indonesian e-Visa portal</a>.</p><p>Daily life near Kaba Kaba then covers the basics families ask about. <a href="https://growinkedungu.com/" data-external="true">Grow International School</a> in Kedungu runs a Cambridge curriculum about 10 minutes away, and <a href="https://www.nuanu.com" data-external="true">ProEd Global School at Nuanu</a> is a second option 10 to 15 minutes out. Our <a href="/blog/schools-family">guide to schools and healthcare near Kaba Kaba</a> covers both in more detail.</p><p>For healthcare, Kasih Ibu Hospital in Tabanan is 15 to 20 minutes away for everyday care, while <a href="https://www.bimcbali.com" data-external="true">BIMC Hospital</a> in Kuta, with English-speaking staff and a 24 hour emergency room, is closer to 45 to 50 minutes. Day-to-day costs away from beachfront Canggu tend to run lower, tracking local Tabanan prices rather than tourist-strip ones, though that is a pattern, not a fixed number. This is general information, not immigration, legal or tax advice. Confirm current visa requirements with a licensed Indonesian immigration agent, and see our <a href="/blog/tax-for-foreign-property-owners-bali">rental income tax guide</a> if you plan to rent out the property.</p>`,
+    venues: [
+      { name: "Grow International School", distance: "10 min", coords: "-8.5900,115.1150", url: "https://growinkedungu.com/" },
+      { name: "Nuanu / ProEd", distance: "10-15 min", coords: "-8.5950,115.1100", url: "https://www.nuanu.com" },
+      { name: "Kasih Ibu Hospital", distance: "15-20 min", coords: "-8.5400,115.1700", url: "https://maps.google.com/?q=Kasih+Ibu+Hospital+Tabanan" },
+      { name: "BIMC Hospital Kuta", distance: "45-50 min", coords: "-8.7210,115.1730", url: "https://www.bimcbali.com" },
+    ],
+    citations: [
+      { label: "Emerhub: Indonesia Second Home Visa, Requirements and Application Process", url: "https://emerhub.com/indonesia/indonesian-second-home-visa/" },
+      { label: "Cekindo: Dependent Visa Indonesia, 5 Things You Should Know", url: "https://www.cekindo.com/blog/dependent-visa-indonesia" },
+      { label: "Official Indonesian e-Visa portal (Direktorat Jenderal Imigrasi)", url: "https://evisa.imigrasi.go.id" },
+      { label: "Grow International School (official site)", url: "https://growinkedungu.com/" },
+      { label: "Nuanu Creative City (official site)", url: "https://www.nuanu.com" },
+      { label: "BIMC Hospital (official site)", url: "https://www.bimcbali.com" },
+    ],
+    gallery: [
+      { url: "/blog/family-pool-tropical-villa.webp", alt: "Family with children relaxing by a pool at a tropical villa in Bali", credit: "Atlantic Ambience / Pexels", sourceUrl: "https://www.pexels.com/photo/11266606/" },
+      { url: "/blog/international-school-art-class.webp", alt: "Children in an arts and crafts class at an international school", credit: "Yan Krukau / Pexels", sourceUrl: "https://www.pexels.com/photo/8612983/" },
+      { url: "/blog/family-unpacking-moving-boxes.webp", alt: "Family unpacking moving boxes after relocating to a new home", credit: "cottonbro studio / Pexels", sourceUrl: "https://www.pexels.com/photo/family-unpacking-after-moving-4569340/" },
+    ],
+    faq: [
+      {
+        question: "Can you relocate to Bali with a family near Kaba Kaba?",
+        answer:
+          "Yes. Most families use a Second Home Visa, which covers a spouse and children under 18 as dependents, or a Dependent KITAS sponsored by a parent who already holds a work or investor permit.",
+      },
+      {
+        question: "What international schools are near Kaba Kaba?",
+        answer:
+          "Grow International School in Kedungu is about 10 minutes away on a Cambridge curriculum, and ProEd Global School at Nuanu is a second option 10 to 15 minutes out.",
+      },
+      {
+        question: "What is healthcare like near Tabanan?",
+        answer:
+          "Kasih Ibu Hospital in Tabanan covers everyday care 15 to 20 minutes from Kaba Kaba. For more complex needs, BIMC Hospital in Kuta has English-speaking staff and a 24 hour emergency room, about 45 to 50 minutes away.",
+      },
+      {
+        question: "What does it cost to live near Canggu?",
+        answer:
+          "Day-to-day costs away from beachfront Canggu tend to run lower, since rent and dining follow local Tabanan prices rather than tourist-strip ones. That is a general pattern, not a fixed figure, and it depends on the household.",
+      },
+    ],
+  },
 ];
