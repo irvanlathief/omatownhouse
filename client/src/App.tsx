@@ -7,6 +7,7 @@ import { ThemeProvider } from "./contexts/ThemeContext";
 import { ExternalLinkConfirm } from "./components/ExternalLinkConfirm";
 import Home from "./pages/Home";
 import BlogDetail from "./pages/BlogDetail";
+import Investors from "./pages/Investors";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -14,6 +15,7 @@ function Router() {
     <Switch>
       <Route path={"/"} component={Home} />
       <Route path={"/blog/:slug"} component={BlogDetail} />
+      <Route path={"/investors"} component={Investors} />
       <Route path={"/404"} component={NotFound} />
       {/* Final fallback route */}
       <Route component={NotFound} />

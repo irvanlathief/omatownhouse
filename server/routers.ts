@@ -4,6 +4,7 @@ import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
 import { chatRouter } from "./chatRouter";
 import { imageRouter } from "./imageRouter";
+import { investorRouter } from "./investorRouter";
 import { lifestyleRouter } from "./lifestyleRouter";
 
 export const appRouter = router({
@@ -22,6 +23,7 @@ export const appRouter = router({
 
   chat: chatRouter,
   images: imageRouter,
+  investor: investorRouter,
   lifestyle: lifestyleRouter,
 });
 
