@@ -507,7 +507,205 @@ function InvestorContent() {
           </p>
         </div>
       </section>
+
+      {/* What USD 250k buys you — the comparison case */}
+      <section className="max-w-5xl mx-auto px-6 py-24">
+        <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
+          The comparison
+        </div>
+        <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 max-w-3xl">
+          What USD 250,000 buys you around the world.
+        </h2>
+        <p className="mt-4 text-gray-700 max-w-3xl">
+          Same money, different product. The point is not that Bali is cheaper.
+          The point is what you actually get for the same outlay.
+        </p>
+
+        <div className="mt-10 overflow-x-auto">
+          <table className="w-full text-sm">
+            <thead className="text-left text-gray-500">
+              <tr className="border-b border-gray-200">
+                <th className="py-3 pr-4 font-medium">Market</th>
+                <th className="py-3 pr-4 font-medium">What ~USD 250k buys</th>
+                <th className="py-3 pr-4 font-medium">Private pool</th>
+                <th className="py-3 pr-4 font-medium">Foreign ownership</th>
+              </tr>
+            </thead>
+            <tbody className="text-gray-800">
+              <tr className="border-b border-gray-100 bg-gray-50 font-medium">
+                <td className="py-3 pr-4">Tabanan, Bali (OMA)</td>
+                <td className="py-3 pr-4">2-bed townhouse, 97.5 sqm, freehold via PT PMA</td>
+                <td className="py-3 pr-4">Yes</td>
+                <td className="py-3 pr-4">Yes, via PT PMA or leasehold</td>
+              </tr>
+              <tr className="border-b border-gray-100">
+                <td className="py-3 pr-4">Canggu, Bali</td>
+                <td className="py-3 pr-4">Studio or compact 1-bed leasehold</td>
+                <td className="py-3 pr-4">Shared, if any</td>
+                <td className="py-3 pr-4">Leasehold only at this price</td>
+              </tr>
+              <tr className="border-b border-gray-100">
+                <td className="py-3 pr-4">Dubai (JVC / Business Bay)</td>
+                <td className="py-3 pr-4">~35–45 sqm studio, freehold zone</td>
+                <td className="py-3 pr-4">Shared building pool</td>
+                <td className="py-3 pr-4">Yes, freehold</td>
+              </tr>
+              <tr className="border-b border-gray-100">
+                <td className="py-3 pr-4">Phuket, Thailand</td>
+                <td className="py-3 pr-4">1-bed condo, ~40 sqm, foreign quota</td>
+                <td className="py-3 pr-4">Shared</td>
+                <td className="py-3 pr-4">Condo freehold via foreign quota</td>
+              </tr>
+              <tr className="border-b border-gray-100">
+                <td className="py-3 pr-4">Lisbon, Portugal</td>
+                <td className="py-3 pr-4">1-bed apartment, ~45 sqm, outside the centre</td>
+                <td className="py-3 pr-4">No</td>
+                <td className="py-3 pr-4">Yes, freehold</td>
+              </tr>
+              <tr className="border-b border-gray-100">
+                <td className="py-3 pr-4">Tulum, Mexico</td>
+                <td className="py-3 pr-4">~55 sqm 1-bed condo, shared amenities</td>
+                <td className="py-3 pr-4">Shared</td>
+                <td className="py-3 pr-4">Yes, via fideicomiso</td>
+              </tr>
+              <tr>
+                <td className="py-3 pr-4">Average US Sun-belt city (1-bed)</td>
+                <td className="py-3 pr-4">1-bed condo or compact townhouse</td>
+                <td className="py-3 pr-4">Shared, if any</td>
+                <td className="py-3 pr-4">Yes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p className="mt-8 text-xs text-gray-500 max-w-3xl">
+          Comparisons reflect typical product available at roughly USD 250,000
+          in each market at time of writing, drawn from public listings and
+          local market reports. Spec and condition vary widely. Provided for
+          relative comparison, not as a price quote.
+        </p>
+      </section>
+
+      {/* Common questions, straight answers — objection handling */}
+      <section className="bg-gray-50 border-y border-gray-200">
+        <div className="max-w-3xl mx-auto px-6 py-24">
+          <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
+            Straight answers
+          </div>
+          <h2 className="font-serif text-3xl sm:text-4xl text-gray-900">
+            The questions a serious buyer asks.
+          </h2>
+          <p className="mt-4 text-gray-700">
+            Off-plan in Indonesia carries real risks. The honest answers below
+            are how we think about them. If any are unresolved for you, raise
+            them with us directly.
+          </p>
+
+          <div className="mt-12 space-y-10">
+            <Qa
+              q="What if you don't deliver on time, or at all?"
+              a="Payments are staged 30 / 30 / 40 against build milestones, not a calendar. The 30% mid-construction tranche is only released after an owner inspection. Optional third-party escrow at roughly 1 to 2% of the deal is available; we recommend it, particularly for buyers who cannot visit during the build. Contracts are notarized through a licensed PPAT, with delivery dates and late-delivery remedies set in the PPJB."
+            />
+            <Qa
+              q="How safe is the title and the legal structure?"
+              a="The parent title sits on properly zoned, non-agricultural land, registered with the National Land Agency (BPN). Buyers go through a licensed Indonesian notary (PPAT). For leasehold, the Hak Sewa agreement spells out the term, the extension clause and dispute mechanics. For freehold via PT PMA, the company holds Hak Guna Bangunan (HGB) under PP 18/2021, which runs up to 80 years. We can introduce independent legal review on request before any deposit."
+            />
+            <Qa
+              q="What about Bali oversupply? Aren't there already too many villas?"
+              a="The oversupply is concentrated in central Canggu, where rate has compressed on weak product. Tabanan is a different market: lower land basis, less competing inventory, and Bali Governor's Instruction 5 of 2025 prohibits new rice-field conversion across six regencies including Tabanan, which caps future competing supply on agricultural land. OMA's site is on permitted non-agricultural land, so the policy works in the owner's favour."
+            />
+            <Qa
+              q="What's the realistic net yield, not the slide?"
+              a="The scenarios on this page are gross-revenue based, with the 18% management benchmark, fixed core ops and a 7% utilities/reserve already netted off. Indonesian tax sits below that: a PT PMA pays 22% corporate tax on net profit, or non-residents face 20% PPh 26 on gross rent in own name. We are happy to walk you through the after-tax figure for your structure on a call, including the realistic OTA commission and seasonality drag."
+            />
+            <Qa
+              q="How do I exit when the time comes?"
+              a="Two routes. A leasehold owner transfers the remaining lease term via a notarized assignment, similar to selling the lease itself. A PT PMA freehold owner can either sell the company shares (transferring the underlying HGB asset to the buyer) or transfer the HGB out and sell as an Indonesian asset. Both routes are routine; we share comparable resale data on request."
+            />
+            <Qa
+              q="Why isn't a bigger Bali developer doing this?"
+              a="The Tabanan corridor only became investable on the policy and infrastructure shifts of the last 12 to 18 months: the rice-field conversion ban, the Nuanu Creative City build-out, and the published transit planning. Most established Bali developers are anchored in saturated south markets. OMA is small on purpose: one site, design-led, repeatable. The product is the differentiation, not the inventory volume."
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* Who's behind OMA */}
+      <section className="max-w-5xl mx-auto px-6 py-24">
+        <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
+          Who's behind OMA
+        </div>
+        <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 max-w-3xl">
+          A product person, building a product company in Bali.
+        </h2>
+
+        <div className="mt-10 grid md:grid-cols-3 gap-10">
+          <div className="md:col-span-1">
+            <div className="aspect-square overflow-hidden rounded-lg bg-gray-100 border border-gray-200">
+              <img
+                src={SCENE(26)}
+                alt="OMA in Kaba Kaba, Bali"
+                className="h-full w-full object-cover"
+                loading="lazy"
+              />
+            </div>
+            <div className="mt-4 text-sm">
+              <div className="font-medium text-gray-900">Irvan Lathief</div>
+              <div className="text-gray-500">Founder, OMA Townhouse</div>
+              <a
+                href="https://irvanlathief.com"
+                data-external="true"
+                className="mt-3 inline-flex items-center gap-1 text-sm text-gray-700 hover:text-gray-900 underline underline-offset-4"
+              >
+                irvanlathief.com
+                <ArrowRight className="w-3.5 h-3.5" />
+              </a>
+            </div>
+          </div>
+
+          <div className="md:col-span-2 text-gray-800 leading-relaxed space-y-4">
+            <p>
+              <strong className="text-gray-900">A product designer who codes.</strong>{" "}
+              Ten-plus years in product design and design leadership, with a
+              bias for shipping working things over writing specs. Based in
+              Bali, originally from Indonesia, has lived and worked across
+              Germany, Australia and home.
+            </p>
+            <p>
+              <strong className="text-gray-900">Track record.</strong> Built
+              Fleetwise from the first line of code through its first paying
+              customer, then handed it to an engineering team to scale. As
+              founder of DotDesign, led product work for Asia Pacific Leaders
+              Malaria Alliance, GovTech Indonesia (Kampus Merdeka, Akun
+              Belajar, Merdeka Mengajar), and Orangetheory Fitness across the
+              region.
+            </p>
+            <p>
+              <strong className="text-gray-900">Why OMA is design-led.</strong>{" "}
+              Most Bali off-plan is sold on land economics. OMA is built like a
+              product: one floor plan, refined until every square metre earns
+              its keep; one site at a time, so the build crew and operations
+              team get sharper instead of stretched; finishes specified for the
+              first owner and the next, not for a brochure.
+            </p>
+            <p>
+              <strong className="text-gray-900">What we own.</strong> We're a
+              small team. That means you talk to the people who actually decide
+              things. If you want to dig into the build spec, the operator
+              terms, or the underwriting line by line, we'll do that on a call.
+            </p>
+          </div>
+        </div>
+      </section>
     </>
+  );
+}
+
+function Qa({ q, a }: { q: string; a: string }) {
+  return (
+    <div>
+      <h3 className="font-serif text-xl text-gray-900">{q}</h3>
+      <p className="mt-3 text-gray-700 leading-relaxed">{a}</p>
+    </div>
   );
 }
 
