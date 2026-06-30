@@ -735,4 +735,45 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "why-buy-off-plan-bali",
+    title: "Why Buy Off-Plan Instead of a Finished Villa in Bali?",
+    category: "investment",
+    imageUrl: "/blog/villa-frame-construction-tropical.webp",
+    sortOrder: 19,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-06-30",
+    layoutVariant: "qa",
+    metaDescription:
+      "Why buy off-plan instead of a finished villa in Bali? Lower entry price, staged payments and a customization window are the main reasons foreign buyers choose off-plan.",
+    body: `<p>Off-plan costs less than a finished villa because you are buying future delivery, not a turnkey asset. Developers price early units below projected completion value to fund construction and attract buyers who take on the build timeline. A foreign buyer who signs at an early stage locks in today's pricing rather than paying the post-completion market rate for the same villa.</p><p>Payments are staged. Instead of moving the full purchase amount in a single wire, you contribute in tranches tied to verified construction milestones: a reservation deposit, then a payment at foundation, another at structural frame, and the balance at handover. That keeps more capital available in your home market between transfers, which matters when a US or UAE buyer is also managing other assets while the Bali unit is under construction. <a href="https://www.exotiqproperty.com/blog/buying-off-plan-property-in-bali" data-external="true">Exotiq Property's guide to buying off-plan in Bali</a> notes that construction-linked plans, where each tranche is tied to a verified milestone rather than a calendar date, give buyers more protection if the build slows.</p><p>A third factor is customization. At an early off-plan stage, buyers often have input on finishes and fixtures. A finished villa comes as-is.</p><p>The risks are real. Construction can run late. A developer running on thin cash flow can stall. Indonesian law sets a floor: under Article 10(1) of <a href="https://peraturan.bpk.go.id/Details/128152/permen-pupr-no-11prtm2019-tahun-2019" data-external="true">Permen PUPR No. 11/PRT/M/2019</a>, the binding pre-sale agreement, the PPJB, cannot be signed until physical construction has reached at least 20 percent completion, the developer holds clear land title and a building permit (PBG) is already in hand. That threshold means the project is not purely on paper when you commit, though it is still well short of handover. Staging your payments against verified progress, confirmed by a licensed Indonesian notary, is the main additional protection.</p><p>A finished villa removes build risk entirely and can generate rental income from day one. The right choice depends on your timeline and how much risk you are prepared to carry while construction runs. Ownership structures for a foreign buyer are covered in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>, and the full remote purchase process in our <a href="/blog/buy-bali-off-plan-property-remotely">guide to buying off-plan remotely</a>. This is general information and not financial, legal or tax advice.</p>`,
+    venues: [],
+    citations: [
+      { label: "Permen PUPR No. 11/PRT/M/2019: Sistem Perjanjian Pendahuluan Jual Beli Rumah", url: "https://peraturan.bpk.go.id/Details/128152/permen-pupr-no-11prtm2019-tahun-2019" },
+      { label: "Exotiq Property: Buying Off Plan Property in Bali", url: "https://www.exotiqproperty.com/blog/buying-off-plan-property-in-bali" },
+    ],
+    heroImage: "/blog/villa-frame-construction-tropical.webp",
+    gallery: [
+      { url: "/blog/construction-workers-villa-scaffolding.webp", alt: "Construction workers on scaffolding at a villa building site with palm trees", credit: "Pavel Khlyatunov / Pexels", sourceUrl: "https://www.pexels.com/photo/14989326/" },
+      { url: "/blog/modern-white-villa-exterior.webp", alt: "Completed contemporary white villa exterior surrounded by lush tropical greenery", credit: "Gustavo Galeano Maz / Pexels", sourceUrl: "https://www.pexels.com/photo/7501130/" },
+    ],
+    faq: [
+      {
+        question: "What are the risks of buying off-plan in Bali?",
+        answer:
+          "Build delays and developer cash-flow problems are the main ones. Specification changes or quality cuts during construction are a related concern. Mitigate by requiring the PPJB only after the legal 20 percent construction threshold is met under Permen PUPR No. 11/PRT/M/2019, staging payments against verified milestones and using a licensed Indonesian notary throughout.",
+      },
+      {
+        question: "How much cheaper is off-plan than completed property in Bali?",
+        answer:
+          "There is no single fixed discount. Developers price early off-plan units below their projected post-completion market value to fund construction and attract early buyers, and that gap narrows as construction progresses. The actual saving depends on the project, developer and market conditions. This is general information, not financial advice.",
+      },
+      {
+        question: "What protections exist for off-plan buyers in Bali?",
+        answer:
+          "Under Article 10(1) of Permen PUPR No. 11/PRT/M/2019, a developer cannot sign the binding pre-sale agreement (PPJB) until physical construction has reached at least 20 percent completion, with clear land title and a building permit (PBG) in hand. The PPJB must fix price, payment schedule and delivery date and set penalties for late delivery. Staging payments against verified construction progress adds further protection.",
+      },
+    ],
+  },
 ];
