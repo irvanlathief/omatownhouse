@@ -196,7 +196,7 @@
     },
     {
       "id": "offplan-why-buy",
-      "status": "drafting",
+      "status": "published",
       "priority": 10,
       "theme": "off-plan",
       "atpType": "why",
@@ -208,12 +208,12 @@
         "What protections exist for off-plan buyers?"
       ],
       "proposedSlug": "why-buy-off-plan-bali",
-      "proposedTitle": "",
+      "proposedTitle": "Why Buy Off-Plan Instead of a Finished Villa in Bali?",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-06-30",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/31"
     },
     {
       "id": "foreign-ownership-can-buy",
