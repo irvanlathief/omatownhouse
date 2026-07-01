@@ -776,4 +776,65 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-property-exit-strategy",
+    title: "Bali Property Exit Strategy for Foreign Investors",
+    category: "investment",
+    imageUrl: "/blog/property-sold-sign-realtor.webp",
+    sortOrder: 20,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-01",
+    layoutVariant: "qa",
+    metaDescription:
+      "How do you exit a Bali property investment? Leasehold assignment or PT PMA share sale are the two main routes, each with different tax rates and timelines.",
+    body: `<p>Yes, you can sell a Bali property investment as a foreign buyer, and the process follows an established legal path. The route depends on how you hold the asset. A leasehold holder assigns their lease rights to a new buyer. A PT PMA holder can either transfer the company shares or sell the property out of the company. Each route carries different tax treatment and a different timeline.</p><p>A Hak Sewa (leasehold) gives you the right to use a property for a fixed term. When you sell before that term ends, a licensed Indonesian notary (PPAT) drafts an assignment deed and the new buyer steps into your position for the remaining years. Most lease contracts require the original Indonesian landowner's written consent to the assignment, so check your contract before you list. On the seller's side, <a href="https://peraturan.bpk.go.id/Details/5755/pp-no-34-tahun-2016" data-external="true">Government Regulation PP No. 34 of 2016</a> sets a final income tax (PPh Final) of 2.5 percent of the gross transaction value, paid before the notary can execute the deed. The buyer pays BPHTB, the land and building acquisition duty, at 5 percent. Holding an Indonesian tax number (NPWP) before you sell matters: without one, a higher withholding rate can apply to a foreign seller under Article 26 of the income tax law.</p><p>If the property sits inside a PT PMA company, the quickest exit is usually a company share sale. The buyer acquires your PT PMA shares and with them the property title, without any fresh title registration at BPN. For a non-resident seller, <a href="https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers" data-external="true">Article 26 withholding tax</a> applies to the sale proceeds at up to 20 percent; that rate may be reduced if your home country has a tax treaty with Indonesia and you present a Certificate of Domicile. Both the US and the UAE have tax treaties with Indonesia. The actual rate on a private company share sale depends on how Indonesian tax authorities treat the gain and should be confirmed with a qualified Indonesian tax adviser before you close. Share transfers typically complete in 2 to 4 months.</p><p>The alternative PT PMA exit is to sell the property itself out of the company. The PT PMA as seller pays PPh Final at 2.5 percent under PP No. 34/2016. The buyer pays BPHTB at 5 percent, a fresh title registers at BPN and a new land certificate issues. This takes 4 to 6 months and costs more in transaction taxes, but delivers a clean property transfer. You will need to wind down or repurpose the PT PMA company separately afterward.</p><p>Indonesia does not impose a standalone capital gains tax on property sales. PPh Final on an asset transfer applies to the gross transaction value, not only the profit. A seller who paid USD 200,000 and sells for USD 350,000 pays 2.5 percent on USD 350,000, not just on the USD 150,000 difference. Plan for 3 to 6 months from committed buyer to funds in your home account; marketing, due diligence and tax clearance each add time. Keep your original PPJB, land certificate copy and PT PMA records on file, since a buyer will request them. Ownership structures are covered in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a> and our <a href="/blog/freehold-vs-leasehold-bali">freehold vs leasehold guide</a>. This is general information and not tax, legal or financial advice; confirm your specific position with a licensed Indonesian notary and a qualified tax adviser before you sell.</p>`,
+    venues: [],
+    heroImage: "/blog/property-sold-sign-realtor.webp",
+    gallery: [
+      {
+        url: "/blog/real-estate-keys-documents-desk.webp",
+        alt: "Property keys on real estate documents with colourful house models, symbolising a property transfer",
+        credit: "Jakub Zerdzicki / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/real-estate-keys-and-documents-with-house-models-34135038/",
+      },
+      {
+        url: "/blog/agent-handing-property-key.webp",
+        alt: "Real estate agent in a suit handing property keys to a buyer",
+        credit: "Kampus Production / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/real-estate-agent-handing-house-keys-8815915/",
+      },
+    ],
+    citations: [
+      {
+        label: "Government Regulation PP No. 34/2016: PPh Final on property transfers (BPK)",
+        url: "https://peraturan.bpk.go.id/Details/5755/pp-no-34-tahun-2016",
+      },
+      {
+        label: "Directorate General of Taxes: Income Tax Article 26 (non-resident withholding)",
+        url: "https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers",
+      },
+      {
+        label: "Exotiq Property: Selling Property in Bali in 2026",
+        url: "https://www.exotiqproperty.com/blog/selling-property-in-bali-2026",
+      },
+    ],
+    faq: [
+      {
+        question: "How do you assign a Bali leasehold to a new buyer?",
+        answer:
+          "You transfer your lease rights via a notarial assignment deed drafted by a licensed Indonesian notary (PPAT). Most lease contracts require the original Indonesian landowner's written consent first. The seller pays PPh Final at 2.5 percent of the transaction value under Government Regulation PP No. 34/2016, and the buyer pays BPHTB at 5 percent.",
+      },
+      {
+        question: "What tax does a foreign seller pay when selling Bali property?",
+        answer:
+          "For a direct property asset transfer, the seller pays PPh Final at 2.5 percent of the gross transaction value under PP No. 34/2016, regardless of the profit made. The buyer pays BPHTB at 5 percent. For a PT PMA share sale, Article 26 withholding tax applies to a non-resident seller at up to 20 percent, potentially reduced under a tax treaty. This is general information, not tax advice.",
+      },
+      {
+        question: "Is a PT PMA share transfer faster than selling the property directly?",
+        answer:
+          "Yes. A PT PMA share sale transfers the company and the property inside it without a fresh land title registration at BPN, typically completing in 2 to 4 months. A direct asset transfer requires a new deed registered at BPN and a new land certificate, and generally takes 4 to 6 months or more.",
+      },
+    ],
+  },
 ];
