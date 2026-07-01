@@ -217,7 +217,7 @@
     },
     {
       "id": "bali-property-exit-strategy",
-      "status": "drafting",
+      "status": "published",
       "priority": 11,
       "theme": "investment",
       "atpType": "how",
@@ -233,8 +233,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-01",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/32"
     },
     {
       "id": "pt-pma-setup-bali",
