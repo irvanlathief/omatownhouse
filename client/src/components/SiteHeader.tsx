@@ -18,18 +18,32 @@ export function InstagramIcon({ className }: { className?: string }) {
   );
 }
 
-export function SiteHeader() {
+export function SiteHeader({
+  overlay = false,
+  inverted = false,
+}: {
+  overlay?: boolean;
+  inverted?: boolean;
+} = {}) {
+  const headerClassName = overlay
+    ? "absolute inset-x-0 top-0 z-50 bg-transparent"
+    : "sticky top-0 z-50 bg-white border-b border-gray-200";
+  const textClassName = inverted ? "text-white" : "text-gray-900";
+  const linkClassName = inverted
+    ? "text-sm font-medium text-white/84 hover:text-white"
+    : "text-sm font-medium text-gray-700 hover:text-gray-900";
+
   return (
-    <header className="sticky top-0 z-50 bg-white border-b border-gray-200">
+    <header className={headerClassName}>
       <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="/" className="text-xl font-semibold text-gray-900">
+        <a href="/" className={`text-xl font-semibold ${textClassName}`}>
           OMA Townhouse
         </a>
         <div className="flex items-center gap-4">
           <a
             href="https://wa.me/"
             data-external="true"
-            className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900"
+            className={`flex items-center gap-2 ${linkClassName}`}
           >
             <WhatsAppIcon className="w-4 h-4" />
             <span className="hidden sm:inline">WhatsApp</span>
@@ -37,7 +51,7 @@ export function SiteHeader() {
           <a
             href="https://instagram.com/omatownhouse"
             data-external="true"
-            className="flex items-center gap-2 text-sm font-medium text-gray-700 hover:text-gray-900"
+            className={`flex items-center gap-2 ${linkClassName}`}
           >
             <InstagramIcon className="w-4 h-4" />
             <span className="hidden sm:inline">Instagram</span>

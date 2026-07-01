@@ -4,7 +4,7 @@ import { SiteHeader } from "@/components/SiteHeader";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import { Lock, Check, ArrowRight, ExternalLink, Home, Info } from "lucide-react";
+import { Lock, Check, ArrowRight, Info } from "lucide-react";
 import { toast } from "sonner";
 
 const STORAGE_KEY = "oma_investor_access_v1";
@@ -12,18 +12,14 @@ const STORAGE_KEY = "oma_investor_access_v1";
 const GALLERY_BASE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery";
 const SCENE = (n: number) => `${GALLERY_BASE}/Scene${n}.webp`;
-
-const KABA_COORDS = "-8.576677,115.145663";
-const AIRBNB_HOST_URL =
-  "https://www.airbnb.com/host/homes?from_footer=1&room_type=ENTIRE_HOME";
+const INVESTOR_HERO_IMAGE = "/investors-hero.png";
 
 // Defaults calibrated for OMA's premium two-bed pool townhouse spec.
-// Airbnb's area estimate for a generic Kaba-Kaba 2BR is ~Rp 1.34M/night; OMA
-// is positioned above that on design, pool and 97.5 sqm. The slider lets a
-// visitor dial it down to area-average or up to upside without us hand-waving.
-const DEFAULT_NIGHTLY = 3_240_000; // Rp ~USD 200 at 16,200 IDR/USD
+// Airbnb's area estimate for a generic Kaba-Kaba 2BR is about USD 83/night;
+// OMA is positioned above that on design, pool and 97.5 sqm. The slider lets
+// a visitor dial it down to area-average or up to upside without us hand-waving.
+const DEFAULT_NIGHTLY = 200;
 const DEFAULT_NIGHTS = 18; // ~60% occupancy
-const IDR_PER_USD = 16_200;
 
 // Three ownership tiers, matching the homepage chat pricing.
 const TIERS = [
@@ -52,10 +48,6 @@ interface AccessRecord {
   email: string;
   whatsapp: string;
   unlockedAt: string;
-}
-
-function formatRp(n: number): string {
-  return "Rp " + Math.round(n).toLocaleString("en-US");
 }
 
 function formatUsd(n: number): string {
@@ -132,8 +124,8 @@ export default function Investors() {
   const firstName = access?.name?.split(" ")[0];
 
   return (
-    <div className="bg-white text-gray-900">
-      <SiteHeader />
+    <div className="relative bg-white text-gray-900">
+      <SiteHeader overlay inverted />
 
       <EarningsHero />
       <MethodologyDisclosure />
@@ -171,78 +163,41 @@ export default function Investors() {
 }
 
 function EarningsHero() {
-  const [nights, setNights] = useState(DEFAULT_NIGHTS);
-  const nightly = DEFAULT_NIGHTLY;
-  const monthly = nights * nightly;
-
   return (
-    <section className="bg-stone-50 border-b border-stone-200">
-      <div className="max-w-6xl mx-auto px-6 pt-16 pb-20 grid lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-stone-500 mb-6">
-            <span>Earnings potential</span>
-            <span className="text-stone-300">·</span>
-            <span>Modelled on Airbnb</span>
-          </div>
-          <h1 className="font-serif text-4xl sm:text-5xl md:text-6xl leading-[1.05] text-stone-900">
-            Your OMA townhouse could earn{" "}
-            <span className="whitespace-nowrap">{formatRp(monthly)}</span> a
-            month on Airbnb.
-          </h1>
-          <div className="mt-6 text-stone-600">
-            <span className="underline underline-offset-4">{nights} nights</span>
-            {" · "}
-            <span>{formatRp(nightly)}/night</span>
-            <div className="text-xs text-stone-500 mt-1">
-              Estimated · ≈ {formatUsd(monthly / IDR_PER_USD)} / month
-            </div>
-          </div>
-          <div className="mt-6">
-            <input
-              type="range"
-              min={8}
-              max={28}
-              value={nights}
-              onChange={(e) => setNights(Number(e.target.value))}
-              className="w-full sm:w-80 accent-stone-900"
-              aria-label="Nights per month"
-            />
-            <div className="flex justify-between w-full sm:w-80 text-[10px] uppercase tracking-wider text-stone-500 mt-1">
-              <span>8 nights</span>
-              <span>28 nights</span>
-            </div>
-          </div>
+    <section className="relative h-[600px] overflow-hidden bg-stone-950 text-white">
+      <img
+        src={INVESTOR_HERO_IMAGE}
+        alt="OMA Townhouse exterior hero"
+        className="absolute inset-0 h-full w-full object-cover"
+      />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/62 via-black/34 to-black/12" />
+      <div className="absolute inset-0 bg-gradient-to-t from-black/38 via-transparent to-black/12" />
 
-          <div className="mt-8 inline-flex items-center gap-2 rounded-full border border-stone-200 bg-white px-4 py-2.5 text-sm shadow-sm">
-            <Home className="w-4 h-4 text-stone-500" />
-            <span className="text-stone-700">
-              Kaba-Kaba · Entire place · 2 bedrooms
+      <div className="relative mx-auto flex h-full max-w-7xl items-end px-6 pb-16 pt-32 sm:px-8 lg:px-12">
+        <div className="max-w-3xl">
+          <div className="inline-flex items-center gap-2 rounded-full border border-white/18 bg-white/8 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-white/78 backdrop-blur-sm">
+            <span>Investor Page</span>
+            <span className="text-white/35">·</span>
+            <span>Kaba Kaba, Bali</span>
+          </div>
+          <h1 className="mt-6 max-w-2xl font-serif text-4xl leading-[0.98] tracking-[-0.03em] text-white sm:text-5xl md:text-6xl">
+            One of Bali&apos;s last true pockets of peace, with the right kind of ROI behind it.
+          </h1>
+          <p className="mt-5 max-w-2xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
+            OMA Townhouse is designed for buyers who want calm, scarcity and a
+            return profile that still feels grounded in the place itself.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.2em] text-white/76">
+            <span className="rounded-full border border-white/18 bg-black/18 px-3 py-2 backdrop-blur-sm">
+              Kaba Kaba
+            </span>
+            <span className="rounded-full border border-white/18 bg-black/18 px-3 py-2 backdrop-blur-sm">
+              Modern Tropical Townhouse
+            </span>
+            <span className="rounded-full border border-white/18 bg-black/18 px-3 py-2 backdrop-blur-sm">
+              Investor Preview
             </span>
           </div>
-
-          <div className="mt-6 text-xs text-stone-500">
-            <a
-              href={AIRBNB_HOST_URL}
-              data-external="true"
-              className="inline-flex items-center gap-1 text-stone-700 hover:text-stone-900 underline underline-offset-4"
-            >
-              See Airbnb's estimate for the area
-              <ExternalLink className="w-3 h-3" />
-            </a>
-            {" "}— enter "Kaba-Kaba" in the location field.
-          </div>
-        </div>
-
-        {/* Right side: a real Google Maps embed of the Kaba-Kaba area. */}
-        <div className="aspect-[5/4] w-full rounded-lg overflow-hidden border border-stone-200 shadow-sm bg-stone-100">
-          <iframe
-            title="Kaba-Kaba area map"
-            src={`https://maps.google.com/maps?q=${encodeURIComponent(
-              KABA_COORDS
-            )}&z=13&output=embed`}
-            className="h-full w-full"
-            loading="lazy"
-          />
         </div>
       </div>
     </section>
@@ -300,10 +255,10 @@ function MethodologyDisclosure() {
             <div className="border-t border-stone-200 pt-4 text-stone-700">
               <strong className="text-stone-900">OMA's adjustment.</strong>{" "}
               Airbnb's area estimate for a generic Kaba-Kaba 2-bed sits around
-              Rp 1.34M per night. OMA is positioned above that on design,
-              private pool and 97.5 sqm, which is why our default rate of Rp
-              3.24M per night reflects what comparable design-led villas with
-              a pool achieve in the western corridor. Slide it down to the
+              USD 83 per night. OMA is positioned above that on design,
+              private pool and 97.5 sqm, which is why our default rate of USD
+              200 per night reflects what comparable design-led villas with a
+              pool achieve in the western corridor. Slide it down toward the
               area average if you want to see the conservative case.
             </div>
           </div>
@@ -318,13 +273,13 @@ function PaybackCalculator() {
   const [nights, setNights] = useState(DEFAULT_NIGHTS);
 
   const grossAnnual = nightly * nights * 12;
-  // Net of: 18% management benchmark, IDR 68M (~USD 4,200) fixed core ops,
+  // Net of: 18% management benchmark, USD 4,200 fixed core ops,
   // 7% reserve for utilities and consumables. Indonesian tax sits below this.
-  const FIXED_OPS_IDR = 68_000_000;
+  const FIXED_OPS_USD = 4_200;
   const netAnnual = useMemo(() => {
     const mgmt = grossAnnual * 0.18;
     const reserve = grossAnnual * 0.07;
-    return Math.max(0, grossAnnual - mgmt - FIXED_OPS_IDR - reserve);
+    return Math.max(0, grossAnnual - mgmt - FIXED_OPS_USD - reserve);
   }, [grossAnnual]);
 
   return (
@@ -352,22 +307,22 @@ function PaybackCalculator() {
               <div className="flex items-baseline justify-between text-sm">
                 <span className="text-stone-700">Nightly rate</span>
                 <span className="font-medium text-stone-900">
-                  {formatRp(nightly)}
+                  {formatUsd(nightly)}
                 </span>
               </div>
               <input
                 type="range"
-                min={1_500_000}
-                max={5_000_000}
-                step={50_000}
+                min={80}
+                max={320}
+                step={5}
                 value={nightly}
                 onChange={(e) => setNightly(Number(e.target.value))}
                 className="mt-2 w-full accent-stone-900"
-                aria-label="Nightly rate in Rupiah"
+                aria-label="Nightly rate in USD"
               />
               <div className="flex justify-between text-[10px] uppercase tracking-wider text-stone-500 mt-1">
-                <span>Rp 1.5M</span>
-                <span>Rp 5M</span>
+                <span>USD 80</span>
+                <span>USD 320</span>
               </div>
             </div>
             <div>
@@ -395,18 +350,18 @@ function PaybackCalculator() {
             <div className="flex justify-between text-stone-600">
               <span>Annual gross</span>
               <span className="text-stone-900 font-medium">
-                {formatRp(grossAnnual)}
+                {formatUsd(grossAnnual)}
               </span>
             </div>
             <div className="flex justify-between text-stone-600 mt-2">
               <span>Annual net of ops</span>
               <span className="text-stone-900 font-medium">
-                {formatRp(netAnnual)}
+                {formatUsd(netAnnual)}
               </span>
             </div>
             <div className="text-[11px] text-stone-500 mt-3 leading-relaxed">
-              Net subtracts 18% management, ~Rp 68M fixed core ops and 7%
-              utilities reserve. Indonesian tax (PT PMA 22% on profit, or 20%
+              Net subtracts 18% management, about USD 4,200 fixed core ops and
+              7% utilities reserve. Indonesian tax (PT PMA 22% on profit, or 20%
               PPh 26 on gross for own-name) sits below this.
             </div>
           </div>
@@ -415,9 +370,8 @@ function PaybackCalculator() {
         {/* Tier cards */}
         <div className="lg:col-span-2 grid sm:grid-cols-3 gap-4">
           {TIERS.map((tier) => {
-            const priceIdr = tier.priceUsd * IDR_PER_USD;
-            const paybackYears = netAnnual > 0 ? priceIdr / netAnnual : Infinity;
-            const grossYield = (netAnnual / priceIdr) * 100;
+            const paybackYears = netAnnual > 0 ? tier.priceUsd / netAnnual : Infinity;
+            const grossYield = (netAnnual / tier.priceUsd) * 100;
             const highlighted = tier.key === "lease40";
             return (
               <div
@@ -443,7 +397,7 @@ function PaybackCalculator() {
                     highlighted ? "text-white/60" : "text-stone-500"
                   } mt-0.5`}
                 >
-                  ≈ {formatRp(priceIdr)} · {tier.note}
+                  {tier.note}
                 </div>
 
                 <div
