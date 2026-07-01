@@ -65,7 +65,7 @@ Pricing cards — when they ask about price, or you bring it up, show the tiers 
 \`\`\`pricing
 \`\`\`
 
-Document buttons — to pull up visuals or the full price list. Use ONLY these ids: layout, renders, pricing, location.
+Inline detail prompts — offer these when a visual or deeper answer would help. Pressing one asks a new question inside the same conversation. Use ONLY these ids: layout, renders, pricing, location.
 \`\`\`docs
 layout | renders | location
 \`\`\`
@@ -73,6 +73,8 @@ layout | renders | location
 Rules:
 - Keep the line of text above a block to 1-2 sentences.
 - Quick replies should read like the visitor talking ("What's nearby?"), not a sales pitch.
+- Answer all layout, render, pricing and location follow-ups inside the chat. Never refer to a popup, modal or separate document viewer.
+- When the visitor asks for renders, include one property image using the provided IMAGE_URL.
 - Don't repeat the pricing cards unless they ask again.
 - Don't invent other block types or document ids.
 
@@ -216,7 +218,8 @@ export const chatRouter = router({
       if (!rateLimit(`chat:${ip}`, { limit: 20, windowMs: 60_000 }).ok) {
         throw new TRPCError({
           code: "TOO_MANY_REQUESTS",
-          message: "Too many messages in a short time. Please wait a moment and try again.",
+          message:
+            "Too many messages in a short time. Please wait a moment and try again.",
         });
       }
       if (!rateLimit("chat:global", { limit: 300, windowMs: 60_000 }).ok) {
@@ -231,15 +234,13 @@ export const chatRouter = router({
       const safeHistory = history.slice(-20);
 
       // Inject a random property image URL for the AI to use
-      const imageHint = PROPERTY_IMAGES[Math.floor(Math.random() * PROPERTY_IMAGES.length)];
-      const enhancedSystem = SYSTEM_PROMPT.replace(
-        /IMAGE_URL/g,
-        imageHint
-      );
+      const imageHint =
+        PROPERTY_IMAGES[Math.floor(Math.random() * PROPERTY_IMAGES.length)];
+      const enhancedSystem = SYSTEM_PROMPT.replace(/IMAGE_URL/g, imageHint);
 
       const messages = [
         { role: "system" as const, content: enhancedSystem },
-        ...safeHistory.map((msg) => ({
+        ...safeHistory.map(msg => ({
           role: msg.role as "user" | "assistant",
           content: msg.content,
         })),
@@ -249,16 +250,26 @@ export const chatRouter = router({
       try {
         const response = await invokeLLM({ messages, maxTokens: 800 });
         const rawContent = response.choices[0]?.message?.content;
-        const reply = typeof rawContent === 'string' ? rawContent : "Sorry, having a connection issue. Try again?";
+        const reply =
+          typeof rawContent === "string"
+            ? rawContent
+            : "Sorry, having a connection issue. Try again?";
 
         // Check if chat summary was requested
-        const summaryMatch = typeof reply === 'string' ? reply.match(/```send_summary\s*([\s\S]*?)```/) : null;
+        const summaryMatch =
+          typeof reply === "string"
+            ? reply.match(/```send_summary\s*([\s\S]*?)```/)
+            : null;
         if (summaryMatch) {
           try {
             const summaryData = JSON.parse(summaryMatch[1].trim());
-            
+
             // Build a nice chat summary
-            const summaryContent = buildChatSummary(history, message, summaryData.name);
+            const summaryContent = buildChatSummary(
+              history,
+              message,
+              summaryData.name
+            );
 
             // Send the summary to the visitor via Mailgun (best-effort).
             if (summaryData.email) {
@@ -270,15 +281,24 @@ export const chatRouter = router({
               });
             }
 
-            const cleanReply = reply.replace(/```send_summary[\s\S]*?```/g, '').trim();
-            return { reply: cleanReply, leadCollected: false, summarySent: true };
+            const cleanReply = reply
+              .replace(/```send_summary[\s\S]*?```/g, "")
+              .trim();
+            return {
+              reply: cleanReply,
+              leadCollected: false,
+              summarySent: true,
+            };
           } catch (e) {
             console.error("Failed to send summary:", e);
           }
         }
 
         // Check if lead data was collected
-        const leadMatch = typeof reply === 'string' ? reply.match(/```lead_data\s*([\s\S]*?)```/) : null;
+        const leadMatch =
+          typeof reply === "string"
+            ? reply.match(/```lead_data\s*([\s\S]*?)```/)
+            : null;
         if (leadMatch) {
           let leadData: Record<string, unknown> | null = null;
           try {
@@ -292,29 +312,33 @@ export const chatRouter = router({
             // team gets complete context — not just the last few messages.
             // Includes the visitor's latest message and the advisor's reply
             // (with the hidden lead_data block stripped out).
-            const assistantReply = reply.replace(/```lead_data[\s\S]*?```/g, '').trim();
+            const assistantReply = reply
+              .replace(/```lead_data[\s\S]*?```/g, "")
+              .trim();
             const fullTranscript = [
               ...history,
               { role: "user" as const, content: message },
               { role: "assistant" as const, content: assistantReply },
             ]
-              .filter((m) => m.content && m.content.trim())
-              .map((m) => `${m.role === "user" ? "Visitor" : "OMA"}: ${m.content}`)
+              .filter(m => m.content && m.content.trim())
+              .map(
+                m => `${m.role === "user" ? "Visitor" : "OMA"}: ${m.content}`
+              )
               .join("\n\n");
 
             const emailContent = `
 NEW LEAD - OMA TOWNHOUSE
 
 CONTACT INFO:
-Name: ${leadData.name || 'Not provided'}
-Email: ${leadData.email || 'Not provided'}
-WhatsApp: ${leadData.whatsapp || 'Not provided'}
-Instagram: ${leadData.instagram || 'Not provided'}
-Country: ${leadData.country || 'Not specified'}
-Preferred Language: ${leadData.language || 'English'}
+Name: ${leadData.name || "Not provided"}
+Email: ${leadData.email || "Not provided"}
+WhatsApp: ${leadData.whatsapp || "Not provided"}
+Instagram: ${leadData.instagram || "Not provided"}
+Country: ${leadData.country || "Not specified"}
+Preferred Language: ${leadData.language || "English"}
 
 NOTES:
-${leadData.notes || 'None'}
+${leadData.notes || "None"}
 
 FULL CONVERSATION:
 ${fullTranscript}
@@ -343,19 +367,24 @@ Follow up within 24 hours.
                   status: "new",
                 });
               } else {
-                console.warn('DB unavailable; lead not persisted (email still sent).');
+                console.warn(
+                  "DB unavailable; lead not persisted (email still sent)."
+                );
               }
             } catch (dbError) {
-              console.error('Failed to save lead to DB (email still sent):', dbError);
+              console.error(
+                "Failed to save lead to DB (email still sent):",
+                dbError
+              );
             }
 
             // 2) Notify the team. Best-effort owner notification through the
             //    legacy Manus channel (no-op when Forge isn't configured)...
-            const leadTitle = `New Lead: ${leadData.name || 'Anonymous'} from ${leadData.country || 'Unknown'}`;
+            const leadTitle = `New Lead: ${leadData.name || "Anonymous"} from ${leadData.country || "Unknown"}`;
             try {
               await notifyOwner({ title: leadTitle, content: emailContent });
             } catch (notifyError) {
-              console.error('notifyOwner failed:', notifyError);
+              console.error("notifyOwner failed:", notifyError);
             }
 
             // ...and the reliable path: email the lead + full transcript to the
@@ -363,18 +392,24 @@ Follow up within 24 hours.
             // respond to them directly.
             const teamEmailed = await sendEmail({
               to: ENV.leadNotifyEmail,
-              subject: `New OMA Townhouse Lead: ${leadData.name || 'Anonymous'} from ${leadData.country || 'Unknown'}`,
+              subject: `New OMA Townhouse Lead: ${leadData.name || "Anonymous"} from ${leadData.country || "Unknown"}`,
               text: emailContent,
-              replyTo: typeof leadData.email === 'string' ? leadData.email : undefined,
+              replyTo:
+                typeof leadData.email === "string" ? leadData.email : undefined,
             });
             if (!teamEmailed) {
-              console.warn(`Lead email to ${ENV.leadNotifyEmail} not sent (Mailgun unconfigured or failed).`);
+              console.warn(
+                `Lead email to ${ENV.leadNotifyEmail} not sent (Mailgun unconfigured or failed).`
+              );
             }
 
             // 3) Auto-confirm to the visitor so they know we received their
             //    details and will follow up. Best-effort; never blocks the reply.
-            if (typeof leadData.email === 'string' && leadData.email.includes('@')) {
-              const visitorName = (leadData.name as string) || 'there';
+            if (
+              typeof leadData.email === "string" &&
+              leadData.email.includes("@")
+            ) {
+              const visitorName = (leadData.name as string) || "there";
               await sendEmail({
                 to: leadData.email,
                 subject: `Thanks for reaching out about OMA Townhouse`,
@@ -388,7 +423,7 @@ Follow up within 24 hours.
                   ``,
                   `Warm regards,`,
                   `The OMA Townhouse Team`,
-                ].join('\n'),
+                ].join("\n"),
               });
             }
 
@@ -404,23 +439,36 @@ Follow up within 24 hours.
     }),
 });
 
-function buildChatSummary(history: ChatMessage[], lastMessage: string, name: string): string {
+function buildChatSummary(
+  history: ChatMessage[],
+  lastMessage: string,
+  name: string
+): string {
   // Extract key topics discussed
-  const allMessages = [...history, { role: "user" as const, content: lastMessage }];
-  
-  const pricingMentioned = allMessages.some(m => 
-    m.content.toLowerCase().includes('price') || m.content.toLowerCase().includes('cost') || 
-    m.content.toLowerCase().includes('$') || m.content.toLowerCase().includes('leasehold') ||
-    m.content.toLowerCase().includes('freehold')
-  );
-  
-  const locationMentioned = allMessages.some(m => 
-    m.content.toLowerCase().includes('location') || m.content.toLowerCase().includes('where') ||
-    m.content.toLowerCase().includes('canggu') || m.content.toLowerCase().includes('nuanu')
+  const allMessages = [
+    ...history,
+    { role: "user" as const, content: lastMessage },
+  ];
+
+  const pricingMentioned = allMessages.some(
+    m =>
+      m.content.toLowerCase().includes("price") ||
+      m.content.toLowerCase().includes("cost") ||
+      m.content.toLowerCase().includes("$") ||
+      m.content.toLowerCase().includes("leasehold") ||
+      m.content.toLowerCase().includes("freehold")
   );
 
-  let summary = `Hi ${name || 'there'},\n\nThanks for chatting with us about OMA Townhouse! Here's a summary of what we discussed:\n\n`;
-  
+  const locationMentioned = allMessages.some(
+    m =>
+      m.content.toLowerCase().includes("location") ||
+      m.content.toLowerCase().includes("where") ||
+      m.content.toLowerCase().includes("canggu") ||
+      m.content.toLowerCase().includes("nuanu")
+  );
+
+  let summary = `Hi ${name || "there"},\n\nThanks for chatting with us about OMA Townhouse! Here's a summary of what we discussed:\n\n`;
+
   summary += `--- PROPERTY OVERVIEW ---\n`;
   summary += `OMA Townhouse — Kaba Kaba, Tabanan, Bali\n`;
   summary += `Total size: 97.5 sqm across 2 floors\n`;
@@ -451,7 +499,7 @@ function buildChatSummary(history: ChatMessage[], lastMessage: string, name: str
 
   summary += `--- CONVERSATION ---\n`;
   history.slice(-10).forEach(m => {
-    summary += `${m.role === 'user' ? 'You' : 'OMA'}: ${m.content}\n\n`;
+    summary += `${m.role === "user" ? "You" : "OMA"}: ${m.content}\n\n`;
   });
 
   summary += `---\nOur team will be in touch within 24 hours. If you have any questions in the meantime, just reply to this email or chat with us again on our website.\n\nWarm regards,\nOMA Townhouse Team`;

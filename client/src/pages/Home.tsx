@@ -1,685 +1,1089 @@
-import { useState, useMemo, useRef, useEffect } from "react";
+import {
+  type ReactNode,
+  type RefObject,
+  useEffect,
+  useRef,
+  useState,
+} from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import {
+  ArrowDown,
+  ArrowLeft,
+  ArrowRight,
+  MessageCircle,
+  X,
+} from "lucide-react";
 import { Link } from "wouter";
 import { trpc } from "@/lib/trpc";
-import { SiteHeader } from "@/components/SiteHeader";
-import { useAskAiChat } from "@/hooks/useAskAiChat";
-import { ChatPanel, ChatSheet, ChatDocViewer } from "@/components/AskAiChat";
-import {
-  ChevronLeft, ChevronRight,
-  MapPin, Wifi, Car, Waves,
-  TreePine, Shield, Star, Check, MessageCircle,
-  ExternalLink, Navigation
-} from "lucide-react";
 
-// Custom WhatsApp Icon
-const WhatsAppIcon = ({ className }: { className?: string }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
-  </svg>
-);
-
-// Custom Instagram Icon
-const InstagramIcon = ({ className }: { className?: string }) => (
-  <svg className={className} viewBox="0 0 24 24" fill="currentColor">
-    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-  </svg>
-);
+const IMAGES = {
+  exterior:
+    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene22.webp",
+  pool: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene26.webp",
+  living:
+    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene32.webp",
+  kitchen:
+    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene39.webp",
+  bedroom:
+    "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene76.webp",
+};
 
 const GALLERY_IMAGES = [
-  { id: 1, alt: "OMA Townhouse Exterior", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene22.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene22_thumb.webp" },
-  { id: 2, alt: "OMA Townhouse Street View", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene23.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene23_thumb.webp" },
-  { id: 3, alt: "Pool Area", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene26.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene26_thumb.webp" },
-  { id: 4, alt: "Living Area", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene32.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene32_thumb.webp" },
-  { id: 5, alt: "Entryway", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene33.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene33_thumb.webp" },
-  { id: 6, alt: "Kitchen", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene39.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene39_thumb.webp" },
-  { id: 7, alt: "Home Office", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene41.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene41_thumb.webp" },
-  { id: 8, alt: "Bathroom", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene51.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene51_thumb.webp" },
-  { id: 9, alt: "Living and Kitchen", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene52.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene52_thumb.webp" },
-  { id: 10, alt: "Bedroom", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene76.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene76_thumb.webp" },
-  { id: 11, alt: "Bedroom (TV wall)", url: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene77.webp", thumb: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene77_thumb.webp" },
+  {
+    src: IMAGES.living,
+    alt: "OMA Townhouse open living room",
+    title: "Room to arrive.",
+    detail: "Ground floor · 66.7 sqm",
+    bentoClass: "sm:col-span-2 lg:col-span-7 lg:row-span-2",
+  },
+  {
+    src: IMAGES.kitchen,
+    alt: "OMA Townhouse kitchen and dining area",
+    title: "Made to gather.",
+    detail: "Kitchen and dining",
+    bentoClass: "lg:col-span-5",
+  },
+  {
+    src: IMAGES.bedroom,
+    alt: "OMA Townhouse primary bedroom",
+    title: "Quiet by design.",
+    detail: "Primary bedroom",
+    bentoClass: "lg:col-span-5",
+  },
+  {
+    src: IMAGES.pool,
+    alt: "OMA Townhouse private pool",
+    title: "A pool of your own.",
+    detail: "Private courtyard",
+    bentoClass: "lg:col-span-4",
+  },
+  {
+    src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene51.webp",
+    alt: "OMA Townhouse home office",
+    title: "Space to focus.",
+    detail: "Home office",
+    bentoClass: "lg:col-span-4",
+  },
+  {
+    src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene41.webp",
+    alt: "OMA Townhouse bathroom",
+    title: "Calm in the details.",
+    detail: "Bathroom",
+    bentoClass: "lg:col-span-4",
+  },
+  {
+    src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene23.webp",
+    alt: "OMA Townhouse street view",
+    title: "Arrive at OMA.",
+    detail: "Street view",
+    bentoClass: "",
+  },
+  {
+    src: "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene52.webp",
+    alt: "OMA Townhouse living and kitchen",
+    title: "One connected home.",
+    detail: "Living and kitchen",
+    bentoClass: "",
+  },
 ];
 
-const AMENITIES = [
-  { icon: Waves, name: "Private Pool" },
-  { icon: Wifi, name: "High-Speed WiFi" },
-  { icon: Car, name: "Parking" },
-  { icon: MapPin, name: "Premium Location" },
-  { icon: TreePine, name: "Garden" },
-  { icon: Shield, name: "24/7 Security" },
+const OWNERSHIP = [
+  {
+    term: "25-year leasehold",
+    priceUsd: 115_000,
+    earlyBirdPrice: "USD 115,000",
+    standardPrice: "USD 135,000",
+    note: "The simplest way in",
+  },
+  {
+    term: "40-year leasehold",
+    priceUsd: 161_000,
+    earlyBirdPrice: "USD 161,000",
+    standardPrice: "USD 189,000",
+    note: "A longer horizon",
+  },
+  {
+    term: "Freehold via PT PMA",
+    priceUsd: 265_000,
+    earlyBirdPrice: "USD 265,000",
+    standardPrice: "USD 310,000",
+    note: "Built for permanence",
+  },
 ];
 
-const HIGHLIGHTS = [
-  { icon: MapPin, title: "Prime Location", desc: "25 min to Canggu, 15 min to Tanah Lot" },
-  { icon: Star, title: "Investment Ready", desc: "Strong rental yield potential" },
-  { icon: Shield, title: "Freehold Available", desc: "Secure ownership options" },
+const NEARBY_LINKS = [
+  {
+    slug: "local-community",
+    distance: "2-5 min",
+    title: "Start in the village",
+    detail: "Kaba Kaba Social and the local community",
+  },
+  {
+    slug: "spas-wellness",
+    distance: "5-10 min",
+    title: "Reset close to home",
+    detail: "Ulaman Retreat and nearby wellness",
+  },
+  {
+    slug: "beach-clubs",
+    distance: "10-15 min",
+    title: "Reach the coast",
+    detail: "Nuanu and Luna Beach Club",
+  },
+  {
+    slug: "cafes-dining",
+    distance: "15-20 min",
+    title: "Eat around Seseh",
+    detail: "Open House, Neighbourhood and more",
+  },
+  {
+    slug: "gyms-fitness",
+    distance: "20-30 min",
+    title: "Keep your routine",
+    detail: "Pererenan and Canggu fitness",
+  },
 ];
 
-// OMA coordinates for Google Maps directions
-const OMA_COORDS = "-8.576677,115.145663";
-
-// Distance data with Google Maps coordinates
-const DISTANCE_DATA = [
-  { name: "Kaba Kaba Social", distance: "2-5 min", coords: "-8.5780,115.1480", url: "https://www.instagram.com/kabakaba.social/" },
-  { name: "Ulaman Resort", distance: "5-10 min", coords: "-8.5800,115.1500", url: "https://www.instagram.com/ulamanretreat/" },
-  { name: "Nuanu / Luna Beach Club", distance: "10-15 min", coords: "-8.5950,115.1100", url: "https://www.nuanu.com" },
-  { name: "Kedungu Beach", distance: "10-15 min", coords: "-8.5900,115.1050" },
-  { name: "Open House Seseh", distance: "15-20 min", coords: "-8.6200,115.1250", url: "https://www.instagram.com/openhouseseseh/" },
-  { name: "Pererenan (gyms, cafes)", distance: "20-25 min", coords: "-8.6395,115.1290" },
-  { name: "Yuki / Batu Bolong", distance: "25-30 min", coords: "-8.6510,115.1380", url: "https://www.instagram.com/yukicanggu/" },
-  { name: "Finns Beach Club", distance: "25-30 min", coords: "-8.6560,115.1350", url: "https://www.instagram.com/finnsbeachclub/" },
-  { name: "Reload Sanctuary", distance: "25-30 min", coords: "-8.6478,115.1385", url: "https://www.instagram.com/reloadsanctuary/" },
-  { name: "Chotto Matto", distance: "25-30 min", coords: "-8.6500,115.1370", url: "https://www.instagram.com/chottomatto.bali/" },
-  { name: "Seminyak", distance: "35-40 min", coords: "-8.6900,115.1680" },
+const FAQ = [
+  {
+    question: "Where is OMA Townhouse?",
+    answer:
+      "OMA is in Kaba Kaba, Tabanan, around 25 minutes from Canggu and 10 to 15 minutes from Nuanu, Luna Beach Club and Kedungu Beach.",
+  },
+  {
+    question: "Can foreigners buy at OMA?",
+    answer:
+      "Yes. OMA offers 25 and 40-year leasehold options, plus freehold ownership through a PT PMA company structure.",
+  },
+  {
+    question: "What is included?",
+    answer:
+      "Each 97.5 sqm townhouse spans two floors with two bedrooms, contemporary living spaces and a private pool. Ask OMA for the current specification and floor plans.",
+  },
+  {
+    question: "Is the return guaranteed?",
+    answer:
+      "No. Any rental or appreciation figure is an illustration, not a guarantee. The investor page lets you test different nightly rates and occupancy assumptions.",
+  },
 ];
 
-function getDirectionsUrl(destCoords: string) {
-  return `https://www.google.com/maps/dir/${OMA_COORDS}/${destCoords}`;
+function Reveal({
+  children,
+  className = "",
+  delay = 0,
+}: {
+  children: ReactNode;
+  className?: string;
+  delay?: number;
+}) {
+  return (
+    <motion.div
+      className={className}
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-80px" }}
+      transition={{ duration: 0.75, delay, ease: [0.22, 1, 0.36, 1] }}
+    >
+      {children}
+    </motion.div>
+  );
 }
 
-// Blog image placeholders using gallery images
-const BLOG_IMAGES = [
-  GALLERY_IMAGES[0].url,
-  GALLERY_IMAGES[1].url,
-  GALLERY_IMAGES[2].url,
-  GALLERY_IMAGES[3].url,
-  GALLERY_IMAGES[4].url,
-  GALLERY_IMAGES[5].url,
-  GALLERY_IMAGES[6].url,
-];
-
-// Homepage FAQ. These mirror the FAQPage JSON-LD in client/index.html exactly;
-// keep both in sync so structured data matches visible content.
-const FAQ_ITEMS = [
-  {
-    question: "Where is OMA Townhouse located?",
-    answer:
-      "OMA Townhouse is in Kaba Kaba, Tabanan, Bali, about 25 minutes from Canggu and 10 to 15 minutes from Nuanu, Luna Beach Club and Kedungu Beach.",
-  },
-  {
-    question: "Can foreigners buy property at OMA Townhouse?",
-    answer:
-      "Yes. OMA Townhouse offers freehold through a PT PMA company structure as well as 25 and 40 year leasehold options, the routes foreign buyers commonly use in Bali.",
-  },
-  {
-    question: "How much does OMA Townhouse cost?",
-    answer:
-      "Pricing ranges from 115,000 USD for a 25 year leasehold to 265,000 USD for freehold, with standard prices up to 310,000 USD. Treat these as a guide and confirm current pricing with the team.",
-  },
-  {
-    question: "Is Kaba Kaba a good place to buy off-plan property in Bali?",
-    answer:
-      "Land in Kaba Kaba is priced up to 70 percent below Canggu while major projects like the 44 hectare Nuanu Creative City and incoming hotel brands reshape the area. Returns are never guaranteed, so treat projections as ranges.",
-  },
-  {
-    question: "What is the difference between freehold and leasehold here?",
-    answer:
-      "Freehold via PT PMA gives long term ownership through an Indonesian company, while leasehold gives the right to use the property for a fixed 25 or 40 year term at a lower entry price.",
-  },
-  {
-    question: "How far is OMA Townhouse from the beach and Canggu?",
-    answer:
-      "Kedungu Beach and Luna Beach Club at Nuanu are 10 to 15 minutes away, and central Canggu is about 25 minutes by car.",
-  },
-];
-
-// Horizontal card row navigated with left/right arrows instead of a visible
-// scrollbar. Touch swipe still works; the arrows page through on desktop and
-// fade out at each end. Used by the lifestyle and Insights rows below.
-function CardCarousel({
+function ArrowLink({
+  href,
   children,
-  ariaLabel,
+  inverted = false,
 }: {
-  children: React.ReactNode;
-  ariaLabel: string;
+  href: string;
+  children: ReactNode;
+  inverted?: boolean;
 }) {
-  const scrollRef = useRef<HTMLDivElement>(null);
-  const [atStart, setAtStart] = useState(true);
-  const [atEnd, setAtEnd] = useState(false);
-
-  const updateBounds = () => {
-    const el = scrollRef.current;
-    if (!el) return;
-    setAtStart(el.scrollLeft <= 1);
-    setAtEnd(el.scrollLeft + el.clientWidth >= el.scrollWidth - 1);
-  };
-
-  // Recompute on mount and whenever the card set changes (async-loaded data).
-  useEffect(() => {
-    updateBounds();
-  }, [children]);
-
-  const page = (dir: number) => {
-    const el = scrollRef.current;
-    if (!el) return;
-    // Advance by roughly the visible width so each click reveals a fresh set.
-    const amount = Math.max(el.clientWidth * 0.8, 272);
-    el.scrollBy({ left: dir * amount, behavior: "smooth" });
-  };
-
-  const arrowBase =
-    "hidden sm:flex absolute top-[72px] -translate-y-1/2 z-10 w-9 h-9 items-center justify-center rounded-full bg-white border border-gray-200 shadow-md text-gray-700 hover:bg-gray-50 transition-opacity disabled:opacity-0 disabled:pointer-events-none";
+  const className = inverted
+    ? "border-white/35 text-white hover:bg-white hover:text-stone-950"
+    : "border-stone-900/30 text-stone-950 hover:bg-stone-950 hover:text-white";
 
   return (
-    <div className="relative">
-      <div
-        ref={scrollRef}
-        onScroll={updateBounds}
-        className="flex gap-4 overflow-x-auto no-scrollbar pb-2 -mx-4 px-4 sm:mx-0 sm:px-0 snap-x"
-      >
-        {children}
-      </div>
+    <Link
+      href={href}
+      className={`group inline-flex items-center gap-5 rounded-full border px-5 py-3 text-sm font-medium transition-colors ${className}`}
+    >
+      <span>{children}</span>
+      <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+    </Link>
+  );
+}
+
+function openGuide() {
+  window.dispatchEvent(new Event("oma:open-chat"));
+}
+
+function formatArticleDate(value: string | null) {
+  if (!value) return "OMA insight";
+  return new Intl.DateTimeFormat("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+  }).format(new Date(`${value}T00:00:00`));
+}
+
+function formatUsd(value: number) {
+  return `USD ${Math.round(value).toLocaleString("en-US")}`;
+}
+
+function RailControls({
+  railRef,
+  label,
+  inverted = false,
+}: {
+  railRef: RefObject<HTMLDivElement | null>;
+  label: string;
+  inverted?: boolean;
+}) {
+  const scroll = (direction: number) => {
+    const rail = railRef.current;
+    if (!rail) return;
+    rail.scrollBy({
+      left: direction * Math.max(rail.clientWidth * 0.82, 320),
+      behavior: "smooth",
+    });
+  };
+
+  const buttonClass = inverted
+    ? "border-white/35 text-white hover:bg-white hover:text-black"
+    : "border-black/25 text-black hover:bg-black hover:text-white";
+
+  return (
+    <div className="flex gap-2">
       <button
         type="button"
-        aria-label={`Scroll ${ariaLabel} backward`}
-        onClick={() => page(-1)}
-        disabled={atStart}
-        className={`${arrowBase} left-1`}
+        onClick={() => scroll(-1)}
+        aria-label={`Scroll ${label} backward`}
+        className={`flex h-11 w-11 items-center justify-center rounded-full border transition-colors ${buttonClass}`}
       >
-        <ChevronLeft className="w-5 h-5" />
+        <ArrowLeft className="h-4 w-4" />
       </button>
       <button
         type="button"
-        aria-label={`Scroll ${ariaLabel} forward`}
-        onClick={() => page(1)}
-        disabled={atEnd}
-        className={`${arrowBase} right-1`}
+        onClick={() => scroll(1)}
+        aria-label={`Scroll ${label} forward`}
+        className={`flex h-11 w-11 items-center justify-center rounded-full border transition-colors ${buttonClass}`}
       >
-        <ChevronRight className="w-5 h-5" />
+        <ArrowRight className="h-4 w-4" />
       </button>
     </div>
   );
 }
 
-export default function Home() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const chat = useAskAiChat();
-  const { data: lifestyleArticles } = trpc.lifestyle.list.useQuery();
-  // Investor-focused posts surfaced in the Insights row (links to /blog/:slug).
-  const insightArticles = useMemo(
-    () =>
-      (lifestyleArticles ?? [])
-        .filter((a) => a.isInsight)
-        .sort(
-          (a, b) =>
-            (b.publishedAt ?? "").localeCompare(a.publishedAt ?? "") ||
-            b.sortOrder - a.sortOrder,
-        ),
-    [lifestyleArticles],
-  );
-  // Lifestyle area guides (gyms, cafes, beach clubs, schools) shown as their own
-  // carousel row linking to /blog/:slug. Investor posts live in the Insights row.
-  const lifestyleCards = useMemo(
-    () => (lifestyleArticles ?? []).filter((a) => !a.isInsight),
-    [lifestyleArticles],
-  );
+function GalleryLightbox({
+  activeIndex,
+  onClose,
+  onChange,
+}: {
+  activeIndex: number | null;
+  onClose: () => void;
+  onChange: (index: number) => void;
+}) {
+  const isOpen = activeIndex !== null;
+  const currentIndex = activeIndex ?? 0;
+  const image = GALLERY_IMAGES[currentIndex];
 
-  const nextImage = () => {
-    setCurrentImageIndex((prev) => (prev + 1) % GALLERY_IMAGES.length);
+  const move = (direction: number) => {
+    onChange(
+      (currentIndex + direction + GALLERY_IMAGES.length) % GALLERY_IMAGES.length
+    );
   };
 
-  const prevImage = () => {
-    setCurrentImageIndex((prev) => (prev - 1 + GALLERY_IMAGES.length) % GALLERY_IMAGES.length);
-  };
-
-  // Property content rendered via a helper function (NOT a component) so that
-  // page re-renders (e.g. while typing in the chat) never remount it.
-  const renderPropertyContent = (isMobile = false) => (
-    <>
-      {/* Title Section */}
-      <div className={`${isMobile ? 'px-4 pt-4' : ''} pb-6 border-b border-gray-200`}>
-        <h2 className={`${isMobile ? 'text-xl' : 'text-2xl'} font-semibold text-gray-900 mb-2`}>
-          Modern Tropical Townhouse in Kaba Kaba, Bali
-        </h2>
-        <p className="text-gray-600 text-sm">
-          Tabanan, Bali, Indonesia • 25 min to Canggu • Rice field views
-        </p>
-      </div>
-
-      {/* Highlights */}
-      <div className={`${isMobile ? 'px-4' : ''} py-6 border-b border-gray-200 space-y-4`}>
-        {HIGHLIGHTS.map((highlight, idx) => (
-          <div key={idx} className="flex gap-4">
-            <div className="w-10 h-10 rounded-full bg-gray-100 flex items-center justify-center flex-shrink-0">
-              <highlight.icon className="w-5 h-5 text-gray-700" />
-            </div>
-            <div>
-              <h4 className="font-medium text-gray-900">{highlight.title}</h4>
-              <p className="text-gray-500 text-sm">{highlight.desc}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-
-      {/* Description */}
-      <div className={`${isMobile ? 'px-4' : ''} py-6 border-b border-gray-200`}>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">About this property</h3>
-        <div className="text-gray-600 space-y-4 leading-relaxed text-sm">
-          <p>
-            Discover OMA Townhouse, a stunning modern tropical residence nestled in the serene village of Kaba Kaba, Tabanan. This property offers the perfect blend of Balinese tranquility and contemporary luxury.
-          </p>
-          <p>
-            Wake up to breathtaking rice field views and mountain vistas, yet remain just 25 minutes from Canggu's world-class restaurants, beaches, and nightlife. Kaba Kaba represents Bali's best-kept secret, where land prices are up to 70% lower than Canggu, but the area is rapidly developing.
-          </p>
-          <p>
-            Whether you're looking for a personal retreat or a high-yield investment property, OMA Townhouse offers exceptional value with premium finishes, private pool options, and professional rental management available.
-          </p>
-        </div>
-      </div>
-
-      {/* Amenities */}
-      <div className={`${isMobile ? 'px-4' : ''} py-6 border-b border-gray-200`}>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">What this place offers</h3>
-        <div className="grid grid-cols-2 gap-4">
-          {AMENITIES.map((amenity, idx) => (
-            <div key={idx} className="flex items-center gap-3">
-              <amenity.icon className="w-5 h-5 text-gray-700" />
-              <span className="text-gray-700 text-sm">{amenity.name}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-
-      {/* Location */}
-      <div className={`${isMobile ? 'px-4' : ''} py-6 border-b border-gray-200`}>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Location</h3>
-        <div className="rounded-xl overflow-hidden aspect-video mb-4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.8!2d115.145663!3d-8.576677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zOMKwMzQnMzYuMCJTIDExNcKwMDgnNDQuNCJF!5e0!3m2!1sen!2sid!4v1706000000000!5m2!1sen!2sid"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="OMA Townhouse Location"
-          />
-        </div>
-        <h4 className="font-medium text-gray-900 mb-2">Kaba Kaba, Tabanan</h4>
-        <p className="text-gray-600 text-sm leading-relaxed mb-4">
-          Located in the peaceful Tabanan regency, Kaba Kaba offers authentic Balinese village life while being conveniently close to Bali's popular destinations.
-        </p>
-        
-        <div className="space-y-2">
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <Check className="w-4 h-4 text-gray-400" />
-            <span>25-30 min to Seminyak & Canggu</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <Check className="w-4 h-4 text-gray-400" />
-            <span>15 min to Tanah Lot Temple</span>
-          </div>
-          <div className="flex items-center gap-2 text-sm text-gray-600">
-            <Check className="w-4 h-4 text-gray-400" />
-            <span>35-40 min to Ngurah Rai Airport</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Investment Info */}
-      <div className={`${isMobile ? 'px-4' : ''} py-6`}>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Why invest in Kaba Kaba?</h3>
-        <div className="space-y-3">
-          <div className="flex items-start gap-3">
-            <div className="w-6 h-6 rounded-full bg-gray-900 text-white flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">1</div>
-            <p className="text-gray-600 text-sm">Land prices up to 70% lower than Canggu/Seminyak with similar growth potential</p>
-          </div>
-          <div className="flex items-start gap-3">
-            <div className="w-6 h-6 rounded-full bg-gray-900 text-white flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">2</div>
-            <p className="text-gray-600 text-sm">Government focus on developing Tabanan as the next tourism hub</p>
-          </div>
-          <div className="flex items-start gap-3">
-            <div className="w-6 h-6 rounded-full bg-gray-900 text-white flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">3</div>
-            <p className="text-gray-600 text-sm">Growing demand from travelers seeking authentic Bali experiences</p>
-          </div>
-          <div className="flex items-start gap-3">
-            <div className="w-6 h-6 rounded-full bg-gray-900 text-white flex items-center justify-center text-xs font-medium flex-shrink-0 mt-0.5">4</div>
-            <p className="text-gray-600 text-sm">Rapidly improving infrastructure with new roads and amenities</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Property Specifications */}
-      <div className={`${isMobile ? 'px-4' : ''} py-6 border-t border-gray-200`}>
-        <h3 className="text-lg font-semibold text-gray-900 mb-4">Property Specifications</h3>
-        <div className="bg-gray-50 rounded-xl p-4 space-y-3">
-          <div className="flex justify-between items-center py-2 border-b border-gray-200">
-            <span className="text-gray-600 text-sm">Total Building Size</span>
-            <span className="font-medium text-gray-900">97.5 sqm</span>
-          </div>
-          <div className="flex justify-between items-center py-2 border-b border-gray-200">
-            <span className="text-gray-600 text-sm">Ground Floor (excl. pool)</span>
-            <span className="font-medium text-gray-900">66.7 sqm (8.78 × 7.6m)</span>
-          </div>
-          <div className="flex justify-between items-center py-2">
-            <span className="text-gray-600 text-sm">Upper Floor</span>
-            <span className="font-medium text-gray-900">30.8 sqm (4.06 × 7.6m)</span>
-          </div>
-        </div>
-      </div>
-
-      {/* Pricing Section */}
-      <div className={`${isMobile ? 'px-4' : ''} py-6 border-t border-gray-200`}>
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">Investment Options</h3>
-        <p className="text-gray-500 text-sm mb-4">First building promo: 15% off all ownership types</p>
-        
-        {/* 25-Year Leasehold */}
-        <div className="mb-4">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="bg-gray-900 text-white text-xs px-2 py-0.5 rounded">25-Year Leasehold</span>
-          </div>
-          <div className="bg-gray-50 rounded-xl p-4">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-gray-600 text-sm">Early Bird (First Building)</span>
-              <span className="font-semibold text-gray-900">$115,000</span>
-            </div>
-            <div className="flex justify-between items-center mb-3">
-              <span className="text-gray-600 text-sm">Standard Price</span>
-              <span className="text-gray-500">$135,000</span>
-            </div>
-            <button
-              onClick={() => chat.sendInterest('25-Year Leasehold', '$115,000')}
-              className="w-full bg-gray-900 hover:bg-black text-white py-2.5 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
-            >
-              <MessageCircle className="w-4 h-4" />
-              I'm Interested
-            </button>
-          </div>
-        </div>
-
-        {/* 40-Year Leasehold */}
-        <div className="mb-4">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="bg-gray-700 text-white text-xs px-2 py-0.5 rounded">40-Year Leasehold</span>
-            <span className="text-xs text-gray-500">+40% premium</span>
-          </div>
-          <div className="bg-gray-50 rounded-xl p-4">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-gray-600 text-sm">Early Bird (First Building)</span>
-              <span className="font-semibold text-gray-900">$161,000</span>
-            </div>
-            <div className="flex justify-between items-center mb-3">
-              <span className="text-gray-600 text-sm">Standard Price</span>
-              <span className="text-gray-500">$189,000</span>
-            </div>
-            <button
-              onClick={() => chat.sendInterest('40-Year Leasehold', '$161,000')}
-              className="w-full bg-gray-900 hover:bg-black text-white py-2.5 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
-            >
-              <MessageCircle className="w-4 h-4" />
-              I'm Interested
-            </button>
-          </div>
-        </div>
-
-        {/* Freehold */}
-        <div className="mb-4">
-          <div className="flex items-center gap-2 mb-2">
-            <span className="bg-gray-500 text-white text-xs px-2 py-0.5 rounded">Freehold (PT PMA)</span>
-            <span className="text-xs text-gray-500">Perpetual ownership</span>
-          </div>
-          <div className="bg-gray-50 rounded-xl p-4">
-            <div className="flex justify-between items-center mb-2">
-              <span className="text-gray-600 text-sm">Early Bird (First Building)</span>
-              <span className="font-semibold text-gray-900">$265,000</span>
-            </div>
-            <div className="flex justify-between items-center mb-3">
-              <span className="text-gray-600 text-sm">Standard Price</span>
-              <span className="text-gray-500">$310,000</span>
-            </div>
-            <button
-              onClick={() => chat.sendInterest('Freehold (PT PMA)', '$265,000')}
-              className="w-full bg-gray-900 hover:bg-black text-white py-2.5 rounded-lg text-sm font-medium transition-colors flex items-center justify-center gap-2"
-            >
-              <MessageCircle className="w-4 h-4" />
-              I'm Interested
-            </button>
-          </div>
-        </div>
-
-        <div className="bg-gray-900 text-white rounded-xl p-4 text-sm">
-          <p className="font-medium mb-2">Promo Conditions</p>
-          <ul className="space-y-1 text-gray-300 text-xs">
-            <li>• Limited to first building only</li>
-            <li>• 30% deposit required within 14 days</li>
-            <li>• Full payment before handover</li>
-            <li>• Valid for 30-60 days from launch</li>
-          </ul>
-        </div>
-      </div>
-
-      {/* Dynamic Blog Section */}
-      <div className={`${isMobile ? 'px-4' : ''} py-6 border-t border-gray-200`}>
-        <h3 className="text-lg font-semibold text-gray-900 mb-2">Living in Kaba Kaba</h3>
-        <p className="text-gray-600 text-sm mb-6">All the best of Canggu lifestyle, without the crowds. Here's what's nearby.</p>
-        
-        {/* Distance Summary - Stacks vertically on mobile */}
-        <div className="bg-gray-50 rounded-xl p-4 mb-8">
-          <h4 className="font-medium text-gray-900 mb-3">Distance from OMA Townhouse</h4>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-            {DISTANCE_DATA.map((item, idx) => (
-              <a
-                key={idx}
-                href={getDirectionsUrl(item.coords)}
-                data-external="true"
-                className="flex justify-between items-center py-2 px-3 rounded-lg hover:bg-gray-100 transition-colors group"
-              >
-                <span className="text-gray-600 flex items-center gap-2">
-                  <Navigation className="w-3 h-3 text-gray-400 group-hover:text-gray-600 transition-colors" />
-                  {item.url ? (
-                    <span className="underline underline-offset-2 decoration-gray-300 group-hover:decoration-gray-600">{item.name}</span>
-                  ) : (
-                    <span>{item.name}</span>
-                  )}
-                </span>
-                <span className="text-gray-900 font-medium flex items-center gap-1">
-                  {item.distance}
-                  <ExternalLink className="w-3 h-3 text-gray-300 group-hover:text-gray-500 transition-colors" />
-                </span>
-              </a>
-            ))}
-          </div>
-        </div>
-
-        {/* Lifestyle area guides as a horizontal scroll row of cards, each
-            linking to its /blog/:slug page (no full bodies on the homepage). */}
-        {lifestyleCards.length > 0 ? (
-          <CardCarousel ariaLabel="lifestyle guides">
-            {lifestyleCards.map((article, idx) => (
-              <Link
-                key={article.id}
-                href={`/blog/${article.slug}`}
-                className="group shrink-0 w-64 snap-start"
-              >
-                <div className="aspect-video rounded-xl overflow-hidden mb-3 bg-gray-100">
-                  <img
-                    src={article.imageUrl || BLOG_IMAGES[idx % BLOG_IMAGES.length]}
-                    alt={article.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                    loading="lazy"
-                  />
-                </div>
-                <h4 className="font-medium text-gray-900 text-sm leading-snug group-hover:underline underline-offset-2 decoration-gray-300">
-                  {article.title}
-                </h4>
-                {article.readingTime ? (
-                  <p className="text-gray-400 text-xs mt-1">{article.readingTime} min read</p>
-                ) : null}
-              </Link>
-            ))}
-          </CardCarousel>
-        ) : (
-          <div className="text-gray-400 text-sm">Loading lifestyle content...</div>
-        )}
-
-        {/* FAQ - mirrors the FAQPage JSON-LD in index.html for search and AI engines */}
-        <div className="mt-10">
-          <h4 className="font-medium text-gray-900 mb-3">Frequently asked questions</h4>
-          <div className="border-t border-gray-200">
-            {FAQ_ITEMS.map((item, idx) => (
-              <div key={idx} className="py-3 border-b border-gray-200">
-                <p className="text-sm font-medium text-gray-900">{item.question}</p>
-                <p className="text-sm text-gray-600 mt-1 leading-relaxed">{item.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Insights / Blog - investor-focused posts in a horizontal scroll row,
-            each linking to its prerendered /blog/:slug page. Sits directly
-            below the FAQ; the lifestyle cards above are unchanged. */}
-        {insightArticles.length > 0 && (
-          <div className="mt-10 pt-8">
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Insights</h3>
-            <p className="text-gray-600 text-sm mb-5">
-              Guides for foreign investors looking at Bali off-plan property.
-            </p>
-            <CardCarousel ariaLabel="insights">
-              {insightArticles.map((article) => (
-                <Link
-                  key={article.id}
-                  href={`/blog/${article.slug}`}
-                  className="group shrink-0 w-64 snap-start"
-                >
-                  <div className="aspect-video rounded-xl overflow-hidden mb-3 bg-gray-100">
-                    <img
-                      src={article.heroImage || article.imageUrl || BLOG_IMAGES[0]}
-                      alt={article.title}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      loading="lazy"
-                    />
-                  </div>
-                  <h4 className="font-medium text-gray-900 text-sm leading-snug group-hover:underline underline-offset-2 decoration-gray-300">
-                    {article.title}
-                  </h4>
-                  {article.readingTime ? (
-                    <p className="text-gray-400 text-xs mt-1">{article.readingTime} min read</p>
-                  ) : null}
-                </Link>
-              ))}
-            </CardCarousel>
-          </div>
-        )}
-      </div>
-    </>
-  );
+  useEffect(() => {
+    if (!isOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+      if (event.key === "ArrowLeft") move(-1);
+      if (event.key === "ArrowRight") move(1);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => {
+      document.body.style.overflow = previousOverflow;
+      window.removeEventListener("keydown", onKeyDown);
+    };
+  }, [isOpen, currentIndex, onClose]);
 
   return (
-    <>
-      {/* Mobile View - Airbnb Style */}
-      <div className="lg:hidden min-h-screen bg-white pb-24">
-        {/* Photo Gallery - Full width */}
-        <div className="relative bg-gray-100 aspect-[4/3]">
-          <img 
-            src={GALLERY_IMAGES[currentImageIndex].url} 
-            alt={GALLERY_IMAGES[currentImageIndex].alt}
-            className="absolute inset-0 w-full h-full object-cover"
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          className="fixed inset-0 z-[100] flex flex-col bg-black text-white"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.25 }}
+          role="dialog"
+          aria-modal="true"
+          aria-label="OMA photo gallery"
+        >
+          <div className="flex items-center justify-between px-5 py-4 sm:px-8">
+            <div>
+              <strong className="text-sm font-medium">{image.title}</strong>
+              <span className="ml-3 text-xs text-white/50">
+                {currentIndex + 1} / {GALLERY_IMAGES.length}
+              </span>
+            </div>
+            <button
+              type="button"
+              onClick={onClose}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/30 transition-colors hover:bg-white hover:text-black"
+              aria-label="Close gallery"
+            >
+              <X className="h-5 w-5" />
+            </button>
+          </div>
+
+          <div className="relative flex min-h-0 flex-1 items-center justify-center px-4 pb-4 sm:px-20">
+            <button
+              type="button"
+              onClick={() => move(-1)}
+              className="absolute left-4 z-10 flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-black/35 backdrop-blur-sm transition-colors hover:bg-white hover:text-black sm:left-8"
+              aria-label="Previous photo"
+            >
+              <ArrowLeft className="h-5 w-5" />
+            </button>
+            <motion.img
+              key={image.src}
+              src={image.src}
+              alt={image.alt}
+              className="max-h-full max-w-full rounded-[18px] object-contain"
+              initial={{ opacity: 0, scale: 0.985 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.3 }}
+            />
+            <button
+              type="button"
+              onClick={() => move(1)}
+              className="absolute right-4 z-10 flex h-12 w-12 items-center justify-center rounded-full border border-white/30 bg-black/35 backdrop-blur-sm transition-colors hover:bg-white hover:text-black sm:right-8"
+              aria-label="Next photo"
+            >
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          </div>
+
+          <div className="no-scrollbar flex gap-2 overflow-x-auto px-5 pb-5 pt-2 sm:px-8">
+            {GALLERY_IMAGES.map((item, index) => (
+              <button
+                type="button"
+                key={item.src}
+                onClick={() => onChange(index)}
+                className={`h-16 w-24 shrink-0 overflow-hidden rounded-lg border transition-opacity ${
+                  index === currentIndex
+                    ? "border-white opacity-100"
+                    : "border-transparent opacity-45 hover:opacity-80"
+                }`}
+                aria-label={`View photo ${index + 1}: ${item.title}`}
+              >
+                <img
+                  src={item.src}
+                  alt=""
+                  className="h-full w-full object-cover"
+                />
+              </button>
+            ))}
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}
+
+function PaybackSection() {
+  const [nightlyRate, setNightlyRate] = useState(200);
+  const [nightsPerMonth, setNightsPerMonth] = useState(18);
+  const grossAnnual = nightlyRate * nightsPerMonth * 12;
+  const netAnnual = Math.max(0, grossAnnual * 0.75 - 4_200);
+
+  return (
+    <section
+      id="payback"
+      className="bg-black px-2.5 py-2.5 text-white sm:px-4 sm:py-4"
+    >
+      <div className="overflow-hidden rounded-[24px] border border-white/15 px-6 py-12 sm:px-10 lg:px-14 lg:py-16">
+        <div className="grid gap-12 lg:grid-cols-[0.82fr_1.18fr] lg:items-end">
+          <Reveal>
+            <p className="text-sm text-white/55">Your money back</p>
+            <h2 className="mt-5 max-w-2xl font-editorial text-6xl leading-[0.92] tracking-[-0.045em] sm:text-7xl lg:text-[6.3vw]">
+              How long until OMA pays itself off.
+            </h2>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <p className="max-w-xl text-base leading-relaxed text-white/65">
+              Move the nightly rate and booked nights. Annual income and
+              estimated payback update instantly across all three ownership
+              routes.
+            </p>
+            <div className="mt-8 grid grid-cols-2 gap-8 border-t border-white/20 pt-6">
+              <div>
+                <span className="block text-sm text-white/50">
+                  Annual gross
+                </span>
+                <strong className="mt-1 block text-2xl font-medium">
+                  {formatUsd(grossAnnual)}
+                </strong>
+              </div>
+              <div>
+                <span className="block text-sm text-white/50">
+                  Annual net of ops
+                </span>
+                <strong className="mt-1 block text-2xl font-medium">
+                  {formatUsd(netAnnual)}
+                </strong>
+              </div>
+            </div>
+          </Reveal>
+        </div>
+
+        <div className="mt-14 grid gap-3 lg:grid-cols-[0.75fr_1.25fr]">
+          <div className="rounded-[20px] bg-white p-6 text-black sm:p-8">
+            <h3 className="text-xl font-medium">Your assumptions</h3>
+            <div className="mt-8 space-y-8">
+              <label className="block">
+                <span className="flex items-center justify-between gap-4 text-sm">
+                  <span>Nightly rate</span>
+                  <strong>{formatUsd(nightlyRate)}</strong>
+                </span>
+                <input
+                  type="range"
+                  min={80}
+                  max={320}
+                  step={5}
+                  value={nightlyRate}
+                  onInput={event =>
+                    setNightlyRate(Number(event.currentTarget.value))
+                  }
+                  className="mt-4 w-full accent-black"
+                />
+                <span className="mt-2 flex justify-between text-xs text-black/50">
+                  <span>USD 80</span>
+                  <span>USD 320</span>
+                </span>
+              </label>
+              <label className="block">
+                <span className="flex items-center justify-between gap-4 text-sm">
+                  <span>Nights booked per month</span>
+                  <strong>{nightsPerMonth}</strong>
+                </span>
+                <input
+                  type="range"
+                  min={8}
+                  max={28}
+                  value={nightsPerMonth}
+                  onInput={event =>
+                    setNightsPerMonth(Number(event.currentTarget.value))
+                  }
+                  className="mt-4 w-full accent-black"
+                />
+                <span className="mt-2 flex justify-between text-xs text-black/50">
+                  <span>8 nights</span>
+                  <span>28 nights</span>
+                </span>
+              </label>
+            </div>
+            <p className="mt-8 border-t border-black/15 pt-5 text-xs leading-relaxed text-black/55">
+              Net subtracts 18% management, USD 4,200 fixed core operations and
+              a 7% utilities reserve. Tax sits below this illustration.
+            </p>
+          </div>
+
+          <div className="grid gap-3 sm:grid-cols-3">
+            {OWNERSHIP.map((option, index) => {
+              const payback =
+                netAnnual > 0 ? option.priceUsd / netAnnual : Infinity;
+              return (
+                <div
+                  key={option.term}
+                  className={`flex min-h-[300px] flex-col justify-between rounded-[20px] border p-6 ${
+                    index === 1
+                      ? "border-white bg-white text-black"
+                      : "border-white/20 bg-white/[0.04] text-white"
+                  }`}
+                >
+                  <div>
+                    <span
+                      className={`text-xs ${
+                        index === 1 ? "text-black/50" : "text-white/50"
+                      }`}
+                    >
+                      {option.term}
+                    </span>
+                    <strong className="mt-3 block text-xl font-medium">
+                      {option.earlyBirdPrice}
+                    </strong>
+                  </div>
+                  <div
+                    className={`border-t pt-5 ${
+                      index === 1 ? "border-black/15" : "border-white/20"
+                    }`}
+                  >
+                    <span
+                      className={`text-xs ${
+                        index === 1 ? "text-black/50" : "text-white/50"
+                      }`}
+                    >
+                      Years to break even
+                    </span>
+                    <strong className="mt-1 block font-editorial text-5xl font-medium">
+                      {Number.isFinite(payback) ? payback.toFixed(1) : "—"}
+                    </strong>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="mt-8 flex flex-wrap items-center justify-between gap-6">
+          <p className="max-w-2xl text-xs leading-relaxed text-white/45">
+            Illustrative, not financial advice. Results depend on occupancy,
+            seasonality, commissions, tax and ownership structure.
+          </p>
+          <ArrowLink href="/investors" inverted>
+            See the full investor case
+          </ArrowLink>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default function Home() {
+  const { data: articles = [] } = trpc.lifestyle.list.useQuery();
+  const [activeGalleryIndex, setActiveGalleryIndex] = useState<number | null>(
+    null
+  );
+  const nearbyRailRef = useRef<HTMLDivElement>(null);
+  const insightsRailRef = useRef<HTMLDivElement>(null);
+
+  const nearbyCards = NEARBY_LINKS.flatMap(item => {
+    const article = articles.find(candidate => candidate.slug === item.slug);
+    return article ? [{ ...item, article }] : [];
+  });
+
+  const insightArticles = articles
+    .filter(article => article.isInsight)
+    .sort(
+      (a, b) =>
+        (b.publishedAt ?? "").localeCompare(a.publishedAt ?? "") ||
+        b.sortOrder - a.sortOrder
+    )
+    .slice(0, 8);
+
+  return (
+    <main className="overflow-hidden bg-white text-black">
+      <section className="p-2.5 sm:p-4">
+        <div className="relative min-h-[720px] overflow-hidden rounded-[26px] bg-black sm:min-h-[760px] lg:h-[calc(100svh-32px)] lg:min-h-[700px]">
+          <img
+            src="/investors-hero.png"
+            alt="OMA Townhouse exterior in Kaba Kaba, Bali"
+            className="absolute inset-0 h-full w-full object-cover"
+            fetchPriority="high"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/5 to-black/65" />
+
+          <header className="relative z-10 flex items-center justify-between px-5 py-5 text-white sm:px-8 lg:px-10">
+            <Link href="/" className="flex items-center gap-3">
+              <span className="text-lg font-semibold tracking-tight">OMA</span>
+              <span className="h-4 w-px bg-white/45" />
+              <span className="text-xs text-white/75">Kaba Kaba, Bali</span>
+            </Link>
+
+            <nav className="hidden items-center gap-8 text-sm lg:flex">
+              <a
+                href="#residence"
+                className="text-white/80 transition-colors hover:text-white"
+              >
+                Residence
+              </a>
+              <a
+                href="#payback"
+                className="text-white/80 transition-colors hover:text-white"
+              >
+                Payback
+              </a>
+              <a
+                href="#ownership"
+                className="text-white/80 transition-colors hover:text-white"
+              >
+                Ownership
+              </a>
+            </nav>
+
+            <Link
+              href="/investors"
+              className="inline-flex items-center rounded-full border border-white/35 bg-white/10 px-4 py-2 text-xs font-medium backdrop-blur-md transition-colors hover:bg-white hover:text-stone-950 sm:text-sm"
+            >
+              Investor preview
+            </Link>
+          </header>
+
+          <div className="absolute inset-x-0 bottom-0 z-10 px-5 pb-7 text-white sm:px-8 sm:pb-9 lg:px-10 lg:pb-10">
+            <motion.div
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <div className="mb-5 flex items-center gap-3 text-xs text-white/70">
+                <span>Modern tropical townhouse</span>
+                <span className="h-px w-8 bg-white/45" />
+                <span>Now previewing</span>
+              </div>
+              <h1 className="max-w-[1100px] text-[18vw] font-medium leading-[0.76] tracking-[-0.075em] sm:text-[14vw] lg:text-[10.2vw]">
+                Live.
+                <br />
+                Own.
+                <br />
+                Belong.
+              </h1>
+            </motion.div>
+
+            <div className="mt-8 flex items-end justify-between gap-8">
+              <p className="max-w-md text-sm leading-relaxed text-white/75 sm:text-base">
+                A considered home in one of Bali&apos;s last true pockets of
+                peace, designed for living well and owning wisely.
+              </p>
+              <a
+                href="#introduction"
+                aria-label="Explore OMA Townhouse"
+                className="hidden h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/35 transition-colors hover:bg-white hover:text-stone-950 sm:flex"
+              >
+                <ArrowDown className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="introduction"
+        className="px-5 py-24 sm:px-8 lg:px-12 lg:py-36"
+      >
+        <div className="mx-auto grid max-w-[1450px] gap-14 lg:grid-cols-[0.8fr_1.6fr] lg:items-start">
+          <Reveal>
+            <p className="text-sm text-stone-500">A different side of Bali</p>
+          </Reveal>
+          <Reveal delay={0.08}>
+            <h2 className="max-w-5xl font-editorial text-5xl leading-[0.98] tracking-[-0.04em] sm:text-7xl lg:text-[7.4vw]">
+              A home that makes space for the life you want, and the future you
+              are building.
+            </h2>
+            <div className="mt-10 grid max-w-4xl gap-8 border-t border-stone-900/20 pt-7 sm:grid-cols-2">
+              <p className="text-base leading-relaxed text-stone-600">
+                OMA pairs quiet village living with a contemporary two-bedroom
+                townhouse, a private pool and considered spaces across 97.5 sqm.
+              </p>
+              <p className="text-base leading-relaxed text-stone-600">
+                Close enough to Canggu, Nuanu and the coast, but far enough away
+                to still feel like Bali.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      <section id="residence" className="px-2.5 pb-24 sm:px-4 lg:pb-36">
+        <div className="mx-auto max-w-[1520px]">
+          <Reveal className="mb-8 flex items-end justify-between gap-8 px-3 sm:px-5">
+            <div>
+              <p className="mb-3 text-sm text-stone-500">The residence</p>
+              <h2 className="text-4xl font-medium tracking-[-0.045em] sm:text-6xl">
+                Built for every day.
+              </h2>
+            </div>
+            <button
+              type="button"
+              onClick={openGuide}
+              className="hidden text-sm underline decoration-stone-400 underline-offset-8 transition-colors hover:decoration-stone-950 sm:block"
+            >
+              Ask for floor plans
+            </button>
+          </Reveal>
+
+          <div className="grid gap-2.5 sm:grid-cols-2 lg:auto-rows-[255px] lg:grid-cols-12">
+            {GALLERY_IMAGES.slice(0, 6).map((image, index) => (
+              <Reveal
+                key={image.src}
+                delay={index * 0.035}
+                className={`min-h-[280px] ${image.bentoClass}`}
+              >
+                <button
+                  type="button"
+                  onClick={() => setActiveGalleryIndex(index)}
+                  className="group relative h-full w-full overflow-hidden rounded-[22px] bg-black text-left text-white"
+                  aria-label={`Open gallery at ${image.title}`}
+                >
+                  <img
+                    src={image.src}
+                    alt={image.alt}
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.035]"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/5" />
+                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-5 sm:p-6">
+                    <div>
+                      <p className="mb-1 text-xs text-white/60">
+                        {image.detail}
+                      </p>
+                      <h3
+                        className={`font-medium tracking-[-0.03em] ${
+                          index === 0 ? "text-3xl" : "text-xl"
+                        }`}
+                      >
+                        {image.title}
+                      </h3>
+                    </div>
+                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/35 bg-black/15 text-lg backdrop-blur-sm transition-colors group-hover:bg-white group-hover:text-black">
+                      +
+                    </span>
+                  </div>
+                </button>
+              </Reveal>
+            ))}
+          </div>
+          <div className="mt-5 flex justify-end px-3 sm:px-5">
+            <button
+              type="button"
+              onClick={() => setActiveGalleryIndex(0)}
+              className="inline-flex items-center gap-4 rounded-full border border-black/25 px-5 py-3 text-sm font-medium transition-colors hover:bg-black hover:text-white"
+            >
+              View all {GALLERY_IMAGES.length} photos
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <PaybackSection />
+
+      <section id="ownership" className="px-5 py-24 sm:px-8 lg:px-12 lg:py-36">
+        <div className="mx-auto max-w-[1450px]">
+          <Reveal className="grid gap-10 lg:grid-cols-[1fr_1.3fr]">
+            <div>
+              <p className="mb-4 text-sm text-stone-500">Ownership</p>
+              <h2 className="max-w-xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] sm:text-7xl">
+                One home. Three ways in.
+              </h2>
+            </div>
+            <div className="flex flex-col justify-end gap-5">
+              <div className="w-fit rounded-full bg-black px-3 py-1.5 text-xs font-medium text-white">
+                First-building early bird: 15% off
+              </div>
+              <p className="max-w-2xl text-base leading-relaxed text-stone-600">
+                The highlighted prices are the limited early-bird allocation for
+                OMA&apos;s first building. They sit 15% below standard pricing
+                and require a 30% deposit within 14 days, with full payment due
+                before handover. Availability and the promotional window should
+                be confirmed with the OMA team. All prices are in USD.
+              </p>
+            </div>
+          </Reveal>
+
+          <div className="mt-16 border-t border-stone-900/25">
+            {OWNERSHIP.map((option, index) => (
+              <Reveal key={option.term} delay={index * 0.05}>
+                <div className="group grid gap-3 border-b border-stone-900/25 py-7 transition-colors hover:bg-stone-100 sm:grid-cols-[1.2fr_0.7fr_auto] sm:items-center sm:px-4">
+                  <div>
+                    <span className="mr-5 text-xs text-stone-400">
+                      0{index + 1}
+                    </span>
+                    <span className="text-xl font-medium tracking-[-0.02em] sm:text-2xl">
+                      {option.term}
+                    </span>
+                  </div>
+                  <span className="pl-8 text-sm text-stone-500 sm:pl-0">
+                    {option.note}
+                  </span>
+                  <div className="pl-8 text-left sm:pl-0 sm:text-right">
+                    <span className="block text-xs text-stone-500">
+                      Early-bird price
+                    </span>
+                    <strong className="block text-lg font-medium">
+                      {option.earlyBirdPrice}
+                    </strong>
+                    <span className="mt-1 block text-xs text-stone-400 line-through">
+                      Standard {option.standardPrice}
+                    </span>
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+
+          <Reveal className="mt-10 flex flex-wrap gap-4">
+            <ArrowLink href="/investors">Explore the investor case</ArrowLink>
+            <button
+              type="button"
+              onClick={openGuide}
+              className="inline-flex items-center gap-5 rounded-full border border-stone-900/30 px-5 py-3 text-sm font-medium transition-colors hover:bg-stone-950 hover:text-white"
+            >
+              Ask about ownership
+              <MessageCircle className="h-4 w-4" />
+            </button>
+          </Reveal>
+        </div>
+      </section>
+
+      <section className="px-2.5 pb-24 sm:px-4 lg:pb-36">
+        <div className="relative min-h-[680px] overflow-hidden rounded-[24px] bg-stone-900">
+          <img
+            src={IMAGES.exterior}
+            alt="OMA Townhouse street exterior"
+            className="absolute inset-0 h-full w-full object-cover"
             loading="lazy"
           />
-          
-          {/* WhatsApp & Instagram */}
-          <div className="absolute top-4 right-4 flex gap-2">
-            <a href="https://wa.me/" data-external="true" className="w-8 h-8 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-50 transition-colors">
-              <WhatsAppIcon className="w-4 h-4" />
-            </a>
-            <a href="https://instagram.com/omatownhouse" data-external="true" className="w-8 h-8 bg-white rounded-full shadow flex items-center justify-center hover:bg-gray-50 transition-colors">
-              <InstagramIcon className="w-4 h-4" />
-            </a>
-          </div>
-
-          {/* Navigation arrows */}
-          <button onClick={prevImage} className="absolute left-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center">
-            <ChevronLeft className="w-4 h-4" />
-          </button>
-          <button onClick={nextImage} className="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 bg-white/80 rounded-full flex items-center justify-center">
-            <ChevronRight className="w-4 h-4" />
-          </button>
-
-          {/* Image counter */}
-          <div className="absolute bottom-4 right-4 bg-black/70 text-white px-2.5 py-1 rounded-md text-xs">
-            {currentImageIndex + 1} / {GALLERY_IMAGES.length}
+          <div className="absolute inset-0 bg-black/50" />
+          <div className="relative z-10 flex min-h-[680px] flex-col justify-between p-6 text-white sm:p-10 lg:p-14">
+            <Reveal>
+              <p className="text-sm text-white/60">The OMA snapshot</p>
+            </Reveal>
+            <Reveal>
+              <h2 className="max-w-5xl font-editorial text-6xl leading-[0.9] tracking-[-0.04em] sm:text-8xl lg:text-[8vw]">
+                Small in number.
+                <br />
+                Big in intention.
+              </h2>
+            </Reveal>
+            <Reveal className="grid gap-5 border-t border-white/25 pt-7 sm:grid-cols-4">
+              {[
+                ["97.5 sqm", "Total floor area"],
+                ["2", "Bedrooms"],
+                ["2", "Floors"],
+                ["Private", "Pool and garden"],
+              ].map(([value, label]) => (
+                <div key={label}>
+                  <strong className="block text-2xl font-medium">
+                    {value}
+                  </strong>
+                  <span className="mt-1 block text-xs text-white/55">
+                    {label}
+                  </span>
+                </div>
+              ))}
+            </Reveal>
           </div>
         </div>
+      </section>
 
-        {/* Property Content */}
-        {renderPropertyContent(true)}
-
-        {/* Footer spacer */}
-        <div className="h-8" />
-
-        {/* Fixed Bottom Bar */}
-        <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-3 flex items-center justify-between z-40">
-          <div>
-            <p className="text-xs text-gray-500">Starting from</p>
-            <p className="font-semibold text-gray-900">Contact for pricing</p>
-          </div>
-          <button
-            onClick={() => chat.openMobile()}
-            className="bg-gray-900 hover:bg-black text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 transition-colors"
-          >
-            <MessageCircle className="w-4 h-4" />
-            Ask AI
-          </button>
-        </div>
-
-        {/* Mobile chat sheet (opened by the Ask AI bar above) */}
-        <ChatSheet chat={chat} />
-      </div>
-
-      {/* Desktop View - Airbnb Style */}
-      <div className="hidden lg:block min-h-screen bg-white">
-        {/* Header */}
-        <SiteHeader />
-
-        {/* Photo Gallery */}
-        <section className="max-w-7xl mx-auto px-6 py-6">
-          <div className="relative rounded-xl overflow-hidden bg-gray-100 aspect-[2/1] group">
-            <img 
-              src={GALLERY_IMAGES[currentImageIndex].url} 
-              alt={GALLERY_IMAGES[currentImageIndex].alt}
-              className="absolute inset-0 w-full h-full object-cover"
-              loading="lazy"
-            />
-            
-            <button onClick={prevImage} className="absolute left-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-              <ChevronLeft className="w-5 h-5" />
-            </button>
-            <button onClick={nextImage} className="absolute right-4 top-1/2 -translate-y-1/2 w-10 h-10 bg-white rounded-full shadow-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
-              <ChevronRight className="w-5 h-5" />
-            </button>
-
-            <div className="absolute bottom-4 right-4 bg-black/70 text-white px-3 py-1.5 rounded-lg text-sm">
-              {currentImageIndex + 1} / {GALLERY_IMAGES.length}
+      {nearbyCards.length > 0 && (
+        <section id="nearby" className="px-5 pb-24 sm:px-8 lg:px-12 lg:pb-36">
+          <div className="mx-auto max-w-[1450px]">
+            <Reveal className="mb-10 flex items-end justify-between gap-6">
+              <div>
+                <p className="mb-3 text-sm text-stone-500">Around OMA</p>
+                <h2 className="text-4xl font-medium tracking-[-0.045em] sm:text-6xl">
+                  What is actually nearby.
+                </h2>
+              </div>
+              <RailControls railRef={nearbyRailRef} label="nearby places" />
+            </Reveal>
+            <div
+              ref={nearbyRailRef}
+              data-rail="nearby"
+              className="no-scrollbar flex snap-x gap-3 overflow-x-auto pb-3"
+            >
+              {nearbyCards.map((item, index) => (
+                <Reveal
+                  key={item.slug}
+                  delay={index * 0.04}
+                  className="w-[78vw] max-w-[390px] shrink-0 snap-start"
+                >
+                  <Link
+                    href={`/blog/${item.article.slug}`}
+                    className="group block"
+                  >
+                    <div className="relative aspect-[4/3] overflow-hidden rounded-[18px] bg-stone-200">
+                      <img
+                        src={
+                          item.article.heroImage ||
+                          item.article.imageUrl ||
+                          IMAGES.pool
+                        }
+                        alt={item.detail}
+                        className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
+                        loading="lazy"
+                      />
+                      <span className="absolute left-4 top-4 rounded-full bg-white px-3 py-1.5 text-xs font-medium text-black shadow-sm">
+                        {item.distance} from OMA
+                      </span>
+                    </div>
+                    <div className="mt-4 flex items-start justify-between gap-5">
+                      <div>
+                        <h3 className="text-xl font-medium leading-tight tracking-[-0.025em]">
+                          {item.title}
+                        </h3>
+                        <p className="mt-1 text-sm text-stone-500">
+                          {item.detail}
+                        </p>
+                      </div>
+                      <ArrowRight className="mt-1 h-4 w-4 shrink-0 transition-transform group-hover:translate-x-1" />
+                    </div>
+                  </Link>
+                </Reveal>
+              ))}
             </div>
           </div>
         </section>
+      )}
 
-        {/* Main Content */}
-        <div className="max-w-7xl mx-auto px-6 pb-16">
-          <div className="flex gap-12">
-            {/* Left Column - Property Content */}
-            <div className="flex-1 max-w-2xl">
-              {renderPropertyContent(false)}
-            </div>
-
-            {/* Right Column - Sticky Chat */}
-            <div className="w-[380px] flex-shrink-0">
-              <div className="sticky top-24">
-                <ChatPanel chat={chat} />
+      <section
+        id="insights"
+        className="border-y border-black/10 bg-[#f3f3f3] px-5 py-24 sm:px-8 lg:px-12 lg:py-32"
+      >
+        <div className="mx-auto max-w-[1450px]">
+          <Reveal className="grid gap-12 lg:grid-cols-[0.8fr_1.6fr] lg:items-end">
+            <p className="text-sm text-stone-500">Property intelligence</p>
+            <div>
+              <h2 className="max-w-5xl font-editorial text-5xl leading-[0.96] tracking-[-0.04em] sm:text-7xl">
+                The questions worth asking before you buy in Bali.
+              </h2>
+              <p className="mt-7 max-w-2xl leading-relaxed text-stone-600">
+                Clear guides on foreign ownership, taxes, off-plan buying and
+                the changing Tabanan market.
+              </p>
+              <div className="mt-7 flex justify-end">
+                <RailControls
+                  railRef={insightsRailRef}
+                  label="property insights"
+                />
               </div>
             </div>
+          </Reveal>
+
+          <div
+            ref={insightsRailRef}
+            data-rail="insights"
+            className="no-scrollbar mt-12 flex snap-x gap-3 overflow-x-auto pb-3"
+          >
+            {insightArticles.map((article, index) => (
+              <Reveal
+                key={article.id}
+                delay={index * 0.04}
+                className="w-[82vw] max-w-[410px] shrink-0 snap-start"
+              >
+                <Link
+                  href={`/blog/${article.slug}`}
+                  className="group block overflow-hidden rounded-[20px] bg-white transition-transform duration-300 hover:-translate-y-1"
+                >
+                  <div className="aspect-[16/10] overflow-hidden bg-stone-200">
+                    <img
+                      src={
+                        article.heroImage || article.imageUrl || IMAGES.living
+                      }
+                      alt={article.title}
+                      className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.035]"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="flex min-h-[220px] flex-col justify-between p-6">
+                    <div className="flex items-center justify-between text-xs text-stone-500">
+                      <span>
+                        {index === 0
+                          ? `Latest, ${formatArticleDate(article.publishedAt)}`
+                          : formatArticleDate(article.publishedAt)}
+                      </span>
+                      {article.readingTime ? (
+                        <span>{article.readingTime} min read</span>
+                      ) : null}
+                    </div>
+                    <h3 className="text-2xl font-medium leading-[1.08] tracking-[-0.035em]">
+                      {article.title}
+                    </h3>
+                    <ArrowRight className="mt-6 h-5 w-5 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </Link>
+              </Reveal>
+            ))}
           </div>
         </div>
+      </section>
 
-        {/* Footer */}
-        <footer className="border-t border-gray-200 py-6">
-          <div className="max-w-7xl mx-auto px-6 text-center text-gray-500 text-sm">
-            © {new Date().getFullYear()} OMA Townhouse. All rights reserved.
+      <section className="bg-white px-5 py-24 text-black sm:px-8 lg:px-12 lg:py-32">
+        <div className="mx-auto grid max-w-[1450px] gap-12 lg:grid-cols-[0.8fr_1.6fr]">
+          <Reveal>
+            <p className="text-sm font-medium text-black">Common questions</p>
+          </Reveal>
+          <div className="border-t border-black">
+            {FAQ.map((item, index) => (
+              <Reveal key={item.question} delay={index * 0.04}>
+                <details className="group border-b border-black py-6">
+                  <summary className="flex list-none cursor-pointer items-center justify-between gap-6 text-xl font-medium tracking-[-0.025em] sm:text-2xl">
+                    {item.question}
+                    <span className="text-2xl font-light transition-transform group-open:rotate-45">
+                      +
+                    </span>
+                  </summary>
+                  <p className="max-w-2xl pt-5 text-base leading-relaxed text-black">
+                    {item.answer}
+                  </p>
+                </details>
+              </Reveal>
+            ))}
           </div>
-        </footer>
-      </div>
+        </div>
+      </section>
 
-      {/* Document Viewer Modal (driven by chat state) */}
-      <ChatDocViewer chat={chat} />
-    </>
+      <section className="px-2.5 pb-2.5 sm:px-4 sm:pb-4">
+        <div className="overflow-hidden rounded-[24px] bg-black px-6 py-10 text-white sm:px-10 lg:px-14 lg:py-14">
+          <Reveal className="grid min-h-[480px] gap-14 lg:grid-cols-[1.5fr_0.7fr]">
+            <div className="flex flex-col justify-between">
+              <p className="text-sm text-white/50">Your next move</p>
+              <h2 className="my-16 max-w-5xl text-6xl font-medium leading-[0.88] tracking-[-0.06em] sm:text-8xl lg:text-[8vw]">
+                Find your way
+                <br />
+                into OMA.
+              </h2>
+              <button
+                type="button"
+                onClick={openGuide}
+                className="group flex w-fit items-center gap-5 rounded-full border border-white/30 px-5 py-3 text-sm transition-colors hover:bg-white hover:text-stone-950"
+              >
+                Start with the OMA guide
+                <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+              </button>
+            </div>
+            <div className="flex flex-col justify-between border-t border-white/20 pt-6 lg:border-l lg:border-t-0 lg:pl-10 lg:pt-0">
+              <p className="max-w-sm text-base leading-relaxed text-white/60">
+                Ask about availability, ownership, pricing, the floor plan or
+                what everyday life in Kaba Kaba actually feels like.
+              </p>
+              <div className="space-y-3 text-sm text-white/60">
+                <a
+                  href="https://wa.me/"
+                  data-external="true"
+                  className="block hover:text-white"
+                >
+                  WhatsApp
+                </a>
+                <a
+                  href="https://instagram.com/omatownhouse"
+                  data-external="true"
+                  className="block hover:text-white"
+                >
+                  Instagram
+                </a>
+                <Link href="/investors" className="block hover:text-white">
+                  Investor page
+                </Link>
+              </div>
+            </div>
+          </Reveal>
+          <div className="mt-16 flex flex-wrap items-center justify-between gap-5 border-t border-white/15 pt-6 text-xs text-white/40">
+            <span>OMA Townhouse, Kaba Kaba, Bali</span>
+            <span>© {new Date().getFullYear()} OMA</span>
+          </div>
+        </div>
+      </section>
+      <GalleryLightbox
+        activeIndex={activeGalleryIndex}
+        onClose={() => setActiveGalleryIndex(null)}
+        onChange={setActiveGalleryIndex}
+      />
+    </main>
   );
 }

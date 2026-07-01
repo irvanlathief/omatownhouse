@@ -8,6 +8,7 @@ import { ExternalLinkConfirm } from "./components/ExternalLinkConfirm";
 import Home from "./pages/Home";
 import BlogDetail from "./pages/BlogDetail";
 import Investors from "./pages/Investors";
+import { SiteAiAssistant } from "./components/SiteAiAssistant";
 
 function Router() {
   // make sure to consider if you need authentication for certain routes
@@ -38,7 +39,10 @@ function App() {
         <TooltipProvider>
           <ExternalLinkConfirm>
             <Toaster />
-            <Router />
+            <div id="oma-site-shell">
+              <Router />
+            </div>
+            <SiteAiAssistant />
           </ExternalLinkConfirm>
         </TooltipProvider>
       </ThemeProvider>

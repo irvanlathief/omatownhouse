@@ -1,18 +1,46 @@
-import { Home as HomeIcon, Image, DollarSign, MapPin, HelpCircle, ArrowRight, X, type LucideIcon } from "lucide-react";
+import {
+  Home as HomeIcon,
+  Image,
+  DollarSign,
+  MapPin,
+  HelpCircle,
+  ArrowRight,
+  X,
+  type LucideIcon,
+} from "lucide-react";
 import type { ReactElement } from "react";
 import { Streamdown } from "streamdown";
-import { DocumentViewer } from "@/components/DocumentViewer";
 import type { AskAiChat } from "@/hooks/useAskAiChat";
 
 // Presentational chat UI. These components are defined at MODULE SCOPE (not
 // inside a page component), so a page re-render on each keystroke re-renders
 // them with new props but never remounts the <input> -> focus is retained.
 
-const QUICK_DOCS = [
-  { id: "layout", name: "Layouts", icon: HomeIcon },
-  { id: "renders", name: "Renders", icon: Image },
-  { id: "pricing", name: "Pricing", icon: DollarSign },
-  { id: "location", name: "Location", icon: MapPin },
+const QUICK_PROMPTS = [
+  {
+    id: "layout",
+    name: "Layouts",
+    icon: HomeIcon,
+    prompt: "Show me the townhouse layout.",
+  },
+  {
+    id: "renders",
+    name: "Renders",
+    icon: Image,
+    prompt: "Show me the OMA renders.",
+  },
+  {
+    id: "pricing",
+    name: "Pricing",
+    icon: DollarSign,
+    prompt: "What are the current prices and early-bird terms?",
+  },
+  {
+    id: "location",
+    name: "Location",
+    icon: MapPin,
+    prompt: "Where is OMA and what's nearby?",
+  },
 ];
 
 // Starter prompts shown in the empty chat. Most visitors arrive wanting one of
@@ -45,7 +73,7 @@ function StarterPrompts({ chat }: { chat: AskAiChat }) {
   if (chat.messages.length > 0) return null;
   return (
     <div className="flex flex-col gap-1.5 pt-1">
-      {STARTER_PROMPTS.map((p) => (
+      {STARTER_PROMPTS.map(p => (
         <button
           key={p.label}
           onClick={() => chat.askQuestion(p.text)}
@@ -68,14 +96,17 @@ const PRICING_TIERS = [
   { name: "Freehold (PT PMA)", price: "$265,000" },
 ];
 
-// Labels/icons for the ```docs``` block. Ids must match DocumentViewer + the
-// system prompt's allowed ids.
-const DOC_LABELS: Record<string, { name: string; icon: LucideIcon }> = {
-  layout: { name: "Floor plans", icon: HomeIcon },
-  renders: { name: "3D renders", icon: Image },
-  pricing: { name: "Price list", icon: DollarSign },
-  location: { name: "Location map", icon: MapPin },
-};
+// The model can surface these as inline follow-up prompts. They deliberately
+// ask a new chat question instead of opening a separate document modal.
+const DOC_LABELS: Record<
+  string,
+  { name: string; icon: LucideIcon; prompt: string }
+> = Object.fromEntries(
+  QUICK_PROMPTS.map(item => [
+    item.id,
+    { name: item.name, icon: item.icon, prompt: item.prompt },
+  ])
+);
 
 // Tappable follow-up questions. Clicking sends the chip text as the next message.
 function ChipRow({ items, chat }: { items: string[]; chat: AskAiChat }) {
@@ -95,19 +126,20 @@ function ChipRow({ items, chat }: { items: string[]; chat: AskAiChat }) {
   );
 }
 
-// Buttons that open the document viewer inline (floor plans, renders, etc).
+// Suggested prompts emitted by the assistant for layouts, renders and details.
 function DocButtons({ ids, chat }: { ids: string[]; chat: AskAiChat }) {
-  const valid = ids.filter((id) => DOC_LABELS[id]);
+  const valid = ids.filter(id => DOC_LABELS[id]);
   if (valid.length === 0) return null;
   return (
     <div className="flex flex-wrap gap-1.5 pt-0.5">
-      {valid.map((id) => {
+      {valid.map(id => {
         const Icon = DOC_LABELS[id].icon;
         return (
           <button
             key={id}
-            onClick={() => chat.openDocument(id)}
-            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-gray-900 text-white hover:bg-black text-xs font-medium transition-colors"
+            onClick={() => chat.askQuestion(DOC_LABELS[id].prompt)}
+            disabled={chat.isLoading}
+            className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-white border border-gray-200 hover:border-gray-400 hover:bg-gray-50 text-gray-700 text-xs font-medium transition-colors disabled:opacity-50"
           >
             <Icon className="w-3 h-3" />
             {DOC_LABELS[id].name}
@@ -122,7 +154,7 @@ function DocButtons({ ids, chat }: { ids: string[]; chat: AskAiChat }) {
 function PricingCards({ chat }: { chat: AskAiChat }) {
   return (
     <div className="flex flex-col gap-1.5 pt-0.5">
-      {PRICING_TIERS.map((tier) => (
+      {PRICING_TIERS.map(tier => (
         <div
           key={tier.name}
           className="flex items-center justify-between gap-2 px-3 py-2 rounded-xl bg-white border border-gray-200"
@@ -154,7 +186,13 @@ function TextBlock({ text }: { text: string }) {
 
 // Renders an assistant message: plain text/markdown plus inline interactive
 // blocks (chips, pricing cards, doc buttons) and image markdown, in order.
-function RichChatMessage({ content, chat }: { content: string; chat: AskAiChat }) {
+function RichChatMessage({
+  content,
+  chat,
+}: {
+  content: string;
+  chat: AskAiChat;
+}) {
   const re =
     /```chips\s*([\s\S]*?)```|```docs\s*([\s\S]*?)```|```pricing[^\n]*\n?```|(!\[.*?\]\(.*?\))/g;
   const nodes: ReactElement[] = [];
@@ -167,10 +205,17 @@ function RichChatMessage({ content, chat }: { content: string; chat: AskAiChat }
     if (before.trim()) nodes.push(<TextBlock key={key++} text={before} />);
 
     if (m[1] !== undefined) {
-      const items = m[1].split(/[|\n]/).map((s) => s.trim()).filter(Boolean);
-      if (items.length) nodes.push(<ChipRow key={key++} items={items} chat={chat} />);
+      const items = m[1]
+        .split(/[|\n]/)
+        .map(s => s.trim())
+        .filter(Boolean);
+      if (items.length)
+        nodes.push(<ChipRow key={key++} items={items} chat={chat} />);
     } else if (m[2] !== undefined) {
-      const ids = m[2].split(/[|,\n]/).map((s) => s.trim().toLowerCase()).filter(Boolean);
+      const ids = m[2]
+        .split(/[|,\n]/)
+        .map(s => s.trim().toLowerCase())
+        .filter(Boolean);
       nodes.push(<DocButtons key={key++} ids={ids} chat={chat} />);
     } else if (m[3]) {
       const img = m[3].match(/!\[(.*?)\]\((.*?)\)/);
@@ -197,22 +242,35 @@ function RichChatMessage({ content, chat }: { content: string; chat: AskAiChat }
   return <div className="text-sm leading-relaxed space-y-2">{nodes}</div>;
 }
 
-function MessageList({ chat, maxWidth }: { chat: AskAiChat; maxWidth: string }) {
+function MessageList({
+  chat,
+  maxWidth,
+}: {
+  chat: AskAiChat;
+  maxWidth: string;
+}) {
   return (
     <>
       <div className="flex justify-start">
-        <div className={`bg-gray-100 px-3 py-2 rounded-2xl rounded-tl-md ${maxWidth}`}>
+        <div
+          className={`bg-gray-100 px-3 py-2 rounded-2xl rounded-tl-md ${maxWidth}`}
+        >
           <p className="text-gray-800 whitespace-pre-line text-sm leading-relaxed">
             {chat.displayedText}
-            {!chat.isTypingComplete && <span className="typing-cursor ml-0.5 text-gray-400">|</span>}
+            {!chat.isTypingComplete && (
+              <span className="typing-cursor ml-0.5 text-gray-400">|</span>
+            )}
           </p>
         </div>
       </div>
 
       <StarterPrompts chat={chat} />
 
-      {chat.messages.map((message) => (
-        <div key={message.id} className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}>
+      {chat.messages.map(message => (
+        <div
+          key={message.id}
+          className={`flex ${message.role === "user" ? "justify-end" : "justify-start"}`}
+        >
           <div
             className={`px-3 py-2 rounded-2xl ${maxWidth} ${
               message.role === "user"
@@ -233,9 +291,18 @@ function MessageList({ chat, maxWidth }: { chat: AskAiChat; maxWidth: string }) 
         <div className="flex justify-start">
           <div className="bg-gray-100 px-3 py-2 rounded-2xl rounded-tl-md">
             <div className="flex items-center gap-1">
-              <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "0ms" }} />
-              <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "150ms" }} />
-              <span className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: "300ms" }} />
+              <span
+                className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"
+                style={{ animationDelay: "0ms" }}
+              />
+              <span
+                className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"
+                style={{ animationDelay: "150ms" }}
+              />
+              <span
+                className="w-1.5 h-1.5 bg-gray-400 rounded-full animate-bounce"
+                style={{ animationDelay: "300ms" }}
+              />
             </div>
           </div>
         </div>
@@ -243,7 +310,9 @@ function MessageList({ chat, maxWidth }: { chat: AskAiChat; maxWidth: string }) 
 
       {chat.leadCollected && (
         <div className="flex justify-center">
-          <div className="bg-gray-900 text-white px-3 py-1.5 rounded-full text-xs">We'll be in touch soon ✓</div>
+          <div className="bg-gray-900 text-white px-3 py-1.5 rounded-full text-xs">
+            We'll be in touch soon ✓
+          </div>
         </div>
       )}
 
@@ -255,14 +324,15 @@ function MessageList({ chat, maxWidth }: { chat: AskAiChat; maxWidth: string }) 
 function QuickDocs({ chat }: { chat: AskAiChat }) {
   return (
     <div className="flex gap-1.5 overflow-x-auto pb-1">
-      {QUICK_DOCS.map((doc) => (
+      {QUICK_PROMPTS.map(item => (
         <button
-          key={doc.id}
-          onClick={() => chat.openDocument(doc.id)}
+          key={item.id}
+          onClick={() => chat.askQuestion(item.prompt)}
+          disabled={chat.isLoading}
           className="flex items-center gap-1.5 px-2.5 py-1.5 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-700 whitespace-nowrap text-xs font-medium transition-colors"
         >
-          <doc.icon className="w-3 h-3" />
-          {doc.name}
+          <item.icon className="w-3 h-3" />
+          {item.name}
         </button>
       ))}
     </div>
@@ -291,7 +361,7 @@ export function ChatPanel({ chat }: { chat: AskAiChat }) {
           <input
             type="text"
             value={chat.inputValue}
-            onChange={(e) => chat.setInputValue(e.target.value)}
+            onChange={e => chat.setInputValue(e.target.value)}
             onKeyPress={chat.handleKeyPress}
             placeholder="Ask anything..."
             disabled={chat.isLoading}
@@ -305,7 +375,9 @@ export function ChatPanel({ chat }: { chat: AskAiChat }) {
             <ArrowRight className="w-4 h-4" />
           </button>
         </div>
-        <p className="text-center text-gray-400 text-[10px] mt-2">AI-powered • Verify info with our team</p>
+        <p className="text-center text-gray-400 text-[10px] mt-2">
+          AI-powered • Verify info with our team
+        </p>
       </div>
     </div>
   );
@@ -317,7 +389,10 @@ export function ChatSheet({ chat }: { chat: AskAiChat }) {
   if (!chat.isChatOpen) return null;
   return (
     <div className="lg:hidden">
-      <div className="fixed inset-0 bg-black/50 z-50 transition-opacity" onClick={() => chat.setChatOpen(false)} />
+      <div
+        className="fixed inset-0 bg-black/50 z-50 transition-opacity"
+        onClick={() => chat.setChatOpen(false)}
+      />
 
       <div className="fixed inset-x-0 bottom-0 z-50 bg-white rounded-t-2xl max-h-[90vh] flex flex-col animate-in slide-in-from-bottom duration-300">
         <div className="flex justify-center py-2">
@@ -326,8 +401,12 @@ export function ChatSheet({ chat }: { chat: AskAiChat }) {
 
         <div className="flex items-center justify-between px-4 pb-3 border-b border-gray-100">
           <div>
-            <h3 className="font-semibold text-gray-900">Ask about OMA Townhouse</h3>
-            <p className="text-xs text-gray-500">AI-powered property assistant</p>
+            <h3 className="font-semibold text-gray-900">
+              Ask about OMA Townhouse
+            </h3>
+            <p className="text-xs text-gray-500">
+              AI-powered property assistant
+            </p>
           </div>
           <button
             onClick={() => chat.setChatOpen(false)}
@@ -350,7 +429,7 @@ export function ChatSheet({ chat }: { chat: AskAiChat }) {
             <input
               type="text"
               value={chat.inputValue}
-              onChange={(e) => chat.setInputValue(e.target.value)}
+              onChange={e => chat.setInputValue(e.target.value)}
               onKeyPress={chat.handleKeyPress}
               placeholder="Ask anything about OMA..."
               disabled={chat.isLoading}
@@ -364,14 +443,90 @@ export function ChatSheet({ chat }: { chat: AskAiChat }) {
               <ArrowRight className="w-5 h-5" />
             </button>
           </div>
-          <p className="text-center text-gray-400 text-[10px] mt-2">AI-powered • Verify info with our team</p>
+          <p className="text-center text-gray-400 text-[10px] mt-2">
+            AI-powered • Verify info with our team
+          </p>
         </div>
       </div>
     </div>
   );
 }
 
-// Document viewer modal, driven by chat state. Render once at page top level.
-export function ChatDocViewer({ chat }: { chat: AskAiChat }) {
-  return <DocumentViewer isOpen={chat.showDocuments} onClose={chat.closeDocuments} documentId={chat.selectedDocId} />;
+// Site-wide assistant drawer. It keeps the conversation available without
+// permanently taking width away from editorial pages.
+export function ChatDrawer({ chat }: { chat: AskAiChat }) {
+  if (!chat.isChatOpen) return null;
+
+  return (
+    <div className="pointer-events-none fixed inset-0 z-[80]">
+      <button
+        type="button"
+        aria-label="Close OMA guide"
+        onClick={() => chat.setChatOpen(false)}
+        className="pointer-events-auto absolute inset-0 h-full w-full bg-black/35 backdrop-blur-[2px] animate-in fade-in duration-300 sm:hidden"
+      />
+
+      <aside
+        role="dialog"
+        aria-modal="false"
+        aria-label="Ask OMA"
+        className="pointer-events-auto absolute inset-y-0 right-0 flex w-full flex-col border-l border-black/10 bg-white shadow-2xl animate-in slide-in-from-right duration-500 sm:w-[460px]"
+      >
+        <div className="border-b border-stone-900/10 px-5 pb-5 pt-6 sm:px-6">
+          <div className="flex items-start justify-between gap-6">
+            <div>
+              <div className="mb-3 text-xs text-stone-500">
+                OMA property guide
+              </div>
+              <h2 className="text-2xl font-medium tracking-[-0.035em] text-stone-950">
+                What would you like to know?
+              </h2>
+            </div>
+            <button
+              type="button"
+              onClick={() => chat.setChatOpen(false)}
+              className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-stone-900/15 text-stone-700 transition-colors hover:bg-stone-950 hover:text-white"
+              aria-label="Close assistant"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          </div>
+        </div>
+
+        <div className="chat-scroll flex-1 space-y-3 overflow-y-auto px-5 py-5 sm:px-6">
+          <MessageList chat={chat} maxWidth="max-w-[92%]" />
+        </div>
+
+        <div className="px-5 pb-3 sm:px-6">
+          <QuickDocs chat={chat} />
+        </div>
+
+        <div className="border-t border-stone-900/10 bg-white/70 p-4 pb-[max(1rem,env(safe-area-inset-bottom))] backdrop-blur-xl sm:p-5">
+          <div className="flex items-end gap-2 rounded-[20px] border border-stone-900/15 bg-white p-2 shadow-sm">
+            <textarea
+              rows={1}
+              value={chat.inputValue}
+              onChange={event => chat.setInputValue(event.target.value)}
+              onKeyDown={chat.handleKeyPress}
+              placeholder="Ask about OMA, Kaba Kaba or ownership..."
+              disabled={chat.isLoading}
+              className="max-h-32 min-h-11 flex-1 resize-none bg-transparent px-3 py-3 text-sm text-stone-950 placeholder:text-stone-400 focus:outline-none"
+            />
+            <button
+              type="button"
+              onClick={chat.handleSend}
+              disabled={!chat.inputValue.trim() || chat.isLoading}
+              className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-black text-white transition-colors hover:bg-stone-800 disabled:cursor-not-allowed disabled:opacity-35"
+              aria-label="Send message"
+            >
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          </div>
+          <p className="mt-2 text-center text-[10px] text-stone-400">
+            AI guide. Confirm financial and legal details with the OMA team.
+          </p>
+        </div>
+      </aside>
+    </div>
+  );
 }

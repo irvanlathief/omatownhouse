@@ -17,12 +17,43 @@ export interface ChatMessage {
 export const WELCOME_TEXT =
   "Hey, welcome to OMA Townhouse.\n\nHappy to walk you through the townhouse, the Kaba Kaba area, or how buying here works. What's on your mind?";
 
+function getInlineFallback(content: string) {
+  const normalized = content.toLowerCase();
+
+  if (normalized.includes("render")) {
+    return `Here is one of the main living-space renders. The ground floor keeps the kitchen, dining and lounge open to the private pool.
+
+![OMA Townhouse living space](https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery/Scene32.webp)`;
+  }
+
+  if (normalized.includes("layout") || normalized.includes("floor plan")) {
+    return `OMA is 97.5 sqm across two floors. The 66.7 sqm ground floor holds the main living spaces, pool and one bedroom, while the 30.8 sqm upper floor creates a quieter second bedroom.
+
+![OMA Townhouse first-floor plan](/property-docs/floor-plan-first.webp)`;
+  }
+
+  if (normalized.includes("price") || normalized.includes("early-bird")) {
+    return `The first-building early-bird allocation is 15% below standard pricing, with a 30% deposit due within 14 days.
+
+\`\`\`pricing
+\`\`\``;
+  }
+
+  if (normalized.includes("where") || normalized.includes("nearby")) {
+    return `OMA is in Kaba Kaba, Tabanan. Kaba Kaba Social is 2 to 5 minutes away, Nuanu and Kedungu are 10 to 15 minutes, and Canggu is around 25 minutes.
+
+\`\`\`chips
+What's Kaba Kaba like? | How far is the beach? | How does buying work?
+\`\`\``;
+  }
+
+  return "I'm having trouble reaching the live guide right now. The OMA team can still help with the property, pricing or Kaba Kaba area.";
+}
+
 export function useAskAiChat() {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [inputValue, setInputValue] = useState("");
   const [isLoading, setIsLoading] = useState(false);
-  const [showDocuments, setShowDocuments] = useState(false);
-  const [selectedDocId, setSelectedDocId] = useState<string | undefined>();
   const [leadCollected, setLeadCollected] = useState(false);
   const [isChatOpen, setIsChatOpen] = useState(false);
   const messagesEndRef = useRef<HTMLDivElement>(null);
@@ -45,9 +76,11 @@ export function useAskAiChat() {
     if (container) container.scrollTop = container.scrollHeight;
   }, [messages]);
 
-  // Lock body scroll while the mobile sheet is open.
+  // The desktop guide sits beside the page, so only lock scrolling when the
+  // drawer occupies the full mobile viewport.
   useEffect(() => {
-    if (isChatOpen) {
+    const isMobile = window.matchMedia("(max-width: 639px)").matches;
+    if (isChatOpen && isMobile) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -66,18 +99,22 @@ export function useAskAiChat() {
       content,
     };
 
-    setMessages((prev) => [...prev, userMessage]);
+    setMessages(prev => [...prev, userMessage]);
     setIsLoading(true);
 
     try {
       const response = await chatMutation.mutateAsync({
         message: content,
-        history: messages.map((m) => ({ role: m.role, content: m.content })),
+        history: messages.map(m => ({ role: m.role, content: m.content })),
       });
 
-      setMessages((prev) => [
+      setMessages(prev => [
         ...prev,
-        { id: (Date.now() + 1).toString(), role: "assistant", content: response.reply },
+        {
+          id: (Date.now() + 1).toString(),
+          role: "assistant",
+          content: response.reply,
+        },
       ]);
 
       if (response.leadCollected) {
@@ -85,13 +122,12 @@ export function useAskAiChat() {
       }
     } catch (error) {
       console.error("Chat error:", error);
-      setMessages((prev) => [
+      setMessages(prev => [
         ...prev,
         {
           id: (Date.now() + 1).toString(),
           role: "assistant",
-          content:
-            "I apologize, but I'm having trouble responding right now. Please try again.",
+          content: getInlineFallback(content),
         },
       ]);
     } finally {
@@ -113,21 +149,11 @@ export function useAskAiChat() {
     }
   };
 
-  const openDocument = (docId: string) => {
-    setSelectedDocId(docId);
-    setShowDocuments(true);
-  };
-
-  const closeDocuments = () => {
-    setShowDocuments(false);
-    setSelectedDocId(undefined);
-  };
-
   // Pricing CTA: open the mobile sheet and ask about a specific tier.
   const sendInterest = (tierName: string, price: string) => {
     setIsChatOpen(true);
     void sendContent(
-      `I'm interested in the ${tierName} option at ${price}. Can you help me with the next steps?`,
+      `I'm interested in the ${tierName} option at ${price}. Can you help me with the next steps?`
     );
   };
 
@@ -150,13 +176,9 @@ export function useAskAiChat() {
     isTypingComplete,
     isChatOpen,
     setChatOpen: setIsChatOpen,
-    showDocuments,
-    selectedDocId,
-    closeDocuments,
     messagesEndRef,
     handleSend,
     handleKeyPress,
-    openDocument,
     sendInterest,
     askQuestion,
     openMobile,

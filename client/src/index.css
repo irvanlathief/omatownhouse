@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Instrument+Sans:wght@400;500;600;700&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -44,16 +44,16 @@
 }
 
 :root {
-  /* Airbnb-inspired black and white palette */
-  --primary: oklch(0.20 0 0);
+  /* OMA's warm editorial palette */
+  --primary: oklch(0.2 0 0);
   --primary-foreground: oklch(1 0 0);
-  --sidebar-primary: oklch(0.20 0 0);
+  --sidebar-primary: oklch(0.2 0 0);
   --sidebar-primary-foreground: oklch(1 0 0);
-  --chart-1: oklch(0.30 0 0);
-  --chart-2: oklch(0.40 0 0);
-  --chart-3: oklch(0.50 0 0);
-  --chart-4: oklch(0.60 0 0);
-  --chart-5: oklch(0.70 0 0);
+  --chart-1: oklch(0.3 0 0);
+  --chart-2: oklch(0.4 0 0);
+  --chart-3: oklch(0.5 0 0);
+  --chart-4: oklch(0.6 0 0);
+  --chart-5: oklch(0.7 0 0);
   --radius: 1rem;
   --background: oklch(1 0 0);
   --foreground: oklch(0.15 0 0);
@@ -62,7 +62,7 @@
   --popover: oklch(1 0 0);
   --popover-foreground: oklch(0.15 0 0);
   --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.20 0 0);
+  --secondary-foreground: oklch(0.2 0 0);
   --muted: oklch(0.96 0 0);
   --muted-foreground: oklch(0.45 0 0);
   --accent: oklch(0.95 0 0);
@@ -71,13 +71,13 @@
   --destructive-foreground: oklch(0.985 0 0);
   --border: oklch(0.92 0 0);
   --input: oklch(0.96 0 0);
-  --ring: oklch(0.20 0 0);
+  --ring: oklch(0.2 0 0);
   --sidebar: oklch(0.99 0 0);
   --sidebar-foreground: oklch(0.15 0 0);
   --sidebar-accent: oklch(0.96 0 0);
   --sidebar-accent-foreground: oklch(0.15 0 0);
   --sidebar-border: oklch(0.92 0 0);
-  --sidebar-ring: oklch(0.20 0 0);
+  --sidebar-ring: oklch(0.2 0 0);
 
   /* Glassmorphic properties - light mode */
   --glass-bg: rgba(255, 255, 255, 0.7);
@@ -91,15 +91,15 @@
   --primary-foreground: oklch(0.15 0 0);
   --sidebar-primary: oklch(0.98 0 0);
   --sidebar-primary-foreground: oklch(0.15 0 0);
-  --background: oklch(0.10 0 0);
+  --background: oklch(0.1 0 0);
   --foreground: oklch(0.98 0 0);
   --card: oklch(0.13 0 0);
   --card-foreground: oklch(0.98 0 0);
   --popover: oklch(0.13 0 0);
   --popover-foreground: oklch(0.98 0 0);
   --secondary: oklch(0.18 0 0);
-  --secondary-foreground: oklch(0.90 0 0);
-  --muted: oklch(0.20 0 0);
+  --secondary-foreground: oklch(0.9 0 0);
+  --muted: oklch(0.2 0 0);
   --muted-foreground: oklch(0.65 0 0);
   --accent: oklch(0.22 0 0);
   --accent-foreground: oklch(0.98 0 0);
@@ -130,16 +130,24 @@
     @apply border-border outline-ring/50;
   }
   html {
-    font-family: 'Inter', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    scroll-behavior: smooth;
+    font-family: "Instrument Sans", sans-serif;
   }
   body {
     @apply bg-background text-foreground;
-    font-feature-settings: 'liga' 1, 'kern' 1;
+    font-feature-settings:
+      "liga" 1,
+      "kern" 1;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-  h1, h2, h3, h4, h5, h6 {
-    font-family: 'DM Sans', 'Inter', sans-serif;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Instrument Sans", sans-serif;
     font-weight: 600;
     letter-spacing: -0.02em;
   }
@@ -153,6 +161,68 @@
   input[type="checkbox"]:not(:disabled),
   input[type="radio"]:not(:disabled) {
     @apply cursor-pointer;
+  }
+}
+
+.font-editorial {
+  font-family: "Cormorant Garamond", Georgia, serif;
+  font-weight: 500;
+}
+
+#oma-site-shell {
+  width: 100%;
+  transition: width 500ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@property --oma-gleam-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.oma-guide-trigger {
+  --oma-gleam-angle: 0deg;
+  isolation: isolate;
+}
+
+.oma-guide-trigger::before {
+  position: absolute;
+  inset: -3px;
+  z-index: -1;
+  border-radius: inherit;
+  background: conic-gradient(
+    from var(--oma-gleam-angle),
+    #2997ff,
+    #bf5af2,
+    #ff375f,
+    #ff9f0a,
+    #ffd60a,
+    #30d158,
+    #64d2ff,
+    #2997ff
+  );
+  content: "";
+  opacity: 0;
+  filter: blur(0.5px)
+    drop-shadow(0 0 12px color-mix(in srgb, #2997ff 45%, transparent));
+  transition: opacity 250ms ease;
+}
+
+.oma-guide-trigger:hover::before,
+.oma-guide-trigger:focus-visible::before {
+  opacity: 1;
+  animation: oma-guide-gleam 1.8s linear infinite;
+}
+
+@keyframes oma-guide-gleam {
+  to {
+    --oma-gleam-angle: 1turn;
+  }
+}
+
+@media (min-width: 640px) {
+  body.oma-chat-open #oma-site-shell {
+    width: calc(100% - 460px);
   }
 }
 
@@ -226,8 +296,14 @@
 
 /* Typing animation */
 @keyframes blink {
-  0%, 50% { opacity: 1; }
-  51%, 100% { opacity: 0; }
+  0%,
+  50% {
+    opacity: 1;
+  }
+  51%,
+  100% {
+    opacity: 0;
+  }
 }
 
 .typing-cursor {
