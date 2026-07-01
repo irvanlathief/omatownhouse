@@ -143,8 +143,8 @@ export default function Investors() {
       )}
 
       {unlocked && (
-        <section className="bg-stone-50 border-y border-stone-200">
-          <div className="max-w-5xl mx-auto px-6 py-6 flex items-center gap-3 text-sm text-stone-700">
+        <section className="bg-gray-50 border-y border-gray-200">
+          <div className="max-w-5xl mx-auto px-6 py-6 flex items-center gap-3 text-sm text-gray-700">
             <Check className="w-4 h-4 text-emerald-600 shrink-0" />
             <span>
               Welcome{firstName ? `, ${firstName}` : ""}. The full pitch is
@@ -207,12 +207,12 @@ function EarningsHero() {
 function MethodologyDisclosure() {
   const [open, setOpen] = useState(false);
   return (
-    <section className="border-b border-stone-200">
+    <section className="border-b border-gray-200">
       <div className="max-w-6xl mx-auto px-6 py-8">
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex items-center gap-2 text-sm text-stone-600 hover:text-stone-900"
+          className="inline-flex items-center gap-2 text-sm text-gray-600 hover:text-gray-900"
         >
           <Info className="w-4 h-4" />
           How this is estimated
@@ -223,8 +223,8 @@ function MethodologyDisclosure() {
           />
         </button>
         {open && (
-          <div className="mt-6 max-w-3xl text-sm text-stone-700 leading-relaxed space-y-4">
-            <p className="italic text-stone-500">
+          <div className="mt-6 max-w-3xl text-sm text-gray-700 leading-relaxed space-y-4">
+            <p className="italic text-gray-500">
               From Airbnb's host earnings estimator (used unchanged for the
               area-wide figure; OMA's per-night uplift is described after):
             </p>
@@ -252,8 +252,8 @@ function MethodologyDisclosure() {
               ability to host may also depend on local laws. These earning
               estimates are not an appraisal or estimate of property value."
             </p>
-            <div className="border-t border-stone-200 pt-4 text-stone-700">
-              <strong className="text-stone-900">OMA's adjustment.</strong>{" "}
+            <div className="border-t border-gray-200 pt-4 text-gray-700">
+              <strong className="text-gray-900">OMA's adjustment.</strong>{" "}
               Airbnb's area estimate for a generic Kaba-Kaba 2-bed sits around
               USD 83 per night. OMA is positioned above that on design,
               private pool and 97.5 sqm, which is why our default rate of USD
@@ -284,13 +284,13 @@ function PaybackCalculator() {
 
   return (
     <section className="max-w-6xl mx-auto px-6 pt-20 pb-24">
-      <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
+      <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
         Your money back
       </div>
-      <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
+      <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 max-w-3xl">
         How long until OMA pays itself off.
       </h2>
-      <p className="mt-4 text-stone-700 max-w-3xl">
+      <p className="mt-4 text-gray-700 max-w-3xl">
         Move the rate and the nights. The three cards update with annual gross,
         annual net of operations, and how many years to break even on each
         ownership tier.
@@ -298,15 +298,15 @@ function PaybackCalculator() {
 
       <div className="mt-10 grid lg:grid-cols-3 gap-10">
         {/* Inputs */}
-        <div className="lg:col-span-1 bg-white border border-stone-200 rounded-lg p-6">
-          <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-4">
+        <div className="lg:col-span-1 bg-white border border-gray-200 rounded-lg p-6">
+          <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-4">
             Your assumptions
           </div>
           <div className="space-y-6">
             <div>
               <div className="flex items-baseline justify-between text-sm">
-                <span className="text-stone-700">Nightly rate</span>
-                <span className="font-medium text-stone-900">
+                <span className="text-gray-700">Nightly rate</span>
+                <span className="font-medium text-gray-900">
                   {formatUsd(nightly)}
                 </span>
               </div>
@@ -317,18 +317,18 @@ function PaybackCalculator() {
                 step={5}
                 value={nightly}
                 onChange={(e) => setNightly(Number(e.target.value))}
-                className="mt-2 w-full accent-stone-900"
+                className="mt-2 w-full accent-gray-900"
                 aria-label="Nightly rate in USD"
               />
-              <div className="flex justify-between text-[10px] uppercase tracking-wider text-stone-500 mt-1">
+              <div className="flex justify-between text-[10px] uppercase tracking-wider text-gray-500 mt-1">
                 <span>USD 80</span>
                 <span>USD 320</span>
               </div>
             </div>
             <div>
               <div className="flex items-baseline justify-between text-sm">
-                <span className="text-stone-700">Nights booked per month</span>
-                <span className="font-medium text-stone-900">{nights}</span>
+                <span className="text-gray-700">Nights booked per month</span>
+                <span className="font-medium text-gray-900">{nights}</span>
               </div>
               <input
                 type="range"
@@ -336,30 +336,30 @@ function PaybackCalculator() {
                 max={28}
                 value={nights}
                 onChange={(e) => setNights(Number(e.target.value))}
-                className="mt-2 w-full accent-stone-900"
+                className="mt-2 w-full accent-gray-900"
                 aria-label="Nights per month"
               />
-              <div className="flex justify-between text-[10px] uppercase tracking-wider text-stone-500 mt-1">
+              <div className="flex justify-between text-[10px] uppercase tracking-wider text-gray-500 mt-1">
                 <span>8 nights</span>
                 <span>28 nights</span>
               </div>
             </div>
           </div>
 
-          <div className="mt-6 pt-6 border-t border-stone-200 text-sm">
-            <div className="flex justify-between text-stone-600">
+          <div className="mt-6 pt-6 border-t border-gray-200 text-sm">
+            <div className="flex justify-between text-gray-600">
               <span>Annual gross</span>
-              <span className="text-stone-900 font-medium">
+              <span className="text-gray-900 font-medium">
                 {formatUsd(grossAnnual)}
               </span>
             </div>
-            <div className="flex justify-between text-stone-600 mt-2">
+            <div className="flex justify-between text-gray-600 mt-2">
               <span>Annual net of ops</span>
-              <span className="text-stone-900 font-medium">
+              <span className="text-gray-900 font-medium">
                 {formatUsd(netAnnual)}
               </span>
             </div>
-            <div className="text-[11px] text-stone-500 mt-3 leading-relaxed">
+            <div className="text-[11px] text-gray-500 mt-3 leading-relaxed">
               Net subtracts 18% management, about USD 4,200 fixed core ops and
               7% utilities reserve. Indonesian tax (PT PMA 22% on profit, or 20%
               PPh 26 on gross for own-name) sits below this.
@@ -378,13 +378,13 @@ function PaybackCalculator() {
                 key={tier.key}
                 className={`rounded-lg p-6 ${
                   highlighted
-                    ? "bg-stone-900 text-white border border-stone-900"
-                    : "bg-white border border-stone-200"
+                    ? "bg-gray-900 text-white border border-gray-900"
+                    : "bg-white border border-gray-200"
                 }`}
               >
                 <div
                   className={`text-xs uppercase tracking-[0.18em] ${
-                    highlighted ? "text-white/70" : "text-stone-500"
+                    highlighted ? "text-white/70" : "text-gray-500"
                   }`}
                 >
                   {tier.label}
@@ -394,7 +394,7 @@ function PaybackCalculator() {
                 </div>
                 <div
                   className={`text-xs ${
-                    highlighted ? "text-white/60" : "text-stone-500"
+                    highlighted ? "text-white/60" : "text-gray-500"
                   } mt-0.5`}
                 >
                   {tier.note}
@@ -402,12 +402,12 @@ function PaybackCalculator() {
 
                 <div
                   className={`mt-6 pt-6 border-t ${
-                    highlighted ? "border-white/15" : "border-stone-200"
+                    highlighted ? "border-white/15" : "border-gray-200"
                   }`}
                 >
                   <div
                     className={`text-[11px] uppercase tracking-wider ${
-                      highlighted ? "text-white/60" : "text-stone-500"
+                      highlighted ? "text-white/60" : "text-gray-500"
                     }`}
                   >
                     Years to break even
@@ -417,7 +417,7 @@ function PaybackCalculator() {
                   </div>
                   <div
                     className={`text-xs ${
-                      highlighted ? "text-white/60" : "text-stone-500"
+                      highlighted ? "text-white/60" : "text-gray-500"
                     } mt-2`}
                   >
                     Net yield {isFinite(grossYield) ? grossYield.toFixed(1) : "0"}% / yr
@@ -429,7 +429,7 @@ function PaybackCalculator() {
         </div>
       </div>
 
-      <p className="mt-8 text-xs text-stone-500 max-w-3xl">
+      <p className="mt-8 text-xs text-gray-500 max-w-3xl">
         Illustrative, not financial advice. Payback uses constant annual net at
         your chosen inputs, before Indonesian tax and treaty effects. Real
         timelines depend on occupancy, seasonality, OTA commissions and your
@@ -442,9 +442,9 @@ function PaybackCalculator() {
 
 function BrandBand() {
   return (
-    <section className="border-y border-stone-200 bg-white">
+    <section className="border-y border-gray-200 bg-white">
       <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-        <p className="font-serif text-2xl sm:text-3xl text-stone-900 leading-snug">
+        <p className="font-serif text-2xl sm:text-3xl text-gray-900 leading-snug">
           Quiet is the luxury. Intentional living in Kaba Kaba,
           designed for ownership and for rental income.
         </p>
@@ -483,16 +483,16 @@ function AccessGate({
   waitingForCode: boolean;
 }) {
   return (
-    <section id="access" className="bg-stone-50 border-y border-stone-200">
+    <section id="access" className="bg-gray-50 border-y border-gray-200">
       <div className="max-w-3xl mx-auto px-6 py-20">
         <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
+          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
             <Lock className="w-3.5 h-3.5" /> Investor access
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900">
+          <h2 className="font-serif text-3xl sm:text-4xl text-gray-900">
             Continue to the full pitch.
           </h2>
-          <p className="mt-3 text-stone-600 max-w-xl mx-auto">
+          <p className="mt-3 text-gray-600 max-w-xl mx-auto">
             Drop your details and the access code we sent you. The market
             case, the title structure, the operating model and the founder
             section all unlock on this browser. Don't have a code yet?
@@ -509,7 +509,7 @@ function AccessGate({
 
         <form
           onSubmit={onSubmit}
-          className="bg-white border border-stone-200 rounded-lg p-6 sm:p-8 space-y-5 shadow-sm"
+          className="bg-white border border-gray-200 rounded-lg p-6 sm:p-8 space-y-5 shadow-sm"
         >
           <div className="grid sm:grid-cols-2 gap-5">
             <div>
@@ -574,7 +574,7 @@ function AccessGate({
               placeholder="Enter the code we sent you"
               className="mt-1"
             />
-            <p className="mt-1 text-xs text-stone-500">
+            <p className="mt-1 text-xs text-gray-500">
               Don't have one yet? Leave it blank and submit — we'll WhatsApp
               you the code within minutes.
             </p>
@@ -589,7 +589,7 @@ function AccessGate({
                 setForm((f) => ({ ...f, message: e.target.value }))
               }
               placeholder="Timeline, budget range, units of interest, questions..."
-              className="mt-1 w-full rounded-md border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-900/10"
+              className="mt-1 w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-gray-900/10"
             />
           </div>
           <Button
@@ -599,7 +599,7 @@ function AccessGate({
           >
             {submitting ? "Sending..." : "Continue"}
           </Button>
-          <p className="text-xs text-stone-500">
+          <p className="text-xs text-gray-500">
             By submitting, you agree we may contact you about OMA Townhouse.
             We don't share your details with anyone else.
           </p>
@@ -614,37 +614,37 @@ function InvestorContent() {
     <>
       {/* The market case */}
       <section className="max-w-5xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
+        <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
           The market case
         </div>
-        <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
+        <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 max-w-3xl">
           Demand is strong. Saturated districts face tightening supply. The
           opening sits further west.
         </h2>
-        <div className="mt-10 grid md:grid-cols-3 gap-8 text-stone-800">
+        <div className="mt-10 grid md:grid-cols-3 gap-8 text-gray-800">
           <div>
             <div className="text-3xl font-serif">6.33M</div>
-            <p className="text-sm text-stone-600 mt-2">
+            <p className="text-sm text-gray-600 mt-2">
               Foreign visitors to Bali in 2024 (BPS-linked reporting). 2.64M in
               the first five months of 2025.
             </p>
           </div>
           <div>
             <div className="text-3xl font-serif">~70%</div>
-            <p className="text-sm text-stone-600 mt-2">
+            <p className="text-sm text-gray-600 mt-2">
               Share of Bali's regional GDP tied to tourism, per published
               international reporting.
             </p>
           </div>
           <div>
             <div className="text-3xl font-serif">2028 →</div>
-            <p className="text-sm text-stone-600 mt-2">
+            <p className="text-sm text-gray-600 mt-2">
               The first phase of the Bali Urban Subway is targeted to connect
               Ngurah Rai Airport toward the western coast.
             </p>
           </div>
         </div>
-        <p className="mt-10 text-stone-700 max-w-3xl leading-relaxed">
+        <p className="mt-10 text-gray-700 max-w-3xl leading-relaxed">
           Bali authorities have signalled a quality-tourism stance, including
           discussion of moratoriums on new hotels and villas in saturated
           southern zones. That combination, strong island-wide demand plus
@@ -655,19 +655,19 @@ function InvestorContent() {
       </section>
 
       {/* Product visuals */}
-      <section className="bg-stone-50 border-y border-stone-200">
+      <section className="bg-gray-50 border-y border-gray-200">
         <div className="max-w-6xl mx-auto px-6 py-20">
-          <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
+          <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
             The product
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
+          <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 max-w-3xl">
             Designed for living. Structured for ownership. Ready to operate.
           </h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-10">
             {[32, 39, 51, 41, 77, 26].map((n) => (
               <div
                 key={n}
-                className="aspect-[4/3] overflow-hidden rounded-md bg-stone-200"
+                className="aspect-[4/3] overflow-hidden rounded-md bg-gray-200"
               >
                 <img
                   src={SCENE(n)}
@@ -689,13 +689,13 @@ function InvestorContent() {
 
       {/* Ownership + pricing */}
       <section className="max-w-5xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
+        <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
           Ownership and pricing
         </div>
-        <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
+        <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 max-w-3xl">
           Three routes, designed for foreign buyers.
         </h2>
-        <p className="mt-4 text-stone-700 max-w-3xl">
+        <p className="mt-4 text-gray-700 max-w-3xl">
           Indonesian law does not allow foreign individuals to hold freehold
           (Hak Milik). OMA offers leasehold for a simpler entry, and freehold
           through a PT PMA company for buyers who want freehold-style control.
@@ -721,7 +721,7 @@ function InvestorContent() {
             note="HGB held by a foreign-owned company. Suits rental as a business."
           />
         </div>
-        <p className="mt-6 text-xs text-stone-500 max-w-3xl">
+        <p className="mt-6 text-xs text-gray-500 max-w-3xl">
           Early-bird pricing is finite by allotment. Standard pricing applies
           once the early-bird tranche is sold. First-building promotion: 15%
           off with a 30% deposit in 14 days, subject to availability.
@@ -729,12 +729,12 @@ function InvestorContent() {
       </section>
 
       {/* Payment structure */}
-      <section className="bg-stone-50 border-y border-stone-200">
+      <section className="bg-gray-50 border-y border-gray-200">
         <div className="max-w-5xl mx-auto px-6 py-24">
-          <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
+          <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
             Capital deployment
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
+          <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 max-w-3xl">
             Staged payments tied to construction.
           </h2>
           <div className="mt-12 grid md:grid-cols-3 gap-6">
@@ -754,8 +754,8 @@ function InvestorContent() {
               body="Final payment before practical completion and handover."
             />
           </div>
-          <div className="mt-12 border-t border-stone-200 pt-8 text-sm text-stone-700 max-w-3xl">
-            <strong className="text-stone-900">
+          <div className="mt-12 border-t border-gray-200 pt-8 text-sm text-gray-700 max-w-3xl">
+            <strong className="text-gray-900">
               Estimated build duration:
             </strong>{" "}
             10 to 14 months from commencement. Payments are staged so capital
@@ -766,13 +766,13 @@ function InvestorContent() {
 
       {/* Hands-off model — lighter version, no dark slab */}
       <section className="max-w-5xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
+        <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
           Hands-off ownership
         </div>
-        <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
+        <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 max-w-3xl">
           Sit anywhere. OMA runs the asset.
         </h2>
-        <p className="mt-4 text-stone-700 max-w-3xl leading-relaxed">
+        <p className="mt-4 text-gray-700 max-w-3xl leading-relaxed">
           OMA can operate the townhouse as a fully managed hospitality asset.
           We coordinate guest communications, pricing, check-in,
           housekeeping, maintenance, airport transfers and on-the-ground
@@ -804,7 +804,7 @@ function InvestorContent() {
             ]}
           />
         </div>
-        <p className="mt-10 text-xs text-stone-500 max-w-3xl">
+        <p className="mt-10 text-xs text-gray-500 max-w-3xl">
           Benchmarked to the Bali market standard: a leading local operator
           publishes an 18% full-management commission on gross revenue, with
           staff wages and operating costs treated separately. OMA's management
@@ -813,23 +813,23 @@ function InvestorContent() {
       </section>
 
       {/* What USD 250k buys you */}
-      <section className="bg-stone-50 border-y border-stone-200">
+      <section className="bg-gray-50 border-y border-gray-200">
         <div className="max-w-5xl mx-auto px-6 py-24">
-          <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
+          <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
             The comparison
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
+          <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 max-w-3xl">
             What USD 250,000 buys you around the world.
           </h2>
-          <p className="mt-4 text-stone-700 max-w-3xl">
+          <p className="mt-4 text-gray-700 max-w-3xl">
             Same money, different product. The point is not that Bali is
             cheaper. The point is what you actually get for the same outlay.
           </p>
 
           <div className="mt-10 overflow-x-auto">
             <table className="w-full text-sm">
-              <thead className="text-left text-stone-500">
-                <tr className="border-b border-stone-200">
+              <thead className="text-left text-gray-500">
+                <tr className="border-b border-gray-200">
                   <th className="py-3 pr-4 font-medium">Market</th>
                   <th className="py-3 pr-4 font-medium">
                     What ~USD 250k buys
@@ -838,8 +838,8 @@ function InvestorContent() {
                   <th className="py-3 pr-4 font-medium">Foreign ownership</th>
                 </tr>
               </thead>
-              <tbody className="text-stone-800">
-                <tr className="border-b border-stone-100 bg-white font-medium">
+              <tbody className="text-gray-800">
+                <tr className="border-b border-gray-100 bg-white font-medium">
                   <td className="py-3 pr-4">Tabanan, Bali (OMA)</td>
                   <td className="py-3 pr-4">
                     2-bed townhouse, 97.5 sqm, freehold via PT PMA
@@ -847,7 +847,7 @@ function InvestorContent() {
                   <td className="py-3 pr-4">Yes</td>
                   <td className="py-3 pr-4">Yes, via PT PMA or leasehold</td>
                 </tr>
-                <tr className="border-b border-stone-100">
+                <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4">Canggu, Bali</td>
                   <td className="py-3 pr-4">
                     Studio or compact 1-bed leasehold
@@ -855,7 +855,7 @@ function InvestorContent() {
                   <td className="py-3 pr-4">Shared, if any</td>
                   <td className="py-3 pr-4">Leasehold only at this price</td>
                 </tr>
-                <tr className="border-b border-stone-100">
+                <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4">Dubai (JVC / Business Bay)</td>
                   <td className="py-3 pr-4">
                     ~35–45 sqm studio, freehold zone
@@ -863,7 +863,7 @@ function InvestorContent() {
                   <td className="py-3 pr-4">Shared building pool</td>
                   <td className="py-3 pr-4">Yes, freehold</td>
                 </tr>
-                <tr className="border-b border-stone-100">
+                <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4">Phuket, Thailand</td>
                   <td className="py-3 pr-4">
                     1-bed condo, ~40 sqm, foreign quota
@@ -871,7 +871,7 @@ function InvestorContent() {
                   <td className="py-3 pr-4">Shared</td>
                   <td className="py-3 pr-4">Condo freehold via foreign quota</td>
                 </tr>
-                <tr className="border-b border-stone-100">
+                <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4">Lisbon, Portugal</td>
                   <td className="py-3 pr-4">
                     1-bed apartment, ~45 sqm, outside the centre
@@ -879,7 +879,7 @@ function InvestorContent() {
                   <td className="py-3 pr-4">No</td>
                   <td className="py-3 pr-4">Yes, freehold</td>
                 </tr>
-                <tr className="border-b border-stone-100">
+                <tr className="border-b border-gray-100">
                   <td className="py-3 pr-4">Tulum, Mexico</td>
                   <td className="py-3 pr-4">
                     ~55 sqm 1-bed condo, shared amenities
@@ -900,7 +900,7 @@ function InvestorContent() {
               </tbody>
             </table>
           </div>
-          <p className="mt-8 text-xs text-stone-500 max-w-3xl">
+          <p className="mt-8 text-xs text-gray-500 max-w-3xl">
             Comparisons reflect typical product available at roughly USD
             250,000 in each market at time of writing, drawn from public
             listings and local market reports. Spec and condition vary
@@ -911,13 +911,13 @@ function InvestorContent() {
 
       {/* Straight answers */}
       <section className="max-w-3xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
+        <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
           Straight answers
         </div>
-        <h2 className="font-serif text-3xl sm:text-4xl text-stone-900">
+        <h2 className="font-serif text-3xl sm:text-4xl text-gray-900">
           The questions a serious buyer asks.
         </h2>
-        <p className="mt-4 text-stone-700">
+        <p className="mt-4 text-gray-700">
           Off-plan in Indonesia carries real risks. The honest answers below
           are how we think about them. If any are unresolved for you, raise
           them with us directly.
@@ -952,18 +952,18 @@ function InvestorContent() {
       </section>
 
       {/* Who's behind OMA */}
-      <section className="bg-stone-50 border-y border-stone-200">
+      <section className="bg-gray-50 border-y border-gray-200">
         <div className="max-w-5xl mx-auto px-6 py-24">
-          <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
+          <div className="text-xs uppercase tracking-[0.18em] text-gray-500 mb-3">
             Who's behind OMA
           </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
+          <h2 className="font-serif text-3xl sm:text-4xl text-gray-900 max-w-3xl">
             A product person, building a product company in Bali.
           </h2>
 
           <div className="mt-10 grid md:grid-cols-3 gap-10">
             <div className="md:col-span-1">
-              <div className="aspect-square overflow-hidden rounded-lg bg-stone-100 border border-stone-200">
+              <div className="aspect-square overflow-hidden rounded-lg bg-gray-100 border border-gray-200">
                 <img
                   src="/founder/irvan-lathief.webp"
                   alt="Irvan Lathief, founder of OMA Townhouse"
@@ -972,12 +972,12 @@ function InvestorContent() {
                 />
               </div>
               <div className="mt-4 text-sm">
-                <div className="font-medium text-stone-900">Irvan Lathief</div>
-                <div className="text-stone-500">Founder, OMA Townhouse</div>
+                <div className="font-medium text-gray-900">Irvan Lathief</div>
+                <div className="text-gray-500">Founder, OMA Townhouse</div>
                 <a
                   href="https://irvanlathief.com"
                   data-external="true"
-                  className="mt-3 inline-flex items-center gap-1 text-sm text-stone-700 hover:text-stone-900 underline underline-offset-4"
+                  className="mt-3 inline-flex items-center gap-1 text-sm text-gray-700 hover:text-gray-900 underline underline-offset-4"
                 >
                   irvanlathief.com
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -985,9 +985,9 @@ function InvestorContent() {
               </div>
             </div>
 
-            <div className="md:col-span-2 text-stone-800 leading-relaxed space-y-4">
+            <div className="md:col-span-2 text-gray-800 leading-relaxed space-y-4">
               <p>
-                <strong className="text-stone-900">
+                <strong className="text-gray-900">
                   A product designer who codes.
                 </strong>{" "}
                 Ten-plus years in product design and design leadership, with a
@@ -996,7 +996,7 @@ function InvestorContent() {
                 Germany, Australia and home.
               </p>
               <p>
-                <strong className="text-stone-900">Track record.</strong> Built
+                <strong className="text-gray-900">Track record.</strong> Built
                 Fleetwise from the first line of code through its first paying
                 customer, then handed it to an engineering team to scale. As
                 founder of DotDesign, led product work for Asia Pacific
@@ -1005,7 +1005,7 @@ function InvestorContent() {
                 across the region.
               </p>
               <p>
-                <strong className="text-stone-900">
+                <strong className="text-gray-900">
                   Why OMA is design-led.
                 </strong>{" "}
                 Most Bali off-plan is sold on land economics. OMA is built like
@@ -1015,7 +1015,7 @@ function InvestorContent() {
                 owner and the next, not for a brochure.
               </p>
               <p>
-                <strong className="text-stone-900">
+                <strong className="text-gray-900">
                   First project, deliberately.
                 </strong>{" "}
                 OMA Townhouse in Kaba Kaba is OMA's first development. That's
@@ -1036,10 +1036,10 @@ function InvestorContent() {
 function FooterCta({ unlocked }: { unlocked: boolean }) {
   return (
     <section className="max-w-5xl mx-auto px-6 py-24 text-center">
-      <h2 className="font-serif text-3xl sm:text-4xl text-stone-900">
+      <h2 className="font-serif text-3xl sm:text-4xl text-gray-900">
         Talk to the team.
       </h2>
-      <p className="mt-3 text-stone-600 max-w-xl mx-auto">
+      <p className="mt-3 text-gray-600 max-w-xl mx-auto">
         {unlocked
           ? "We're already on our way to you. If you'd like to move faster, WhatsApp us or reply to the email we just sent."
           : "Unlock the pitch above, or message us on WhatsApp and we'll walk you through it personally."}
@@ -1048,13 +1048,13 @@ function FooterCta({ unlocked }: { unlocked: boolean }) {
         <a
           href="https://wa.me/"
           data-external="true"
-          className="inline-flex items-center gap-2 rounded-md bg-stone-900 text-white px-4 py-2 text-sm font-medium hover:bg-stone-800"
+          className="inline-flex items-center gap-2 rounded-md bg-gray-900 text-white px-4 py-2 text-sm font-medium hover:bg-gray-800"
         >
           WhatsApp
         </a>
         <a
           href="/"
-          className="inline-flex items-center gap-2 rounded-md border border-stone-300 px-4 py-2 text-sm font-medium hover:bg-stone-50 text-stone-700"
+          className="inline-flex items-center gap-2 rounded-md border border-gray-300 px-4 py-2 text-sm font-medium hover:bg-gray-50 text-gray-700"
         >
           Back to the home page
         </a>
@@ -1066,10 +1066,10 @@ function FooterCta({ unlocked }: { unlocked: boolean }) {
 function Stat({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <div className="text-xs uppercase tracking-[0.18em] text-stone-500">
+      <div className="text-xs uppercase tracking-[0.18em] text-gray-500">
         {label}
       </div>
-      <div className="mt-1 font-serif text-2xl text-stone-900">{value}</div>
+      <div className="mt-1 font-serif text-2xl text-gray-900">{value}</div>
     </div>
   );
 }
@@ -1091,16 +1091,16 @@ function PriceCard({
     <div
       className={`rounded-lg border p-6 ${
         highlighted
-          ? "border-stone-900 bg-white shadow-md"
-          : "border-stone-200 bg-white"
+          ? "border-gray-900 bg-white shadow-md"
+          : "border-gray-200 bg-white"
       }`}
     >
-      <div className="text-xs uppercase tracking-[0.18em] text-stone-500">
+      <div className="text-xs uppercase tracking-[0.18em] text-gray-500">
         {tier}
       </div>
-      <div className="mt-2 font-serif text-2xl text-stone-900">From {from}</div>
-      <div className="text-sm text-stone-500">Standard: {standard}</div>
-      <p className="mt-4 text-sm text-stone-700 leading-relaxed">{note}</p>
+      <div className="mt-2 font-serif text-2xl text-gray-900">From {from}</div>
+      <div className="text-sm text-gray-500">Standard: {standard}</div>
+      <p className="mt-4 text-sm text-gray-700 leading-relaxed">{note}</p>
     </div>
   );
 }
@@ -1115,10 +1115,10 @@ function Stage({
   body: string;
 }) {
   return (
-    <div className="bg-white rounded-lg border border-stone-200 p-6">
-      <div className="font-serif text-3xl text-stone-900">{percent}</div>
-      <div className="mt-3 text-sm font-medium text-stone-900">{title}</div>
-      <p className="mt-2 text-sm text-stone-600 leading-relaxed">{body}</p>
+    <div className="bg-white rounded-lg border border-gray-200 p-6">
+      <div className="font-serif text-3xl text-gray-900">{percent}</div>
+      <div className="mt-3 text-sm font-medium text-gray-900">{title}</div>
+      <p className="mt-2 text-sm text-gray-600 leading-relaxed">{body}</p>
     </div>
   );
 }
@@ -1126,8 +1126,8 @@ function Stage({
 function FeatureCard({ title, points }: { title: string; points: string[] }) {
   return (
     <div>
-      <div className="text-sm font-medium text-stone-900 mb-3">{title}</div>
-      <ul className="space-y-2 text-stone-700">
+      <div className="text-sm font-medium text-gray-900 mb-3">{title}</div>
+      <ul className="space-y-2 text-gray-700">
         {points.map((p) => (
           <li key={p} className="flex items-start gap-2">
             <Check className="w-4 h-4 mt-0.5 text-emerald-600 shrink-0" />
@@ -1142,8 +1142,8 @@ function FeatureCard({ title, points }: { title: string; points: string[] }) {
 function Qa({ q, a }: { q: string; a: string }) {
   return (
     <div>
-      <h3 className="font-serif text-xl text-stone-900">{q}</h3>
-      <p className="mt-3 text-stone-700 leading-relaxed">{a}</p>
+      <h3 className="font-serif text-xl text-gray-900">{q}</h3>
+      <p className="mt-3 text-gray-700 leading-relaxed">{a}</p>
     </div>
   );
 }
