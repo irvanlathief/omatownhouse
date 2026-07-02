@@ -187,9 +187,12 @@
 
 .oma-guide-trigger::before {
   position: absolute;
-  inset: -3px;
+  top: 46%;
+  right: 6%;
+  bottom: -16px;
+  left: 6%;
   z-index: -1;
-  border-radius: inherit;
+  border-radius: 999px;
   background: conic-gradient(
     from var(--oma-gleam-angle),
     #2997ff,
@@ -203,14 +206,18 @@
   );
   content: "";
   opacity: 0;
-  filter: blur(0.5px)
-    drop-shadow(0 0 12px color-mix(in srgb, #2997ff 45%, transparent));
-  transition: opacity 250ms ease;
+  filter: blur(18px) saturate(1.08);
+  pointer-events: none;
+  transform: translateY(8px) scaleX(0.82) scaleY(0.62);
+  transition:
+    opacity 250ms ease,
+    transform 250ms ease;
 }
 
 .oma-guide-trigger:hover::before,
 .oma-guide-trigger:focus-visible::before {
-  opacity: 1;
+  opacity: 0.78;
+  transform: translateY(10px) scaleX(0.96) scaleY(0.74);
   animation: oma-guide-gleam 1.8s linear infinite;
 }
 

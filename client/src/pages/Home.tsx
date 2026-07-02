@@ -394,11 +394,174 @@ function GalleryLightbox({
   );
 }
 
+function ResidenceGalleryCard({
+  image,
+  index,
+  className = "",
+  featured = false,
+  onOpen,
+}: {
+  image: (typeof GALLERY_IMAGES)[number];
+  index: number;
+  className?: string;
+  featured?: boolean;
+  onOpen: (index: number) => void;
+}) {
+  return (
+    <Reveal delay={index * 0.035} className={className}>
+      <button
+        type="button"
+        onClick={() => onOpen(index)}
+        className="group relative h-full min-h-[280px] w-full overflow-hidden rounded-[22px] bg-black text-left text-white"
+        aria-label={`Open gallery at ${image.title}`}
+      >
+        <img
+          src={image.src}
+          alt={image.alt}
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.035]"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/68 via-black/10 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-5 sm:p-6">
+          <div className="max-w-[75%]">
+            <p className="mb-1 text-xs text-white/60">{image.detail}</p>
+            <h3
+              className={`font-medium tracking-[-0.03em] ${
+                featured ? "text-3xl sm:text-[2.2rem]" : "text-xl sm:text-2xl"
+              }`}
+            >
+              {image.title}
+            </h3>
+          </div>
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/35 bg-black/15 text-lg backdrop-blur-sm transition-colors group-hover:bg-white group-hover:text-black">
+            +
+          </span>
+        </div>
+      </button>
+    </Reveal>
+  );
+}
+
+function EntranceOverlay({
+  isOpen,
+  onClose,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+}) {
+  useEffect(() => {
+    if (!isOpen) return;
+    const previousOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.body.style.overflow = previousOverflow;
+    };
+  }, [isOpen]);
+
+  return (
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          className="fixed inset-0 z-[120] overflow-hidden bg-black text-white"
+          initial={{ opacity: 1 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+        >
+          <motion.img
+            src={IMAGES.exterior}
+            alt=""
+            aria-hidden="true"
+            className="absolute inset-0 h-full w-full object-cover opacity-30"
+            initial={{ scale: 1.12, filter: "blur(14px)" }}
+            animate={{ scale: 1.02, filter: "blur(8px)" }}
+            transition={{ duration: 2.4, ease: [0.22, 1, 0.36, 1] }}
+          />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.08),transparent_42%),linear-gradient(180deg,rgba(0,0,0,0.4),rgba(0,0,0,0.88))]" />
+
+          <div className="relative flex h-full flex-col justify-between px-6 py-8 sm:px-10 sm:py-10 lg:px-14 lg:py-12">
+            <div className="flex items-center justify-between gap-6">
+              <div className="text-sm text-white/60">
+                OMA Townhouse, Kaba Kaba
+              </div>
+              <button
+                type="button"
+                onClick={onClose}
+                className="rounded-full border border-white/20 px-4 py-2 text-sm text-white/70 transition-colors hover:border-white/45 hover:text-white"
+              >
+                Skip intro
+              </button>
+            </div>
+
+            <div className="max-w-3xl">
+              <motion.p
+                className="text-sm text-white/55"
+                initial={{ opacity: 0, y: 14 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.15, duration: 0.7 }}
+              >
+                Loading the OMA experience
+              </motion.p>
+              <motion.h1
+                className="mt-6 max-w-4xl font-editorial text-6xl leading-[0.9] tracking-[-0.05em] sm:text-7xl lg:text-[6.2vw]"
+                initial={{ opacity: 0, y: 22 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3, duration: 0.85 }}
+              >
+                Relax. You&apos;re in Bali soon.
+              </motion.h1>
+              <motion.p
+                className="mt-6 max-w-xl text-base leading-relaxed text-white/65 sm:text-lg"
+                initial={{ opacity: 0, y: 18 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.45, duration: 0.8 }}
+              >
+                Kaba Kaba is quieter by nature. Let the place arrive before the
+                details do.
+              </motion.p>
+            </div>
+
+            <motion.div
+              className="max-w-md"
+              initial={{ opacity: 0, y: 14 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.6, duration: 0.8 }}
+            >
+              <div className="h-px overflow-hidden rounded-full bg-white/12">
+                <motion.div
+                  className="h-full origin-left bg-[linear-gradient(90deg,rgba(255,255,255,0.15),rgba(143,208,255,0.9),rgba(255,255,255,0.15))]"
+                  initial={{ scaleX: 0.15, x: "-18%" }}
+                  animate={{ scaleX: 1, x: "0%" }}
+                  transition={{ duration: 1.8, ease: [0.22, 1, 0.36, 1] }}
+                />
+              </div>
+              <div className="mt-4 flex items-center justify-between text-sm text-white/45">
+                <span>Previewing residence, returns and ownership</span>
+                <span>Take your time</span>
+              </div>
+            </motion.div>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
+}
+
 function PaybackSection() {
   const [nightlyRate, setNightlyRate] = useState(200);
   const [nightsPerMonth, setNightsPerMonth] = useState(18);
+  const managementRate = 0.18;
+  const utilitiesRate = 0.07;
+  const fixedOps = 4_200;
   const grossAnnual = nightlyRate * nightsPerMonth * 12;
-  const netAnnual = Math.max(0, grossAnnual * 0.75 - 4_200);
+  const occupancyRate = Math.min(100, (nightsPerMonth / 30) * 100);
+  const managementCost = grossAnnual * managementRate;
+  const utilitiesReserve = grossAnnual * utilitiesRate;
+  const netAnnual = Math.max(
+    0,
+    grossAnnual - managementCost - utilitiesReserve - fixedOps
+  );
+  const monthlyNet = netAnnual / 12;
 
   return (
     <section
@@ -415,11 +578,11 @@ function PaybackSection() {
           </Reveal>
           <Reveal delay={0.08}>
             <p className="max-w-xl text-base leading-relaxed text-white/65">
-              Move the nightly rate and booked nights. Annual income and
-              estimated payback update instantly across all three ownership
-              routes.
+              Move the nightly rate and booked nights. We&apos;ll show the
+              occupancy assumption, what operations take out, and how the staged
+              purchase can still be paid back over time.
             </p>
-            <div className="mt-8 grid grid-cols-2 gap-8 border-t border-white/20 pt-6">
+            <div className="mt-8 grid gap-8 border-t border-white/20 pt-6 sm:grid-cols-3">
               <div>
                 <span className="block text-sm text-white/50">
                   Annual gross
@@ -434,6 +597,14 @@ function PaybackSection() {
                 </span>
                 <strong className="mt-1 block text-2xl font-medium">
                   {formatUsd(netAnnual)}
+                </strong>
+              </div>
+              <div>
+                <span className="block text-sm text-white/50">
+                  Occupancy assumption
+                </span>
+                <strong className="mt-1 block text-2xl font-medium">
+                  {occupancyRate.toFixed(0)}%
                 </strong>
               </div>
             </div>
@@ -486,9 +657,43 @@ function PaybackSection() {
                 </span>
               </label>
             </div>
-            <p className="mt-8 border-t border-black/15 pt-5 text-xs leading-relaxed text-black/55">
-              Net subtracts 18% management, USD 4,200 fixed core operations and
-              a 7% utilities reserve. Tax sits below this illustration.
+            <div className="mt-8 rounded-[18px] border border-black/10 bg-black/[0.03] p-4">
+              <div className="grid gap-3 text-sm">
+                <div className="flex items-center justify-between gap-4">
+                  <span className="text-black/60">Booked nights</span>
+                  <strong>
+                    {nightsPerMonth} per month, about {occupancyRate.toFixed(0)}
+                    % occupancy
+                  </strong>
+                </div>
+                <div className="flex items-center justify-between gap-4">
+                  <span className="text-black/60">
+                    Management fee at {managementRate * 100}%
+                  </span>
+                  <strong>{formatUsd(managementCost)}</strong>
+                </div>
+                <div className="flex items-center justify-between gap-4">
+                  <span className="text-black/60">
+                    Utilities reserve at {utilitiesRate * 100}%
+                  </span>
+                  <strong>{formatUsd(utilitiesReserve)}</strong>
+                </div>
+                <div className="flex items-center justify-between gap-4">
+                  <span className="text-black/60">
+                    Core operations, staffing and upkeep
+                  </span>
+                  <strong>{formatUsd(fixedOps)}</strong>
+                </div>
+                <div className="flex items-center justify-between gap-4 border-t border-black/10 pt-3">
+                  <span className="text-black/60">Monthly net after ops</span>
+                  <strong>{formatUsd(monthlyNet)}</strong>
+                </div>
+              </div>
+            </div>
+
+            <p className="mt-5 text-xs leading-relaxed text-black/55">
+              Illustration only. Taxes, financing, construction milestones and
+              the final legal schedule sit outside this quick model.
             </p>
           </div>
 
@@ -496,10 +701,15 @@ function PaybackSection() {
             {OWNERSHIP.map((option, index) => {
               const payback =
                 netAnnual > 0 ? option.priceUsd / netAnnual : Infinity;
+              const deposit = option.priceUsd * 0.3;
+              const stageTwo = option.priceUsd * 0.4;
+              const finalStage = option.priceUsd * 0.3;
+              const depositRecoveryMonths =
+                monthlyNet > 0 ? deposit / monthlyNet : Infinity;
               return (
                 <div
                   key={option.term}
-                  className={`flex min-h-[300px] flex-col justify-between rounded-[20px] border p-6 ${
+                  className={`flex min-h-[360px] flex-col justify-between rounded-[20px] border p-6 ${
                     index === 1
                       ? "border-white bg-white text-black"
                       : "border-white/20 bg-white/[0.04] text-white"
@@ -516,22 +726,85 @@ function PaybackSection() {
                     <strong className="mt-3 block text-xl font-medium">
                       {option.earlyBirdPrice}
                     </strong>
+                    <p
+                      className={`mt-3 text-sm leading-relaxed ${
+                        index === 1 ? "text-black/60" : "text-white/60"
+                      }`}
+                    >
+                      {option.note}. At today&apos;s settings, the staged entry
+                      can be recovered gradually instead of all at once.
+                    </p>
+                  </div>
+
+                  <div
+                    className={`mt-5 space-y-3 rounded-[16px] p-4 ${
+                      index === 1 ? "bg-black/[0.04]" : "bg-white/[0.05]"
+                    }`}
+                  >
+                    <div className="flex items-center justify-between gap-4 text-sm">
+                      <span
+                        className={
+                          index === 1 ? "text-black/55" : "text-white/55"
+                        }
+                      >
+                        30% to secure
+                      </span>
+                      <strong>{formatUsd(deposit)}</strong>
+                    </div>
+                    <div className="flex items-center justify-between gap-4 text-sm">
+                      <span
+                        className={
+                          index === 1 ? "text-black/55" : "text-white/55"
+                        }
+                      >
+                        40% during build
+                      </span>
+                      <strong>{formatUsd(stageTwo)}</strong>
+                    </div>
+                    <div className="flex items-center justify-between gap-4 text-sm">
+                      <span
+                        className={
+                          index === 1 ? "text-black/55" : "text-white/55"
+                        }
+                      >
+                        Final 30% at handover
+                      </span>
+                      <strong>{formatUsd(finalStage)}</strong>
+                    </div>
                   </div>
                   <div
-                    className={`border-t pt-5 ${
+                    className={`mt-5 border-t pt-5 ${
                       index === 1 ? "border-black/15" : "border-white/20"
                     }`}
                   >
-                    <span
-                      className={`text-xs ${
-                        index === 1 ? "text-black/50" : "text-white/50"
-                      }`}
-                    >
-                      Years to break even
-                    </span>
-                    <strong className="mt-1 block font-editorial text-5xl font-medium">
-                      {Number.isFinite(payback) ? payback.toFixed(1) : "—"}
-                    </strong>
+                    <div className="flex items-end justify-between gap-5">
+                      <div>
+                        <span
+                          className={`text-xs ${
+                            index === 1 ? "text-black/50" : "text-white/50"
+                          }`}
+                        >
+                          Years to break even
+                        </span>
+                        <strong className="mt-1 block font-editorial text-5xl font-medium">
+                          {Number.isFinite(payback) ? payback.toFixed(1) : "—"}
+                        </strong>
+                      </div>
+                      <div className="text-right">
+                        <span
+                          className={`block text-xs ${
+                            index === 1 ? "text-black/50" : "text-white/50"
+                          }`}
+                        >
+                          Deposit recovered in
+                        </span>
+                        <strong className="mt-1 block text-lg font-medium">
+                          {Number.isFinite(depositRecoveryMonths)
+                            ? `${depositRecoveryMonths.toFixed(1)} mo`
+                            : "—"}
+                        </strong>
+                      </div>
+                    </div>
                   </div>
                 </div>
               );
@@ -558,8 +831,40 @@ export default function Home() {
   const [activeGalleryIndex, setActiveGalleryIndex] = useState<number | null>(
     null
   );
+  const [showEntranceOverlay, setShowEntranceOverlay] = useState(() => {
+    if (typeof window === "undefined") return true;
+    return window.sessionStorage.getItem("oma-home-intro-seen") !== "1";
+  });
   const nearbyRailRef = useRef<HTMLDivElement>(null);
   const insightsRailRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (!showEntranceOverlay) return;
+
+    let isActive = true;
+    const openedAt = Date.now();
+    const minimumDuration = 1800;
+    const heroImage = new window.Image();
+
+    const finish = () => {
+      const elapsed = Date.now() - openedAt;
+      const remaining = Math.max(0, minimumDuration - elapsed);
+
+      window.setTimeout(() => {
+        if (!isActive) return;
+        window.sessionStorage.setItem("oma-home-intro-seen", "1");
+        setShowEntranceOverlay(false);
+      }, remaining);
+    };
+
+    heroImage.onload = finish;
+    heroImage.onerror = finish;
+    heroImage.src = IMAGES.exterior;
+
+    return () => {
+      isActive = false;
+    };
+  }, [showEntranceOverlay]);
 
   const nearbyCards = NEARBY_LINKS.flatMap(item => {
     const article = articles.find(candidate => candidate.slug === item.slug);
@@ -577,6 +882,16 @@ export default function Home() {
 
   return (
     <main className="overflow-hidden bg-white text-black">
+      <EntranceOverlay
+        isOpen={showEntranceOverlay}
+        onClose={() => {
+          if (typeof window !== "undefined") {
+            window.sessionStorage.setItem("oma-home-intro-seen", "1");
+          }
+          setShowEntranceOverlay(false);
+        }}
+      />
+
       <section className="p-2.5 sm:p-4">
         <div className="relative min-h-[720px] overflow-hidden rounded-[26px] bg-black sm:min-h-[760px] lg:h-[calc(100svh-32px)] lg:min-h-[700px]">
           <img
@@ -687,7 +1002,10 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="residence" className="px-2.5 pb-24 sm:px-4 lg:pb-36">
+      <section
+        id="residence"
+        className="px-2.5 pb-16 sm:px-4 sm:pb-20 lg:pb-24"
+      >
         <div className="mx-auto max-w-[1520px]">
           <Reveal className="mb-8 flex items-end justify-between gap-8 px-3 sm:px-5">
             <div>
@@ -705,48 +1023,54 @@ export default function Home() {
             </button>
           </Reveal>
 
-          <div className="grid gap-2.5 sm:grid-cols-2 lg:auto-rows-[255px] lg:grid-cols-12">
-            {GALLERY_IMAGES.slice(0, 6).map((image, index) => (
-              <Reveal
-                key={image.src}
-                delay={index * 0.035}
-                className={`min-h-[280px] ${image.bentoClass}`}
-              >
-                <button
-                  type="button"
-                  onClick={() => setActiveGalleryIndex(index)}
-                  className="group relative h-full w-full overflow-hidden rounded-[22px] bg-black text-left text-white"
-                  aria-label={`Open gallery at ${image.title}`}
-                >
-                  <img
-                    src={image.src}
-                    alt={image.alt}
-                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 ease-out group-hover:scale-[1.035]"
-                    loading="lazy"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-transparent to-black/5" />
-                  <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-5 sm:p-6">
-                    <div>
-                      <p className="mb-1 text-xs text-white/60">
-                        {image.detail}
-                      </p>
-                      <h3
-                        className={`font-medium tracking-[-0.03em] ${
-                          index === 0 ? "text-3xl" : "text-xl"
-                        }`}
-                      >
-                        {image.title}
-                      </h3>
-                    </div>
-                    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/35 bg-black/15 text-lg backdrop-blur-sm transition-colors group-hover:bg-white group-hover:text-black">
-                      +
-                    </span>
-                  </div>
-                </button>
-              </Reveal>
-            ))}
+          <div className="space-y-3">
+            <div className="grid gap-3 xl:grid-cols-[minmax(0,1.45fr)_minmax(0,1fr)]">
+              <ResidenceGalleryCard
+                image={GALLERY_IMAGES[0]}
+                index={0}
+                featured
+                onOpen={setActiveGalleryIndex}
+                className="min-h-[380px] md:min-h-[520px] xl:min-h-[560px]"
+              />
+
+              <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-1 xl:grid-rows-2">
+                <ResidenceGalleryCard
+                  image={GALLERY_IMAGES[1]}
+                  index={1}
+                  onOpen={setActiveGalleryIndex}
+                  className="min-h-[240px] md:min-h-[280px]"
+                />
+                <ResidenceGalleryCard
+                  image={GALLERY_IMAGES[2]}
+                  index={2}
+                  onOpen={setActiveGalleryIndex}
+                  className="min-h-[240px] md:min-h-[280px]"
+                />
+              </div>
+            </div>
+
+            <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+              <ResidenceGalleryCard
+                image={GALLERY_IMAGES[3]}
+                index={3}
+                onOpen={setActiveGalleryIndex}
+                className="min-h-[240px] md:min-h-[280px]"
+              />
+              <ResidenceGalleryCard
+                image={GALLERY_IMAGES[4]}
+                index={4}
+                onOpen={setActiveGalleryIndex}
+                className="min-h-[240px] md:min-h-[280px]"
+              />
+              <ResidenceGalleryCard
+                image={GALLERY_IMAGES[5]}
+                index={5}
+                onOpen={setActiveGalleryIndex}
+                className="min-h-[240px] md:min-h-[280px]"
+              />
+            </div>
           </div>
-          <div className="mt-5 flex justify-end px-3 sm:px-5">
+          <div className="mt-4 flex justify-end px-3 sm:px-5">
             <button
               type="button"
               onClick={() => setActiveGalleryIndex(0)}
