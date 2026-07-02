@@ -238,7 +238,7 @@
     },
     {
       "id": "pt-pma-setup-bali",
-      "status": "drafting",
+      "status": "published",
       "priority": 12,
       "theme": "foreign-ownership",
       "atpType": "how",
@@ -254,8 +254,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-02",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/33"
     },
     {
       "id": "bali-property-due-diligence",
