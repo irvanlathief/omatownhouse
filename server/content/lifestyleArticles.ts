@@ -777,6 +777,59 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
   },
   {
+    slug: "pt-pma-setup-bali-property",
+    title: "How to Set Up a PT PMA to Buy Bali Property",
+    category: "investment",
+    imageUrl: "/blog/pt-pma-company-stamp-registration.webp",
+    sortOrder: 21,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-02",
+    layoutVariant: "qa",
+    metaDescription:
+      "How to set up a PT PMA to buy Bali property as a foreigner: IDR 2.5 billion paid-up capital, 4 to 6 weeks via the OSS system, HGB title for up to 80 years.",
+    body: `<p>A PT PMA (Perseroan Terbatas Penanaman Modal Asing) is the company structure that lets a foreign buyer hold freehold-equivalent property title in Bali. Registration runs through Indonesia's <a href="https://oss.go.id" data-external="true">Online Single Submission (OSS) system</a> and the core incorporation typically takes 4 to 6 weeks. A licensed Indonesian notary and incorporation firm can handle every step under your Power of Attorney, so no visit to Indonesia is required at any stage.</p><p>The minimum paid-up capital under BKPM Regulation No. 5 of 2025 is IDR 2.5 billion, around USD 150,000, reduced from the previous IDR 10 billion floor. The company must also carry a total investment plan exceeding IDR 10 billion per business code, though for a property company the value of land and buildings counts toward that figure. You need at least two shareholders, foreign individuals qualify, one director and one commissioner, plus a registered business address in Indonesia in the province where the company operates.</p><p>The setup follows a fixed sequence. Your notary reserves the company name and drafts the Deed of Establishment, which your attorney signs under Power of Attorney if you are abroad. The deed goes to the Ministry of Law for approval, then the <a href="https://oss.go.id" data-external="true">OSS portal</a> issues a Business Identification Number (NIB) and sector licenses. The company opens a local bank account and deposits the paid-up capital. After that, it applies to the National Land Agency (BPN) for Hak Guna Bangunan (HGB). Under <a href="https://peraturan.bpk.go.id/Home/Details/161848/pp-no-18-tahun-2021" data-external="true">Government Regulation 18 of 2021</a>, HGB runs for an initial 30 years, extendable by 20, then renewable for a further 30, for up to 80 years in total.</p><p>Annual compliance covers corporate tax returns and quarterly LKPM investment reports filed with BKPM. A PT PMA renting out a Bali villa also needs a sector license under KBLI 55193 before taking bookings, a process covered in our <a href="/blog/rental-yield-tabanan-bali">rental yield guide</a>. Professional fees and ongoing compliance costs depend on the adviser and the company's scope, so get written quotes from a licensed incorporation firm before you commit. The freehold versus leasehold comparison is in our <a href="/blog/freehold-vs-leasehold-bali">freehold vs leasehold guide</a>, and all foreign buyer ownership options are in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>. This is general information, not legal, tax or company-formation advice. Confirm the current rules with a licensed Indonesian notary (PPAT) and the OMA Townhouse team before you start the setup.</p>`,
+    venues: [],
+    heroImage: "/blog/pt-pma-company-stamp-registration.webp",
+    gallery: [
+      {
+        url: "/blog/corporate-contract-signing-office.webp",
+        alt: "Business professional signing a corporate contract at an office desk",
+        credit: "Kampus Production / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8730015/",
+      },
+      {
+        url: "/blog/tropical-villa-lush-greenery.webp",
+        alt: "White tropical villa set among lush greenery and palm trees in Bali",
+        credit: "KSU Eli Studio / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8681218/",
+      },
+    ],
+    citations: [
+      { label: "Indonesia OSS (Online Single Submission) company registration portal", url: "https://oss.go.id" },
+      { label: "Government Regulation PP No. 18 of 2021 (Hak Pengelolaan, Hak Atas Tanah)", url: "https://peraturan.bpk.go.id/Home/Details/161848/pp-no-18-tahun-2021" },
+      { label: "Cekindo: PT PMA Minimum Capital in Indonesia (2026)", url: "https://www.cekindo.com/blog/minimum-capital-investment-in-indonesia" },
+      { label: "ILA Global Consulting: Setting Up a PT PMA in Indonesia", url: "https://ilaglobalconsulting.com/setting-up-pt-pma-indonesia/" },
+    ],
+    faq: [
+      {
+        question: "How long does it take to set up a PT PMA in Indonesia?",
+        answer:
+          "The core incorporation typically takes 4 to 6 weeks through the OSS system, covering name reservation, Deed of Establishment, Ministry of Law approval and NIB issuance. Opening a bank account and depositing the paid-up capital can add a further 2 to 4 weeks, so the company is usually fully operational within 6 to 10 weeks of engagement.",
+      },
+      {
+        question: "How much does a PT PMA cost to set up and maintain?",
+        answer:
+          "Setup costs include the minimum paid-up capital of IDR 2.5 billion (around USD 150,000) plus professional fees paid to a notary and incorporation firm. Annual compliance, covering tax filings, bookkeeping and quarterly LKPM reports to BKPM, is an ongoing cost on top of that. Get written quotes from a licensed Indonesian incorporation firm for current fee ranges. This is general information, not financial or legal advice.",
+      },
+      {
+        question: "Do I need to be in Indonesia to set up a PT PMA?",
+        answer:
+          "No. The full registration process can be handled remotely through a licensed Indonesian notary acting under a notarised, apostilled Power of Attorney. Indonesia joined the Hague Apostille Convention on 4 June 2022, replacing the older embassy legalisation chain with a single apostille from your home country. The remote signing process is the same as for buying off-plan property remotely.",
+      },
+    ],
+  },
+  {
     slug: "bali-property-exit-strategy",
     title: "Bali Property Exit Strategy for Foreign Investors",
     category: "investment",
