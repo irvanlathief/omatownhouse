@@ -890,4 +890,58 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-property-due-diligence-checklist",
+    title: "Bali Off-Plan Property Due Diligence Checklist",
+    category: "investment",
+    imageUrl: "/blog/property-inspection-checklist-clipboard.webp",
+    sortOrder: 22,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-03",
+    layoutVariant: "qa",
+    metaDescription:
+      "What due diligence before buying off-plan in Bali? Verify the BPN land certificate, check RTRW zoning, confirm the PBG permit, and review the PPJB carefully.",
+    body: `<p>Before buying off-plan property in Bali, a foreign buyer should complete five checks: verify the land certificate at BPN, confirm the zoning, see the building permit, review the PPJB, and check the developer's track record. A licensed Indonesian notary (PPAT) acting under your Power of Attorney can handle each of these remotely, so no site visit is needed before you sign.</p><p>Start with the land certificate. Ask for the original from the seller and have your PPAT cross-check it at the local <a href="https://www.atrbpn.go.id" data-external="true">Ministry of ATR/BPN</a> office. The check confirms the registered owner, the plot boundaries, and any encumbrance such as a Hak Tanggungan mortgage. Certificate type matters for a foreign buyer: only Indonesian citizens can hold Sertifikat Hak Milik (SHM, freehold). A PT PMA company holds Hak Guna Bangunan (SHGB/HGB), and a foreigner with an Indonesian residence permit can hold Hak Pakai. Legacy village tax records such as Girik or Letter C are not registered titles under Indonesian law and cannot be transferred without first converting them at BPN. A seller who can only show a Girik is a significant red flag, not a routine condition to overlook.</p><p>Next, confirm the zoning. The regency spatial plan (RTRW) and its detailed layer (RDTR) set what construction is permitted on each plot. Agricultural land bars permanent buildings entirely; tourism or residential zones allow villa development. In Tabanan, verify that the plot is not productive agricultural land covered by Bali Governor's Instruction Number 5 of 2025, which bans rice field conversion to tourism across six regencies from 2 December 2025, per <a href="https://emerhub.com/news/bali-criminalizes-rice-field-conversions/" data-external="true">Emerhub's coverage</a>. Then check the building permit. Under <a href="https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021" data-external="true">PP No. 16/2021</a>, the PBG (Persetujuan Bangunan Gedung) replaced the older IMB. A developer who cannot show a PBG has not cleared the step that off-plan buyers are depending on.</p><p>The PPJB is the binding pre-sale agreement that locks in your price, payment schedule, unit specification, and delivery date. Under Article 10(1) of <a href="https://peraturan.bpk.go.id/Details/128152/permen-pupr-no-11prtm2019-tahun-2019" data-external="true">Permen PUPR No. 11/PRT/M/2019</a>, a developer cannot sign a PPJB until physical construction has reached at least 20 percent completion, the land title is clear, and the PBG is in hand. The PPJB should name both parties, describe the unit and its specification, set penalties for late delivery, and include a dispute resolution clause. Stage your payments against verified construction milestones rather than calendar dates, so each tranche is tied to confirmed progress. Finally, check the developer's track record: verify their NIB through the <a href="https://oss.go.id" data-external="true">OSS portal</a>, ask for completed project addresses, and confirm those titles are cleanly registered at BPN. A developer who presses you to pay before the PPJB legal threshold is met is a clear warning sign. Foreign buyers cannot hold SHM in any form, and nominee structures where an Indonesian national holds freehold on your behalf are not legally enforceable. The ownership routes that work are leasehold, Hak Pakai, or a PT PMA company, as covered in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>. This is general information, not legal or investment advice; have a licensed Indonesian notary review every document before you commit.</p>`,
+    venues: [],
+    heroImage: "/blog/property-inspection-checklist-clipboard.webp",
+    gallery: [
+      {
+        url: "/blog/due-diligence-document-magnifying-glass.webp",
+        alt: "Magnifying glass on financial documents representing property due diligence review",
+        credit: "Anna Nekrashevich / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/magnifying-glass-on-top-of-document-6801648/",
+      },
+      {
+        url: "/blog/off-plan-site-inspector-hardhat.webp",
+        alt: "Construction site inspector in hard hat holding a clipboard at an off-plan development",
+        credit: "Mikael Blomkvist / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/man-in-the-construction-site-holding-a-clipboard-8961004/",
+      },
+    ],
+    citations: [
+      { label: "Ministry of ATR/BPN: National Land Agency (official)", url: "https://www.atrbpn.go.id" },
+      { label: "PP No. 16/2021: PBG building approval (BPK)", url: "https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021" },
+      { label: "Permen PUPR No. 11/PRT/M/2019: PPJB pre-sale agreement system (BPK)", url: "https://peraturan.bpk.go.id/Details/128152/permen-pupr-no-11prtm2019-tahun-2019" },
+      { label: "Emerhub: Bali Criminalizes Rice Field Conversions (Governor's Instruction No. 5/2025)", url: "https://emerhub.com/news/bali-criminalizes-rice-field-conversions/" },
+      { label: "Indonesia OSS portal: NIB company verification", url: "https://oss.go.id" },
+    ],
+    faq: [
+      {
+        question: "How do I check the land certificate before buying in Bali?",
+        answer:
+          "Ask the seller for the original land certificate and have a licensed Indonesian notary (PPAT) cross-check it at the local Ministry of ATR/BPN office. The check confirms the registered owner, the exact plot boundaries, and any encumbrance on the title. Confirm the certificate type at the same time: SHM (freehold) is reserved for Indonesian citizens, while a PT PMA holds SHGB/HGB and a foreigner with a residence permit can hold Hak Pakai.",
+      },
+      {
+        question: "What developer track record checks matter for off-plan in Bali?",
+        answer:
+          "Verify the developer's NIB (Business Identification Number) via Indonesia's OSS portal. Ask for the addresses of completed projects and confirm that those titles are cleanly registered at BPN with no outstanding encumbrances. A developer who cannot produce completed project certificates, or who asks for payment before the legal PPJB threshold under Permen PUPR No. 11/PRT/M/2019 is met, is a warning sign worth taking seriously.",
+      },
+      {
+        question: "What is a PPJB and what should it include?",
+        answer:
+          "A PPJB (Perjanjian Pengikatan Jual Beli) is the binding pre-sale agreement for off-plan property. Under Article 10(1) of Permen PUPR No. 11/PRT/M/2019, it can only be signed once physical construction reaches at least 20 percent completion, the developer holds a clean land certificate, and the PBG building permit is in hand. The PPJB should include both parties' identities, a full description of the unit with its specification, the purchase price and staged payment schedule, the delivery date, penalties for late delivery, and a dispute resolution clause.",
+      },
+    ],
+  },
 ];
