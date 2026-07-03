@@ -5,6 +5,8 @@ import {
   MapPin,
   HelpCircle,
   ArrowRight,
+  Calculator,
+  ShieldCheck,
   X,
   type LucideIcon,
 } from "lucide-react";
@@ -43,6 +45,35 @@ const QUICK_PROMPTS = [
   },
 ];
 
+const INVESTOR_QUICK_PROMPTS = [
+  {
+    id: "layout",
+    name: "Layout",
+    icon: HomeIcon,
+    prompt: "Walk me through both floors and how the rooms connect.",
+  },
+  {
+    id: "returns",
+    name: "Returns",
+    icon: Calculator,
+    prompt:
+      "Explain the investor calculator assumptions and what changes the result.",
+  },
+  {
+    id: "payments",
+    name: "Payments",
+    icon: DollarSign,
+    prompt: "How does the 30 / 30 / 40 staged payment structure work?",
+  },
+  {
+    id: "protection",
+    name: "Buyer protection",
+    icon: ShieldCheck,
+    prompt:
+      "What should I verify about title, construction and buyer protection?",
+  },
+];
+
 // Starter prompts shown in the empty chat. Most visitors arrive wanting one of
 // these three things, so we surface them as one-tap conversation openers.
 const STARTER_PROMPTS = [
@@ -68,12 +99,43 @@ const STARTER_PROMPTS = [
   },
 ];
 
+const INVESTOR_STARTER_PROMPTS = [
+  {
+    label: "Compare ownership routes",
+    icon: HomeIcon,
+    text: "Compare the 25-year, 40-year and PT PMA ownership routes.",
+  },
+  {
+    label: "Explain the returns",
+    icon: Calculator,
+    text: "Explain the return model, operating costs and simple payback.",
+  },
+  {
+    label: "Walk through payments",
+    icon: DollarSign,
+    text: "Walk me through the 30 / 30 / 40 payment milestones.",
+  },
+  {
+    label: "Buyer protections",
+    icon: ShieldCheck,
+    text: "What legal and construction protections should I verify?",
+  },
+];
+
+function isInvestorPage() {
+  return (
+    typeof window !== "undefined" &&
+    window.location.pathname.startsWith("/investors")
+  );
+}
+
 // One-tap conversation openers, only while the chat is still empty.
 function StarterPrompts({ chat }: { chat: AskAiChat }) {
   if (chat.messages.length > 0) return null;
+  const prompts = isInvestorPage() ? INVESTOR_STARTER_PROMPTS : STARTER_PROMPTS;
   return (
     <div className="flex flex-col gap-1.5 pt-1">
-      {STARTER_PROMPTS.map(p => (
+      {prompts.map(p => (
         <button
           key={p.label}
           onClick={() => chat.askQuestion(p.text)}
@@ -91,9 +153,9 @@ function StarterPrompts({ chat }: { chat: AskAiChat }) {
 // Pricing tiers shown by the ```pricing``` block. Names + prices match the
 // homepage pricing CTAs so chat.sendInterest fires a consistent lead message.
 const PRICING_TIERS = [
-  { name: "25-Year Leasehold", price: "$115,000" },
-  { name: "40-Year Leasehold", price: "$161,000" },
-  { name: "Freehold (PT PMA)", price: "$265,000" },
+  { name: "25-Year Leasehold", price: "USD 115,000" },
+  { name: "40-Year Leasehold", price: "USD 161,000" },
+  { name: "Freehold (PT PMA)", price: "USD 265,000" },
 ];
 
 // The model can surface these as inline follow-up prompts. They deliberately
@@ -322,9 +384,10 @@ function MessageList({
 }
 
 function QuickDocs({ chat }: { chat: AskAiChat }) {
+  const prompts = isInvestorPage() ? INVESTOR_QUICK_PROMPTS : QUICK_PROMPTS;
   return (
     <div className="flex gap-1.5 overflow-x-auto pb-1">
-      {QUICK_PROMPTS.map(item => (
+      {prompts.map(item => (
         <button
           key={item.id}
           onClick={() => chat.askQuestion(item.prompt)}

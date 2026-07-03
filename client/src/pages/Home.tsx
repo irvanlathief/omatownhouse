@@ -14,7 +14,9 @@ import {
   X,
 } from "lucide-react";
 import { Link } from "wouter";
+import { ExperienceHeader } from "@/components/ExperienceHeader";
 import { trpc } from "@/lib/trpc";
+import { formatUsd, OWNERSHIP_OPTIONS } from "@/lib/investment";
 
 const IMAGES = {
   exterior:
@@ -87,29 +89,7 @@ const GALLERY_IMAGES = [
   },
 ];
 
-const OWNERSHIP = [
-  {
-    term: "25-year leasehold",
-    priceUsd: 115_000,
-    earlyBirdPrice: "USD 115,000",
-    standardPrice: "USD 135,000",
-    note: "The simplest way in",
-  },
-  {
-    term: "40-year leasehold",
-    priceUsd: 161_000,
-    earlyBirdPrice: "USD 161,000",
-    standardPrice: "USD 189,000",
-    note: "A longer horizon",
-  },
-  {
-    term: "Freehold via PT PMA",
-    priceUsd: 265_000,
-    earlyBirdPrice: "USD 265,000",
-    standardPrice: "USD 310,000",
-    note: "Built for permanence",
-  },
-];
+const OWNERSHIP = OWNERSHIP_OPTIONS;
 
 const NEARBY_LINKS = [
   {
@@ -224,10 +204,6 @@ function formatArticleDate(value: string | null) {
     day: "numeric",
     year: "numeric",
   }).format(new Date(`${value}T00:00:00`));
-}
-
-function formatUsd(value: number) {
-  return `USD ${Math.round(value).toLocaleString("en-US")}`;
 }
 
 function RailControls({
@@ -668,13 +644,13 @@ function PaybackSection() {
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-black/60">
-                    Management fee at {managementRate * 100}%
+                    Management fee at {Math.round(managementRate * 100)}%
                   </span>
                   <strong>{formatUsd(managementCost)}</strong>
                 </div>
                 <div className="flex items-center justify-between gap-4">
                   <span className="text-black/60">
-                    Utilities reserve at {utilitiesRate * 100}%
+                    Utilities reserve at {Math.round(utilitiesRate * 100)}%
                   </span>
                   <strong>{formatUsd(utilitiesReserve)}</strong>
                 </div>
@@ -702,8 +678,8 @@ function PaybackSection() {
               const payback =
                 netAnnual > 0 ? option.priceUsd / netAnnual : Infinity;
               const deposit = option.priceUsd * 0.3;
-              const stageTwo = option.priceUsd * 0.4;
-              const finalStage = option.priceUsd * 0.3;
+              const stageTwo = option.priceUsd * 0.3;
+              const finalStage = option.priceUsd * 0.4;
               const depositRecoveryMonths =
                 monthlyNet > 0 ? deposit / monthlyNet : Infinity;
               return (
@@ -757,7 +733,7 @@ function PaybackSection() {
                           index === 1 ? "text-black/55" : "text-white/55"
                         }
                       >
-                        40% during build
+                        30% during build
                       </span>
                       <strong>{formatUsd(stageTwo)}</strong>
                     </div>
@@ -767,7 +743,7 @@ function PaybackSection() {
                           index === 1 ? "text-black/55" : "text-white/55"
                         }
                       >
-                        Final 30% at handover
+                        Final 40% at handover
                       </span>
                       <strong>{formatUsd(finalStage)}</strong>
                     </div>
@@ -902,41 +878,22 @@ export default function Home() {
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/45 via-black/5 to-black/65" />
 
-          <header className="relative z-10 flex items-center justify-between px-5 py-5 text-white sm:px-8 lg:px-10">
-            <Link href="/" className="flex items-center gap-3">
-              <span className="text-lg font-semibold tracking-tight">OMA</span>
-              <span className="h-4 w-px bg-white/45" />
-              <span className="text-xs text-white/75">Kaba Kaba, Bali</span>
-            </Link>
-
-            <nav className="hidden items-center gap-8 text-sm lg:flex">
-              <a
-                href="#residence"
-                className="text-white/80 transition-colors hover:text-white"
+          <ExperienceHeader
+            context="Kaba Kaba, Bali"
+            navItems={[
+              { href: "#residence", label: "Residence" },
+              { href: "#payback", label: "Payback" },
+              { href: "#ownership", label: "Ownership" },
+            ]}
+            action={
+              <Link
+                href="/investors"
+                className="inline-flex items-center rounded-full border border-white/35 bg-white/10 px-4 py-2 text-xs font-medium backdrop-blur-md transition-colors hover:bg-white hover:text-stone-950 sm:text-sm"
               >
-                Residence
-              </a>
-              <a
-                href="#payback"
-                className="text-white/80 transition-colors hover:text-white"
-              >
-                Payback
-              </a>
-              <a
-                href="#ownership"
-                className="text-white/80 transition-colors hover:text-white"
-              >
-                Ownership
-              </a>
-            </nav>
-
-            <Link
-              href="/investors"
-              className="inline-flex items-center rounded-full border border-white/35 bg-white/10 px-4 py-2 text-xs font-medium backdrop-blur-md transition-colors hover:bg-white hover:text-stone-950 sm:text-sm"
-            >
-              Investor preview
-            </Link>
-          </header>
+                Investor preview
+              </Link>
+            }
+          />
 
           <div className="absolute inset-x-0 bottom-0 z-10 px-5 pb-7 text-white sm:px-8 sm:pb-9 lg:px-10 lg:pb-10">
             <motion.div
@@ -1096,14 +1053,15 @@ export default function Home() {
             </div>
             <div className="flex flex-col justify-end gap-5">
               <div className="w-fit rounded-full bg-black px-3 py-1.5 text-xs font-medium text-white">
-                First-building early bird: 15% off
+                Founding release, Units 01-03: 15% off
               </div>
               <p className="max-w-2xl text-base leading-relaxed text-stone-600">
-                The highlighted prices are the limited early-bird allocation for
-                OMA&apos;s first building. They sit 15% below standard pricing
-                and require a 30% deposit within 14 days, with full payment due
-                before handover. Availability and the promotional window should
-                be confirmed with the OMA team. All prices are in USD.
+                The highlighted prices apply to OMA&apos;s first three units.
+                They sit 15% below standard pricing and require a 30% deposit
+                within 14 days, with full payment due before handover. Units
+                04-12 will be released later at revised pricing. Availability
+                and the promotional window should be confirmed with the OMA
+                team. All prices are in USD.
               </p>
             </div>
           </Reveal>

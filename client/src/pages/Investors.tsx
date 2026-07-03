@@ -1,202 +1,357 @@
-import { useState, useEffect, useMemo } from "react";
-import { trpc } from "@/lib/trpc";
-import { SiteHeader } from "@/components/SiteHeader";
-import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Label } from "@/components/ui/label";
-import { Lock, Check, ArrowRight, Info } from "lucide-react";
-import { toast } from "sonner";
-
-const STORAGE_KEY = "oma_investor_access_v1";
+import { useEffect, useState, type ReactNode } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import {
+  ArrowDown,
+  ArrowLeft,
+  ArrowRight,
+  Check,
+  ChevronDown,
+  Expand,
+  MapPin,
+  Minus,
+  Plus,
+  ShieldCheck,
+  X,
+} from "lucide-react";
+import { Link } from "wouter";
+import { ExperienceHeader } from "@/components/ExperienceHeader";
+import { InvestorPackDrawer } from "@/components/InvestorPackDrawer";
+import {
+  calculateInvestment,
+  formatUsd,
+  OPERATING_ASSUMPTIONS,
+  OWNERSHIP_OPTIONS,
+  type OwnershipKey,
+} from "@/lib/investment";
 
 const GALLERY_BASE =
   "https://d2xsxph8kpxj0f.cloudfront.net/310419663028072074/9CYr97KDESPC7xac2RnExU/oma-townhouse/gallery";
-const SCENE = (n: number) => `${GALLERY_BASE}/Scene${n}.webp`;
-const INVESTOR_HERO_IMAGE = "/investors-hero.png";
+const SCENE = (number: number) => `${GALLERY_BASE}/Scene${number}.webp`;
 
-// Defaults calibrated for OMA's premium two-bed pool townhouse spec.
-// Airbnb's area estimate for a generic Kaba-Kaba 2BR is about USD 83/night;
-// OMA is positioned above that on design, pool and 97.5 sqm. The slider lets
-// a visitor dial it down to area-average or up to upside without us hand-waving.
-const DEFAULT_NIGHTLY = 200;
-const DEFAULT_NIGHTS = 18; // ~60% occupancy
-
-// Three ownership tiers, matching the homepage chat pricing.
-const TIERS = [
+const GALLERY = [
   {
-    key: "lease25",
-    label: "25-year leasehold",
-    priceUsd: 115_000,
-    note: "Simplest entry",
+    src: SCENE(32),
+    alt: "OMA Townhouse open living room",
+    title: "Room to arrive.",
+    detail: "Ground floor living",
   },
   {
-    key: "lease40",
-    label: "40-year leasehold",
-    priceUsd: 161_000,
-    note: "Lower per-year hold cost",
+    src: SCENE(39),
+    alt: "OMA Townhouse kitchen and dining area",
+    title: "Made to gather.",
+    detail: "Kitchen and dining",
   },
   {
-    key: "freehold",
-    label: "Freehold (PT PMA)",
-    priceUsd: 265_000,
-    note: "Asset held by your PT PMA",
+    src: SCENE(76),
+    alt: "OMA Townhouse primary bedroom",
+    title: "Quiet by design.",
+    detail: "Primary bedroom",
+  },
+  {
+    src: SCENE(26),
+    alt: "OMA Townhouse private pool courtyard",
+    title: "A pool of your own.",
+    detail: "Private courtyard",
+  },
+  {
+    src: SCENE(51),
+    alt: "OMA Townhouse home office",
+    title: "Space to focus.",
+    detail: "Home office",
+  },
+  {
+    src: SCENE(41),
+    alt: "OMA Townhouse bathroom",
+    title: "Calm in the details.",
+    detail: "Bathroom",
+  },
+  {
+    src: SCENE(23),
+    alt: "OMA Townhouse street exterior",
+    title: "A considered arrival.",
+    detail: "Street view",
+  },
+  {
+    src: SCENE(52),
+    alt: "OMA Townhouse connected interior",
+    title: "One connected home.",
+    detail: "Living and kitchen",
+  },
+];
+
+type FloorKey = "ground" | "upper";
+
+const FLOOR_PLANS = {
+  ground: {
+    label: "Ground floor",
+    area: "66.7 sqm",
+    image: "/property-docs/floor-plan-first.webp",
+    aspectRatio: "1600 / 1548",
+    summary:
+      "Living, kitchen, primary bedroom and bathroom open toward the private pool and courtyard.",
+    rooms: [
+      { label: "Living", x: 53, y: 49, gallery: 0 },
+      { label: "Kitchen", x: 67, y: 50, gallery: 1 },
+      { label: "Bedroom", x: 55, y: 27, gallery: 2 },
+      { label: "Bathroom", x: 70, y: 29, gallery: 5 },
+      { label: "Pool", x: 62, y: 71, gallery: 3 },
+    ],
+  },
+  upper: {
+    label: "Upper floor",
+    area: "30.8 sqm",
+    image: "/property-docs/floor-plan-second.webp",
+    aspectRatio: "1202 / 1600",
+    summary:
+      "A second bedroom, bathroom and work area sit above the double-height living room.",
+    rooms: [
+      { label: "Bedroom", x: 55, y: 31, gallery: 2 },
+      { label: "Bathroom", x: 70, y: 31, gallery: 5 },
+      { label: "Work area", x: 35, y: 24, gallery: 4 },
+    ],
+  },
+} as const;
+
+const KABA_KABA_GUIDE = [
+  {
+    time: "2-5 min",
+    category: "Village life",
+    title: "Kaba Kaba Social",
+    description:
+      "The closest place to meet the local and international community around the village.",
+    image: "/blog/blog-community-dining.webp",
+    href: "https://www.instagram.com/kabakaba.social/",
+  },
+  {
+    time: "5-10 min",
+    category: "Wellness",
+    title: "Ulaman Retreat",
+    description:
+      "A design-led eco retreat that already brings wellness travellers into Kaba Kaba.",
+    image: "/blog/blog-spa-wellness.webp",
+    href: "https://www.instagram.com/ulamanretreat/",
+  },
+  {
+    time: "10-15 min",
+    category: "Culture",
+    title: "Tanah Lot",
+    description:
+      "Bali's sea temple and one of the island's defining sunset landmarks.",
+    image: "/blog/tanah-lot-temple-coast.webp",
+    href: "https://www.visittabananbali.com/",
+  },
+  {
+    time: "10-15 min",
+    category: "Creative coast",
+    title: "Nuanu and Luna",
+    description:
+      "Art, education, events, restaurants and a beach club across a 44-hectare coastal campus.",
+    image: "/blog/blog-nuanu-creative.webp",
+    href: "https://www.nuanu.com/",
+  },
+  {
+    time: "10-15 min",
+    category: "Beach and surf",
+    title: "Kedungu Beach",
+    description:
+      "Black sand, surf schools, local warungs and a slower alternative to the Canggu beaches.",
+    image: "/blog/kedungu-beach.jpg",
+    href: "/blog/where-is-kaba-kaba-bali",
+  },
+  {
+    time: "15-20 min",
+    category: "Food and coffee",
+    title: "Seseh mornings",
+    description:
+      "Open House, Neighbourhood and the growing café scene between the rice fields and coast.",
+    image: "/blog/blog-cafe-coworking.webp",
+    href: "/blog/cafes-dining",
   },
 ] as const;
 
-interface AccessRecord {
-  name: string;
-  email: string;
-  whatsapp: string;
-  unlockedAt: string;
-}
+const TABANAN_DAY_TRIPS = [
+  {
+    time: "About 40-45 min",
+    title: "Leke Leke Waterfall",
+    description:
+      "A 32-metre jungle waterfall reached by a short trail through central Tabanan.",
+    image: "/blog/bali-tropical-rainforest-foliage.webp",
+    href: "https://www.nirjhara.com/en/magazine/best-waterfalls-in-bali/",
+  },
+  {
+    time: "About 30-40 min",
+    title: "Jatiluwih rice terraces",
+    description:
+      "A wider Tabanan day out through Bali's UNESCO-listed Subak landscape and mountain views.",
+    image: "/blog/rice-terraces.jpg",
+    href: "https://www.visittabananbali.com/",
+  },
+] as const;
 
-function formatUsd(n: number): string {
-  return "USD " + Math.round(n).toLocaleString("en-US");
+const FAQ = [
+  {
+    question: "Can a foreign buyer own at OMA?",
+    answer:
+      "Yes. OMA offers 25 and 40-year leasehold routes, plus a PT PMA route where the company holds HGB. Your independent notary and legal adviser should confirm the right structure for your residency, tax position and intended use.",
+  },
+  {
+    question: "What does the purchase price include?",
+    answer:
+      "The current offer is for a completed 97.5 sqm, two-bedroom townhouse with two bathrooms, fitted living and kitchen spaces, a work area and private pool. The final specification, furniture package and contract inclusions are confirmed in the investor pack.",
+  },
+  {
+    question: "Can I use the townhouse myself?",
+    answer:
+      "Yes. The model is built for hybrid ownership. You can reserve personal stays and place the home into OMA's managed rental operation while you are away, subject to the final management agreement.",
+  },
+  {
+    question: "Are the returns guaranteed?",
+    answer:
+      "No. The calculator is an illustration based on your inputs. Occupancy, nightly rate, seasonality, commissions, taxes and operating performance all affect the real result.",
+  },
+  {
+    question: "What happens if construction is delayed?",
+    answer:
+      "The proposed structure uses milestone-based 30 / 30 / 40 payments, owner inspection before the construction tranche, notarized documents and delivery remedies in the final agreement. Optional third-party escrow can be discussed with the team.",
+  },
+  {
+    question: "How many OMA townhouses will be built?",
+    answer:
+      "OMA is planned as 12 homes. Units 01-03 form the founding release and use the current early-bird pricing. Units 04-12 will be released later with revised pricing.",
+  },
+];
+
+function Reveal({
+  children,
+  className = "",
+  delay = 0,
+}: {
+  children: ReactNode;
+  className?: string;
+  delay?: number;
+}) {
+  return (
+    <motion.div
+      className={className}
+      initial={{ opacity: 0, y: 28 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.15 }}
+      transition={{ duration: 0.75, delay, ease: [0.22, 1, 0.36, 1] }}
+    >
+      {children}
+    </motion.div>
+  );
 }
 
 export default function Investors() {
-  const [access, setAccess] = useState<AccessRecord | null>(null);
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    whatsapp: "",
-    country: "",
-    accessCode: "",
-    message: "",
-  });
-  const [waitingForCode, setWaitingForCode] = useState(false);
+  const [packOpen, setPackOpen] = useState(false);
+  const [galleryIndex, setGalleryIndex] = useState<number | null>(null);
+  const [planZoom, setPlanZoom] = useState<FloorKey | null>(null);
 
   useEffect(() => {
-    if (typeof window === "undefined") return;
-    try {
-      const raw = localStorage.getItem(STORAGE_KEY);
-      if (raw) setAccess(JSON.parse(raw));
-    } catch {
-      // ignore malformed storage
-    }
+    const openPack = () => setPackOpen(true);
+    window.addEventListener("oma:open-investor-pack", openPack);
+    return () => window.removeEventListener("oma:open-investor-pack", openPack);
   }, []);
 
-  const requestAccess = trpc.investor.requestAccess.useMutation({
-    onSuccess: (data) => {
-      if (data.accessGranted) {
-        const record: AccessRecord = {
-          name: form.name.trim(),
-          email: form.email.trim().toLowerCase(),
-          whatsapp: form.whatsapp.trim(),
-          unlockedAt: new Date().toISOString(),
-        };
-        try {
-          localStorage.setItem(STORAGE_KEY, JSON.stringify(record));
-        } catch {
-          // private mode, fine
-        }
-        setAccess(record);
-        toast.success(
-          "Welcome. The full pitch is unlocked, and we've messaged you on the email you provided."
-        );
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      } else {
-        setWaitingForCode(true);
-        toast.success(
-          "Got it. The team will WhatsApp you the access code shortly."
-        );
-      }
-    },
-    onError: (err) => {
-      toast.error(err.message || "Something went wrong. Please try again.");
-    },
-  });
-
-  function onSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!form.name.trim() || !form.email.trim() || !form.whatsapp.trim()) return;
-    requestAccess.mutate({
-      name: form.name.trim(),
-      email: form.email.trim(),
-      whatsapp: form.whatsapp.trim(),
-      country: form.country.trim() || undefined,
-      accessCode: form.accessCode.trim() || undefined,
-      message: form.message.trim() || undefined,
-    });
-  }
-
-  const unlocked = !!access;
-  const firstName = access?.name?.split(" ")[0];
-
   return (
-    <div className="relative bg-white text-gray-900">
-      <SiteHeader overlay inverted />
+    <main className="overflow-hidden bg-white text-black">
+      <InvestorPackDrawer open={packOpen} onClose={() => setPackOpen(false)} />
+      <GalleryLightbox
+        index={galleryIndex}
+        onChange={setGalleryIndex}
+        onClose={() => setGalleryIndex(null)}
+      />
+      <PlanLightbox floor={planZoom} onClose={() => setPlanZoom(null)} />
 
-      <EarningsHero />
-      <MethodologyDisclosure />
-      <PaybackCalculator />
-      <BrandBand />
+      <Hero onRequestPack={() => setPackOpen(true)} />
+      <Snapshot />
+      <ReleasePlan />
+      <Residence onOpenGallery={setGalleryIndex} />
+      <LayoutExplorer onOpenGallery={setGalleryIndex} onZoom={setPlanZoom} />
+      <Ownership onRequestPack={() => setPackOpen(true)} />
+      <DecisionCalculator />
+      <Operations />
+      <LocationCase />
+      <BuyerProtection />
+      <Founder />
+      <Questions />
+      <FinalCta onRequestPack={() => setPackOpen(true)} />
 
-      {!unlocked && (
-        <AccessGate
-          form={form}
-          setForm={setForm}
-          onSubmit={onSubmit}
-          submitting={requestAccess.isPending}
-          waitingForCode={waitingForCode}
-        />
-      )}
-
-      {unlocked && (
-        <section className="bg-stone-50 border-y border-stone-200">
-          <div className="max-w-5xl mx-auto px-6 py-6 flex items-center gap-3 text-sm text-stone-700">
-            <Check className="w-4 h-4 text-emerald-600 shrink-0" />
-            <span>
-              Welcome{firstName ? `, ${firstName}` : ""}. The full pitch is
-              unlocked on this browser. Our team will follow up over WhatsApp
-              within 24 hours.
-            </span>
-          </div>
-        </section>
-      )}
-
-      {unlocked && <InvestorContent />}
-
-      <FooterCta unlocked={unlocked} />
-    </div>
+      <button
+        type="button"
+        onClick={() => setPackOpen(true)}
+        className="fixed inset-x-3 bottom-3 z-[65] flex items-center justify-between rounded-full bg-black px-5 py-4 text-sm font-medium text-white shadow-2xl sm:hidden"
+      >
+        Request investor pack
+        <ArrowRight className="h-4 w-4" />
+      </button>
+    </main>
   );
 }
 
-function EarningsHero() {
+function Hero({ onRequestPack }: { onRequestPack: () => void }) {
   return (
-    <section className="relative h-[600px] overflow-hidden bg-stone-950 text-white">
-      <img
-        src={INVESTOR_HERO_IMAGE}
-        alt="OMA Townhouse exterior hero"
-        className="absolute inset-0 h-full w-full object-cover"
-      />
-      <div className="absolute inset-0 bg-gradient-to-r from-black/62 via-black/34 to-black/12" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/38 via-transparent to-black/12" />
+    <section className="p-2.5 sm:p-4">
+      <div className="relative min-h-[720px] overflow-hidden rounded-[26px] bg-black text-white sm:min-h-[760px] lg:h-[calc(100svh-32px)] lg:min-h-[700px]">
+        <img
+          src="/investors-hero.png"
+          alt="OMA Townhouse exterior in Kaba Kaba, Bali"
+          className="absolute inset-0 h-full w-full object-cover"
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/5 to-black/75" />
 
-      <div className="relative mx-auto flex h-full max-w-7xl items-end px-6 pb-16 pt-32 sm:px-8 lg:px-12">
-        <div className="max-w-3xl">
-          <div className="inline-flex items-center gap-2 rounded-full border border-white/18 bg-white/8 px-3 py-1 text-[11px] uppercase tracking-[0.22em] text-white/78 backdrop-blur-sm">
-            <span>Investor Page</span>
-            <span className="text-white/35">·</span>
-            <span>Kaba Kaba, Bali</span>
-          </div>
-          <h1 className="mt-6 max-w-2xl font-serif text-4xl leading-[0.98] tracking-[-0.03em] text-white sm:text-5xl md:text-6xl">
-            One of Bali&apos;s last true pockets of peace, with the right kind of ROI behind it.
-          </h1>
-          <p className="mt-5 max-w-2xl text-sm leading-6 text-white/80 sm:text-base sm:leading-7">
-            OMA Townhouse is designed for buyers who want calm, scarcity and a
-            return profile that still feels grounded in the place itself.
-          </p>
-          <div className="mt-8 flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.2em] text-white/76">
-            <span className="rounded-full border border-white/18 bg-black/18 px-3 py-2 backdrop-blur-sm">
-              Kaba Kaba
-            </span>
-            <span className="rounded-full border border-white/18 bg-black/18 px-3 py-2 backdrop-blur-sm">
-              Modern Tropical Townhouse
-            </span>
-            <span className="rounded-full border border-white/18 bg-black/18 px-3 py-2 backdrop-blur-sm">
-              Investor Preview
-            </span>
+        <ExperienceHeader
+          context="Investor case"
+          navItems={[
+            { href: "#residence", label: "Residence" },
+            { href: "#layout", label: "Layout" },
+            { href: "#pricing", label: "Pricing" },
+            { href: "#returns", label: "Returns" },
+            { href: "#kaba-kaba", label: "Kaba Kaba" },
+          ]}
+          action={
+            <button
+              type="button"
+              onClick={onRequestPack}
+              className="rounded-full border border-white/35 bg-white/10 px-4 py-2 text-xs font-medium backdrop-blur-md transition-colors hover:bg-white hover:text-black sm:text-sm"
+            >
+              Request pack
+            </button>
+          }
+        />
+
+        <div className="absolute inset-x-0 bottom-0 z-10 px-5 pb-7 sm:px-8 sm:pb-9 lg:px-10 lg:pb-10">
+          <motion.div
+            initial={{ opacity: 0, y: 32 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <div className="mb-5 flex items-center gap-3 text-xs text-white/65">
+              <span>Kaba Kaba, Bali</span>
+              <span className="h-px w-8 bg-white/45" />
+              <span>For living and earning</span>
+            </div>
+            <h1 className="max-w-[1180px] text-[15vw] font-medium leading-[0.8] tracking-[-0.075em] sm:text-[11vw] lg:text-[8.2vw]">
+              Own the calm.
+              <br />
+              Understand the return.
+            </h1>
+          </motion.div>
+
+          <div className="mt-8 flex items-end justify-between gap-8">
+            <p className="max-w-xl text-sm leading-relaxed text-white/75 sm:text-base">
+              A two-bedroom home with a private pool, three ownership routes and
+              a model you can question before you buy.
+            </p>
+            <a
+              href="#snapshot"
+              aria-label="Explore the investor case"
+              className="hidden h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/35 transition-colors hover:bg-white hover:text-black sm:flex"
+            >
+              <ArrowDown className="h-4 w-4" />
+            </a>
           </div>
         </div>
       </div>
@@ -204,946 +359,1350 @@ function EarningsHero() {
   );
 }
 
-function MethodologyDisclosure() {
-  const [open, setOpen] = useState(false);
+function Snapshot() {
+  const facts = [
+    ["From USD 115,000", "Current early-bird entry"],
+    ["97.5 sqm", "Across two floors"],
+    ["2 bedrooms", "Each with a bathroom"],
+    ["Private pool", "For owners and guests"],
+    ["12 homes", "Planned across OMA"],
+    ["First 3", "Founding release pricing"],
+  ];
+
   return (
-    <section className="border-b border-stone-200">
-      <div className="max-w-6xl mx-auto px-6 py-8">
-        <button
-          type="button"
-          onClick={() => setOpen((v) => !v)}
-          className="inline-flex items-center gap-2 text-sm text-stone-600 hover:text-stone-900"
-        >
-          <Info className="w-4 h-4" />
-          How this is estimated
-          <ArrowRight
-            className={`w-3.5 h-3.5 transition-transform ${
-              open ? "rotate-90" : ""
-            }`}
-          />
-        </button>
-        {open && (
-          <div className="mt-6 max-w-3xl text-sm text-stone-700 leading-relaxed space-y-4">
-            <p className="italic text-stone-500">
-              From Airbnb's host earnings estimator (used unchanged for the
-              area-wide figure; OMA's per-night uplift is described after):
+    <section id="snapshot" className="px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
+      <div className="mx-auto max-w-[1450px]">
+        <Reveal className="grid gap-12 lg:grid-cols-[0.8fr_1.5fr]">
+          <p className="text-sm text-black/50">The investment at a glance</p>
+          <div>
+            <h2 className="max-w-5xl font-editorial text-5xl leading-[0.96] tracking-[-0.04em] sm:text-7xl lg:text-[7vw]">
+              A home you can use. An asset you can understand.
+            </h2>
+            <p className="mt-8 max-w-2xl text-base leading-relaxed text-black/60">
+              OMA is designed for a hybrid buyer: stay when Bali calls, then
+              place the townhouse into managed rental operation while you are
+              away.
             </p>
-            <p>
-              "To estimate your earnings, we review the past 12 months of
-              booking data from similar Airbnb listings. We choose these
-              listings based on the information you share about your place. If
-              you enter an address, you'll get a more specific estimate based
-              on the listings closest to you. If you enter an area, we look at
-              the top 50% of similar listings in that area, based on their
-              earnings."
-            </p>
-            <p>
-              "Based on these similar listings, we estimate the average nightly
-              earnings and multiply that number by the number of nights you
-              indicate you will host. We also provide the average number of
-              nights booked per month in your area, assuming places are
-              available on Airbnb every night of the month. Nightly earnings
-              are the price set by each Host minus the Airbnb Host service
-              fee. We don't subtract taxes or hosting expenses."
-            </p>
-            <p>
-              "Your actual earnings will depend on several factors, including
-              your availability, price, and the demand in your area. Your
-              ability to host may also depend on local laws. These earning
-              estimates are not an appraisal or estimate of property value."
-            </p>
-            <div className="border-t border-stone-200 pt-4 text-stone-700">
-              <strong className="text-stone-900">OMA's adjustment.</strong>{" "}
-              Airbnb's area estimate for a generic Kaba-Kaba 2-bed sits around
-              USD 83 per night. OMA is positioned above that on design,
-              private pool and 97.5 sqm, which is why our default rate of USD
-              200 per night reflects what comparable design-led villas with a
-              pool achieve in the western corridor. Slide it down toward the
-              area average if you want to see the conservative case.
-            </div>
           </div>
-        )}
+        </Reveal>
+        <div className="mt-16 grid border-t border-black/20 sm:grid-cols-2 lg:grid-cols-3">
+          {facts.map(([value, label], index) => (
+            <Reveal key={label} delay={index * 0.035}>
+              <div className="border-b border-black/20 py-7 lg:px-5">
+                <strong className="block text-2xl font-medium tracking-[-0.03em]">
+                  {value}
+                </strong>
+                <span className="mt-2 block text-sm text-black/50">
+                  {label}
+                </span>
+              </div>
+            </Reveal>
+          ))}
+        </div>
       </div>
     </section>
   );
 }
 
-function PaybackCalculator() {
-  const [nightly, setNightly] = useState(DEFAULT_NIGHTLY);
-  const [nights, setNights] = useState(DEFAULT_NIGHTS);
+function ReleasePlan() {
+  return (
+    <section className="px-2.5 pb-24 sm:px-4 lg:pb-36">
+      <div className="overflow-hidden rounded-[24px] bg-black px-5 py-12 text-white sm:px-10 lg:px-14 lg:py-16">
+        <Reveal className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr] lg:items-end">
+          <div>
+            <p className="text-sm text-white/50">The OMA release plan</p>
+            <h2 className="mt-5 max-w-2xl font-editorial text-6xl leading-[0.9] tracking-[-0.045em] sm:text-7xl lg:text-[6.4vw]">
+              Twelve homes. The first three begin the story.
+            </h2>
+          </div>
+          <div>
+            <p className="max-w-xl text-base leading-relaxed text-white/60">
+              OMA is planned as a 12-home development. Units 01-03 are the
+              founding release and the only homes offered at today&apos;s
+              early-bird numbers. Units 04-12 will be released later with
+              revised pricing.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-5 text-sm">
+              <span className="inline-flex items-center gap-2 text-white">
+                <span className="h-2.5 w-2.5 rounded-full bg-white" />
+                Founding release
+              </span>
+              <span className="inline-flex items-center gap-2 text-white/45">
+                <span className="h-2.5 w-2.5 rounded-full border border-white/35" />
+                Future release
+              </span>
+            </div>
+          </div>
+        </Reveal>
 
-  const grossAnnual = nightly * nights * 12;
-  // Net of: 18% management benchmark, USD 4,200 fixed core ops,
-  // 7% reserve for utilities and consumables. Indonesian tax sits below this.
-  const FIXED_OPS_USD = 4_200;
-  const netAnnual = useMemo(() => {
-    const mgmt = grossAnnual * 0.18;
-    const reserve = grossAnnual * 0.07;
-    return Math.max(0, grossAnnual - mgmt - FIXED_OPS_USD - reserve);
-  }, [grossAnnual]);
+        <div className="mt-14 grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6">
+          {Array.from({ length: 12 }, (_, index) => {
+            const unitNumber = index + 1;
+            const founding = unitNumber <= 3;
+            return (
+              <Reveal key={unitNumber} delay={index * 0.025}>
+                <article
+                  className={`flex min-h-[150px] flex-col justify-between rounded-[18px] border p-4 ${
+                    founding
+                      ? "border-white bg-white text-black"
+                      : "border-white/20 bg-white/[0.025] text-white"
+                  }`}
+                >
+                  <span
+                    className={`text-xs ${
+                      founding ? "text-black/45" : "text-white/35"
+                    }`}
+                  >
+                    Unit
+                  </span>
+                  <div>
+                    <strong className="text-3xl font-medium">
+                      {String(unitNumber).padStart(2, "0")}
+                    </strong>
+                    <span
+                      className={`mt-2 block text-xs ${
+                        founding ? "text-black/50" : "text-white/40"
+                      }`}
+                    >
+                      {founding ? "Founding price" : "Future release"}
+                    </span>
+                  </div>
+                </article>
+              </Reveal>
+            );
+          })}
+        </div>
+        <p className="mt-6 max-w-3xl text-xs leading-relaxed text-white/40">
+          The site plan, individual unit availability and future release pricing
+          are confirmed directly with the OMA team. Future units should not be
+          assumed to use the founding-release prices.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function Residence({
+  onOpenGallery,
+}: {
+  onOpenGallery: (index: number) => void;
+}) {
+  return (
+    <section id="residence" className="px-2.5 pb-24 sm:px-4 lg:pb-32">
+      <div className="mx-auto max-w-[1520px]">
+        <Reveal className="mb-8 flex items-end justify-between gap-6 px-3 sm:px-5">
+          <div>
+            <p className="mb-3 text-sm text-black/50">The residence</p>
+            <h2 className="text-4xl font-medium tracking-[-0.045em] sm:text-6xl">
+              See what you are buying.
+            </h2>
+          </div>
+          <button
+            type="button"
+            onClick={() => onOpenGallery(0)}
+            className="hidden rounded-full border border-black/20 px-5 py-3 text-sm transition-colors hover:bg-black hover:text-white sm:inline-flex"
+          >
+            View all {GALLERY.length} renders
+          </button>
+        </Reveal>
+
+        <div className="grid gap-3 lg:grid-cols-12 lg:grid-rows-2">
+          <GalleryCard
+            index={0}
+            onOpen={onOpenGallery}
+            className="min-h-[480px] lg:col-span-7 lg:row-span-2 lg:min-h-[700px]"
+            featured
+          />
+          <GalleryCard
+            index={1}
+            onOpen={onOpenGallery}
+            className="min-h-[300px] lg:col-span-5"
+          />
+          <GalleryCard
+            index={2}
+            onOpen={onOpenGallery}
+            className="min-h-[300px] lg:col-span-5"
+          />
+        </div>
+        <div className="mt-3 grid gap-3 md:grid-cols-3">
+          {[3, 4, 5].map(index => (
+            <GalleryCard
+              key={index}
+              index={index}
+              onOpen={onOpenGallery}
+              className="min-h-[300px]"
+            />
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GalleryCard({
+  index,
+  onOpen,
+  className,
+  featured = false,
+}: {
+  index: number;
+  onOpen: (index: number) => void;
+  className: string;
+  featured?: boolean;
+}) {
+  const image = GALLERY[index];
+  return (
+    <Reveal className={className} delay={index * 0.035}>
+      <button
+        type="button"
+        onClick={() => onOpen(index)}
+        className="group relative h-full w-full overflow-hidden rounded-[22px] bg-black text-left text-white"
+      >
+        <img
+          src={image.src}
+          alt={image.alt}
+          loading="lazy"
+          className="absolute inset-0 h-full w-full object-cover transition-transform duration-1000 group-hover:scale-[1.035]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/5 to-transparent" />
+        <div className="absolute inset-x-0 bottom-0 flex items-end justify-between gap-5 p-5 sm:p-7">
+          <div>
+            <span className="text-xs text-white/60">{image.detail}</span>
+            <h3
+              className={`mt-1 font-medium tracking-[-0.035em] ${
+                featured ? "text-3xl sm:text-4xl" : "text-2xl"
+              }`}
+            >
+              {image.title}
+            </h3>
+          </div>
+          <span className="flex h-11 w-11 items-center justify-center rounded-full border border-white/35 bg-black/15 backdrop-blur-sm transition-colors group-hover:bg-white group-hover:text-black">
+            <Plus className="h-4 w-4" />
+          </span>
+        </div>
+      </button>
+    </Reveal>
+  );
+}
+
+function LayoutExplorer({
+  onOpenGallery,
+  onZoom,
+}: {
+  onOpenGallery: (index: number) => void;
+  onZoom: (floor: FloorKey) => void;
+}) {
+  const [floor, setFloor] = useState<FloorKey>("ground");
+  const [activeRoom, setActiveRoom] = useState(0);
+  const plan = FLOOR_PLANS[floor];
+  const room = plan.rooms[activeRoom] ?? plan.rooms[0];
+  const render = GALLERY[room.gallery];
+
+  const changeFloor = (next: FloorKey) => {
+    setFloor(next);
+    setActiveRoom(0);
+  };
 
   return (
-    <section className="max-w-6xl mx-auto px-6 pt-20 pb-24">
-      <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
-        Your money back
-      </div>
-      <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
-        How long until OMA pays itself off.
-      </h2>
-      <p className="mt-4 text-stone-700 max-w-3xl">
-        Move the rate and the nights. The three cards update with annual gross,
-        annual net of operations, and how many years to break even on each
-        ownership tier.
-      </p>
-
-      <div className="mt-10 grid lg:grid-cols-3 gap-10">
-        {/* Inputs */}
-        <div className="lg:col-span-1 bg-white border border-stone-200 rounded-lg p-6">
-          <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-4">
-            Your assumptions
+    <section
+      id="layout"
+      className="bg-black px-2.5 py-2.5 text-white sm:px-4 sm:py-4"
+    >
+      <div className="overflow-hidden rounded-[24px] border border-white/15 px-5 py-12 sm:px-10 lg:px-14 lg:py-16">
+        <Reveal className="grid gap-10 lg:grid-cols-[0.8fr_1.3fr] lg:items-end">
+          <div>
+            <p className="text-sm text-white/50">The layout</p>
+            <h2 className="mt-4 max-w-2xl font-editorial text-6xl leading-[0.9] tracking-[-0.045em] sm:text-7xl lg:text-[6.5vw]">
+              Walk the home before it is built.
+            </h2>
           </div>
-          <div className="space-y-6">
-            <div>
-              <div className="flex items-baseline justify-between text-sm">
-                <span className="text-stone-700">Nightly rate</span>
-                <span className="font-medium text-stone-900">
-                  {formatUsd(nightly)}
+          <p className="max-w-xl text-base leading-relaxed text-white/60">
+            Switch floors, choose a room, and connect the plan to the rendered
+            space. Enlarge the plan whenever you want a closer view.
+          </p>
+        </Reveal>
+
+        <div className="mt-14 grid gap-3 xl:grid-cols-[1.3fr_0.7fr]">
+          <div className="overflow-hidden rounded-[22px] bg-white text-black">
+            <div className="flex flex-wrap items-center justify-between gap-4 border-b border-black/10 p-4 sm:px-6">
+              <div className="flex gap-2">
+                {(Object.keys(FLOOR_PLANS) as FloorKey[]).map(key => (
+                  <button
+                    type="button"
+                    key={key}
+                    onClick={() => changeFloor(key)}
+                    className={`rounded-full px-4 py-2 text-sm transition-colors ${
+                      floor === key
+                        ? "bg-black text-white"
+                        : "bg-black/[0.05] text-black/60 hover:text-black"
+                    }`}
+                  >
+                    {FLOOR_PLANS[key].label}
+                  </button>
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={() => onZoom(floor)}
+                className="inline-flex items-center gap-2 text-sm text-black/60 hover:text-black"
+              >
+                <Expand className="h-4 w-4" />
+                Enlarge plan
+              </button>
+            </div>
+            <div className="bg-white p-4 sm:p-8">
+              <div
+                className="relative mx-auto w-full max-w-[760px]"
+                style={{ aspectRatio: plan.aspectRatio }}
+              >
+                <img
+                  src={plan.image}
+                  alt={`${plan.label} architectural plan`}
+                  className="absolute inset-0 h-full w-full object-contain"
+                />
+                {plan.rooms.map((item, index) => (
+                  <button
+                    type="button"
+                    key={item.label}
+                    onClick={() => setActiveRoom(index)}
+                    style={{ left: `${item.x}%`, top: `${item.y}%` }}
+                    className={`absolute flex h-9 w-9 -translate-x-1/2 -translate-y-1/2 items-center justify-center rounded-full border text-sm font-semibold shadow-lg transition-transform hover:scale-110 ${
+                      activeRoom === index
+                        ? "border-black bg-black text-white"
+                        : "border-black/20 bg-white text-black"
+                    }`}
+                    aria-label={`Show ${item.label} render`}
+                  >
+                    {index + 1}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="flex min-h-[520px] flex-col overflow-hidden rounded-[22px] border border-white/15 bg-white/[0.04]">
+            <button
+              type="button"
+              onClick={() => onOpenGallery(room.gallery)}
+              className="group relative min-h-[330px] flex-1 overflow-hidden text-left"
+            >
+              <img
+                key={render.src}
+                src={render.src}
+                alt={render.alt}
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 p-6">
+                <p className="text-sm text-white/60">{room.label}</p>
+                <h3 className="mt-1 text-3xl font-medium tracking-[-0.04em]">
+                  {render.title}
+                </h3>
+              </div>
+            </button>
+            <div className="p-6">
+              <div className="flex items-center justify-between gap-5">
+                <div>
+                  <strong className="text-xl font-medium">{plan.label}</strong>
+                  <span className="ml-3 text-sm text-white/45">
+                    {plan.area}
+                  </span>
+                </div>
+                <span className="text-sm text-white/45">
+                  {activeRoom + 1} / {plan.rooms.length}
                 </span>
               </div>
-              <input
-                type="range"
+              <p className="mt-4 text-sm leading-relaxed text-white/55">
+                {plan.summary}
+              </p>
+              <div className="mt-5 flex flex-wrap gap-2">
+                {plan.rooms.map((item, index) => (
+                  <button
+                    type="button"
+                    key={item.label}
+                    onClick={() => setActiveRoom(index)}
+                    className={`rounded-full border px-3 py-2 text-xs ${
+                      activeRoom === index
+                        ? "border-white bg-white text-black"
+                        : "border-white/20 text-white/60 hover:text-white"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Ownership({ onRequestPack }: { onRequestPack: () => void }) {
+  return (
+    <section id="pricing" className="px-5 py-24 sm:px-8 lg:px-12 lg:py-36">
+      <div className="mx-auto max-w-[1450px]">
+        <Reveal className="grid gap-10 lg:grid-cols-[1fr_1.3fr]">
+          <div>
+            <p className="mb-4 text-sm text-black/50">Ownership and pricing</p>
+            <h2 className="max-w-xl text-5xl font-medium leading-[0.95] tracking-[-0.055em] sm:text-7xl">
+              One home. Three ways in.
+            </h2>
+          </div>
+          <div className="flex flex-col justify-end">
+            <p className="max-w-2xl text-base leading-relaxed text-black/60">
+              These are the current founding-release prices for Units 01-03.
+              Every ownership route uses the same residence; what changes is the
+              term, legal structure and capital required. Units 04-12 will use
+              revised release pricing.
+            </p>
+          </div>
+        </Reveal>
+
+        <div className="mt-16 grid gap-3 lg:grid-cols-3">
+          {OWNERSHIP_OPTIONS.map((option, index) => {
+            const amounts = calculateInvestment({
+              nightlyRate: 200,
+              nightsPerMonth: 18,
+              priceUsd: option.priceUsd,
+            }).payments;
+            return (
+              <Reveal key={option.key} delay={index * 0.06}>
+                <article
+                  className={`flex min-h-[520px] h-full flex-col rounded-[22px] border p-6 sm:p-8 ${
+                    index === 1
+                      ? "border-black bg-black text-white"
+                      : "border-black/15 bg-white"
+                  }`}
+                >
+                  <div>
+                    <p
+                      className={`text-sm ${
+                        index === 1 ? "text-white/50" : "text-black/50"
+                      }`}
+                    >
+                      {option.term}
+                    </p>
+                    <strong className="mt-5 block text-3xl font-medium tracking-[-0.04em]">
+                      {option.earlyBirdPrice}
+                    </strong>
+                    <span
+                      className={`mt-2 block text-sm line-through ${
+                        index === 1 ? "text-white/35" : "text-black/35"
+                      }`}
+                    >
+                      Standard {option.standardPrice}
+                    </span>
+                    <p
+                      className={`mt-6 text-sm leading-relaxed ${
+                        index === 1 ? "text-white/60" : "text-black/60"
+                      }`}
+                    >
+                      {option.description}
+                    </p>
+                  </div>
+
+                  <div
+                    className={`mt-8 space-y-4 border-t pt-6 ${
+                      index === 1 ? "border-white/20" : "border-black/15"
+                    }`}
+                  >
+                    {amounts.map(payment => (
+                      <div key={payment.key}>
+                        <div className="flex items-baseline justify-between gap-4 text-sm">
+                          <span
+                            className={
+                              index === 1 ? "text-white/50" : "text-black/50"
+                            }
+                          >
+                            {payment.percent * 100}% {payment.label}
+                          </span>
+                          <strong>{formatUsd(payment.amountUsd)}</strong>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+
+                  <button
+                    type="button"
+                    onClick={onRequestPack}
+                    className={`mt-auto flex items-center justify-between rounded-full px-5 py-3.5 text-sm font-medium ${
+                      index === 1
+                        ? "bg-white text-black"
+                        : "border border-black/20 hover:bg-black hover:text-white"
+                    }`}
+                  >
+                    Ask about this route
+                    <ArrowRight className="h-4 w-4" />
+                  </button>
+                </article>
+              </Reveal>
+            );
+          })}
+        </div>
+
+        <p className="mt-6 max-w-3xl text-xs leading-relaxed text-black/45">
+          Current promotional pricing is subject to allocation and contract. The
+          30 / 30 / 40 schedule follows construction milestones; confirm
+          availability, inclusions and dates with the OMA team before making a
+          decision.
+        </p>
+      </div>
+    </section>
+  );
+}
+
+function DecisionCalculator() {
+  const [nightlyRate, setNightlyRate] = useState(200);
+  const [nightsPerMonth, setNightsPerMonth] = useState(18);
+  const [ownershipKey, setOwnershipKey] = useState<OwnershipKey>("lease25");
+  const ownership =
+    OWNERSHIP_OPTIONS.find(option => option.key === ownershipKey) ??
+    OWNERSHIP_OPTIONS[0];
+  const result = calculateInvestment({
+    nightlyRate,
+    nightsPerMonth,
+    priceUsd: ownership.priceUsd,
+  });
+
+  return (
+    <section
+      id="returns"
+      className="bg-black px-2.5 py-2.5 text-white sm:px-4 sm:py-4"
+    >
+      <div className="overflow-hidden rounded-[24px] border border-white/15 px-5 py-12 sm:px-10 lg:px-14 lg:py-16">
+        <Reveal className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:items-end">
+          <div>
+            <p className="text-sm text-white/50">The decision model</p>
+            <h2 className="mt-5 max-w-2xl font-editorial text-6xl leading-[0.9] tracking-[-0.045em] sm:text-7xl lg:text-[6.2vw]">
+              Put your assumptions to work.
+            </h2>
+          </div>
+          <div>
+            <p className="max-w-xl text-base leading-relaxed text-white/60">
+              Change the nightly rate, occupancy and ownership route. The
+              revenue, operating costs, yield and simple payback update
+              together.
+            </p>
+            <div className="mt-8 grid grid-cols-2 gap-6 border-t border-white/20 pt-6 sm:grid-cols-4">
+              <Metric
+                label="Occupancy"
+                value={`${(result.occupancyRate * 100).toFixed(0)}%`}
+              />
+              <Metric
+                label="Annual gross"
+                value={formatUsd(result.grossAnnual)}
+              />
+              <Metric label="Annual net" value={formatUsd(result.netAnnual)} />
+              <Metric
+                label="Simple payback"
+                value={
+                  result.paybackYears
+                    ? `${result.paybackYears.toFixed(1)} years`
+                    : "Not reached"
+                }
+              />
+            </div>
+          </div>
+        </Reveal>
+
+        <div className="mt-14 grid gap-3 lg:grid-cols-[0.8fr_1.2fr]">
+          <div className="rounded-[22px] bg-white p-6 text-black sm:p-8">
+            <h3 className="text-xl font-medium">Your assumptions</h3>
+            <div className="mt-8 space-y-8">
+              <RangeInput
+                label="Nightly rate"
+                value={nightlyRate}
+                display={formatUsd(nightlyRate)}
                 min={80}
                 max={320}
                 step={5}
-                value={nightly}
-                onChange={(e) => setNightly(Number(e.target.value))}
-                className="mt-2 w-full accent-stone-900"
-                aria-label="Nightly rate in USD"
+                minLabel="USD 80"
+                maxLabel="USD 320"
+                onChange={setNightlyRate}
               />
-              <div className="flex justify-between text-[10px] uppercase tracking-wider text-stone-500 mt-1">
-                <span>USD 80</span>
-                <span>USD 320</span>
-              </div>
-            </div>
-            <div>
-              <div className="flex items-baseline justify-between text-sm">
-                <span className="text-stone-700">Nights booked per month</span>
-                <span className="font-medium text-stone-900">{nights}</span>
-              </div>
-              <input
-                type="range"
+              <RangeInput
+                label="Nights booked per month"
+                value={nightsPerMonth}
+                display={`${nightsPerMonth} nights`}
                 min={8}
                 max={28}
-                value={nights}
-                onChange={(e) => setNights(Number(e.target.value))}
-                className="mt-2 w-full accent-stone-900"
-                aria-label="Nights per month"
+                step={1}
+                minLabel="8 nights"
+                maxLabel="28 nights"
+                onChange={setNightsPerMonth}
               />
-              <div className="flex justify-between text-[10px] uppercase tracking-wider text-stone-500 mt-1">
-                <span>8 nights</span>
-                <span>28 nights</span>
+            </div>
+
+            <div className="mt-8">
+              <p className="text-sm font-medium">Ownership route</p>
+              <div className="mt-3 grid gap-2">
+                {OWNERSHIP_OPTIONS.map(option => (
+                  <button
+                    type="button"
+                    key={option.key}
+                    onClick={() => setOwnershipKey(option.key)}
+                    className={`flex items-center justify-between rounded-[14px] border px-4 py-3 text-left text-sm ${
+                      ownershipKey === option.key
+                        ? "border-black bg-black text-white"
+                        : "border-black/15"
+                    }`}
+                  >
+                    <span>{option.term}</span>
+                    <strong>{option.earlyBirdPrice}</strong>
+                  </button>
+                ))}
               </div>
             </div>
           </div>
 
-          <div className="mt-6 pt-6 border-t border-stone-200 text-sm">
-            <div className="flex justify-between text-stone-600">
-              <span>Annual gross</span>
-              <span className="text-stone-900 font-medium">
-                {formatUsd(grossAnnual)}
-              </span>
+          <div className="grid gap-3 sm:grid-cols-2">
+            <div className="rounded-[22px] border border-white/15 bg-white/[0.04] p-6 sm:p-8">
+              <p className="text-sm text-white/50">Annual operating case</p>
+              <div className="mt-7 space-y-4">
+                <BreakdownRow
+                  label="Gross rental revenue"
+                  value={formatUsd(result.grossAnnual)}
+                />
+                <BreakdownRow
+                  label={`Management at ${Math.round(
+                    OPERATING_ASSUMPTIONS.managementRate * 100
+                  )}%`}
+                  value={`- ${formatUsd(result.managementCost)}`}
+                  muted
+                />
+                <BreakdownRow
+                  label={`Utilities reserve at ${Math.round(
+                    OPERATING_ASSUMPTIONS.utilitiesRate * 100
+                  )}%`}
+                  value={`- ${formatUsd(result.utilitiesReserve)}`}
+                  muted
+                />
+                <BreakdownRow
+                  label="Core staffing and operations"
+                  value={`- ${formatUsd(result.fixedOperations)}`}
+                  muted
+                />
+                <BreakdownRow
+                  label="Net after operations"
+                  value={formatUsd(result.netAnnual)}
+                  strong
+                />
+                <BreakdownRow
+                  label="Monthly net"
+                  value={formatUsd(result.monthlyNet)}
+                />
+                <BreakdownRow
+                  label="Net yield on purchase price"
+                  value={`${(result.netYield * 100).toFixed(1)}%`}
+                />
+              </div>
             </div>
-            <div className="flex justify-between text-stone-600 mt-2">
-              <span>Annual net of ops</span>
-              <span className="text-stone-900 font-medium">
-                {formatUsd(netAnnual)}
-              </span>
-            </div>
-            <div className="text-[11px] text-stone-500 mt-3 leading-relaxed">
-              Net subtracts 18% management, about USD 4,200 fixed core ops and
-              7% utilities reserve. Indonesian tax (PT PMA 22% on profit, or 20%
-              PPh 26 on gross for own-name) sits below this.
+
+            <div className="rounded-[22px] bg-white p-6 text-black sm:p-8">
+              <p className="text-sm text-black/50">Capital deployment</p>
+              <strong className="mt-3 block text-2xl font-medium">
+                {ownership.term}
+              </strong>
+              <p className="mt-2 text-sm text-black/50">
+                {ownership.earlyBirdPrice}
+              </p>
+              <div className="mt-7 space-y-5">
+                {result.payments.map((payment, index) => (
+                  <div
+                    key={payment.key}
+                    className="border-t border-black/15 pt-4"
+                  >
+                    <div className="flex items-baseline justify-between gap-4">
+                      <span className="text-sm text-black/50">
+                        0{index + 1} · {payment.percent * 100}%
+                      </span>
+                      <strong>{formatUsd(payment.amountUsd)}</strong>
+                    </div>
+                    <p className="mt-2 text-sm font-medium">{payment.label}</p>
+                    <p className="mt-1 text-xs leading-relaxed text-black/45">
+                      {payment.detail}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Tier cards */}
-        <div className="lg:col-span-2 grid sm:grid-cols-3 gap-4">
-          {TIERS.map((tier) => {
-            const paybackYears = netAnnual > 0 ? tier.priceUsd / netAnnual : Infinity;
-            const grossYield = (netAnnual / tier.priceUsd) * 100;
-            const highlighted = tier.key === "lease40";
-            return (
-              <div
-                key={tier.key}
-                className={`rounded-lg p-6 ${
-                  highlighted
-                    ? "bg-stone-900 text-white border border-stone-900"
-                    : "bg-white border border-stone-200"
-                }`}
-              >
-                <div
-                  className={`text-xs uppercase tracking-[0.18em] ${
-                    highlighted ? "text-white/70" : "text-stone-500"
-                  }`}
-                >
-                  {tier.label}
-                </div>
-                <div className="mt-3 font-serif text-2xl">
-                  {formatUsd(tier.priceUsd)}
-                </div>
-                <div
-                  className={`text-xs ${
-                    highlighted ? "text-white/60" : "text-stone-500"
-                  } mt-0.5`}
-                >
-                  {tier.note}
-                </div>
+        <p className="mt-7 max-w-4xl text-xs leading-relaxed text-white/40">
+          Illustration only, not financial advice or a guaranteed return. Taxes,
+          financing costs, OTA commissions, changing seasonality and your legal
+          structure are outside this quick model. Confirm the after-tax case
+          with your adviser and the OMA team.
+        </p>
+      </div>
+    </section>
+  );
+}
 
-                <div
-                  className={`mt-6 pt-6 border-t ${
-                    highlighted ? "border-white/15" : "border-stone-200"
-                  }`}
-                >
-                  <div
-                    className={`text-[11px] uppercase tracking-wider ${
-                      highlighted ? "text-white/60" : "text-stone-500"
-                    }`}
-                  >
-                    Years to break even
-                  </div>
-                  <div className="font-serif text-4xl mt-1">
-                    {isFinite(paybackYears) ? paybackYears.toFixed(1) : "—"}
-                  </div>
-                  <div
-                    className={`text-xs ${
-                      highlighted ? "text-white/60" : "text-stone-500"
-                    } mt-2`}
-                  >
-                    Net yield {isFinite(grossYield) ? grossYield.toFixed(1) : "0"}% / yr
+function Operations() {
+  const items = [
+    {
+      title: "Revenue operation",
+      description:
+        "Channel setup, pricing, booking management, guest communication and review follow-up.",
+    },
+    {
+      title: "Care on the ground",
+      description:
+        "Housekeeping, linen, pool care, routine maintenance and guest arrival coordination.",
+    },
+    {
+      title: "Owner visibility",
+      description:
+        "Monthly operating statements, expense visibility and an annual reconciliation.",
+    },
+    {
+      title: "Time for yourself",
+      description:
+        "Reserve owner stays, then return the home to managed rental operation while you are away.",
+    },
+  ];
+
+  return (
+    <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-36">
+      <div className="mx-auto max-w-[1450px]">
+        <Reveal className="grid gap-12 lg:grid-cols-[0.8fr_1.5fr]">
+          <p className="text-sm text-black/50">How ownership works</p>
+          <div>
+            <h2 className="max-w-5xl font-editorial text-5xl leading-[0.96] tracking-[-0.04em] sm:text-7xl lg:text-[7vw]">
+              Use it when you are here. Let it work when you are not.
+            </h2>
+            <p className="mt-8 max-w-2xl text-base leading-relaxed text-black/60">
+              OMA is being structured as a managed hospitality product, not a
+              key handover followed by a list of vendors for you to coordinate.
+            </p>
+          </div>
+        </Reveal>
+        <div className="mt-16 grid border-t border-black/20 md:grid-cols-2">
+          {items.map((item, index) => (
+            <Reveal key={item.title} delay={index * 0.04}>
+              <article className="min-h-[230px] border-b border-black/20 p-6 sm:p-8">
+                <span className="text-sm text-black/35">0{index + 1}</span>
+                <h3 className="mt-8 text-2xl font-medium tracking-[-0.03em]">
+                  {item.title}
+                </h3>
+                <p className="mt-4 max-w-md text-sm leading-relaxed text-black/55">
+                  {item.description}
+                </p>
+              </article>
+            </Reveal>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function LocationCase() {
+  const places = [
+    ["2-5 min", "Kaba Kaba village and local community"],
+    ["10-15 min", "Nuanu, Kedungu and the coast"],
+    ["15-20 min", "Seseh dining and wellness"],
+    ["About 25 min", "Canggu and Pererenan"],
+  ];
+
+  return (
+    <section id="kaba-kaba" className="px-2.5 pb-24 sm:px-4 lg:pb-36">
+      <div className="grid overflow-hidden rounded-[24px] bg-black text-white lg:grid-cols-2">
+        <div className="flex min-h-[640px] flex-col justify-between p-6 sm:p-10 lg:p-14">
+          <Reveal>
+            <div className="flex items-center gap-2 text-sm text-white/50">
+              <MapPin className="h-4 w-4" />
+              Kaba Kaba, Tabanan
+            </div>
+          </Reveal>
+          <Reveal>
+            <h2 className="max-w-xl font-editorial text-6xl leading-[0.9] tracking-[-0.045em] sm:text-8xl">
+              Close enough. Quiet enough.
+            </h2>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-white/60">
+              The investment case is not that Kaba Kaba will become Canggu. It
+              is that buyers and guests can reach the coast without living in
+              its traffic.
+            </p>
+          </Reveal>
+          <Reveal className="grid gap-5 border-t border-white/20 pt-7 sm:grid-cols-2">
+            {places.map(([time, place]) => (
+              <div key={place}>
+                <strong className="block text-xl font-medium">{time}</strong>
+                <span className="mt-1 block text-xs leading-relaxed text-white/45">
+                  {place}
+                </span>
+              </div>
+            ))}
+          </Reveal>
+        </div>
+        <div className="relative min-h-[520px] lg:min-h-[640px]">
+          <img
+            src={SCENE(26)}
+            alt="OMA Townhouse private pool in Kaba Kaba"
+            loading="lazy"
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+        </div>
+      </div>
+
+      <div className="mx-auto max-w-[1450px] px-3 pt-24 sm:px-5 lg:pt-32">
+        <Reveal className="grid gap-10 lg:grid-cols-[0.75fr_1.25fr]">
+          <p className="text-sm text-black/50">The everyday radius</p>
+          <div>
+            <h3 className="max-w-4xl font-editorial text-5xl leading-[0.96] tracking-[-0.04em] sm:text-7xl">
+              What is actually around Kaba Kaba.
+            </h3>
+            <p className="mt-7 max-w-2xl text-base leading-relaxed text-black/60">
+              Start in the village, reach the coast in fifteen minutes, and keep
+              Canggu close enough for the days you want it. This is the
+              buyer&apos;s map, not a list of anonymous attractions.
+            </p>
+          </div>
+        </Reveal>
+
+        <div className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+          {KABA_KABA_GUIDE.map((place, index) => (
+            <Reveal key={place.title} delay={index * 0.04}>
+              <a
+                href={place.href}
+                data-external={
+                  place.href.startsWith("http") ? "true" : undefined
+                }
+                className="group flex h-full min-h-[480px] flex-col overflow-hidden rounded-[22px] border border-black/15 bg-white"
+              >
+                <div className="relative min-h-[280px] overflow-hidden">
+                  <img
+                    src={place.image}
+                    alt={place.title}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover transition-transform duration-700 group-hover:scale-[1.035]"
+                  />
+                  <span className="absolute left-4 top-4 rounded-full bg-white px-3 py-2 text-xs font-medium text-black shadow-sm">
+                    {place.time} from OMA
+                  </span>
+                </div>
+                <div className="flex flex-1 flex-col p-5 sm:p-6">
+                  <span className="text-xs text-black/40">
+                    {place.category}
+                  </span>
+                  <h4 className="mt-2 text-2xl font-medium tracking-[-0.035em]">
+                    {place.title}
+                  </h4>
+                  <p className="mt-4 text-sm leading-relaxed text-black/55">
+                    {place.description}
+                  </p>
+                  <span className="mt-auto flex items-center justify-between pt-7 text-sm font-medium">
+                    Explore
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </a>
+            </Reveal>
+          ))}
+        </div>
+
+        <Reveal className="mt-24 grid gap-10 border-t border-black/20 pt-10 lg:grid-cols-[0.75fr_1.25fr]">
+          <div>
+            <p className="text-sm text-black/50">The longer nature day</p>
+            <h3 className="mt-4 max-w-md text-4xl font-medium leading-[0.98] tracking-[-0.045em] sm:text-5xl">
+              Waterfalls and the wider Tabanan landscape.
+            </h3>
+          </div>
+          <div className="grid gap-3 sm:grid-cols-2">
+            {TABANAN_DAY_TRIPS.map(trip => (
+              <a
+                key={trip.title}
+                href={trip.href}
+                data-external="true"
+                className="group overflow-hidden rounded-[22px] bg-black text-white"
+              >
+                <div className="relative min-h-[260px] overflow-hidden">
+                  <img
+                    src={trip.image}
+                    alt={trip.title}
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-cover opacity-80 transition-transform duration-700 group-hover:scale-[1.035]"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent" />
+                  <span className="absolute left-5 top-5 rounded-full border border-white/25 bg-black/25 px-3 py-2 text-xs backdrop-blur-md">
+                    {trip.time} from OMA
+                  </span>
+                  <div className="absolute inset-x-0 bottom-0 p-5 sm:p-6">
+                    <h4 className="text-2xl font-medium tracking-[-0.035em]">
+                      {trip.title}
+                    </h4>
+                    <p className="mt-3 text-sm leading-relaxed text-white/60">
+                      {trip.description}
+                    </p>
                   </div>
                 </div>
+              </a>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+
+      <div className="mx-auto mt-5 flex max-w-[1450px] flex-wrap items-center justify-between gap-4 px-3 text-xs text-black/45">
+        <span>
+          Drive times are approximate and vary with route and traffic. Context
+          reviewed July 2026.
+        </span>
+        <div className="flex gap-5">
+          <a
+            href="https://www.nuanu.com/"
+            data-external="true"
+            className="underline underline-offset-4 hover:text-black"
+          >
+            Nuanu
+          </a>
+          <a
+            href="https://bali.bps.go.id/"
+            data-external="true"
+            className="underline underline-offset-4 hover:text-black"
+          >
+            BPS Bali
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function BuyerProtection() {
+  const items = [
+    {
+      title: "Title and legal structure",
+      body: "The underlying land title, chain of ownership and buyer structure are reviewed through a licensed Indonesian notary. Independent legal review is welcome before any deposit.",
+    },
+    {
+      title: "Milestone-based payments",
+      body: "Capital is staged 30 / 30 / 40 against reservation, inspected construction progress and completion rather than paid entirely at the beginning.",
+    },
+    {
+      title: "Inspection and delivery",
+      body: "The construction tranche follows an owner inspection. Delivery dates, specification, snagging and late-delivery remedies belong in the final notarized agreements.",
+    },
+    {
+      title: "Exit routes",
+      body: "Leasehold interests can be assigned with the remaining term, while a PT PMA owner may sell company shares or transfer the HGB asset, subject to legal and tax advice.",
+    },
+  ];
+
+  return (
+    <section className="bg-black px-2.5 py-2.5 text-white sm:px-4 sm:py-4">
+      <div className="rounded-[24px] border border-white/15 px-5 py-12 sm:px-10 lg:px-14 lg:py-16">
+        <Reveal className="grid gap-12 lg:grid-cols-[0.85fr_1.15fr]">
+          <div>
+            <div className="flex items-center gap-2 text-sm text-white/50">
+              <ShieldCheck className="h-4 w-4" />
+              Before you commit
+            </div>
+            <h2 className="mt-5 max-w-xl font-editorial text-6xl leading-[0.9] tracking-[-0.045em] sm:text-7xl">
+              The questions serious buyers should ask.
+            </h2>
+          </div>
+          <div className="border-t border-white/20">
+            {items.map((item, index) => (
+              <div
+                key={item.title}
+                className="grid gap-4 border-b border-white/20 py-7 sm:grid-cols-[auto_1fr]"
+              >
+                <span className="text-sm text-white/35">0{index + 1}</span>
+                <div>
+                  <h3 className="text-xl font-medium">{item.title}</h3>
+                  <p className="mt-3 max-w-xl text-sm leading-relaxed text-white/55">
+                    {item.body}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function Founder() {
+  return (
+    <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-36">
+      <div className="mx-auto grid max-w-[1450px] gap-12 lg:grid-cols-[0.7fr_1.3fr]">
+        <Reveal>
+          <div className="overflow-hidden rounded-[22px] bg-black">
+            <img
+              src="/founder/irvan-lathief.webp"
+              alt="Irvan Lathief, founder of OMA Townhouse"
+              loading="lazy"
+              className="aspect-square w-full object-cover grayscale"
+            />
+          </div>
+          <div className="mt-5 grid gap-5 border-t border-black/20 pt-5 sm:grid-cols-2">
+            <div>
+              <strong className="text-lg font-medium">Irvan Lathief</strong>
+              <span className="mt-1 block text-sm text-black/45">
+                Founder, OMA Townhouse
+              </span>
+            </div>
+            <div>
+              <strong className="text-lg font-medium">Derek</strong>
+              <span className="mt-1 block text-sm text-black/45">
+                OMA development team
+              </span>
+            </div>
+          </div>
+        </Reveal>
+        <Reveal delay={0.08}>
+          <p className="text-sm text-black/50">Who is behind OMA</p>
+          <h2 className="mt-5 max-w-4xl font-editorial text-5xl leading-[0.96] tracking-[-0.04em] sm:text-7xl">
+            Irvan and Derek, building OMA with founder-level attention.
+          </h2>
+          <div className="mt-10 grid gap-8 border-t border-black/20 pt-8 sm:grid-cols-2">
+            <p className="text-base leading-relaxed text-black/60">
+              Irvan brings more than a decade in product design and delivery to
+              OMA&apos;s first development. One site, one repeatable floor plan,
+              and close attention to the decisions that affect owners.
+            </p>
+            <p className="text-base leading-relaxed text-black/60">
+              Irvan and Derek are keeping the first 12 homes intentionally
+              focused. Being early should come with more visibility, which is
+              why milestone payments, owner inspections and direct team access
+              are part of the buyer conversation.
+            </p>
+          </div>
+          <a
+            href="https://irvanlathief.com"
+            data-external="true"
+            className="mt-9 inline-flex items-center gap-5 rounded-full border border-black/20 px-5 py-3 text-sm font-medium transition-colors hover:bg-black hover:text-white"
+          >
+            Meet the founder
+            <ArrowRight className="h-4 w-4" />
+          </a>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
+
+function Questions() {
+  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  return (
+    <section className="border-t border-black/10 px-5 py-24 sm:px-8 lg:px-12 lg:py-32">
+      <div className="mx-auto grid max-w-[1450px] gap-12 lg:grid-cols-[0.7fr_1.3fr]">
+        <Reveal>
+          <p className="text-sm text-black/50">Common buyer questions</p>
+          <h2 className="mt-4 max-w-lg text-5xl font-medium leading-[0.96] tracking-[-0.05em] sm:text-6xl">
+            Read the direct answer.
+          </h2>
+        </Reveal>
+        <div className="border-t border-black/20">
+          {FAQ.map((item, index) => {
+            const open = openIndex === index;
+            return (
+              <div key={item.question} className="border-b border-black/20">
+                <button
+                  type="button"
+                  onClick={() => setOpenIndex(open ? null : index)}
+                  className="flex w-full items-center justify-between gap-8 py-6 text-left"
+                  aria-expanded={open}
+                >
+                  <span className="text-lg font-medium sm:text-xl">
+                    {item.question}
+                  </span>
+                  <ChevronDown
+                    className={`h-5 w-5 shrink-0 transition-transform ${
+                      open ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+                <AnimatePresence initial={false}>
+                  {open && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      className="overflow-hidden"
+                    >
+                      <p className="max-w-2xl pb-7 text-sm leading-relaxed text-black/55 sm:text-base">
+                        {item.answer}
+                      </p>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </div>
             );
           })}
         </div>
       </div>
-
-      <p className="mt-8 text-xs text-stone-500 max-w-3xl">
-        Illustrative, not financial advice. Payback uses constant annual net at
-        your chosen inputs, before Indonesian tax and treaty effects. Real
-        timelines depend on occupancy, seasonality, OTA commissions and your
-        structure. We walk through the after-tax figure for your structure on
-        a call.
-      </p>
     </section>
   );
 }
 
-function BrandBand() {
+function FinalCta({ onRequestPack }: { onRequestPack: () => void }) {
   return (
-    <section className="border-y border-stone-200 bg-white">
-      <div className="max-w-5xl mx-auto px-6 py-16 text-center">
-        <p className="font-serif text-2xl sm:text-3xl text-stone-900 leading-snug">
-          Quiet is the luxury. Intentional living in Kaba Kaba,
-          designed for ownership and for rental income.
-        </p>
+    <section className="px-2.5 pb-24 sm:px-4 sm:pb-4">
+      <div className="overflow-hidden rounded-[24px] bg-black px-6 py-14 text-white sm:px-10 lg:px-14 lg:py-20">
+        <Reveal className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-end">
+          <div>
+            <p className="text-sm text-white/45">Your next step</p>
+            <h2 className="mt-6 max-w-4xl font-editorial text-6xl leading-[0.88] tracking-[-0.045em] sm:text-8xl lg:text-[8vw]">
+              Take OMA into the serious conversation.
+            </h2>
+          </div>
+          <div>
+            <p className="max-w-lg text-base leading-relaxed text-white/55">
+              Request the current floor plans, price list, payment structure and
+              operating assumptions. The team will send the pack and follow up
+              within 24 hours.
+            </p>
+            <button
+              type="button"
+              onClick={onRequestPack}
+              className="mt-8 inline-flex items-center gap-6 rounded-full bg-white px-6 py-4 text-sm font-medium text-black"
+            >
+              Request investor pack
+              <ArrowRight className="h-4 w-4" />
+            </button>
+          </div>
+        </Reveal>
+        <div className="mt-16 flex flex-wrap items-center justify-between gap-5 border-t border-white/15 pt-6 text-xs text-white/35">
+          <span>OMA Townhouse, Kaba Kaba, Bali</span>
+          <Link href="/" className="hover:text-white">
+            Return to the main experience
+          </Link>
+        </div>
       </div>
     </section>
   );
 }
 
-function AccessGate({
-  form,
-  setForm,
-  onSubmit,
-  submitting,
-  waitingForCode,
-}: {
-  form: {
-    name: string;
-    email: string;
-    whatsapp: string;
-    country: string;
-    accessCode: string;
-    message: string;
-  };
-  setForm: React.Dispatch<
-    React.SetStateAction<{
-      name: string;
-      email: string;
-      whatsapp: string;
-      country: string;
-      accessCode: string;
-      message: string;
-    }>
-  >;
-  onSubmit: (e: React.FormEvent) => void;
-  submitting: boolean;
-  waitingForCode: boolean;
-}) {
-  return (
-    <section id="access" className="bg-stone-50 border-y border-stone-200">
-      <div className="max-w-3xl mx-auto px-6 py-20">
-        <div className="text-center mb-10">
-          <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
-            <Lock className="w-3.5 h-3.5" /> Investor access
-          </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900">
-            Continue to the full pitch.
-          </h2>
-          <p className="mt-3 text-stone-600 max-w-xl mx-auto">
-            Drop your details and the access code we sent you. The market
-            case, the title structure, the operating model and the founder
-            section all unlock on this browser. Don't have a code yet?
-            Submit your details and we'll WhatsApp it to you.
-          </p>
-        </div>
-
-        {waitingForCode && (
-          <div className="mb-6 rounded-md bg-amber-50 border border-amber-200 px-4 py-3 text-sm text-amber-900">
-            We've received your details. Watch your WhatsApp — the access code
-            is on its way. Return to this page on the same browser to unlock.
-          </div>
-        )}
-
-        <form
-          onSubmit={onSubmit}
-          className="bg-white border border-stone-200 rounded-lg p-6 sm:p-8 space-y-5 shadow-sm"
-        >
-          <div className="grid sm:grid-cols-2 gap-5">
-            <div>
-              <Label htmlFor="name">Name</Label>
-              <Input
-                id="name"
-                required
-                value={form.name}
-                onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
-                placeholder="Your full name"
-                className="mt-1"
-              />
-            </div>
-            <div>
-              <Label htmlFor="email">Email</Label>
-              <Input
-                id="email"
-                type="email"
-                required
-                value={form.email}
-                onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
-                placeholder="you@email.com"
-                className="mt-1"
-              />
-            </div>
-          </div>
-          <div className="grid sm:grid-cols-2 gap-5">
-            <div>
-              <Label htmlFor="whatsapp">WhatsApp</Label>
-              <Input
-                id="whatsapp"
-                required
-                value={form.whatsapp}
-                onChange={(e) =>
-                  setForm((f) => ({ ...f, whatsapp: e.target.value }))
-                }
-                placeholder="+1 555 123 4567"
-                className="mt-1"
-              />
-            </div>
-            <div>
-              <Label htmlFor="country">Country (optional)</Label>
-              <Input
-                id="country"
-                value={form.country}
-                onChange={(e) =>
-                  setForm((f) => ({ ...f, country: e.target.value }))
-                }
-                placeholder="United States"
-                className="mt-1"
-              />
-            </div>
-          </div>
-          <div>
-            <Label htmlFor="accessCode">Access code</Label>
-            <Input
-              id="accessCode"
-              value={form.accessCode}
-              onChange={(e) =>
-                setForm((f) => ({ ...f, accessCode: e.target.value }))
-              }
-              placeholder="Enter the code we sent you"
-              className="mt-1"
-            />
-            <p className="mt-1 text-xs text-stone-500">
-              Don't have one yet? Leave it blank and submit — we'll WhatsApp
-              you the code within minutes.
-            </p>
-          </div>
-          <div>
-            <Label htmlFor="message">Anything we should know (optional)</Label>
-            <textarea
-              id="message"
-              rows={3}
-              value={form.message}
-              onChange={(e) =>
-                setForm((f) => ({ ...f, message: e.target.value }))
-              }
-              placeholder="Timeline, budget range, units of interest, questions..."
-              className="mt-1 w-full rounded-md border border-stone-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-stone-900/10"
-            />
-          </div>
-          <Button
-            type="submit"
-            disabled={submitting}
-            className="w-full sm:w-auto"
-          >
-            {submitting ? "Sending..." : "Continue"}
-          </Button>
-          <p className="text-xs text-stone-500">
-            By submitting, you agree we may contact you about OMA Townhouse.
-            We don't share your details with anyone else.
-          </p>
-        </form>
-      </div>
-    </section>
-  );
-}
-
-function InvestorContent() {
-  return (
-    <>
-      {/* The market case */}
-      <section className="max-w-5xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
-          The market case
-        </div>
-        <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
-          Demand is strong. Saturated districts face tightening supply. The
-          opening sits further west.
-        </h2>
-        <div className="mt-10 grid md:grid-cols-3 gap-8 text-stone-800">
-          <div>
-            <div className="text-3xl font-serif">6.33M</div>
-            <p className="text-sm text-stone-600 mt-2">
-              Foreign visitors to Bali in 2024 (BPS-linked reporting). 2.64M in
-              the first five months of 2025.
-            </p>
-          </div>
-          <div>
-            <div className="text-3xl font-serif">~70%</div>
-            <p className="text-sm text-stone-600 mt-2">
-              Share of Bali's regional GDP tied to tourism, per published
-              international reporting.
-            </p>
-          </div>
-          <div>
-            <div className="text-3xl font-serif">2028 →</div>
-            <p className="text-sm text-stone-600 mt-2">
-              The first phase of the Bali Urban Subway is targeted to connect
-              Ngurah Rai Airport toward the western coast.
-            </p>
-          </div>
-        </div>
-        <p className="mt-10 text-stone-700 max-w-3xl leading-relaxed">
-          Bali authorities have signalled a quality-tourism stance, including
-          discussion of moratoriums on new hotels and villas in saturated
-          southern zones. That combination, strong island-wide demand plus
-          tighter forward supply in the busiest districts, is exactly the
-          backdrop that makes a quieter western corridor look investable
-          rather than late.
-        </p>
-      </section>
-
-      {/* Product visuals */}
-      <section className="bg-stone-50 border-y border-stone-200">
-        <div className="max-w-6xl mx-auto px-6 py-20">
-          <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
-            The product
-          </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
-            Designed for living. Structured for ownership. Ready to operate.
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-3 mt-10">
-            {[32, 39, 51, 41, 77, 26].map((n) => (
-              <div
-                key={n}
-                className="aspect-[4/3] overflow-hidden rounded-md bg-stone-200"
-              >
-                <img
-                  src={SCENE(n)}
-                  alt={`OMA Townhouse interior, scene ${n}`}
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-          <div className="mt-10 grid sm:grid-cols-2 md:grid-cols-4 gap-6 text-sm">
-            <Stat label="Total floor area" value="97.5 sqm" />
-            <Stat label="Ground floor" value="66.7 sqm" />
-            <Stat label="Upper floor" value="30.8 sqm" />
-            <Stat label="Private pool" value="Yes" />
-          </div>
-        </div>
-      </section>
-
-      {/* Ownership + pricing */}
-      <section className="max-w-5xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
-          Ownership and pricing
-        </div>
-        <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
-          Three routes, designed for foreign buyers.
-        </h2>
-        <p className="mt-4 text-stone-700 max-w-3xl">
-          Indonesian law does not allow foreign individuals to hold freehold
-          (Hak Milik). OMA offers leasehold for a simpler entry, and freehold
-          through a PT PMA company for buyers who want freehold-style control.
-        </p>
-        <div className="mt-10 grid md:grid-cols-3 gap-6">
-          <PriceCard
-            tier="25-year leasehold"
-            from="USD 115,000"
-            standard="USD 135,000"
-            note="Simplest entry. Renewal clauses negotiated up front."
-          />
-          <PriceCard
-            tier="40-year leasehold"
-            from="USD 161,000"
-            standard="USD 189,000"
-            note="Longer effective term, lower per-year holding cost."
-            highlighted
-          />
-          <PriceCard
-            tier="Freehold (PT PMA)"
-            from="USD 265,000"
-            standard="USD 310,000"
-            note="HGB held by a foreign-owned company. Suits rental as a business."
-          />
-        </div>
-        <p className="mt-6 text-xs text-stone-500 max-w-3xl">
-          Early-bird pricing is finite by allotment. Standard pricing applies
-          once the early-bird tranche is sold. First-building promotion: 15%
-          off with a 30% deposit in 14 days, subject to availability.
-        </p>
-      </section>
-
-      {/* Payment structure */}
-      <section className="bg-stone-50 border-y border-stone-200">
-        <div className="max-w-5xl mx-auto px-6 py-24">
-          <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
-            Capital deployment
-          </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
-            Staged payments tied to construction.
-          </h2>
-          <div className="mt-12 grid md:grid-cols-3 gap-6">
-            <Stage
-              percent="30%"
-              title="Reservation and contract"
-              body="Secure the unit and execute legal documents through a licensed Indonesian notary."
-            />
-            <Stage
-              percent="30%"
-              title="Mid-construction inspection"
-              body="Progress payment after the build milestone and owner inspection."
-            />
-            <Stage
-              percent="40%"
-              title="Pre-handover and completion"
-              body="Final payment before practical completion and handover."
-            />
-          </div>
-          <div className="mt-12 border-t border-stone-200 pt-8 text-sm text-stone-700 max-w-3xl">
-            <strong className="text-stone-900">
-              Estimated build duration:
-            </strong>{" "}
-            10 to 14 months from commencement. Payments are staged so capital
-            deployment matches build progress, not a calendar.
-          </div>
-        </div>
-      </section>
-
-      {/* Hands-off model — lighter version, no dark slab */}
-      <section className="max-w-5xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
-          Hands-off ownership
-        </div>
-        <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
-          Sit anywhere. OMA runs the asset.
-        </h2>
-        <p className="mt-4 text-stone-700 max-w-3xl leading-relaxed">
-          OMA can operate the townhouse as a fully managed hospitality asset.
-          We coordinate guest communications, pricing, check-in,
-          housekeeping, maintenance, airport transfers and on-the-ground
-          hospitality, so ownership stays passive.
-        </p>
-        <div className="mt-12 grid md:grid-cols-3 gap-8 text-sm">
-          <FeatureCard
-            title="Operations"
-            points={[
-              "Guest comms and channel setup",
-              "Pricing strategy",
-              "Reservation and review management",
-            ]}
-          />
-          <FeatureCard
-            title="On the ground"
-            points={[
-              "Housekeeping and linen",
-              "Pool care and maintenance",
-              "Airport transfers and concierge",
-            ]}
-          />
-          <FeatureCard
-            title="Owner reporting"
-            points={[
-              "Monthly statements",
-              "Annual reconciliation",
-              "Legal and administrative support",
-            ]}
-          />
-        </div>
-        <p className="mt-10 text-xs text-stone-500 max-w-3xl">
-          Benchmarked to the Bali market standard: a leading local operator
-          publishes an 18% full-management commission on gross revenue, with
-          staff wages and operating costs treated separately. OMA's management
-          terms are confirmed at contract.
-        </p>
-      </section>
-
-      {/* What USD 250k buys you */}
-      <section className="bg-stone-50 border-y border-stone-200">
-        <div className="max-w-5xl mx-auto px-6 py-24">
-          <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
-            The comparison
-          </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
-            What USD 250,000 buys you around the world.
-          </h2>
-          <p className="mt-4 text-stone-700 max-w-3xl">
-            Same money, different product. The point is not that Bali is
-            cheaper. The point is what you actually get for the same outlay.
-          </p>
-
-          <div className="mt-10 overflow-x-auto">
-            <table className="w-full text-sm">
-              <thead className="text-left text-stone-500">
-                <tr className="border-b border-stone-200">
-                  <th className="py-3 pr-4 font-medium">Market</th>
-                  <th className="py-3 pr-4 font-medium">
-                    What ~USD 250k buys
-                  </th>
-                  <th className="py-3 pr-4 font-medium">Private pool</th>
-                  <th className="py-3 pr-4 font-medium">Foreign ownership</th>
-                </tr>
-              </thead>
-              <tbody className="text-stone-800">
-                <tr className="border-b border-stone-100 bg-white font-medium">
-                  <td className="py-3 pr-4">Tabanan, Bali (OMA)</td>
-                  <td className="py-3 pr-4">
-                    2-bed townhouse, 97.5 sqm, freehold via PT PMA
-                  </td>
-                  <td className="py-3 pr-4">Yes</td>
-                  <td className="py-3 pr-4">Yes, via PT PMA or leasehold</td>
-                </tr>
-                <tr className="border-b border-stone-100">
-                  <td className="py-3 pr-4">Canggu, Bali</td>
-                  <td className="py-3 pr-4">
-                    Studio or compact 1-bed leasehold
-                  </td>
-                  <td className="py-3 pr-4">Shared, if any</td>
-                  <td className="py-3 pr-4">Leasehold only at this price</td>
-                </tr>
-                <tr className="border-b border-stone-100">
-                  <td className="py-3 pr-4">Dubai (JVC / Business Bay)</td>
-                  <td className="py-3 pr-4">
-                    ~35–45 sqm studio, freehold zone
-                  </td>
-                  <td className="py-3 pr-4">Shared building pool</td>
-                  <td className="py-3 pr-4">Yes, freehold</td>
-                </tr>
-                <tr className="border-b border-stone-100">
-                  <td className="py-3 pr-4">Phuket, Thailand</td>
-                  <td className="py-3 pr-4">
-                    1-bed condo, ~40 sqm, foreign quota
-                  </td>
-                  <td className="py-3 pr-4">Shared</td>
-                  <td className="py-3 pr-4">Condo freehold via foreign quota</td>
-                </tr>
-                <tr className="border-b border-stone-100">
-                  <td className="py-3 pr-4">Lisbon, Portugal</td>
-                  <td className="py-3 pr-4">
-                    1-bed apartment, ~45 sqm, outside the centre
-                  </td>
-                  <td className="py-3 pr-4">No</td>
-                  <td className="py-3 pr-4">Yes, freehold</td>
-                </tr>
-                <tr className="border-b border-stone-100">
-                  <td className="py-3 pr-4">Tulum, Mexico</td>
-                  <td className="py-3 pr-4">
-                    ~55 sqm 1-bed condo, shared amenities
-                  </td>
-                  <td className="py-3 pr-4">Shared</td>
-                  <td className="py-3 pr-4">Yes, via fideicomiso</td>
-                </tr>
-                <tr>
-                  <td className="py-3 pr-4">
-                    Average US Sun-belt city (1-bed)
-                  </td>
-                  <td className="py-3 pr-4">
-                    1-bed condo or compact townhouse
-                  </td>
-                  <td className="py-3 pr-4">Shared, if any</td>
-                  <td className="py-3 pr-4">Yes</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <p className="mt-8 text-xs text-stone-500 max-w-3xl">
-            Comparisons reflect typical product available at roughly USD
-            250,000 in each market at time of writing, drawn from public
-            listings and local market reports. Spec and condition vary
-            widely.
-          </p>
-        </div>
-      </section>
-
-      {/* Straight answers */}
-      <section className="max-w-3xl mx-auto px-6 py-24">
-        <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
-          Straight answers
-        </div>
-        <h2 className="font-serif text-3xl sm:text-4xl text-stone-900">
-          The questions a serious buyer asks.
-        </h2>
-        <p className="mt-4 text-stone-700">
-          Off-plan in Indonesia carries real risks. The honest answers below
-          are how we think about them. If any are unresolved for you, raise
-          them with us directly.
-        </p>
-
-        <div className="mt-12 space-y-10">
-          <Qa
-            q="What if you don't deliver on time, or at all?"
-            a="Payments are staged 30 / 30 / 40 against build milestones, not a calendar. The 30% mid-construction tranche is only released after an owner inspection. Optional third-party escrow at roughly 1 to 2% of the deal is available; we recommend it, particularly for buyers who cannot visit during the build. Contracts are notarized through a licensed PPAT, with delivery dates and late-delivery remedies set in the PPJB."
-          />
-          <Qa
-            q="How safe is the title and the legal structure?"
-            a="The land is freehold. Sertifikat Hak Milik (SHM), Indonesia's strongest title, registered at BPN in the founder's own name as an Indonesian citizen. That is the cleanest position the land can sit in; foreign buyers then layer on top via either a notarized lease from the SHM holder or PT PMA holding Hak Guna Bangunan under PP 18/2021. We don't post the certificate publicly because land-title screenshots are a known vector for impersonation fraud in Bali, but the SHM, the parent title chain, the PPAT engagement and any company documents are shared directly in a serious conversation, and independent legal review is welcome before any deposit."
-          />
-          <Qa
-            q="What about Bali oversupply? Aren't there already too many villas?"
-            a="Kaba Kaba is not for everyone. That's the point. Canggu is busier, faster, more crowded, and the rate compression on weak villa product reflects that. OMA isn't built to compete in that fight. It is built for buyers who specifically want the slower end of Bali, with Canggu still 25 minutes away when they want it. The audience self-selects, and Bali Governor's Instruction 5 of 2025, which prohibits new rice-field conversion across six regencies including Tabanan, caps future competing supply on agricultural land. The quieter corridor stays quieter."
-          />
-          <Qa
-            q="What's the realistic net yield after tax, not the slide?"
-            a="The scenarios on this page are already net of the 18% management benchmark, fixed core ops and a 7% utilities reserve. Indonesian tax sits below that. A PT PMA pays 22% corporate income tax on net profit, then dividends to a foreign shareholder carry 20% PPh 26 withholding, often reduced to 10 to 15% under a tax treaty with a Certificate of Domicile. A non-resident holding in own name faces 20% PPh 26 on gross rent under Article 26. On the base case of ~USD 29,700 net of operations, that lands in roughly the USD 18,500 to USD 23,000 range in your home account after Indonesian withholding, depending on structure and treaty. Still a meaningful after-tax yield on USD 250,000, but not the headline number. We walk through the exact figure for your structure on a call."
-          />
-          <Qa
-            q="How do I exit when the time comes?"
-            a="Two routes, both well-trodden. A leasehold owner transfers the remaining term via a notarized assignment, the same mechanism used to sell freehold here, and because Tabanan land values have been moving with the corridor's policy and infrastructure story, mid-term leasehold transfers in this area have typically traded inline with the underlying land, often profitably. A PT PMA freehold owner can sell the company shares (transferring the underlying HGB cleanly) or transfer the HGB out and sell as an Indonesian asset. Comparable resale data shared on request."
-          />
-          <Qa
-            q="Why isn't a bigger Bali developer doing this?"
-            a="The Tabanan corridor only became investable on the policy and infrastructure shifts of the last 12 to 18 months: the rice-field conversion ban, the Nuanu Creative City build-out, and the published transit planning. Most established Bali developers are anchored in saturated south markets, where they are now defending price rather than chasing a quieter corridor. OMA is small on purpose: one site, design-led, repeatable. The product is the differentiation, not the inventory volume."
-          />
-        </div>
-      </section>
-
-      {/* Who's behind OMA */}
-      <section className="bg-stone-50 border-y border-stone-200">
-        <div className="max-w-5xl mx-auto px-6 py-24">
-          <div className="text-xs uppercase tracking-[0.18em] text-stone-500 mb-3">
-            Who's behind OMA
-          </div>
-          <h2 className="font-serif text-3xl sm:text-4xl text-stone-900 max-w-3xl">
-            A product person, building a product company in Bali.
-          </h2>
-
-          <div className="mt-10 grid md:grid-cols-3 gap-10">
-            <div className="md:col-span-1">
-              <div className="aspect-square overflow-hidden rounded-lg bg-stone-100 border border-stone-200">
-                <img
-                  src="/founder/irvan-lathief.webp"
-                  alt="Irvan Lathief, founder of OMA Townhouse"
-                  className="h-full w-full object-cover"
-                  loading="lazy"
-                />
-              </div>
-              <div className="mt-4 text-sm">
-                <div className="font-medium text-stone-900">Irvan Lathief</div>
-                <div className="text-stone-500">Founder, OMA Townhouse</div>
-                <a
-                  href="https://irvanlathief.com"
-                  data-external="true"
-                  className="mt-3 inline-flex items-center gap-1 text-sm text-stone-700 hover:text-stone-900 underline underline-offset-4"
-                >
-                  irvanlathief.com
-                  <ArrowRight className="w-3.5 h-3.5" />
-                </a>
-              </div>
-            </div>
-
-            <div className="md:col-span-2 text-stone-800 leading-relaxed space-y-4">
-              <p>
-                <strong className="text-stone-900">
-                  A product designer who codes.
-                </strong>{" "}
-                Ten-plus years in product design and design leadership, with a
-                bias for shipping working things over writing specs. Based in
-                Bali, originally from Indonesia, has lived and worked across
-                Germany, Australia and home.
-              </p>
-              <p>
-                <strong className="text-stone-900">Track record.</strong> Built
-                Fleetwise from the first line of code through its first paying
-                customer, then handed it to an engineering team to scale. As
-                founder of DotDesign, led product work for Asia Pacific
-                Leaders Malaria Alliance, GovTech Indonesia (Kampus Merdeka,
-                Akun Belajar, Merdeka Mengajar), and Orangetheory Fitness
-                across the region.
-              </p>
-              <p>
-                <strong className="text-stone-900">
-                  Why OMA is design-led.
-                </strong>{" "}
-                Most Bali off-plan is sold on land economics. OMA is built like
-                a product: one floor plan, refined until every square metre
-                earns its keep; one site at a time, so the build crew gets
-                sharper instead of stretched; finishes specified for the first
-                owner and the next, not for a brochure.
-              </p>
-              <p>
-                <strong className="text-stone-900">
-                  First project, deliberately.
-                </strong>{" "}
-                OMA Townhouse in Kaba Kaba is OMA's first development. That's
-                a feature, not a footnote. The founder is on every detail; the
-                land is held in his own name as freehold (SHM); staged
-                payments, milestone inspections, optional escrow and direct
-                founder access are built into the structure precisely because
-                we know what an early-buyer position means.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
-
-function FooterCta({ unlocked }: { unlocked: boolean }) {
-  return (
-    <section className="max-w-5xl mx-auto px-6 py-24 text-center">
-      <h2 className="font-serif text-3xl sm:text-4xl text-stone-900">
-        Talk to the team.
-      </h2>
-      <p className="mt-3 text-stone-600 max-w-xl mx-auto">
-        {unlocked
-          ? "We're already on our way to you. If you'd like to move faster, WhatsApp us or reply to the email we just sent."
-          : "Unlock the pitch above, or message us on WhatsApp and we'll walk you through it personally."}
-      </p>
-      <div className="mt-8 flex items-center justify-center gap-3">
-        <a
-          href="https://wa.me/"
-          data-external="true"
-          className="inline-flex items-center gap-2 rounded-md bg-stone-900 text-white px-4 py-2 text-sm font-medium hover:bg-stone-800"
-        >
-          WhatsApp
-        </a>
-        <a
-          href="/"
-          className="inline-flex items-center gap-2 rounded-md border border-stone-300 px-4 py-2 text-sm font-medium hover:bg-stone-50 text-stone-700"
-        >
-          Back to the home page
-        </a>
-      </div>
-    </section>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
+function Metric({ label, value }: { label: string; value: string }) {
   return (
     <div>
-      <div className="text-xs uppercase tracking-[0.18em] text-stone-500">
-        {label}
-      </div>
-      <div className="mt-1 font-serif text-2xl text-stone-900">{value}</div>
+      <span className="block text-sm text-white/45">{label}</span>
+      <strong className="mt-1 block text-xl font-medium">{value}</strong>
     </div>
   );
 }
 
-function PriceCard({
-  tier,
-  from,
-  standard,
-  note,
-  highlighted,
+function RangeInput({
+  label,
+  value,
+  display,
+  min,
+  max,
+  step,
+  minLabel,
+  maxLabel,
+  onChange,
 }: {
-  tier: string;
-  from: string;
-  standard: string;
-  note: string;
-  highlighted?: boolean;
+  label: string;
+  value: number;
+  display: string;
+  min: number;
+  max: number;
+  step: number;
+  minLabel: string;
+  maxLabel: string;
+  onChange: (value: number) => void;
+}) {
+  return (
+    <label className="block">
+      <span className="flex items-center justify-between gap-4 text-sm">
+        <span>{label}</span>
+        <strong>{display}</strong>
+      </span>
+      <input
+        type="range"
+        value={value}
+        min={min}
+        max={max}
+        step={step}
+        onInput={event => onChange(Number(event.currentTarget.value))}
+        className="mt-4 w-full accent-black"
+      />
+      <span className="mt-2 flex justify-between text-xs text-black/40">
+        <span>{minLabel}</span>
+        <span>{maxLabel}</span>
+      </span>
+    </label>
+  );
+}
+
+function BreakdownRow({
+  label,
+  value,
+  muted = false,
+  strong = false,
+}: {
+  label: string;
+  value: string;
+  muted?: boolean;
+  strong?: boolean;
 }) {
   return (
     <div
-      className={`rounded-lg border p-6 ${
-        highlighted
-          ? "border-stone-900 bg-white shadow-md"
-          : "border-stone-200 bg-white"
+      className={`flex items-baseline justify-between gap-5 ${
+        strong ? "border-t border-white/20 pt-4" : ""
       }`}
     >
-      <div className="text-xs uppercase tracking-[0.18em] text-stone-500">
-        {tier}
-      </div>
-      <div className="mt-2 font-serif text-2xl text-stone-900">From {from}</div>
-      <div className="text-sm text-stone-500">Standard: {standard}</div>
-      <p className="mt-4 text-sm text-stone-700 leading-relaxed">{note}</p>
+      <span className={`text-sm ${muted ? "text-white/40" : "text-white/60"}`}>
+        {label}
+      </span>
+      <strong className={strong ? "text-xl" : "text-sm"}>{value}</strong>
     </div>
   );
 }
 
-function Stage({
-  percent,
-  title,
-  body,
+function GalleryLightbox({
+  index,
+  onChange,
+  onClose,
 }: {
-  percent: string;
-  title: string;
-  body: string;
+  index: number | null;
+  onChange: (index: number) => void;
+  onClose: () => void;
 }) {
+  useEffect(() => {
+    if (index === null) return;
+    const onKey = (event: KeyboardEvent) => {
+      if (event.key === "Escape") onClose();
+      if (event.key === "ArrowRight") onChange((index + 1) % GALLERY.length);
+      if (event.key === "ArrowLeft")
+        onChange((index - 1 + GALLERY.length) % GALLERY.length);
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  }, [index, onChange, onClose]);
+
   return (
-    <div className="bg-white rounded-lg border border-stone-200 p-6">
-      <div className="font-serif text-3xl text-stone-900">{percent}</div>
-      <div className="mt-3 text-sm font-medium text-stone-900">{title}</div>
-      <p className="mt-2 text-sm text-stone-600 leading-relaxed">{body}</p>
-    </div>
+    <AnimatePresence>
+      {index !== null && (
+        <motion.div
+          className="fixed inset-0 z-[110] flex flex-col bg-black text-white"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <div className="flex items-center justify-between p-5 sm:px-8">
+            <div>
+              <p className="text-xs text-white/45">
+                {index + 1} / {GALLERY.length}
+              </p>
+              <h2 className="mt-1 text-xl font-medium">
+                {GALLERY[index].title}
+              </h2>
+            </div>
+            <button
+              type="button"
+              onClick={onClose}
+              className="flex h-11 w-11 items-center justify-center rounded-full border border-white/25 hover:bg-white hover:text-black"
+              aria-label="Close gallery"
+            >
+              <X className="h-4 w-4" />
+            </button>
+          </div>
+          <div className="relative flex min-h-0 flex-1 items-center justify-center px-5 pb-5 sm:px-8">
+            <img
+              src={GALLERY[index].src}
+              alt={GALLERY[index].alt}
+              className="h-full max-h-[78vh] w-full rounded-[18px] object-contain"
+            />
+            <button
+              type="button"
+              onClick={() =>
+                onChange((index - 1 + GALLERY.length) % GALLERY.length)
+              }
+              className="absolute left-7 flex h-12 w-12 items-center justify-center rounded-full border border-white/25 bg-black/40 backdrop-blur-md hover:bg-white hover:text-black"
+              aria-label="Previous image"
+            >
+              <ArrowLeft className="h-5 w-5" />
+            </button>
+            <button
+              type="button"
+              onClick={() => onChange((index + 1) % GALLERY.length)}
+              className="absolute right-7 flex h-12 w-12 items-center justify-center rounded-full border border-white/25 bg-black/40 backdrop-blur-md hover:bg-white hover:text-black"
+              aria-label="Next image"
+            >
+              <ArrowRight className="h-5 w-5" />
+            </button>
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
 
-function FeatureCard({ title, points }: { title: string; points: string[] }) {
-  return (
-    <div>
-      <div className="text-sm font-medium text-stone-900 mb-3">{title}</div>
-      <ul className="space-y-2 text-stone-700">
-        {points.map((p) => (
-          <li key={p} className="flex items-start gap-2">
-            <Check className="w-4 h-4 mt-0.5 text-emerald-600 shrink-0" />
-            <span>{p}</span>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-}
+function PlanLightbox({
+  floor,
+  onClose,
+}: {
+  floor: FloorKey | null;
+  onClose: () => void;
+}) {
+  const [zoom, setZoom] = useState(1);
 
-function Qa({ q, a }: { q: string; a: string }) {
+  useEffect(() => {
+    if (floor === null) setZoom(1);
+  }, [floor]);
+
   return (
-    <div>
-      <h3 className="font-serif text-xl text-stone-900">{q}</h3>
-      <p className="mt-3 text-stone-700 leading-relaxed">{a}</p>
-    </div>
+    <AnimatePresence>
+      {floor && (
+        <motion.div
+          className="fixed inset-0 z-[115] flex flex-col bg-white text-black"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+        >
+          <div className="flex items-center justify-between gap-5 border-b border-black/10 p-5 sm:px-8">
+            <div>
+              <p className="text-sm text-black/45">{FLOOR_PLANS[floor].area}</p>
+              <h2 className="mt-1 text-2xl font-medium">
+                {FLOOR_PLANS[floor].label}
+              </h2>
+            </div>
+            <div className="flex items-center gap-2">
+              <button
+                type="button"
+                onClick={() => setZoom(value => Math.max(1, value - 0.25))}
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-black/15"
+                aria-label="Zoom out"
+              >
+                <Minus className="h-4 w-4" />
+              </button>
+              <button
+                type="button"
+                onClick={() => setZoom(value => Math.min(2.5, value + 0.25))}
+                className="flex h-11 w-11 items-center justify-center rounded-full border border-black/15"
+                aria-label="Zoom in"
+              >
+                <Plus className="h-4 w-4" />
+              </button>
+              <button
+                type="button"
+                onClick={onClose}
+                className="ml-2 flex h-11 w-11 items-center justify-center rounded-full bg-black text-white"
+                aria-label="Close floor plan"
+              >
+                <X className="h-4 w-4" />
+              </button>
+            </div>
+          </div>
+          <div className="min-h-0 flex-1 overflow-auto p-6 sm:p-10">
+            <img
+              src={FLOOR_PLANS[floor].image}
+              alt={`${FLOOR_PLANS[floor].label} architectural plan`}
+              style={{ transform: `scale(${zoom})` }}
+              className="mx-auto h-full max-h-[calc(100vh-150px)] w-full origin-top object-contain transition-transform duration-300"
+            />
+          </div>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }

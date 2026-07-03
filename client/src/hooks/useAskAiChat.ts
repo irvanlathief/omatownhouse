@@ -17,6 +17,9 @@ export interface ChatMessage {
 export const WELCOME_TEXT =
   "Hey, welcome to OMA Townhouse.\n\nHappy to walk you through the townhouse, the Kaba Kaba area, or how buying here works. What's on your mind?";
 
+const INVESTOR_WELCOME_TEXT =
+  "You are looking at the full OMA investor case.\n\nI can help you compare ownership routes, understand the floor plans, or question the return assumptions. Where should we start?";
+
 function getInlineFallback(content: string) {
   const normalized = content.toLowerCase();
 
@@ -63,7 +66,11 @@ export function useAskAiChat() {
   // The welcome message is shown statically. The earlier typewriter animation
   // pulled attention on landing; the static text keeps the chat looking ready
   // without grabbing focus.
-  const displayedText = WELCOME_TEXT;
+  const displayedText =
+    typeof window !== "undefined" &&
+    window.location.pathname.startsWith("/investors")
+      ? INVESTOR_WELCOME_TEXT
+      : WELCOME_TEXT;
   const isTypingComplete = true;
 
   // Keep the message list pinned to the latest message WITHOUT scrolling the

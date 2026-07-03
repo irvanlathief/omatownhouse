@@ -169,61 +169,78 @@
   font-weight: 500;
 }
 
+.investor-field {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.16);
+  border-radius: 14px;
+  background: #fff;
+  padding: 0.8rem 0.9rem;
+  color: #000;
+  font-size: 0.875rem;
+  outline: none;
+  transition:
+    border-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.investor-field:focus {
+  border-color: rgba(0, 0, 0, 0.55);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.06);
+}
+
 #oma-site-shell {
   width: 100%;
   transition: width 500ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@property --oma-gleam-angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
 .oma-guide-trigger {
-  --oma-gleam-angle: 0deg;
   isolation: isolate;
 }
 
 .oma-guide-trigger::before {
   position: absolute;
-  top: 46%;
-  right: 6%;
-  bottom: -16px;
-  left: 6%;
+  right: 10%;
+  bottom: -9px;
+  left: 10%;
+  height: 17px;
   z-index: -1;
   border-radius: 999px;
-  background: conic-gradient(
-    from var(--oma-gleam-angle),
-    #2997ff,
-    #bf5af2,
-    #ff375f,
-    #ff9f0a,
-    #ffd60a,
-    #30d158,
-    #64d2ff,
-    #2997ff
+  background: linear-gradient(
+    100deg,
+    transparent 4%,
+    rgba(30, 91, 255, 0.15) 24%,
+    rgba(69, 190, 255, 0.7) 42%,
+    rgba(215, 250, 255, 0.82) 52%,
+    rgba(31, 132, 255, 0.62) 64%,
+    rgba(21, 74, 214, 0.12) 82%,
+    transparent 96%
   );
+  background-size: 220% 100%;
   content: "";
-  opacity: 0;
-  filter: blur(18px) saturate(1.08);
+  opacity: 0.16;
+  filter: blur(12px);
   pointer-events: none;
-  transform: translateY(8px) scaleX(0.82) scaleY(0.62);
+  transform: translateY(3px) scaleX(0.78) scaleY(0.42);
   transition:
-    opacity 250ms ease,
-    transform 250ms ease;
+    opacity 300ms ease,
+    transform 300ms ease;
 }
 
 .oma-guide-trigger:hover::before,
 .oma-guide-trigger:focus-visible::before {
-  opacity: 0.78;
-  transform: translateY(10px) scaleX(0.96) scaleY(0.74);
-  animation: oma-guide-gleam 1.8s linear infinite;
+  opacity: 0.58;
+  transform: translateY(4px) scaleX(0.94) scaleY(0.55);
+  animation: oma-guide-gleam 2.4s ease-in-out infinite;
 }
 
 @keyframes oma-guide-gleam {
-  to {
-    --oma-gleam-angle: 1turn;
+  0%,
+  100% {
+    background-position: 110% 50%;
+  }
+
+  50% {
+    background-position: -10% 50%;
   }
 }
 
