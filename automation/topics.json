@@ -259,7 +259,7 @@
     },
     {
       "id": "bali-property-due-diligence",
-      "status": "drafting",
+      "status": "published",
       "priority": 13,
       "theme": "off-plan",
       "atpType": "what",
@@ -275,8 +275,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-03",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/34"
     },
     {
       "id": "rental-management-bali-remote",
