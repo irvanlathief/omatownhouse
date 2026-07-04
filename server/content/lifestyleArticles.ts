@@ -944,4 +944,64 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "villa-management-bali-remote-owners",
+    title: "Managing a Bali Rental Villa from Abroad",
+    category: "investment",
+    imageUrl: "/blog/villa-rental-pool-management.webp",
+    sortOrder: 23,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-04",
+    metaDescription:
+      "Manage a Bali rental villa from the US or Dubai using a local company. Fees run 20-30% of gross; they handle staff, OTAs, and monthly reports. PT PMA required.",
+    body: `<p>You manage a Bali rental villa from the US or Dubai by appointing a local villa management company. They handle the daily operations: hiring and supervising staff, setting nightly rates across <a href="https://www.airbnb.com" data-external="true">Airbnb</a>, Booking.com, and Agoda through a channel manager, responding to guest inquiries, coordinating maintenance, and sending you a monthly profit and loss report. Your role is reviewing that report, approving any significant repair, and making decisions by email or a shared owner portal.</p><p>Before you take a single booking, you need the right legal structure in place. Individual foreigners cannot hold an accommodation license under Indonesian law. Rental income from a Bali villa must flow through a PT PMA (Perseroan Terbatas Penanaman Modal Asing) company that holds the Villa license under business code KBLI 55193 and a registered business identification number (NIB) issued through <a href="https://oss.go.id" data-external="true">Indonesia's OSS portal</a>. Operating without this structure puts your listing at risk of removal from OTA platforms and exposes you to fines. The PT PMA setup is covered in more detail in the <a href="/blog/foreigners-buy-property-bali">foreign ownership guide</a>.</p><p>A full-service management contract typically runs 20 to 30 percent of gross rental revenue. That fee covers staff management, dynamic pricing across OTA channels, guest communication and check-in logistics, routine maintenance oversight, and monthly owner reporting with dashboard access. Separately, OTA platforms take their own commission of roughly 15 percent per booking. Your net after both layers is roughly 55 to 65 percent of gross before utilities and ongoing maintenance costs, a structure comparable to hiring a property manager for a US short-term rental where similar all-in costs apply.</p><p>Listing directly on Airbnb without a management company is possible once your PT PMA and NIB are active, but most absentee owners find a professional manager delivers better occupancy. Dynamic pricing tools, timely guest review management, and on-site coordination eliminate the time-zone problem. Compare that to Dubai, where owners engage RERA-licensed managers under a simpler licensing path, but the day-to-day logic is the same: appoint a local operator, agree on a fee, and review the numbers each month. This is general information, not financial or legal advice.</p>`,
+    venues: [],
+    heroImage: "/blog/villa-rental-pool-management.webp",
+    gallery: [
+      {
+        url: "/blog/digital-nomad-cafe.webp",
+        alt: "Remote workers on laptops in a Bali coworking cafe, illustrating remote property management",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/",
+      },
+      {
+        url: "/blog/remote-owner-reviewing-reports.webp",
+        alt: "Property owner reviewing monthly rental income reports on a laptop from a remote location",
+        credit: "Karolina Grabowska / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/woman-using-a-laptop-4050290/",
+      },
+    ],
+    citations: [
+      {
+        label: "Emerhub: Renting Out a Villa in Bali as a Foreign Investor",
+        url: "https://emerhub.com/bali/renting-out-villa-in-bali/",
+      },
+      {
+        label: "Cekindo: How to Rent a Villa in Bali Legally",
+        url: "https://www.cekindo.com/blog/villa-in-bali",
+      },
+      {
+        label: "Indonesia OSS Portal: NIB and accommodation business licensing",
+        url: "https://oss.go.id",
+      },
+    ],
+    faq: [
+      {
+        question: "What does a Bali villa management company do?",
+        answer:
+          "A villa management company handles everything an on-site owner would: hiring and supervising staff, managing OTA listings and nightly pricing, coordinating guest check-ins, resolving maintenance issues, and producing monthly financial statements. Most provide an owner portal so you can see bookings, maintenance logs, and cash flow without calling anyone.",
+      },
+      {
+        question: "How much does Bali villa management cost?",
+        answer:
+          "Full-service villa management typically runs 20 to 30 percent of gross rental revenue. On top of that, OTA platforms such as Airbnb and Booking.com charge roughly 15 percent per booking. Your net after both layers is approximately 55 to 65 percent of gross before utilities and ongoing maintenance. Some companies offer tiered packages at lower percentages but exclude staff management or marketing. This is a general range, not a guarantee of any specific return.",
+      },
+      {
+        question: "Can I list my Bali villa on Airbnb directly?",
+        answer:
+          "Yes, if your PT PMA company holds the Villa license (KBLI 55193) and a valid NIB registered through Indonesia's OSS portal. Without a PT PMA, a foreigner cannot legally hold the accommodation license required to take bookings on OTA platforms. Most remote owners appoint a management company to handle the listing because professional dynamic pricing and on-site guest coordination produce higher occupancy than self-management from overseas.",
+      },
+    ],
+  },
 ];
