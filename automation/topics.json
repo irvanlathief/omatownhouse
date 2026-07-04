@@ -280,7 +280,7 @@
     },
     {
       "id": "rental-management-bali-remote",
-      "status": "drafting",
+      "status": "published",
       "priority": 14,
       "theme": "investment",
       "atpType": "how",
@@ -296,8 +296,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-04",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/35"
     },
     {
       "id": "bali-second-home-visa-property",
