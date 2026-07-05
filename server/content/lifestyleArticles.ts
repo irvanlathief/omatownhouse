@@ -1004,4 +1004,69 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-visa-property-owner-investor",
+    title: "What Visa Do I Need to Live in Bali as a Property Owner?",
+    category: "lifestyle",
+    imageUrl: "/blog/bali-second-home-visa-passport-stamps.webp",
+    sortOrder: 24,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-05",
+    layoutVariant: "qa",
+    metaDescription:
+      "What visa do you need to live in Bali as a property owner? Buying alone does not give you a visa. The Second Home Visa E33 gives 5 or 10 year residency.",
+    body: `<p>Buying a Bali villa does not automatically give you a visa. A leasehold or PT PMA property can be owned and rented out as an absentee investor, visiting on a standard tourist visa, without an Indonesian stay permit. The visa question becomes relevant when you want to live in Bali long-term. The main route for a property owner in that position is the Second Home Visa, index E33, which gives 5 or 10 years of residency without a local employer, a local sponsor or any minimum age requirement.</p><p>The E33 is established under Directorate General of Immigration Circular Letter IMI-0820.GR.01.01 of 2022 and applications go through <a href="https://evisa.imigrasi.go.id" data-external="true">Indonesia's official e-visa portal</a>. To qualify, you must show financial capacity within 90 days of the stay permit being issued: either an IDR 2 billion deposit (approximately USD 130,000) in a state-owned Indonesian bank such as Bank Mandiri, BNI or BRI, or ownership of Indonesian property worth at least USD 1,000,000. Most buyers at typical off-plan villa price points use the deposit route, since the property value threshold sits well above starting prices in the Kaba Kaba market. The visa does not allow local work or Indonesian income sources; remote income from an employer or business based abroad is treated separately. Your spouse, children and parents can join as dependents on the same application without providing a separate IDR 2 billion deposit.</p><p>A PT PMA company structure opens a second permit route. A shareholder who holds a minimum personal shareholding of IDR 10 billion inside the PT PMA can apply for an Investor KITAS, index E28A. That IDR 10 billion shareholding bar sits higher than, and separate from, the IDR 2.5 billion minimum paid-up capital required to incorporate the PT PMA itself, so the Second Home Visa deposit route tends to be simpler for most buyers. PT PMA setup details are in our <a href="/blog/pt-pma-setup-bali-property">PT PMA guide</a>.</p><p>One practical link between visa status and ownership structure: Hak Pakai, the right-to-use title a foreign individual can hold directly in their own name, requires a valid Indonesian stay permit. Leasehold (Hak Sewa) and PT PMA freehold do not carry that requirement, which is why most absentee investors use one of those two structures. After three continuous years on an E33, the holder can apply for a KITAP, Indonesia's permanent stay permit, which has no fixed-term renewal. Ownership routes are in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a> and our <a href="/blog/freehold-vs-leasehold-bali">freehold vs leasehold guide</a>. This is general information, not immigration or legal advice; confirm current requirements with a licensed Indonesian immigration agent and the OMA Townhouse team before you apply.</p>`,
+    venues: [],
+    heroImage: "/blog/bali-second-home-visa-passport-stamps.webp",
+    gallery: [
+      {
+        url: "/blog/travel-documents-passport-visa-application.webp",
+        alt: "Passport and travel documents on a fabric surface representing a visa application",
+        credit: "Jakub Zerdzicki / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/32060712/",
+      },
+      {
+        url: "/blog/bali-resort-terrace-outdoor-living.webp",
+        alt: "Outdoor terrace with wicker seating at a Bali-style resort showing the day-to-day lifestyle for long-stay residents",
+        credit: "Kevin Yung / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/34811443/",
+      },
+    ],
+    citations: [
+      {
+        label: "Directorate General of Immigration: E33 Visa Rumah Kedua (official)",
+        url: "https://www.imigrasi.go.id/wna/permohonan-visa-republik-indonesia/e33-visa-rumah-kedua",
+      },
+      {
+        label: "Indonesia Official e-Visa portal (Direktorat Jenderal Imigrasi)",
+        url: "https://evisa.imigrasi.go.id",
+      },
+      {
+        label: "Emerhub: Indonesia Second Home Visa, Requirements and Application Process",
+        url: "https://emerhub.com/indonesia/indonesian-second-home-visa/",
+      },
+      {
+        label: "ILA Global Consulting: Setting Up a PT PMA in Indonesia",
+        url: "https://ilaglobalconsulting.com/setting-up-pt-pma-indonesia/",
+      },
+    ],
+    faq: [
+      {
+        question: "Can I get a Bali visa by buying property?",
+        answer:
+          "Not automatically. Buying a villa does not trigger a visa. The Second Home Visa (E33) has two financial routes: an IDR 2 billion deposit (approximately USD 130,000) in a state-owned Indonesian bank, or ownership of Indonesian property worth at least USD 1,000,000. Most buyers at typical off-plan Bali prices use the deposit route, since the property value threshold is above starting prices in the Kaba Kaba market.",
+      },
+      {
+        question: "What is the Bali Second Home Visa and who qualifies?",
+        answer:
+          "The Second Home Visa, index E33, is a stay permit for foreigners who want to live in Indonesia for 5 or 10 years without working there locally. You qualify by showing either an IDR 2 billion bank deposit or USD 1 million in Indonesian property within 90 days of the permit being issued. A spouse, children and parents can join as dependents without a separate deposit. Applications go through Indonesia's official e-visa portal.",
+      },
+      {
+        question: "Do I need a visa to rent out my Bali property?",
+        answer:
+          "No. A stay permit is not required to own or rent out a Bali villa as an absentee investor. The rental structure must still be legal: a PT PMA company holding the accommodation license under KBLI 55193, with a valid NIB from Indonesia's OSS portal. You can manage the rental remotely without holding an Indonesian visa and visit on a standard tourist entry.",
+      },
+    ],
+  },
 ];
