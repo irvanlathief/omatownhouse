@@ -1069,4 +1069,79 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-property-financing-foreigners",
+    title: "Can Foreigners Get Financing to Buy Bali Property?",
+    category: "investment",
+    imageUrl: "/blog/property-financing-consultation.webp",
+    sortOrder: 25,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-06",
+    layoutVariant: "qa",
+    metaDescription:
+      "Can foreigners get a mortgage to buy Bali property? Bank loans need a KITAS stay permit. Developer payment plans and US HELOC are the most used routes.",
+    heroImage: "/blog/property-financing-consultation.webp",
+    gallery: [
+      {
+        url: "/blog/mortgage-rate-analysis-documents.webp",
+        alt: "Financial adviser pointing to mortgage rate comparison documents on a desk",
+        credit: "RDNE Stock project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8292895/",
+      },
+      {
+        url: "/blog/currency-exchange-bank-counter.webp",
+        alt: "Hands exchanging US dollars and local currency at a bank counter, showing international money transfer",
+        credit: "Audy of Course / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/18804128/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Government Regulation PP No. 18 of 2021 (Hak Pengelolaan, Hak Atas Tanah - property rights and KPR access for foreigners)",
+        url: "https://peraturan.bpk.go.id/Home/Details/161848/pp-no-18-tahun-2021",
+      },
+      {
+        label:
+          "ANTARA News: Permata Bank and Savyavasa launch Indonesia's first expat mortgage (June 2025)",
+        url: "https://en.antaranews.com/news/357729/paving-the-way-for-expatriate-homeownership-savyavasa-and-permata-bank-launch-exclusive-foreign-mortgage-program",
+      },
+      {
+        label: "Exotiq Property: Buying Off Plan Property in Bali",
+        url: "https://www.exotiqproperty.com/blog/buying-off-plan-property-in-bali",
+      },
+      {
+        label: "ILA Global Consulting: How to Get a Loan in Bali as a Foreigner",
+        url: "https://ilaglobalconsulting.com/how-to-get-a-loan-as-foreigner-in-indonesia-and-bali/",
+      },
+      {
+        label: "Bankrate: Using a HELOC to Buy Property Overseas",
+        url: "https://www.bankrate.com/home-equity/use-heloc-to-buy-property-overseas/",
+      },
+      {
+        label: "Bank Indonesia Regulation 17/3/PBI/2015 (Mandatory Use of Rupiah)",
+        url: "https://peraturan.bpk.go.id/Details/135519/peraturan-bi-no-173pbi2015-tahun-2015",
+      },
+    ],
+    body: `<p>Most foreign buyers fund a Bali property purchase with cash or a developer installment plan. An Indonesian bank mortgage, the KPR (Kredit Pemilikan Rumah), is only available to foreigners who hold a valid Indonesian stay permit, a KITAS or KITAP. Without one, no Indonesian bank will lend. A US or Dubai-based buyer arriving without a stay permit has three realistic routes: a developer payment plan, equity borrowed against their home-market property, or full cash.</p><p>For KITAS or KITAP holders, the clearest option as of mid-2025 is the <a href="https://en.antaranews.com/news/357729/paving-the-way-for-expatriate-homeownership-savyavasa-and-permata-bank-launch-exclusive-foreign-mortgage-program" data-external="true">Permata KPR iB IMBT WNA</a>, Indonesia's first dedicated expat mortgage product, launched in June 2025. The minimum property value is IDR 2 billion (roughly USD 125,000), the minimum personal income is IDR 25 million per month, and the maximum loan-to-value is 60 percent, so you put in at least 40 percent. Interest rates for foreign borrowers from Indonesian banks typically run in the 8 to 12 percent range, and loan terms are generally 10 to 15 years, not the 25 to 30 years a local borrower might access. Commonwealth Bank Indonesia and J Trust Bank have similar products for qualifying residents. The legal gateway opened when the Job Creation Law, Law No. 11 of 2020, and its implementing <a href="https://peraturan.bpk.go.id/Home/Details/161848/pp-no-18-tahun-2021" data-external="true">Government Regulation No. 18 of 2021</a>, created the first legal pathway for foreigners with stay permits to hold property title and access a KPR.</p><p>For buyers without a stay permit, the developer installment plan is the most accessible path. An off-plan developer collects payments in stages during construction, with no residency requirement, no bank credit check and no LTV cap. The standard structure runs a reservation deposit of around 10 to 20 percent at signing, then staged payments at verified construction milestones such as foundation, structural frame, roof and interior finish, with the balance at handover. Most Bali off-plan developers offer these plans interest-free, as <a href="https://www.exotiqproperty.com/blog/buying-off-plan-property-in-bali" data-external="true">Exotiq Property's guide to buying off-plan in Bali</a> confirms. The PPJB locks in the schedule; the full off-plan legal framework is in our <a href="/blog/what-is-off-plan-property-bali">guide to off-plan property</a>.</p><p>A US buyer who holds equity in a US property can borrow against it through a HELOC or home equity loan. US lenders typically advance up to 80 to 85 percent of the home's value, and they do not restrict how the proceeds are used, so the Bali purchase is a cash transaction from the Indonesian side, per <a href="https://www.bankrate.com/home-equity/use-heloc-to-buy-property-overseas/" data-external="true">Bankrate's guide to using a HELOC for overseas property</a>. One tax note: under the Tax Cuts and Jobs Act 2017, HELOC interest is only deductible if the borrowed funds were used to buy or improve the home that secures the loan, so using a HELOC for a Bali villa removes that US interest deduction. A Dubai-based buyer can apply the same logic through a Loan Against Property from a UAE bank. Emirates NBD, DIB and Mashreq all offer equity release products for expatriate property owners, with loan-to-value ratios of 60 to 75 percent depending on the lender and the borrower's residency status. Either way, the proceeds convert to IDR before settlement, since <a href="https://peraturan.bpk.go.id/Details/135519/peraturan-bi-no-173pbi2015-tahun-2015" data-external="true">Bank Indonesia Regulation 17/3/PBI/2015</a> requires all domestic property transactions to settle in rupiah.</p><p>One ownership structure note: a PT PMA company can borrow from Indonesian commercial banks as a corporate entity, which removes the personal residency requirement that blocks individual KPR access. Banks that do not offer personal KPR to foreigners will often consider a PT PMA corporate property loan. The PT PMA setup is covered in our <a href="/blog/pt-pma-setup-bali-property">PT PMA guide</a>, and all foreign buyer ownership routes are in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>. This is general information, not financial, legal or tax advice. Bank products and stay permit requirements change; confirm the current position with a licensed Indonesian notary and a qualified financial adviser before you commit.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can I get an Indonesian bank loan as a foreigner?",
+        answer:
+          "Only if you hold a valid Indonesian stay permit, a KITAS or KITAP. Without one, no Indonesian bank will approve a mortgage. KITAS or KITAP holders can access the Permata KPR iB IMBT WNA, launched in June 2025, with a minimum 40 percent down payment, a minimum property value of IDR 2 billion (roughly USD 125,000), and rates in the 8 to 12 percent range. Commonwealth Bank Indonesia and J Trust Bank offer similar programs.",
+      },
+      {
+        question: "What developer financing options exist for Bali off-plan?",
+        answer:
+          "Most off-plan developers in Bali offer interest-free installment plans: a reservation deposit of around 10 to 20 percent at signing, then staged payments tied to verified construction milestones such as foundation, structural frame, roof and interior finish, with the balance at handover. No residency permit is required. This is the most accessible financing route for a foreign buyer without an Indonesian stay permit.",
+      },
+      {
+        question: "Can I use a home equity loan from the US to buy Bali property?",
+        answer:
+          "Yes. A US HELOC or home equity loan lets you borrow against your US property, and US lenders do not restrict how the proceeds are used. You arrive in Bali as a cash buyer. Note that under the Tax Cuts and Jobs Act 2017, HELOC interest is only deductible if the borrowed funds were used to improve the home securing the loan, so using proceeds for a Bali purchase removes that US interest deduction. This is general information, not tax advice; confirm your position with a US tax adviser.",
+      },
+    ],
+  },
 ];
