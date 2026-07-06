@@ -322,7 +322,7 @@
     },
     {
       "id": "financing-mortgage-bali-foreigners",
-      "status": "drafting",
+      "status": "published",
       "priority": 16,
       "theme": "investment",
       "atpType": "can",
@@ -338,8 +338,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-06",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/38"
     },
     {
       "id": "bali-vs-thailand-property",
