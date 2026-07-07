@@ -1134,4 +1134,83 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-thailand-property-investment",
+    title: "Bali vs Thailand Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 26,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-07",
+    layoutVariant: "qa",
+    metaDescription:
+      "Bali vs Thailand property investment: Thailand allows condo freehold within a 49% quota; Bali uses leasehold or PT PMA. Compare ownership, yields and rental tax.",
+    heroImage: "/blog/phuket-island-beach-aerial.webp",
+    body: `<p>For a foreign investor comparing Bali and Thailand, the first question is usually ownership, and the answer splits by property type. In Thailand, buying a condominium in your own name is straightforward: Section 19(2) of Thailand's Condominium Act B.E. 2522 (1979) allows foreign nationals to hold freehold title on condo units, provided total foreign-held floor area in the building stays within 49 percent of saleable space. That Chanote title deed registers in your name at the Thai Land Office. For a villa or any landed property in Thailand, the legal ceiling is a 30-year registered leasehold under the Thai Civil and Commercial Code, with renewals left as a contractual promise rather than a statutory right. Nominee company structures that were historically used to work around this have faced active prosecution in Thailand since 2024, with criminal penalties under the Land Code.</p><p>Bali does not offer direct individual freehold, but the villa holding structure extends further. A PT PMA company holds Hak Guna Bangunan (HGB) for up to 80 years under <a href="https://peraturan.bpk.go.id/Home/Details/161848/pp-no-18-tahun-2021" data-external="true">Government Regulation 18 of 2021</a>: an initial 30 years, extendable by 20, then renewable for 30. Company formation requires a minimum paid-up capital of IDR 2.5 billion, around USD 150,000, under BKPM Regulation 5 of 2025. For a buyer who wants a simpler entry, Bali leasehold (Hak Sewa) is available to any foreigner without a residence permit, and is commonly structured at 25 to 40 years per term with an extension clause built in. Ownership routes are covered fully in our <a href="/blog/freehold-vs-leasehold-bali">freehold vs leasehold guide</a>.</p><p>On yields, the two markets land in an overlapping published range, though the data sources differ. <a href="https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q1-2026-bali-hotel" data-external="true">Colliers' Q1 2026 Bali Hotel report</a> puts Bali gross villa yields at roughly 4.4 to 6.9 percent. <a href="https://www.colliers.com/en-th/research/phuket-residential-report-2025_2026" data-external="true">Colliers' Phuket Residential Report 2025-2026</a> and Savills Thailand both cite 5 to 8 percent gross for managed villas in Phuket's west coast corridor. Both figures are before management fees, which typically run 20 to 30 percent of revenue in either market, local taxes, and operating costs. Treat them as a range, not a promise. This is not financial advice.</p><p>Rental tax is one area where Thailand holds a marginal advantage for a non-resident. A non-resident landlord in Thailand pays 15 percent withholding on gross rental income, and both the US-Thailand and UAE-Thailand double tax agreements can reduce or credit that charge, according to <a href="https://www.hlbthai.com/thai-rental-properties-and-personal-income-tax-2/" data-external="true">HLB Thailand</a>. Indonesia's PPh 26 charges a non-resident individual 20 percent of gross rental income. A PT PMA company pays 22 percent corporate income tax on net profit instead, with dividends then subject to a further 20 percent withholding, though Indonesia has double tax treaties with both the US and UAE. The full Bali rental tax picture is in our <a href="/blog/tax-for-foreign-property-owners-bali">tax guide</a>.</p><p>A supply-side difference matters if you are looking at Tabanan specifically. Bali's Governor's Instruction Number 5 of 2025, in force from December 2, 2025, bans the conversion of productive rice fields to tourism use across six regencies including Tabanan, per <a href="https://emerhub.com/news/bali-criminalizes-rice-field-conversions/" data-external="true">Emerhub's coverage</a>. Phuket has no equivalent restriction and continues to absorb substantial new condominium supply, which has pressured yields in oversupplied corridors.</p><p>What the two markets offer is a different buyer profile, not a universal winner. Thailand's condo route delivers the simplest foreign freehold path for a buyer who wants a Chanote deed in their own name with no company formation required. Bali's PT PMA route gives a villa investor a longer statutory holding period and an off-plan entry price in emerging areas like Tabanan, in exchange for company setup and annual compliance costs. A US or UAE buyer with a preference for a private pool villa over a longer holding period tends to weigh those two variables against each other and decide based on budget and how much company overhead they are willing to manage. This is general information, not financial, legal, or tax advice. Confirm current ownership rules and licensing requirements with a qualified adviser in whichever market you buy. Foreign ownership and PT PMA details are in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>.</p>`,
+    venues: [],
+    gallery: [
+      {
+        url: "/blog/phuket-island-beach-aerial.webp",
+        alt: "Aerial view of Koh Khai Nai island in Phuket, Thailand, with turquoise water and a sandy beach reached by a floating pier",
+        credit: "Aykut Ekinci / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-with-drone-koh-khai-nai-island-phuket-thailand-beautiful-tropical-island-with-white-sand-beach-and-turquoise-clear-water-17422289/",
+      },
+      {
+        url: "/blog/thailand-villa-sunset-property.webp",
+        alt: "Villa property in Thailand at sunset, with a formal garden, tall trees and mountain views in the background",
+        credit: "Optical Chemist / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/charming-tuscan-style-villa-at-sunset-in-thailand-31999010/",
+      },
+      {
+        url: "/blog/phuket-coast-development-aerial.webp",
+        alt: "Aerial view of Phuket's developed west coast hillside, showing the density of resort and villa construction along the bay",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-phuket-coast-in-thailand-12358328/",
+      },
+    ],
+    citations: [
+      {
+        label: "Colliers Phuket Residential Report 2025-2026",
+        url: "https://www.colliers.com/en-th/research/phuket-residential-report-2025_2026",
+      },
+      {
+        label: "Colliers Quarterly Property Market Report Q1 2026 Bali Hotel",
+        url: "https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q1-2026-bali-hotel",
+      },
+      {
+        label: "Savills Thailand: Foreign Buyer's Complete Guide to Thai Property Law (2025 Edition)",
+        url: "https://www.savills.co.th/blog/article/225735/singapore-articles/the-foreign-buyer-s-complete-guide-to-thai-property-law-(2025-edition).aspx",
+      },
+      {
+        label: "HLB Thailand: Thai Rental Properties and Personal Income Tax",
+        url: "https://www.hlbthai.com/thai-rental-properties-and-personal-income-tax-2/",
+      },
+      {
+        label: "Government Regulation PP No. 18 of 2021 (Hak Pengelolaan, Hak Atas Tanah)",
+        url: "https://peraturan.bpk.go.id/Home/Details/161848/pp-no-18-tahun-2021",
+      },
+      {
+        label: "Emerhub: Bali Criminalizes Rice Field Conversions (Governor's Instruction No. 5/2025)",
+        url: "https://emerhub.com/news/bali-criminalizes-rice-field-conversions/",
+      },
+    ],
+    faq: [
+      {
+        question: "Can foreigners own property in Thailand more easily than Bali?",
+        answer:
+          "For condominiums, yes. Thailand's Condominium Act B.E. 2522 lets a foreigner hold freehold on a condo unit within the 49 percent foreign quota per building, with the title deed registering in their own name. For villas and landed property, Thailand's legal ceiling is a 30-year leasehold with no statutory renewal guarantee, while Bali's PT PMA company structure holds Hak Guna Bangunan for up to 80 years. The simpler route depends on the asset type.",
+      },
+      {
+        question: "Are Bali or Phuket rental yields higher for villas?",
+        answer:
+          "The published gross ranges overlap. Colliers puts Bali villa yields at roughly 4.4 to 6.9 percent for 2026, and Colliers and Savills Thailand both cite 5 to 8 percent gross for managed Phuket villas. Actual net yields in either market depend heavily on occupancy, management quality, and location, so treat any figure as a range. This is not financial advice.",
+      },
+      {
+        question: "Is Thailand or Bali better for a short-term rental property?",
+        answer:
+          "Neither is universally better. A Phuket villa in a managed program can earn year-round on international OTA channels, and the condo freehold route gives a simpler title. A Bali villa in a supply-constrained area like Tabanan rents on spillover demand from Canggu with a lower off-plan entry price, but requires a PT PMA company and a Villa license under KBLI 55193 before taking bookings. The better fit depends on your budget, preferred holding structure, and how much company formation overhead you are willing to manage.",
+      },
+    ],
+  },
 ];
