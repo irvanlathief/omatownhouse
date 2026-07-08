@@ -364,7 +364,7 @@
     },
     {
       "id": "bali-property-prices-2026",
-      "status": "drafting",
+      "status": "published",
       "priority": 18,
       "theme": "investment",
       "atpType": "what",
@@ -380,8 +380,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-08",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/40"
     },
     {
       "id": "usd-idr-exchange-rate-investment",
