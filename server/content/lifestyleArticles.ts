@@ -1213,4 +1213,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-property-prices-2026",
+    title: "Bali Property Prices in 2026: What the Market Shows",
+    category: "investment",
+    imageUrl: "/blog/bali-villa-cluster-aerial.webp",
+    sortOrder: 27,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-08",
+    layoutVariant: "qa",
+    metaDescription:
+      "Bali property prices in 2026 split by area: supply-constrained pockets hold value while oversupplied corridors compress. Canggu vs Tabanan land price gap explained.",
+    body: `<p>Bali property prices are moving in two directions at once in 2026. Supply-constrained pockets of the southern corridors and newer locations like Tabanan are holding or rising in asking price. Oversupplied corridors, notably parts of central Canggu where villa density built up sharply in 2023 and 2024, have seen nightly rate compression that is feeding into resale sentiment. Indonesia's national residential property price index grew just 0.62 percent year on year in Q1 2026 per <a href="https://www.bi.go.id/en/publikasi/laporan/Documents/Residential-Property-Survey-Quarter-1-2026.pdf" data-external="true">Bank Indonesia's quarterly survey</a>, well below what foreign buyers often assume when they read headline reports about Bali.</p><p>Demand is not the problem. <a href="https://bali.bps.go.id/en/pressrelease/2026/02/02/718014/tourism-overview-of-bali-province--december-2025.html" data-external="true">BPS-Statistics Indonesia Bali Province</a> recorded 6,948,754 direct foreign arrivals in 2025, up 9.72 percent year on year, the strongest annual figure the island has recorded. That sustains rental occupancy in well-run villas and keeps buyer interest from the US and UAE in place. The issue is that supply in some corridors has outrun demand, so the market has split.</p><p><a href="https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q1-2026-bali-hotel" data-external="true">Colliers' Q1 2026 Bali Hotel report</a> puts gross villa yields across the island in a 4.4 to 6.9 percent band, and notes that supply-constrained pockets are holding occupancy and rate. Oversaturated stretches, by contrast, face discounted nightly rates and weaker resale interest. A buyer comparing listings on headline price alone, without checking local rental occupancy in that specific pocket, is looking at the wrong variable.</p><p>On land, <a href="https://www.exotiqproperty.com/blog/bali-land-price-trends-what-investors-need-to-know" data-external="true">Exotiq Property's land price guide</a> lists prime Canggu freehold plots in a range of IDR 600 million to IDR 1.5 billion per are (one are equals 100 square metres), with top-corridor land above that. Tabanan, including the Kaba Kaba and Kediri areas, sits well below those levels. That land-basis gap is the core argument for off-plan buyers evaluating the area. Any listed figure is an asking price in a negotiated market, not a fixed rate, so treat it as a range.</p><p>The supply picture for Tabanan also changed in late 2025. Bali Governor's Instruction Number 5 of 2025, in force from 2 December 2025, bans the conversion of productive rice fields to tourism use across six regencies including Tabanan, as <a href="https://emerhub.com/news/bali-criminalizes-rice-field-conversions/" data-external="true">Emerhub</a> and <a href="https://thebalisun.com/balancing-land-conversion-and-tourism-development-to-be-key-focus-for-bali-in-2026/" data-external="true">The Bali Sun</a> have covered. Projects on non-agricultural land that already hold a building permit continue, but the instruction caps the future pipeline of competing sites on agricultural land. This is general information and not financial, tax or investment advice. Treat any price, yield or appreciation figure as a range at a point in time. Ownership structures for a foreign buyer are in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a> and rental tax in our <a href="/blog/tax-for-foreign-property-owners-bali">rental income tax guide</a>.</p>`,
+    venues: [],
+    heroImage: "/blog/bali-villa-cluster-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/bali-villa-rice-fields-aerial.webp",
+        alt: "Aerial view of a Bali villa with a pool set beside rice fields, illustrating the land-use contrast in Tabanan",
+        credit: "Tom Fisk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-luxurious-bali-villa-and-pool-36965360/",
+      },
+      {
+        url: "/blog/bali-luxury-resort-aerial-pool.webp",
+        alt: "Overhead aerial of a Bali luxury resort lap pool flanked by villa pavilions, showing the premium end of the island's property market",
+        credit: "Lukas Jahn / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-bali-resort-pool-and-villas-35068661/",
+      },
+    ],
+    citations: [
+      {
+        label: "Bank Indonesia: Residential Property Price Survey Q1 2026",
+        url: "https://www.bi.go.id/en/publikasi/laporan/Documents/Residential-Property-Survey-Quarter-1-2026.pdf",
+      },
+      {
+        label: "BPS-Statistics Indonesia Bali Province: Tourism Overview December 2025",
+        url: "https://bali.bps.go.id/en/pressrelease/2026/02/02/718014/tourism-overview-of-bali-province--december-2025.html",
+      },
+      {
+        label: "Colliers Quarterly Property Market Report Q1 2026 Bali Hotel",
+        url: "https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q1-2026-bali-hotel",
+      },
+      {
+        label: "Exotiq Property: Bali Land Price Trends, What Investors Need to Know",
+        url: "https://www.exotiqproperty.com/blog/bali-land-price-trends-what-investors-need-to-know",
+      },
+      {
+        label: "Emerhub: Bali Criminalizes Rice Field Conversions (Governor's Instruction No. 5/2025)",
+        url: "https://emerhub.com/news/bali-criminalizes-rice-field-conversions/",
+      },
+      {
+        label: "The Bali Sun: Balancing Land Conversion and Tourism Development in 2026",
+        url: "https://thebalisun.com/balancing-land-conversion-and-tourism-development-to-be-key-focus-for-bali-in-2026/",
+      },
+    ],
+    faq: [
+      {
+        question: "Are Bali property prices still rising in 2026?",
+        answer:
+          "In supply-constrained pockets, yes. In oversupplied corridors like parts of central Canggu, nightly rate compression is feeding into resale sentiment. Indonesia's national residential property price index grew 0.62 percent year on year in Q1 2026 per Bank Indonesia, a modest figure. Bali's villa segment is more differentiated than that average suggests, and the direction depends heavily on which area and which product quality you are looking at.",
+      },
+      {
+        question: "How have Canggu land prices changed over the past 5 years?",
+        answer:
+          "Established Bali agencies including Exotiq Property list prime Canggu freehold land in a range of IDR 600 million to IDR 1.5 billion per are (100 square metres), with top-corridor plots higher. Appreciation over the past five years has been significant relative to the regional baseline, but oversupply in some sub-corridors has since pressured nightly rates, which flows into weaker resale demand for lower-quality stock. Asking prices vary by exact location, zoning and road access. This is general information, not financial advice.",
+      },
+      {
+        question: "What areas of Bali have the most property price growth?",
+        answer:
+          "No tracker publishes a consistent sub-regency breakdown with enough history to rank areas by annual appreciation. What Colliers documents for 2026 is that supply-constrained pockets are holding occupancy and value better than oversupplied corridors. Emerging locations like Tabanan also offer a significantly lower entry price than the Canggu corridor, which leaves more room for future movement from a lower base. Treat any projection you read as a range, not a forecast. This is not financial advice.",
+      },
+    ],
+  },
 ];
