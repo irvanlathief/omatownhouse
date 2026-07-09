@@ -385,7 +385,7 @@
     },
     {
       "id": "usd-idr-exchange-rate-investment",
-      "status": "pending",
+      "status": "drafting",
       "priority": 19,
       "theme": "investment",
       "atpType": "how",
