@@ -385,7 +385,7 @@
     },
     {
       "id": "usd-idr-exchange-rate-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 19,
       "theme": "investment",
       "atpType": "how",
@@ -401,8 +401,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-09",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/42"
     },
     {
       "id": "foreign-ownership-can-buy",
