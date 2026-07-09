@@ -1286,4 +1286,69 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "usd-idr-exchange-rate-bali-property",
+    title: "USD/IDR Exchange Rate and Your Bali Property Investment",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 28,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-09",
+    layoutVariant: "qa",
+    metaDescription:
+      "How does the USD/IDR exchange rate affect your Bali property investment? Priced in USD, settled in IDR, with rental income flowing in rupiah.",
+    body: `<p>The USD/IDR exchange rate affects your Bali property investment at two points: when you buy, and when you repatriate rental income. The two effects run in opposite directions, and knowing which applies to which step keeps the numbers honest.</p><p>Off-plan villas in Bali are typically priced in US dollars for foreign buyers. The USD figure is the working reference, but <a href="https://peraturan.bpk.go.id/Details/135519/peraturan-bi-no-173pbi2015-tahun-2015" data-external="true">Bank Indonesia Regulation 17/3/PBI/2015</a> requires domestic transactions to settle in rupiah. Your payment wire converts to IDR at the <a href="https://www.bi.go.id/en/statistik/informasi-kurs/jisdor/default.aspx" data-external="true">Bank Indonesia JISDOR rate</a>, the Jakarta Interbank Spot Dollar Rate published daily on business days. The JISDOR tracked from roughly IDR 15,397 per dollar at end-2023 to IDR 16,095 at end-2024 per <a href="https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=ID" data-external="true">World Bank annual exchange rate data</a>, and reached an all-time high of IDR 18,171 on 8 June 2026 per Bank Indonesia records. If your sale and purchase agreement specifies fixed IDR amounts at each payment milestone, a weaker rupiah means each milestone costs more in dollar terms.</p><p>Rental income runs in the opposite direction. Revenue from your Bali villa reaches the PT PMA company in rupiah, whether the guest paid in IDR or the booking platform converted from another currency. When you repatriate that profit, you exchange IDR back to dollars at the market rate. The rupiah has depreciated roughly 34 percent against the dollar since 2015 per World Bank data, an average of about 3 percent per year in nominal terms. <a href="https://www.knightfrank.co.id/research" data-external="true">Knight Frank Indonesia's 2024 research</a> puts gross rental yields for Bali daily-rental villas in a 7 to 12 percent band, measured in IDR. Once you apply annual IDR depreciation, management fees (commonly 20 to 30 percent of gross rental revenue) and Indonesian rental income tax, the USD-equivalent return narrows considerably from that headline range. Treat all yield figures as a range, not a guarantee, and this is not financial advice.</p><p>A natural hedge sits inside the structure already. Villa operating costs, including staff, maintenance and management fees, are denominated in rupiah. When IDR weakens, your local cost base softens in dollar terms alongside rental revenue, so day-to-day operations are self-balancing in IDR. The exchange rate only bites at the repatriation step. Most operators manage this by holding an IDR account at an Indonesian bank for operating float, timing remittances when the rupiah is relatively stronger, and converting each payment milestone separately rather than locking a rate up front. Formal hedging instruments for IDR, called Non-Deliverable Forwards, are available from major international banks but carry a cost tied to the Indonesia-US interest rate differential that typically makes them impractical for individual villa investors. A Dubai-based buyer holding UAE dirhams faces a second conversion layer; because the AED is pegged to the US dollar, AED-to-IDR movements track the USD/IDR rate directly.</p><p>Check the current JISDOR on bi.go.id before planning any milestone payment. Rental income tax and repatriation rules are in our <a href="/blog/tax-for-foreign-property-owners-bali">rental income tax guide</a>, and ownership structures are in our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a>. This is general information and not financial, legal or tax advice; confirm current exchange rates and your specific situation with a qualified Indonesian adviser before you commit.</p>`,
+    venues: [],
+    heroImage: "/blog/idr-rupiah-banknotes-denominations.webp",
+    gallery: [
+      {
+        url: "/blog/usd-hundred-dollar-bills-stack.webp",
+        alt: "US one-hundred dollar bills with Benjamin Franklin portrait, representing the investor capital currency in a Bali property purchase",
+        credit: "Jonathan Borba / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/14820469/",
+      },
+      {
+        url: "/blog/bali-villa-pool-tropical-greenery.webp",
+        alt: "Private lap pool at a Bali villa surrounded by lush tropical garden and frangipani trees, showing the asset a foreign investor is buying",
+        credit: "Mark Direen / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/36418268/",
+      },
+    ],
+    citations: [
+      {
+        label: "Bank Indonesia JISDOR (Jakarta Interbank Spot Dollar Rate)",
+        url: "https://www.bi.go.id/en/statistik/informasi-kurs/jisdor/default.aspx",
+      },
+      {
+        label: "World Bank: Official Exchange Rate (Indonesia), IDR per USD annual average",
+        url: "https://data.worldbank.org/indicator/PA.NUS.FCRF?locations=ID",
+      },
+      {
+        label: "Bank Indonesia Regulation 17/3/PBI/2015: Mandatory Use of Rupiah (BPK)",
+        url: "https://peraturan.bpk.go.id/Details/135519/peraturan-bi-no-173pbi2015-tahun-2015",
+      },
+      {
+        label: "Knight Frank Indonesia: Research and market reports",
+        url: "https://www.knightfrank.co.id/research",
+      },
+    ],
+    faq: [
+      {
+        question: "What happens to my Bali investment if the rupiah weakens?",
+        answer:
+          "The effect depends on the step. At purchase, if your sale and purchase agreement specifies IDR settlement amounts at each milestone, a weaker rupiah means your USD buys more IDR and each milestone potentially costs fewer dollars than projected. For rental income, a weaker rupiah means each dollar of repatriated profit requires more IDR to buy, reducing the USD value of an IDR-denominated yield. The two effects offset each other partially, but the net position depends on how your SPA is structured and when you remit.",
+      },
+      {
+        question: "Are Bali property prices quoted in USD or IDR?",
+        answer:
+          "Off-plan villa prices for foreign buyers are typically quoted in USD by developers and agents. Legal settlement must occur in rupiah under Bank Indonesia Regulation 17/3/PBI/2015. Most sale and purchase agreements name a USD reference price and specify conversion to IDR at the Bank Indonesia JISDOR rate on each payment date, bridging the gap between the marketing convention and the legal requirement.",
+      },
+      {
+        question: "How do I manage currency risk in a Bali property investment?",
+        answer:
+          "The most practical steps are: keep an IDR operating account at an Indonesian bank to match local costs against local income; time remittances when the rupiah is relatively stronger against your home currency; and convert each payment milestone separately rather than fixing a single rate at signing. Formal Non-Deliverable Forward contracts for USD/IDR are available from major banks but the carry cost tied to the Indonesia-US interest rate differential typically makes them impractical for individual villa investors. This is general information, not financial advice.",
+      },
+    ],
+  },
 ];
