@@ -1351,4 +1351,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "annual-costs-owning-bali-villa",
+    title: "Annual Costs of Owning a Bali Villa as a Foreign Investor",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 29,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-10",
+    layoutVariant: "qa",
+    metaDescription:
+      "Annual costs of owning a Bali villa: PBB land tax, PT PMA compliance fees from USD 2,500/year, PLN electricity, insurance, and pool maintenance explained.",
+    body: `<p>Owning a Bali villa through a PT PMA company carries six main annual cost lines: land and building tax (PBB-P2), PT PMA compliance, electricity, insurance, pool and garden maintenance, and staff wages. For a mid-range three-bedroom pool villa, the combined holding costs typically run USD 12,000 to 24,000 per year before villa management fees or capital expenditure reserves.</p><p>PBB-P2 (Pajak Bumi dan Bangunan) is the annual land and building tax. The PT PMA, as registered title holder, receives an annual tax notice (SPPT) from the local revenue authority (BAPENDA) and pays by 31 August each year. Under <a href="https://djpk.kemenkeu.go.id" data-external="true">Law No. 1 of 2022 (HKPD)</a>, each Bali regency sets its own rate up to a national ceiling. In Badung regency, which covers Canggu, Seminyak, and Kuta, the commercial rate is around 0.3 percent of the government-assessed value (NJOP). On a villa with an NJOP of IDR 5 billion (roughly USD 310,000), that comes to approximately IDR 15 million per year (about USD 940). The non-taxable base threshold is IDR 12 million. Tabanan rates are set by a separate local regulation and should be confirmed with BAPENDA Tabanan or a licensed Indonesian tax adviser before budgeting.</p><p>PT PMA annual compliance covers monthly PPh withholding tax returns, an annual corporate income tax filing (SPT Tahunan Badan, due by end of April), and quarterly Investment Activity Reports (LKPM) submitted to BKPM via <a href="https://oss.go.id" data-external="true">Indonesia's OSS portal</a>. Outsourcing these to a local accounting and compliance firm costs USD 2,500 to 5,800 per year for a single-asset villa company, according to <a href="https://ilaglobalconsulting.com/setting-up-pt-pma-indonesia/" data-external="true">ILA Global Consulting</a> and <a href="https://www.cekindo.com/blog/requirements-for-pt-pma" data-external="true">Cekindo</a>.</p><p>PLN electricity for rental villas falls under the commercial B-2 tariff at <a href="https://web.pln.co.id/pelanggan/tarif-tenaga-listrik" data-external="true">IDR 1,444.70 per kWh</a>. A three to four-bedroom pool villa consuming 1,500 to 5,000 kWh per month incurs annual electricity bills of roughly IDR 30 million to 87 million (about USD 1,900 to 5,400). Property All Risks (PAR) insurance runs roughly 0.2 percent of the insured building value per year. On a villa insured at IDR 5 billion to 10 billion, expect IDR 10 million to 20 million annually (about USD 625 to 1,250), available from providers including <a href="https://www.allianzinsurancebali.com/property-insurance/" data-external="true">Allianz Insurance Bali</a> and BCA Insurance.</p><p>Pool maintenance (professional cleaning visits two to three times per week including chemicals) runs IDR 1.5 million to 2 million per month. If the villa employs two permanent staff, total employer costs including wages, <a href="https://www.bpjsketenagakerjaan.go.id/en/penerima-upah.html" data-external="true">BPJS social security contributions</a> at around 10 percent of wages, and the mandatory annual THR bonus come to roughly USD 6,000 to 9,000 per year. These holding costs run whether the villa is occupied or not. Budget a capital expenditure reserve of 3 to 5 percent of property value per year for appliances, roofing, and pool equipment. Villa management fees of 20 to 30 percent of gross rental revenue, covered in the <a href="/blog/villa-management-bali-remote-owners">villa management guide</a>, sit on top of these fixed costs. This is general information, not financial or legal advice; confirm your cost profile with a licensed Indonesian tax adviser before committing.</p>`,
+    venues: [],
+    heroImage: "/blog/villa-annual-budget-planning.webp",
+    gallery: [
+      {
+        url: "/blog/tropical-resort-villas-pool-beach.webp",
+        alt: "Southeast Asian resort villas with infinity pool set among tropical greenery above a sandy beach, illustrating the type of property incurring annual holding costs",
+        credit: "Quang Nguyen Vinh / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/photo-of-villas-near-beach-2476632/",
+      },
+      {
+        url: "/blog/tropical-villa-garden-lawn.webp",
+        alt: "White two-storey tropical villa with wooden balconies surrounded by a well-maintained green lawn, banana trees, and tropical planting",
+        credit: "Quang Nguyen Vinh / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/14024968/",
+      },
+    ],
+    citations: [
+      {
+        label: "Ministry of Finance DJPK: UU HKPD No. 1/2022 on regional fiscal relations (PBB-P2 framework)",
+        url: "https://djpk.kemenkeu.go.id",
+      },
+      {
+        label: "ILA Global Consulting: Setting Up a PT PMA in Indonesia (annual compliance costs)",
+        url: "https://ilaglobalconsulting.com/setting-up-pt-pma-indonesia/",
+      },
+      {
+        label: "Cekindo: PT PMA Requirements and Annual Obligations",
+        url: "https://www.cekindo.com/blog/requirements-for-pt-pma",
+      },
+      {
+        label: "PT PLN (Persero): Official Electricity Tariff Table (B-2 commercial rate)",
+        url: "https://web.pln.co.id/pelanggan/tarif-tenaga-listrik",
+      },
+      {
+        label: "OwnPropertyAbroad: Bali Villa Insurance Guide",
+        url: "https://ownpropertyabroad.com/indonesia/bali/villa-insurance-in-bali/",
+      },
+      {
+        label: "BPJS Ketenagakerjaan: Employer contribution rates for employees (official)",
+        url: "https://www.bpjsketenagakerjaan.go.id/en/penerima-upah.html",
+      },
+    ],
+    faq: [
+      {
+        question: "How much is the annual property tax (PBB) on a Bali villa?",
+        answer:
+          "The PBB-P2 rate is set by each Bali regency under Law No. 1 of 2022 (HKPD). In Badung regency (Canggu, Seminyak, Kuta), the commercial rate is around 0.3 percent of the government-assessed value (NJOP). On a villa with an NJOP of IDR 5 billion, that is roughly IDR 15 million per year (about USD 940). The non-taxable threshold is IDR 12 million. Tabanan rates are set separately by local regulation. The PT PMA receives an annual tax notice (SPPT) and pays by 31 August each year.",
+      },
+      {
+        question: "What does PT PMA annual compliance cost in Indonesia?",
+        answer:
+          "For a single-asset villa company, outsourcing PT PMA compliance to a local accounting firm typically costs USD 2,500 to 5,800 per year. This covers monthly PPh withholding tax returns, the annual corporate income tax return (SPT Tahunan Badan), and quarterly LKPM investment reports to BKPM via the OSS portal. The higher end applies when nominee director services or a foreign director KITAS work permit renewal is included. ILA Global Consulting and Cekindo publish ranges in this band.",
+      },
+      {
+        question: "What are the ongoing holding costs for a Bali investment villa?",
+        answer:
+          "For a mid-range three-bedroom pool villa held via PT PMA, the main annual holding costs are: PBB land tax (roughly IDR 6 million to 15 million), PT PMA compliance (USD 2,500 to 5,800), PLN commercial electricity (IDR 30 million to 87 million), property insurance at roughly 0.2 percent of insured value, pool maintenance (IDR 18 million to 24 million), and staff wages and BPJS if employing permanent staff. The combined total for a mid-range villa typically runs USD 12,000 to 24,000 per year before villa management fees. This is a general estimate, not financial advice.",
+      },
+    ],
+  },
 ];

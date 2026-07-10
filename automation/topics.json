@@ -217,7 +217,7 @@
     },
     {
       "id": "bali-property-exit-strategy",
-      "status": "drafting",
+      "status": "published",
       "priority": 11,
       "theme": "investment",
       "atpType": "how",
@@ -233,12 +233,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-01",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/32"
     },
     {
       "id": "pt-pma-setup-bali",
-      "status": "drafting",
+      "status": "published",
       "priority": 12,
       "theme": "foreign-ownership",
       "atpType": "how",
@@ -254,12 +254,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-02",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/33"
     },
     {
       "id": "bali-property-due-diligence",
-      "status": "drafting",
+      "status": "published",
       "priority": 13,
       "theme": "off-plan",
       "atpType": "what",
@@ -275,8 +275,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-03",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/34"
     },
     {
       "id": "rental-management-bali-remote",
@@ -301,7 +301,7 @@
     },
     {
       "id": "bali-second-home-visa-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 15,
       "theme": "lifestyle",
       "atpType": "what",
@@ -317,8 +317,8 @@
       "category": "lifestyle",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-05",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/36"
     },
     {
       "id": "financing-mortgage-bali-foreigners",
@@ -445,6 +445,216 @@
       "suggestedVenues": [],
       "publishedAt": "2026-02-17",
       "prUrl": "seeded with the blog feature"
+    },
+    {
+      "id": "annual-costs-owning-bali-villa",
+      "status": "pending",
+      "priority": 20,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What are the annual costs of owning a Bali villa as a foreign investor?",
+      "targetKeywords": ["annual costs Bali villa", "Bali villa ownership costs", "PT PMA annual maintenance cost Bali"],
+      "relatedQuestions": [
+        "How much is the annual property tax (PBB) on a Bali villa?",
+        "What does PT PMA annual compliance cost in Indonesia?",
+        "What are the ongoing holding costs for a Bali investment villa?"
+      ],
+      "proposedSlug": "annual-costs-owning-bali-villa",
+      "proposedTitle": "Annual Costs of Owning a Bali Villa as a Foreign Investor",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-portugal-property",
+      "status": "pending",
+      "priority": 21,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Portugal for foreign property investors: how do they compare?",
+      "targetKeywords": ["Bali vs Portugal property investment", "Bali or Algarve investment", "Portugal vs Bali rental yield"],
+      "relatedQuestions": [
+        "Can foreigners own property more easily in Portugal or Bali?",
+        "Are Bali or Portugal rental yields higher for villas?",
+        "How do taxes compare for foreign owners in Bali vs Portugal?"
+      ],
+      "proposedSlug": "bali-vs-portugal-property-investment",
+      "proposedTitle": "Bali vs Portugal Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "can-i-retire-in-bali",
+      "status": "pending",
+      "priority": 22,
+      "theme": "lifestyle",
+      "atpType": "can",
+      "primaryQuestion": "Can I retire in Bali as a US or UAE citizen who owns property there?",
+      "targetKeywords": ["retire in Bali as American", "retiring to Bali from USA", "Bali retirement cost of living"],
+      "relatedQuestions": [
+        "What does it cost to live in Bali in retirement?",
+        "Is Bali a good place to retire for US citizens?",
+        "Can I retire to Bali on a Second Home Visa?"
+      ],
+      "proposedSlug": "retiring-to-bali-us-uae-investors",
+      "proposedTitle": "Can I Retire in Bali? A Guide for US and UAE Investors",
+      "category": "lifestyle",
+      "isInsight": false,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "what-is-hak-pakai",
+      "status": "pending",
+      "priority": 23,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What is Hak Pakai and can a foreigner use it to own Bali property in their own name?",
+      "targetKeywords": ["Hak Pakai Bali foreigners", "Hak Pakai vs leasehold Bali", "foreign ownership Hak Pakai Indonesia"],
+      "relatedQuestions": [
+        "How long does Hak Pakai last and can it be extended?",
+        "What visa do I need to hold Hak Pakai in Bali?",
+        "Is Hak Pakai better than a leasehold for a long-term foreign resident?"
+      ],
+      "proposedSlug": "hak-pakai-bali-foreign-buyers",
+      "proposedTitle": "What Is Hak Pakai? Bali Property Ownership for Foreigners",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-tourist-levy-rental-income",
+      "status": "pending",
+      "priority": 24,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What is the Bali tourist levy and how does it affect villa rental income?",
+      "targetKeywords": ["Bali tourist levy 2024", "Bali tourism tax IDR 150000", "Bali villa rental tourist fee"],
+      "relatedQuestions": [
+        "Does the Bali tourist levy reduce my rental yield?",
+        "Who pays the Bali tourist levy, the guest or the owner?",
+        "How is the Bali tourism contribution collected?"
+      ],
+      "proposedSlug": "bali-tourist-levy-rental-income",
+      "proposedTitle": "The Bali Tourist Levy: What Villa Owners Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "off-plan-villa-construction-timeline",
+      "status": "pending",
+      "priority": 25,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How long does it take to build an off-plan villa in Bali?",
+      "targetKeywords": ["off-plan villa construction timeline Bali", "how long to build villa Bali", "Bali off-plan completion time"],
+      "relatedQuestions": [
+        "What causes off-plan delays in Bali and how can buyers protect themselves?",
+        "How many months from contract to handover for a Bali off-plan villa?",
+        "What should the PPJB say about construction milestones and delivery date?"
+      ],
+      "proposedSlug": "off-plan-villa-construction-timeline-bali",
+      "proposedTitle": "How Long Does It Take to Build an Off-Plan Villa in Bali?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-insurance",
+      "status": "pending",
+      "priority": 26,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What property insurance do I need for a Bali villa?",
+      "targetKeywords": ["Bali villa insurance foreigners", "property insurance Indonesia", "Bali rental property insurance"],
+      "relatedQuestions": [
+        "Does Indonesian property insurance cover earthquake and flood?",
+        "How much does villa insurance cost in Bali?",
+        "Can I insure a Bali villa I own through a PT PMA?"
+      ],
+      "proposedSlug": "bali-villa-property-insurance",
+      "proposedTitle": "Bali Villa Insurance: What Foreign Owners Need",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "canggu-vs-tabanan-property",
+      "status": "pending",
+      "priority": 27,
+      "theme": "location",
+      "atpType": "vs",
+      "primaryQuestion": "Canggu vs Tabanan for property investment: what is the difference for a foreign buyer?",
+      "targetKeywords": ["Canggu vs Tabanan property", "buy property Canggu or Tabanan", "Tabanan property cheaper than Canggu"],
+      "relatedQuestions": [
+        "Why are Tabanan land prices lower than Canggu?",
+        "Is Tabanan or Canggu better for rental yield?",
+        "How far is Tabanan from the airport vs Canggu?"
+      ],
+      "proposedSlug": "canggu-vs-tabanan-property-investment",
+      "proposedTitle": "Canggu vs Tabanan for Property Investment",
+      "category": "location",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "open-indonesian-bank-account-investor",
+      "status": "pending",
+      "priority": 28,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How does a foreign investor open an Indonesian bank account for a Bali property?",
+      "targetKeywords": ["open Indonesian bank account foreigner", "PT PMA bank account Indonesia", "Bali property payment transfer"],
+      "relatedQuestions": [
+        "Which Indonesian banks accept PT PMA accounts?",
+        "Can a US or UAE investor open an Indonesian bank account remotely?",
+        "How do I transfer USD to Indonesia to buy Bali property?"
+      ],
+      "proposedSlug": "indonesian-bank-account-foreign-investor",
+      "proposedTitle": "Opening an Indonesian Bank Account as a Foreign Investor",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-lombok-property",
+      "status": "pending",
+      "priority": 29,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Lombok for property investment: which is better for a foreign buyer in 2026?",
+      "targetKeywords": ["Bali vs Lombok property investment", "Bali or Lombok for investment", "Lombok real estate foreigners"],
+      "relatedQuestions": [
+        "Are Lombok property prices lower than Bali?",
+        "Can foreigners own property in Lombok the same way as Bali?",
+        "Which has higher rental yields, Bali or Lombok?"
+      ],
+      "proposedSlug": "bali-vs-lombok-property-investment",
+      "proposedTitle": "Bali vs Lombok for Property Investment in 2026",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
