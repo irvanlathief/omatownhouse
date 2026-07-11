@@ -469,7 +469,7 @@
     },
     {
       "id": "bali-vs-portugal-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 21,
       "theme": "investment",
       "atpType": "vs",
@@ -485,8 +485,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-11",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/44"
     },
     {
       "id": "can-i-retire-in-bali",
