@@ -1424,4 +1424,90 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-portugal-property-investment",
+    title: "Bali vs Portugal Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 30,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-11",
+    layoutVariant: "qa",
+    metaDescription:
+      "How Bali and Portugal compare for foreign buyers: ownership rules, gross yields, transfer taxes, and what changed after Portugal ended its Golden Visa.",
+    body: `<p>Both Bali and Portugal attract foreign property buyers, but the two markets work differently. In Portugal, US and UAE nationals can own freehold property directly in their own name with the same legal rights as a Portuguese citizen. In Bali, foreigners cannot hold freehold title (Hak Milik). The common routes are a leasehold of up to 25 years with a renewal option, or a PT PMA foreign company structure that holds a registered land right for up to 80 years under Indonesian government regulation.</p><p>On gross rental yield, Bali typically runs ahead. Established Bali agencies such as <a href="https://www.kibarer-property.com" data-external="true">Kibarer Property</a> cite gross yields of 8 to 15 percent for well-managed short-term rental villas in Canggu and Uluwatu. Portugal's Lisbon and Algarve markets average around 5 to 7 percent gross, according to <a href="https://www.globalpropertyguide.com/europe/portugal/rental-yields" data-external="true">Global Property Guide</a>. These are gross figures before management fees, taxes, and operating costs. Net returns in both markets are substantially lower. This is general information and not financial advice; actual returns depend on location, management quality, and occupancy.</p><p>Transaction costs differ. Portugal applies a 7.5 percent IMT transfer tax on purchases by non-residents, plus 0.8 percent stamp duty. Indonesia charges BPHTB at 5 percent on the buyer's side. Annual property taxes are light in both markets: <a href="https://www.pwc.pt/en/pwcinforfisco/tax-guide/2025/imi-aimi.html" data-external="true">Portugal's IMI</a> runs 0.3 to 0.45 percent of the government-assessed value; Indonesia's PBB effective rate is lower still. Where the two markets differ more sharply is rental income. Portugal taxes non-resident rental income at a flat 28 percent on net income. Indonesia withholds 20 percent on gross rent paid to a non-resident under Article 26 of the income tax law, a rate confirmed by the <a href="https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers" data-external="true">Indonesian Directorate General of Taxes</a>.</p><p>Portugal ended its real estate-based Golden Visa on 7 October 2023 under <a href="https://dre.pt/dre/detalhe/lei/56-2023-211449274" data-external="true">Law 56/2023</a>. Foreign buyers can still purchase freely, but the purchase no longer creates a path to EU residency. Portugal's NHR tax regime was also closed to new applicants at the end of 2023. Its replacement, the IFICI program, targets researchers and innovation workers and does not benefit passive rental investors, as covered by the <a href="https://www.ibanet.org/overview-Portugal-new-IFICI-regime" data-external="true">International Bar Association</a>. Bali's 5-year Second Home Visa is tied to demonstrating a fund balance rather than property ownership. For Bali ownership structures, see our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a> and our <a href="/blog/freehold-vs-leasehold-bali">leasehold vs freehold guide</a>.</p>`,
+    venues: [],
+    heroImage: "/blog/algarve-coastline-top-view.webp",
+    gallery: [
+      {
+        url: "/blog/algarve-rocky-coast-drone.webp",
+        alt: "Drone aerial of the Algarve rocky coastline in Portugal showing sea caves, ochre cliffs, and turquoise Atlantic water",
+        credit: "Mo Eid / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/drone-shot-of-a-rocky-coast-of-algarve-portugal-24377407/",
+      },
+      {
+        url: "/blog/lisbon-portugal-city-aerial.webp",
+        alt: "Panoramic view of Lisbon, Portugal with red-tiled rooftops, pastel facades, and the Tagus estuary in the background",
+        credit: "ClickerHappy / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/city-lisbon-houses-portugal-9253/",
+      },
+    ],
+    citations: [
+      {
+        label: "Investropa: Portugal property foreign ownership rights for non-EU nationals (2026)",
+        url: "https://investropa.com/blogs/news/portugal-foreigner-rights",
+      },
+      {
+        label: "PwC Portugal 2025 Tax Guide: IMT (Municipal Property Transfer Tax)",
+        url: "https://www.pwc.pt/en/pwcinforfisco/tax-guide/2025/imt.html",
+      },
+      {
+        label: "Idealista Portugal: Portugal raises property transfer tax for non-resident buyers (December 2025)",
+        url: "https://www.idealista.pt/en/news/property-for-sale-in-portugal/2025/12/09/71789-portugal-raises-property-transfer-tax-for-non-resident-buyers-what-you-need",
+      },
+      {
+        label: "PwC Portugal 2025 Tax Guide: IMI (Annual Municipal Property Tax)",
+        url: "https://www.pwc.pt/en/pwcinforfisco/tax-guide/2025/imi-aimi.html",
+      },
+      {
+        label: "Global Property Guide: Gross rental yields in Portugal, Lisbon and Algarve",
+        url: "https://www.globalpropertyguide.com/europe/portugal/rental-yields",
+      },
+      {
+        label: "International Bar Association: Overview of Portugal's new IFICI regime",
+        url: "https://www.ibanet.org/overview-Portugal-new-IFICI-regime",
+      },
+      {
+        label: "Portuguese Republic Official Gazette: Lei 56/2023 (Mais Habitacao, Golden Visa end)",
+        url: "https://dre.pt/dre/detalhe/lei/56-2023-211449274",
+      },
+      {
+        label: "Indonesian Directorate General of Taxes: Income Tax Article 26 (non-resident withholding)",
+        url: "https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers",
+      },
+    ],
+    faq: [
+      {
+        question: "Can foreigners own property more easily in Portugal or Bali?",
+        answer:
+          "Portugal is simpler for direct ownership. US and UAE nationals can hold freehold title in their own name with no company or residency requirement. In Bali, foreigners cannot hold freehold; the main routes are a leasehold of typically 25 years plus a renewal, or a PT PMA foreign company structure. A PT PMA takes 4 to 8 weeks to set up and carries annual compliance costs of roughly USD 2,500 to 5,800.",
+      },
+      {
+        question: "Are Bali or Portugal rental yields higher for villas?",
+        answer:
+          "Bali typically shows higher gross yields. Established Bali agencies cite 8 to 15 percent gross for well-managed short-term rental villas. Portugal's Lisbon and Algarve markets average around 5 to 7 percent gross. Net yields in both markets are substantially lower after management fees, taxes, and operating costs. These are ranges, not guarantees, and not financial advice.",
+      },
+      {
+        question: "How does rental income tax compare for Bali vs Portugal?",
+        answer:
+          "Portugal taxes non-resident rental income at a flat 28 percent on net income (gross receipts minus allowable expenses). Indonesia withholds 20 percent on the gross rent paid to a non-resident under Article 26 of the income tax law. If you hold a Bali villa through a PT PMA company, the company pays 22 percent corporate income tax on net profit instead. Confirm your specific tax position with a qualified adviser before committing.",
+      },
+      {
+        question: "Does buying property in Portugal still lead to EU residency?",
+        answer:
+          "No. Portugal ended its real estate-based Golden Visa on 7 October 2023 under Law 56/2023. Foreign nationals can still buy property freely, but a purchase no longer creates a path to EU or Schengen-area residency. The Golden Visa program continues via other qualifying routes such as investment funds and scientific research.",
+      },
+    ],
+  },
 ];
