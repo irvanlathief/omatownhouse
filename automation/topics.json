@@ -490,7 +490,7 @@
     },
     {
       "id": "can-i-retire-in-bali",
-      "status": "pending",
+      "status": "published",
       "priority": 22,
       "theme": "lifestyle",
       "atpType": "can",
@@ -506,8 +506,8 @@
       "category": "lifestyle",
       "isInsight": false,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-12",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/45"
     },
     {
       "id": "what-is-hak-pakai",
