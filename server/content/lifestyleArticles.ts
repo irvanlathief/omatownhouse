@@ -1510,4 +1510,58 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "retiring-to-bali-us-uae-investors",
+    title: "Can I Retire in Bali? A Guide for US and UAE Investors",
+    category: "lifestyle",
+    imageUrl: null,
+    sortOrder: 31,
+    isInsight: false,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-12",
+    heroImage: "/blog/kedungu-beach.jpg",
+    metaDescription:
+      "Yes, US and UAE citizens can retire in Bali using a Retirement KITAS, Silver Hair Visa or Second Home Visa. Visa options, costs and healthcare explained.",
+    body: `<p>Yes, you can retire in Bali as a US or UAE citizen. The practical question is which visa fits your age, income and available capital, since Indonesia offers three distinct routes for long-term retirement residence.</p><p>The Retirement KITAS (E33F) is the standard annual permit for those aged 55 and over. Specialist firms such as <a href="https://emerhub.com/indonesia/retirement-visa-indonesia-guide/" data-external="true">Emerhub</a> and <a href="https://ilaglobalconsulting.com/retirement-visa-in-bali/" data-external="true">ILA Global Consulting</a> report that Indonesian immigration typically expects pension income in the range of USD $1,500 to $3,000 per month. The permit runs one year and renews annually; after four years you can apply for the KITAP, the closest thing to permanent residency for a foreign retiree in Indonesia.</p><p>If you are 60 or older, the Silver Hair Visa (E33E) covers five years without annual renewal in exchange for a USD $50,000 deposit in an Indonesian state bank and proof of USD $3,000 per month in pension income. The deposit stays in your account and earns interest.</p><p>The Second Home Visa (E33) removes the age requirement entirely. You place IDR 2 billion, around USD $130,000, in your own account at a state bank such as BNI, BRI or Mandiri, or you own Indonesian property worth at least USD $1 million under a Hak Pakai title. It runs five or ten years and does not require you to hire domestic staff. <a href="https://emerhub.com/indonesia/indonesian-second-home-visa/" data-external="true">Emerhub's Second Home Visa guide</a> covers the full application process and 90-day document window.</p><p>A comfortable single retirement in Bali typically costs USD $1,500 to $2,500 per month, covering a private villa, a mix of local and imported dining, and local transport, based on cost-of-living data from <a href="https://internationalliving.com/countries/indonesia/cost-of-living-in-bali/" data-external="true">International Living</a>. A Western lifestyle with frequent travel costs more.</p><p>Bali's private hospitals are more capable than many first-time visitors expect. <a href="https://bimcbali.com" data-external="true">BIMC Hospital</a> runs a 24-hour international emergency service and Siloam Hospitals Bali holds Joint Commission International accreditation, the global benchmark for hospital quality. Medical costs in Bali run roughly three to five times below US levels, though private international health insurance is still recommended and is a legal requirement under the Retirement KITAS.</p><p>US citizens receive Social Security in Indonesia through the <a href="https://www.ssa.gov/international/payments_outsideUS.html" data-external="true">SSA International Direct Deposit program</a>; the sign-up form is SSA-1199-OP36. Under the 1988 <a href="https://www.irs.gov/pub/irs-trty/indo.pdf" data-external="true">US-Indonesia tax treaty</a>, Social Security income is taxed only in the US, not in Indonesia. US citizens still file US taxes on worldwide income from abroad, and any Indonesian bank account that exceeds USD $10,000 at any point in the year triggers an annual FBAR filing. UAE citizens face no comparable home-country reporting obligation.</p><p>This is general information and not legal, visa or tax advice. Visa rules change, so confirm current requirements with a licensed Indonesian immigration consultant and a qualified adviser before you commit.</p>`,
+    venues: [],
+    gallery: [
+      {
+        url: "/blog/retired-couple-spa-wellness.webp",
+        alt: "Retired couple relaxing together in a spa pool",
+        credit: "cottonbro studio / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/an-elderly-couple-in-a-swimming-pool-7222576/",
+      },
+      {
+        url: "/blog/senior-outdoor-dining-retirement.webp",
+        alt: "Senior man enjoying a meal at an outdoor restaurant",
+        credit: "RDNE Stock project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/man-in-white-button-up-shirt-sitting-on-chair-with-his-coffee-5637630/",
+      },
+    ],
+    citations: [
+      { label: "Emerhub: Retirement Visa Indonesia Guide", url: "https://emerhub.com/indonesia/retirement-visa-indonesia-guide/" },
+      { label: "Emerhub: Second Home Visa Indonesia", url: "https://emerhub.com/indonesia/indonesian-second-home-visa/" },
+      { label: "ILA Global Consulting: Retirement Visa in Bali", url: "https://ilaglobalconsulting.com/retirement-visa-in-bali/" },
+      { label: "US Social Security Administration: Payments Outside the US", url: "https://www.ssa.gov/international/payments_outsideUS.html" },
+      { label: "IRS: US-Indonesia Income Tax Treaty", url: "https://www.irs.gov/pub/irs-trty/indo.pdf" },
+      { label: "International Living: Cost of Living in Bali", url: "https://internationalliving.com/countries/indonesia/cost-of-living-in-bali/" },
+    ],
+    faq: [
+      {
+        question: "What does it cost to live in Bali in retirement?",
+        answer:
+          "A comfortable single retirement in Bali typically runs USD $1,500 to $2,500 per month, covering a private villa or apartment, a mix of local and imported dining, and local transport. A Western lifestyle with frequent travel will cost more. Budget-focused retirees eating mainly at local warungs and renting in quieter areas can live on closer to USD $1,200 to $1,500 per month.",
+      },
+      {
+        question: "Is Bali a good place to retire for US citizens?",
+        answer:
+          "Many US retirees find the cost of living, year-round climate, access to private international hospitals and the available visa options make Bali a practical retirement base. The main considerations are the ongoing US tax obligation on worldwide income, the FBAR requirement for Indonesian bank accounts, and finding the right visa structure. None of these are barriers, but each needs a qualified adviser to handle correctly.",
+      },
+      {
+        question: "Can I retire to Bali on a Second Home Visa?",
+        answer:
+          "Yes. The Second Home Visa (E33) has no minimum age and runs five or ten years without annual renewal. You qualify by placing IDR 2 billion, roughly USD $130,000, in a state-owned Indonesian bank in your own name, or by owning Indonesian property worth at least USD $1 million under a Hak Pakai title. The deposit stays yours and earns interest.",
+      },
+    ],
+  },
 ];
