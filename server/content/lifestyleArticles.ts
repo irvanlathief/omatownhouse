@@ -1564,4 +1564,55 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "hak-pakai-bali-foreign-buyers",
+    title: "What Is Hak Pakai? Bali Property Ownership for Foreigners",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 32,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-13",
+    heroImage: "/blog/property-title-handshake-documents.webp",
+    metaDescription:
+      "Hak Pakai is the only title foreigners can hold directly in Bali. Learn eligibility, duration up to 80 years, and how it compares to leasehold.",
+    body: `<p>Hak Pakai, Indonesian for "right of use," is the only land title a foreign individual can register in their own name at Indonesia's land office (BPN). Defined under PP 103/2015, it gives the holder a statutory recorded interest in the land rather than a private contract with the owner. To qualify you need a valid KITAS or KITAP; a tourist or visit visa does not meet the BPN requirement.</p><p>The title runs in three periods: 30 years on first grant, extendable by 20 years, then by a further 30 years, giving a practical ceiling of 80 years over the property's life. Each extension requires a valid Indonesian stay permit at the time of renewal, so uninterrupted permit renewal matters. The <a href="/blog/bali-visa-property-owner-investor">Second Home Visa (E33)</a> qualifies and, at five or ten years, keeps permit administration straightforward.</p><p>Two financial thresholds apply in Bali. Landed houses must be valued at a minimum of IDR 2 billion, roughly USD $125,000 at current exchange rates. Land area is capped at around 2,000 sqm per title. Each foreigner may hold one Hak Pakai title at a time. The transaction runs through a licensed PPAT (land deed official) who prepares the notarial deed and files the BPN registration.</p><p>The title is for residential use. Personal occupation and holiday use are permitted; earning commercial rental income under a personal Hak Pakai is not covered by the regulation. Operators who run villas as a rental business typically structure this through a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> registered with the correct KBLI business code.</p><p>Compared with leasehold, Hak Pakai is a registered BPN title, giving a stronger legal position, but it requires an active permit, a minimum purchase value, and is limited to one title per person for residential use. Leasehold is a private contract between two parties, requires no KITAS, carries no statutory minimum value, and suits investors who do not hold a continuous stay permit or who want to operate the property commercially. The right structure depends on residency plans and intended use.</p>`,
+    venues: [],
+    gallery: [
+      {
+        url: "/blog/property-legal-document-review.webp",
+        alt: "Professional reviewing legal property documents at a desk",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7821683/",
+      },
+      {
+        url: "/blog/bali-villa-pool-tropical-bale.webp",
+        alt: "Aerial view of a Bali villa pool surrounded by tropical gardens and thatched bale pavilions",
+        credit: "Michael Block / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/3225531/",
+      },
+    ],
+    citations: [
+      { label: "PP 103/2015: Indonesian Government Regulation on Foreign Individual Property Ownership", url: "https://peraturan.bpk.go.id/Details/5547/pp-no-103-tahun-2015" },
+      { label: "Emerhub: Laws and Regulations for Buying Property in Indonesia", url: "https://emerhub.com/indonesia/laws-and-regulations-for-buying-property-in-indonesia/" },
+      { label: "Cekindo: Guide to Buying Land in Indonesia", url: "https://www.cekindo.com/blog/buying-land-indonesia" },
+    ],
+    faq: [
+      {
+        question: "How long does Hak Pakai last in Bali and can it be extended?",
+        answer:
+          "Under PP 103/2015, Hak Pakai runs for an initial 30 years, with a first renewal of 20 years and a second renewal of 30 years, for a maximum of 80 years over the property's life. Each extension requires a valid Indonesian stay permit at the time of renewal. A PPAT handles the extension paperwork and BPN re-registration.",
+      },
+      {
+        question: "What visa do I need to hold Hak Pakai in Bali?",
+        answer:
+          "You need a valid KITAS (temporary stay permit) or KITAP (permanent stay permit). The Second Home Visa (E33), which runs five or ten years, qualifies and is popular among property buyers for its long validity and relatively straightforward renewal. A tourist or social visit visa does not satisfy the BPN requirement.",
+      },
+      {
+        question: "Is Hak Pakai better than leasehold for a foreign property buyer in Bali?",
+        answer:
+          "It depends on your situation. Hak Pakai gives a registered BPN title, which is a stronger legal instrument than a private leasehold contract, and it runs up to 80 years. However, it requires an active KITAS or KITAP, a minimum property value of IDR 2 billion in Bali, and is limited to one title per person for residential use. Leasehold suits buyers who want more flexibility, do not hold a stay permit, or plan to operate the property commercially through a PT PMA structure.",
+      },
+    ],
+  },
 ];
