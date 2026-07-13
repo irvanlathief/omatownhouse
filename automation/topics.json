@@ -511,7 +511,7 @@
     },
     {
       "id": "what-is-hak-pakai",
-      "status": "drafting",
+      "status": "published",
       "priority": 23,
       "theme": "foreign-ownership",
       "atpType": "what",
@@ -527,8 +527,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-13",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/46"
     },
     {
       "id": "bali-tourist-levy-rental-income",
