@@ -1615,4 +1615,68 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-tourist-levy-rental-income",
+    title: "The Bali Tourist Levy: What Villa Owners Need to Know",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 33,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-14",
+    heroImage: "/blog/bali-ulun-danu-temple-lake.webp",
+    metaDescription:
+      "The Bali tourist levy (IDR 150,000) is paid by the guest, not the villa owner. Learn how the PWA is collected, who enforces it, and what it means for your rental yield.",
+    body: `<p>The Bali tourist levy is paid by the arriving foreign visitor, not by the villa owner. If you own or plan to own a rental villa in Bali, the levy does not reduce your rental income. It is a guest-side cost of IDR 150,000, roughly USD 10, charged once per visit to Bali regardless of how long the stay is.</p><p>The levy, officially called the Pungutan Wisatawan Asing (PWA), was introduced on 14 February 2024 under <a href="https://jdih.baliprov.go.id/produk-hukum/peraturan-perundang-undangan/perda/29179" data-external="true">Bali Provincial Regulation No. 6 of 2023</a>, titled "Levies for Foreign Tourists for the Protection of Culture and Natural Environment of Bali." Guests pay via the <a href="https://lovebali.baliprov.go.id" data-external="true">official LoveBali portal</a> before or during their trip, or at cashless counters in the arrivals hall at Ngurah Rai International Airport. Payment produces a QR code sent by email, which some hotels and villas ask to see at check-in.</p><p>Hotels, registered travel agents, and certain tourism operators are authorized to collect the levy on behalf of guests, earning a commission of up to 3 percent. If your villa is managed by a professional management company, ask whether they are registered as a PWA collection point. Collecting for guests can simplify the guest experience while generating a small administrative fee of up to IDR 4,500 per stay.</p><p>In 2024, Bali collected IDR 318 billion (about USD 19.2 million) in levy revenue between February 14 and December 31, according to the <a href="https://bmc.baliprov.go.id/news/title/realisasi-pwa-2024-lampaui-target-sekda-dewa-indra-pastikan-teralokasi-sesuai-peruntukannya" data-external="true">Bali Media Center</a>. That came from roughly 2.1 million payers out of 6.3 million international arrivals, a compliance rate of about 33 percent. The Bali government has since introduced spot checks at major attractions including Tanah Lot and the Jatiluwih rice terraces. Levy funds are directed to traditional villages (desa adat), subak water cooperatives, and environmental programs across Bali's regencies.</p><p>For a yield calculation, a USD 10 arrival fee for the guest is unlikely to affect occupancy for a villa priced at several hundred dollars per night. The levy applies equally to every international visitor, whether they stay in a private villa, a hotel, or a homestay. For context on how Indonesian taxes affect your rental income as a foreign owner, see our guide on <a href="/blog/tax-for-foreign-property-owners-bali">rental income tax for Bali property owners</a>. This article is general information and not tax or legal advice.</p>`,
+    venues: [],
+    gallery: [
+      {
+        url: "/blog/balinese-dance-uluwatu-ceremony.webp",
+        alt: "Balinese dancers in traditional gold and green costume perform at Uluwatu Temple split gate at sunset with the Indian Ocean behind them",
+        credit: "Pragyan Bezbaruah / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/traditional-balinese-dance-at-uluwatu-temple-32877903/",
+      },
+      {
+        url: "/blog/tourist-bali-candi-bentar-gate.webp",
+        alt: "Female tourist with a straw hat stands before the ornate split gate (candi bentar) at the Gate of Heaven viewpoint in Bali with ocean panorama behind her",
+        credit: "Kachonk Adventure / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/tourist-in-front-of-split-gateway-of-a-temple-17956745/",
+      },
+    ],
+    citations: [
+      {
+        label: "Bali JDIH: Peraturan Daerah Provinsi Bali No. 6 of 2023 (Levies for Foreign Tourists)",
+        url: "https://jdih.baliprov.go.id/produk-hukum/peraturan-perundang-undangan/perda/29179",
+      },
+      {
+        label: "Disparda Bali: Official launch of the Pungutan Wisatawan Asing (February 2024)",
+        url: "https://disparda.baliprov.go.id/luncurkan-pwa-wisatawan-asing-masuk-bali-wajib-bayar-rp-150-ribu/2024/02/",
+      },
+      {
+        label: "Bali Media Center: 2024 PWA collections exceeded target (official provincial report)",
+        url: "https://bmc.baliprov.go.id/news/title/realisasi-pwa-2024-lampaui-target-sekda-dewa-indra-pastikan-teralokasi-sesuai-peruntukannya",
+      },
+      {
+        label: "LoveBali: Official Foreign Tourist Levy FAQ and payment portal",
+        url: "https://lovebali.baliprov.go.id/faq",
+      },
+    ],
+    faq: [
+      {
+        question: "Does the Bali tourist levy reduce my rental yield as a villa owner?",
+        answer:
+          "No. The Bali tourist levy (IDR 150,000, roughly USD 10) is paid by the arriving foreign guest, not by the property owner. It is a one-off arrival fee that does not appear in your rental accounts or reduce your gross rental income. At USD 10 per visit, the levy is unlikely to deter guests from booking a villa that costs several hundred dollars per night.",
+      },
+      {
+        question: "Who pays the Bali tourist levy, the guest or the owner?",
+        answer:
+          "The guest pays it. Under Bali Provincial Regulation No. 6 of 2023, every international visitor entering Bali must pay IDR 150,000 once per trip. The obligation sits with the traveller, not the accommodation operator. Villa management companies that are registered as collection points can pay on behalf of guests and earn a commission of up to 3 percent.",
+      },
+      {
+        question: "How is the Bali tourist levy collected and enforced?",
+        answer:
+          "Guests pay via the official LoveBali portal (lovebali.baliprov.go.id) before or during their trip, or at cashless counters in the arrivals area at Ngurah Rai International Airport. After payment, a QR code is sent by email as proof. Hotels and registered operators can collect on arrival. The Bali government conducts spot checks at major attractions including Tanah Lot and the Jatiluwih terraces.",
+      },
+    ],
+  },
 ];
