@@ -532,7 +532,7 @@
     },
     {
       "id": "bali-tourist-levy-rental-income",
-      "status": "drafting",
+      "status": "published",
       "priority": 24,
       "theme": "investment",
       "atpType": "what",
@@ -548,8 +548,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-14",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/47"
     },
     {
       "id": "off-plan-villa-construction-timeline",
