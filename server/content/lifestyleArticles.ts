@@ -1679,4 +1679,68 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "off-plan-villa-construction-timeline-bali",
+    title: "How Long Does It Take to Build an Off-Plan Villa in Bali?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 34,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-15",
+    heroImage: "/blog/tropical-villa-frame-under-construction.webp",
+    metaDescription:
+      "A Bali off-plan villa takes 12 to 18 months from contract to handover. Learn the construction phases, what causes delays, and what your PPJB should include.",
+    body: `<p>A Bali off-plan villa typically takes 12 to 18 months from contract signing to handover when you include design, permitting, and construction. A compact two-bedroom build with a small pool usually finishes toward the lower end of that range. A larger multi-bedroom villa with full landscaping and an outdoor pavilion commonly runs 16 to 18 months.</p><p>Before groundbreaking, the developer needs a PBG (Persetujuan Bangunan Gedung), Indonesia's building approval. Under <a href="https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021" data-external="true">PP 16/2021</a>, the statutory review is 28 working days from a complete application, but the KKPR (spatial conformity clearance) and certified architectural drawings must be in hand first. In practice, the full pre-construction phase is 2 to 3 months. This is time the developer works through in parallel with early payment milestones, not time you sit idle after signing.</p><p>Once groundbreaking starts, the build moves through five stages: foundation (1 to 2 months), structural work and walls (3 to 4 months), roofing (1 month), MEP fitout and finishing (2 to 3 months), then pool and landscaping, which usually run alongside finishing. Construction from slab to handover is 8 to 12 months for most villa footprints, according to established Bali villa builders and advisers who track these projects.</p><p>The rainy season, roughly November to April, is the biggest schedule risk. Foundation excavation can flood and concrete curing slows in heavy rain; some builders report foundation phases running 20 to 40 percent longer when groundbreaking falls in the wet season. Starting groundbreaking in the dry season, May to October, gives the project its best chance to hold its schedule. Material supply logistics and labor availability are secondary factors that a well-capitalized developer manages proactively.</p><p>A well-drafted <a href="/blog/bali-property-due-diligence-checklist">PPJB (sale-and-purchase agreement)</a> states a specific handover date, ties stage payments to named milestones such as foundation completion, structural completion, and practical completion, and includes a financial penalty clause that activates if the developer delivers late. Handover is formalized in a BAST (Berita Acara Serah Terima), after which the developer carries maintenance responsibility for 100 days. Have a licensed PPAT or property lawyer review the milestone schedule and delivery terms before you sign. This article is general information and not legal advice.</p>`,
+    venues: [],
+    gallery: [
+      {
+        url: "/blog/construction-supervisor-site-clipboard.webp",
+        alt: "Property inspector in a white hard hat and business attire reviewing notes on a clipboard at a construction site",
+        credit: "Pavel Danilyuk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7937689/",
+      },
+      {
+        url: "/blog/construction-worker-cement-tropical-site.webp",
+        alt: "Construction worker carrying a cement bag on their head at a tropical house building site with a concrete mixer and lush greenery in the background",
+        credit: "Kenneth Surillo / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/28427819/",
+      },
+    ],
+    citations: [
+      {
+        label: "PP No. 16 Tahun 2021: Building Permit (PBG) statutory review timeline (28 working days)",
+        url: "https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021",
+      },
+      {
+        label: "Emerhub: Building a Villa in Bali - Cost, Key Considerations, and Process",
+        url: "https://emerhub.com/bali/building-a-villa-in-bali-and-what-you-need-to-know/",
+      },
+      {
+        label: "Emerhub: PBG Building Permit in Bali - Application, Documents, Cost, and Timeline",
+        url: "https://emerhub.com/bali/building-permit-pbg/",
+      },
+      {
+        label: "Cekindo: Buy House in Indonesia - Sale and Purchase Agreement (PPJB) guide",
+        url: "https://www.cekindo.com/blog/buy-house-indonesia-agreement",
+      },
+    ],
+    faq: [
+      {
+        question: "What causes off-plan delays in Bali and how can buyers protect themselves?",
+        answer:
+          "The rainy season from November to April is the main risk. Heavy rain slows foundation excavation and concrete curing, and some builds report foundation phases running 20 to 40 percent longer when groundbreaking falls in the wet season. Starting construction in the dry season, May to October, helps. On the contract side, a PPJB with a named delivery date, milestone-linked stage payments, and a late-delivery penalty gives you legal recourse if the developer falls behind schedule.",
+      },
+      {
+        question: "How many months does it take from contract to handover for a Bali off-plan villa?",
+        answer:
+          "Budget 12 to 18 months from contract signing to handover. Design and permitting takes roughly 2 to 3 months, and construction from groundbreaking to practical completion is 8 to 12 months. A compact two-bedroom villa finishes toward the lower end of that range. A larger build with full landscaping, outdoor pavilion, and pool runs toward the higher end.",
+      },
+      {
+        question: "What should the PPJB say about construction milestones and the delivery date?",
+        answer:
+          "Your PPJB should state a specific handover date, not only a construction period. Stage payments should tie to named milestones, such as foundation complete, structural complete, roofing complete, and practical completion, rather than to calendar dates alone. The agreement should also include a financial penalty for late delivery and specify the 100-day defects period that begins after the BAST (Berita Acara Serah Terima) handover document is signed. Ask a licensed PPAT or property lawyer to review these terms before you sign.",
+      },
+    ],
+  },
 ];
