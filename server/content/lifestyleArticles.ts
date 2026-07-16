@@ -1743,4 +1743,76 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-villa-property-insurance",
+    title: "Bali Villa Insurance: What Foreign Owners Need",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 35,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-16",
+    heroImage: "/blog/villa-insurance-policy-review.webp",
+    metaDescription:
+      "Bali villa property insurance: what PSAKI covers, why earthquake and flood riders matter, how much it costs, and how foreigners qualify as policyholders.",
+    body: `<p>A Bali villa needs at minimum a PSAKI fire policy, which covers fire, lightning, explosion, and smoke, plus two riders most owners overlook: EQVET for earthquake, volcanic eruption, and tsunami, and FTSWD for flood and storm. Earthquake cover matters because standard PSAKI and Property All Risk (PAR) policies both exclude seismic events by default, and Indonesia sits directly on the Pacific Ring of Fire.</p><p>Indonesian property insurance is governed by <a href="https://www.ojk.go.id/en/kanal/iknb/pages/asuransi.aspx" data-external="true">OJK (Otoritas Jasa Keuangan)</a> under Law No. 40 of 2014, with policy standards set by AAUI (Asosiasi Asuransi Umum Indonesia). The base PSAKI covers five named perils: fire, lightning, explosion, aircraft impact, and smoke. A Property All Risk (PAR) policy adds riot, strike, and malicious damage, plus usually flood and storm, but the EQVET earthquake endorsement remains excluded even from PAR and must be added explicitly. Premium rates for earthquake cover are set by OJK Circular Letter SEOJK 6/2017, which establishes minimum and maximum rates by province and seismic zone. Bali falls in a high seismic risk zone, so earthquake premiums run higher than for properties in lower-risk parts of Indonesia.</p><p>Annual premiums for base property cover run roughly 0.1% to 0.35% of the insured value, with the earthquake rider added on top. For a villa insured at around IDR 2 billion, that puts the base annual premium in the range of IDR 2 million to IDR 7 million, depending on construction class, location, and the covers chosen. These are indicative market figures from Bali property advisers, not a binding quote. Get proposals from two or three OJK-licensed insurers or work with a licensed Indonesian insurance broker. This article is general information, not financial or insurance advice.</p><p>If you rent the villa short-term, add third-party liability cover (Tanggung Gugat Pihak Ketiga). It covers bodily injury or property damage to guests and neighbouring properties. Limits of IDR 500 million to IDR 2.5 billion are available, at an additional cost of roughly 0.1% to 0.3% of the chosen limit per year.</p><p>Both PT PMA companies and leasehold holders qualify as policyholders. A PT PMA is an Indonesian legal entity and can be named insured with any OJK-licensed insurer. A leasehold holder insures the building improvements representing their economic interest, even though the land title stays with the Indonesian landowner. One compliance note: a villa operating without a valid PBG (Persetujuan Bangunan Gedung) and SLF (Sertifikat Laik Fungsi) risks having a claim voided, since unlicensed commercial use can breach policy conditions. Get your <a href="/blog/bali-property-due-diligence-checklist">permits in order</a> before relying on cover. See also <a href="/blog/pt-pma-setup-bali-property">how to set up a PT PMA</a> if you are considering the corporate ownership route.</p>`,
+    venues: [],
+    gallery: [
+      {
+        url: "/blog/earthquake-damage-property.webp",
+        alt: "Buildings destroyed by earthquake showing why earthquake insurance riders are essential for Bali villa owners on the Pacific Ring of Fire",
+        credit: "Serkan Gonultas / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/destroyed-buildings-and-houses-in-town-in-turkey-after-earthquake-17142571/",
+      },
+      {
+        url: "/blog/tropical-villa-flood-damage.webp",
+        alt: "Tropical house surrounded by floodwater with palm trees illustrating flood risk for Bali villas during the wet season",
+        credit: "Anoop VS / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/flooded-tropical-house-with-palm-trees-32442294/",
+      },
+    ],
+    citations: [
+      {
+        label: "AAUI: Polis Standar Asuransi Kebakaran Indonesia (PSAKI) - Indonesian standard fire insurance policy",
+        url: "https://aaui.or.id/polis-standar-asuransi-kebakaran-indonesia/",
+      },
+      {
+        label: "OJK SEOJK No. 6/SEOJK.05/2017: mandatory minimum and maximum premium rates for property insurance by zone",
+        url: "https://ojk.go.id/id/kanal/iknb/regulasi/asuransi/surat-edaran-ojk/Pages/Surat-Edaran-Otoritas-Jasa-Keuangan-Nomor-6-SEOJK.05-2017.aspx",
+      },
+      {
+        label: "AAUI: Polis Standar Asuransi Gempa Bumi Indonesia (PSAGBI) - earthquake insurance standard policy wording",
+        url: "https://aaui.or.id/wp-content/uploads/2025/10/9-PSAGBI-rev-dispute-2021.pdf",
+      },
+      {
+        label: "MSIG Indonesia: Home Shield Insurance - property coverage including earthquake and flood extensions",
+        url: "https://msig.co.id/personal-insurance/home-shield-insurance",
+      },
+      {
+        label: "Be Protected Indonesia: what insurance does a Bali villa owner need - coverage types and eligibility",
+        url: "https://www.beprotectedindonesia.com/post/blog-villa-insurance-bali",
+      },
+      {
+        label: "Bali Property Rules: villa licensing guide - PBG and SLF compliance and impact on insurance claims",
+        url: "https://balipropertyrules.com/guides/bali-villa-licensing-foreigners/",
+      },
+    ],
+    faq: [
+      {
+        question: "Does Indonesian property insurance cover earthquake and flood?",
+        answer:
+          "No, not by default. The standard PSAKI fire policy covers fire, lightning, explosion, aircraft impact, and smoke only. Earthquake, volcanic eruption, and tsunami must be added as a separate EQVET rider. Flood and storm (FTSWD) is excluded from PSAKI and must be added as an endorsement. A Property All Risk (PAR) policy typically includes flood and storm but still excludes the earthquake endorsement. Always confirm the exact policy wording with your insurer, as the EQVET exclusion applies even under PAR.",
+      },
+      {
+        question: "How much does villa insurance cost in Bali?",
+        answer:
+          "Bali property advisers cite annual premiums of roughly 0.1% to 0.35% of the insured value for base property cover, before the earthquake rider is added. For a villa insured at around IDR 2 billion, that puts the base annual premium in the range of IDR 2 million to IDR 7 million, depending on construction class, location, and coverage breadth. The earthquake endorsement adds more, and third-party liability adds further if included. Get quotes from at least two OJK-licensed insurers. These figures are general estimates, not financial advice.",
+      },
+      {
+        question: "Can I insure a Bali villa I own through a PT PMA?",
+        answer:
+          "Yes. A PT PMA is an Indonesian limited liability company, so it can enter insurance contracts with any OJK-licensed insurer and be named as policyholder. Leasehold holders can also insure their building improvements. In both cases, make sure the property holds a valid PBG (Persetujuan Bangunan Gedung) and SLF (Sertifikat Laik Fungsi), since operating without these building permits can give an insurer grounds to void a claim even if the policy was properly issued.",
+      },
+    ],
+  },
 ];
