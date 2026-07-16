@@ -574,7 +574,7 @@
     },
     {
       "id": "bali-property-insurance",
-      "status": "drafting",
+      "status": "published",
       "priority": 26,
       "theme": "investment",
       "atpType": "what",
@@ -590,8 +590,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-16",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/50"
     },
     {
       "id": "canggu-vs-tabanan-property",
