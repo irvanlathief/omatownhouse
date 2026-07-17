@@ -1815,4 +1815,74 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "canggu-vs-tabanan-property-investment",
+    title: "Canggu vs Tabanan for Property Investment",
+    category: "location",
+    imageUrl: null,
+    sortOrder: 36,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-17",
+    heroImage: "/blog/canggu-bali-beachfront-development-aerial.webp",
+    metaDescription:
+      "Canggu vs Tabanan property: Tabanan land is 30-50% cheaper, rental yields are similar, but fewer new permits apply and the airport drive is longer.",
+    body: `<p>Tabanan land costs 30 to 50 percent less than comparable plots in Canggu, and that price gap is the starting point for most buyers who compare the two areas. You get larger plots, a quieter setting with rice field views, and a lower entry price; in exchange, transaction liquidity is thinner and the drive from Kaba Kaba to Ngurah Rai Airport is around 55 to 65 minutes, roughly double the time from central Canggu.</p><p>Canggu, in Badung Regency, leads Bali in transaction volume with around a third of all island property sales. Prime land there runs from about IDR 1.5 billion to 3 billion per are, or roughly USD 90,000 to 180,000 per are at current exchange rates. Tabanan's southern villages, including Kaba Kaba, Munggu, and Nyambu, sit inside the same broad market catchment but with land prices 30 to 50 percent below, according to <a href="https://www.exotiqproperty.com/blog/bali-land-price-trends-what-investors-need-to-know" data-external="true">Exotiq Property</a>. Established beach clubs, coworking spaces, and high short-term rental occupancy underpin Canggu's premium. Tabanan's case is the opposite: more land per dollar, less proven guest demand, and a longer drive to the airport.</p><p>Gross rental yields for well-managed pool villas run broadly 8 to 12 percent annually in both areas. Canggu commands the upper part of that range more consistently because of deeper guest demand and repeat bookings. Tabanan properties close to <a href="/blog/what-is-nuanu-creative-city">Nuanu Creative City</a> and the Badung border are approaching similar figures as operators expand west. These are ranges, not guarantees, and net returns depend on management costs and occupancy. This is not financial advice.</p><p>A regulatory point worth verifying for any Tabanan project: from 2026, Bali's provincial government stopped issuing permits for new tourism development on productive agricultural land in six regencies, including Tabanan, per <a href="https://www.thejakartapost.com/indonesia/2025/09/17/bali-to-issue-regulationbanning-villa-and-hotel-construction-on-agricultural-land.html" data-external="true">The Jakarta Post</a>. Badung, which covers Canggu, is not in the restricted group. For off-plan buyers, confirming that a project holds its permits before this restriction took effect is a due diligence essential, not optional.</p><p>One infrastructure project that could reduce the distance gap is the planned <a href="https://www.balidiscovery.com/stalled-bali-toll-project-to-resume-in-2025/" data-external="true">Gilimanuk-Mengwi toll road</a>, a 96.84-km highway that will run through Tabanan Regency. The project has faced delays and was targeting completion in the late 2020s as of its most recent update. If delivered, drive times from Tabanan's southern villages to Denpasar and the airport would fall meaningfully.</p><p>The comparison comes down to certainty versus price. Canggu offers proven rental demand, easier resale, and a short airport run. Tabanan, and Kaba Kaba in particular, suits buyers focused on lower entry prices and larger plots, who are buying on a medium-term horizon and have confirmed the permits on their project.</p>`,
+    venues: [
+      { name: "Canggu (Batu Bolong Beach)", distance: "20-25 min", coords: "-8.6478,115.1385", url: "https://maps.google.com/?q=Canggu+Bali" },
+      { name: "Kaba Kaba, Tabanan (OMA area)", distance: "", coords: "-8.576677,115.145663" },
+      { name: "Ngurah Rai Airport (DPS)", distance: "55-65 min from Kaba Kaba", coords: "-8.7467,115.1667", url: "https://ngurahraiairport.com/" },
+    ],
+    showMap: true,
+    mapCoords: "-8.620,115.147",
+    gallery: [
+      {
+        url: "/blog/tabanan-bali-agricultural-land-aerial.webp",
+        alt: "Aerial view of open rice fields and agricultural land in Bali, typical of the Tabanan countryside around Kaba Kaba",
+        credit: "Tom Fisk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/35386125/",
+      },
+      {
+        url: "/blog/bali-property-development-construction-site.webp",
+        alt: "Aerial view of a large off-plan property development under construction in Bali showing foundation work and plotted land",
+        credit: "Tom Fisk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/36422828/",
+      },
+    ],
+    citations: [
+      {
+        label: "Exotiq Property: Bali land price trends and area comparison (Tier 2 agency report)",
+        url: "https://www.exotiqproperty.com/blog/bali-land-price-trends-what-investors-need-to-know",
+      },
+      {
+        label: "The Jakarta Post: Bali to issue regulation banning villa and hotel construction on agricultural land (Sep 2025)",
+        url: "https://www.thejakartapost.com/indonesia/2025/09/17/bali-to-issue-regulationbanning-villa-and-hotel-construction-on-agricultural-land.html",
+      },
+      {
+        label: "Bali Discovery: Gilimanuk-Mengwi toll road project update and resumption",
+        url: "https://www.balidiscovery.com/stalled-bali-toll-project-to-resume-in-2025/",
+      },
+      {
+        label: "Invest Land Bali: Bali real estate market data and transaction volume by area (2026)",
+        url: "https://investlandbali.com/bali-real-estate-market",
+      },
+    ],
+    faq: [
+      {
+        question: "Why are Tabanan land prices lower than Canggu?",
+        answer:
+          "Tabanan lacks Canggu's beachfront location and established tourist infrastructure, so land there trades at 30 to 50 percent below Canggu prices. You get more land for your money and space for larger villas, but with fewer cafes, shops, and walkable beach access within the immediate neighbourhood.",
+      },
+      {
+        question: "Is Tabanan or Canggu better for rental yield?",
+        answer:
+          "Both areas generate broadly similar gross yields for well-managed pool villas, in the range of 8 to 12 percent annually. Canggu's deeper guest market means it hits the upper end more reliably. Tabanan is closing that gap as management operators expand west, but Canggu still carries lower occupancy risk on average. These are ranges, not guarantees; this is not financial advice.",
+      },
+      {
+        question: "How far is Tabanan from the airport vs Canggu?",
+        answer:
+          "Canggu is about 20 to 30 minutes from Ngurah Rai Airport under normal traffic. Kaba Kaba, in southern Tabanan, is around 55 to 65 minutes from the airport by car. Both drives extend during peak hours.",
+      },
+    ],
+  },
 ];
