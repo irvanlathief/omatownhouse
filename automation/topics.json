@@ -595,7 +595,7 @@
     },
     {
       "id": "canggu-vs-tabanan-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 27,
       "theme": "location",
       "atpType": "vs",
@@ -611,8 +611,8 @@
       "category": "location",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-17",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/51"
     },
     {
       "id": "open-indonesian-bank-account-investor",
