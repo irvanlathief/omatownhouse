@@ -1885,4 +1885,73 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "indonesian-bank-account-foreign-investor",
+    title: "Opening an Indonesian Bank Account as a Foreign Investor",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 37,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-18",
+    heroImage: "/blog/bank-counter-usd-to-local-currency.webp",
+    metaDescription:
+      "How foreign investors open an Indonesian bank account for Bali property: PT PMA corporate accounts, which banks accept foreigners, KITAS requirements, SWIFT transfers, and the USD 25,000 documentation rule.",
+    body: `<p>A foreign investor buying Bali property almost always needs an Indonesian bank account. For buyers using a <a href="/blog/pt-pma-setup-bali-property">PT PMA structure</a>, the account comes before the purchase: paid-up capital must be deposited into a company bank account before a notary can transfer title.</p><p>There are two tracks. A personal savings account requires a valid passport plus a KITAS or KITAP (Indonesian residence permit), a local address, and a minimum initial deposit. Bank Negara Indonesia (BNI) sets that minimum at IDR 250,000; Bank Central Asia (BCA) and Bank Mandiri both require IDR 500,000. OCBC Indonesia and CIMB Niaga operate more flexible policies for some foreigners, occasionally accepting a passport alone for limited accounts.</p><p>For a PT PMA corporate account, the company must be fully incorporated first. Indonesian banks require the Ministry of Law and Human Rights approval of the deed of establishment, a Business Identification Number (NIB) from the OSS system, and a company tax registration number (NPWP). A foreign director must also hold a valid KITAS before any Indonesian bank will add them as an authorized signatory. With complete documents in hand, the account typically opens within one to four weeks. BCA, Bank Mandiri, BNI, and HSBC Indonesia all serve PT PMA clients.</p><p>Under BKPM Regulation No. 5 of 2025, the minimum paid-up capital for a new PT PMA is IDR 2.5 billion, roughly USD 150,000. That amount goes into the company account and is subject to a 12-month lock-up: it cannot be withdrawn except to pay for assets, construction, or verified operating costs declared through the OSS system.</p><p>Sending funds from abroad is handled via SWIFT. BCA uses code CENAIDJAXXX; Mandiri uses BMRIIDJAXXX. Transfers typically arrive in two to five business days. Bank Indonesia requires supporting documentation for any foreign currency purchase against Rupiah that exceeds the equivalent of USD 25,000 per month, so keep your sale and purchase agreement and proof of funds ready before wiring larger amounts. OCBC Indonesia offers multi-currency accounts, which lets you hold USD and convert to Rupiah at a time that suits your exchange-rate view.</p><p>This article is for general information only and is not financial or legal advice. Speak with a licensed Indonesian legal or tax professional before making decisions about company structure or banking.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Do I need to be in Indonesia to open a PT PMA bank account?",
+        answer:
+          "The company's authorized signatory, typically the director, must appear in person at the bank. A foreign director must also hold a valid KITAS before the bank will register them as signatory, which means completing the KITAS process beforehand. Many Indonesia company formation firms handle PT PMA registration and bank account opening as a single service.",
+      },
+      {
+        question: "Which Indonesian bank is best for a foreign property investor?",
+        answer:
+          "BCA and Bank Mandiri are the most widely used by foreign-owned companies in Bali. Both offer SWIFT international transfers and multi-currency facilities. OCBC Indonesia is a strong option if you want to hold USD alongside IDR, which gives you more control over when you convert funds.",
+      },
+      {
+        question: "What is the USD 25,000 rule for sending money to Indonesia?",
+        answer:
+          "Bank Indonesia requires supporting documentation for any foreign currency purchase against Rupiah that exceeds the equivalent of USD 25,000 per month per sender. For a property payment, your bank will typically ask for the sale and purchase agreement and proof of funds before processing the transfer. This is a routine compliance step under Bank Indonesia foreign exchange regulations, not a bar on the transaction.",
+      },
+      {
+        question: "How long is the PT PMA paid-up capital locked up after deposit?",
+        answer:
+          "Under BKPM Regulation No. 5 of 2025, the minimum paid-up capital of IDR 2.5 billion deposited into the PT PMA bank account is locked for 12 months. You can withdraw from it during that period only to pay for assets, construction, or verified operating expenses, and the company must submit a lock-up declaration through the OSS system at incorporation.",
+      },
+    ],
+    gallery: [
+      {
+        url: "/blog/bank-officer-account-review.webp",
+        alt: "Bank officer reviewing account documents with a foreign investor at a desk",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7821671/",
+      },
+      {
+        url: "/blog/international-currencies-usd-transfer.webp",
+        alt: "Mixed US dollar and euro banknotes representing international fund transfers for overseas property purchases",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8193975/",
+      },
+    ],
+    citations: [
+      {
+        label: "Emerhub: Opening a Corporate Bank Account in Indonesia - Guide for Foreign Investors (Tier 2)",
+        url: "https://emerhub.com/indonesia/opening-a-bank-account/",
+      },
+      {
+        label: "XPND: Required Documents for PT PMA Incorporation in Indonesia 2026 (Tier 2)",
+        url: "https://xpnd.co.id/blogs/required-documents-pt-pma-incorporation-indonesia-2026/",
+      },
+      {
+        label: "Bank Indonesia: Foreign Exchange and Money Market Regulations (Tier 1)",
+        url: "https://www.bi.go.id/en/peraturan/moneter/Pages/default.aspx",
+      },
+      {
+        label: "BKPM / OSS: Investment Regulations including PT PMA Capital Requirements (Tier 1)",
+        url: "https://oss.go.id/informasi/bkpm-regulasi",
+      },
+    ],
+  },
 ];
