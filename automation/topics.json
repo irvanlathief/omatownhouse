@@ -616,7 +616,7 @@
     },
     {
       "id": "open-indonesian-bank-account-investor",
-      "status": "drafting",
+      "status": "published",
       "priority": 28,
       "theme": "investment",
       "atpType": "how",
@@ -632,8 +632,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-18",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/52"
     },
     {
       "id": "bali-vs-lombok-property",
