@@ -1954,4 +1954,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-lombok-property-investment",
+    title: "Bali vs Lombok for Property Investment in 2026",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 38,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-19",
+    heroImage: "/blog/lombok-beach-kuta-pristine.webp",
+    metaDescription:
+      "Bali vs Lombok for foreign property investors in 2026: how ownership rules, tourism volume, entry prices, and resale liquidity compare on each island.",
+    body: `<p>Both Bali and Lombok follow identical Indonesian national law on foreign property ownership, so the legal framework is the same on each island. The choice between them is not about what you can own but about what kind of market you are buying into: Bali is established and liquid; Lombok is earlier stage and carries more growth potential alongside more execution risk.</p><p>Foreigners on either island can hold property through a long-term leasehold (Hak Sewa), through Hak Pakai if they hold an Indonesian residence permit and plan to use the property personally, or through a <a href="/blog/pt-pma-setup-bali-property" data-external="false">PT PMA company</a> for commercial short-term rental under Hak Guna Bangunan title. Practical support for these structures is more mature and better tested in Bali, where notaries, legal firms, and accountants with foreign-client experience are more widely available.</p><p>On tourism, Bali recorded nearly 6.95 million direct international arrivals in 2025, a 9.72 percent increase on the prior year according to the <a href="https://bali.bps.go.id/en/pressrelease/2026/02/02/718014/tourism-overview-of-bali-province--december-2025.html" data-external="true">BPS Bali provincial statistics office</a>. Lombok's Zainuddin Abdul Madjid International Airport handled roughly 430,000 international arrivals in 2024 based on <a href="https://ntb.bps.go.id/en/statistics-table/2/NDkyIzI=/jumlah-kunjungan-wisata-mancanegara-ke-bandara-international-lombok-menurut-kebangsaan.html" data-external="true">BPS NTB data</a>. That gap in visitor volume means Bali landlords are drawing from a far larger pool of short-stay tenants, which directly supports occupancy stability. Lombok's numbers are growing from a low base, which can translate to faster percentage gains but also to higher occupancy risk in a slow year.</p><p>On price, prime Bali coastal land in areas like Canggu or Seminyak trades at a significant premium to comparable Lombok beachfront. The government-backed <a href="https://www.bkpm.go.id/en/info/announcements/the-mandalika-indonesia-tourism-development-corporation-itdc" data-external="true">Mandalika Special Economic Zone</a> on Lombok's south coast covers roughly 1,175 hectares and has received infrastructure financing from the Asian Infrastructure Investment Bank. That pipeline of resort openings, roads, and utilities has lifted land values in the Kuta Lombok and Mandalika corridor, narrowing part of the historic price gap with Bali, but entry prices in most of Lombok still sit well below comparable Bali addresses.</p><p>For a buyer who wants rental income, a track record of resales, and a broad choice of management operators, Bali is the more straightforward market. For a buyer prepared to hold for five years or more and comfortable with thinner short-stay liquidity in the near term, Lombok's lower entry cost and government-backed infrastructure investment offer a different risk and reward profile. Neither choice is a guaranteed return, and outcomes depend on location, management quality, and the overall direction of Indonesian tourism. This article is for general information only and is not financial or legal advice. Speak with a licensed Indonesian legal or tax professional before making any investment decision.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own property in Lombok the same way as in Bali?",
+        answer:
+          "Yes. The same Indonesian national law applies on both islands. Foreigners can hold property through a long-term leasehold, through Hak Pakai with a valid Indonesian residence permit, or through a PT PMA company under Hak Guna Bangunan title for commercial rental. The practical difference is that Bali has a larger, more established network of notaries, legal firms, and accountants experienced with foreign buyers.",
+      },
+      {
+        question: "Are Lombok property prices lower than Bali?",
+        answer:
+          "Generally yes, particularly outside the Mandalika SEZ corridor. Prime Bali coastal land in areas like Canggu and Seminyak commands a significant premium over comparable Lombok beachfront. The Mandalika development has pushed values up in southern Lombok, narrowing part of that gap in key zones, but most of the island still offers lower entry prices than Bali's established tourist areas.",
+      },
+      {
+        question: "Which has higher rental yields, Bali or Lombok?",
+        answer:
+          "Gross yield projections in Lombok, particularly around the Mandalika corridor, are sometimes quoted higher than established Bali areas, partly because entry prices are lower relative to advertised nightly rates. However, Bali's much higher tourism volume, nearly 6.95 million international arrivals in 2025 versus around 430,000 for Lombok, means occupancy in Bali is typically more predictable. Yield figures on either island are highly dependent on location, management, and seasonality. This is not financial advice; ranges vary widely and are not guaranteed.",
+      },
+      {
+        question: "What is the Mandalika SEZ and why does it matter for Lombok property?",
+        answer:
+          "The Mandalika Special Economic Zone is a 1,175-hectare government-backed tourism development on Lombok's southern coast, master-planned and operated by the state-owned Indonesia Tourism Development Corporation (ITDC). It includes international-standard roads, utilities, a MotoGP racing circuit, and a pipeline of resort openings. The AIIB has provided infrastructure financing of USD 248.4 million. Proximity to Mandalika has raised land values in the surrounding Kuta Lombok corridor, making it the main concentration of buyer activity on the island.",
+      },
+    ],
+    gallery: [
+      {
+        url: "/blog/mandalika-circuit-lombok-aerial.webp",
+        alt: "Aerial view of the Mandalika Circuit in Lombok's Special Economic Zone with the ocean and green hills in the background",
+        credit: "Pexels / Afif Ramdhasuma",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-mandalika-circuit-lombok-30013597/",
+      },
+      {
+        url: "/blog/lombok-coastal-hills-turquoise.webp",
+        alt: "Green coastal hills and turquoise water along the West Nusa Tenggara coastline of Lombok",
+        credit: "Pexels / Captura Visual Moment",
+        sourceUrl: "https://www.pexels.com/photo/scenic-view-of-west-nusa-tenggara-coastline-32332180/",
+      },
+    ],
+    citations: [
+      {
+        label: "BPS Bali: Tourism Overview of Bali Province, December 2025 - 6.95M foreign arrivals (Tier 1)",
+        url: "https://bali.bps.go.id/en/pressrelease/2026/02/02/718014/tourism-overview-of-bali-province--december-2025.html",
+      },
+      {
+        label: "BPS NTB: Foreign Tourist Visits to Lombok International Airport by Nationality (Tier 1)",
+        url: "https://ntb.bps.go.id/en/statistics-table/2/NDkyIzI=/jumlah-kunjungan-wisata-mancanegara-ke-bandara-international-lombok-menurut-kebangsaan.html",
+      },
+      {
+        label: "BKPM / ITDC: The Mandalika - Indonesia Tourism Development Corporation (Tier 1)",
+        url: "https://www.bkpm.go.id/en/info/announcements/the-mandalika-indonesia-tourism-development-corporation-itdc",
+      },
+      {
+        label: "AIIB: Indonesia Mandalika Urban and Tourism Infrastructure Project - USD 248.4M loan (Tier 1)",
+        url: "https://www.aiib.org/en/projects/details/2025/_download/indonesia/PIMR_SBF_Indonesia_P000069_No.12_January_2025_Public-Version.pdf",
+      },
+      {
+        label: "ILA Global Consulting: Ultimate Guide to Buying Property in Lombok 2026 (Tier 2)",
+        url: "https://ilaglobalconsulting.com/lombok-real-estate-guide-2026/",
+      },
+    ],
+  },
 ];
