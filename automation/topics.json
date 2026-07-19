@@ -637,7 +637,7 @@
     },
     {
       "id": "bali-vs-lombok-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 29,
       "theme": "investment",
       "atpType": "vs",
@@ -653,8 +653,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-19",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/54"
     }
   ]
 }
