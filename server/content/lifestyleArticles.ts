@@ -2027,4 +2027,72 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-capital-gains-tax-foreign-seller",
+    title: "Capital Gains Tax When Selling Bali Property as a Foreigner",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 39,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-20",
+    heroImage: "/blog/property-sale-taxes-usd-lightbox.webp",
+    metaDescription:
+      "Selling Bali property as a foreigner: the seller pays 2.5% PPh final with an NPWP, or 20% Article 26 without one. US and UAE treaty impacts explained.",
+    body: `<p>When you sell Bali property as a foreigner, the main seller-side tax is a final income tax (PPh) of 2.5 percent of the gross sale price, established by <a href="https://datacenter.ortax.org/ortax/aturan/show/16100" data-external="true">Government Regulation No. 34 of 2016</a>. That rate applies only if you hold an Indonesian tax number, known as an NPWP. Without one, the <a href="https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers" data-external="true">Directorate General of Taxes</a> treats the proceeds as income to a non-resident and applies the Article 26 withholding rate of 20 percent instead.</p><p>The difference matters in practice. On a USD 250,000 sale, the gap between 2.5 percent and 20 percent is roughly USD 43,750. Register for an NPWP well before you find a buyer, not after. The PPAT notary cannot execute the transfer deed until the seller produces proof of PPh payment, so the tax must be settled before closing day.</p><p>The buyer pays a separate acquisition tax, BPHTB (Bea Perolehan Hak atas Tanah dan Bangunan), at 5 percent of the purchase value above the local exemption threshold. That comes out of the buyer's funds, not the seller's, but experienced buyers price it into their offers, so it affects overall deal economics.</p><p>US sellers face an added home-country layer. Indonesia and the United States have a tax convention listed in the <a href="https://www.irs.gov/businesses/international-businesses/indonesia-tax-treaty-documents" data-external="true">IRS treaty library</a>. The treaty can reduce Indonesian withholding in certain situations, but the US taxes its citizens on worldwide income regardless of where the property sits. Indonesian PPh paid is generally creditable against the US capital gains liability, though the net outcome depends on your holding period and personal rate. Get advice from a CPA with international property experience before you list.</p><p>UAE residents face a cleaner home-country picture. Indonesia and the UAE have a double taxation agreement, registered on the <a href="https://datacenter.ortax.org/ortax/treaty/show/87" data-external="true">Ortax treaty database</a>, that entered into force for income received from January 2022. The UAE levies no personal income tax on individuals, so once Indonesian PPh is settled the sale proceeds arrive without a second domestic tax.</p><p>Sellers who hold through a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> and exit via a share transfer rather than the property title directly face a different tax treatment. Gains are recognised at the company level, and separate withholding rules may apply under the relevant treaty. That route needs its own legal and tax analysis before you commit. This article is for general information only and is not financial, tax or legal advice; confirm your position with a qualified Indonesian tax professional before any sale.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Do I pay the same seller tax as an Indonesian when selling Bali property?",
+        answer:
+          "With an NPWP (Indonesian tax number), yes. Both resident and non-resident sellers pay 2.5 percent PPh final on the gross sale price under Government Regulation No. 34 of 2016. Without an NPWP, the Directorate General of Taxes applies the Article 26 non-resident withholding rate of 20 percent instead, which is eight times higher.",
+      },
+      {
+        question: "Do US citizens owe US capital gains tax on top of Indonesian PPh when selling Bali property?",
+        answer:
+          "Yes. The US taxes citizens on worldwide income regardless of where the property sits. Indonesian PPh paid can be credited against the US capital gains liability, but a residual US amount can remain depending on the gain size, holding period, and personal rate. A CPA with international property experience should review the position before the sale.",
+      },
+      {
+        question: "How is selling via PT PMA shares different from a direct property sale in Bali?",
+        answer:
+          "Exiting through a PT PMA share transfer means the gain is recognised at the company level rather than on a direct property title transfer. Different withholding rules apply under the relevant tax treaty, and the overall tax burden varies by structure. This route requires specific legal and tax advice from an Indonesian adviser experienced with PT PMA disposals.",
+      },
+    ],
+    gallery: [
+      {
+        url: "/blog/tax-calculation-sale-proceeds-notebook.webp",
+        alt: "Person calculating property sale tax with a notebook and US dollar bills on a wooden desk",
+        credit: "Pexels / Olia Danilevich",
+        sourceUrl: "https://www.pexels.com/photo/close-up-of-hands-using-a-calculator-with-notebook-and-cash-5466812/",
+      },
+      {
+        url: "/blog/sold-property-blueprints-hardhat.webp",
+        alt: "Architectural blueprints with a SOLD sign and a hard hat on a sunlit surface, representing a completed property sale",
+        credit: "Pexels / Thirdman",
+        sourceUrl: "https://www.pexels.com/photo/blueprints-with-a-sold-sign-and-hard-hat-8470061/",
+      },
+    ],
+    citations: [
+      {
+        label: "Government Regulation No. 34 of 2016: Final Income Tax on Property Transfers (PP 34/2016) - Ortax (Tier 1)",
+        url: "https://datacenter.ortax.org/ortax/aturan/show/16100",
+      },
+      {
+        label: "Directorate General of Taxes: Income Tax Article 26 - Non-Resident Withholding at 20% (Tier 1)",
+        url: "https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers",
+      },
+      {
+        label: "IRS: Indonesia Tax Treaty Documents - 1988 US-Indonesia Tax Convention (Tier 1)",
+        url: "https://www.irs.gov/businesses/international-businesses/indonesia-tax-treaty-documents",
+      },
+      {
+        label: "Ortax: Indonesia-UAE Double Tax Avoidance Agreement (Perpres No. 34/2021, effective Jan 2022) (Tier 1)",
+        url: "https://datacenter.ortax.org/ortax/treaty/show/87",
+      },
+      {
+        label: "ILA Global Consulting: Dubai to Bali - Indonesia-UAE Tax Treaty for Property Investors (Tier 2)",
+        url: "https://ilaglobalconsulting.com/tax-treaty-dubai-bali/",
+      },
+    ],
+  },
 ];

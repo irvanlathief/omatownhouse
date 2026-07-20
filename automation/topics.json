@@ -655,6 +655,174 @@
       "suggestedVenues": [],
       "publishedAt": "2026-07-19",
       "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/54"
+    },
+    {
+      "id": "bali-capital-gains-tax-selling",
+      "status": "drafting",
+      "priority": 30,
+      "theme": "tax",
+      "atpType": "what",
+      "primaryQuestion": "What capital gains tax does a foreigner pay when selling Bali property?",
+      "targetKeywords": ["Bali capital gains tax foreigners", "selling Bali property tax", "Indonesia property transfer tax foreign seller"],
+      "relatedQuestions": [
+        "Do US citizens pay capital gains tax in both Indonesia and the US when selling Bali property?",
+        "What is the difference between PPh 2.5% and Article 26 withholding for a foreign seller?",
+        "How is the sale tax calculated on a Bali leasehold assignment versus a PT PMA share transfer?"
+      ],
+      "proposedSlug": "bali-capital-gains-tax-foreign-seller",
+      "proposedTitle": "Capital Gains Tax When Selling Bali Property as a Foreigner",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "power-of-attorney-bali-property",
+      "status": "pending",
+      "priority": 31,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How does a power of attorney work for buying Bali property from abroad?",
+      "targetKeywords": ["power of attorney Bali property", "POA Bali real estate", "buying Bali property remotely POA notary"],
+      "relatedQuestions": [
+        "Do I need a notarized power of attorney to buy property in Bali from the US or UAE?",
+        "What does a Bali property power of attorney cover?",
+        "Can my Indonesian lawyer sign property documents on my behalf?"
+      ],
+      "proposedSlug": "power-of-attorney-bali-property-purchase",
+      "proposedTitle": "Using a Power of Attorney to Buy Bali Property from Abroad",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "short-term-rental-permit-bali",
+      "status": "pending",
+      "priority": 32,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "What permit does a Bali villa need to operate as a short-term rental?",
+      "targetKeywords": ["Bali short-term rental permit", "Pondok Wisata Bali license", "Bali villa Airbnb permit"],
+      "relatedQuestions": [
+        "What is the difference between a Pondok Wisata and a hotel license in Bali?",
+        "Can a PT PMA hold a short-term rental permit in Bali?",
+        "What happens if I rent my Bali villa without a permit?"
+      ],
+      "proposedSlug": "short-term-rental-permit-bali-villa",
+      "proposedTitle": "What Permit Does a Bali Villa Need to Rent Short-Term?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "ppjb-contract-bali-off-plan",
+      "status": "pending",
+      "priority": 33,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is a PPJB and what should it include in a Bali off-plan purchase?",
+      "targetKeywords": ["PPJB Bali off-plan contract", "binding sale agreement Bali", "Bali off-plan contract terms"],
+      "relatedQuestions": [
+        "What is the difference between a PPJB and an AJB in a Bali property transaction?",
+        "What clauses protect the buyer in a Bali PPJB?",
+        "When does a PPJB convert to a full title transfer in Bali?"
+      ],
+      "proposedSlug": "ppjb-contract-bali-off-plan-explained",
+      "proposedTitle": "What Is a PPJB? Bali Off-Plan Contract Explained",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-transfer-taxes-bphtb",
+      "status": "pending",
+      "priority": 34,
+      "theme": "tax",
+      "atpType": "what",
+      "primaryQuestion": "What transfer taxes (BPHTB, PPh) apply when buying Bali property?",
+      "targetKeywords": ["BPHTB Bali property tax", "transfer taxes buying Bali property", "PPh seller tax Bali purchase"],
+      "relatedQuestions": [
+        "Who pays BPHTB, the buyer or seller in a Bali property deal?",
+        "How is BPHTB calculated on a Bali villa purchase?",
+        "Are transfer taxes different for a PT PMA share transfer versus a direct property sale?"
+      ],
+      "proposedSlug": "bali-property-transfer-taxes-bphtb",
+      "proposedTitle": "Transfer Taxes When Buying Bali Property: BPHTB and PPh",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-spain-property",
+      "status": "pending",
+      "priority": 35,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Spain (Costa del Sol) property for foreign investors: how do they compare?",
+      "targetKeywords": ["Bali vs Spain property investment", "Bali or Costa del Sol investment", "Spain vs Bali rental yield foreigners"],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Spain more easily than in Bali?",
+        "Are Bali or Spanish coastal rental yields higher?",
+        "How do taxes compare for foreign property owners in Spain vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-spain-property-investment",
+      "proposedTitle": "Bali vs Spain Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "hgb-title-bali-foreigners",
+      "status": "pending",
+      "priority": 36,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What is Hak Guna Bangunan and how does a PT PMA use it to hold Bali property?",
+      "targetKeywords": ["Hak Guna Bangunan Bali foreigners", "HGB title PT PMA Bali", "Bali property title types"],
+      "relatedQuestions": [
+        "How long does a Hak Guna Bangunan title last and can it be renewed?",
+        "What is the difference between HGB, Hak Pakai, and Hak Milik in Bali?",
+        "Can a PT PMA sell a property held under HGB title?"
+      ],
+      "proposedSlug": "hak-guna-bangunan-bali-pt-pma",
+      "proposedTitle": "What Is Hak Guna Bangunan? PT PMA Property in Bali",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-inheritance-foreigners",
+      "status": "pending",
+      "priority": 37,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What happens to foreign-owned Bali property when the owner dies?",
+      "targetKeywords": ["Bali property inheritance foreigners", "foreign-owned villa estate planning Bali", "PT PMA shares inheritance Indonesia"],
+      "relatedQuestions": [
+        "Can I leave my Bali leasehold or PT PMA to a non-Indonesian heir?",
+        "Does Indonesia recognize a foreign will for Bali property?",
+        "What is the inheritance tax on Bali property for foreigners?"
+      ],
+      "proposedSlug": "bali-property-inheritance-foreign-owners",
+      "proposedTitle": "Bali Property Inheritance: What Foreign Owners Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
