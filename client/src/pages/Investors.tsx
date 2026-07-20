@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { Link } from "wouter";
 import { ExperienceHeader } from "@/components/ExperienceHeader";
+import { FoundersSection } from "@/components/FoundersSection";
 import { InvestorPackDrawer } from "@/components/InvestorPackDrawer";
 import {
   calculateInvestment,
@@ -217,7 +218,7 @@ const FAQ = [
   {
     question: "How many OMA townhouses will be built?",
     answer:
-      "OMA is planned as 12 homes. Units 01-03 form the founding release and use the current early-bird pricing. Units 04-12 will be released later with revised pricing.",
+      "OMA is planned as 12 homes. Units 01-03 form the founding release and use the current founding-release pricing. Units 04-12 will be released later with revised pricing.",
   },
 ];
 
@@ -274,7 +275,7 @@ export default function Investors() {
       <Operations />
       <LocationCase />
       <BuyerProtection />
-      <Founder />
+      <FoundersSection />
       <Questions />
       <FinalCta onRequestPack={() => setPackOpen(true)} />
 
@@ -361,7 +362,7 @@ function Hero({ onRequestPack }: { onRequestPack: () => void }) {
 
 function Snapshot() {
   const facts = [
-    ["From USD 115,000", "Current early-bird entry"],
+    ["From USD 159,000", "Current founding-release entry"],
     ["97.5 sqm", "Across two floors"],
     ["2 bedrooms", "Each with a bathroom"],
     ["Private pool", "For owners and guests"],
@@ -419,7 +420,7 @@ function ReleasePlan() {
             <p className="max-w-xl text-base leading-relaxed text-white/60">
               OMA is planned as a 12-home development. Units 01-03 are the
               founding release and the only homes offered at today&apos;s
-              early-bird numbers. Units 04-12 will be released later with
+              founding-release prices. Units 04-12 will be released later with
               revised pricing.
             </p>
             <div className="mt-7 flex flex-wrap gap-5 text-sm">
@@ -1322,66 +1323,6 @@ function BuyerProtection() {
               </div>
             ))}
           </div>
-        </Reveal>
-      </div>
-    </section>
-  );
-}
-
-function Founder() {
-  return (
-    <section className="px-5 py-24 sm:px-8 lg:px-12 lg:py-36">
-      <div className="mx-auto grid max-w-[1450px] gap-12 lg:grid-cols-[0.7fr_1.3fr]">
-        <Reveal>
-          <div className="overflow-hidden rounded-[22px] bg-black">
-            <img
-              src="/founder/irvan-lathief.webp"
-              alt="Irvan Lathief, founder of OMA Townhouse"
-              loading="lazy"
-              className="aspect-square w-full object-cover grayscale"
-            />
-          </div>
-          <div className="mt-5 grid gap-5 border-t border-black/20 pt-5 sm:grid-cols-2">
-            <div>
-              <strong className="text-lg font-medium">Irvan Lathief</strong>
-              <span className="mt-1 block text-sm text-black/45">
-                Founder, OMA Townhouse
-              </span>
-            </div>
-            <div>
-              <strong className="text-lg font-medium">Derek</strong>
-              <span className="mt-1 block text-sm text-black/45">
-                OMA development team
-              </span>
-            </div>
-          </div>
-        </Reveal>
-        <Reveal delay={0.08}>
-          <p className="text-sm text-black/50">Who is behind OMA</p>
-          <h2 className="mt-5 max-w-4xl font-editorial text-5xl leading-[0.96] tracking-[-0.04em] sm:text-7xl">
-            Irvan and Derek, building OMA with founder-level attention.
-          </h2>
-          <div className="mt-10 grid gap-8 border-t border-black/20 pt-8 sm:grid-cols-2">
-            <p className="text-base leading-relaxed text-black/60">
-              Irvan brings more than a decade in product design and delivery to
-              OMA&apos;s first development. One site, one repeatable floor plan,
-              and close attention to the decisions that affect owners.
-            </p>
-            <p className="text-base leading-relaxed text-black/60">
-              Irvan and Derek are keeping the first 12 homes intentionally
-              focused. Being early should come with more visibility, which is
-              why milestone payments, owner inspections and direct team access
-              are part of the buyer conversation.
-            </p>
-          </div>
-          <a
-            href="https://irvanlathief.com"
-            data-external="true"
-            className="mt-9 inline-flex items-center gap-5 rounded-full border border-black/20 px-5 py-3 text-sm font-medium transition-colors hover:bg-black hover:text-white"
-          >
-            Meet the founder
-            <ArrowRight className="h-4 w-4" />
-          </a>
         </Reveal>
       </div>
     </section>

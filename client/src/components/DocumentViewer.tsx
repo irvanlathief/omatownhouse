@@ -75,7 +75,7 @@ const DOCUMENTS: Document[] = [
         kind: "card",
         title: "25 year leasehold",
         lines: [
-          "From 115,000 USD",
+          "From 159,000 USD",
           "Right to use the property for a 25 year term",
           "Lowest entry point and simplest paperwork",
           "Available to any foreign buyer, no Indonesian residency required",
@@ -85,6 +85,7 @@ const DOCUMENTS: Document[] = [
         kind: "card",
         title: "40 year leasehold",
         lines: [
+          "From 219,000 USD",
           "Mid tier leasehold term",
           "Same simple foreign buyer route as 25 year",
           "Often combined with an agreed extension at expiry",
@@ -94,7 +95,7 @@ const DOCUMENTS: Document[] = [
         kind: "card",
         title: "Freehold via PT PMA",
         lines: [
-          "From 265,000 USD, standard pricing up to 310,000 USD",
+          "From 299,000 USD, standard pricing up to 349,000 USD",
           "Held through a foreign owned PT PMA company",
           "Closest equivalent to direct freehold for an overseas buyer",
           "Suited to investors who want to run the property as a rental business",

@@ -35,8 +35,12 @@ function getInlineFallback(content: string) {
 ![OMA Townhouse first-floor plan](/property-docs/floor-plan-first.webp)`;
   }
 
-  if (normalized.includes("price") || normalized.includes("early-bird")) {
-    return `The first-building early-bird allocation is 15% below standard pricing, with a 30% deposit due within 14 days.
+  if (
+    normalized.includes("price") ||
+    normalized.includes("early-bird") ||
+    normalized.includes("founding")
+  ) {
+    return `The first-building founding allocation is approximately 15% below standard pricing, with a 30% deposit due within 14 days.
 
 \`\`\`pricing
 \`\`\``;

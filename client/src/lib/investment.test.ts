@@ -10,7 +10,7 @@ describe("calculateInvestment", () => {
     const result = calculateInvestment({
       nightlyRate: 200,
       nightsPerMonth: 18,
-      priceUsd: 115_000,
+      priceUsd: OWNERSHIP_OPTIONS[0].priceUsd,
     });
 
     expect(result.grossAnnual).toBe(43_200);
@@ -19,14 +19,14 @@ describe("calculateInvestment", () => {
     expect(result.fixedOperations).toBe(4_200);
     expect(result.netAnnual).toBeCloseTo(28_200, 6);
     expect(result.occupancyRate).toBe(0.6);
-    expect(result.paybackYears).toBeCloseTo(4.078, 3);
+    expect(result.paybackYears).toBeCloseTo(5.638, 3);
   });
 
   it("returns no payback when operations produce no net income", () => {
     const result = calculateInvestment({
       nightlyRate: 80,
       nightsPerMonth: 0,
-      priceUsd: 161_000,
+      priceUsd: OWNERSHIP_OPTIONS[1].priceUsd,
     });
 
     expect(result.netAnnual).toBe(0);
@@ -38,15 +38,15 @@ describe("calculateInvestment", () => {
     const result = calculateInvestment({
       nightlyRate: 200,
       nightsPerMonth: 18,
-      priceUsd: 265_000,
+      priceUsd: OWNERSHIP_OPTIONS[2].priceUsd,
     });
 
     expect(result.payments.map(payment => payment.amountUsd)).toEqual([
-      79_500, 79_500, 106_000,
+      89_700, 89_700, 119_600,
     ]);
     expect(
       result.payments.reduce((sum, payment) => sum + payment.amountUsd, 0)
-    ).toBe(265_000);
+    ).toBe(299_000);
   });
 
   it("changes yield and payback with the ownership tier price", () => {
@@ -69,5 +69,18 @@ describe("calculateInvestment", () => {
 describe("formatUsd", () => {
   it("formats rounded USD values consistently", () => {
     expect(formatUsd(79_499.6)).toBe("USD 79,500");
+  });
+});
+
+describe("ownership pricing", () => {
+  it("keeps the 2026 founding-release ladder in one shared source", () => {
+    expect(OWNERSHIP_OPTIONS.map(option => option.priceUsd)).toEqual([
+      159_000, 219_000, 299_000,
+    ]);
+    expect(OWNERSHIP_OPTIONS.map(option => option.standardPrice)).toEqual([
+      "USD 189,000",
+      "USD 259,000",
+      "USD 349,000",
+    ]);
   });
 });

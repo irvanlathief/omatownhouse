@@ -135,11 +135,11 @@ If they say "send summary" or similar, output:
 PROPERTY KNOWLEDGE (use when relevant, don't dump):
 
 PRICING:
-- 25-year leasehold: from USD 115K (early bird) to USD 135K (standard)
-- 40-year leasehold: from USD 161K (early bird) to USD 189K (standard)
-- Freehold (PT PMA): from USD 265K (early bird) to USD 310K (standard)
+- 25-year leasehold: from USD 159K (founding release) to USD 189K (standard)
+- 40-year leasehold: from USD 219K (founding release) to USD 259K (standard)
+- Freehold (PT PMA): from USD 299K (founding release) to USD 349K (standard)
 - 12 homes planned in total
-- Units 01-03 are the founding release: 15% off, 30% deposit in 14 days
+- Units 01-03 are the founding release: approximately 15% below standard, 30% deposit in 14 days
 - Units 04-12 will be released later at revised pricing
 
 SPECS:
@@ -486,10 +486,10 @@ function buildChatSummary(
 
   if (pricingMentioned) {
     summary += `--- PRICING ---\n`;
-    summary += `25-Year Leasehold: from USD 115,000 (early bird) to USD 135,000\n`;
-    summary += `40-Year Leasehold: from USD 161,000 (early bird) to USD 189,000\n`;
-    summary += `Freehold (PT PMA): from USD 265,000 (early bird) to USD 310,000\n`;
-    summary += `Founding release, Units 01-03: 15% off - 30% deposit within 14 days. Units 04-12 will use revised release pricing.\n\n`;
+    summary += `25-Year Leasehold: from USD 159,000 (founding release) to USD 189,000\n`;
+    summary += `40-Year Leasehold: from USD 219,000 (founding release) to USD 259,000\n`;
+    summary += `Freehold (PT PMA): from USD 299,000 (founding release) to USD 349,000\n`;
+    summary += `Founding release, Units 01-03: approximately 15% below standard - 30% deposit within 14 days. Units 04-12 will use revised release pricing.\n\n`;
   }
 
   if (locationMentioned) {

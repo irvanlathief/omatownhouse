@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { Link } from "wouter";
 import { ExperienceHeader } from "@/components/ExperienceHeader";
+import { FoundersSection } from "@/components/FoundersSection";
 import { trpc } from "@/lib/trpc";
 import { formatUsd, OWNERSHIP_OPTIONS } from "@/lib/investment";
 
@@ -1053,15 +1054,15 @@ export default function Home() {
             </div>
             <div className="flex flex-col justify-end gap-5">
               <div className="w-fit rounded-full bg-black px-3 py-1.5 text-xs font-medium text-white">
-                Founding release, Units 01-03: 15% off
+                Founding release, Units 01-03: approximately 15% below standard
               </div>
               <p className="max-w-2xl text-base leading-relaxed text-stone-600">
                 The highlighted prices apply to OMA&apos;s first three units.
-                They sit 15% below standard pricing and require a 30% deposit
-                within 14 days, with full payment due before handover. Units
-                04-12 will be released later at revised pricing. Availability
-                and the promotional window should be confirmed with the OMA
-                team. All prices are in USD.
+                They sit approximately 15% below standard pricing and require a
+                30% deposit within 14 days, with full payment due before
+                handover. Units 04-12 will be released later at revised pricing.
+                Availability and the promotional window should be confirmed with
+                the OMA team. All prices are in USD.
               </p>
             </div>
           </Reveal>
@@ -1083,7 +1084,7 @@ export default function Home() {
                   </span>
                   <div className="pl-8 text-left sm:pl-0 sm:text-right">
                     <span className="block text-xs text-stone-500">
-                      Early-bird price
+                      Founding-release price
                     </span>
                     <strong className="block text-lg font-medium">
                       {option.earlyBirdPrice}
@@ -1284,6 +1285,8 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <FoundersSection />
 
       <section className="bg-white px-5 py-24 text-black sm:px-8 lg:px-12 lg:py-32">
         <div className="mx-auto grid max-w-[1450px] gap-12 lg:grid-cols-[0.8fr_1.6fr]">

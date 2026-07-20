@@ -13,6 +13,7 @@ import {
 import type { ReactElement } from "react";
 import { Streamdown } from "streamdown";
 import type { AskAiChat } from "@/hooks/useAskAiChat";
+import { OWNERSHIP_OPTIONS } from "@/lib/investment";
 
 // Presentational chat UI. These components are defined at MODULE SCOPE (not
 // inside a page component), so a page re-render on each keystroke re-renders
@@ -35,7 +36,7 @@ const QUICK_PROMPTS = [
     id: "pricing",
     name: "Pricing",
     icon: DollarSign,
-    prompt: "What are the current prices and early-bird terms?",
+    prompt: "What are the current prices and founding-release terms?",
   },
   {
     id: "location",
@@ -95,7 +96,7 @@ const STARTER_PROMPTS = [
   {
     label: "Pricing",
     icon: DollarSign,
-    text: "What are the current prices and any early-bird promos?",
+    text: "What are the current prices and founding-release terms?",
   },
 ];
 
@@ -152,11 +153,10 @@ function StarterPrompts({ chat }: { chat: AskAiChat }) {
 
 // Pricing tiers shown by the ```pricing``` block. Names + prices match the
 // homepage pricing CTAs so chat.sendInterest fires a consistent lead message.
-const PRICING_TIERS = [
-  { name: "25-Year Leasehold", price: "USD 115,000" },
-  { name: "40-Year Leasehold", price: "USD 161,000" },
-  { name: "Freehold (PT PMA)", price: "USD 265,000" },
-];
+const PRICING_TIERS = OWNERSHIP_OPTIONS.map(option => ({
+  name: option.term,
+  price: option.earlyBirdPrice,
+}));
 
 // The model can surface these as inline follow-up prompts. They deliberately
 // ask a new chat question instead of opening a separate document modal.

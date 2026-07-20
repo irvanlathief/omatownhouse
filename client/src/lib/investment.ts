@@ -29,9 +29,9 @@ export const OWNERSHIP_OPTIONS = [
   {
     key: "lease25",
     term: "25-year leasehold",
-    priceUsd: 115_000,
-    earlyBirdPrice: "USD 115,000",
-    standardPrice: "USD 135,000",
+    priceUsd: 159_000,
+    earlyBirdPrice: "USD 159,000",
+    standardPrice: "USD 189,000",
     note: "The simplest way in",
     description:
       "A lower entry point with renewal language agreed in the legal documents.",
@@ -39,9 +39,9 @@ export const OWNERSHIP_OPTIONS = [
   {
     key: "lease40",
     term: "40-year leasehold",
-    priceUsd: 161_000,
-    earlyBirdPrice: "USD 161,000",
-    standardPrice: "USD 189,000",
+    priceUsd: 219_000,
+    earlyBirdPrice: "USD 219,000",
+    standardPrice: "USD 259,000",
     note: "A longer horizon",
     description:
       "More time in the asset and a lower effective holding cost per year.",
@@ -49,9 +49,9 @@ export const OWNERSHIP_OPTIONS = [
   {
     key: "freehold",
     term: "Freehold via PT PMA",
-    priceUsd: 265_000,
-    earlyBirdPrice: "USD 265,000",
-    standardPrice: "USD 310,000",
+    priceUsd: 299_000,
+    earlyBirdPrice: "USD 299,000",
+    standardPrice: "USD 349,000",
     note: "Built for permanence",
     description:
       "HGB held by a foreign-owned company for long-term control and operation.",
