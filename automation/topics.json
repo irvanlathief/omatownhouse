@@ -658,7 +658,7 @@
     },
     {
       "id": "bali-capital-gains-tax-selling",
-      "status": "drafting",
+      "status": "published",
       "priority": 30,
       "theme": "tax",
       "atpType": "what",
@@ -674,8 +674,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-20",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/56"
     },
     {
       "id": "power-of-attorney-bali-property",
