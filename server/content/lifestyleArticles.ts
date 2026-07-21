@@ -2095,4 +2095,68 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "power-of-attorney-bali-property-purchase",
+    title: "Using a Power of Attorney to Buy Bali Property from Abroad",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 40,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-21",
+    heroImage: "/blog/poa-notary-lawyer-desk-justice.webp",
+    metaDescription:
+      "A Surat Kuasa Khusus lets a foreign buyer complete a Bali property purchase remotely. US apostille path, UAE steps, and what the POA can and cannot sign.",
+    body: `<p>Yes, you can complete most of a Bali property purchase from the US or Dubai using a Surat Kuasa Khusus, which translates as Special Power of Attorney. This document, governed by the Indonesian Civil Code (KUHPerdata, <a href="https://adcolaw.com/blog/understanding-power-of-attorney-functions-types-and-examples/" data-external="true">Articles 1792 to 1819</a>), authorises a named representative in Indonesia to sign property documents on your behalf. In practice that representative is an independent Indonesian lawyer. The scope of authority must be written out in full detail, because the PPAT (the land deed official) will reject any document that lists acts in vague or general terms.</p><p>If you sign the POA at home, the authentication path differs by country. US buyers benefit from Indonesia joining the Hague Apostille Convention in June 2022, established by <a href="https://www.allenandgledhill.com/sg/publication/articles/21911/apostille-convention-enters-into-force-for-indonesia" data-external="true">Presidential Regulation No. 2 of 2021</a>. You notarise the document before a US notary public, obtain an apostille from the relevant state Secretary of State, and then submit it to the Indonesian notary or PPAT. The process typically takes a few days. UAE buyers face extra steps because the UAE has not joined the Apostille Convention. The document must be attested with the UAE Ministry of Foreign Affairs and then legalised at the Indonesian Embassy in Abu Dhabi or the Consulate General in Dubai before it is valid in Indonesia.</p><p>Once authenticated, your representative can sign the PPJB (preliminary sale and purchase agreement) before a licensed notary, then appear before the PPAT to execute the AJB, which is the formal deed of sale and title transfer. The PPAT must file the title change with the National Land Agency (BPN) within seven working days of signing. Your lawyer must physically attend the PPAT appointment; the POA replaces your physical presence, not the presence of a competent authorised signatory.</p><p>A power of attorney authorises a process, not an ownership structure. Foreigners still cannot hold Hak Milik (freehold) in their own names regardless of how a POA is written. Valid structures remain leasehold, Hak Pakai for those with an Indonesian residency permit, or ownership through a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a>. Never grant a POA to the seller's agent or the developer's recommended notary. Appoint your own independent Indonesian lawyer and confirm in writing that the lawyer's role is to represent your interests alone. This article is for general information only and is not legal advice; confirm your position with a qualified Indonesian lawyer before signing any property documents.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Do I need a notarized power of attorney to buy property in Bali from the US or UAE?",
+        answer:
+          "Yes. In Indonesia the relevant instrument is a Surat Kuasa Khusus (Special Power of Attorney). US buyers notarise it and obtain an apostille from their state Secretary of State, since Indonesia joined the Hague Apostille Convention in June 2022. UAE buyers must go through UAE Ministry of Foreign Affairs attestation and then Indonesian Embassy legalisation, as the UAE has not joined the Apostille Convention.",
+      },
+      {
+        question: "What does a Bali property power of attorney cover?",
+        answer:
+          "A properly drafted Surat Kuasa Khusus can authorise signing the PPJB (preliminary sale agreement) before a licensed notary, signing the AJB (deed of sale and title transfer) before the PPAT, paying transfer taxes, and filing the title update at the National Land Agency (BPN). Each act must be listed explicitly. A vague or general POA will be rejected by the PPAT.",
+      },
+      {
+        question: "Can my Indonesian lawyer sign property documents on my behalf?",
+        answer:
+          "Yes, provided the POA is correctly authenticated and explicitly authorises each step. Your lawyer must physically appear before the PPAT to sign the AJB on your behalf. Appoint a lawyer who is independent of the seller, developer, and any agent, and confirm that the authority to act is clearly set out in the document.",
+      },
+    ],
+    gallery: [
+      {
+        url: "/blog/poa-property-document-signing-formal.webp",
+        alt: "Man in a suit signing a formal legal document at a desk, representing a power of attorney signing for a Bali property purchase",
+        credit: "Pexels / Mikhail Nilov",
+        sourceUrl: "https://www.pexels.com/photo/elegant-man-signing-documents-8730998/",
+      },
+      {
+        url: "/blog/poa-legal-scales-gavel.webp",
+        alt: "Scales of justice and a wooden gavel on a desk, representing the legal framework for Indonesian property transactions",
+        credit: "Pexels / Sora Shimazaki",
+        sourceUrl: "https://www.pexels.com/photo/close-up-photo-of-gavel-5669619/",
+      },
+    ],
+    citations: [
+      {
+        label: "Allen & Gledhill: Apostille Convention Enters into Force for Indonesia (Presidential Regulation No. 2/2021) (Tier 2)",
+        url: "https://www.allenandgledhill.com/sg/publication/articles/21911/apostille-convention-enters-into-force-for-indonesia",
+      },
+      {
+        label: "ADCO Law: Understanding Power of Attorney in Indonesia - Types and Legal Basis (KUHPerdata Articles 1792-1819) (Tier 2)",
+        url: "https://adcolaw.com/blog/understanding-power-of-attorney-functions-types-and-examples/",
+      },
+      {
+        label: "Emerhub: Laws and Regulations for Buying Property in Indonesia as a Foreigner (Tier 2)",
+        url: "https://emerhub.com/indonesia/laws-and-regulations-for-buying-property-in-indonesia/",
+      },
+      {
+        label: "Apostille USA: Powers of Attorney Apostille Services for Indonesia - Hague Convention Process (Tier 2)",
+        url: "https://apostille-usa.com/2024/04/powers-of-attorney-apostille-services-for-indonesia/",
+      },
+    ],
+  },
 ];
