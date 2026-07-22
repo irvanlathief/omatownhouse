@@ -2159,4 +2159,73 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "short-term-rental-permit-bali-villa",
+    title: "What Permit Does a Bali Villa Need to Rent Short-Term?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 41,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-22",
+    heroImage: "/blog/bali-villa-short-term-rental-aerial.webp",
+    metaDescription:
+      "A Bali villa renting to guests needs a Pondok Wisata or Villa license via OSS. Foreign PT PMA owners face a regulatory Catch-22 under Permenpar 18/2016 and the new KBLI 2025 codes.",
+    body: `<p>A Bali villa renting to guests by the night needs either a Pondok Wisata license (for Indonesian citizen owners) or, for a foreign-owned <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a>, a Villa accommodation license under Indonesia's OSS business registration system. Without one, the property cannot legally list on Airbnb, Booking.com, or any other platform under Ministerial Regulation Permenpar No. 6 of 2025.</p><p>The Pondok Wisata (KBLI code 55130) is Indonesia's standard short-term rental license, defined under <a href="https://peraturan.bpk.go.id/Details/171166/permenpar-no-18-tahun-2016" data-external="true">Permenpar No. 18 of 2016</a>. It covers residential properties rented to tourists on a nightly or weekly basis, with a ceiling of five bedrooms. Properties above that threshold require a Hotel Melati classification, which carries higher staffing and inspection standards. The license is issued through Indonesia's OSS portal as a Nomor Induk Berusaha (NIB) combined with a Sertifikat Standar, is valid for five years, and must be renewed. One restriction is non-negotiable: Permenpar 18/2016 limits the Pondok Wisata to Indonesian citizens. Foreigners cannot hold it in their own name.</p><p>A foreign investor must own and operate a Bali rental villa through a PT PMA company, as set out in our <a href="/blog/freehold-vs-leasehold-bali">ownership structure guide</a>. The difficulty is that the Villa code (KBLI 55193) most PT PMAs have historically used is formally reserved for cooperatives and Indonesian micro and small enterprises under Presidential Regulation No. 10 of 2021. A standard large-scale PT PMA cannot obtain KBLI 55193 through the OSS system in a straightforward way. New classification codes introduced by Peraturan BPS No. 7 of 2025 (effective December 2025) are expected to clarify the licensing path for PT PMAs in this situation, but the OSS implementation was still stabilising as of mid-2026. An independent Indonesian legal adviser can identify the current compliant route.</p><p>Before filing in OSS, the property needs three things in place: a PBG (the commercial building approval), an SLF (certificate of occupancy for commercial use), and confirmed tourism zone (pink zone) zoning under Bali's spatial plan. A villa in a residential or protected green zone cannot hold any short-term rental license.</p><p>Enforcement is no longer theoretical. On July 22, 2025, Bali's Governor personally oversaw the demolition of 48 unlicensed structures at Bingin Beach. Fines for unlicensed rental operation start at IDR 50 million. Foreigners running a rental business without PT PMA authorisation face deportation and an entry ban of one to six years. Operating through an Indonesian nominee to hold the license on a foreigner's behalf is illegal and since February 2026 carries criminal penalties under Bali's regional regulation Perda No. 4/2026. This is general information, not legal or financial advice; confirm your licensing position with a qualified adviser before listing your villa.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is the difference between a Pondok Wisata and a hotel license in Bali?",
+        answer:
+          "A Pondok Wisata (KBLI 55130) covers residential properties of up to five bedrooms, is available to Indonesian citizens only, and is designed for owner-operated short-term rentals. Properties with six or more guest rooms need a Hotel Melati classification, which requires a formal company structure, additional staffing, and more stringent safety inspections. Both licenses are issued through Indonesia's OSS system as a NIB combined with a Sertifikat Standar.",
+      },
+      {
+        question: "Can a PT PMA hold a short-term rental permit in Bali?",
+        answer:
+          "A PT PMA cannot hold a Pondok Wisata license, which is restricted to Indonesian citizens under Permenpar No. 18 of 2016. The Villa code (KBLI 55193) most PT PMAs have used is formally reserved for Indonesian micro and small enterprises under Presidential Regulation No. 10 of 2021, creating a regulatory conflict for foreign-owned companies. New KBLI codes introduced in December 2025 under Peraturan BPS No. 7 of 2025 are expected to provide a clearer path, but the OSS implementation is still being established. Confirm the current compliant route with an Indonesian legal adviser.",
+      },
+      {
+        question: "What happens if I rent my Bali villa without a permit?",
+        answer:
+          "Unlicensed villas face fines starting at IDR 50 million, property sealing by Satpol PP, and delisting from Airbnb and Booking.com under Ministerial Regulation Permenpar No. 6 of 2025. Foreigners operating without proper PT PMA authorisation can be deported and banned from re-entering Indonesia for one to six years. Since February 2026, using an Indonesian nominee to hold the permit on a foreigner's behalf is a criminal offence under Bali's regional regulation Perda No. 4/2026, carrying up to five years imprisonment.",
+      },
+    ],
+    gallery: [
+      {
+        url: "/blog/bali-rental-permit-stamp-approval.webp",
+        alt: "Hands pressing an official rubber stamp onto a document, representing the approval of a tourism business permit or NIB for a Bali short-term rental villa",
+        credit: "Pexels / Anna Tarazevich",
+        sourceUrl: "https://www.pexels.com/photo/a-person-s-hand-using-a-stamp-6358840/",
+      },
+      {
+        url: "/blog/rental-property-compliance-inspection.webp",
+        alt: "A property inspector in a hard hat and high-visibility vest checking a building door with a clipboard, representing the SLF compliance inspection required before a Bali villa rental permit is issued",
+        credit: "Pexels / RDNE Stock project",
+        sourceUrl: "https://www.pexels.com/photo/a-male-inspector-in-a-hard-hat-conducts-a-property-inspection-outdoors-with-a-clipboard-8293667/",
+      },
+    ],
+    citations: [
+      {
+        label: "Permenpar No. 18 Tahun 2016 - BPK Official Legal Database (Tier 1): primary regulation defining Pondok Wisata and tourism business registration",
+        url: "https://peraturan.bpk.go.id/Details/171166/permenpar-no-18-tahun-2016",
+      },
+      {
+        label: "KBLI 55130 Pondok Wisata - BPS Official KBLI Database (Tier 1): Indonesian standard business classification for homestay accommodation",
+        url: "https://klasifikasi.web.bps.go.id/app/view/kbli2009/55130",
+      },
+      {
+        label: "Emerhub: Understanding the Pondok Wisata Bali Homestay License (Tier 2)",
+        url: "https://emerhub.com/bali/pondok-wisata-bali-homestay-license/",
+      },
+      {
+        label: "ILA Global Consulting: Indonesia Villa Rental Regulations 2026 - PT PMA requirements and fines (Tier 2)",
+        url: "https://ilaglobalconsulting.com/indonesia-villa-rental-regulations-2026/",
+      },
+      {
+        label: "Seven Stones Indonesia: KBLI 2025 Tourism Accommodation Codes and PT PMA licensing path (Tier 2)",
+        url: "https://sevenstonesindonesia.com/blog/kbli-2025-2026-tourism-accommodation-codes-saving-the-day-for-pt-pmas-in-bali/",
+      },
+    ],
+  },
 ];
