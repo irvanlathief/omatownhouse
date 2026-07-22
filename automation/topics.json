@@ -700,7 +700,7 @@
     },
     {
       "id": "short-term-rental-permit-bali",
-      "status": "drafting",
+      "status": "published",
       "priority": 32,
       "theme": "investment",
       "atpType": "how",
@@ -716,8 +716,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-22",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/58"
     },
     {
       "id": "ppjb-contract-bali-off-plan",
