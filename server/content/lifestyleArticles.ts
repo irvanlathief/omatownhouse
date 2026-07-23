@@ -2228,4 +2228,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "ppjb-contract-bali-off-plan-explained",
+    title: "What Is a PPJB? Bali Off-Plan Contract Explained",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 42,
+    metaDescription:
+      "A PPJB is Indonesia's preliminary binding off-plan purchase agreement, signed before a notary. Know what it must include before committing to a Bali villa.",
+    body: `<p>A PPJB (Perjanjian Pengikatan Jual Beli) is Indonesia's preliminary binding purchase agreement for <a href="/blog/what-is-off-plan-property-bali">off-plan property</a>. It secures the deal before the villa is ready for a formal title transfer, and under Ministerial Regulation Permen PUPR No. 11 of 2019 it must be drawn up as a notarial deed signed before a licensed Notaris. The buyer has a legal right to seven working days to review it before signing.</p><p>The PPJB is not a title transfer. It creates only a personal right between buyer and developer. The AJB (Akta Jual Beli) is the final deed that actually shifts ownership and must be executed before a PPAT (Pejabat Pembuat Akta Tanah) and registered at Indonesia's National Land Agency (BPN). For a Bali off-plan villa, the PPJB typically precedes handover by 12 to 24 months.</p><p>Government Regulation PP No. 12 of 2021 adds a key rule: a developer cannot sign a PPJB until the project is at least 20% physically complete and the building permit (PBG) has been issued. Permen PUPR 11/2019 sets the mandatory content, which includes both parties' identities, a full property description with specifications, the purchase price and payment schedule, the agreed handover date, developer guarantees, rights and obligations, cancellation terms, and a dispute resolution clause.</p><p>Beyond the statutory minimum, ask your independent lawyer to add milestone-linked payments rather than calendar-date tranches, a daily denda (penalty) if the developer misses the delivery date, a retention holdback at final payment until defects are fixed, and a defect liability window of at least 90 days post-handover. Indonesian law does not require escrow for off-plan residential property. Deposits typically go directly to the developer. Negotiating for funds to sit at a commercial bank or through a notary trust arrangement reduces that risk.</p><p>For foreign buyers, the ownership structure must be settled before the PPJB is signed because it determines what deed follows at completion. A leasehold buyer converts to an Akta Sewa. A KITAS holder can convert to a Hak Pakai deed registered at BPN. A buyer using a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> converts via an AJB to a HGB title. See our <a href="/blog/freehold-vs-leasehold-bali">ownership structures guide</a> for a full comparison. This is general information, not legal or financial advice. Always engage an independent Indonesian lawyer to review your PPJB before signing.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is the difference between a PPJB and an AJB in a Bali property transaction?",
+        answer:
+          "A PPJB (Perjanjian Pengikatan Jual Beli) is a preliminary binding agreement signed before a Notaris. It creates a personal right between buyer and developer but does not transfer land title. An AJB (Akta Jual Beli) is the final transfer deed, executed before a PPAT (land conveyancer) and registered at BPN, that actually shifts legal ownership. In an off-plan Bali villa purchase, the PPJB comes first, typically 12 to 24 months before handover, and the final deed follows once construction is complete.",
+      },
+      {
+        question: "What clauses protect the buyer in a Bali PPJB?",
+        answer:
+          "Under Permen PUPR No. 11 of 2019, a PPJB must include the handover date, developer guarantees, cancellation terms, and a dispute resolution clause. Beyond those, buyers should negotiate for payments tied to construction milestones, a denda (daily penalty) for late delivery, a retention holdback until defects are fixed, a defect liability period of at least 90 days post-handover, and funds held by a commercial bank rather than deposited directly with the developer. Indonesian law does not mandate escrow for residential off-plan, so that protection must be written into the PPJB itself.",
+      },
+      {
+        question:
+          "When does a PPJB convert to a full title transfer in Bali?",
+        answer:
+          "It depends on the buyer's ownership structure. A leasehold buyer converts from PPJB to an Akta Sewa (lease deed) once the build is complete and all payments are made. A KITAS holder using Hak Pakai converts to a Hak Pakai deed registered at BPN. A foreign buyer holding through a PT PMA company converts via an AJB to a HGB title in the company's name. Under PP No. 12 of 2021, the developer must have at least 20% physical completion and a valid PBG (building permit) before the PPJB can be signed, so the timeline typically runs 12 to 24 months from signing to handover.",
+      },
+    ],
+    publishedAt: "2026-07-23",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/ppjb-buyer-legal-consultation.webp",
+    gallery: [
+      {
+        url: "/blog/off-plan-new-build-contract-signing.webp",
+        alt: "A couple and their agent signing purchase documents inside a new-build apartment under construction, representing the moment a Bali off-plan PPJB is executed",
+        credit: "Pexels / cottonbro studio",
+        sourceUrl:
+          "https://www.pexels.com/photo/a-couple-signing-real-estate-documents-with-a-realtor-inside-a-new-apartment-7647387/",
+      },
+      {
+        url: "/blog/ppjb-contract-clause-review.webp",
+        alt: "Two professionals reviewing a formal property contract clause by clause at a desk, representing the seven-day buyer review period required under Indonesian PPJB regulations",
+        credit: "Pexels / Ketut Subiyanto",
+        sourceUrl:
+          "https://www.pexels.com/photo/two-adults-reviewing-and-discussing-a-business-contract-with-a-pen-and-clipboard-8730976/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Permen PUPR No. 11/PRT/M/2019 - BPK RI JDIH: Ministerial Regulation governing PPJB form, mandatory clauses and notary obligations (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Home/Details/128152/permen-pupr-no-11prtm2019-tahun-2019",
+      },
+      {
+        label:
+          "PP No. 12 Tahun 2021 - BPK RI JDIH: Government Regulation defining the PPJB system and the 20% construction completion requirement (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/161842/pp-no-12-tahun-2021",
+      },
+      {
+        label:
+          "ILA Global Consulting: Property Handover Delay in Indonesia - buyer rights and denda clauses under Indonesian law (Tier 2)",
+        url: "https://ilaglobalconsulting.com/property-handover-delay-in-indonesia/",
+      },
+      {
+        label:
+          "Emerhub: Bali Property Investment Guide for Foreign Investors - PPJB process and buyer protections (Tier 2)",
+        url: "https://emerhub.com/bali/property-investment-in-bali/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
