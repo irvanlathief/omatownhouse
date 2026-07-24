@@ -742,7 +742,7 @@
     },
     {
       "id": "bali-property-transfer-taxes-bphtb",
-      "status": "drafting",
+      "status": "published",
       "priority": 34,
       "theme": "tax",
       "atpType": "what",
@@ -758,8 +758,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-24",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/61"
     },
     {
       "id": "bali-vs-spain-property",
