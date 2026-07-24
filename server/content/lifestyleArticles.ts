@@ -2301,4 +2301,68 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-property-transfer-taxes-bphtb",
+    title: "Transfer Taxes When Buying Bali Property: BPHTB and PPh",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 43,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-07-24",
+    heroImage: "/blog/bphtb-property-transfer-tax-rates-review.webp",
+    metaDescription:
+      "BPHTB at 5% and PPh Final at 2.5% apply at every Bali property closing. Who pays what, how each is calculated, and what changes for a PT PMA share transfer.",
+    body: `<p>When you buy property in Bali, two one-time transfer taxes fall due at closing. The buyer pays BPHTB (Bea Perolehan Hak atas Tanah dan Bangunan, the Acquisition Duty on Land and Buildings) at 5% of the taxable acquisition value above a regional exemption floor. The seller simultaneously pays Final Income Tax (PPh Final) at 2.5% of the gross transaction price. Both must be settled before the PPAT (the land deed official) can sign the title deed, so they are closing costs, not deferred obligations.</p><p>BPHTB is a regional tax administered by each regency under <a href="https://peraturan.bpk.go.id/Details/38763/uu-no-28-tahun-2009" data-external="true">Law No. 28 of 2009 on Regional Taxes and Levies</a>. The formula is 5% multiplied by (NPOP minus NPOPTKP). NPOP (the Tax Object Acquisition Value) is the higher of the agreed sale price or the government's annual NJOP assessment. NPOPTKP is the regency's tax-free floor; national law sets the minimum at IDR 60 million for standard purchases, and Bali regencies including Tabanan set theirs in that range. On a villa priced at IDR 3 billion with an IDR 60 million floor, the BPHTB works out to 5% of IDR 2.94 billion, which is IDR 147 million. The PPAT calculates the amount, issues a payment slip, and you pay at a government-appointed bank before the deed signing. The validated receipt must be presented at the PPAT appointment.</p><p>The seller pays PPh Final under <a href="https://peraturan.bpk.go.id/Details/5755/pp-no-34-tahun-2016" data-external="true">Government Regulation No. 34 of 2016</a>. The rate is 2.5% of the gross transaction price or the NJOP, whichever is higher. For that same IDR 3 billion property, the seller's tax is IDR 75 million. PPh Final is a definitive tax: once paid, the seller has no further income tax exposure on that transaction regardless of actual profit. For government-subsidised simple housing below official price ceilings, the rate drops to 1%, but that category does not apply to the villa market.</p><p>If you buy a Bali villa by acquiring the shares of the <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> that holds it, the tax picture changes. No property title changes hands in a share sale, so BPHTB does not apply. What the selling shareholders face instead is income tax on their gain. For a non-resident seller, Indonesian law imposes Article 26 withholding tax at 20% on an estimated net figure equal to 25% of gross sale proceeds, giving an effective rate of 5% on proceeds, reduced if a double tax treaty applies. The buyer inherits the company along with all its obligations, so independent legal due diligence on the PT PMA's corporate records, contracts, and liabilities is essential before signing any share purchase agreement.</p><p>Beyond BPHTB and PPh, closing a Bali property deal involves a PPAT fee (capped at 1% of the transaction value by regulation and typically split between buyer and seller by agreement), a BPN land certificate registration fee, and notary charges. Total buyer-side transaction costs for a direct purchase generally run between 4% and 6% of the purchase price. These are estimates; confirm the exact figures with your PPAT or an independent Indonesian tax adviser before signing. This article is for general information only and is not financial or legal advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Who pays BPHTB, the buyer or seller in a Bali property deal?",
+        answer:
+          "BPHTB is the buyer's tax. The seller pays PPh Final at 2.5% of the gross sale price under Government Regulation No. 34 of 2016. Both taxes must be paid before the PPAT can execute the title deed. The PPAT calculates both amounts, issues separate payment slips, and requires the validated bank receipts at the signing appointment.",
+      },
+      {
+        question: "How is BPHTB calculated on a Bali villa purchase?",
+        answer:
+          "The formula is 5% multiplied by (NPOP minus NPOPTKP). NPOP is the higher of the agreed sale price or the government NJOP annual assessment. NPOPTKP is the regency tax-free floor, with a national minimum of IDR 60 million under Law No. 28 of 2009. On a villa priced at IDR 3 billion with a floor of IDR 60 million, the BPHTB bill is approximately IDR 147 million. You pay at a government-appointed bank before the deed appointment and present the validated slip to the PPAT.",
+      },
+      {
+        question: "Are transfer taxes different for a PT PMA share transfer versus a direct property sale?",
+        answer:
+          "Yes. A direct property sale triggers BPHTB for the buyer (5%) and PPh Final for the seller (2.5%), both paid at closing. A PT PMA share transfer avoids BPHTB entirely because no property title changes hands. The selling shareholders pay income tax on their gain instead, with a 20% Article 26 withholding rate applied to 25% of proceeds for non-resident sellers, which is an effective rate of 5%, potentially reduced by a double tax treaty. Each route carries different tax exposure and different due diligence requirements, so model both options with an Indonesian tax adviser before signing.",
+      },
+    ],
+    gallery: [
+      {
+        url: "/blog/property-purchase-deed-offer-signing.webp",
+        alt: "Hands signing an Offer to Purchase Real Estate document at a closing table, representing the moment when BPHTB and PPh transfer taxes must be cleared before the Bali property deed is executed",
+        credit: "Pexels / RDNE Stock project",
+        sourceUrl: "https://www.pexels.com/photo/8292787/",
+      },
+      {
+        url: "/blog/bphtb-tax-calculation-two-people-desk.webp",
+        alt: "Two people reviewing tax forms with a calculator at a wooden desk, representing the calculation of BPHTB and PPh Final transfer taxes for a Bali property purchase",
+        credit: "Pexels / Mikhail Nilov",
+        sourceUrl: "https://www.pexels.com/photo/6963053/",
+      },
+    ],
+    citations: [
+      {
+        label: "UU No. 28 Tahun 2009 - BPK RI JDIH: Law on Regional Taxes and Levies, governing BPHTB rate (max 5%), NPOPTKP floor (min IDR 60 million), and regional administration of the acquisition duty (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/38763/uu-no-28-tahun-2009",
+      },
+      {
+        label: "PP No. 34 Tahun 2016 - BPK RI JDIH: Government Regulation on Final Income Tax from Transfer of Land and Building Rights, setting the 2.5% PPh Final rate for the seller (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/5755/pp-no-34-tahun-2016",
+      },
+      {
+        label: "KPMG Indonesia Tax News Flash October 2016: Analysis of Government Regulation No. 34/2016 on income tax from land and building rights transfer (Tier 2)",
+        url: "https://assets.kpmg.com/content/dam/kpmg/id/pdf/2016/10/id-tnf-oct16-tax-transfer-land-building-rights-gr34.pdf",
+      },
+      {
+        label: "Emerhub: Bali Property Investment Guide for Foreign Investors - BPHTB, PPh Final, and PPAT fee breakdown (Tier 2)",
+        url: "https://emerhub.com/bali/property-investment-in-bali/",
+      },
+    ],
+  },
 ];
