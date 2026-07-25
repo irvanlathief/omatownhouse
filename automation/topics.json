@@ -763,7 +763,7 @@
     },
     {
       "id": "bali-vs-spain-property",
-      "status": "pending",
+      "status": "published",
       "priority": 35,
       "theme": "investment",
       "atpType": "vs",
@@ -779,8 +779,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-25",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/62"
     },
     {
       "id": "hgb-title-bali-foreigners",
