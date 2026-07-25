@@ -2365,4 +2365,93 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-spain-property-investment",
+    title: "Bali vs Spain Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 44,
+    metaDescription:
+      "Spain offers freehold ownership and EU legal security; Bali offers higher yields and lower taxes. How the Costa del Sol and Bali compare for foreign investors.",
+    body: `<p>Spain allows any foreign buyer, including US and UAE nationals, to own residential property as full freehold in perpetuity. No leasehold term, no company structure, and no residency permit is required. In Bali, the Basic Agrarian Law reserves Hak Milik (freehold title) for Indonesian citizens only. Foreign buyers must use a leasehold arrangement (typically 25 years with an optional renewal) or set up a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> to hold a Hak Guna Bangunan title. Spain's ownership model is simpler and more liquid.</p><p>Entry prices differ sharply. Marbella property averaged roughly EUR 4,400 to EUR 5,500 per square metre by early 2026, up 8.1% in 2025 according to <a href="https://www.knightfrank.com/research/article/2026/4/piri-100-ultimate-prime-residential-property-index" data-external="true">Knight Frank's PIRI 100 index</a>. A modest villa on the Costa del Sol starts around EUR 1 million. Bali off-plan villas can be acquired for far less in US dollar terms, with leasehold product in the Tabanan area priced from around USD 200,000. Purchase taxes in Andalusia run 7% ITP on resale property, or 10% IVA plus 1.2% stamp duty on new builds. In Bali, the buyer pays BPHTB at 5% of the acquisition value while the seller covers PPh Final at 2.5%.</p><p>Rental yield is where Bali holds its clearest advantage. Prime villa areas such as Canggu typically produce gross yields of 7% to 15% depending on occupancy, management, and season. Marbella and the wider Costa del Sol deliver more in the range of 4% to 7% gross for villas, with the luxury segment at the lower end. Net returns in both markets fall after management fees, local taxes, and vacancy. These are illustrative ranges, not guarantees. This is general information, not financial advice.</p><p>Annual taxes are higher in Spain for non-EU owners. Rental income from Spanish property is taxed at 24% of gross income for non-EU residents with no expense deductions, per Spain's tax authority <a href="https://sede.agenciatributaria.gob.es/Sede/en_gb/no-residentes/irnr-sin-establecimiento-permanente/cuestiones-especificas-sobre-tributacion-inmuebles/renta-imputada-inmueble-urbano-uso-propio.html" data-external="true">AEAT</a>. Owners of vacant Spanish property also pay an annual imputed income tax. IBI council tax runs 0.4% to 1.1% of the cadastral value each year. A progressive wealth tax applies to Spanish-situs assets above EUR 700,000. In Bali, rental income is taxed at a flat 10% final withholding tax, PBB land tax is minimal, and there is no wealth tax on foreign-held property.</p><p>On short-term rentals, Malaga city froze new tourist rental licenses until August 2028 under a 2025 municipal moratorium. Marbella continues to issue licenses but now requires a 3/5 majority approval from the building's community of owners alongside a national registry registration. Bali requires a Pondok Wisata permit and local zoning compliance, but the licensing path remains open across most areas including the Tabanan corridor near OMA Townhouse. A local lawyer in each market is essential before signing.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own freehold property in Spain more easily than in Bali?",
+        answer:
+          "Yes. Any non-resident, including US and UAE nationals, can purchase residential property in Spain as full freehold in perpetuity. No leasehold term, company structure, or residency visa is needed. In Bali, the Basic Agrarian Law reserves Hak Milik freehold title for Indonesian citizens only. Foreign buyers use either a leasehold arrangement or a PT PMA company structure to hold property. Spain's ownership is simpler and easier to sell or inherit, though it comes with higher entry costs and heavier ongoing taxes for non-EU owners.",
+      },
+      {
+        question:
+          "Are Bali or Spanish coastal rental yields higher for foreign investors?",
+        answer:
+          "Bali yields are generally higher. Prime villa areas such as Canggu report gross yields of 7% to 15%, though net returns depend heavily on occupancy and management quality. Marbella and the Costa del Sol typically deliver 4% to 7% gross for villas, with luxury product at the lower end. These are ranges, not guarantees, and net yields fall further once management fees, local taxes, and vacancy are factored in. This is general information, not financial advice.",
+      },
+      {
+        question:
+          "How do taxes compare for foreign property owners in Spain vs Bali?",
+        answer:
+          "Spain carries a significantly higher tax burden for non-EU owners such as US and UAE nationals. Rental income is taxed at 24% of gross with no expense deductions for non-EU residents, per Spain's AEAT. Vacant property owners pay an annual imputed income tax. IBI council tax, a progressive wealth tax on Spanish assets above EUR 700,000, and a Solidarity Tax on assets above EUR 3 million add further annual obligations. In Bali, rental income is taxed at a flat 10% final withholding tax, PBB land tax is minimal, and there is no wealth tax.",
+      },
+    ],
+    publishedAt: "2026-07-25",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/marbella-costa-del-sol-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/marbella-white-villas-aerial.webp",
+        alt: "Aerial view of densely packed whitewashed villas in a hillside residential development near Marbella, Costa del Sol, Spain, showing the scale of the local property market",
+        credit: "mike-art-visual-creator / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/aerial-view-of-whitewashed-villas-in-marbella-36288577/",
+      },
+      {
+        url: "/blog/marbella-beachfront-costa-del-sol.webp",
+        alt: "Marbella beachfront from the sea, showing La Concha mountain backdrop, palm trees, and a row of residential properties along the Costa del Sol shoreline",
+        credit: "WeDesignMarbella / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/beautiful-coastal-view-of-marbella-spain-37800921/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Knight Frank PIRI 100 2026 - Prime Marbella residential prices rose 8.1% in 2025, above the 3.2% global luxury market average (Tier 2)",
+        url: "https://www.knightfrank.com/research/article/2026/4/piri-100-ultimate-prime-residential-property-index",
+      },
+      {
+        label:
+          "DM Properties Marbella - Market Price Trends 2025-2026: Marbella averaged EUR 4,424/m2 in 2025 with 7.67% year-on-year growth (Tier 2)",
+        url: "https://www.dmproperties.com/47867-marbella-property-market-price-trends-2025-2026",
+      },
+      {
+        label:
+          "AEAT (Spanish Tax Agency) - IRNR: imputed income and rental income tax for non-resident property owners, official rates (Tier 1)",
+        url: "https://sede.agenciatributaria.gob.es/Sede/en_gb/no-residentes/irnr-sin-establecimiento-permanente/cuestiones-especificas-sobre-tributacion-inmuebles/renta-imputada-inmueble-urbano-uso-propio.html",
+      },
+      {
+        label:
+          "Welex Marbella - 2% ITP property transfer tax in Andalusia: key points for 2026, including the standard 7% ITP flat rate for resale property (Tier 2)",
+        url: "https://www.welex.es/2-property-transfer-tax-in-andalusia-key-points-for-real-estate-professionals-in-2026/",
+      },
+      {
+        label:
+          "Lucas Fox / Dils - Capital gains tax for non-residents in Spain 2025: 24% rate on gains, 3% buyer withholding via Modelo 211 (Tier 2)",
+        url: "https://www.lucasfox.com/news-and-press/articles/complete-guide-to-capital-gains-tax-for-non-residents-in-spain-2025-1",
+      },
+      {
+        label:
+          "Investropa - Spain property foreign ownership 2026: no restrictions on non-EU buyers; full freehold rights available to any nationality (Tier 2)",
+        url: "https://investropa.com/blogs/news/spain-foreigner-rights",
+      },
+      {
+        label:
+          "Relo Real Estate - Best areas for high rental yields on the Costa del Sol 2026: Marbella villa yields typically 4% to 7% gross (Tier 2)",
+        url: "https://www.reloreal.com/news/best-areas-to-invest-in-costa-del-sol-for-high-rental-yields-in-2026",
+      },
+    ],
+    layoutVariant: "standard",
+  },
 ];

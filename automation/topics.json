@@ -763,7 +763,7 @@
     },
     {
       "id": "bali-vs-spain-property",
-      "status": "pending",
+      "status": "published",
       "priority": 35,
       "theme": "investment",
       "atpType": "vs",
@@ -779,7 +779,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-07-25",
       "prUrl": null
     },
     {
