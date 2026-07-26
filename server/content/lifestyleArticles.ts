@@ -2454,4 +2454,75 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "standard",
   },
+  {
+    slug: "hak-guna-bangunan-bali-pt-pma",
+    title: "What Is Hak Guna Bangunan? PT PMA Property in Bali",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 45,
+    metaDescription:
+      "Hak Guna Bangunan (HGB) is the Right to Build title a PT PMA uses to hold Bali property. Initial 30 years, up to 80 years with renewals. Complete guide.",
+    body: `<p>Hak Guna Bangunan (HGB), or Right to Build, is the title a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> holds when it acquires property in Bali. Defined under Article 35 of Indonesia's Basic Agrarian Law (Law No. 5 of 1960), HGB grants the right to construct and own buildings on land for a certified period, registered as a Sertifikat HGB with the <a href="https://www.atrbpn.go.id" data-external="true">National Land Agency (BPN)</a>. Foreigners cannot hold HGB in their own name. Only Indonesian citizens and Indonesian legal entities, including a PT PMA, qualify as holders.</p><p>Under Government Regulation No. 18 of 2021 (PP 18/2021), HGB on state or government-managed land runs for an initial 30 years, extendable by 20 years, then renewable for a final 30 years, giving a maximum of 80 years of tenure. On land originally held as Hak Milik (freehold owned by an Indonesian individual), HGB is limited to 30 years and is renewable only by private agreement with the landowner. Most Bali villas sold to PT PMA buyers start as Hak Milik land, and the title converts to HGB at the point of transfer.</p><p>Three titles matter to foreign investors. Hak Milik is perpetual freehold, reserved by law for Indonesian citizens only and unavailable to any company. Hak Pakai (Right to Use) can be held directly by a foreigner with a valid KITAS or KITAP residence permit for one personal residential property, but it generally cannot be mortgaged as bank collateral. HGB through a PT PMA is the standard commercial title. Its key practical advantage is that the SHGB certificate can be registered as Hak Tanggungan (a security interest) with an Indonesian bank, making leverage possible in a way Hak Pakai for a company does not allow.</p><p>When a PT PMA buys from an Indonesian seller holding Hak Milik, the title must convert. The seller formally releases the Hak Milik, and BPN issues a new Sertifikat HGB in the PT PMA's name. A licensed PPAT (Pejabat Pembuat Akta Tanah, the land deed official) prepares the Akta Jual Beli (sale and purchase deed). The PT PMA pays BPHTB acquisition duty at 5% of the transaction value, and the seller pays PPh Final at 2.5% of the gross amount. BPN registration typically takes several weeks to a few months depending on the local office and whether a title conversion is required.</p><p>A PT PMA holding HGB can exit in two ways. It can transfer the title directly to another eligible buyer through a new Akta Jual Beli executed before a PPAT, or it can sell the shares of the PT PMA itself, leaving the land certificate in the company's name while changing who owns the company. The <a href="/blog/bali-property-exit-strategy">exit strategy guide</a> covers both routes and the applicable taxes. One practical point to track: since mid-2025, BPN has tightened enforcement of the rule that HGB land must be actively developed within two years of acquisition, and renewal applications must be filed before the 30-year certificate lapses.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "How long does a Hak Guna Bangunan title last and can it be renewed?",
+        answer:
+          "HGB has a three-stage tenure structure under Government Regulation No. 18 of 2021. On state or government-managed land, the initial grant is up to 30 years, extendable by 20 years, and renewable for a final 30 years, giving a maximum of 80 years total. On land originally held as Hak Milik (Indonesian freehold), HGB is limited to 30 years and renewable only by private agreement with the landowner. Renewal applications must be submitted before the certificate lapses; HGB that expires without renewal may revert to state control, a rule BPN has enforced more strictly since mid-2025.",
+      },
+      {
+        question:
+          "What is the difference between HGB, Hak Pakai, and Hak Milik in Bali?",
+        answer:
+          "Hak Milik is perpetual freehold available only to Indonesian citizens. No company, whether locally or foreign-owned, can hold Hak Milik. Hak Pakai (Right to Use) can be held directly by a foreigner with a KITAS or KITAP residence permit for one personal residential property, and also by a PT PMA, but it generally cannot be registered as Hak Tanggungan (mortgage security) with an Indonesian bank. HGB (Right to Build) is held by a PT PMA company, valid for up to 80 years with renewals on state land, and it can be mortgaged as bank collateral. That mortgageability makes HGB the preferred title for PT PMA investors in rental villas and commercial property.",
+      },
+      {
+        question: "Can a PT PMA sell a property held under HGB title?",
+        answer:
+          "Yes. A PT PMA holding HGB can transfer the title to another eligible buyer through an Akta Jual Beli (sale and purchase deed) signed before a licensed PPAT. The direct property transfer triggers BPHTB at 5% for the buyer and PPh Final at 2.5% for the selling PT PMA. Alternatively, the owner can transfer the shares of the PT PMA itself, which keeps the land certificate in the company name and changes only who owns the company. This share transfer method does not trigger BPHTB in the same way as a direct sale, but carries its own tax and due diligence implications. A licensed Indonesian notary-PPAT should be engaged for either route.",
+      },
+    ],
+    publishedAt: "2026-07-26",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/land-certificate-stamped-verification.webp",
+    gallery: [
+      {
+        url: "/blog/construction-plans-hardhat-topview.webp",
+        alt: "Top-down view of architectural floor plans, a Purchase and Sale Agreement, and a white hard hat laid out on a surface in dramatic sunlight, representing the Right to Build planning documents a PT PMA requires before construction",
+        credit: "Thirdman / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8470057/",
+      },
+      {
+        url: "/blog/legal-certificate-justice-law-desk.webp",
+        alt: "A framed legal completion certificate alongside a Lady Justice bronze statue on a law firm desk, representing the certified property title (Sertifikat HGB) issued by Indonesia's National Land Agency (BPN) to a PT PMA company",
+        credit: "Pavel Danilyuk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8112198/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesian Basic Agrarian Law (UUPA) Law No. 5 of 1960, Articles 35-40: defines Hak Guna Bangunan as the right to erect and own buildings on land; Article 36 lists eligible holders including Indonesian legal entities (PT PMA) (Tier 1)",
+        url: "https://faolex.fao.org/docs/pdf/ins3920.pdf",
+      },
+      {
+        label:
+          "Government Regulation No. 18 of 2021 (PP 18/2021) on Land Rights and Registration: updated HGB duration to 30+20+30 years for a maximum of 80 years on state land (Tier 1)",
+        url: "https://iglolaw.com/regulations/government-no-18-of-2021/",
+      },
+      {
+        label:
+          "ILA Global Consulting - Land Ownership and Title Transfer in Bali and Lombok: HGB, Hak Pakai, Hak Milik, and PT PMA acquisition process explained (Tier 2)",
+        url: "https://ilaglobalconsulting.com/land-ownership-land-title-transfer-bali-lombok/",
+      },
+      {
+        label:
+          "Cekindo - Buying Property in Bali for Foreigners: PT PMA holds HGB for commercial property; Hak Milik reserved for Indonesian citizens only (Tier 2)",
+        url: "https://www.cekindo.com/blog/buying-property-in-bali-essentials-for-foreigners",
+      },
+    ],
+    layoutVariant: "standard",
+  },
 ];
