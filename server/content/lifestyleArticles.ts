@@ -2525,4 +2525,71 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "standard",
   },
+  {
+    slug: "bali-property-inheritance-foreign-owners",
+    title: "Bali Property Inheritance: What Foreign Owners Need to Know",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 46,
+    metaDescription:
+      "Indonesia has no inheritance tax. This guide explains how Bali property passes to foreign heirs across PT PMA, leasehold, and Hak Pakai structures.",
+    body: `<p>Indonesia has no inheritance or estate tax. What happens to your Bali property when you die comes down to how you hold it, and the PT PMA company structure is by far the most succession-friendly option for foreign investors.</p><p><strong>PT PMA (company ownership):</strong> Your heirs inherit shares in the Indonesian company, not the property itself. The company's HGB title stays unchanged, so there is no BPHTB (property acquisition duty) triggered by the transfer. Heirs update the shareholder register with Indonesia's Ministry of Law and Human Rights and may need a notarized share transfer deed. This is why the <a href="/blog/pt-pma-setup-bali-property">PT PMA structure</a> works well for families who want a clear handover path.</p><p><strong>Leasehold:</strong> A <a href="/blog/freehold-vs-leasehold-bali">leasehold right</a> can pass to heirs for the remaining contract term, but only if the original agreement contains an explicit assignability-on-death clause. Without that clause, a foreign heir may need a court order to claim the right. Always review this clause before signing any lease contract.</p><p><strong>Hak Pakai:</strong> Hak Pakai can transfer to a foreign heir only if the heir is legally resident in Indonesia with a valid <a href="/blog/bali-visa-property-owner-investor">KITAS or KITAP stay permit</a>. A non-resident foreign heir who inherits Hak Pakai must sell or transfer the title within one year under the Basic Agrarian Law (UUPA Law No. 5 of 1960), or it reverts to the state.</p><p>On tax: inheritance of property is exempt from Indonesian income tax under PPh Law No. 36 of 2008, Article 4(3)(a), and PMK 81/2024 confirms that land or building transfers caused by death are not subject to final income tax. If an actual land or building title transfers to an heir (as opposed to PT PMA shares), BPHTB applies at 5% of the taxable value above IDR 300 million, a more favorable threshold than a regular purchase. PT PMA share inheritance is handled under company law and does not trigger BPHTB.</p><p>The most practical estate planning step is an Indonesian notarial will that covers your Indonesian assets specifically. A foreign will is recognized in Indonesia when apostilled, translated into Bahasa Indonesia by a certified sworn translator, and registered with Indonesia's Central Will Registry. For a PT PMA, the company's articles of association should also name a succession mechanism directly. Work with an Indonesian notary and a specialist inheritance lawyer before any issue arises rather than after.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can I leave my Bali leasehold or PT PMA to a non-Indonesian heir?",
+        answer:
+          "With PT PMA, yes. Your heirs inherit your company shares, not the property directly, which is a standard corporate succession process under Indonesian company law. Neither the heir nor the property needs to change status. A leasehold can also pass to any heir for the remaining contract term, provided the lease agreement contains an explicit assignability-on-death clause. Neither path requires the heir to be an Indonesian citizen.",
+      },
+      {
+        question:
+          "Does Indonesia recognize a foreign will for Bali property?",
+        answer:
+          "Yes. A foreign will can be recognized in Indonesia if it is apostilled by the issuing country, translated into Bahasa Indonesia by a certified sworn translator, and registered with Indonesia's Central Will Registry. For a PT PMA, the company's articles of association and any shareholder agreement should address share succession separately, as company law governs those transfers rather than personal inheritance law.",
+      },
+      {
+        question:
+          "What is the inheritance tax on Bali property for foreigners?",
+        answer:
+          "Indonesia has no inheritance or estate tax. If an heir receives actual land or a building (a leasehold assignment or Hak Pakai transfer), they pay BPHTB at 5% of the value above an IDR 300 million threshold, which is more favorable than the standard purchase rate. A PT PMA share transfer on death does not trigger BPHTB, because no land title changes hands at the property level.",
+      },
+    ],
+    publishedAt: "2026-07-27",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/estate-will-signing-elderly.webp",
+    gallery: [
+      {
+        url: "/blog/inheritance-lawyer-consultation-couple.webp",
+        alt: "A lawyer consults with a couple across a desk in a professional office, with a Lady Justice statue visible, representing the legal advice foreign Bali property owners should seek for estate planning",
+        credit: "Karola G / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7876150/",
+      },
+      {
+        url: "/blog/estate-planning-law-firm-documents.webp",
+        alt: "A Lady Justice bronze statue sits among legal documents and a laptop on a law firm desk, representing the Indonesian notarial process for registering a foreign will and succession documents",
+        credit: "Karola G / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7876093/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "PwC Worldwide Tax Summaries - Indonesia Individual Other Taxes: Indonesia has no inheritance, estate, or gift taxes (Tier 2)",
+        url: "https://taxsummaries.pwc.com/indonesia/individual/other-taxes",
+      },
+      {
+        label:
+          "ILA Global Consulting - Inheritance in Indonesia for Foreigners: PT PMA share succession, Hak Pakai eligibility for resident heirs, will registration requirements (Tier 2)",
+        url: "https://ilaglobalconsulting.com/inheritance-in-indonesia-for-foreigners/",
+      },
+      {
+        label:
+          "MUC Tax Advisory - Inheritance assets exempt from income tax under PPh Law No. 36/2008 Article 4(3)(a); BPHTB on inherited land/buildings at 5% above IDR 300 million threshold (Tier 2)",
+        url: "https://muc.co.id/en/article/procedure-for-obtaining-a-tax-clearance-certificate-for-inheritance-assets",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
