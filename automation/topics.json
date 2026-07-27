@@ -805,7 +805,7 @@
     },
     {
       "id": "bali-property-inheritance-foreigners",
-      "status": "drafting",
+      "status": "published",
       "priority": 37,
       "theme": "investment",
       "atpType": "what",
@@ -821,8 +821,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-27",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/64"
     }
   ]
 }
