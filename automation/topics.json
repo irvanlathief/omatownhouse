@@ -721,7 +721,7 @@
     },
     {
       "id": "ppjb-contract-bali-off-plan",
-      "status": "drafting",
+      "status": "published",
       "priority": 33,
       "theme": "off-plan",
       "atpType": "what",
@@ -737,8 +737,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-23",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/59"
     },
     {
       "id": "bali-property-transfer-taxes-bphtb",
