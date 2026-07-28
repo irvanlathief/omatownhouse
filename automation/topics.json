@@ -826,7 +826,7 @@
     },
     {
       "id": "bali-vs-greece-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 38,
       "theme": "investment",
       "atpType": "vs",
@@ -842,8 +842,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-28",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/66"
     },
     {
       "id": "bali-building-permit-pgb-villa",
