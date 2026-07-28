@@ -2592,4 +2592,88 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-vs-greece-property-investment",
+    title: "Bali vs Greece Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 47,
+    metaDescription:
+      "Greece lets US and UAE buyers own freehold; Bali requires leasehold or PT PMA. Compare yields, transfer taxes, rental tax, and the Greek Golden Visa change.",
+    body: `<p>Greece and Bali both attract US and UAE property buyers, but ownership works very differently. In Greece, US and UAE nationals can buy freehold property in their own name in most of the country, with the same title rights as a Greek citizen. In Bali, Indonesian law reserves freehold title (Hak Milik) for Indonesian nationals. Foreign buyers access the market through a leasehold (commonly structured as 25 years with a 25-year renewal option, or 30 years with a 20-year extension), or a PT PMA foreign-owned company that holds a renewable Hak Guna Bangunan land right. Our <a href="/blog/foreigners-buy-property-bali">foreign ownership guide</a> explains each structure.</p><p>Transaction costs favour Greece at the point of purchase. Buyers of existing Greek residential property pay a transfer tax of 3.09% (3% plus a 0.09% municipal surcharge) on the higher of the contract price or the government's assessed value, per <a href="https://elxis.com/blog/how-much-is-property-transfer-tax-in-greece" data-external="true">Elxis</a>. In Indonesia, buyers pay BPHTB at 5% of the taxable acquisition value. Notary and registration fees apply on top in both markets.</p><p>Rental income tax differs in structure. Greece taxes non-resident rental income at a progressive rate: 15% on the first EUR 12,000, 25% on the amount up to EUR 35,000, and 45% above that, applied on gross rent after a 5% deemed expense deduction, per <a href="https://taxsummaries.pwc.com/greece/individual/other-taxes" data-external="true">PwC Greece</a>. Non-residents must file an annual Greek tax return. Indonesia withholds a flat 20% of gross rental income from non-residents under <a href="https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers" data-external="true">Article 26 of the income tax law</a>. No US-Indonesia tax treaty exists, so US nationals pay the full 20%. UAE residents may qualify for a reduced rate under the bilateral Indonesia-UAE treaty by providing a Certificate of Domicile.</p><p>On gross rental yield, Bali's established short-term rental areas typically run ahead. Agents and operators cite 8 to 15% gross for well-managed villas in Canggu and Uluwatu. Greek island short-term rentals in Mykonos and Santorini produce roughly 5 to 7% gross; Athens residential units average around 5%, per <a href="https://www.globalpropertyguide.com/europe/greece/rental-yields" data-external="true">Global Property Guide</a>. These are gross, pre-expense figures. Management fees, taxes, maintenance, and seasonal vacancy reduce net returns substantially in both markets. This is general market information and not financial advice.</p><p>Greece's Golden Visa was restructured under <a href="https://www.wfw.com/articles/understanding-the-new-golden-visa-law-%CE%BD%CE%BF-5100-2024-key-points-and-implications/" data-external="true">Law 5100/2024</a>, effective 31 August 2024. The minimum investment in high-demand zones (Attica, Thessaloniki, Mykonos, Santorini, and any island with more than 3,100 residents) rose to EUR 800,000, and qualifying properties are now prohibited from being listed on short-term rental platforms. Bali's five-year Second Home Visa is tied to a demonstrated bank balance, not property ownership, so buying a villa does not by itself create a residency pathway. For a comparison with other markets, see our guides on <a href="/blog/bali-vs-portugal-property-investment">Bali vs Portugal</a> and <a href="/blog/bali-vs-spain-property-investment">Bali vs Spain</a>.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own freehold property in Greece more easily than in Bali?",
+        answer:
+          "Yes. US and UAE nationals can buy Greek property in freehold, in their own name, with full title rights in most of the country. In Bali, freehold is restricted to Indonesian nationals. Foreign buyers use a long-term leasehold (typically 25+25 or 30+20 years) or a PT PMA company holding a renewable HGB title. A border-zone exception applies in parts of northern Greece and certain eastern Aegean islands, where a Ministry of Defense permit is required before a non-EU buyer can complete a purchase.",
+      },
+      {
+        question:
+          "Are Bali or Greek island rental yields higher for villas?",
+        answer:
+          "Bali's established short-term rental areas typically report gross yields of 8 to 15% for well-managed villas in Canggu and Uluwatu. Mykonos and Santorini short-term rentals produce roughly 5 to 7% gross; Athens residential property averages around 5%. Both sets of figures are gross and pre-expense. Management fees, maintenance, seasonal vacancy, and local taxes reduce net returns significantly, and are not a guarantee of actual performance.",
+      },
+      {
+        question:
+          "How do taxes compare for foreign property owners in Greece vs Bali?",
+        answer:
+          "In Greece, non-resident rental income is taxed at 15% to 45% on a progressive scale (after a 5% deemed deduction), with an annual tax return required. In Indonesia, a flat 20% of gross rental income is withheld from non-resident foreign owners under Article 26 of the income tax law. At purchase, Greece charges 3.09% transfer tax for existing residential property; Indonesia charges BPHTB at 5%. Both markets impose annual property holding taxes (ENFIA in Greece, PBB in Indonesia) that are generally modest relative to property value.",
+      },
+    ],
+    publishedAt: "2026-07-28",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/santorini-cliffside-villas-aegean.webp",
+    gallery: [
+      {
+        url: "/blog/mykonos-cycladic-villa-pool.webp",
+        alt: "Whitewashed Cycladic villa with a private pool and clear blue sky in Mykonos, Greece, showing the freehold property style available to foreign buyers",
+        credit: "Abdulrahman Alyaarobi / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/whitewashed-villas-and-pool-in-mykonos-greece-38035858/",
+      },
+      {
+        url: "/blog/mykonos-town-harbor-aerial.webp",
+        alt: "Aerial sunset view of Mykonos town with whitewashed buildings and churches clustered on a rocky promontory surrounded by the Aegean Sea",
+        credit: "Kelly / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/aerial-view-of-scenic-mykonos-town-in-greece-37844831/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Greek Ministry of Economy and Finance: ENFIA (Single Real Estate Ownership Tax) - official overview of the annual Greek property tax applying to resident and non-resident owners (Tier 1)",
+        url: "https://minfin.gov.gr/en/tax-policy/tax-guide/single-real-estate-ownership-tax-enfia/",
+      },
+      {
+        label:
+          "PwC Worldwide Tax Summaries - Greece Individual Other Taxes: non-resident rental income progressive tax rates (15%/25%/45%) and ENFIA surtax on portfolios above EUR 500,000 (Tier 2)",
+        url: "https://taxsummaries.pwc.com/greece/individual/other-taxes",
+      },
+      {
+        label:
+          "Elxis: Property Transfer Tax in Greece - 3.09% rate (3% plus 0.09% municipal surcharge) on existing residential purchases (Tier 2)",
+        url: "https://elxis.com/blog/how-much-is-property-transfer-tax-in-greece",
+      },
+      {
+        label:
+          "Watson Farley & Williams: Understanding Greek Golden Visa Law 5100/2024 - EUR 800,000 threshold in high-demand zones, short-term rental prohibition on qualifying properties (Tier 2)",
+        url: "https://www.wfw.com/articles/understanding-the-new-golden-visa-law-%CE%BD%CE%BF-5100-2024-key-points-and-implications/",
+      },
+      {
+        label:
+          "Global Property Guide: Gross rental yields in Greece - Athens 4.99% average; island and regional market benchmarks (Tier 2)",
+        url: "https://www.globalpropertyguide.com/europe/greece/rental-yields",
+      },
+      {
+        label:
+          "Indonesian Directorate General of Taxes (DJP): Article 26 income tax - 20% flat withholding on gross rental income paid to non-resident foreign taxpayers (Tier 1)",
+        url: "https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];

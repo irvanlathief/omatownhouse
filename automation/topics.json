@@ -469,7 +469,7 @@
     },
     {
       "id": "bali-vs-portugal-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 21,
       "theme": "investment",
       "atpType": "vs",
@@ -485,12 +485,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-11",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/44"
     },
     {
       "id": "can-i-retire-in-bali",
-      "status": "drafting",
+      "status": "published",
       "priority": 22,
       "theme": "lifestyle",
       "atpType": "can",
@@ -506,12 +506,12 @@
       "category": "lifestyle",
       "isInsight": false,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-07-12",
       "prUrl": null
     },
     {
       "id": "what-is-hak-pakai",
-      "status": "drafting",
+      "status": "published",
       "priority": 23,
       "theme": "foreign-ownership",
       "atpType": "what",
@@ -527,8 +527,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-13",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/46"
     },
     {
       "id": "bali-tourist-levy-rental-income",
@@ -553,7 +553,7 @@
     },
     {
       "id": "off-plan-villa-construction-timeline",
-      "status": "drafting",
+      "status": "published",
       "priority": 25,
       "theme": "off-plan",
       "atpType": "how",
@@ -569,12 +569,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-15",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/49"
     },
     {
       "id": "bali-property-insurance",
-      "status": "drafting",
+      "status": "published",
       "priority": 26,
       "theme": "investment",
       "atpType": "what",
@@ -590,12 +590,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-07-16",
       "prUrl": null
     },
     {
       "id": "canggu-vs-tabanan-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 27,
       "theme": "location",
       "atpType": "vs",
@@ -611,8 +611,8 @@
       "category": "location",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-17",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/51"
     },
     {
       "id": "open-indonesian-bank-account-investor",
@@ -658,7 +658,7 @@
     },
     {
       "id": "bali-capital-gains-tax-selling",
-      "status": "drafting",
+      "status": "published",
       "priority": 30,
       "theme": "tax",
       "atpType": "what",
@@ -674,7 +674,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-07-20",
       "prUrl": null
     },
     {
@@ -721,7 +721,7 @@
     },
     {
       "id": "ppjb-contract-bali-off-plan",
-      "status": "drafting",
+      "status": "published",
       "priority": 33,
       "theme": "off-plan",
       "atpType": "what",
@@ -737,12 +737,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-07-23",
       "prUrl": null
     },
     {
       "id": "bali-property-transfer-taxes-bphtb",
-      "status": "drafting",
+      "status": "published",
       "priority": 34,
       "theme": "tax",
       "atpType": "what",
@@ -758,8 +758,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-24",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/61"
     },
     {
       "id": "bali-vs-spain-property",
@@ -784,7 +784,7 @@
     },
     {
       "id": "hgb-title-bali-foreigners",
-      "status": "drafting",
+      "status": "published",
       "priority": 36,
       "theme": "foreign-ownership",
       "atpType": "what",
@@ -800,8 +800,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-26",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/63"
     },
     {
       "id": "bali-property-inheritance-foreigners",
@@ -823,6 +823,195 @@
       "suggestedVenues": [],
       "publishedAt": "2026-07-27",
       "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/64"
+    },
+    {
+      "id": "bali-vs-greece-property",
+      "status": "drafting",
+      "priority": 38,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Greece property for foreign investors: how do they compare?",
+      "targetKeywords": ["Bali vs Greece property investment", "Bali or Greece for investment", "Greece vs Bali rental yield foreigners"],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Greece more easily than in Bali?",
+        "Are Bali or Greek island rental yields higher for villas?",
+        "How do taxes compare for foreign property owners in Greece vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-greece-property-investment",
+      "proposedTitle": "Bali vs Greece Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-building-permit-pgb-villa",
+      "status": "pending",
+      "priority": 39,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is a PBG building permit and why does it matter when buying an off-plan Bali villa?",
+      "targetKeywords": ["Bali building permit PBG villa", "IMB PBG Bali villa", "off-plan Bali construction permit"],
+      "relatedQuestions": [
+        "What replaced the IMB building permit in Indonesia?",
+        "Does a Bali villa need a PBG and SLF before handover?",
+        "Can an off-plan buyer check that a developer has the correct building permit?"
+      ],
+      "proposedSlug": "bali-villa-building-permit-pbg-explained",
+      "proposedTitle": "PBG Building Permits for Bali Villas: What Buyers Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-nominee-arrangement-risks",
+      "status": "pending",
+      "priority": 40,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What are nominee arrangements in Bali property and why are they risky for a foreign buyer?",
+      "targetKeywords": ["Bali nominee arrangement property", "using an Indonesian nominee Bali", "Bali property nominee risks"],
+      "relatedQuestions": [
+        "Is it legal for a foreigner to use an Indonesian nominee to buy property in Bali?",
+        "What risks does a Bali property nominee arrangement create?",
+        "What happens if the nominee dies or disputes ownership of my Bali property?"
+      ],
+      "proposedSlug": "bali-nominee-arrangement-property-risks",
+      "proposedTitle": "Bali Property Nominee Arrangements: Risks Foreign Buyers Must Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "best-area-bali-property-investment-2026",
+      "status": "pending",
+      "priority": 41,
+      "theme": "location",
+      "atpType": "what",
+      "primaryQuestion": "What is the best area in Bali to invest in property in 2026?",
+      "targetKeywords": ["best area Bali property investment 2026", "where to buy property Bali", "Canggu Seminyak Uluwatu Tabanan property"],
+      "relatedQuestions": [
+        "Which Bali area has the highest rental yields: Canggu, Uluwatu, or Tabanan?",
+        "Is Ubud or Seminyak better for a Bali investment villa?",
+        "What areas of Bali are seeing the fastest property price growth?"
+      ],
+      "proposedSlug": "best-area-bali-property-investment-2026",
+      "proposedTitle": "Best Area in Bali to Buy Property in 2026",
+      "category": "location",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-land-use-zoning-explained",
+      "status": "pending",
+      "priority": 42,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What are Bali land use zones and can you build a rental villa on any land?",
+      "targetKeywords": ["Bali land zoning green zone", "Bali land use rules villa", "kawasan hijau Bali building"],
+      "relatedQuestions": [
+        "What is the difference between green zone and tourist zone land in Bali?",
+        "Can a foreign buyer check the zoning of a Bali plot before buying?",
+        "What happens if a Bali villa is built on illegally zoned land?"
+      ],
+      "proposedSlug": "bali-land-use-zoning-for-villa-investors",
+      "proposedTitle": "Bali Land Use Zoning: Can You Build a Rental Villa There?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-leasehold-renewal-process",
+      "status": "pending",
+      "priority": 43,
+      "theme": "foreign-ownership",
+      "atpType": "how",
+      "primaryQuestion": "How does a Bali leasehold renewal work and what should buyers negotiate upfront?",
+      "targetKeywords": ["Bali leasehold renewal", "renew leasehold Bali villa", "Bali leasehold extension process"],
+      "relatedQuestions": [
+        "When should a Bali leasehold renewal be negotiated, at signing or later?",
+        "What happens if a Bali landowner refuses to renew a leasehold?",
+        "How is leasehold renewal price set for a Bali villa?"
+      ],
+      "proposedSlug": "bali-leasehold-renewal-process-investors",
+      "proposedTitle": "Bali Leasehold Renewal: What Investors Need to Negotiate",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-rental-occupancy-rates",
+      "status": "pending",
+      "priority": 44,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What occupancy rates can a Bali rental villa realistically expect?",
+      "targetKeywords": ["Bali villa occupancy rate", "Bali short-term rental occupancy", "Bali Airbnb occupancy data"],
+      "relatedQuestions": [
+        "What is the average occupancy rate for Bali villas in peak and off season?",
+        "How does Bali villa occupancy compare to Phuket or Mykonos?",
+        "What factors most affect Bali villa occupancy rates?"
+      ],
+      "proposedSlug": "bali-villa-occupancy-rates-investors",
+      "proposedTitle": "Bali Villa Occupancy Rates: What Investors Should Expect",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-mauritius-property",
+      "status": "pending",
+      "priority": 45,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Mauritius for foreign property investors: how do they compare?",
+      "targetKeywords": ["Bali vs Mauritius property investment", "Bali or Mauritius for investment", "Mauritius IRS ERS property foreigners"],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Mauritius easier than Bali?",
+        "How do Bali and Mauritius rental yields compare?",
+        "What visa does owning property in Mauritius give versus Bali?"
+      ],
+      "proposedSlug": "bali-vs-mauritius-property-investment",
+      "proposedTitle": "Bali vs Mauritius Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-developer-vetting",
+      "status": "pending",
+      "priority": 46,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How do I vet a Bali property developer before buying off-plan?",
+      "targetKeywords": ["vetting Bali property developer", "Bali off-plan developer track record", "how to check Bali developer"],
+      "relatedQuestions": [
+        "What red flags should I look for in a Bali off-plan developer?",
+        "How do I verify a Bali developer has the correct land and permits?",
+        "What questions should I ask before signing a Bali off-plan contract?"
+      ],
+      "proposedSlug": "bali-property-developer-vetting-guide",
+      "proposedTitle": "How to Vet a Bali Property Developer Before You Buy",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
