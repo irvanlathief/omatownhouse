@@ -847,7 +847,7 @@
     },
     {
       "id": "bali-building-permit-pgb-villa",
-      "status": "drafting",
+      "status": "published",
       "priority": 39,
       "theme": "off-plan",
       "atpType": "what",
@@ -863,8 +863,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-29",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/67"
     },
     {
       "id": "bali-nominee-arrangement-risks",
