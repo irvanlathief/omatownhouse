@@ -847,7 +847,7 @@
     },
     {
       "id": "bali-building-permit-pgb-villa",
-      "status": "pending",
+      "status": "drafting",
       "priority": 39,
       "theme": "off-plan",
       "atpType": "what",
