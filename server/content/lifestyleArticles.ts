@@ -2676,4 +2676,80 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-villa-building-permit-pbg-explained",
+    title: "PBG Building Permits for Bali Villas: What Buyers Must Know",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 48,
+    metaDescription:
+      "Indonesia replaced the old IMB building permit with PBG in 2021. Here is what every off-plan Bali villa buyer needs to know about PBG and SLF.",
+    body: `<p>The PBG (Persetujuan Bangunan Gedung) is the building approval a developer must hold before starting construction in Indonesia. If you are buying off-plan in Bali, confirming the PBG exists and matches the unit you are purchasing is one of the most consequential due diligence checks you can make.</p><p>Indonesia retired the old IMB (Izin Mendirikan Bangunan) building licence in 2021 under Government Regulation No. 16 of 2021 (PP 16/2021), which implemented the Job Creation Law (Law No. 11 of 2020) for the construction sector. The old IMB was a discretionary administrative licence; the PBG is a standards-based approval issued when a design meets Indonesia's national technical building standards (NSPK). A PBG carries lifetime validity once issued. Applications go through the government's <a href="https://simbg.pu.go.id" data-external="true">SIMBG portal</a>, run by the Ministry of Public Works, with a statutory processing time of 28 working days from a complete submission. Before a developer can file for a PBG, they need a KKPR (zoning conformity approval) confirming the land is in a permitted tourism or residential zone and not in an agricultural green zone.</p><p>A second document, the SLF (Sertifikat Laik Fungsi), must be in hand at handover. The SLF is issued after construction is complete, once a government inspector confirms the finished structure, fire systems, and electrical and plumbing work match the approved PBG and meet safety standards. Without an SLF, the villa cannot be legally occupied, cannot be listed on short-term rental platforms, and cannot hold a Pondok Wisata or villa accommodation licence. For rental-use villas, the SLF is valid for five years before renewal is required.</p><p>Foreigners cannot hold a PBG personally. A legally structured Bali villa must show the PBG in the name of the developer's PT PMA, which holds an HGB (Hak Guna Bangunan) land right over the plot. You or your lawyer can verify the permit number directly on the SIMBG portal. See our <a href="/blog/bali-property-due-diligence-checklist">full due diligence checklist</a> for the complete list of documents to request before signing.</p><p>Enforcement has become concrete. In July 2025, authorities demolished 48 structures at Bingin Beach, Uluwatu, after a provincial inspection found they lacked valid permits. Bali Gubernatorial Decree No. 5 of 2025 prohibits new villa construction on rice fields, and Regional Regulation No. 4 of 2026 made agricultural land conversion a criminal offence with penalties up to five years in prison. For an off-plan buyer, the commercial risk is direct: multiple Bali agencies report that resale buyers demand 40 to 50 percent off the price of a property that cannot produce a clean permit chain.</p><p>When you sign a <a href="/blog/ppjb-contract-bali-off-plan-explained">PPJB (binding sale agreement)</a>, ask your notary to check the KKPR and PBG documents before you sign, not after construction ends. The contract should name delivery with a valid PBG and an issued SLF as a developer obligation, not a best-efforts promise.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "What replaced the IMB building permit in Indonesia?",
+        answer:
+          "Government Regulation No. 16 of 2021 (PP 16/2021) replaced the IMB (Izin Mendirikan Bangunan) with the PBG (Persetujuan Bangunan Gedung), implementing the Job Creation Law (Law No. 11 of 2020). The PBG is a standards-based approval confirming a building design meets national technical standards. It carries lifetime validity once issued. IMBs granted before 2021 remain valid for their original build.",
+      },
+      {
+        question:
+          "Does a Bali villa need both a PBG and an SLF before it can be rented out?",
+        answer:
+          "Yes. The PBG approves the building plans before construction starts. The SLF (Sertifikat Laik Fungsi) is issued after construction, once an inspector confirms the finished building matches approved plans and meets safety standards. A rental villa cannot legally operate or hold a Pondok Wisata or villa accommodation licence without both a valid PBG and a current SLF. For commercial rental villas, the SLF must be renewed every five years.",
+      },
+      {
+        question:
+          "Can an off-plan buyer verify a developer has the correct Bali building permit?",
+        answer:
+          "Yes. Permit numbers can be searched on the government SIMBG portal at simbg.pu.go.id, operated by the Ministry of Public Works. You or your Indonesian lawyer can confirm the PBG exists, covers the right floor area and building use, and is held in the developer's PT PMA name. Checking this before signing the PPJB is strongly recommended. The developer should also be able to show the KKPR zoning conformity approval, which must be in place before any PBG can be filed.",
+      },
+    ],
+    publishedAt: "2026-07-29",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/pbg-permit-approval-stamp-document.webp",
+    gallery: [
+      {
+        url: "/blog/construction-foundation-rebar-site-inspection.webp",
+        alt: "Two workers inspecting a steel rebar grid at a building foundation during construction, illustrating the site inspection stage before a building approval is issued",
+        credit: "Tkirkgoz / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/37733179/",
+      },
+      {
+        url: "/blog/building-safety-inspection-team-hardhat.webp",
+        alt: "A team of inspectors wearing hard hats conducting a safety walkthrough of a completed building, representing the SLF certificate inspection process in Bali",
+        credit: "Pavel Danilyuk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7937743/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesian Ministry of Public Works: SIMBG (Sistem Informasi Manajemen Bangunan Gedung) - official portal for PBG and SLF applications and permit verification (Tier 1)",
+        url: "https://simbg.pu.go.id/",
+      },
+      {
+        label:
+          "BPK Law Database: PP No. 16 Tahun 2021 - Government Regulation implementing the Building Construction Approval (PBG) in place of the IMB (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021",
+      },
+      {
+        label:
+          "Tarubali (Bali Provincial Spatial Information System): PBG and SLF - importance in the construction permitting process (Tier 1)",
+        url: "https://tarubali.baliprov.go.id/persetujuan-bangunan-gedung-pbg-dan-sertifikat-laik-fungsi-slf-pentingnya-dalam-proses-konstruksi-bangunan-gedung/",
+      },
+      {
+        label:
+          "Emerhub: PBG Building Permit in Bali - application process, required documents, cost, and timeline (Tier 2)",
+        url: "https://emerhub.com/bali/building-permit-pbg/",
+      },
+      {
+        label:
+          "Seven Stones Real Estate: Securing Your Villa in Bali - PBG and SLF building permits explained for investors (Tier 2)",
+        url: "https://realestate.sevenstonesindonesia.com/securing-your-villa-in-bali-essential-pbg-slf-building-permits-explained/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
