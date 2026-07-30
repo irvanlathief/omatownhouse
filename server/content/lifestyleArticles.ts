@@ -2752,4 +2752,87 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-nominee-arrangement-property-risks",
+    title: "Bali Nominee Arrangements: What Foreign Buyers Must Know",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 49,
+    metaDescription:
+      "Nominee arrangements are illegal in Bali under UUPA Art. 26(2) and Law 25/2007. Learn the risks foreign buyers face and the three legal alternatives.",
+    body: `<p>A nominee arrangement is when an Indonesian citizen holds property title in their own name on behalf of a foreign buyer who provides the purchase funds. This structure is explicitly prohibited under Indonesian law, and courts will not protect a foreign buyer who loses out when a nominee acts against their interests.</p><p>The prohibition rests on two statutes. The Basic Agrarian Law (UUPA, Law No. 5 of 1960) reserves Hak Milik (freehold title) exclusively for Indonesian citizens. Article 26(2) states that any act intended, directly or indirectly, to transfer Hak Milik to a foreign national is null and void, and the land may revert to the state. The <a href="https://jdih-storage.bkpm.go.id/jdih/jdih/2007UUINVESTMENT25-ENGLISH-.pdf" data-external="true">Investment Law (Law No. 25 of 2007)</a> adds a second layer: Article 33 explicitly prohibits any agreement in which shares in an Indonesian company are held for and on behalf of another person. Both arrangements are declared void from the outset.</p><p>Because the arrangement is void, courts cannot award restitution. Indonesian Supreme Court Decision No. 3020 K/Pdt/2014 confirmed this directly. An Indonesian nominee sold a Bali plot to a third party without the foreign buyer's consent. The court found both parties had committed an unlawful act under Civil Code Article 1365, and the foreign buyer recovered nothing. Supreme Court Circular No. 10 of 2020 (SEMA 10/2020) reinforced this position by instructing all courts to treat the registered certificate holder as the legal owner, regardless of any private agreement about who provided the funds.</p><p>Two further risks compound the core problem. If the nominee dies, the property passes automatically to their statutory heirs under Indonesian succession law, and those heirs have no obligation to honor an unenforceable private arrangement. A nominee can also mortgage the land without the buyer's knowledge, because they hold the registered title and the private nominee agreement grants the buyer no rights that Indonesian courts will recognize.</p><p>Bali Province formalized criminal enforcement in 2026. On 24 February 2026, Governor Wayan Koster signed <a href="https://realestate.sevenstonesindonesia.com/bali-officially-bans-nominee-practice-for-land-ownership/" data-external="true">Bali Provincial Regulation No. 4 of 2026</a>, which criminalizes nominee land arrangements in Bali Province with penalties of up to five years imprisonment and a fine of one billion rupiah (approximately USD 60,000). Intermediaries, agents, and notaries who help structure a nominee arrangement share criminal exposure under the regulation.</p><p>Foreign buyers have legal alternatives that avoid all of these risks. A <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> can hold land under a renewable Hak Guna Bangunan (HGB) title for up to 80 years in total. Foreign residents with a valid Indonesian stay permit (KITAS, KITAP, or the Second Home Visa) can hold <a href="/blog/hak-pakai-bali-foreign-buyers">Hak Pakai</a> directly in their own name under Government Regulation No. 18 of 2021. A notarized leasehold (Hak Sewa, UUPA Article 44) is the most common structure for buyers who prefer not to set up a company. For a full comparison, see our <a href="/blog/freehold-vs-leasehold-bali">ownership structures guide</a>. This article is general information and is not legal advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Is it legal for a foreigner to use an Indonesian nominee to buy property in Bali?",
+        answer:
+          "No. Nominee arrangements are prohibited under Article 26(2) of the Basic Agrarian Law (UUPA, Law No. 5 of 1960) and Article 33 of the Investment Law (Law No. 25 of 2007). Both laws declare such arrangements null and void from inception. Bali Province also imposed criminal penalties under Perda No. 4 of 2026, signed 24 February 2026, with exposure for the foreign buyer, the nominee, and any intermediary who facilitates the structure. The three legal ownership routes for foreigners are a PT PMA company, Hak Pakai for visa holders, and a notarized leasehold.",
+      },
+      {
+        question: "What risks does a Bali property nominee arrangement create?",
+        answer:
+          "The core risk is that the arrangement is void, so Indonesian courts cannot award restitution if the nominee acts against the buyer's interests. Documented risks include the nominee selling or mortgaging the property without consent (confirmed in Supreme Court Decision No. 3020 K/Pdt/2014), the land reverting to the state under UUPA Article 26(2), and property passing to the nominee's heirs on death with no obligation to the foreign buyer. From 2026, Bali Perda No. 4 of 2026 adds criminal exposure of up to five years imprisonment and a fine of one billion rupiah.",
+      },
+      {
+        question:
+          "What happens if the nominee dies or disputes ownership of my Bali property?",
+        answer:
+          "If the Indonesian nominee dies, the property passes automatically to their statutory heirs under Indonesian inheritance law, regardless of any private agreement. Heirs can include a spouse, children, and parents, each with a legal share. The foreign buyer has no enforceable claim because the private nominee agreement is void. If the nominee disputes ownership while alive, Indonesian courts follow Supreme Court Circular No. 10 of 2020 (SEMA 10/2020), which instructs courts to recognize the registered certificate holder as the legal owner, not the undisclosed foreign beneficiary.",
+      },
+    ],
+    publishedAt: "2026-07-30",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/nominee-property-contract-blueprints.webp",
+    gallery: [
+      {
+        url: "/blog/nominee-handshake-agreement-documents.webp",
+        alt: "Two people shaking hands across a table with legal documents visible between them, representing the informal trust-based nominee arrangement that Indonesian law prohibits for foreign property buyers",
+        credit: "Ron Lach / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/unrecognizable-hands-handshaking-over-table-9870223/",
+      },
+      {
+        url: "/blog/nominee-legal-consultation-property.webp",
+        alt: "A lawyer seated across from two clients in a law office with a Lady Justice figurine on the desk, illustrating the legal consultation a foreign buyer should seek before structuring a Bali property purchase",
+        credit: "Karola G / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/couple-in-lawyer-office-7876153/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesia Basic Agrarian Law (UUPA), Law No. 5 of 1960, Article 26(2): any direct or indirect transfer of Hak Milik to a foreign national is null and void by law; land may revert to the state (Tier 1)",
+        url: "https://peraturan.go.id/peraturan/view.html?id=11e44c4ea27e84bfa3100000fb5a0c5a",
+      },
+      {
+        label:
+          "BKPM: Indonesia Investment Law No. 25 of 2007, Article 33 (English translation) - nominee agreements for company shares explicitly prohibited and declared null and void (Tier 1)",
+        url: "https://jdih-storage.bkpm.go.id/jdih/jdih/2007UUINVESTMENT25-ENGLISH-.pdf",
+      },
+      {
+        label:
+          "Kompas Properti: Supreme Court Circular SEMA No. 10 of 2020 - courts to recognize the certificate holder as legal owner; nominee name-borrowing practice not recognized (Tier 1, as reported by Kompas Properti)",
+        url: "https://properti.kompas.com/read/2020/02/18/195049521/ma-tak-akui-praktik-pinjam-nama-wna-atas-kepemilikan-tanah",
+      },
+      {
+        label:
+          "Seven Stones Indonesia Real Estate: Bali Perda No. 4 of 2026 - criminal ban on nominee land arrangements; penalties up to 5 years and IDR 1 billion (Tier 2)",
+        url: "https://realestate.sevenstonesindonesia.com/bali-officially-bans-nominee-practice-for-land-ownership/",
+      },
+      {
+        label:
+          "University of Indonesia Law Journal (Jurnal Reformasi Hukum Vol. 28): analysis of Denpasar District Court nominee case No. 274/Pdt.G/2020/PN Dps; courts applied UUPA Articles 9(1), 21(1), and 26(2) to void nominee agreements (Tier 2 academic)",
+        url: "https://ojs.uid.ac.id/index.php/jrh/article/view/1024",
+      },
+      {
+        label:
+          "BPK Law Database: Government Regulation PP No. 18 of 2021, Article 51 - Hak Pakai for foreign nationals with valid Indonesian stay permits; maximum term 30 + 20 + 30 years (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/163505/pp-no-18-tahun-2021",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
