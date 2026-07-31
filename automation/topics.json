@@ -889,7 +889,7 @@
     },
     {
       "id": "best-area-bali-property-investment-2026",
-      "status": "drafting",
+      "status": "published",
       "priority": 41,
       "theme": "location",
       "atpType": "what",
@@ -905,8 +905,8 @@
       "category": "location",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-31",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/70"
     },
     {
       "id": "bali-land-use-zoning-explained",
