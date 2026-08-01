@@ -2938,4 +2938,81 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     mapCoords: "-8.700,115.120",
     layoutVariant: "map",
   },
+  {
+    slug: "bali-land-use-zoning-for-villa-investors",
+    title: "Bali Land Use Zoning: Can You Build a Rental Villa There?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 51,
+    metaDescription:
+      "Not every Bali plot allows a rental villa. Learn Bali land use zones (pink, yellow, green), how to check before buying, and the 2025 agricultural land rules.",
+    body: `<p>Not every Bali plot allows a rental villa. Bali's land use is governed by a provincial spatial plan (RTRW) established under <a href="https://peraturan.bpk.go.id/Details/262423/perda-prov-bali-no-2-tahun-2023" data-external="true">Perda No. 2 of 2023</a>, which divides all land in the province into zones with distinct building rights. Buying a parcel without confirming its zone first is the most common and most expensive mistake foreign buyers make.</p><p>The pink zone (kawasan pariwisata, tourist area) is where short-term rental villas legally belong. Hotels, resorts, and holiday accommodation are permitted here. The yellow zone (kawasan permukiman, residential area) allows housing and some long-stay villas, depending on the regency's detailed plan. The green zone (kawasan pertanian, agricultural area) is where problems arise. Commercial villa construction on agricultural land is prohibited under the RTRW, and enforcement has tightened sharply since 2024. Conservation zones carry the strictest rules and exclude all commercial development.</p><p>Enforcement hardened further in late 2025. Governor Wayan Koster issued Gubernatorial Decree No. 5 of 2025, prohibiting any conversion of Sustainable Food Crop Land (LP2B) and Standard Rice Field Area (LBS) for non-agricultural use. The decree became law on December 2, 2025. Bali's rice field coverage fell from 70,996 hectares in 2019 to approximately 64,474 hectares by early 2026, losing around 1,000 hectares a year. Developers who already held a valid building permit (PBG) before the decree are not affected. Any new permit application on protected agricultural land faces rejection. For more on building permits, see our <a href="/blog/bali-villa-building-permit-pbg-explained">guide to PBG permits</a>.</p><p>You can run a preliminary zone check using the national GISTARU portal at <a href="https://gistaru.atrbpn.go.id" data-external="true">gistaru.atrbpn.go.id</a>, operated by the Ministry of Agrarian Affairs (ATR/BPN). For a formal answer, request an SKRK (Surat Keterangan Rencana Kota, zoning certificate) from the local regency planning office, or ask your PPAT notary to obtain a KKPR (space utilization conformity document) through the OSS portal. One practical limit: Bali's detailed zoning layer (RDTR) covered only about 23 percent of the province as of mid-2024, so the online map may not resolve every parcel. For those areas, a direct inquiry to the regency planning office (BAPPEDA) gives the definitive answer.</p><p>Getting the zone wrong carries real consequences. Badung authorities demolished more than 40 villas in Bingin in 2024 for zone violations, and fines for unauthorized construction average around IDR 500 million (roughly USD 32,000). A 2023 Bali Provincial Government report identified 120 properties in Bingin and Uluwatu as breaching zone restrictions. Under the 2025 decree, converting LP2B land for a villa can now result in criminal prosecution rather than administrative penalties alone. Check the zone before you sign. For a full pre-purchase checklist, see <a href="/blog/bali-property-due-diligence-checklist">Bali off-plan due diligence</a>.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is the difference between green zone and tourist zone land in Bali?",
+        answer:
+          "The pink tourist zone (kawasan pariwisata) is for commercial hospitality, including rental villas, hotels, and resorts. A short-term rental permit (Pondok Wisata or hotel license) can only be issued on correctly zoned tourist land. The green zone (kawasan pertanian) is agricultural land where commercial villa construction is prohibited under Perda No. 2/2023. Buildings in green zones must serve farming or conservation purposes. Buying a green-zone plot expecting to build a rental villa is not legally workable.",
+      },
+      {
+        question:
+          "Can a foreign buyer check the zoning of a Bali plot before buying?",
+        answer:
+          "Yes. Start with the GISTARU interactive map at gistaru.atrbpn.go.id, run by the Ministry of Agrarian Affairs (ATR/BPN). The map shows colour-coded zones across Bali. Follow that with a formal SKRK zoning certificate from the local regency planning office, which confirms the zone, building coverage ratio, and permitted uses for the specific parcel. Your PPAT notary can also verify through the OSS portal (oss.go.id) using a KKPR application. Treat the online map as an initial screen, not a final answer, since Bali's detailed zoning layer (RDTR) covered only about 23 percent of the province as of mid-2024.",
+      },
+      {
+        question:
+          "What happens if a Bali villa is built on illegally zoned land?",
+        answer:
+          "Authorities can issue a demolition order, revoke the building permit (PBG), and impose fines. In 2024, Badung regency demolished more than 40 villas in Bingin for zone violations. Fines for unauthorized construction average around IDR 500 million (roughly USD 32,000). Under Bali Gubernatorial Decree No. 5 of 2025, converting LP2B protected rice field land for villa construction can also result in criminal prosecution, not just administrative penalties.",
+      },
+    ],
+    publishedAt: "2026-08-01",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-village-green-zone-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/bali-rice-fields-village-development-aerial.webp",
+        alt: "Aerial view of rural Bali showing green rice paddies alongside village rooftops and agricultural land, illustrating the contrast between Bali's protected green zones and permissible development areas",
+        credit: "Wayan Parmana / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/6801571/",
+      },
+      {
+        url: "/blog/bali-agricultural-zone-rice-paddies-hut.webp",
+        alt: "Drone view of lush green Balinese rice paddies with a solitary hut, representing the agricultural green zone land where commercial villa construction is prohibited under Bali's RTRW spatial plan",
+        credit: "Tom Fisk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/35669317/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Peraturan Daerah Provinsi Bali No. 2 Tahun 2023 (RTRW Bali 2023-2043) - official provincial spatial plan regulation (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/262423/perda-prov-bali-no-2-tahun-2023",
+      },
+      {
+        label:
+          "Taru Bali (Bali Provincial Spatial Planning Information System) - RTRWP zone guidance and updates (Tier 1)",
+        url: "https://tarubali.baliprov.go.id/rtrwp-bali/",
+      },
+      {
+        label:
+          "GISTARU (Ministry of Agrarian Affairs ATR/BPN) - national interactive zoning map portal (Tier 1)",
+        url: "https://gistaru.atrbpn.go.id",
+      },
+      {
+        label:
+          "The Jakarta Post: Bali to issue regulation banning villa and hotel construction on agricultural land in six districts including Tabanan (Tier 1 news)",
+        url: "https://www.thejakartapost.com/indonesia/2025/09/17/bali-to-issue-regulationbanning-villa-and-hotel-construction-on-agricultural-land.html",
+      },
+      {
+        label:
+          "Emerhub: Bali Criminalizes Rice Field Conversions - LP2B land protection and enforcement implications for villa buyers (Tier 2)",
+        url: "https://emerhub.com/news/bali-criminalizes-rice-field-conversions/",
+      },
+    ],
+    layoutVariant: "gallery",
+  },
 ];
