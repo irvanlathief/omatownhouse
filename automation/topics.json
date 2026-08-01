@@ -910,7 +910,7 @@
     },
     {
       "id": "bali-land-use-zoning-explained",
-      "status": "drafting",
+      "status": "published",
       "priority": 42,
       "theme": "off-plan",
       "atpType": "what",
@@ -926,8 +926,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-01",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/71"
     },
     {
       "id": "bali-leasehold-renewal-process",
