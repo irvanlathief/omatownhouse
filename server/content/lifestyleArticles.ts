@@ -3015,4 +3015,76 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "gallery",
   },
+  {
+    slug: "bali-leasehold-renewal-process-investors",
+    title: "Bali Leasehold Renewal: What Investors Need to Negotiate",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 52,
+    metaDescription:
+      "Bali leasehold renewal has no statutory right to renew. Learn how Hak Sewa and HGB extensions work, when to negotiate, and what clauses to demand upfront.",
+    body: `<p>A Bali leasehold renewal is only as strong as the extension clause written into the original deed. Indonesian law gives foreign buyers no automatic right to renew a private lease (Hak Sewa), so every year of tenure beyond the initial term depends on language your notary drafted before you signed.</p><p>Most foreign buyers hold Bali property through a Hak Sewa, a private lease executed before a licensed Indonesian notary (PPAT). The term is whatever the parties negotiate; developers commonly offer 25 to 30 years as the initial period, with extension clauses that push the total effective term to 50 to 80 years. Because Hak Sewa is not registered at the National Land Agency (BPN), the notarized deed in Bahasa Indonesia is your entire legal protection. English translations carry no independent weight in an Indonesian court.</p><p>Buyers who purchase through a PT PMA company hold Hak Guna Bangunan (HGB), a BPN-registered title. Under Government Regulation PP 18 of 2021, HGB runs 30 years initially, extendable for 20 years, then renewable for another 30 years, for a maximum of 80 years. Renewal is an administrative application to the local land office (kantor pertanahan), not a private negotiation. File it at least 12 months before the title lapses, and keep land tax (PBB) payments current, since arrears can block the renewal.</p><p>On the Hak Sewa side, established Bali property consultancies agree: lock the extension terms in at signing, not later. Once your villa is built and earning rental income, the landowner's negotiating leverage grows substantially. The clause wording is what separates a meaningful protection from a formality. A jaminan perpanjangan (guarantee of extension) creates a binding contractual obligation; a prioritas perpanjangan (priority right) gives you only first refusal and is far weaker. For renewal pricing, a three-valuer appraisal by KJPP-certified Indonesian appraisers is the most commonly recommended balanced approach. Avoid any clause that sets the renewal price by "mutual agreement" with no independent valuation mechanism. Also confirm the clause explicitly binds the landowner's heirs and successors in title.</p><p>If a guarantee clause exists and the landowner refuses to honor it, you have grounds to pursue specific performance or damages in an Indonesian civil court under the Civil Code. In practice, proceedings move slowly and are conducted in Bahasa Indonesia, so enforcement is not guaranteed even with a strong clause. Where no extension clause exists at all, structures you built on the land revert to the freehold owner when the term ends. This is general information and not legal advice. For ownership structures available to US and UAE buyers, see our <a href="/blog/foreigners-buy-property-bali">guide for foreign buyers</a> and our <a href="/blog/freehold-vs-leasehold-bali">freehold vs leasehold comparison</a>. Confirm your specific position with a licensed Indonesian PPAT notary before committing.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "When should a Bali leasehold renewal be negotiated, at signing or later?",
+        answer:
+          "At the time of signing the original lease. Once a villa is built and generating rental income, the landowner's negotiating leverage increases significantly. Where an existing lease lacks a strong extension clause, industry guidance recommends approaching renewal talks 3 to 5 years before the term ends, while the property is still generating income and the buyer still holds some leverage. Inside 12 months of expiry, that leverage shifts almost entirely to the landowner.",
+      },
+      {
+        question:
+          "What happens if a Bali landowner refuses to renew a leasehold?",
+        answer:
+          "It depends on the contract language. If the deed contains a jaminan perpanjangan (guarantee of extension), the refusal is a breach of contract under the Indonesian Civil Code, giving you grounds to sue for specific performance or damages. If the deed has no extension clause, or only a prioritas perpanjangan (priority right), you have no statutory claim to renewal. Without a binding clause, all structures built on the land revert to the freehold owner at the end of the term, with no statutory compensation requirement.",
+      },
+      {
+        question:
+          "How is leasehold renewal price set for a Bali villa?",
+        answer:
+          "Three pricing mechanisms appear in market practice. A fixed price written in IDR into the original deed is the most protective for the buyer but rare, since landowners anticipating land appreciation are rarely willing to fix the price decades in advance. A three-valuer appraisal by KJPP-certified Indonesian licensed appraisers is the most balanced approach recommended by Bali property specialists. A third option is a formula linked to Statistics Indonesia (BPS) CPI inflation data. Avoid any clause that says the price will be set by mutual agreement with no independent valuation mechanism.",
+      },
+    ],
+    publishedAt: "2026-08-02",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/leasehold-renewal-handshake-agreement.webp",
+    gallery: [
+      {
+        url: "/blog/bali-villa-infinity-pool-sunset.webp",
+        alt: "Bali-style villa with infinity pool reflecting a golden sunset sky and tropical greenery, representing the leasehold asset a foreign investor needs to protect through a well-drafted lease extension clause negotiated at signing",
+        credit: "Kevin Yung / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/34790496/",
+      },
+      {
+        url: "/blog/leasehold-contract-clause-review.webp",
+        alt: "Two people reviewing and signing a property purchase document at a desk, illustrating the importance of negotiating leasehold extension clauses and renewal pricing mechanisms at the time of signing the original Bali lease deed",
+        credit: "RDNE Stock Project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8292787/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "ILA Global Consulting: Leasing Property in Bali - Hak Sewa structure, notary requirements, and extension clause best practices (Tier 2)",
+        url: "https://ilaglobalconsulting.com/leasing-property-bali/",
+      },
+      {
+        label:
+          "Emerhub: Leasehold Property in Bali for Foreign Investors - when and how to negotiate renewals (Tier 2)",
+        url: "https://emerhub.com/bali/leasing-property/",
+      },
+      {
+        label:
+          "Exotiq Property: What is a Leasehold Title in Bali - term structure, extension clause types, and pricing mechanisms (Tier 2)",
+        url: "https://www.exotiqproperty.com/blog/leasehold-title-bali",
+      },
+      {
+        label:
+          "ICLG: Indonesia Real Estate Laws and Regulations 2025 - HGB renewal process under PP 18/2021 (authoritative legal reference)",
+        url: "https://iclg.com/practice-areas/real-estate-laws-and-regulations/indonesia",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
