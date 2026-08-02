@@ -931,7 +931,7 @@
     },
     {
       "id": "bali-leasehold-renewal-process",
-      "status": "drafting",
+      "status": "published",
       "priority": 43,
       "theme": "foreign-ownership",
       "atpType": "how",
@@ -947,8 +947,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-02",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/72"
     },
     {
       "id": "bali-rental-occupancy-rates",
