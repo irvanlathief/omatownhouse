@@ -952,7 +952,7 @@
     },
     {
       "id": "bali-rental-occupancy-rates",
-      "status": "drafting",
+      "status": "published",
       "priority": 44,
       "theme": "investment",
       "atpType": "what",
@@ -968,8 +968,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-03",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/73"
     },
     {
       "id": "bali-vs-mauritius-property",
