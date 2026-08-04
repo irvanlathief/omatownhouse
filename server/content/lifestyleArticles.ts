@@ -3159,4 +3159,80 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-vs-mauritius-property-investment",
+    title: "Bali vs Mauritius Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 54,
+    metaDescription:
+      "Bali vs Mauritius property for foreign investors: freehold in Mauritius versus leasehold in Bali, with rental yields, taxes, and residency compared.",
+    body: `<p>Both Bali and Mauritius attract foreign property buyers with island settings and lifestyle appeal, but they sit at opposite ends of several key axes: Mauritius offers freehold title and an automatic residence permit above a price threshold; Bali delivers rental yields that are typically two to three times higher, with a larger tourism market and lower entry costs.</p><p>In Mauritius, foreigners must purchase within government-approved schemes administered by the <a href="https://edbmauritius.org/info_centre/property-development-scheme" data-external="true">Economic Development Board (EDB)</a>. The current framework is the Property Development Scheme (PDS), which replaced the older Integrated Resort Scheme (IRS) for new developments. Both give the buyer freehold ownership, with title registered in the buyer's name and no expiry date. A purchase above USD 375,000 in a qualifying development grants a permanent residence permit to the buyer, their spouse, and dependent children under 24, valid for the full period of ownership. From 1 July 2026, the registration duty on these non-citizen purchases rose from 5 percent to 10 percent of the transaction price under the <a href="https://mauritiusassembly.govmu.org/mauritiusassembly/wp-content/uploads/2025/08/18_THE-FINANCE-ACT-2025-.pdf" data-external="true">Mauritius Finance Act 2025</a>.</p><p>In Bali, foreigners cannot hold freehold land (Hak Milik). The practical routes are a long-term leasehold, typically structured as 25 to 30 years with an extension option negotiated at signing, or holding the property through a PT PMA, a foreign-owned Indonesian company that can hold Hak Guna Bangunan (HGB) title. Neither gives outright freehold. A PT PMA adds setup costs and annual compliance obligations but provides the stronger title security of the two. There is no minimum purchase price in Bali, and residency is not automatically linked to buying; the Indonesia Second Home Visa requires a separate application.</p><p>Rental yields diverge sharply. <a href="https://www.globalpropertyguide.com/africa/mauritius/rental-yields" data-external="true">Global Property Guide</a> reports average gross rental yields in Mauritius of approximately 3.07 to 3.22 percent across its residential market. Bali recorded 6.33 million international arrivals in 2024 per <a href="https://bali.bps.go.id/en/publication/2025/07/28/ebb7c3b73638d228089e6cea/foreign-tourist-statistics-of-bali-province-2024.html" data-external="true">BPS Statistics Indonesia</a>, supporting a much larger short-stay market; well-managed villas in established zones generate gross yields broadly in the 8 to 12 percent range. The Mauritius market drew 1,382,177 arrivals in 2024, per the <a href="https://tourism.govmu.org/Documents/Statistics/Handbook%20of%20Statistical%20Data%20on%20Tourism,%20Year%202024.pdf" data-external="true">Republic of Mauritius Handbook of Statistical Data on Tourism</a>.</p><p>Mauritius holds advantages on the tax side: no capital gains tax, no inheritance tax, and no annual property tax. Non-resident rental income is subject to a flat 15 percent withholding tax. In Bali, annual property tax (PBB) is modest at roughly 0.5 percent of assessed value; rental income withholding rates range from 10 to 20 percent depending on the owner's residency status (see our <a href="/blog/tax-for-foreign-property-owners-bali">Bali rental income tax guide</a> for details). On a sale, the Indonesian seller pays 2.5 percent PPh on the gross sale price, while Mauritius levies no capital gains tax on the vendor.</p><p>A US or UAE investor who wants freehold title, a residence permit, and a simplified tax environment will find Mauritius delivers on those criteria, at the cost of lower rental income potential and higher transaction costs from July 2026 onwards. An investor focused on rental yield from a high-volume tourism market, with a lower entry price and flexible ownership structure, will find Bali the stronger choice. These are indicative ranges based on available market data, not guaranteed returns. This is not financial advice; consult a qualified adviser before committing capital.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own freehold property in Mauritius easier than in Bali?",
+        answer:
+          "Yes. In Mauritius, foreigners can buy freehold residential property within EDB-approved schemes such as the PDS and IRS, giving outright ownership of land and building with no expiry date and title registered in their name. In Bali, freehold land (Hak Milik) is not available to foreigners. The options are a long-term leasehold or holding property via a PT PMA, a foreign-owned Indonesian company. The Mauritius route offers clearer title security, though it requires buying within an approved scheme at a price that typically starts well above USD 200,000.",
+      },
+      {
+        question: "How do Bali and Mauritius rental yields compare?",
+        answer:
+          "The gap is significant. Mauritius averages approximately 3 to 4 percent gross across its residential market according to Global Property Guide data. Bali, backed by over 6 million international arrivals per year, sees well-managed villas in established short-stay zones generating broadly 8 to 12 percent gross. The difference reflects the scale and nature of each market: Mauritius draws a smaller, higher-spend visitor base while Bali supports year-round, mass-market tourism demand that fills short-term rentals consistently.",
+      },
+      {
+        question:
+          "What visa does owning property in Mauritius give versus Bali?",
+        answer:
+          "In Mauritius, purchasing a qualifying PDS or IRS property above USD 375,000 automatically triggers a permanent residence permit for the buyer, their spouse, and dependent children under 24, valid as long as they hold the property. In Bali, property ownership does not trigger a visa directly. Foreign investors typically apply separately for the Indonesia Second Home Visa, which is based on financial criteria rather than a specific purchase price. The Indonesia Golden Visa property route requires a minimum apartment purchase of USD 1 million.",
+      },
+    ],
+    publishedAt: "2026-08-04",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/mauritius-le-morne-peninsula-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/mauritius-aerial-coast.webp",
+        alt: "High-altitude aerial view of Mauritius showing the Le Morne peninsula, turquoise lagoon, and coastline, representing the island setting that attracts foreign property investors",
+        credit: "Vince (Vincent Rivaud) / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/34870508/",
+      },
+      {
+        url: "/blog/mauritius-beach-resort-huts.webp",
+        alt: "Mauritius beach resort with traditional thatched palm umbrellas and sunloungers beside calm turquoise water, representing the luxury resort setting of PDS and IRS scheme properties",
+        credit: "Vince (Vincent Rivaud) / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/34732320/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "EDB Mauritius: Property Development Scheme - official scheme rules, USD 375,000 residence permit threshold, freehold ownership rights for non-citizens (Tier 1)",
+        url: "https://edbmauritius.org/info_centre/property-development-scheme",
+      },
+      {
+        label:
+          "Mauritius Finance Act 2025 (Act No. 18 of 2025) - registration duty on non-citizen property acquisitions raised from 5% to 10% effective 1 July 2026 (Tier 1)",
+        url: "https://mauritiusassembly.govmu.org/mauritiusassembly/wp-content/uploads/2025/08/18_THE-FINANCE-ACT-2025-.pdf",
+      },
+      {
+        label:
+          "Global Property Guide: Gross Rental Yields in Mauritius - approximately 3.07 to 3.22 percent in Q3 2025 to Q1 2026 (Tier 2)",
+        url: "https://www.globalpropertyguide.com/africa/mauritius/rental-yields",
+      },
+      {
+        label:
+          "BPS Statistics Indonesia Bali Province: Foreign Tourist Statistics of Bali Province 2024 - 6.33 million international arrivals (Tier 1)",
+        url: "https://bali.bps.go.id/en/publication/2025/07/28/ebb7c3b73638d228089e6cea/foreign-tourist-statistics-of-bali-province-2024.html",
+      },
+      {
+        label:
+          "Republic of Mauritius: Handbook of Statistical Data on Tourism 2024 - 1,382,177 total tourist arrivals, average length of stay 11.4 nights (Tier 1)",
+        url: "https://tourism.govmu.org/Documents/Statistics/Handbook%20of%20Statistical%20Data%20on%20Tourism,%20Year%202024.pdf",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
