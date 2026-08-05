@@ -3235,4 +3235,86 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-property-developer-vetting-guide",
+    title: "How to Vet a Bali Property Developer Before You Buy",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 55,
+    metaDescription:
+      "How to vet a Bali off-plan property developer: five checks covering NIB registration, land title, PBG permit, completed project track record, and PPJB terms.",
+    body: `<p>Vetting a Bali off-plan developer means running five checks before any money moves: confirm the company is properly registered, verify clean land title, confirm the building permit is in hand, visit a completed project, and scrutinize the PPJB contract terms. Off-plan listings represent roughly 37 percent of Bali's residential supply, according to Colliers Indonesia's 2025 property market report, so the volume of projects is large and the quality of developer documentation varies considerably.</p><p>Start with company registration. Every Indonesian property developer must hold a NIB (Nomor Induk Berusaha) with a KBLI business classification that covers building construction. The code for residential villa development is KBLI 41011. You can look up a developer's NIB and its associated KBLI codes through the <a href="https://oss.go.id/en" data-external="true">OSS portal</a>, administered by BKPM (Indonesia's Investment Coordinating Board). A developer operating as a sole trader or CV rather than a PT or PT PMA lacks the legal structure to hold building rights. For medium and high-risk construction activity, the developer also needs an IUJK (Construction Business License) from the Ministry of Public Works. See our <a href="/blog/pt-pma-setup-bali-property">PT PMA guide</a> for background on the corporate structure that legally registered developers use.</p><p>Next, check the land. The certificate must be in the developer's PT or PT PMA name, held as HGB (Hak Guna Bangunan) title. A certificate in an individual Indonesian's name signals a nominee arrangement, which is legally void under Indonesian property law. Run a preliminary parcel check using the Ministry of ATR/BPN's <a href="https://bhumi.atrbpn.go.id" data-external="true">Bhumi portal</a>, which shows whether a plot is registered and its approximate ownership. To surface encumbrances such as bank mortgages on the land, your PPAT notary must request a certified title extract directly from the local BPN office. Confirm the land is in the correct zone for a rental villa before assuming one is viable there. See our <a href="/blog/bali-land-use-zoning-for-villa-investors">land use zoning guide</a> for details on tourist, residential, and agricultural zones.</p><p>Building permits come next. Under Government Regulation No. 16 of 2021, a developer must hold a PBG (Persetujuan Bangunan Gedung) before breaking ground. Permit applications and numbers are tracked on the government's <a href="https://simbg.pu.go.id" data-external="true">SIMBG portal</a>, run by the Ministry of Public Works. Ask the developer for their SIMBG permit reference and check it yourself. At handover, the developer must deliver an SLF (Sertifikat Laik Fungsi); without it the villa cannot hold a short-term rental license or be legally occupied. If prior completed projects lack an SLF, that is a clear warning sign. Our <a href="/blog/bali-villa-building-permit-pbg-explained">PBG permit guide</a> explains both documents in full.</p><p>Track record is the next check. Ask for the names and addresses of two or three completed projects, then visit them or have a trusted person on the ground confirm delivery dates, SLF status, and handover condition. A developer who cannot point to completed, occupied villas has not demonstrated they can deliver. New entities formed specifically for one project carry the highest completion risk, because there is no history against which to judge the team or the process.</p><p>Finally, scrutinize the <a href="/blog/ppjb-contract-bali-off-plan-explained">PPJB (binding sale agreement)</a>. Under Government Regulation No. 12 of 2021, a PPJB for an off-plan property must be a notarial deed, not a privately signed document. The contract must name a specific handover date, tie each payment to a named construction milestone, and include a financial penalty clause for late delivery. One structural difference US or Dubai buyers should understand: Indonesia has no statutory escrow requirement comparable to Dubai's RERA escrow law. A PPJB holder is a personal-rights creditor, not a secured owner, if a developer defaults. Milestone-linked payments and a penalty clause are your main contractual protections. Have an independent Indonesian property lawyer, not the developer's recommended notary, review the PPJB before you sign. See our <a href="/blog/bali-property-due-diligence-checklist">full due diligence checklist</a> for the broader set of documents to request. This is general information, not legal or financial advice; engage a qualified adviser before committing capital.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What red flags should I look for in a Bali off-plan developer?",
+        answer:
+          "Key red flags include a land certificate held in an individual Indonesian's name rather than the developer's PT or PT PMA, a NIB with KBLI codes unrelated to construction, marketing before the PBG permit is confirmed in SIMBG, inability to produce SLF documents for prior completed projects, and a demand for a large upfront payment before construction milestones are tied to the contract. Resistance to including a financial penalty clause for late delivery in the PPJB is also a warning sign. A developer who cannot provide real addresses of completed projects they actually built and delivered should be treated with caution.",
+      },
+      {
+        question:
+          "How do I verify a Bali developer has the correct land and permits?",
+        answer:
+          "Check the land certificate number on the Ministry of ATR/BPN's Bhumi portal at bhumi.atrbpn.go.id, which shows whether a plot is registered and its approximate ownership. For a check that also surfaces encumbrances such as bank mortgages, your PPAT notary must request a certified title extract from the local BPN land office. Verify the building permit (PBG) reference on the Ministry of Public Works SIMBG portal at simbg.pu.go.id. Both portals are publicly accessible and free to use. Cross-reference the NIB and KBLI classification of the developer's company on the OSS portal at oss.go.id.",
+      },
+      {
+        question:
+          "What questions should I ask before signing a Bali off-plan contract?",
+        answer:
+          "Before signing a PPJB, ask for: the PBG permit number and its SIMBG reference, the land certificate number and BPN registration details, the NIB and KBLI classification of the developer's company, the addresses of two or three prior completed projects, and a draft PPJB that names a specific handover date, lists each construction milestone with the payment tied to it, and includes a delay penalty clause. The PPJB must be a notarial deed under Government Regulation No. 12 of 2021, not a private signed document. Ask your own Indonesian property lawyer to review the draft before you sign, separate from any notary the developer recommends.",
+      },
+    ],
+    publishedAt: "2026-08-05",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/developer-site-visit-hardhat-review.webp",
+    gallery: [
+      {
+        url: "/blog/construction-site-engineers-discussion.webp",
+        alt: "Two engineers wearing hard hats and safety vests discuss construction progress at a large building site with yellow crane structures in the background, representing the site visit check a buyer should make when vetting a Bali off-plan developer",
+        credit: "Mikael Blomkvist / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8961065/",
+      },
+      {
+        url: "/blog/developer-credential-document-review.webp",
+        alt: "Real estate agent holding a clipboard with property listing documents, explaining the details to a client during a consultation, representing the document and credential review a buyer should conduct when vetting a Bali property developer",
+        credit: "RDNE Stock project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8292784/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "OSS-RBA portal, BKPM (Ministry of Investment): NIB and KBLI business registration system for Indonesian companies, including property developers (Tier 1)",
+        url: "https://oss.go.id/en",
+      },
+      {
+        label:
+          "Ministry of ATR/BPN BHUMI portal: digital land parcel ownership and registration status verification map (Tier 1)",
+        url: "https://bhumi.atrbpn.go.id",
+      },
+      {
+        label:
+          "SIMBG portal, Ministry of Public Works: PBG building permit application and permit number lookup for Indonesian construction projects (Tier 1)",
+        url: "https://simbg.pu.go.id",
+      },
+      {
+        label:
+          "Government Regulation No. 16 of 2021 (PP 16/2021): legal basis for the PBG building permit system, replacing the former IMB, requiring permit before construction commences (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021",
+      },
+      {
+        label:
+          "Colliers Indonesia Annual Property Market Report 2025 - Bali Apartment: off-plan listings represent approximately 37 percent of available residential supply in Bali (Tier 2)",
+        url: "https://www.colliers.com/en-id/research/colliers-annual-property-market-report-2025-bali-apartment",
+      },
+      {
+        label:
+          "ICLG Indonesia Real Estate Laws and Regulations 2025: PPJB holders hold personal rights only and rank as concurrent creditors in developer insolvency, with no statutory escrow protection (Tier 2)",
+        url: "https://iclg.com/practice-areas/real-estate-laws-and-regulations/indonesia",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
