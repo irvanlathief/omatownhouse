@@ -994,7 +994,7 @@
     },
     {
       "id": "bali-property-developer-vetting",
-      "status": "drafting",
+      "status": "published",
       "priority": 46,
       "theme": "off-plan",
       "atpType": "how",
@@ -1010,8 +1010,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-05",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/76"
     }
   ]
 }
