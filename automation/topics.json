@@ -1015,7 +1015,7 @@
     },
     {
       "id": "bali-townhouse-vs-villa-investment",
-      "status": "pending",
+      "status": "published",
       "priority": 47,
       "theme": "investment",
       "atpType": "vs",
@@ -1031,8 +1031,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-06",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/77"
     },
     {
       "id": "bali-developer-default-buyer-protection",
