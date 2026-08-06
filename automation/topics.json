@@ -826,7 +826,7 @@
     },
     {
       "id": "bali-vs-greece-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 38,
       "theme": "investment",
       "atpType": "vs",
@@ -842,8 +842,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-28",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/66"
     },
     {
       "id": "bali-building-permit-pgb-villa",
@@ -889,7 +889,7 @@
     },
     {
       "id": "best-area-bali-property-investment-2026",
-      "status": "drafting",
+      "status": "published",
       "priority": 41,
       "theme": "location",
       "atpType": "what",
@@ -905,12 +905,12 @@
       "category": "location",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-07-31",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/70"
     },
     {
       "id": "bali-land-use-zoning-explained",
-      "status": "drafting",
+      "status": "published",
       "priority": 42,
       "theme": "off-plan",
       "atpType": "what",
@@ -926,12 +926,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-01",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/71"
     },
     {
       "id": "bali-leasehold-renewal-process",
-      "status": "drafting",
+      "status": "published",
       "priority": 43,
       "theme": "foreign-ownership",
       "atpType": "how",
@@ -947,8 +947,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-02",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/72"
     },
     {
       "id": "bali-rental-occupancy-rates",
@@ -973,7 +973,7 @@
     },
     {
       "id": "bali-vs-mauritius-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 45,
       "theme": "investment",
       "atpType": "vs",
@@ -989,12 +989,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-04",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/75"
     },
     {
       "id": "bali-property-developer-vetting",
-      "status": "drafting",
+      "status": "published",
       "priority": 46,
       "theme": "off-plan",
       "atpType": "how",
@@ -1007,6 +1007,174 @@
       ],
       "proposedSlug": "bali-property-developer-vetting-guide",
       "proposedTitle": "How to Vet a Bali Property Developer Before You Buy",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-08-05",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/76"
+    },
+    {
+      "id": "bali-townhouse-vs-villa-investment",
+      "status": "published",
+      "priority": 47,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "What is the difference between a townhouse and a villa in Bali as a foreign investment?",
+      "targetKeywords": ["Bali townhouse vs villa investment", "townhouse investment Bali", "Bali townhouse foreign buyer"],
+      "relatedQuestions": [
+        "Are townhouses cheaper to buy than villas in Bali?",
+        "Is a Bali townhouse easier to manage as a rental than a villa?",
+        "How does ownership structure differ for a Bali townhouse vs a standalone villa?"
+      ],
+      "proposedSlug": "bali-townhouse-vs-villa-investment",
+      "proposedTitle": "Bali Townhouse vs Villa: Which Is the Better Investment?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-08-06",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/77"
+    },
+    {
+      "id": "bali-developer-default-buyer-protection",
+      "status": "pending",
+      "priority": 48,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What happens if my Bali off-plan developer fails to complete or goes bankrupt before handover?",
+      "targetKeywords": ["Bali developer default off-plan", "Bali off-plan developer bankruptcy", "protection if Bali developer fails"],
+      "relatedQuestions": [
+        "What legal protection does a PPJB give if the Bali developer defaults?",
+        "Can I get my deposit back if a Bali off-plan developer goes bankrupt?",
+        "How does Bali off-plan buyer protection compare to Dubai RERA escrow?"
+      ],
+      "proposedSlug": "bali-off-plan-developer-default-buyer-protection",
+      "proposedTitle": "What Happens If Your Bali Off-Plan Developer Fails?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-rental-income-repatriation-mechanics",
+      "status": "pending",
+      "priority": 49,
+      "theme": "tax",
+      "atpType": "how",
+      "primaryQuestion": "How do I get my Bali rental income into a US or UAE bank account?",
+      "targetKeywords": ["repatriate Bali rental income", "transfer Bali rental income abroad", "Bali rental income to US bank account"],
+      "relatedQuestions": [
+        "What Indonesian rules govern transferring rental income overseas?",
+        "Do I need a PT PMA to repatriate Bali rental income legally?",
+        "Are there limits on how much rental income I can send from Indonesia to the US or UAE?"
+      ],
+      "proposedSlug": "bali-rental-income-repatriation-guide",
+      "proposedTitle": "How to Repatriate Bali Rental Income to the US or UAE",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-vietnam-property-investment",
+      "status": "pending",
+      "priority": 50,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Vietnam (Da Nang) property for foreign investors: how do they compare?",
+      "targetKeywords": ["Bali vs Vietnam property investment", "Bali or Da Nang for investment", "Vietnam property foreigners vs Bali"],
+      "relatedQuestions": [
+        "Can foreigners own property in Vietnam more easily than in Bali?",
+        "Are Bali or Vietnam rental yields higher for villas and condos?",
+        "How do taxes compare for foreign property owners in Vietnam vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-vietnam-property-investment",
+      "proposedTitle": "Bali vs Vietnam Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-installment-plan-explained",
+      "status": "pending",
+      "priority": 51,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How do developer installment plans work for off-plan property in Bali?",
+      "targetKeywords": ["Bali off-plan installment plan", "developer payment plan Bali villa", "Bali off-plan payment stages cash vs installment"],
+      "relatedQuestions": [
+        "What is a typical installment plan structure for a Bali off-plan villa?",
+        "Is it better to pay cash or use a developer installment plan for Bali off-plan?",
+        "What happens to my installment payments if the Bali developer is late?"
+      ],
+      "proposedSlug": "bali-off-plan-installment-plan-guide",
+      "proposedTitle": "How Bali Off-Plan Installment Plans Work for Foreign Buyers",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-market-outlook-2027",
+      "status": "pending",
+      "priority": 52,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What is the Bali property market outlook heading into 2027?",
+      "targetKeywords": ["Bali property market 2027", "Bali real estate forecast 2027", "Bali villa market outlook"],
+      "relatedQuestions": [
+        "Will Bali property prices keep rising in 2027?",
+        "What infrastructure projects will drive Bali property values in 2027?",
+        "Which areas of Bali are likely to see the most growth in 2027?"
+      ],
+      "proposedSlug": "bali-property-market-outlook-2027",
+      "proposedTitle": "Bali Property Market Outlook for 2027",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-furnished-villa-rental-roi",
+      "status": "pending",
+      "priority": 53,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "Does buying a furnished vs unfurnished Bali villa make a difference to rental returns?",
+      "targetKeywords": ["Bali furnished villa investment", "furnished vs unfurnished Bali villa rental", "Bali villa furniture ROI"],
+      "relatedQuestions": [
+        "How much more does a furnished Bali villa rent for compared to unfurnished?",
+        "Can furniture costs in a Bali villa be depreciated for tax purposes?",
+        "What furnishing standard do Bali villa management companies recommend for short-term rentals?"
+      ],
+      "proposedSlug": "bali-furnished-vs-unfurnished-villa-roi",
+      "proposedTitle": "Furnished vs Unfurnished Bali Villa: Impact on Rental Returns",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-buying-process-timeline",
+      "status": "pending",
+      "priority": 54,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How long does the complete Bali property buying process take from first contact to title?",
+      "targetKeywords": ["Bali property buying timeline", "how long to buy Bali villa", "Bali property purchase steps timeline"],
+      "relatedQuestions": [
+        "What are the main steps in buying a Bali off-plan property?",
+        "How long does PT PMA registration add to a Bali property purchase?",
+        "What causes delays in the Bali property buying process?"
+      ],
+      "proposedSlug": "bali-property-buying-process-timeline",
+      "proposedTitle": "Bali Property Buying Process: Timeline from Offer to Title",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],

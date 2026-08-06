@@ -3317,4 +3317,75 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-townhouse-vs-villa-investment",
+    title: "Bali Townhouse vs Villa: Which Is the Better Investment?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 56,
+    metaDescription:
+      "Bali townhouse vs villa for foreign investors: compare ownership structures, entry prices, management models, and rental yield ranges to pick the right format.",
+    body: `<p>A Bali townhouse is a unit in a multi-unit managed development, typically on two or three levels, sharing walls and common infrastructure with neighboring units. A Bali villa is a standalone dwelling with a private plot, a dedicated pool, and a walled compound. That structural difference creates four practical distinctions for a foreign investor: legal ownership path, entry price, management model, and rental profile.</p><p>On ownership, both types are accessible to foreigners. A standalone villa is typically acquired on leasehold or through a PT PMA holding <a href="/blog/hak-guna-bangunan-bali-pt-pma">HGB title</a>. A townhouse unit within a managed development can additionally be held as HMSRS (Hak Milik Atas Satuan Rumah Susun, the Indonesian strata certificate). Government Regulation 18/2021, which implemented Indonesia's Omnibus Law (Cipta Kerja), expanded foreign eligibility for HMSRS significantly. Foreign nationals may now hold strata units in Bali's designated tourism zones without a residency permit, subject to a minimum purchase price of IDR 2 billion (roughly USD 120,000 at mid-2026 exchange rates) and a 49 percent cap on foreign ownership per building. The <a href="/blog/hak-pakai-bali-foreign-buyers">Hak Pakai</a> route for a landed house, by contrast, sets the minimum at IDR 5 billion (roughly USD 300,000) and requires a valid KITAS or KITAP residency permit. Below those thresholds, <a href="/blog/freehold-vs-leasehold-bali">leasehold</a> is the most common structure for both property types and carries no minimum price or residency requirement.</p><p>Entry prices reflect the shared-infrastructure advantage of multi-unit developments. Managed townhouse and strata resort units in Bali currently start from roughly USD 90,000 to 200,000 for a one-bedroom unit. A two-bedroom standalone villa in the Canggu corridor typically starts from USD 239,000 upward, based on current market listings from established Bali agencies. The lower floor for townhouses reflects shared land and pool costs distributed across all units in the development. Tabanan and emerging coastal corridors carry lower floors for both types, and off-plan pricing adds a further discount against completed stock.</p><p>Management differs meaningfully. A standalone villa owner selects their own management company and pays a commission of roughly 15 to 25 percent of gross rental revenue, plus OTA platform fees of around 15 to 16.5 percent. Since March 2026, OTA platforms require Bali villas to hold a valid NIB and a business classification under KBLI 55110, which in practice means a <a href="/blog/pt-pma-setup-bali-property">PT PMA structure</a> for foreign-beneficial owners. In a managed resort development, the operator holds the licensing and corporate structure centrally and aggregates all unit revenue into a rental pool. That model typically delivers 15 to 25 percentage points higher occupancy in the low season compared to a comparable standalone villa relying on individual OTA listings. The trade-off is that personal use is capped at roughly four to eight weeks per year and owners cannot customise the fitout away from the operator's standard.</p><p>On rental yield, published industry data shows gross yields of 7 to 12 percent for professionally managed standalone villas in Bali. Developer projections for managed resort complexes run to 15 to 20 percent gross, though independent estimates put the realistic net yield advantage over a comparable standalone villa at closer to 3 to 5 percentage points once management fees, OTA commissions, operating costs, and the 10 percent accommodation tax are deducted from both. The Colliers Indonesia Bali Apartment Market Report for 2025 notes that the strata sector in Bali remains small relative to the villa market, with limited comparable transaction history. Choose a townhouse if a lower entry price, passive compliance, and pooled management suit your investment plan. Choose a standalone villa if full design control and direct access to the premium private-pool short-stay market are the priority. Neither structure guarantees a return; this is general information, not financial or legal advice. Consult a qualified Indonesian property lawyer before committing capital.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Are townhouses cheaper to buy than villas in Bali?",
+        answer:
+          "Yes, as a general rule. Townhouse units in managed Bali developments typically start from around USD 90,000 to 200,000 for a one-bedroom unit. A comparable two-bedroom standalone villa with a private pool in the Canggu corridor is listed from USD 239,000 upward. The price difference reflects the lower per-unit land cost in multi-unit developments, where land, pool, and infrastructure costs are shared across all units. Both types have lower entry points in the Tabanan and emerging coastal corridors, and off-plan pricing adds a further discount against completed stock.",
+      },
+      {
+        question:
+          "Is a Bali townhouse easier to manage as a rental than a villa?",
+        answer:
+          "For an absentee foreign owner, a townhouse in a managed resort development is typically simpler to operate. The operator handles OTA listing, dynamic pricing, guest communication, maintenance, and licensing centrally, and individual owners do not need to establish their own PT PMA for rental licensing. Standalone villa management gives more flexibility but requires the owner to select and oversee a property management company, maintain a PT PMA for rental licensing (required since March 2026 for OTA listings in Bali), and manage OTA accounts directly. The trade-off with a managed complex is that personal use is capped and the owner cannot customise the unit.",
+      },
+      {
+        question:
+          "How does ownership structure differ for a Bali townhouse vs a standalone villa?",
+        answer:
+          "The main difference is that a townhouse unit in a managed development can be held as HMSRS (Hak Milik Atas Satuan Rumah Susun, the Indonesian strata certificate) in a foreign individual's name without a residency permit, subject to a minimum purchase price of IDR 2 billion (roughly USD 120,000 in Bali) and a 49 percent cap on foreign ownership per building. A standalone villa purchased in a personal name requires Hak Pakai title, which carries a higher minimum of IDR 5 billion (roughly USD 300,000) and requires a valid KITAS or KITAP residency permit. Both types can also be owned through a PT PMA company, which is the most common route for investor-grade purchases and commercial rental operations.",
+      },
+    ],
+    publishedAt: "2026-08-06",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/modern-townhouse-development-row.webp",
+    gallery: [
+      {
+        url: "/blog/tropical-villas-aerial-palms.webp",
+        alt: "Aerial view of standalone tropical villas surrounded by dense palm trees with private pools visible, representing the standalone villa format typical of Bali's short-term rental market",
+        credit: "Quang Nguyen Vinh / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/6872303/",
+      },
+      {
+        url: "/blog/property-investment-house-models-roi.webp",
+        alt: "Miniature house models in multiple colors alongside euro banknotes and a property key on a dark surface, representing the investment comparison between different Bali property formats",
+        credit: "Jakub Zerdzicki / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/32045967/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "UNCTAD Investment Policy Monitor: Government Regulation 18/2021 expands strata title (HMSRS) rights for foreign citizens in Indonesia, including IDR 2 billion minimum and 49 percent cap per building (Tier 1)",
+        url: "https://investmentpolicy.unctad.org/investment-policy-monitor/measures/3701/new-regulation-expands-strata-title-rights-for-foreign-citizens-and-legal-entities",
+      },
+      {
+        label:
+          "ASEAN Briefing: Indonesia Omnibus Law relaxed foreign property ownership, covering Hak Pakai minimums (IDR 5 billion for landed house, IDR 2 billion for strata units) and residency permit requirements (Tier 2)",
+        url: "https://www.aseanbriefing.com/news/indonesias-omnibus-law-relaxed-foreign-ownership-laws-on-real-estate/",
+      },
+      {
+        label:
+          "Colliers Indonesia Annual Property Market Report 2025 - Bali Apartment: market data on Bali's strata and apartment sector size relative to the villa market (Tier 2)",
+        url: "https://www.colliers.com/en-id/research/colliers-annual-property-market-report-2025-bali-apartment",
+      },
+      {
+        label:
+          "CocoDevelopment: Bali property rental yield analysis comparing standalone villas with managed resort complex units, including occupancy and operating cost data (Tier 2)",
+        url: "https://cocodevelopmentgroup.com/blog/rental-yield-of-property-in-bali/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
