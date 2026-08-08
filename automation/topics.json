@@ -1015,7 +1015,7 @@
     },
     {
       "id": "bali-vs-mexico-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 47,
       "theme": "investment",
       "atpType": "vs",
@@ -1031,8 +1031,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-08",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/78"
     },
     {
       "id": "pt-pma-profit-repatriation",
