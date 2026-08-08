@@ -3317,4 +3317,71 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-vs-mexico-property-investment",
+    title: "Bali vs Mexico Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 56,
+    metaDescription:
+      "Bali vs Mexico for foreign investors: fideicomiso vs leasehold, rental income tax rates, purchase costs, and gross yields compared side by side.",
+    body: `<p>Both Bali and Mexico attract US buyers looking for a tropical second home with short-term rental income, but their ownership structures work differently. In Mexico, most coastal destinations fall inside the Restricted Zone, defined as land within 50 kilometres of any coastline under Article 27 of the Mexican Constitution. Inside that zone, US nationals buy through a fideicomiso, a bank trust where a licensed Mexican bank holds title on your behalf for 50 years, renewable indefinitely. The trust gives you full beneficial rights to use, rent, renovate, sell, or leave the property to heirs, with annual maintenance fees of roughly USD 500 to 700. In Bali, foreigners hold through a leasehold, typically 25 years with a 25-year renewal option, or through a PT PMA foreign-owned company holding a Hak Guna Bangunan right. Our <a href="/blog/freehold-vs-leasehold-bali">ownership guide</a> covers each structure in detail.</p><p>Purchase closing costs are broadly comparable. Mexico buyers typically spend 5 to 9 percent of the purchase price, with the state acquisition tax (ISAI) running 2 to 5 percent depending on state. Quintana Roo, which covers Tulum and Playa del Carmen, charges 2 percent ISAI. In Indonesia, the buyer pays BPHTB at 5 percent of the taxable acquisition value. Both markets add notary and registration fees. Mexico also adds a fideicomiso setup fee of roughly USD 500 to 1,000 for properties inside the Restricted Zone.</p><p>Rental income tax favours Bali slightly for US owners. Mexico withholds 25 percent of gross rent from non-residents with no deductions permitted, per <a href="https://taxsummaries.pwc.com/mexico/individual/taxes-on-personal-income" data-external="true">PwC Mexico</a>. Indonesia withholds 20 percent under <a href="https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers" data-external="true">Article 26 of the income tax law</a>. A US-Mexico income tax treaty exists and allows US residents to credit Mexican withholding against their US tax liability, but it does not reduce the 25 percent statutory withholding rate. No US-Indonesia treaty exists; US nationals credit Indonesian withholding under standard domestic foreign tax credit rules.</p><p>Gross rental yields in the strongest tourist areas of both markets run roughly 8 to 15 percent gross for well-managed short-term rental villas, though net returns are substantially lower after costs. Tulum can reach that upper range in strong years; Playa del Carmen averages closer to 5 to 6 percent gross. Bali villas in Canggu and Uluwatu are cited in the same 8 to 15 percent gross range by agents and operators. Management fees in both markets typically consume 25 to 35 percent of rental revenue. These are general market estimates and not a guarantee of returns. This is not financial advice.</p><p>On exit, Bali is significantly cheaper for the seller: a final income tax (PPh) of 2.5 percent of the transaction price applies, as detailed in our <a href="/blog/bali-capital-gains-tax-foreign-seller">capital gains guide</a>. Mexico non-residents pay either 25 percent of the gross sale price or 35 percent of net profit, per the <a href="https://themexicohandbook.com/property-and-capital-gains-tax-in-mexico-a-guide-for-foreigners/" data-external="true">Mexico Handbook</a>. For comparisons with other markets, see our guides on <a href="/blog/bali-vs-thailand-property-investment">Bali vs Thailand</a> and <a href="/blog/bali-vs-portugal-property-investment">Bali vs Portugal</a>.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own property more easily in Mexico than in Bali?",
+        answer:
+          "In Mexico's coastal Restricted Zone, US nationals buy through a fideicomiso bank trust that lasts 50 years and is renewable indefinitely. The trust is straightforward to set up, gives full beneficial ownership rights including the right to rent and sell, and is broadly recognized by Mexican courts. In Bali, a leasehold gives personal rights for a fixed term, and a PT PMA company gives ownership through a company structure with annual compliance requirements. Neither market allows foreigners to hold direct freehold title in their own name, and both structures can be made secure with proper legal advice. The fideicomiso is arguably simpler administratively than running a PT PMA, but it also involves ongoing annual fees to the trustee bank.",
+      },
+      {
+        question:
+          "Are Bali or Mexico rental yields higher for villa investors?",
+        answer:
+          "The strongest short-term rental corridors in both markets produce similar gross yield ranges, roughly 8 to 15 percent for well-managed villas. In Mexico, Tulum villas reach that upper range in strong demand periods; Playa del Carmen typically averages 5 to 6 percent gross; Los Cabos net yields commonly fall 3 to 5 percent after management and operating costs. In Bali, Canggu and Uluwatu villas are cited in the 8 to 15 percent gross range by established agents. Net yields in both markets are substantially lower after management fees of 25 to 35 percent of revenue, taxes, maintenance, and vacancy. Location, property standard, and management quality drive the actual result far more than the country itself. This is general market context, not financial advice.",
+      },
+      {
+        question:
+          "What are the tax differences when selling a Mexico villa vs a Bali villa as a foreigner?",
+        answer:
+          "Selling as a non-resident in Mexico means choosing between 25 percent of the gross sale price or 35 percent of the net profit, with no primary-residence exemption available to non-residents. In Bali, the seller pays a final income tax of 2.5 percent of the transaction value regardless of residency or holding period. The Bali exit tax is substantially lower. However, US nationals remain liable for US capital gains tax on worldwide income in both cases, crediting any foreign tax paid against the US liability. A cross-border tax adviser should review your position in either market before you sign a sale agreement.",
+      },
+    ],
+    publishedAt: "2026-08-08",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/tulum-mayan-ruins-caribbean-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/cancun-hotel-zone-beachfront-aerial.webp",
+        alt: "Aerial view of Cancun's Hotel Zone showing a dense strip of luxury beach resorts and hotels lining a turquoise Caribbean shoreline, illustrating Mexico's established coastal tourism market",
+        credit: "Israel Torres / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/hotels-and-resorts-on-sea-coast-in-cancun-20210508/",
+      },
+      {
+        url: "/blog/tulum-beach-turquoise-coast.webp",
+        alt: "Ground-level coastal view from the Tulum ruins site showing a rocky clifftop with tropical vegetation overlooking a turquoise Caribbean sea, representing Mexico's Riviera Maya property market",
+        credit: "Camilo Laverde / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/the-beach-and-ocean-in-tulum-mexico-27638882/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "PwC Mexico Tax Summaries: individual income taxes for non-residents, 25% withholding on gross rental income with no deductions permitted (Tier 2)",
+        url: "https://taxsummaries.pwc.com/mexico/individual/taxes-on-personal-income",
+      },
+      {
+        label:
+          "Indonesia DGT (pajak.go.id): Article 26 income tax, 20% final withholding on gross Indonesian-source income paid to non-residents (Tier 1)",
+        url: "https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers",
+      },
+      {
+        label:
+          "Mexico Handbook: property and capital gains tax guide for foreigners, ISAI purchase tax range and non-resident seller options of 25% gross or 35% net (Tier 2)",
+        url: "https://themexicohandbook.com/property-and-capital-gains-tax-in-mexico-a-guide-for-foreigners/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];

@@ -826,7 +826,7 @@
     },
     {
       "id": "bali-vs-greece-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 38,
       "theme": "investment",
       "atpType": "vs",
@@ -842,7 +842,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-07-28",
       "prUrl": null
     },
     {
@@ -889,7 +889,7 @@
     },
     {
       "id": "best-area-bali-property-investment-2026",
-      "status": "drafting",
+      "status": "published",
       "priority": 41,
       "theme": "location",
       "atpType": "what",
@@ -905,12 +905,12 @@
       "category": "location",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-07-31",
       "prUrl": null
     },
     {
       "id": "bali-land-use-zoning-explained",
-      "status": "drafting",
+      "status": "published",
       "priority": 42,
       "theme": "off-plan",
       "atpType": "what",
@@ -926,12 +926,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-08-01",
       "prUrl": null
     },
     {
       "id": "bali-leasehold-renewal-process",
-      "status": "drafting",
+      "status": "published",
       "priority": 43,
       "theme": "foreign-ownership",
       "atpType": "how",
@@ -947,7 +947,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-08-02",
       "prUrl": null
     },
     {
@@ -973,7 +973,7 @@
     },
     {
       "id": "bali-vs-mauritius-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 45,
       "theme": "investment",
       "atpType": "vs",
@@ -989,12 +989,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-08-04",
       "prUrl": null
     },
     {
       "id": "bali-property-developer-vetting",
-      "status": "drafting",
+      "status": "published",
       "priority": 46,
       "theme": "off-plan",
       "atpType": "how",
@@ -1007,6 +1007,195 @@
       ],
       "proposedSlug": "bali-property-developer-vetting-guide",
       "proposedTitle": "How to Vet a Bali Property Developer Before You Buy",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-08-05",
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-mexico-property",
+      "status": "drafting",
+      "priority": 47,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Mexico for foreign property investors: how do they compare?",
+      "targetKeywords": ["Bali vs Mexico property investment", "Bali or Mexico for investment", "Mexico fideicomiso vs Bali leasehold"],
+      "relatedQuestions": [
+        "Can foreigners own property more easily in Mexico than in Bali?",
+        "Are Bali or Mexico rental yields higher for villa investors?",
+        "What happens when I sell a Mexico property vs a Bali property as a foreign investor?"
+      ],
+      "proposedSlug": "bali-vs-mexico-property-investment",
+      "proposedTitle": "Bali vs Mexico Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "pt-pma-profit-repatriation",
+      "status": "pending",
+      "priority": 48,
+      "theme": "tax",
+      "atpType": "how",
+      "primaryQuestion": "How do you take profits out of a Bali PT PMA as a foreign investor?",
+      "targetKeywords": ["PT PMA dividend repatriation Bali", "repatriate profits Bali PT PMA", "Indonesia dividend withholding tax foreign investor"],
+      "relatedQuestions": [
+        "What withholding tax applies when a PT PMA pays a dividend to a foreign shareholder?",
+        "How do I transfer profits from my Bali PT PMA to a US or UAE bank account?",
+        "Is there a minimum retained earnings requirement before a PT PMA can pay a dividend?"
+      ],
+      "proposedSlug": "pt-pma-profit-repatriation-bali",
+      "proposedTitle": "How to Take Profits Out of a Bali PT PMA",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-risks-2026",
+      "status": "pending",
+      "priority": 49,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What are the main risks of buying Bali property in 2026 and how do you manage them?",
+      "targetKeywords": ["Bali property investment risks 2026", "risks buying Bali villa", "Bali real estate risk foreigners"],
+      "relatedQuestions": [
+        "What legal risks exist for foreign buyers purchasing Bali property?",
+        "How does natural disaster risk affect a Bali property investment?",
+        "What market risks should a US or UAE investor know before buying in Bali?"
+      ],
+      "proposedSlug": "bali-property-investment-risks-2026",
+      "proposedTitle": "Bali Property Investment Risks in 2026: What to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "fractional-villa-ownership-bali",
+      "status": "pending",
+      "priority": 50,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What is fractional or co-ownership of a Bali villa and is it legal for foreigners?",
+      "targetKeywords": ["fractional villa ownership Bali", "co-own Bali villa foreigners", "Bali shared property ownership"],
+      "relatedQuestions": [
+        "Can two or more foreigners co-own a Bali villa through a PT PMA?",
+        "How does fractional ownership of a Bali leasehold work legally?",
+        "What are the risks of jointly buying a Bali property with a partner or group?"
+      ],
+      "proposedSlug": "fractional-co-ownership-bali-villa",
+      "proposedTitle": "Fractional and Co-Ownership of a Bali Villa: What Foreigners Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-cyprus-property",
+      "status": "pending",
+      "priority": 51,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Cyprus for foreign property investors: how do they compare?",
+      "targetKeywords": ["Bali vs Cyprus property investment", "Bali or Cyprus for investment", "Cyprus vs Bali rental yield foreigners"],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Cyprus more easily than in Bali?",
+        "Are Bali or Cyprus rental yields higher for holiday villas?",
+        "How do taxes compare for foreign property owners in Cyprus vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-cyprus-property-investment",
+      "proposedTitle": "Bali vs Cyprus Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "net-roi-bali-villa-calculation",
+      "status": "pending",
+      "priority": 52,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How do you calculate the net ROI on a Bali investment villa after all costs?",
+      "targetKeywords": ["net ROI Bali villa calculation", "Bali villa investment return after costs", "how to calculate Bali property ROI"],
+      "relatedQuestions": [
+        "What costs reduce the gross rental yield to a net yield on a Bali villa?",
+        "How do management fees, tax, and maintenance affect Bali villa ROI?",
+        "What is a realistic net yield for a well-managed Bali villa in Canggu or Tabanan?"
+      ],
+      "proposedSlug": "net-roi-bali-villa-calculation",
+      "proposedTitle": "Calculating Net ROI on a Bali Investment Villa",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-management-choosing",
+      "status": "pending",
+      "priority": 53,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How do I choose a villa management company in Bali?",
+      "targetKeywords": ["choose Bali villa management company", "best villa manager Bali", "Bali property management fees comparison"],
+      "relatedQuestions": [
+        "What should I look for when choosing a Bali villa management company?",
+        "How do Bali villa management fee structures differ between operators?",
+        "What questions should I ask a Bali villa manager before signing a contract?"
+      ],
+      "proposedSlug": "how-to-choose-bali-villa-management-company",
+      "proposedTitle": "How to Choose a Villa Management Company in Bali",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-strata-title-apartment",
+      "status": "pending",
+      "priority": 54,
+      "theme": "foreign-ownership",
+      "atpType": "can",
+      "primaryQuestion": "Can foreigners buy strata-title apartments or condominiums in Bali?",
+      "targetKeywords": ["strata title apartment Bali foreigners", "can foreigners buy condo Bali", "Bali apartment ownership laws"],
+      "relatedQuestions": [
+        "What is a Rumah Susun and can a foreigner hold strata title in Bali?",
+        "How does apartment ownership in Bali differ from villa leasehold ownership?",
+        "Are there foreign-owned apartment developments in Bali available for investment?"
+      ],
+      "proposedSlug": "bali-strata-title-apartment-foreigners",
+      "proposedTitle": "Can Foreigners Buy Strata-Title Apartments in Bali?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "off-plan-bali-deposit-protection",
+      "status": "pending",
+      "priority": 55,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How is an off-plan deposit protected in Bali if the developer fails?",
+      "targetKeywords": ["Bali off-plan deposit protection", "off-plan buyer protection Bali developer default", "Bali escrow property deposit"],
+      "relatedQuestions": [
+        "Does Indonesia require off-plan deposits to be held in escrow like Dubai?",
+        "What happens to my deposit if a Bali off-plan developer goes bankrupt?",
+        "What PPJB clauses protect a buyer's deposit if construction stops?"
+      ],
+      "proposedSlug": "bali-off-plan-deposit-protection",
+      "proposedTitle": "Protecting Your Off-Plan Deposit in Bali: What Buyers Need to Know",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
