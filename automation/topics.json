@@ -1036,7 +1036,7 @@
     },
     {
       "id": "pt-pma-profit-repatriation",
-      "status": "drafting",
+      "status": "published",
       "priority": 48,
       "theme": "tax",
       "atpType": "how",
@@ -1052,8 +1052,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-09",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/79"
     },
     {
       "id": "bali-property-risks-2026",
