@@ -3384,4 +3384,78 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "pt-pma-profit-repatriation-bali",
+    title: "How to Take Profits Out of a Bali PT PMA",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 57,
+    metaDescription:
+      "Bali PT PMA profits: how to declare dividends, withholding tax rates for US and UAE shareholders, and how to wire money to a foreign bank account.",
+    body: `<p>The legal route for taking profit out of a Bali PT PMA is a dividend declared at the annual General Meeting of Shareholders (GMS). Before that payment leaves Indonesia, the company withholds income tax under Article 26 of Indonesia's Income Tax Law, at either 20 percent or a lower rate under a Double Tax Agreement. The net dividend then transfers by wire to your US or UAE bank with no further legal restriction on the outbound payment.</p><p>Every dividend follows a fixed sequence. First, the company needs audited financial statements showing a positive profit balance. Any accumulated losses from prior years must be absorbed before a distribution can be declared. Indonesian company law also requires a statutory legal reserve equal to at least 20 percent of the company's paid-up capital, built up from annual profits before dividends are paid. Once both conditions are met, the annual GMS passes a resolution. Company law requires that meeting to be held within six months of the financial year end. The directors then calculate the withholding tax, pay it to the Directorate General of Taxation, and wire the net dividend to shareholders.</p><p>The default withholding rate is 20 percent of the gross dividend. US shareholders can apply the <a href="https://www.irs.gov/pub/irs-trty/indo.pdf" data-external="true">US-Indonesia Income Tax Convention</a>, which reduces the rate to 15 percent, or to 10 percent if the US shareholder holds at least 25 percent of the PT PMA's voting shares. UAE shareholders benefit from the Indonesia-UAE treaty that entered into force in January 2022, which sets the dividend withholding rate at 10 percent. A 2025 ministerial regulation (PMK 112/2025) added a new condition: the reduced treaty rate applies only if the qualifying ownership has been held continuously for at least 365 days before the dividend is paid. If that window has not been met, the full 20 percent domestic rate applies regardless of treaty.</p><p>Under Investment Law No. 25 of 2007, PT PMA companies have a statutory right to repatriate profits and dividends abroad, subject to tax compliance. Your bank will ask for the GMS resolution, audited accounts, and evidence of Article 26 withholding tax payment before processing the outbound wire. Large transfers may trigger Bank Indonesia reporting, though no cap applies to the transfer itself. Director salaries and related-party management fees are alternative extraction routes between GMS cycles, each with separate withholding implications and transfer pricing scrutiny. A local tax adviser should review your specific structure before any distribution. This is general context, not tax or financial advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What withholding tax applies when a PT PMA pays a dividend to a foreign shareholder?",
+        answer:
+          "The default rate under Article 26 is 20 percent of the gross dividend. US shareholders can apply the US-Indonesia tax treaty to reduce this to 15 percent, or 10 percent if they hold at least 25 percent of the company's voting shares. UAE shareholders benefit from the Indonesia-UAE treaty at 10 percent. A 2025 regulation (PMK 112/2025) requires the qualifying stake to have been held for at least 365 consecutive days before the dividend date to access these reduced rates; if not, the full 20 percent applies.",
+      },
+      {
+        question:
+          "How do I transfer profits from my Bali PT PMA to a US or UAE bank account?",
+        answer:
+          "After the annual GMS passes a dividend resolution and the company pays the Article 26 withholding tax to the Indonesian tax office, the net amount is wired via SWIFT to your foreign bank. Investment Law No. 25 of 2007 guarantees PT PMA companies the right to repatriate profits without restriction. Your bank will typically request the GMS resolution, the audited financial statements, and the withholding tax payment receipt before releasing the outbound transfer.",
+      },
+      {
+        question:
+          "Is there a minimum retained earnings requirement before a PT PMA can pay a dividend?",
+        answer:
+          "Yes. A PT PMA can only declare dividends from a positive retained earnings balance shown in audited annual financial statements. Any accumulated losses from prior years must first be absorbed. Indonesian company law also requires a statutory reserve equal to at least 20 percent of paid-up capital to be built up before distributions. Both conditions must be satisfied before the GMS can lawfully vote a dividend.",
+      },
+    ],
+    publishedAt: "2026-08-09",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/shareholders-meeting-boardroom-dividend.webp",
+    gallery: [
+      {
+        url: "/blog/euro-usd-mixed-currency-dividend-transfer.webp",
+        alt: "Aerial view of mixed Euro and US Dollar banknotes spread on a wooden surface, representing the international dividend repatriation process from a Bali PT PMA to a foreign bank account",
+        credit: "Ibrahim Boran / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/aerial-view-of-mixed-euro-and-us-dollar-banknotes-on-wooden-floor-8193975/",
+      },
+      {
+        url: "/blog/tax-document-professional-withholding.webp",
+        alt: "A financial professional reviewing tax documents at a wooden desk, representing the Article 26 withholding tax calculation and payment required before a PT PMA dividend is wired abroad",
+        credit: "Polina Tankilevitch / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/close-up-of-a-professional-examining-tax-documents-on-a-wooden-desk-indoors-6927546/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesia DGT (pajak.go.id): Article 26 income tax, 20% final withholding on dividends paid to non-resident foreign taxpayers (Tier 1)",
+        url: "https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers",
+      },
+      {
+        label:
+          "US-Indonesia Income Tax Convention (IRS.gov): treaty text setting dividend withholding at 15% standard rate and 10% for shareholders with 25% or more of voting shares (Tier 1)",
+        url: "https://www.irs.gov/pub/irs-trty/indo.pdf",
+      },
+      {
+        label:
+          "Katadata DInsights: Indonesia ratified the Indonesia-UAE tax treaty with a 10% dividend withholding rate, in force from January 2022 (Tier 2)",
+        url: "https://dinsights.katadata.co.id/read/2021/06/18/indonesia-ratifies-tax-treaty-with-uae-here-are-the-rates",
+      },
+      {
+        label:
+          "ASEAN Briefing: profit repatriation in Indonesia, covering Investment Law No. 25 of 2007 guarantees for PT PMA companies to repatriate dividends and profits without restriction (Tier 2)",
+        url: "https://www.aseanbriefing.com/doing-business-guide/indonesia/taxation-and-accounting/profit-tax-repatriation-indonesia",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
