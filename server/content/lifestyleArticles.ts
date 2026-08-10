@@ -3458,4 +3458,76 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-property-investment-risks-2026",
+    title: "Bali Property Investment Risks in 2026",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 58,
+    metaDescription:
+      "The main risks of buying Bali property in 2026: nominee traps, zoning bans, permit enforcement, natural disaster exposure, and currency drag for foreign investors.",
+    body: `<p>Buying Bali property in 2026 carries real risks for foreign investors, and most of them are legal rather than market-based. A buyer who understands the rules and picks the right structure can manage the majority before signing anything.</p><p><strong>Nominee and title risk</strong> is the highest-stakes failure point. Article 26(2) of <a href="https://peraturan.bpk.go.id/Details/38784/uu-no-5-tahun-1960" data-external="true">Indonesia's Basic Agrarian Law (UUPA 1960)</a> voids any arrangement designed to give a foreigner indirect freehold ownership through an Indonesian national. If the nominee dies, disputes the arrangement, or is pursued by creditors, you have no enforceable claim in any Indonesian court. The safe path is a registered leasehold or a PT PMA holding HGB title.</p><p><strong>Zoning risk</strong> sharpened after Bali's Governor issued Instruction No. 5 of 2025, prohibiting conversion of designated sustainable agricultural land (LP2B) to villa or tourism use. Violating that rule under <a href="https://peraturan.bpk.go.id/Details/38960/uu-no-41-tahun-2009" data-external="true">Law No. 41 of 2009</a> carries a penalty of up to five years in prison. Before committing to any parcel, obtain the zoning certificate and ask a licensed notary (PPAT) to confirm the land designation in writing.</p><p><strong>Permit and licensing risk</strong> is now commercially material. Permenpar No. 6/2025 required short-term rental operators to register with a valid NIB and operational permit by 31 March 2026. Major booking platforms started removing unlicensed listings during 2026. A villa without a current SLF and Pondok Wisata licence cannot lawfully generate rental income, which directly affects your yield.</p><p><strong>Natural disaster risk</strong> is real but insurable. Bali sits on the Ring of Fire and has three active volcanoes, including Mount Agung, which last erupted between 2017 and 2019. A Property All Risk (PAR) policy from a licensed Indonesian insurer can add earthquake, volcanic eruption and flood cover to a standard base policy. Check flood maps for any plot, choose higher ground where possible, and verify the build standard of the structure.</p><p><strong>Currency risk</strong> matters at the point of purchase and at repatriation. The <a href="https://www.bi.go.id/en/statistik/informasi-kurs/transaksi-bi/Default.aspx" data-external="true">Bank Indonesia JISDOR reference rate</a> moved from roughly IDR 15,700 to IDR 16,981 per USD over 2024 to 2025. On a USD 250,000 property, a further five percent rupiah move is roughly USD 12,500 of foreign exchange impact. Multi-year holds tend to smooth this, but short-term strategies carry more exposure. This is general context, not financial or legal advice. Seek professional guidance matched to your specific structure before proceeding.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What legal risks exist for foreign buyers purchasing Bali property?",
+        answer:
+          "The main legal risks are nominee arrangements, title disputes and zoning violations. Article 26(2) of Indonesia's Basic Agrarian Law (UUPA 1960) voids any scheme that gives a foreigner indirect freehold ownership through an Indonesian national. A registered leasehold or a PT PMA holding HGB title are the recognised legal structures. Before purchasing, confirm the land title and zoning classification with a licensed notary (PPAT).",
+      },
+      {
+        question:
+          "How does natural disaster risk affect a Bali property investment?",
+        answer:
+          "Bali sits on the Ring of Fire and has three active volcanoes, including Mount Agung, which last erupted between 2017 and 2019. Seasonal floods affect low-lying plots, particularly those originally classified as rice fields. A Property All Risk (PAR) policy from a licensed Indonesian insurer can include earthquake, volcanic eruption and flood cover. Choosing higher ground, checking flood maps and verifying the build standard of the structure reduces exposure.",
+      },
+      {
+        question:
+          "What market risks should a US or UAE investor know before buying in Bali?",
+        answer:
+          "The primary market risks are localised oversupply in high-density corridors like central Canggu, yield compression on undifferentiated villas, and currency drag from rupiah moves. Properties that are well-located, managed by a professional operator and fully compliant with licensing rules show more stable occupancy than generic unlicensed units. Currency risk is manageable over a multi-year hold but matters at purchase and at repatriation given the rupiah's gradual drift versus the US dollar.",
+      },
+    ],
+    publishedAt: "2026-08-10",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-mount-agung-volcano-natural-risk.webp",
+    gallery: [
+      {
+        url: "/blog/property-risk-inspection-hardhat-clipboard.webp",
+        alt: "A property inspector in a white hardhat reviews notes on a clipboard inside a building under construction, representing the permit and compliance checks required for a Bali off-plan villa investment",
+        credit: "Pavel Danilyuk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7937689",
+      },
+      {
+        url: "/blog/home-insurance-policy-review-desk.webp",
+        alt: "A person reviews a home insurance policy document on a clipboard at a wooden desk, representing the Property All Risk coverage foreign Bali villa owners should carry against earthquake, flood and volcanic eruption",
+        credit: "Mikhail Nilov / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7734569",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesia Basic Agrarian Law (UUPA) No. 5 of 1960, Article 26(2): voids any transaction designed to give a foreign national indirect freehold (Hak Milik) ownership through a nominee (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/38784/uu-no-5-tahun-1960",
+      },
+      {
+        label:
+          "Law No. 41 of 2009 on Protection of Sustainable Agricultural Land: prohibits conversion of LP2B classified land; violations carry up to 5 years imprisonment (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/38960/uu-no-41-tahun-2009",
+      },
+      {
+        label:
+          "Bank Indonesia JISDOR reference rate: official USD/IDR transaction rate data showing the rupiah moved from roughly IDR 15,700 to IDR 16,981 per USD over 2024 to 2025 (Tier 1)",
+        url: "https://www.bi.go.id/en/statistik/informasi-kurs/transaksi-bi/Default.aspx",
+      },
+      {
+        label:
+          "Bali Governor's Instruction No. 5 of 2025: prohibition on conversion of rice field and LP2B sustainable agricultural land to tourism and villa use, Bali Provincial Government (Tier 1)",
+        url: "https://www.baliprov.go.id/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
