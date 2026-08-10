@@ -1057,7 +1057,7 @@
     },
     {
       "id": "bali-property-risks-2026",
-      "status": "drafting",
+      "status": "published",
       "priority": 49,
       "theme": "investment",
       "atpType": "what",
@@ -1073,8 +1073,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-10",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/80"
     },
     {
       "id": "fractional-villa-ownership-bali",
