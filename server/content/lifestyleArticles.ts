@@ -3530,4 +3530,70 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "fractional-co-ownership-bali-villa",
+    title: "Fractional Villa Co-Ownership in Bali for Foreigners",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 59,
+    metaDescription:
+      "Foreigners can co-own a Bali villa through a PT PMA with 2+ shareholders. Here is how the legal structure works and what risks every co-investor must manage.",
+    body: `<p>Yes, two or more foreigners can legally co-own a Bali villa. The standard vehicle is a PT PMA (Indonesian foreign-owned limited liability company). Each co-investor holds shares in the PT PMA; the PT PMA holds the land title directly, typically as Hak Guna Bangunan (HGB). <a href="https://www.indonesia-investments.com/business/foreign-investment/company-law-indonesia/item8311" data-external="true">Company Law No. 40 of 2007</a> requires a minimum of two shareholders and sets no upper limit on the total, so a villa shared by four or eight investors is structurally workable. In short-term villa rental sectors, up to 100% of shares may be held by foreign nationals; no Indonesian partner is required.</p><p>A leasehold (Hak Sewa) can also name multiple co-lessees in the notarial deed. Because Hak Sewa is a private contractual right rather than a registered land title, usage schedules, cost sharing, and exit terms must all be embedded in the lease agreement and a parallel co-ownership deed. At renewal, the landowner can renegotiate or decline to extend regardless of how many names appear on the original lease.</p><p>Commercial fractional platforms in Bali market PT PMA shares in individual villas at lower entry prices than whole-villa ownership, with each buyer receiving a proportional share of rental income and a set number of personal-use nights per year. Each property sits in its own ring-fenced PT PMA, which should survive a platform closure. There is no dedicated Indonesian fractional property law; Indonesia's financial regulator OJK published draft tokenization regulations in late 2025 but had not finalized them as of mid-2026. Dubai, by contrast, issues each fractional co-owner an individual DLD-registered title deed under Law No. 6 of 2019, making the legal standing for each co-owner clearer at the outset.</p><p>Governance deadlock is the most immediate operational risk: at a 50/50 share split, Indonesian company law provides no natural majority for ordinary shareholder votes, so a buy-sell or drag-along clause in the shareholders' agreement is essential. Exit is harder than it appears because there is no liquid secondary market for a single-villa PT PMA stake and selling requires finding a willing private buyer and completing a formal share transfer. Shares also pass through both Indonesian company law and the co-owner's home-country estate rules on death, so inheritance should be planned for in advance. Nominee arrangements that disguise foreign ownership remain explicitly illegal under <a href="https://peraturan.bpk.go.id/Details/38784/uu-no-5-tahun-1960" data-external="true">Article 26(2) of Indonesia's Agrarian Law (UUPA 1960)</a> and unenforceable in Indonesian courts. This is general context, not financial or legal advice; seek professional guidance before proceeding.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can two or more foreigners co-own a Bali villa through a PT PMA?",
+        answer:
+          "Yes. Indonesian Company Law No. 40 of 2007 requires a minimum of two shareholders for any PT and sets no upper limit. In sectors covering short-term villa rentals, 100% of shares may be held by foreign nationals; no Indonesian partner is required. The PT PMA holds the land title directly as HGB, and each co-owner holds shares proportional to their investment.",
+      },
+      {
+        question:
+          "How does fractional ownership of a Bali leasehold work legally?",
+        answer:
+          "A leasehold (Hak Sewa) is a private contractual right, not a registered land title. Multiple parties can be named as co-lessees in the notarial deed, but usage scheduling, cost sharing, and exit terms must all be written into the lease agreement or a parallel co-ownership deed. At the end of the term, the landowner can renegotiate conditions and is under no obligation to renew on the original terms.",
+      },
+      {
+        question:
+          "What are the main risks of jointly buying a Bali property with a partner or group?",
+        answer:
+          "Governance deadlock is common at a 50/50 share split because Indonesian company law provides no natural majority for ordinary shareholder votes; a buy-sell or drag-along clause in the shareholders' agreement resolves this. Exit is illiquid: there is no secondary market for a single-villa PT PMA stake, so selling means finding a private buyer and completing a formal share transfer. Shares also pass through both Indonesian and home-country estate law on death, making inheritance planning important from the outset.",
+      },
+    ],
+    publishedAt: "2026-08-11",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/co-investors-villa-partnership-boardroom.webp",
+    gallery: [
+      {
+        url: "/blog/bali-twin-villa-pool-top-view.webp",
+        alt: "Top-down aerial view of a traditional Balinese twin-pavilion villa with private pool and tropical garden, showing the type of asset that multiple foreign co-investors can jointly hold through a PT PMA structure",
+        credit: "Inci Cinaroglu / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/34054904",
+      },
+      {
+        url: "/blog/shareholder-agreement-signing-co-ownership.webp",
+        alt: "A person signing a multi-page legal agreement, representing the shareholders' agreement that co-investors must put in place when jointly owning a Bali villa through a PT PMA",
+        credit: "Jakub Zerdzicki / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/34862508",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesia Company Law No. 40 of 2007 on Limited Liability Companies: sets the minimum 2-shareholder requirement; all shareholders may be foreign nationals in sectors open to 100% FDI such as short-term villa rentals (Tier 2 analysis)",
+        url: "https://www.indonesia-investments.com/business/foreign-investment/company-law-indonesia/item8311",
+      },
+      {
+        label:
+          "Indonesia Basic Agrarian Law (UUPA) No. 5 of 1960, Article 26(2): voids any arrangement designed to give a foreign national indirect freehold ownership through a nominee; explicitly illegal and unenforceable in Indonesian courts (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/38784/uu-no-5-tahun-1960",
+      },
+      {
+        label:
+          "Dubai Law No. 6 of 2019 on Jointly Owned Real Property: issues individual DLD-registered title deeds to each fractional co-owner, providing a regulated framework that contrasts with Indonesia's PT PMA share-based approach (Tier 1)",
+        url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2019/Law%20No.%20(6)%20of%202019%20Concerning%20Ownership%20of%20Jointly%20Owned%20Real%20Property%20in%20the%20Emirate%20of%20Dubai.html",
+      },
+    ],
+  },
 ];
