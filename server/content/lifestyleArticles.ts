@@ -3596,4 +3596,91 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-cyprus-property-investment",
+    title: "Bali vs Cyprus Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 60,
+    metaDescription:
+      "Bali vs Cyprus property for foreign investors: compare ownership rules, rental yields, taxes, and entry prices before you choose.",
+    body: `<p>The ownership structure is the first dividing line between these two markets. Cyprus allows non-EU nationals to acquire genuine freehold title through its Land Registry. Buyers must obtain a permit from the Council of Ministers, a step that is routinely approved, and individual buyers are typically capped at two properties; purchasing through a Cyprus-registered company removes that cap. Bali offers no freehold right to non-citizens. The two practical paths are a leasehold of 25 to 30 years (extendable by agreement in the original notarial deed) or a PT PMA company structure holding <a href="/blog/hak-guna-bangunan-bali-pt-pma">Hak Guna Bangunan title</a>.</p><p>Rental yields strongly favour Bali. The RICS/KPMG Cyprus Property Price Index for Q4 2025 put average apartment gross yields across the island at 5.45%, with Paphos tracking around 4% to 5% and Limassol near 6%. Short-term holiday lets in Cyprus resort zones can edge that up to 5% to 7% gross. In Bali, established agencies in Canggu report gross yields of 8% to 12% for well-managed short-term rental villas; emerging areas like Tabanan offer lower entry prices with broadly similar yield potential. Neither figure is a guarantee, and actual returns depend on occupancy, management quality, and season. This is not financial advice.</p><p>Entry prices are lower in Bali. A new-build apartment in <a href="https://www.leptosestates.com/blog/cyprus/property-market-trends/" data-external="true">Paphos</a> starts from roughly EUR 250,000 to EUR 350,000. Limassol averages around EUR 3,200 per square meter for residential stock, rising above EUR 6,000 for prime seafront units. Off-plan villas in Tabanan start from approximately USD 120,000 to USD 200,000 for a finished unit.</p><p>Cyprus abolished its annual immovable property tax in 2017, so there is no ongoing holding cost on that front. Rental income is subject to progressive income tax (0% on the first EUR 22,000 of taxable income, then 20% to 35% above that) plus a 2.65% healthcare levy on gross rent. When you sell, Cyprus charges 20% capital gains tax on the gain, with a EUR 30,000 lifetime exemption from 2026. Bali charges a simpler 10% flat withholding on gross rental income and 2.5% of the gross sale price on disposal.</p><p>Cyprus offers a path that Bali cannot match: a qualifying property purchase of EUR 300,000 or more can anchor a permanent residency application for the buyer and immediate family, with citizenship eligibility after eight years of legal residency. Cyprus is not a Schengen member yet, but the EU residency document carries real weight for US or UAE investors who want a second base. Bali's <a href="/blog/bali-visa-property-owner-investor">Second Home Visa</a> requires a USD 130,000 blocked deposit separate from the property purchase.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own freehold property in Cyprus more easily than in Bali?",
+        answer:
+          "Yes. Cyprus allows non-EU nationals to purchase freehold residential property through the Land Registry after obtaining a permit from the Council of Ministers, which is routinely granted. Bali does not permit any form of direct foreign freehold. The practical alternatives in Bali are a leasehold of 25 to 30 years (extendable in the original deed) or a PT PMA company holding Hak Guna Bangunan title.",
+      },
+      {
+        question:
+          "Are Bali or Cyprus rental yields higher for investment properties?",
+        answer:
+          "Bali typically generates higher gross yields. Established agencies in Canggu report 8% to 12% gross for well-managed short-term rental villas; emerging areas like Tabanan offer lower entry prices with similar yield potential. Cyprus resort properties averaged 5.45% gross for apartments in Q4 2025 per the RICS/KPMG Property Price Index, with Paphos around 4% to 5% and Limassol near 6%. Holiday lets in tourist zones can push Cyprus yields to 5% to 7% gross. Actual returns depend on occupancy and management. This is not financial advice.",
+      },
+      {
+        question:
+          "How do taxes compare for foreign property owners in Cyprus vs Bali?",
+        answer:
+          "Cyprus has no annual property tax (abolished in 2017) and charges progressive income tax on rental income, starting at 0% on the first EUR 22,000 of taxable income, plus a 2.65% healthcare levy on gross rent. On sale, Cyprus capital gains tax is 20% of the gain, with a EUR 30,000 lifetime exemption from 2026. Bali charges 10% flat withholding on gross rental income and 2.5% of the gross sale price on disposal. The Bali sell-side rate is lower in most appreciation scenarios.",
+      },
+      {
+        question:
+          "Does buying property in Cyprus give you EU residency?",
+        answer:
+          "A qualifying investment of EUR 300,000 or more in Cyprus (which can be a residential or investment property) can form the basis of a permanent residency application under the Cyprus Golden Visa programme. The permit covers the investor and immediate family and requires at least one visit to Cyprus every two years. After eight years of legal residency, citizenship eligibility opens. Cyprus is not yet a Schengen zone member, so the permit does not grant free movement across all EU states.",
+      },
+    ],
+    publishedAt: "2026-08-12",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/paphos-aphrodite-rock-coastline-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/paphos-cyprus-beachfront-resort-aerial.webp",
+        alt: "Aerial view of a beachfront resort hotel in Paphos, Cyprus, with a pool, sandy beach, and the blue Mediterranean Sea, showing the type of tourism-driven coastal property market that attracts foreign investors",
+        credit: "IMDA / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/12160204/",
+      },
+      {
+        url: "/blog/limassol-cyprus-coast-sunset-aerial.webp",
+        alt: "Aerial drone shot of Limassol, Cyprus at sunset, with the city's residential and hotel buildings along the Mediterranean coastline, illustrating one of the island's most active property investment markets",
+        credit: "FreeStockPro / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/32056715/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "RICS/KPMG Cyprus Property Price Index Q4 2025: island-wide apartment gross yield 5.45%; Limassol annual price growth 9.90% (Tier 1 index published by RICS and KPMG Cyprus)",
+        url: "https://www.globalinvestments.net/properties/guides/cyprus-rental-yields-and-returns",
+      },
+      {
+        label:
+          "Cyprus property ownership rules for non-EU nationals, Council of Ministers permit requirement, and two-property cap: Paraschou Law Firm Cyprus (Tier 2)",
+        url: "https://paraschou.com.cy/understanding-real-estate-purchases-in-cyprus-for-non-eu-citizens/",
+      },
+      {
+        label:
+          "Capital Gains Tax in Cyprus 2026: 20% rate on property gains; EUR 30,000 lifetime exemption from 2026; annual immovable property tax abolished 2017 (Tier 2 tax advisory)",
+        url: "https://taxrelocate.com/2026/07/09/capital-gains-tax-in-cyprus-2026-guide-rates-exemptions-how-its-calculated/",
+      },
+      {
+        label:
+          "Rental Income Tax in Cyprus 2026: progressive brackets, 2.65% GHS healthcare levy on gross rent, SDC abolished January 2026 (Tier 2 tax advisory)",
+        url: "https://www.cyprustaxlife.com/learn/rental-income-cyprus",
+      },
+      {
+        label:
+          "Cyprus Golden Visa Programme 2026: EUR 300,000 qualifying investment, EUR 50,000/year income requirement, permanent residency, eight-year path to citizenship eligibility (Tier 2 immigration advisory)",
+        url: "https://www.globalcitizensolutions.com/cyprus-golden-visa/",
+      },
+      {
+        label:
+          "Bali villa rental yields 2026: gross yields 8% to 12% in established short-term rental areas; entry prices in Tabanan area from USD 120,000 (Tier 2 Bali property agency)",
+        url: "https://balivillarealty.com/blog/rental-property-for-rent/",
+      },
+    ],
+  },
 ];
