@@ -1099,7 +1099,7 @@
     },
     {
       "id": "bali-vs-cyprus-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 51,
       "theme": "investment",
       "atpType": "vs",
@@ -1115,8 +1115,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-12",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/82"
     },
     {
       "id": "net-roi-bali-villa-calculation",
