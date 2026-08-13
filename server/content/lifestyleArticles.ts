@@ -3683,4 +3683,81 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "net-roi-bali-villa-calculation",
+    title: "Calculating Net ROI on a Bali Investment Villa",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 61,
+    metaDescription:
+      "How to calculate net ROI on a Bali villa: gross yields of 10 to 15 percent and what management fees, rental tax, and holding costs reduce them to.",
+    body: `<p>Net ROI on a Bali investment villa typically lands between 4 and 7 percent on purchase price once management fees, rental income tax, and holding costs are subtracted from the gross figure. Established Bali agencies report gross short-term rental yields of 10 to 15 percent in prime areas such as Canggu and Uluwatu, a range consistent with the record short-term rental performance documented in <a href="https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q4-2024-bali-hotel" data-external="true">Colliers' Q4 2024 Bali Hotel report</a>. The gap between gross and net is driven by three predictable cost lines.</p><p>First, villa management and booking platform fees: full-service operators charge 20 to 25 percent of gross revenue as a base fee, with Airbnb and Booking.com adding 15 to 17 percent on top; the combined channel cost before tax or operating expenses typically runs 30 to 35 percent of gross, per <a href="https://ownpropertyabroad.com/indonesia/bali/costs-of-property-management-bali/" data-external="true">OwnPropertyAbroad</a>. Second, rental income tax: a PT PMA holding the villa pays PPh Final at 10 percent of gross rental revenue under <a href="https://peraturan.go.id/id/pp-no-34-tahun-2017" data-external="true">Government Regulation 34 of 2017</a>, a final tax on the gross amount with no further deductions permitted. Third, annual holding costs covering PBB land tax, PT PMA compliance, PLN electricity, insurance, pool maintenance, and a capital expenditure reserve run USD 12,000 to 24,000 per year for a mid-range three-bedroom pool villa, as detailed in our <a href="/blog/annual-costs-owning-bali-villa">annual costs guide</a>.</p><p>A worked example puts the waterfall into numbers. A USD 300,000 off-plan villa generating USD 42,000 in gross annual rental revenue (a 14 percent gross yield) sees combined management and OTA fees of 30 percent consume USD 12,600, PPh Final at 10 percent of gross consume USD 4,200, and USD 13,000 in annual holding costs, leaving a net of USD 12,200 to the PT PMA before any dividend. That is a net yield of just over 4 percent on the purchase price. Drive gross revenue to USD 50,000 through stronger occupancy and the net rises to roughly USD 17,000, a net yield of about 5.7 percent. These are illustrative calculations, not projections. This is general information and not financial or legal advice; confirm your cost profile and tax position with a licensed Indonesian tax adviser before committing.</p><p>The variable that most shifts the outcome is gross revenue. Holding costs are largely fixed, so occupancy rate and nightly rate move the net yield far more than small differences in management fee percentages. For the full ownership and tax picture, see our <a href="/blog/foreigners-buy-property-bali">foreign buyers guide</a> and <a href="/blog/tax-for-foreign-property-owners-bali">rental income tax guide</a>.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What costs reduce the gross rental yield to a net yield on a Bali villa?",
+        answer:
+          "Three main lines: combined villa management and OTA channel fees of 30 to 35 percent of gross revenue, PPh Final rental income tax at 10 percent of gross rental revenue under Government Regulation 34 of 2017, and annual holding costs of USD 12,000 to 24,000 for a mid-range three-bedroom pool villa covering PBB land tax, PT PMA compliance, electricity, insurance, and pool maintenance. Together these can consume 55 to 70 percent of gross revenue, leaving a net yield of 4 to 7 percent of purchase price for a well-managed villa.",
+      },
+      {
+        question:
+          "How do management fees, tax, and maintenance affect Bali villa ROI?",
+        answer:
+          "On a USD 300,000 villa generating USD 42,000 gross annual rental revenue (14 percent gross yield): combined management and OTA fees at 30 percent remove USD 12,600; PPh Final at 10 percent of gross removes USD 4,200; and USD 13,000 in annual holding costs reduce income further. Net to the PT PMA before dividend is roughly USD 12,200, a net yield of just over 4 percent. At USD 50,000 gross revenue the net rises to around USD 17,000, about 5.7 percent. Illustrative figures, not projections, and not financial advice.",
+      },
+      {
+        question:
+          "What is a realistic net yield for a well-managed Bali villa in Canggu or Tabanan?",
+        answer:
+          "For a well-managed villa in a high-demand area such as Canggu, a realistic net yield on purchase price falls in the 5 to 7 percent range after management fees, PPh Final rental tax, and annual holding costs. In a newer area such as Tabanan or Kaba Kaba where occupancy builds over two to three years, the net in the first year may sit in the 3 to 5 percent range before stabilizing. Market-based estimates, not guarantees. Not financial advice.",
+      },
+    ],
+    publishedAt: "2026-08-13",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/villa-roi-return-on-investment-calculation.webp",
+    gallery: [
+      {
+        url: "/blog/villa-pool-investment-property-aerial.webp",
+        alt: "Aerial view of a stone villa with a curved kidney-shaped pool, sun loungers, and tropical gardens, representing a short-term rental investment property with pool",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-villa-with-pool-35069534/",
+      },
+      {
+        url: "/blog/tropical-villa-pool-complex-southeast-asia.webp",
+        alt: "Ground-level view of a large rectangular pool flanked by two tropical villa wings with dark timber roofs and palm trees under a blue sky, representing a Bali-style pool villa investment",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/pool-surrounded-by-tropical-villas-1134176/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Colliers Indonesia Q4 2024 Bali Hotel Report: record 6.33 million international visitors, RevPAR up 14% year-on-year, villa short-term rental market context (Tier 1)",
+        url: "https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q4-2024-bali-hotel",
+      },
+      {
+        label:
+          "OwnPropertyAbroad: Costs of Property Management in Bali, base villa management fee 20 to 25 percent of gross revenue (Tier 2)",
+        url: "https://ownpropertyabroad.com/indonesia/bali/costs-of-property-management-bali/",
+      },
+      {
+        label:
+          "Government Regulation No. 34 of 2017 (PP 34/2017): 10 percent PPh Final on gross rental income from land and buildings in Indonesia (Tier 1 official Indonesian government regulation)",
+        url: "https://peraturan.go.id/id/pp-no-34-tahun-2017",
+      },
+      {
+        label:
+          "Indonesian Directorate General of Taxes: Article 26 income tax on non-resident foreign taxpayers (Tier 1 official)",
+        url: "https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers",
+      },
+      {
+        label:
+          "PwC Indonesia Tax Summaries: Income determination including final withholding rates on rental income from land and buildings (Tier 1 global tax advisory reference)",
+        url: "https://taxsummaries.pwc.com/indonesia/individual/income-determination",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
