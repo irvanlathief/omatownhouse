@@ -1120,7 +1120,7 @@
     },
     {
       "id": "net-roi-bali-villa-calculation",
-      "status": "drafting",
+      "status": "published",
       "priority": 52,
       "theme": "investment",
       "atpType": "how",
@@ -1136,8 +1136,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-13",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/84"
     },
     {
       "id": "bali-villa-management-choosing",
