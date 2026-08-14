@@ -3760,4 +3760,71 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "how-to-choose-bali-villa-management-company",
+    title: "How to Choose a Villa Management Company in Bali",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 62,
+    metaDescription:
+      "Choose a Bali villa management company based on fee structure, legal compliance, and track record. Full-service fees run 20 to 30 percent of gross revenue.",
+    body: `<p>The two most important criteria when choosing a Bali villa management company are fee transparency and legal compliance with Indonesia's short-term rental licensing rules. Full-service operators in Bali typically charge 20 to 30 percent of gross rental revenue as a base management fee, per industry data on <a href="https://ownpropertyabroad.com/indonesia/bali/costs-of-property-management-bali/" data-external="true">Bali property management costs</a>. OTA platforms then take their own cut: Booking.com charges villa hosts approximately 15 percent per booking, and Airbnb charges a separate host service fee. A company that presents only its own percentage without explaining OTA charges may understate the combined cost to you.</p><p>Before reviewing any management proposal, confirm the company has practical experience with the legal requirements for operating a short-term rental. Your PT PMA company needs both the Villa accommodation license under business code KBLI 55193 and a valid business identification number issued through <a href="https://oss.go.id" data-external="true">Indonesia's OSS portal</a>. A management company unfamiliar with this licensing step, or that suggests operating without one, creates real risk for your PT PMA registration and your rental income. The short-term rental permit process is covered in our <a href="/blog/short-term-rental-permit-bali-villa">rental permit guide</a>.</p><p>Ask for three things in writing before signing a management contract. First, a full breakdown of what sits inside the management fee versus what is billed separately, including linen, consumables, repairs above an agreed maintenance threshold, and any initial setup or platform costs. Second, the maintenance authorization limit, meaning the repair amount the company can spend without your prior approval. Third, a list of current owner references willing to take a call, with specific questions you can ask about occupancy results and how quickly problems are resolved.</p><p>Read the exit clause carefully. Check the notice period needed to terminate the agreement, whether an exclusivity clause restricts you from direct OTA listings during the contract, and what triggers any penalty. Your Indonesian lawyer should review the management contract before you sign. This is general guidance and not legal or financial advice; confirm specific terms with a licensed Indonesian legal adviser.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What should I look for when choosing a Bali villa management company?",
+        answer:
+          "The main factors are fee transparency, legal compliance, and a verifiable track record with comparable properties. Ask for a written breakdown of the full management fee including extras, confirm the company can handle PT PMA rental licensing under business code KBLI 55193 and OSS registration, and request two or three owner references you can contact directly. Companies offering dynamic pricing tools, a channel manager across multiple OTA platforms, and monthly owner reporting with a dashboard are generally better placed to maximize occupancy.",
+      },
+      {
+        question:
+          "How do Bali villa management fee structures differ between operators?",
+        answer:
+          "Most operators charge a percentage of gross rental revenue. Full-service companies that handle staff, OTA listings, guest communications, and reporting typically charge 20 to 30 percent of gross revenue. Management-only or booking-agent models charge less but exclude on-site staff supervision and often limit their scope to OTA channel management. OTA platforms such as Booking.com and Airbnb add their own host fees on top of the management fee. Always ask for a combined cost illustration before comparing quotes between operators.",
+      },
+      {
+        question:
+          "What questions should I ask a Bali villa manager before signing a contract?",
+        answer:
+          "Ask for a written breakdown of what is inside versus outside the management fee; the maintenance authorization limit, the maximum amount the company can spend on repairs without your approval; two or three current owner references with contact details; and a sample monthly owner statement showing the full income and expense reconciliation. Also ask about their process for handling the PT PMA accommodation license renewal, OTA dispute resolution, and their response-time commitment for maintenance issues.",
+      },
+    ],
+    publishedAt: "2026-08-14",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/villa-management-review-documents.webp",
+    gallery: [
+      {
+        url: "/blog/bali-villa-garden-pool-exterior.webp",
+        alt: "Two-storey Balinese villa with traditional tiled roof, ornate wooden detailing, and a pool and manicured garden at the front, representing the type of investment property managed by a professional company",
+        credit: "Harsh & Leena Bansal / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/34053607/",
+      },
+      {
+        url: "/blog/villa-pool-maintenance-staff.webp",
+        alt: "Pool maintenance worker cleaning a villa pool with a long pole, with palm trees and a tropical property visible behind, illustrating on-site villa management services",
+        credit: "Chris Wade NTEZICIMPA / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/30546817/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "OwnPropertyAbroad: Costs of Property Management in Bali, full-service management fee 20 to 30 percent of gross revenue (Tier 2 industry source)",
+        url: "https://ownpropertyabroad.com/indonesia/bali/costs-of-property-management-bali/",
+      },
+      {
+        label:
+          "Cekindo: 5 Tips to Choose a Property Manager in Bali, legal registration and selection criteria for Bali property management companies (Tier 2 company setup advisory)",
+        url: "https://www.cekindo.com/blog/property-management-in-bali",
+      },
+      {
+        label:
+          "Indonesia OSS Portal: NIB and KBLI 55193 Villa accommodation license required for legal short-term rental operations (Tier 1 Indonesian government licensing portal)",
+        url: "https://oss.go.id",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
