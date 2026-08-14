@@ -1141,7 +1141,7 @@
     },
     {
       "id": "bali-villa-management-choosing",
-      "status": "pending",
+      "status": "published",
       "priority": 53,
       "theme": "investment",
       "atpType": "how",
@@ -1157,8 +1157,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-14",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/86"
     },
     {
       "id": "bali-strata-title-apartment",
