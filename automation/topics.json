@@ -1162,7 +1162,7 @@
     },
     {
       "id": "bali-strata-title-apartment",
-      "status": "drafting",
+      "status": "published",
       "priority": 54,
       "theme": "foreign-ownership",
       "atpType": "can",
@@ -1178,8 +1178,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-15",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/88"
     },
     {
       "id": "off-plan-bali-deposit-protection",
