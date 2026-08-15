@@ -3827,4 +3827,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-strata-title-apartment-foreigners",
+    title: "Can Foreigners Buy Strata-Title Apartments in Bali?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 63,
+    metaDescription:
+      "Foreigners can buy strata-title apartments in Bali via HMSRS under GR 18/2021. KITAS required, IDR 2 billion minimum, 49% foreign ownership quota per building.",
+    body: `<p>Foreigners can legally buy apartment units in Bali under a strata title called Hak Milik atas Satuan Rumah Susun (HMSRS), which gives you registered ownership of the unit itself. <a href="https://investmentpolicy.unctad.org/investment-policy-monitor/measures/3701/new-regulation-expands-strata-title-rights-for-foreign-citizens-and-legal-entities" data-external="true">Government Regulation No. 18 of 2021</a> opened this route to foreign nationals who hold a valid Indonesian stay permit (KITAS or KITAP). You own the apartment unit; the land the building sits on remains under a separate Hak Pakai or HGB title held by the developer or building management body.</p><p>Before GR 18/2021, foreigners had almost no direct route to registered apartment ownership in Indonesia. The regulation changed that by explicitly naming foreign nationals with residency permits as eligible HMSRS holders, provided the unit meets the provincial minimum purchase price. In Bali, that minimum is IDR 2 billion per unit (roughly USD 125,000 at current rates). These thresholds can change by ministerial decree, so confirm the current figure with a licensed notary before you commit.</p><p>Two further conditions apply. First, no more than 49% of a building's total floor area can be held by foreigners, a cap designed to keep most units accessible to Indonesian residents. Second, foreigners are generally limited to one unit per residential building. The HMSRS title follows the term of the underlying Hak Pakai land certificate: an initial 30 years, extendable by 20 years, with a further renewal of 30 years, for a maximum possible hold of 80 years.</p><p>The HMSRS route differs from a villa leasehold in one important way. A leasehold is a contractual right to use a plot and its building for a fixed term; it sits in your lease contract, not in a land registry. HMSRS is a registered title at the national land agency (ATR/BPN), meaning your ownership appears on the public record. That gives a stronger legal footing in a dispute. The tradeoff is the KITAS or KITAP residency requirement, which not every foreign buyer holds.</p><p>In practice, Bali's residential market is almost entirely standalone villas and low-rise developments. Strata-title apartment buildings aimed at foreign buyers are a small niche, mostly concentrated in Seminyak, Sanur, and parts of greater Denpasar. Areas such as Canggu, Tabanan, and Kaba Kaba are essentially villa markets. If your target is a villa rather than an apartment, a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> holding HGB title, or a standard villa leasehold, remains the mainstream path for foreign buyers in Bali. This article is general information only and is not legal or financial advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is HMSRS and how does it let foreigners own an apartment in Bali?",
+        answer:
+          "HMSRS stands for Hak Milik atas Satuan Rumah Susun, which translates to right of ownership over a flat or apartment unit. Under Government Regulation No. 18 of 2021, foreign nationals who hold a valid Indonesian stay permit (KITAS or KITAP) can hold this title in Indonesia, including Bali. You own the individual unit with a registered certificate lodged at the national land agency; the land beneath the building stays under a separate Hak Pakai or HGB title. The unit must meet the minimum purchase price set for Bali province, currently IDR 2 billion, though that threshold is subject to change by ministerial decree.",
+      },
+      {
+        question:
+          "How does strata title differ from a villa leasehold in Bali?",
+        answer:
+          "A villa leasehold is a contractual right to occupy a specific plot and its building for a set term, typically 25 to 30 years with extension options. The right derives from your lease agreement, not from a registered title. HMSRS is a registered ownership certificate lodged with the national land agency (ATR/BPN), which puts your ownership on the public record. The main tradeoff is that HMSRS requires a valid KITAS or KITAP Indonesian residency permit, whereas a leasehold can be structured without one.",
+      },
+      {
+        question:
+          "What is the foreign ownership quota for apartment buildings in Bali?",
+        answer:
+          "Indonesian law caps foreign strata title ownership at 49% of the total floor area in any one building. This ensures a majority of units remain available to Indonesian nationals. Foreigners are also generally limited to one unit per residential building. The cap applies building by building, so larger developments with more total floor space can accommodate more foreign-owned units in absolute terms while still staying within the 49% limit.",
+      },
+      {
+        question:
+          "Are there strata-title apartment developments in Bali available to foreign buyers?",
+        answer:
+          "Yes, but the supply is small compared to Jakarta. Most eligible developments are concentrated in Seminyak, Sanur, and parts of greater Denpasar where multi-storey buildings are more common. Areas like Canggu, Tabanan, and Kaba Kaba are predominantly villa markets with almost no multi-storey apartment stock. If you want to invest in those areas, the usual foreign-ownership structures are a villa leasehold or a PT PMA company holding HGB title over the land.",
+      },
+    ],
+    publishedAt: "2026-08-15",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/indonesia-highrise-apartment-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/condominium-unit-interior-city-view.webp",
+        alt: "Spacious modern apartment unit interior with large floor-to-ceiling sliding windows and a view over a city roofscape, representing the type of unit a foreigner can own under HMSRS strata title in Indonesia",
+        credit: "naimbic / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/2030037/",
+      },
+      {
+        url: "/blog/luxury-apartment-complex-exterior.webp",
+        alt: "Multi-storey luxury apartment complex with white facade, balconies, and large windows set among trees, representing a strata-title residential development eligible for foreign ownership",
+        credit: "Nino Sanger / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/14998334/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "UNCTAD Investment Policy Monitor: Indonesia GR 18/2021 expands strata title (HMSRS) rights for foreign citizens, effective February 2021 (Tier 2 intergovernmental source)",
+        url: "https://investmentpolicy.unctad.org/investment-policy-monitor/measures/3701/new-regulation-expands-strata-title-rights-for-foreign-citizens-and-legal-entities",
+      },
+      {
+        label:
+          "Emerhub: Guide to Buying Property in Indonesia as a Foreigner, HMSRS requirements and minimum purchase prices by province (Tier 2 company setup advisory)",
+        url: "https://emerhub.com/indonesia/buying-property-in-indonesia/",
+      },
+      {
+        label:
+          "Budidjaja Law: Legal Alert on owning and developing apartments in Indonesia as foreigners, GR 18/2021 framework and practical considerations (Tier 2 Indonesian legal advisory)",
+        url: "https://budidjaja.law/2024/07/legal-alert-owning-and-developing-apartments-in-indonesia-as-foreigners-legal-framework-and-practical-considerations/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
