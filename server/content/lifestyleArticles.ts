@@ -3900,4 +3900,71 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-off-plan-deposit-protection",
+    title: "Protecting Your Off-Plan Deposit in Bali",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 64,
+    metaDescription:
+      "Bali has no mandatory escrow for off-plan property. Your deposit protection comes from PPJB contract clauses. Learn what to demand before you sign.",
+    body: `<p>Indonesia has no statutory escrow requirement for off-plan residential property, so your deposit is protected by contract terms, not a government-mandated trust account. If a Bali developer fails mid-build, how much you recover depends almost entirely on what your <a href="/blog/ppjb-contract-bali-off-plan-explained">PPJB</a> says and how you structured your payments.</p><p>The contrast with Dubai makes the gap plain. <a href="https://dlp.dubai.gov.ae/Legislation%20Reference/2007/Law%20No.%20(8)%20of%202007.html" data-external="true">Dubai's Law No. 8 of 2007</a> requires every off-plan developer to open a dedicated, RERA-supervised escrow account per project, with buyers' funds ring-fenced from the developer's other creditors. In Bali, no equivalent statute exists. <a href="https://regulasi.hukumproperti.com/peraturan-pemerintah-republik-indonesia-nomor-12-tahun-2021/" data-external="true">Government Regulation PP No. 12 of 2021</a> provides a floor: a developer cannot present a PPJB for signing until the land title is clear, the building permit (PBG) is issued, and construction has reached at least 20% completion. That rule protects you from signing on a rendering, but it does not control where your payments go after signing.</p><p>Your legal position in a developer default matters. A PPJB gives you a personal contractual claim, not a property title. If the developer is placed into bankruptcy under Indonesian Law No. 37 of 2004, you become an unsecured creditor rather than the property owner. Recovery is possible but partial and can be slow. The less money you have paid at the point of insolvency, the less you stand to lose.</p><p>That reality points directly to the clauses worth insisting on. Demand a milestone-linked payment schedule where each tranche releases only after an independent party confirms verified construction progress, not a calendar date. Add an explicit full-refund and penalty clause that triggers if the developer misses the delivery date or stops construction. Keep each payment tranche as small as the developer will accept, because your exposure at any one point is the cumulative amount already paid.</p><p>A voluntary private escrow arrangement is the closest equivalent to the Dubai model. Some Bali developers now agree to a tri-party bank or notary trust account where payments sit until the corresponding milestone is verified. This typically costs around 1 to 2% of the transaction value and is worth raising during negotiation. If a developer refuses any form of escrow, treat that unwillingness as a data point before committing funds.</p><p>This article is general information only and is not legal or financial advice. Engage an independent Indonesian property lawyer to review your PPJB and advise on payment protection before signing.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Does Indonesia require off-plan deposits to be held in escrow like Dubai?",
+        answer:
+          "No. Indonesia has no statutory escrow requirement for off-plan residential property. Dubai's Law No. 8 of 2007 mandates dedicated project escrow accounts supervised by RERA, with developers required to pre-fund construction costs before launching sales. In Bali, buyer funds typically go directly to the developer after the PPJB is signed. Voluntary tri-party escrow arrangements are available but are negotiated contract by contract, not required by law.",
+      },
+      {
+        question:
+          "What happens to my deposit if a Bali off-plan developer goes bankrupt?",
+        answer:
+          "Under Indonesian bankruptcy law (Law No. 37 of 2004), a PPJB holder is treated as an unsecured creditor, not the property owner. That means you join a queue of creditors and may recover only part of what you paid, depending on the developer's remaining assets. How much is at risk depends on how much you had paid before insolvency, which is why milestone-based payments, rather than large lump-sum deposits, significantly reduce your exposure.",
+      },
+      {
+        question:
+          "What PPJB clauses protect a buyer's deposit if construction stops?",
+        answer:
+          "The key protection is a milestone-linked payment schedule where each tranche is released only after verified construction progress, not on a calendar date. Beyond that, insist on an explicit full-refund and penalty clause if the developer defaults or fails to deliver by the agreed date. Also specify a clear completion date with liquidated damages for delays. Have an independent Indonesian property lawyer review these clauses before you sign.",
+      },
+    ],
+    publishedAt: "2026-08-16",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bank-safe-deposit-boxes-escrow.webp",
+    gallery: [
+      {
+        url: "/blog/tropical-construction-stalled-unfinished.webp",
+        alt: "Partially constructed concrete building with exposed rebar and open doorframes surrounded by tropical palm trees, representing an unfinished off-plan development and the developer default risk Bali buyers face without mandatory escrow protection",
+        credit: "Konstantin Mishchenko / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/9348136/",
+      },
+      {
+        url: "/blog/ppjb-deposit-protection-contract-review.webp",
+        alt: "Person holding and reviewing a formal contract document with highlighted terms, representing the careful review of PPJB clauses that protect an off-plan buyer's deposit in Bali if construction stops",
+        credit: "RDNE Stock project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7841486/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesian Government Regulation PP No. 12 of 2021 on Housing: PPJB conditions including the 20% construction completion threshold (Tier 1 regulation implementing UU Cipta Kerja / Law No. 1 of 2011)",
+        url: "https://regulasi.hukumproperti.com/peraturan-pemerintah-republik-indonesia-nomor-12-tahun-2021/",
+      },
+      {
+        label:
+          "Dubai Land Department: Law No. 8 of 2007 Concerning Escrow Accounts for Real Estate Development in the Emirate of Dubai (Tier 1 legislation)",
+        url: "https://dlp.dubai.gov.ae/Legislation%20Reference/2007/Law%20No.%20(8)%20of%202007.html",
+      },
+      {
+        label:
+          "Destined for Bali: The Pros and Cons of Buying Off-Plan Properties in Bali, including deposit structure and developer default risks (Tier 2 market analysis)",
+        url: "https://www.destinedforbali.com/p/the-pros-and-cons-of-buying-off-plan",
+      },
+    ],
+    layoutVariant: "gallery",
+  },
 ];
