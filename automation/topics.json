@@ -1183,7 +1183,7 @@
     },
     {
       "id": "off-plan-bali-deposit-protection",
-      "status": "drafting",
+      "status": "published",
       "priority": 55,
       "theme": "off-plan",
       "atpType": "how",
@@ -1199,8 +1199,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-16",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/89"
     }
   ]
 }
