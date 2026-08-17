@@ -3967,4 +3967,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "gallery",
   },
+  {
+    slug: "vat-ppn-new-bali-villa-purchase",
+    title: "VAT on a New Bali Villa: What Buyers Pay and When",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 65,
+    metaDescription:
+      "Buying a new Bali villa from a developer adds 11% PPN (VAT) to the price. Resale villas are exempt. Here is what every foreign buyer needs to know.",
+    body: `<p>Buying a new villa directly from a developer in Bali adds an 11% Value Added Tax (PPN in Indonesian) on top of the agreed purchase price. If you negotiate a price of USD 300,000 with the developer, the final invoice will be roughly USD 333,000 once PPN is included. This applies to any first sale of new residential property by a <a href="https://pajak.go.id" data-external="true">VAT-registered developer (PKP)</a>; private resale transactions between individuals do not attract PPN, which means secondary-market buyers pay only BPHTB and PPh.</p><p>The developer must issue an official tax invoice (faktur pajak) for each payment tranche. On an off-plan purchase, you receive separate tax invoices aligned with each construction milestone payment. Keep all of them: they are evidence of the tax you paid and matter for future sale accounting and any PT PMA tax filings.</p><p>Most Bali investment villas fall below the level where a second tax applies. Under <a href="https://www.indonesia-investments.com/news/todays-headlines/property-in-indonesia-government-revises-luxury-goods-tax/item9148" data-external="true">PMK No. 86/PMK.010/2019</a>, properties priced at IDR 30 billion or above (roughly USD 2 million at mid-2026 exchange rates) also attract PPnBM, Indonesia's luxury goods sales tax, at 20% of the full sale value. The developer pays PPnBM and factors it into the listed price. For villas in the typical Canggu and Tabanan investment range, this threshold is rarely reached.</p><p>Buying through a PT PMA opens an option to recover the PPN. If your PT PMA is itself registered as a VAT taxable entity (PKP), the 11% PPN paid on acquisition is a creditable input against the PPN your company collects from rental guests. Over time, this can reduce the net cost of the acquisition tax to zero, provided the PT PMA files monthly PPN returns and maintains compliant faktur pajak records. This is one reason investors sometimes prefer the PT PMA route even for a single villa.</p><p>The Indonesian government has run periodic PPN DTP (government-borne VAT) incentives for residential property. Recent schemes have capped eligibility at properties valued at or below IDR 5 billion (about USD 333,000). Off-plan investment villas priced above that ceiling do not qualify. Check the current Minister of Finance Regulation (PMK) with a local tax adviser before assuming any incentive applies to your purchase.</p><p>Always confirm the developer holds valid PKP status with the <a href="https://pajak.go.id" data-external="true">Direktorat Jenderal Pajak (DJP)</a> before transferring funds, and request a copy of the faktur pajak after each payment. A developer who cannot produce valid tax invoices may not be compliant, which creates risk beyond the property itself.</p><p>This article is general information only and is not tax or legal advice. Consult a registered Indonesian tax adviser (Konsultan Pajak) for guidance specific to your transaction and structure.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Does PPN apply to both off-plan and completed Bali villa purchases from a developer?",
+        answer:
+          "Yes. PPN applies to any first sale of new residential property by a VAT-registered developer (PKP), whether the property is off-plan or already completed. Each payment tranche on an off-plan purchase generates a separate official tax invoice (faktur pajak). PPN does not apply to secondary-market resales between private individuals; those transactions incur only BPHTB (buyer transfer tax at 5%) and PPh (seller income tax at 2.5%).",
+      },
+      {
+        question:
+          "At what price does the PPnBM luxury goods tax apply to a Bali villa?",
+        answer:
+          "PPnBM applies to properties valued at IDR 30 billion or above (approximately USD 2 million at mid-2026 exchange rates) under PMK No. 86/PMK.010/2019. The rate is 20% of the full sale value. The developer, not the buyer, is legally obligated to pay PPnBM, though developers typically account for it in the listing price. Most investment villas in Canggu, Tabanan, and Kaba Kaba sit below this threshold, so PPnBM is not a cost most foreign buyers will face.",
+      },
+      {
+        question:
+          "Can a PT PMA recover the 11% PPN paid when buying a Bali villa?",
+        answer:
+          "A PT PMA that is itself registered as a VAT taxable entity (PKP) can claim the 11% PPN paid on acquisition as input tax credit. This offsets against PPN collected from rental guests on short-term stays, effectively reducing the net cost of the acquisition PPN to zero over time. The PT PMA must file monthly PPN returns and maintain properly issued faktur pajak records. A PT PMA that is not registered as PKP cannot make this claim.",
+      },
+      {
+        question:
+          "Does the government's PPN DTP incentive apply to Bali investment villas?",
+        answer:
+          "The PPN DTP (government-borne VAT) incentive has been available periodically for eligible residential property in Indonesia, but it caps the property value at IDR 5 billion (about USD 333,000). Off-plan investment villas priced above that ceiling do not qualify. The incentive has also typically required properties to be ready-to-occupy and handed over within the incentive period. Check the current-year PMK regulation with a local tax adviser to confirm what, if anything, applies to your specific purchase.",
+      },
+    ],
+    publishedAt: "2026-08-17",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/property-tax-stamp-document.webp",
+    gallery: [
+      {
+        url: "/blog/new-apartment-building-palm-trees.webp",
+        alt: "Modern multi-storey residential apartment buildings with palm trees against a clear blue sky, representing new developer property subject to 11% PPN VAT in Indonesia",
+        credit: "Robert So / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/14601099/",
+      },
+      {
+        url: "/blog/developer-agent-blueprints-couple.webp",
+        alt: "Real estate agent presenting architectural blueprints to a couple indoors, representing the developer sales meeting where PPN is part of the new property purchase transaction in Bali",
+        credit: "Ivan S / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8962802/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Direktorat Jenderal Pajak (DJP): PMK 131/2024 on PPN rates, confirming the 11% effective rate for most taxable supplies including new residential property sales (Tier 1 Indonesian government source)",
+        url: "https://www.pajak.go.id/en/node/113453",
+      },
+      {
+        label:
+          "Indonesia Investments: Government Revises Luxury Goods Tax (PPnBM) - PMK No. 86/PMK.010/2019 raising the luxury property threshold to IDR 30 billion (Tier 2 investment news coverage of official regulation)",
+        url: "https://www.indonesia-investments.com/news/todays-headlines/property-in-indonesia-government-revises-luxury-goods-tax/item9148",
+      },
+      {
+        label:
+          "Logiframe: VAT Incentives for Residential Property in Indonesia (2025 Update) - PPN DTP scheme eligibility, caps, and qualifying property types (Tier 2 Indonesian tax advisory firm)",
+        url: "https://logiframe.com/logiframe-blog/vat-incentives-for-landed-houses-and-residential-units-in-indonesia-2025-update",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
