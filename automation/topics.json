@@ -1439,7 +1439,7 @@
     },
     {
       "id": "vat-ppn-new-bali-villa",
-      "status": "drafting",
+      "status": "published",
       "priority": 56,
       "theme": "tax",
       "atpType": "what",
@@ -1459,8 +1459,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-17",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/90"
     },
     {
       "id": "foreign-company-hold-bali-property",
