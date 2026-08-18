@@ -4040,4 +4040,71 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "foreign-company-buy-bali-property-without-pt-pma",
+    title: "Can My US LLC Buy Bali Property Without a PT PMA?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 66,
+    metaDescription:
+      "A US LLC or any foreign company cannot hold a registered Bali land title. Indonesian law requires an Indonesian PT PMA. Here is how the structure works.",
+    body: `<p>A US LLC, UK Ltd, or any other foreign-incorporated company cannot hold a registered land title in Bali. Indonesia's <a href="https://www.flevin.com/id/lgso/translations/Laws/Law%20No.%205%20of%201960%20on%20Basic%20Agrarian%20Principles%20(ETLJ).doc" data-external="true">Basic Agrarian Law (UU No. 5 of 1960)</a> restricts Hak Guna Bangunan (the right to build, or HGB) and other title types to entities established under Indonesian law and domiciled in Indonesia. A foreign-incorporated company does not meet that requirement, full stop.</p><p>A US LLC can appear as a named party on a private leasehold contract (Hak Sewa), since Hak Sewa is not registered at the National Land Agency (BPN). The leasehold title stays in the Indonesian landowner's name, and your contract gives you the right to use the land for the agreed period. The risk is a lack of official BPN registration. If a dispute arises, or if the land is mortgaged or sold to a third party, a foreign company's contractual claim is harder to enforce before Indonesian courts than the claim of an Indonesian legal entity would be. Indonesian lawyers will also flag the arrangement when you seek a rental permit, because operating licenses typically require an Indonesian legal person as the applicant.</p><p>Hak Pakai for residential property requires a foreign individual who holds a valid Indonesian stay permit, per <a href="https://www.makarim.com/news/foreigners-to-hold-property-in-indonesia" data-external="true">Government Regulation PP 103 of 2015</a>. It does not apply to any type of company. HGB is restricted to entities incorporated under Indonesian law. Neither title is accessible to an offshore structure registered abroad.</p><p>The practical solution is a PT PMA (Perseroan Terbatas Penanaman Modal Asing), a foreign-investment company incorporated in Indonesia through the <a href="https://oss.go.id" data-external="true">BKPM Online Single Submission (OSS) system</a>. Your US LLC can hold up to 99% of the PT PMA's shares, with a second shareholder holding the remaining 1%. The PT PMA, as an Indonesian legal entity, can then hold HGB title on a Bali villa and apply for the permits needed to operate a short-term rental. This is the structure used by most US and UAE investors in Bali.</p><p>Under current BKPM guidelines, a PT PMA requires a minimum paid-up capital of IDR 2.5 billion (roughly USD 150,000 at mid-2026 exchange rates) and a minimum investment plan of IDR 10 billion. Setup through a local legal firm typically takes 4 to 8 weeks and costs around USD 3,000 to 5,000. Annual compliance such as audit and corporate filings adds roughly USD 2,000 to 4,000 per year. These are ranges based on market-quoted figures and can vary by provider and complexity.</p><p>This article is general information only and is not legal advice. Consult a registered Indonesian lawyer for guidance specific to your situation and structure.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can a UK Ltd or US LLC hold a Bali leasehold directly without a PT PMA?",
+        answer:
+          "A US LLC or UK Ltd can be a named party on a private leasehold contract (Hak Sewa) in Bali, since Hak Sewa is not formally registered at BPN. However, this provides weaker legal protection than a properly registered title. For a registered title such as HGB, only an entity incorporated under Indonesian law qualifies. Most investors use a PT PMA to hold HGB and obtain rental operating licenses, rather than relying on an unregistered leasehold under a foreign company name.",
+      },
+      {
+        question:
+          "What are the risks of using an offshore company instead of a PT PMA to hold Bali property?",
+        answer:
+          "The main risks are limited enforceability, no BPN registration, and permit complications. An offshore company holding only a private leasehold has no entry in the national land registry. If the landowner disputes the contract or a third party claims the land, the foreign company's position is harder to defend in Indonesian courts. A rental operating permit (such as a Pondok Wisata license) also requires an Indonesian legal entity as the applicant, so operating commercially without a PT PMA is difficult.",
+      },
+      {
+        question:
+          "Does Indonesia recognize foreign company ownership of Bali property?",
+        answer:
+          "No registered land title in Indonesia can be held by a company incorporated outside Indonesia. The investment framework requires domestic incorporation through a PT PMA to access land rights such as HGB. Indonesia does not have a mechanism analogous to a US deed in a foreign company's name. The PT PMA structure, where the foreign company is the majority shareholder of the Indonesian entity, is the recognized route for foreign investors wanting legal certainty on a Bali property.",
+      },
+    ],
+    publishedAt: "2026-08-18",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/us-llc-form-business-formation-laptop.webp",
+    gallery: [
+      {
+        url: "/blog/indonesian-law-legal-stamp-document.webp",
+        alt: "A wooden rubber stamp resting on an open legal document, representing the Indonesian regulatory requirement that only domestically incorporated entities can hold registered property titles in Bali",
+        credit: "Markus Spiske / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/9858904/",
+      },
+      {
+        url: "/blog/legal-adviser-certificate-office-desk.webp",
+        alt: "A legal professional working at a desk with a framed certificate and justice statue, representing the specialist Indonesian legal advice needed when structuring a PT PMA for Bali property investment",
+        credit: "Pavel Danilyuk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8112112/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesia Basic Agrarian Law UU No. 5 of 1960 - Article 36 restricts Hak Guna Bangunan to entities established under Indonesian law and domiciled in Indonesia (Tier 1 Indonesian legislation)",
+        url: "https://www.flevin.com/id/lgso/translations/Laws/Law%20No.%205%20of%201960%20on%20Basic%20Agrarian%20Principles%20(ETLJ).doc",
+      },
+      {
+        label:
+          "Makarim and Taira S Law Firm: Foreigners to Hold Property in Indonesia - analysis of PP 103/2015 and the legal routes for foreign individuals and entities to hold Indonesian property rights (Tier 2 Indonesian law firm)",
+        url: "https://www.makarim.com/news/foreigners-to-hold-property-in-indonesia",
+      },
+      {
+        label:
+          "BKPM Online Single Submission (OSS) System - official Indonesian investment portal for PT PMA registration, capital requirements, and business licensing (Tier 1 Indonesian government source)",
+        url: "https://oss.go.id",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
