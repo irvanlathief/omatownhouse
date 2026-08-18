@@ -1464,7 +1464,7 @@
     },
     {
       "id": "foreign-company-hold-bali-property",
-      "status": "pending",
+      "status": "drafting",
       "priority": 57,
       "theme": "foreign-ownership",
       "atpType": "can",
