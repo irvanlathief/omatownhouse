@@ -1464,7 +1464,7 @@
     },
     {
       "id": "foreign-company-hold-bali-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 57,
       "theme": "foreign-ownership",
       "atpType": "can",
@@ -1484,8 +1484,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-18",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/91"
     },
     {
       "id": "ubud-vs-canggu-property-investment",
