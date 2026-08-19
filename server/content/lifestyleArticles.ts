@@ -4107,4 +4107,87 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "ubud-vs-canggu-property-investment",
+    title: "Ubud vs Canggu for Property Investment in Bali",
+    category: "location",
+    imageUrl: null,
+    sortOrder: 67,
+    metaDescription:
+      "Ubud vs Canggu for Bali property investment: land prices, rental yields, airport access, and which suits your investor profile in 2026.",
+    body: `<p>Canggu suits investors who want the highest short-term rental volumes; Ubud suits those who want a lower entry price and income driven by wellness and cultural tourism. The right choice depends on your price band, target guest, and tolerance for seasonal demand variation.</p><p>Land prices are the most visible difference. Central <a href="https://www.google.com/maps/place/Canggu,+Kuta+Utara,+Badung+Regency,+Bali" data-external="true">Canggu</a> and Berawa land trades at roughly IDR 1.5 to 2 billion per are (100 m2), with premium plots reaching IDR 3 to 5 billion per are. In <a href="https://www.google.com/maps/place/Ubud,+Gianyar+Regency,+Bali" data-external="true">Ubud</a>, land typically ranges from IDR 500 million to 1 billion per are, a 40 to 60 percent discount to comparable coastal plots. For a buyer on a fixed budget, Ubud often allows a larger footprint or a higher-specification build for the same outlay. These are observed ranges from established Bali agencies and will vary by location, plot size, and title type.</p><p>Rental yields follow a similar gap. Canggu and Berawa gross villa yields run 12 to 18 percent, driven by year-round demand from beach visitors and remote workers. Ubud yields run roughly 8 to 12 percent gross, with longer average stays at lower nightly rates. Net yields are lower in both areas after management fees, income tax, and operating costs. These are market-observed ranges, not a guarantee of return. This is not financial advice.</p><p>Airport access matters for your guests. From Ngurah Rai International Airport, Canggu is roughly 14 to 20 km and 40 to 60 minutes by car. Ubud is 36 to 40 km and takes 60 to 90 minutes under normal traffic, and longer during peak hours. Canggu has the access advantage. Ubud guests accept the longer transfer because the destination itself is the draw.</p><p>The legal framework is identical in both areas. Foreign buyers use a leasehold (Hak Sewa), a Hak Pakai title with a valid stay permit, or a PT PMA company holding HGB title. There is no freehold option for foreign nationals in either location. Bali welcomed 6.33 million international tourists in 2024, and star hotel occupancy reached 63.71 percent in December 2024, showing the demand base that rental villas compete in.</p><p>If you want high-volume short stays and strong resale liquidity, Canggu is the more established market. If you want a lower entry cost and a differentiated position in wellness and long-stay tourism, Ubud offers that at a meaningful price discount.</p>`,
+    venues: [
+      {
+        name: "Ubud Town Centre",
+        distance: "36-40 km from airport",
+        coords: "-8.5069,115.2625",
+        url: "https://www.google.com/maps/place/Ubud,+Gianyar+Regency,+Bali",
+      },
+      {
+        name: "Canggu / Berawa",
+        distance: "14-20 km from airport",
+        coords: "-8.6478,115.1385",
+        url: "https://www.google.com/maps/place/Canggu,+Kuta+Utara,+Badung+Regency,+Bali",
+      },
+    ],
+    faq: [
+      {
+        question: "Are Ubud or Canggu rental yields higher for villas?",
+        answer:
+          "Canggu and Berawa villas typically produce the stronger gross yields, observed in the 12 to 18 percent range, on the back of high-volume short-stay demand from beach and surf visitors. Ubud runs roughly 8 to 12 percent gross, reflecting lower nightly rates offset partially by longer average stays from wellness and cultural tourists. Net yields in both areas are lower once management fees, taxes, and operating costs are deducted. These are market-observed ranges, not a guarantee of return.",
+      },
+      {
+        question: "How do land prices in Ubud compare to Canggu?",
+        answer:
+          "Ubud land typically trades at a 40 to 60 percent discount to central Canggu on a per-are basis. Central Canggu and Berawa land runs around IDR 1.5 to 2 billion per are, with premium plots higher. Ubud ranges from around IDR 500 million to 1 billion per are. For a buyer on a fixed budget, Ubud generally allows a larger footprint or higher-specification build for the same capital outlay. Prices vary significantly by specific location, road access, and title type.",
+      },
+      {
+        question: "Is Ubud or Canggu easier to access for international visitors?",
+        answer:
+          "Canggu is closer to Ngurah Rai International Airport at roughly 14 to 20 km, typically 40 to 60 minutes by car. Ubud is 36 to 40 km from the airport and takes 60 to 90 minutes under normal traffic, with peak-hour journeys running longer. Canggu has the clear accessibility advantage for guests arriving by international flight. Ubud guests tend to make the longer transfer because the area's cultural and wellness character is itself the reason they chose it.",
+      },
+      {
+        question: "Can a foreign buyer purchase in both Ubud and Canggu using the same ownership structure?",
+        answer:
+          "Yes. The legal framework is the same across all of Bali. Foreign nationals can use a leasehold (Hak Sewa) or, for registered title, set up a PT PMA company to hold HGB. Hak Pakai is also available to foreign individuals who hold a valid Indonesian stay permit. None of these structures change based on whether the property is in Ubud, Canggu, or any other part of Bali. The same Indonesian lawyer can typically handle both.",
+      },
+    ],
+    publishedAt: "2026-08-19",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/ubud-rice-terraces-tegalalang-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/canggu-echo-beach-sunset-surfers.webp",
+        alt: "Crowds of people enjoying a golden sunset on Canggu Beach, Bali, capturing the lively beach character that drives strong short-term rental demand in the Canggu property market",
+        credit: "Peggy Anke / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/5289209/",
+      },
+      {
+        url: "/blog/ubud-traditional-village-forest-aerial.webp",
+        alt: "Aerial view of a traditional Balinese village set among dense jungle and rice fields near Ubud, showing the green, low-density landscape that defines the Ubud property market and attracts wellness and cultural tourism",
+        credit: "Tom Fisk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/36947695/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "BPS-Statistics Indonesia Bali Province: Tourism Overview December 2024 - international tourist arrivals 6.33 million for 2024 and star hotel room occupancy 63.71% in December 2024 (Tier 1 official government statistical release)",
+        url: "https://bali.bps.go.id/en/pressrelease/2025/02/03/717939/-tourism-overview-in-bali-province-december-2024.html",
+      },
+      {
+        label:
+          "Exotiq Property: Bali Land Price Trends - What Investors Need to Know (2025) - market-observed land price ranges for Canggu and Ubud, sourced from an established Tier 2 Bali property agency",
+        url: "https://www.exotiqproperty.com/blog/bali-land-price-trends-what-investors-need-to-know",
+      },
+      {
+        label:
+          "Kibarer Property - established Bali real estate agency with transaction data covering Ubud and Canggu rental yield ranges (Tier 2 Bali property industry source)",
+        url: "https://www.kibarerproperty.com/",
+      },
+    ],
+    showMap: true,
+    layoutVariant: "map",
+  },
 ];
