@@ -1489,7 +1489,7 @@
     },
     {
       "id": "ubud-vs-canggu-property-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 58,
       "theme": "location",
       "atpType": "vs",
@@ -1509,8 +1509,8 @@
       "category": "location",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-19",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/92"
     },
     {
       "id": "airbnb-vs-booking-bali-villas",
