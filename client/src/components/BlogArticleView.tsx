@@ -117,7 +117,7 @@ function BodySection({ article }: { article: BlogArticle }) {
   return (
     <section className="py-6">
       <div
-        className="text-gray-700 leading-relaxed space-y-4 [&_p]:text-[15px] [&_a]:text-gray-900 [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-gray-300 hover:[&_a]:decoration-gray-900 [&_a]:transition-colors"
+        className="blog-body text-gray-700 leading-relaxed [&_a]:text-gray-900 [&_a]:underline [&_a]:underline-offset-2 [&_a]:decoration-gray-300 hover:[&_a]:decoration-gray-900 [&_a]:transition-colors"
         dangerouslySetInnerHTML={{ __html: article.body }}
       />
     </section>
