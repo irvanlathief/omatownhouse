@@ -4190,4 +4190,76 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     showMap: true,
     layoutVariant: "map",
   },
+  {
+    slug: "airbnb-vs-booking-bali-villa-owners",
+    title: "Airbnb vs Booking.com for Bali Villa Owners",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 68,
+    metaDescription:
+      "Airbnb vs Booking.com for Bali villa owners: commission rates, guest profiles, booking volume, and why most owners list on both OTA platforms.",
+    body: `<p>Most Bali villa owners run both Airbnb and Booking.com rather than choosing one. The platforms attract different guests, charge different fee structures, and perform differently depending on your property's nightly rate and target market.</p><p><strong>Commission structure</strong></p><p>Airbnb moved to a host-only fee of 15.5 percent on the booking subtotal in late 2025. Guests see no additional service charge, which removes the surprise fees that previously put some bookers off completing a reservation. Booking.com charges the property owner a commission that typically starts at around 15 percent and can reach 20 to 25 percent when optional visibility programs such as Genius or Preferred Partner are active. A payment processing fee of roughly 1 to 3 percent applies on top of that.</p><p><strong>Guest profile and booking volume</strong></p><p>Airbnb draws a higher share of US, Australian, and UK guests who book directly and plan further in advance. These guests convert well for villas priced above USD 300 per night. Booking.com drives higher raw booking volume for Bali, particularly from European and Asia-Pacific markets, and its last-minute deal tools help fill gaps in the calendar near check-in dates.</p><p>Data from Bali-focused villa management companies suggests Booking.com accounts for roughly 40 to 55 percent of OTA bookings by volume, while Airbnb generates around 20 to 30 percent but at a higher average booking value in the luxury segment above USD 350 per night. These figures vary by villa location, price point, and how actively the listing is managed.</p><p><strong>Running both platforms</strong></p><p>A channel manager syncs availability and rates across both platforms automatically, preventing double bookings. Most professional Bali villa management companies set this up as standard. Self-managed owners can access channel manager software for roughly USD 50 to 100 per property per month, a cost that pays back quickly in avoided calendar conflicts.</p><p>For owners targeting both Western and Asian guests, the practical answer is to list on both platforms, price consistently, and review performance data monthly to see which source generates the strongest net income after fees.</p><p><em>This article is for general information only and is not financial advice.</em></p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Which platform drives more bookings for Bali villas, Airbnb or Booking.com?",
+        answer:
+          "Booking.com typically drives higher booking volume for Bali villas, accounting for roughly 40 to 55 percent of OTA bookings by volume according to data from established Bali management companies. Airbnb generates a smaller share by volume but tends to produce higher average booking values, especially for luxury villas priced above USD 300 per night. The exact split depends on your villa's location, price point, and how well your listings are optimized on each platform.",
+      },
+      {
+        question: "What commission does Airbnb charge for a Bali villa listing?",
+        answer:
+          "Since late 2025, Airbnb charges most hosts a single host-only service fee of 15.5 percent on the booking subtotal, which includes the nightly rate and any cleaning or extra guest fees set by the host. Guests see the total price without an additional Airbnb charge on top. This replaced the old split model where hosts paid around 3 percent and guests paid a separate 14 to 16 percent service fee. The exact fee terms are in your Airbnb host agreement.",
+      },
+      {
+        question:
+          "Should I list my Bali villa on multiple platforms or stick to one?",
+        answer:
+          "Listing on both Airbnb and Booking.com is the approach most professional Bali villa management companies recommend, because the two platforms reach different guest segments. A channel manager syncs your calendar and rates across both to prevent double bookings. Concentrating on a single platform risks missing the guest segments that platform does not reach well. A small number of owners choose one platform to reduce complexity, but that typically means accepting lower overall occupancy.",
+      },
+      {
+        question:
+          "How much does Booking.com charge a Bali villa owner in commission?",
+        answer:
+          "Booking.com's base commission for vacation rentals in Indonesia typically starts at around 15 percent of the booking value. Joining optional visibility programs such as Preferred Partner or Genius can raise the effective commission to 18 to 25 percent, but may increase booking frequency. Payment processing through Booking.com's payment service adds approximately 1 to 3 percent. Check your individual accommodation agreement with Booking.com for the exact rate applicable to your property.",
+      },
+    ],
+    publishedAt: "2026-08-20",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/airbnb-booking-laptop-search-ota.webp",
+    gallery: [
+      {
+        url: "/blog/villa-rental-revenue-analytics-laptop.webp",
+        alt: "Property owner reviewing villa rental revenue analytics and booking data on a laptop, comparing OTA platform performance for a Bali short-term rental investment",
+        credit: "RDNE Stock project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7948008/",
+      },
+      {
+        url: "/blog/bali-villa-pool-modern-rental-listing.webp",
+        alt: "Luxurious Bali villa with private pool, tropical plants, and modern minimalist architecture, the type of property listed on Airbnb and Booking.com as a short-term rental",
+        credit: "yose antonius / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/33709939/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Hostfully: Airbnb Host Fees - The 15.5% Host-Only Fee Explained (2026) - details Airbnb's shift from a split fee model to a single 15.5% host-only service fee applied to the booking subtotal (Tier 2 property management industry source)",
+        url: "https://www.hostfully.com/blog/airbnb-host-fees/",
+      },
+      {
+        label:
+          "Guesty: How Much Does Booking.com Charge Hosts? - breakdown of Booking.com's 10 to 25 percent commission structure and optional visibility program fees for vacation rental hosts (Tier 2 property management industry source)",
+        url: "https://www.guesty.com/blog/how-much-does-booking-com-charge-hosts/",
+      },
+      {
+        label:
+          "Solar Property Bali: Airbnb vs Booking.com for Bali Villas - OTA booking volume distribution and average booking value data from a Bali-focused villa management portfolio (Tier 2 Bali property industry source)",
+        url: "https://solarpropertybali.com/blog/airbnb-vs-booking-bali-villas-guide-2026/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
