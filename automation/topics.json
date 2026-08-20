@@ -1514,7 +1514,7 @@
     },
     {
       "id": "airbnb-vs-booking-bali-villas",
-      "status": "drafting",
+      "status": "published",
       "priority": 59,
       "theme": "investment",
       "atpType": "vs",
@@ -1534,8 +1534,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-20",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/94"
     },
     {
       "id": "bali-villa-slf-certificate",
