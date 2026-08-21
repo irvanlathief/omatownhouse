@@ -1539,7 +1539,7 @@
     },
     {
       "id": "bali-villa-slf-certificate",
-      "status": "drafting",
+      "status": "published",
       "priority": 60,
       "theme": "off-plan",
       "atpType": "what",
@@ -1559,8 +1559,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-21",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/96"
     },
     {
       "id": "bali-villa-nightly-rate-pricing",
