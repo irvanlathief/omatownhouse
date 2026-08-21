@@ -4262,4 +4262,75 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-villa-slf-certificate-handover",
+    title: "What Is an SLF and Does Your Bali Villa Need One?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 69,
+    metaDescription:
+      "The SLF (Sertifikat Laik Fungsi) confirms a Bali villa is safe to occupy and legal to rent. Learn what the inspection covers, validity periods, and what off-plan buyers must require before handover.",
+    body: `<p>The SLF (Sertifikat Laik Fungsi, or Certificate of Functional Worthiness) is a government certificate confirming that a finished building is safe, structurally sound, and fit for its intended use. Every Bali villa requires a current SLF before it can be legally handed over to a buyer, occupied, or listed as a short-term rental.</p><p>The SLF is distinct from the PBG (Persetujuan Bangunan Gedung), which is the building approval a developer must hold before construction begins. Think of the PBG as permission to build and the SLF as confirmation the finished building passes inspection. Both are required under Government Regulation No. 16 of 2021 (PP 16/2021), which replaced the old IMB building licence with this two-stage framework. For more on the PBG stage, see our <a href="/blog/bali-villa-building-permit-pbg-explained">PBG guide for buyers</a>.</p><p>A government inspector visits the site when the build reaches 90 to 100 percent completion. The inspector checks that the finished structure, electrical systems, plumbing, and fire safety provisions match the technical drawings approved under the PBG. Applications go through the Ministry of Public Works's <a href="https://simbg.pu.go.id" data-external="true">SIMBG portal</a>. For villas used as short-term rentals, the SLF is classified as a commercial building certificate and must be renewed every five years. A purely owner-occupied residential property can hold an SLF for 20 years before renewal.</p><p>Without a valid SLF, a Bali villa cannot legally be occupied, cannot hold a Pondok Wisata accommodation licence, and cannot operate on platforms such as Airbnb or Booking.com. Enforcement tightened considerably with Government Regulation No. 28 of 2025 and Ministry of Tourism Regulation No. 6 of 2025, which formally closed the grey area that had allowed many villas to run without a complete permit chain. Authorities demolished 48 structures at Bingin Beach in July 2025 after inspections revealed missing permits. Established Bali agencies now report that resale buyers discount SLF-absent properties by 40 to 50 percent.</p><p>For off-plan buyers, the key step is to include SLF delivery as an explicit developer obligation in your <a href="/blog/ppjb-contract-bali-off-plan-explained">PPJB</a>, not a best-efforts clause. Do not release the final payment tranche or accept handover until your lawyer has verified the SLF on the SIMBG portal and confirmed it covers the specific villa being transferred. If the developer cannot produce the SLF at handover, the building is not legally ready for occupancy, and you are entitled under your contract to withhold final payment until the certificate is issued.</p><p><em>This article is for general information only and is not financial or legal advice.</em></p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is the difference between a PBG building permit and an SLF in Indonesia?",
+        answer:
+          "The PBG (Persetujuan Bangunan Gedung) is issued before construction begins and approves the building design and location. The SLF (Sertifikat Laik Fungsi) is issued after construction is complete, following a government inspection confirming the finished building matches the approved PBG plans and meets safety standards. A developer needs the PBG to start work; the buyer needs the SLF to legally occupy or rent the property. Both are required under Government Regulation No. 16 of 2021 (PP 16/2021).",
+      },
+      {
+        question: "Can a developer hand over a Bali villa before the SLF is issued?",
+        answer:
+          "Legally, no. The SLF must be in place before a villa can be occupied or operated as a short-term rental. Enforcement has strengthened under Government Regulation No. 28 of 2025, which removed the grey area that previously let many Bali villas operate without a full permit chain. In practice, some developers have handed over properties before the SLF was ready, but a buyer who accepts handover without the certificate takes on the risk that the villa cannot legally be rented out, and any short-term rental income could be at risk if authorities inspect. The PPJB should require the developer to deliver both a valid PBG and a current SLF at handover as a contractual obligation.",
+      },
+      {
+        question:
+          "What should an off-plan buyer do if the developer cannot produce an SLF?",
+        answer:
+          "Do not accept handover and do not release the final payment tranche. Ask your Indonesian lawyer to verify whether the SLF application has been lodged on the SIMBG portal and what stage it is at. If the application is pending, negotiate a clear deadline in writing with liquidated damages if the SLF is not issued by that date. If no application has been filed, treat this as a serious developer failure and consult a Bali property lawyer about your options under the PPJB before taking any further action.",
+      },
+    ],
+    publishedAt: "2026-08-21",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/slf-building-inspection-safety-vest.webp",
+    gallery: [
+      {
+        url: "/blog/slf-inspection-checklist-clipboard-compliance.webp",
+        alt: "Close-up of a Home Inspection Checklist for Buyers on a clipboard, covering foundation, interior, electrical, plumbing, and roof items, representing the government SLF inspection scope for a completed Bali villa",
+        credit: "RDNE Stock project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8293635/",
+      },
+      {
+        url: "/blog/new-home-keys-handover-family.webp",
+        alt: "Close-up of a family holding a set of house keys together, symbolising the legal handover of a property after the SLF Certificate of Functional Worthiness has been issued for a completed Bali villa",
+        credit: "Alena Darmel / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7642034/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "BPK Law Database: PP No. 16 Tahun 2021 - Government Regulation implementing the PBG and SLF two-stage building permit framework in Indonesia, replacing the old IMB (Tier 1 official regulation)",
+        url: "https://peraturan.bpk.go.id/Details/161846/pp-no-16-tahun-2021",
+      },
+      {
+        label:
+          "Indonesian Ministry of Public Works: SIMBG portal - official platform for PBG and SLF applications and permit verification across Indonesia (Tier 1 government portal)",
+        url: "https://simbg.pu.go.id/",
+      },
+      {
+        label:
+          "Emerhub: SLF Certificate in Bali - Sertifikat Laik Fungsi validity periods, inspection requirements, and renewal process for residential and commercial villas (Tier 2 established Indonesia business advisory firm)",
+        url: "https://emerhub.com/bali/slf-certificate/",
+      },
+      {
+        label:
+          "Kingswood Bali: Navigating Bali's 2026 Construction Laws - guide to PBG and SLF enforcement, including PP No. 28 of 2025 and Permenpar No. 6 of 2025 closing the grey area for permit non-compliance (Tier 2 Bali villa developer)",
+        url: "https://kingswoodbalivillas.com/navigating-balis-2026-construction-laws-a-guide-to-pbg-slf/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
