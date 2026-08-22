@@ -4333,4 +4333,74 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-villa-nightly-rate-pricing-strategy",
+    title: "How to Set the Right Nightly Rate for a Bali Villa",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 70,
+    metaDescription:
+      "Setting the right nightly rate for a Bali rental villa depends on location, bedroom count, amenities, and season. Learn how management companies use dynamic pricing to maximise revenue.",
+    body: `<p>Setting the right nightly rate for a Bali rental villa comes down to five variables: location, bedroom count, amenity standard, listing quality, and time of year. A 2-bedroom pool villa in Canggu typically earns between USD 150 and USD 220 per night at a competitive base rate, while a comparable property in Tabanan or Kaba Kaba, where build costs are lower and competition is thinner, generally ranges from USD 100 to USD 160. Those figures widen significantly during peak season.</p><p>Bali runs two clear peak windows: July through August, when Australian, European, and Middle Eastern school holidays overlap, and late December through early January. Well-positioned villas commonly add 40 to 60 percent to their base rate during those periods. Shoulder months (April to May and September to November) see the inverse, with rates sitting roughly 20 to 25 percent below peak. The lowest demand window is typically February and March. <a href="https://www.airdna.co/vacation-rental-data/app/id/default/bali/seasonality" data-external="true">AirDNA</a>, which tracks more than 80,000 short-term rental listings across Bali, assigns the island a seasonality score of 85 out of 100, indicating relatively steady year-round demand compared with single-season beach markets, even though the peak premiums are real.</p><p>Most professional villa management companies use dynamic pricing tools such as PriceLabs, Beyond, or Wheelhouse. These systems read supply and demand signals from OTA platforms daily and adjust rates automatically across up to 365 days ahead. The key inputs are booking pace (how quickly nights are filling relative to the same period last year), competitor rates for similar bedroom counts in the same area, and local events or holidays that create demand spikes. Owners who set a fixed rate at the start of the year and leave it typically miss revenue on peak dates and undercut themselves during quiet weeks without realising it.</p><p>The common mistake for first-time owners is optimising for occupancy percentage rather than revenue per available night. A villa running at 90 percent occupancy at USD 100 per night earns less than one running at 70 percent at USD 150. In Canggu, top-performing listings in the upper ten percent of the market achieve average daily rates above USD 430 and monthly revenues of USD 6,800 or more, often at occupancy rates no higher than 75 to 80 percent. The right nightly rate is not the lowest price needed to fill the calendar. It is the rate that maximises total revenue across the full year.</p><p>Properties in newer, quieter areas like Kaba Kaba and Tabanan price below Canggu and Seminyak, but that gap can narrow once a listing builds strong reviews. Early movers in these areas benefit from lower competition among comparable listings, which makes it easier to anchor a rate that builds occupancy and review count before gradually lifting it as demand grows.</p><p><em>This article is for general information only and is not financial advice. Rental rates, occupancy, and income figures vary by property and market conditions.</em></p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is a typical nightly rate for a 2-bedroom villa in Canggu?",
+        answer:
+          "In 2025 and 2026, competitive 2-bedroom pool villas in Canggu typically range from USD 150 to USD 220 per night at a base rate. Top-performing listings command higher rates, and rates rise 40 to 60 percent above base during peak season in July, August, and late December. The median nightly rate across all Canggu short-term rentals is lower, reflecting a wide range of property quality and size.",
+      },
+      {
+        question: "How much do rates increase in Bali's peak season?",
+        answer:
+          "During Bali's two main peak windows (July to August and late December to early January), nightly rates for well-positioned villas typically run 40 to 60 percent above the low-season base. Some high-demand dates, such as New Year's Eve and Galungan, see even larger premiums. Shoulder months (April to May and September to November) generally sit 20 to 25 percent below peak rates, while February and March are the softest months of the year.",
+      },
+      {
+        question: "Should I use a dynamic pricing tool or set a fixed nightly rate?",
+        answer:
+          "Professional villa management companies almost universally use dynamic pricing tools such as PriceLabs, Beyond, or Wheelhouse, which adjust rates daily based on booking pace, competitor pricing, and local demand signals. Owners who manage their own listings and set a fixed rate often underperform on peak dates and fail to fill shoulder gaps with rate adjustments. For most owners, particularly those listed on multiple OTA platforms, dynamic pricing is the better approach and a standard expectation from reputable management companies.",
+      },
+      {
+        question: "How does Tabanan pricing compare to Canggu for villa rentals?",
+        answer:
+          "Villa nightly rates in Tabanan and nearby areas like Kaba Kaba are typically 25 to 40 percent lower than comparable properties in established Canggu or Seminyak. A 2-bedroom pool villa that lists at USD 180 per night in Canggu might price at USD 110 to USD 140 in Tabanan. The gap reflects lower name recognition and fewer immediate amenities, but early movers with strong listing quality and growing review counts face less direct competition and can build occupancy faster than they would in a saturated market.",
+      },
+    ],
+    publishedAt: "2026-08-22",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/villa-revenue-seasonal-chart-laptop.webp",
+    gallery: [
+      {
+        url: "/blog/bali-villa-pool-sun-loungers-tropical.webp",
+        alt: "Bali villa with private pool, sun loungers with green cushions, white beach umbrellas, thatched roof, and tropical plants, illustrating the amenity standard that commands competitive nightly rates",
+        credit: "Pexels free license",
+        sourceUrl: "https://www.pexels.com/photo/36956260/",
+      },
+      {
+        url: "/blog/bali-thatched-villa-pool-tropical.webp",
+        alt: "Tropical Bali villa with thatched joglo-style roof, infinity pool, white beach umbrellas, and palm tree against a clear blue sky, representing the amenities that command premium nightly rates",
+        credit: "Pexels free license",
+        sourceUrl: "https://www.pexels.com/photo/37526426/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "AirDNA Bali Seasonality Report - Bali short-term rental seasonality data and demand scoring across more than 80,000 active STR listings, with market-wide occupancy and average daily rate trends by month (Tier 2 STR data platform)",
+        url: "https://www.airdna.co/vacation-rental-data/app/id/default/bali/seasonality",
+      },
+      {
+        label:
+          "AirROI Canggu Market Report 2026 - Canggu STR market benchmarks including average daily rate by performance percentile, monthly revenue targets for top-performing properties, and occupancy data (Tier 2 STR market analytics)",
+        url: "https://www.airroi.com/airbnb-data/indonesia/bali/canggu",
+      },
+      {
+        label:
+          "Bali Management Villas: How to Set Competitive Dynamic Pricing for Villas in Bali - overview of dynamic pricing methodology, tools used by Bali villa managers (PriceLabs, Beyond, Wheelhouse), and rate-setting strategy for OTA platforms (Tier 2 Bali villa management industry source)",
+        url: "https://balimanagement.villas/blogs/dynamic-pricing-bali-villa-rates/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
