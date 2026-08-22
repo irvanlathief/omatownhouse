@@ -1564,7 +1564,7 @@
     },
     {
       "id": "bali-villa-nightly-rate-pricing",
-      "status": "drafting",
+      "status": "published",
       "priority": 61,
       "theme": "investment",
       "atpType": "how",
@@ -1584,8 +1584,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-22",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/98"
     },
     {
       "id": "bali-vs-maldives-property",
