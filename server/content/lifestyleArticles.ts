@@ -4403,4 +4403,76 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-vs-maldives-property-investment",
+    title: "Bali vs Maldives Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 71,
+    metaDescription:
+      "Bali and the Maldives both restrict foreign freehold ownership. Compare the two markets on ownership structure, entry cost, rental yields, and residency paths for international buyers.",
+    body: `<p>Bali and the Maldives share a surface appeal for foreign investors: tropical tourism, no freehold land for foreigners, and leasehold-based ownership. The practical difference between the two markets is significant, and the better choice depends on your budget, the product you want, and how involved you plan to be as an owner.</p><p><strong>Ownership structure.</strong> The Maldivian Constitution reserves freehold land for citizens. Foreigners access property through government-issued leasehold: up to 50 years on inhabited islands and up to 99 years on uninhabited resort islands, with government approval required for every transaction. In practice the market for foreign buyers is almost entirely resort strata units, meaning a leasehold interest inside an operator-managed resort development. You share the property calendar with the resort and rely on the operator to generate revenue. In Bali, foreigners use either a direct leasehold (Hak Sewa, typically 25 to 30 years initial term, extendable) or a PT PMA company holding <a href="/blog/hak-guna-bangunan-bali-pt-pma">Hak Guna Bangunan (HGB)</a> rights for up to 80 years effective tenure. The product is a standalone villa you manage or entrust to a management company of your choice, with an active secondary market if you want to sell.</p><p><strong>Entry cost.</strong> Bali is more accessible by price. Off-plan villas in emerging areas like Kaba Kaba and Tabanan start around USD 160,000 to USD 250,000; investor-grade 2 to 3-bedroom units in established tourist corridors range from USD 300,000 to USD 550,000. The Maldives investor visa, launched in July 2025 in partnership with <a href="https://www.imidaily.com/asia-pacific/maldives-to-launch-250000-investor-visa-program/" data-external="true">Henley and Partners</a>, requires a minimum USD 250,000 purchase in one of three government-approved residential developments near Male. Full resort development projects typically start at USD 1 million or more.</p><p><strong>Rental yields.</strong> Bali villa marketing commonly cites gross yields of 12 to 20 percent annually, though realistic net returns after management fees, tax, and maintenance sit closer to 6 to 10 percent depending on location and occupancy. Prime-area Bali villas ran at 70 to 85 percent occupancy in 2025, a year when Bali drew 6.95 million international visitors, up 9.7 percent year on year. Maldives resort units typically advertise gross yields of 5 to 8 percent; net returns are lower once the resort operator takes its share and ongoing maintenance costs (typically 2 to 3 percent of asset value annually) are accounted for.</p><p><strong>Residency paths.</strong> Indonesia's Second Home Visa gives 5 to 10 years of legal stay. It requires either a deposit of IDR 2 billion (roughly USD 130,000) in an Indonesian bank account or proof of qualifying Hak Pakai property. The Maldives investor visa grants a 5-year renewable residency with no minimum stay, but the minimum investment is USD 250,000 in a government-approved project.</p><p>For most foreign buyers in the USD 200,000 to USD 600,000 range, Bali offers more ownership flexibility, a lower entry cost, and a deeper resale market. The Maldives is a niche luxury play with a managed-resort model and a higher price of admission. Neither market guarantees rental income; treat any yield figure as a projection that depends on management quality, occupancy, and market conditions. <em>This article is for general information only and is not financial or legal advice.</em></p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own property in the Maldives the same way as Bali?",
+        answer:
+          "No. Both markets restrict foreign freehold ownership, but the structures differ. In Bali, foreigners use a personal leasehold (Hak Sewa) or set up a PT PMA company to hold Hak Guna Bangunan rights, giving access to standalone villas across many locations. In the Maldives, the Constitution reserves freehold land for citizens; foreigners can only access resort strata leasehold units inside government-approved developments, with all transactions requiring government approval. The Maldives market for foreign buyers is largely limited to operator-managed resort units in a small number of approved locations.",
+      },
+      {
+        question:
+          "How do Bali and Maldives rental yields compare for resort villas?",
+        answer:
+          "Bali villa marketing cites gross yields of 12 to 20 percent, with realistic net returns closer to 6 to 10 percent after management fees, tax, and maintenance. Maldives resort units typically project gross yields of 5 to 8 percent in developer and operator materials, with net returns lower once the resort operator's share and annual maintenance costs of 2 to 3 percent of asset value are deducted. Bali has a broader base of comparable data and an active resale market; Maldives yield projections rely more heavily on operator estimates. Neither figure is a guarantee. Treat any projection as a range, not a promise.",
+      },
+      {
+        question:
+          "What residency does buying property in the Maldives give versus Bali?",
+        answer:
+          "The Maldives investor visa, launched in July 2025, grants a 5-year renewable residency with no minimum stay requirement. The minimum qualifying investment is USD 250,000 in a government-approved luxury residential project in one of three designated areas near Male. In Bali, Indonesia's Second Home Visa gives 5 to 10 years of legal stay. It requires either a deposit of IDR 2 billion (roughly USD 130,000) in an Indonesian bank account or proof of qualifying Hak Pakai property worth at least USD 1 million. The Bali visa is linked to financial proof, not necessarily to a property purchase, giving more flexibility on how you meet the requirement.",
+      },
+    ],
+    publishedAt: "2026-08-23",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/maldives-overwater-villas-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/maldives-resort-island-aerial.webp",
+        alt: "Aerial view of overwater villas on a Maldives resort island, connected by wooden jetties over a turquoise lagoon, illustrating the resort-managed strata leasehold product available to foreign property investors",
+        credit: "Asad Photo Maldives / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/15923412/",
+      },
+      {
+        url: "/blog/maldives-beach-resort-lagoon.webp",
+        alt: "Wide aerial view of a Maldives atoll resort showing overwater bungalows on a curving jetty against deep blue ocean and turquoise lagoon, representing the luxury resort investment landscape in the Maldives",
+        credit: "Asad Photo Maldives / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/9215862/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "IMI Daily: Maldives to Launch USD 250,000 Investor Visa Program - details of the July 2025 Maldives investor visa, minimum investment threshold, approved property types, and 5-year residency terms (Tier 2 investment migration news source)",
+        url: "https://www.imidaily.com/asia-pacific/maldives-to-launch-250000-investor-visa-program/",
+      },
+      {
+        label:
+          "ARAB MLS: Can Foreigners Purchase Property in the Maldives - overview of the Maldives Constitution's restriction on foreign freehold ownership, leasehold terms under the Land Act (50 years inhabited islands, 99 years uninhabited resort islands), and government approval requirements (Tier 2 regional property platform)",
+        url: "https://arabmls.org/can-foreigners-purchase-a-property-in-the-maldives/",
+      },
+      {
+        label:
+          "CPT Corporate: Second Home Visa Indonesia 2025 - IDR 2 billion deposit or qualifying Hak Pakai property requirement, 5-year renewable residency, and 90-day proof submission deadline (Tier 2 Indonesia visa and company-setup advisory firm)",
+        url: "https://www.cptcorporate.com/second-home-visa-indonesia-2025-deposit-property-rules-and-who-qualifies-for-long-stay-residency",
+      },
+      {
+        label:
+          "Polarius Real Estate: Bali Real Estate Market Insights 2026 - Bali visitor arrivals of 6.95 million in 2025, year-on-year growth of 9.7 percent, prime-area occupancy of 70 to 85 percent, and villa price ranges by segment (Tier 2 Bali property market data)",
+        url: "https://polariusrealestate.com/en/market/bali-real-estate-market-insights-2026",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
