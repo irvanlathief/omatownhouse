@@ -1589,7 +1589,7 @@
     },
     {
       "id": "bali-vs-maldives-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 62,
       "theme": "investment",
       "atpType": "vs",
@@ -1609,8 +1609,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-23",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/99"
     },
     {
       "id": "bali-property-agent-fees",
