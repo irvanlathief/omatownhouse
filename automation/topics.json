@@ -1614,7 +1614,7 @@
     },
     {
       "id": "bali-property-agent-fees",
-      "status": "drafting",
+      "status": "published",
       "priority": 63,
       "theme": "investment",
       "atpType": "what",
@@ -1634,8 +1634,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-24",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/100"
     },
     {
       "id": "shm-title-foreigners-bali",
