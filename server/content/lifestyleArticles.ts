@@ -4475,4 +4475,71 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-real-estate-agent-fees-explained",
+    title: "Bali Real Estate Agent Fees: Who Pays and How Much?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 72,
+    metaDescription:
+      "In Bali, the seller or developer pays the real estate agent commission, capped at 5% by AREBI. Learn the typical rates, who pays, and how to verify an agent.",
+    body: `<p>In most Bali property transactions, the seller or developer pays the agent commission, which typically runs 2.5% to 5% of the sale price. As a buyer, you almost never write a separate cheque for the agent, but commission is baked into the asking price, so you are still bearing the cost indirectly.</p><p><strong>How commission is set.</strong> <a href="https://arebibali.com" data-external="true">AREBI</a> (Asosiasi Real Estate Broker Indonesia), the professional body that licenses property agents, sets a maximum commission of 5% of the sale price for purchase transactions and 10% of the annual rent for leasehold or rental listings. In practice, most resale commissions in Bali fall in the range of 2.5% to 5%, with the rate varying by property value and the terms agreed with the seller. On higher-value properties above USD 300,000, commissions of 2% to 3% are more common and negotiable.</p><p><strong>Off-plan and new developments.</strong> When you buy from a developer through their own sales agent, the developer pays a commission that can reach 5% to 8% of the sale price. That agent is commercially obligated to the developer, not to you. If you want independent representation on an off-plan purchase, hiring a separate buyer's agent is worth considering before you sign anything.</p><p><strong>Buyer's agents.</strong> A buyer's agent works exclusively for you and can help review listings, assess developer track records, and negotiate terms. Their fee is typically 1% to 2.5% of the purchase price and is paid by the buyer directly. For a foreign buyer purchasing remotely from the US or Dubai, a buyer's agent adds a layer of independent review that the developer's own agent cannot provide.</p><p><strong>Verifying an agent.</strong> Licensed agencies in Indonesia must hold a SIU-P4 operating permit and maintain AREBI membership. Ask any agency for their NIB business registration number and verify it against the <a href="https://oss.go.id" data-external="true">OSS business registry</a>. Agents who cannot or will not produce their NIB on request are a red flag in a market where a legitimate agency can demonstrate their credentials in minutes. Indonesia's risk-based licensing rules updated in 2025 make this check straightforward for buyers.</p><p><em>This article is for general information only and is not financial or legal advice. Commission terms vary by transaction and are negotiable.</em></p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "How much commission does a Bali property agent typically charge?",
+        answer:
+          "AREBI sets a maximum commission of 5% of the sale price for purchase transactions. In practice, resale commissions in Bali typically range from 2.5% to 5%, depending on the property value, location, and the terms agreed with the seller. On higher-value properties above USD 300,000 to USD 500,000, commissions of 2% to 3% are more common. When two agents co-broker a deal, they split the total commission 50:50 according to AREBI guidance, so the effective rate earned by each agent is lower.",
+      },
+      {
+        question:
+          "Is the buyer or seller responsible for paying agent fees in Bali?",
+        answer:
+          "In most Bali property transactions, the seller or developer pays the agent commission. Buyers rarely pay agent fees directly. The important nuance is that commission is typically priced into the asking price, so you are effectively funding it through the purchase price. When buying a new development through a developer's sales agent, the developer pays that agent, and the agent's obligation is to the developer, not to you as the buyer.",
+      },
+      {
+        question:
+          "Are Bali agent fees negotiable and when should I hire a buyer's agent?",
+        answer:
+          "Agent commissions in Bali are negotiable, particularly on higher-value properties and in co-brokered transactions. A buyer's agent, who works exclusively for you, typically charges 1% to 2.5% of the purchase price and is paid by the buyer. Hiring a buyer's agent makes the most sense when purchasing remotely, buying off-plan from a developer, or comparing multiple listings across different agencies. The developer's own sales agent cannot give you independent advice on competing properties or flag unfavorable contract terms.",
+      },
+    ],
+    publishedAt: "2026-08-24",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-property-agent-consultation-office.webp",
+    gallery: [
+      {
+        url: "/blog/property-offer-document-calculator-desk.webp",
+        alt: "An offer to purchase real estate document on a desk alongside a calculator and mobile phone, representing the commission and fee calculation in a Bali property transaction",
+        credit: "RDNE Stock Project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8292842/",
+      },
+      {
+        url: "/blog/realtor-agent-contract-review-clients.webp",
+        alt: "A real estate agent in a pink blazer reviewing property sale documents with clients across a table, representing the agent and buyer consultation process when purchasing Bali property",
+        credit: "Kampus Production / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8729998/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "AREBI Bali (Asosiasi Real Estate Broker Indonesia) - Requirements and Procedures: official guidelines for Indonesian property broker licensing, SIU-P4 operating permit requirements, and maximum commission rates for sales (5%) and leases (10%) (Tier 1 professional regulatory body for Indonesian real estate brokers)",
+        url: "https://arebibali.com/en/requirements-amp-procedures/",
+      },
+      {
+        label:
+          "ILA Global Consulting: How to Become a Real Estate Agent or Broker in Bali and Indonesia - overview of the SIU-P4 license, AREBI membership requirements, competency certificate framework, and restrictions on foreign nationals acting as individual brokers (Tier 2 Indonesia legal and company-setup advisory firm)",
+        url: "https://ilaglobalconsulting.com/your-guide-to-become-a-real-estate-agent-or-broker-in-bali-and-indonesia/",
+      },
+      {
+        label:
+          "Seven Stones Indonesia: The End of Business as Usual for Bali Property Agents - overview of Indonesia's 2025 regulatory changes for property brokerage, risk-based licensing under the OSS framework, and what the new standards mean for buyers working with agents in Bali (Tier 2 established Bali real estate agency and market commentary)",
+        url: "https://realestate.sevenstonesindonesia.com/the-end-of-business-as-usual-for-bali-property-agents/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
