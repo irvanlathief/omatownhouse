@@ -4542,4 +4542,69 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "shm-freehold-title-bali-foreigners",
+    title: "SHM Freehold Title in Bali: Why Foreigners Cannot Hold It",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 73,
+    metaDescription:
+      "SHM (Sertifikat Hak Milik) is Indonesia's freehold title, reserved for citizens. Learn the three legal structures foreign buyers use to access the same land.",
+    body: `<p>SHM, or Sertifikat Hak Milik, is Indonesia's strongest land title and grants perpetual, unconditional ownership of the underlying plot. Under Article 21(1) of the Basic Agrarian Law (UUPA, Law No. 5/1960), only Indonesian citizens can register SHM in their name. A foreigner cannot hold it directly, so any listing that advertises 'freehold' to overseas buyers is describing one of three legal structures built on top of an SHM, not SHM itself.</p><p>The most common route is a private leasehold contract, called Hak Sewa. The foreign buyer signs a notarised agreement with the Indonesian SHM holder and secures use of the land for an agreed term. OMA Townhouse offers 25-year and 40-year lease structures. No KITAS or KITAP visa is required, and commercial short-term rental is permitted. The arrangement is not registered at the land registry (BPN), so enforcement rests entirely on the contract. See our guide to <a href="/blog/freehold-vs-leasehold-bali">freehold vs leasehold in Bali</a> for a full comparison.</p><p>Hak Pakai (Right of Use) is a BPN-registered title available to foreigners who hold a valid KITAS or KITAP. Governed by Government Regulation PP 103/2015, it runs for 30 years with two possible renewals of 20 and 30 years, giving a maximum of 80 years. In Bali the land must be valued at a minimum of IDR 2 billion, each person may hold only one Hak Pakai title, and it is limited to residential use, which rules out operating a villa rental business. See our <a href="/blog/hak-pakai-bali-foreign-buyers">Hak Pakai guide</a> and the <a href="https://www.atrbpn.go.id" data-external="true">BPN official site</a> for registration steps.</p><p>A PT PMA, Indonesia's foreign-owned company structure, can hold HGB (Hak Guna Bangunan, or Right to Build). Under PP 18/2021, HGB on state land runs for 30 years, renewable for 20 then 30 years. When a PT PMA purchases land already carrying SHM title, the BPN converts that title to HGB at registration. HGB can be mortgaged as Hak Tanggungan, which is useful for project financing. Our <a href="/blog/pt-pma-setup-bali-property">PT PMA setup guide</a> covers the incorporation steps.</p><p>Nominee arrangements, where an Indonesian citizen nominally holds an SHM on behalf of a foreign funder, are illegal under the UUPA and void in Indonesian courts. The Indonesian nominee legally holds the full title with no obligation to return it, and no court will enforce a side agreement that admits the arrangement. This structure offers no legal protection to the foreign party.</p><p><em>This article is general information only, not legal or financial advice. Confirm any land title decision with a licensed PPAT (Land Deed Official) and an independent property lawyer before signing.</em></p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is the difference between SHM and other land titles in Indonesia?",
+        answer:
+          "SHM (Sertifikat Hak Milik) is perpetual freehold reserved exclusively for Indonesian citizens. HGB (Hak Guna Bangunan) is a time-limited right to build, used by PT PMA companies, with a 30+20+30 year term. Hak Pakai is a registered right of use available to foreigners with a KITAS or KITAP, also capped at 80 years total. Hak Sewa is a private leasehold contract with the SHM holder and is the most common route for foreign buyers who do not hold a KITAS.",
+      },
+      {
+        question:
+          "How can a foreigner benefit from SHM land through a PT PMA structure?",
+        answer:
+          "A PT PMA purchases the SHM-titled land from the Indonesian owner. The BPN converts the title from SHM to HGB at registration in the company's name. The foreign investor holds shares in the PT PMA and benefits from the land through the company. HGB can be mortgaged, which makes it useful for development financing. The PT PMA route also allows commercial villa rental, unlike Hak Pakai.",
+      },
+      {
+        question:
+          "What happens if a foreigner nominally holds an SHM title in Bali?",
+        answer:
+          "A nominee arrangement, where an Indonesian citizen holds SHM title on behalf of a foreign funder, is illegal under the UUPA and unenforceable in Indonesian courts. The nominee is the full legal owner with no obligation to the foreign party. Indonesian courts will not enforce side agreements that acknowledge the illegal arrangement. The foreign funder has no legal recourse if the nominee sells, mortgages, or refuses to transfer the property.",
+      },
+    ],
+    publishedAt: "2026-08-25",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/shm-title-freehold-stamp-document.webp",
+    gallery: [
+      {
+        url: "/blog/property-title-foreign-legal-signing.webp",
+        alt: "Two professionals reviewing and signing legal property title documents at a law office desk with a Lady Justice statue visible in the background, representing a foreign buyer completing a Bali land title transaction",
+        credit: "Pavel Danilyuk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8152746/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesian Basic Agrarian Law (UUPA), Law No. 5 of 1960, Article 21(1): reserves Hak Milik (SHM freehold) exclusively for Indonesian citizens; no foreign individual or company may hold SHM directly (Tier 1)",
+        url: "https://faolex.fao.org/docs/pdf/ins3920.pdf",
+      },
+      {
+        label:
+          "Government Regulation No. 103 of 2015 (PP 103/2015): governs foreign individual residential property ownership via Hak Pakai; sets 30+20+30 year term, KITAS/KITAP requirement, and IDR 2 billion minimum property value in Bali (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/5547/pp-no-103-tahun-2015",
+      },
+      {
+        label:
+          "Government Regulation No. 18 of 2021 (PP 18/2021): defines HGB tenure structure of 30+20+30 years on state land for PT PMA companies (Tier 1)",
+        url: "https://iglolaw.com/regulations/government-no-18-of-2021/",
+      },
+      {
+        label:
+          "ILA Global Consulting: Land Ownership and Title Transfer in Bali and Lombok - SHM, HGB, Hak Pakai, PT PMA acquisition and nominee risks (Tier 2)",
+        url: "https://ilaglobalconsulting.com/land-ownership-land-title-transfer-bali-lombok/",
+      },
+    ],
+  },
 ];
