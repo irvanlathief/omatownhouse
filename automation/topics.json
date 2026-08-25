@@ -1639,7 +1639,7 @@
     },
     {
       "id": "shm-title-foreigners-bali",
-      "status": "drafting",
+      "status": "published",
       "priority": 64,
       "theme": "foreign-ownership",
       "atpType": "what",
@@ -1659,8 +1659,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-25",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/101"
     },
     {
       "id": "convert-bali-leasehold-to-pt-pma",
