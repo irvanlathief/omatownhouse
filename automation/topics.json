@@ -1664,7 +1664,7 @@
     },
     {
       "id": "convert-bali-leasehold-to-pt-pma",
-      "status": "drafting",
+      "status": "published",
       "priority": 65,
       "theme": "foreign-ownership",
       "atpType": "can",
@@ -1684,8 +1684,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-27",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/102"
     }
   ]
 }
