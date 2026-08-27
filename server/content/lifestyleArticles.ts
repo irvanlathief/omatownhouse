@@ -4543,6 +4543,73 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     layoutVariant: "qa",
   },
   {
+    slug: "convert-bali-leasehold-to-pt-pma",
+    title: "Can You Convert a Bali Leasehold to a PT PMA After Purchase?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 74,
+    metaDescription:
+      "You can convert a Bali leasehold to a PT PMA after purchase, but it is a three-step process. Learn the costs, tax implications, and when to set up first.",
+    body: `<p>Yes, you can restructure an existing Bali leasehold into a PT PMA company structure after you have already purchased, but there is no single registry step that converts the title. The process involves incorporating a PT PMA, getting the landowner's written agreement to end the personal lease, and executing a fresh leasehold deed in the company's name through a licensed PPAT (notary).</p><p>Most foreign buyers hold their Bali property under a personal Hak Sewa, a private contractual lease with the Indonesian landowner. Hak Sewa is not registered at BPN (the National Land Agency), so your legal protection rests entirely on the notarised contract. Operating a commercial villa rental under a personal Hak Sewa sits in a legal grey area. A PT PMA, by contrast, is a registered Indonesian company that can hold a leasehold or <a href="/blog/hak-guna-bangunan-bali-pt-pma">HGB title</a>, issue commercial invoices, deduct business expenses, and qualify its directors for an Investor KITAS residence permit. See our <a href="/blog/freehold-vs-leasehold-bali">freehold vs leasehold guide</a> for the full ownership landscape.</p><p>The restructuring has three stages. First, you incorporate the PT PMA. This takes roughly four to eight weeks through a licensed corporate services firm and typically costs USD 3,000 to 5,000 in professional fees. Under <a href="https://sasbali.com/bkpm-regulation-no-5-of-2025-new-pt-pma-capital-rules-explained/" data-external="true">BKPM Regulation No. 5/2025</a>, the minimum paid-up share capital was reduced from IDR 10 billion to IDR 2.5 billion (approximately USD 150,000), and that capital must remain in the company account for at least 12 months from incorporation. Second, you approach the landowner. The personal lease must be formally terminated and the landowner must agree to enter a new lease deed with the PT PMA. This requires goodwill from the landowner and ideally a clause in the original lease that permits assignment or novation. Third, the PPAT drafts the new lease deed in the company's name. The Indonesian landowner pays 10% final PPh (Income Tax Article 4(2)) on the lease income they receive when the new agreement is signed. PPAT fees typically run 1% to 2% of the lease value.</p><p>The most common question is whether to set up the PT PMA before or after buying. The answer is almost always before. The PT PMA must exist at the time the PPAT executes the lease deed. Restructuring afterward requires a second round of notarial fees and the landowner's active cooperation to modify the contract. If you are still at the letter-of-intent stage, incorporate the PT PMA first. Our <a href="/blog/pt-pma-setup-bali-property">PT PMA setup guide</a> covers the full incorporation steps.</p><p><em>This article is general information only, not legal or financial advice. Engage a licensed PPAT and an independent Indonesian property lawyer before restructuring any property holding.</em></p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "How do I transfer a Bali leasehold from personal ownership to a PT PMA?",
+        answer:
+          "There is no direct title transfer. The process involves three steps: incorporate the PT PMA (four to eight weeks, USD 3,000 to 5,000 in professional fees), negotiate with the landowner to formally terminate the personal Hak Sewa, then have a PPAT draft a new leasehold deed in the company's name. All three steps require the landowner's cooperation, so check your existing lease for an assignment or novation clause before proceeding.",
+      },
+      {
+        question:
+          "What are the tax implications of converting a personal leasehold to a PT PMA in Bali?",
+        answer:
+          "When the PT PMA signs the new lease with the Indonesian landowner, the landowner pays 10% final PPh (Income Tax Article 4(2)) on the lease income they receive. PPAT (notary) fees for drafting the new deed typically run 1% to 2% of the lease value. Under BKPM Regulation 5/2025, the PT PMA must also maintain IDR 2.5 billion (approximately USD 150,000) in paid-up capital locked in the company account for at least 12 months. Consult a licensed tax adviser on any additional implications specific to your structure.",
+      },
+      {
+        question:
+          "Is it better to set up a PT PMA before buying or after buying a Bali leasehold?",
+        answer:
+          "Before is almost always simpler. The PT PMA must legally exist at the time the PPAT executes the lease deed. Buying under a personal Hak Sewa first and restructuring later requires a second round of notarial costs and fresh leasehold deeds, and the landowner must actively agree to modify the existing contract. If you are still at the letter-of-intent or reservation stage, incorporate the PT PMA before signing any lease.",
+      },
+    ],
+    publishedAt: "2026-08-27",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/leasehold-to-pt-pma-legal-consultation.webp",
+    gallery: [
+      {
+        url: "/blog/pt-pma-company-registration-stamp-document.webp",
+        alt: "Hands pressing an official red-ink stamp onto a white document on a wooden desk, representing the formal registration of a PT PMA company for a Bali property restructure",
+        credit: "Ann Tarazevich / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/6358834/",
+      },
+      {
+        url: "/blog/leasehold-restructure-new-lease-signing.webp",
+        alt: "A man in a dark blue suit signing a formal document with an official seal visible, representing a new leasehold deed being executed in a PT PMA company's name after restructuring",
+        credit: "Mikhail Nilov / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8730998/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "BKPM Regulation No. 5 of 2025 (Ministerial Regulation 5/2025): reduced PT PMA minimum paid-up capital from IDR 10 billion to IDR 2.5 billion (~USD 150,000); introduced 12-month capital lock-up requirement for property companies (Tier 2 - Smart Advisory Solutions Bali overview of the regulation)",
+        url: "https://sasbali.com/bkpm-regulation-no-5-of-2025-new-pt-pma-capital-rules-explained/",
+      },
+      {
+        label:
+          "Government Regulation No. 18 of 2021 (PP 18/2021): sets the HGB (Hak Guna Bangunan) tenure structure for PT PMA companies at 30+20+30 years on state-converted land, totalling up to 80 years (Tier 1 Indonesian government regulation)",
+        url: "https://iglolaw.com/regulations/government-no-18-of-2021/",
+      },
+      {
+        label:
+          "Indonesia Income Tax Law (UU PPh) Article 4(2) and Government Regulation No. 34/2017: imposes 10% final income tax (PPh Final) on rental income from land and buildings received by Indonesian landowners, payable at the time rent is received (Tier 1 Indonesian tax law)",
+        url: "https://www.pajak.go.id/en/income-tax-article-4-paragraph-2",
+      },
+    ],
+    layoutVariant: "qa",
+  },
+  {
     slug: "shm-freehold-title-bali-foreigners",
     title: "SHM Freehold Title in Bali: Why Foreigners Cannot Hold It",
     category: "investment",

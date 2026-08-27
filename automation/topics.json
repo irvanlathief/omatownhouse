@@ -1664,7 +1664,7 @@
     },
     {
       "id": "convert-bali-leasehold-to-pt-pma",
-      "status": "pending",
+      "status": "drafting",
       "priority": 65,
       "theme": "foreign-ownership",
       "atpType": "can",
