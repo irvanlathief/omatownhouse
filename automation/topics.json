@@ -1686,6 +1686,206 @@
       "suggestedVenues": [],
       "publishedAt": "2026-08-27",
       "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/102"
+    },
+    {
+      "id": "bali-vs-vietnam-property-investment",
+      "status": "drafting",
+      "priority": 66,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Vietnam for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Vietnam property investment",
+        "Bali or Da Nang for investment",
+        "Vietnam leasehold foreigners vs Bali"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own property in Vietnam the same way as in Bali?",
+        "Are Bali or Vietnam rental yields higher for villa investors?",
+        "How does buying property in Vietnam differ from buying in Bali?"
+      ],
+      "proposedSlug": "bali-vs-vietnam-property-investment",
+      "proposedTitle": "Bali vs Vietnam Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-notary-closing-costs",
+      "status": "pending",
+      "priority": 67,
+      "theme": "tax",
+      "atpType": "what",
+      "primaryQuestion": "What notary and closing costs should I budget for when buying a Bali property?",
+      "targetKeywords": [
+        "notary fees Bali property purchase",
+        "closing costs Bali villa",
+        "PPAT fees Indonesia property"
+      ],
+      "relatedQuestions": [
+        "Who pays the notary (PPAT) fee in a Bali property transaction?",
+        "How much should I budget for total closing costs on a Bali villa?",
+        "Are notary fees different for a PT PMA purchase versus a personal leasehold?"
+      ],
+      "proposedSlug": "bali-property-notary-closing-costs",
+      "proposedTitle": "Notary and Closing Costs When Buying Bali Property",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "long-term-vs-short-term-rental-bali",
+      "status": "pending",
+      "priority": 68,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Long-term vs short-term villa rental in Bali: which makes more for a foreign owner?",
+      "targetKeywords": [
+        "long-term rental vs short-term Bali villa",
+        "Bali villa monthly rental income",
+        "Airbnb vs annual lease Bali"
+      ],
+      "relatedQuestions": [
+        "Can I switch my Bali villa between short-term and long-term rental easily?",
+        "What yield difference can I expect between a Bali long-term lease and Airbnb?",
+        "What permit do I need for long-term residential rental of a Bali villa?"
+      ],
+      "proposedSlug": "long-term-vs-short-term-rental-bali-villa",
+      "proposedTitle": "Long-Term vs Short-Term Villa Rental in Bali",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "remote-work-bali-tax-residency",
+      "status": "pending",
+      "priority": 69,
+      "theme": "lifestyle",
+      "atpType": "what",
+      "primaryQuestion": "What are the tax residency implications of working remotely from Bali for US and UAE citizens?",
+      "targetKeywords": [
+        "remote work Bali tax residency US",
+        "digital nomad Bali tax implications",
+        "Indonesia tax residency 183 days"
+      ],
+      "relatedQuestions": [
+        "Does staying in Bali for more than 183 days make me an Indonesian tax resident?",
+        "How does working remotely from Bali affect my US or UAE tax obligations?",
+        "What is the Indonesia digital nomad visa and does it change my tax status?"
+      ],
+      "proposedSlug": "remote-work-bali-tax-residency-us-uae",
+      "proposedTitle": "Working Remotely from Bali: Tax Residency for US and UAE Citizens",
+      "category": "lifestyle",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-dispute-resolution",
+      "status": "pending",
+      "priority": 70,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What options does a foreign owner have if there is a property dispute in Bali?",
+      "targetKeywords": [
+        "Bali property dispute foreigners",
+        "Indonesia property legal dispute foreign buyer",
+        "Bali land dispute resolution options"
+      ],
+      "relatedQuestions": [
+        "Can a foreigner take a Bali property dispute to an Indonesian court?",
+        "What is BANI arbitration and is it faster than an Indonesian court for property disputes?",
+        "What clauses in a Bali lease or PPJB protect against a landlord dispute?"
+      ],
+      "proposedSlug": "bali-property-dispute-resolution-foreigners",
+      "proposedTitle": "Property Disputes in Bali: Options for Foreign Owners",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "kaba-kaba-beaches-tabanan-coast",
+      "status": "pending",
+      "priority": 71,
+      "theme": "lifestyle",
+      "atpType": "what",
+      "primaryQuestion": "What beaches are near Kaba Kaba in Tabanan and how do you access them?",
+      "targetKeywords": [
+        "beaches near Kaba Kaba Bali",
+        "Tabanan coast beaches",
+        "Kelating beach Tabanan Bali"
+      ],
+      "relatedQuestions": [
+        "How far is Kaba Kaba from the nearest beach?",
+        "Is Tanah Lot near Kaba Kaba and can you surf there?",
+        "Which Tabanan beach is best for families staying near Kaba Kaba?"
+      ],
+      "proposedSlug": "beaches-near-kaba-kaba-tabanan-bali",
+      "proposedTitle": "Beaches Near Kaba Kaba, Tabanan: What to Expect",
+      "category": "location",
+      "isInsight": false,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-canary-islands-property",
+      "status": "pending",
+      "priority": 72,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs the Canary Islands for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Canary Islands property investment",
+        "Bali or Tenerife investment property",
+        "Gran Canaria vs Bali rental yield"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in the Canary Islands more easily than in Bali?",
+        "Are Bali or Canary Islands rental yields higher for holiday villas?",
+        "How do taxes compare for foreign property owners in Spain vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-canary-islands-property-investment",
+      "proposedTitle": "Bali vs Canary Islands Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-sinking-fund-hoa",
+      "status": "pending",
+      "priority": 73,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What is a sinking fund in a Bali villa development and what shared costs should investors expect?",
+      "targetKeywords": [
+        "Bali villa sinking fund developer",
+        "HOA fees Bali villa complex",
+        "shared costs Bali off-plan development"
+      ],
+      "relatedQuestions": [
+        "Do Bali off-plan developments charge a sinking fund or maintenance reserve?",
+        "What ongoing shared costs should I budget for in a Bali villa complex?",
+        "How are shared facility costs handled in a Bali leasehold versus a PT PMA development?"
+      ],
+      "proposedSlug": "bali-villa-sinking-fund-shared-costs",
+      "proposedTitle": "Sinking Funds and Shared Costs in Bali Villa Developments",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
