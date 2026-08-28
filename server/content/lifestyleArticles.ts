@@ -4674,4 +4674,71 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-vietnam-property-investment",
+    title: "Bali vs Vietnam Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 75,
+    metaDescription:
+      "Bali vs Vietnam property compared: 50-year leasehold rules, foreign ownership quotas, rental yields, taxes, and which market suits a US or UAE buyer in 2026.",
+    body: `<p>Both Bali and Vietnam restrict foreign buyers to leasehold arrangements, but the terms and caps differ. Vietnam's Housing Law 2023 (effective August 2024) grants foreigners a 50-year ownership certificate for apartments or houses in projects specifically licensed for foreign ownership. That term is renewable once for another 50 years, giving a potential maximum of 100 years. Bali leaseholds typically run 25 years with a 25-year renewal option, reaching 50 years direct. Through a PT PMA foreign-owned company, a buyer can access HGB title in Bali for up to 80 years under Government Regulation PP 18/2021. Neither market offers foreigners freehold title in their own name. Our <a href="/blog/freehold-vs-leasehold-bali">ownership guide</a> explains each Bali structure in detail.</p><p>Vietnam imposes strict foreign ownership quotas: 30 percent of units in any apartment building and 250 landed houses per administrative ward. Bali sets no equivalent cap. Vietnam's licensed foreign-ownership developments are predominantly condominiums in cities such as Da Nang and resort areas such as Phu Quoc. Bali's established foreign investment format is the private villa with a pool, which typically commands higher nightly rates than a comparable apartment and feeds into an active short-term rental market on platforms like Airbnb and Booking.com.</p><p>The yield difference is meaningful. Da Nang apartments generated roughly 4.8 to 5.7 percent gross on long-term rental in recent market surveys; short-term resort properties in Phu Quoc can produce higher figures in peak periods. Bali villas in Canggu and Uluwatu are cited by established agencies at 8 to 15 percent gross for short-term rental. Net returns in both markets are considerably lower after management fees, taxes, maintenance, and vacancy. These are market-range estimates and not a guarantee of returns. This is not financial advice.</p><p>Vietnam's rental income tax is 5 percent VAT plus 5 percent personal income tax, totalling 10 percent of gross rent above the local annual threshold, under Vietnam's Law on Personal Income Tax. Bali charges non-resident landlords 20 percent final withholding under Article 26 of Indonesia's Income Tax Law. On exit the rates are close: Vietnam sellers pay 2 percent of the gross sale price, while Bali sellers pay 2.5 percent PPh final tax. See our <a href="/blog/bali-capital-gains-tax-foreign-seller">Bali capital gains guide</a> for the full seller's position.</p><p>Vietnam's Housing Law 2023 improved liquidity by permitting foreigner-to-foreigner resale for the first time; previously, resale required a Vietnamese citizen or overseas Vietnamese buyer, which limited exit options. Bali leasehold assignment to a new buyer has been standard practice for longer, and a PT PMA share transfer adds a second exit route. Neither country grants a residency permit from property ownership alone. A buyer in either market needs a separate visa to stay long term. For the Bali visa options open to property owners, see our <a href="/blog/bali-visa-property-owner-investor">visa guide</a>. For further market comparisons, see <a href="/blog/bali-vs-thailand-property-investment">Bali vs Thailand</a> and <a href="/blog/bali-vs-mexico-property-investment">Bali vs Mexico</a>.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own property in Vietnam the same way as in Bali?",
+        answer:
+          "Both markets use leasehold structures for foreign buyers, but they differ in key ways. Vietnam's Housing Law 2023 offers a 50-year certificate renewable once for another 50 years (100-year maximum), but foreign ownership is capped at 30 percent of units per building and 250 landed houses per ward. Bali leaseholds typically run 25 plus 25 years for a direct lease, or up to 80 years through a PT PMA company structure. Bali has no foreign ownership quotas. Vietnam's licensed foreign developments are mainly apartments; Bali's primary foreign investment product is the private villa.",
+      },
+      {
+        question:
+          "Are Bali or Vietnam rental yields higher for villa investors?",
+        answer:
+          "Bali villas in established rental corridors such as Canggu and Uluwatu are cited at 8 to 15 percent gross for short-term rental by established agencies. Vietnam's market is predominantly apartment-based, with Da Nang long-term rental yields surveyed at roughly 4.8 to 5.7 percent gross. Short-term resort properties in Phu Quoc can produce higher figures in peak season. Net yields in both markets are materially lower after management fees of 25 to 35 percent of revenue, taxes, maintenance, and periods of vacancy. Comparing yields across different property formats and markets is a guide only, not a forecast. This is not financial advice.",
+      },
+      {
+        question:
+          "How does buying property in Vietnam differ from buying in Bali?",
+        answer:
+          "In Vietnam, a foreign buyer acquires an ownership certificate for a unit in a project licensed for foreign ownership; the land itself remains state-owned. In Bali, a foreign buyer signs a notarised leasehold contract directly with the Indonesian landowner, or sets up a PT PMA company to hold an HGB title. Vietnam caps the number of units foreigners can own per building at 30 percent; Bali has no quota. Vietnam's rental income tax is 10 percent combined (5 percent VAT plus 5 percent PIT); Bali charges non-residents 20 percent Article 26 withholding on gross rental income. Seller exit tax is 2 percent of sale price in Vietnam and 2.5 percent PPh in Bali.",
+      },
+    ],
+    publishedAt: "2026-08-28",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/danang-city-skyscrapers-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/danang-skyline-han-river.webp",
+        alt: "Da Nang city skyline viewed across the Han River at dusk, showing high-rise towers including the VNPT building and a Novotel hotel, with a small fishing boat in the foreground, representing Vietnam's emerging property market",
+        credit: "Nghia Van / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/30234695/",
+      },
+      {
+        url: "/blog/phuquoc-beach-palm-lined.webp",
+        alt: "Elevated view of Phu Quoc island beach showing a dense line of coconut palms along a sandy shore with a fishing boat crossing the calm sea, representing Vietnam's southern island resort market",
+        credit: "Van Trang Ho / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/4603354/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "KPMG Vietnam Legal Update (February 2024): Housing Law 2023 amendments for foreign ownership - 50-year ownership certificate renewable for 50 years, 30% quota per building, foreigner-to-foreigner resale now permitted (Tier 2)",
+        url: "https://assets.kpmg.com/content/dam/kpmgsites/vn/pdf/Legal-Update/2024/02/law-on-housing-amended-en.pdf",
+      },
+      {
+        label:
+          "Vietnam Briefing: Tax obligations for rental property owners in Vietnam - 5% VAT plus 5% PIT on gross rental income above threshold; 2% final tax on gross sale price for property transfers (Tier 2)",
+        url: "https://www.vietnam-briefing.com/news/rental-property-foreigners-tax-obligations-vietnam.html/",
+      },
+      {
+        label:
+          "Indonesia DGT (pajak.go.id): Article 26 income tax, 20% final withholding on gross Indonesian-source income paid to non-residents including rental income (Tier 1)",
+        url: "https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
