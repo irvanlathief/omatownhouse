@@ -4741,4 +4741,67 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-property-notary-closing-costs",
+    title: "Notary and Closing Costs When Buying Bali Property",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 76,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-08-29",
+    metaDescription:
+      "Buying a Bali villa? Budget 1-2% for a leasehold or around 6% for a freehold HGB transfer (1% PPAT plus 5% BPHTB). PT PMA buyers add company setup costs.",
+    body: `<p>The closing costs you pay on top of a Bali villa price depend on how you hold title. A leasehold buyer typically budgets around 1% to 2% of the purchase price: mainly the PPAT (land deed official) fee plus independent legal counsel. A buyer acquiring a registered land title such as Hak Guna Bangunan, as a PT PMA company would hold, adds BPHTB acquisition duty at 5%, so total one-time buyer transaction costs run roughly 5% to 7% of the purchase price.</p><p>The PPAT fee is set at a maximum of 1% of the transaction value as recorded in the deed, under Government Regulation PP 37 of 1998 as amended by <a href="https://peraturan.bpk.go.id/Details/5745/pp-no-24-tahun-2016" data-external="true">PP 24 of 2016</a>. In practice most PPATs charge between 0.5% and 1% for villa-scale transactions. The fee is normally shared equally between buyer and seller by agreement, though that split is negotiable. The PPAT requires payment before they can execute the deed, so budget for this amount at signing.</p><p>BPHTB (Bea Perolehan Hak atas Tanah dan Bangunan) is the buyer's land and building acquisition duty, levied at 5% of the taxable value above the NPOPTKP tax-free floor. <a href="https://peraturan.bpk.go.id/Details/38763/uu-no-28-tahun-2009" data-external="true">Law No. 28 of 2009</a> sets the national minimum NPOPTKP at IDR 60 million; Bali regencies including Tabanan apply this floor. BPHTB applies to freehold, HGB, and Hak Pakai title transfers but not to a Hak Sewa leasehold, where no land title changes hands. On a villa priced at IDR 3 billion, BPHTB comes to approximately IDR 147 million. The PPAT calculates the amount, issues a payment slip, and you settle at a government-designated bank before the deed appointment. On broader transfer taxes, see our <a href="/blog/bali-property-transfer-taxes-bphtb">BPHTB and PPh guide</a>.</p><p>If you buy through a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a>, the property acquisition costs stay the same as above. The company also adds a one-time setup cost: professional and government fees for a standard PT PMA run approximately IDR 25 million to IDR 45 million (roughly USD 1,500 to USD 2,800 at current exchange rates). A PT PMA share transfer, where you buy the company rather than the underlying property, avoids BPHTB entirely because no land title changes hands, but requires thorough due diligence on the company's liabilities and corporate records before signing.</p><p>Beyond PPAT and BPHTB, allow for a BPN land certificate registration fee (a small administrative fee paid at the National Land Agency), independent legal counsel for a foreign buyer (industry guidance puts this at USD 1,000 to USD 5,000 depending on transaction complexity), and notarial deed translation costs if certified copies are needed in your home country. If buying a new villa directly from a developer, 11% VAT (PPN) may also apply, covered in our <a href="/blog/vat-ppn-new-bali-villa-purchase">VAT guide for new builds</a>. The seller, not the buyer, pays PPh Final at 2.5% of the gross sale price under Government Regulation PP No. 34 of 2016. Total one-time buyer costs run roughly 1% to 2% for a leasehold purchase and 5% to 7% for a direct HGB acquisition. Confirm exact amounts with your PPAT before signing any agreement. This is general information, not legal or financial advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Who pays the notary (PPAT) fee in a Bali property transaction?",
+        answer:
+          "The PPAT fee, capped at 1% of the transaction value by Government Regulation PP 24 of 2016, is typically split equally between buyer and seller by agreement. That split is negotiable, so confirm the arrangement with your PPAT before signing. Both buyer and seller must also settle their respective taxes (BPHTB for the buyer, PPh Final for the seller) before the PPAT will execute the deed. Failing to clear either tax before the appointment delays the signing.",
+      },
+      {
+        question: "How much should I budget for total closing costs on a Bali villa?",
+        answer:
+          "For a leasehold purchase (Hak Sewa), budget roughly 1% to 2% of the price: mainly the PPAT fee plus independent legal counsel. For a purchase with a registered land title such as HGB inside a PT PMA, budget 5% to 7%, made up of 5% BPHTB plus 1% PPAT. A PT PMA setup adds roughly IDR 25 million to IDR 45 million in professional and government fees. If you are buying a new villa from a developer, VAT of 11% may apply on top, depending on the property price and any government waivers in force at the time.",
+      },
+      {
+        question: "Are notary fees different for a PT PMA purchase versus a personal leasehold?",
+        answer:
+          "The PPAT fee is the same in both cases: up to 1% of the transaction value, capped by PP 24 of 2016. The key difference is BPHTB. A leasehold (Hak Sewa) transfer does not trigger BPHTB because no land title changes hands. A PT PMA acquiring property under HGB title pays BPHTB at 5% of the acquisition value above the IDR 60 million NPOPTKP threshold. Buying the PT PMA shares rather than the property avoids BPHTB, but a thorough corporate due diligence of the company is then essential.",
+      },
+    ],
+    heroImage: "/blog/property-notary-deed-stamp-professional.webp",
+    gallery: [
+      {
+        url: "/blog/property-closing-costs-calculator-desk.webp",
+        alt: "Real estate agent reviewing a Purchase Real Estate document and using a calculator at a table with two clients, representing the calculation of PPAT notary fees and BPHTB closing costs for a Bali villa",
+        credit: "RDNE Stock project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8292839/",
+      },
+      {
+        url: "/blog/property-purchase-deed-review-couple.webp",
+        alt: "Couple sitting across from a lawyer at a formal desk reviewing a property deed, with a framed certificate visible beside the lawyer, representing a PPAT appointment for a Bali property purchase",
+        credit: "Pavel Danilyuk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8112153/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "PP No. 24 Tahun 2016 - BPK RI JDIH: Government Regulation amending PP 37/1998 on Land Deed Official (PPAT) regulations, setting the 1% maximum fee cap on deed transactions (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/5745/pp-no-24-tahun-2016",
+      },
+      {
+        label:
+          "UU No. 28 Tahun 2009 - BPK RI JDIH: Law on Regional Taxes and Levies governing BPHTB at 5% of acquisition value above NPOPTKP, with national minimum NPOPTKP floor of IDR 60 million (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/38763/uu-no-28-tahun-2009",
+      },
+      {
+        label:
+          "Emerhub: Bali Property Investment Guide for Foreign Investors - practical breakdown of PPAT fees, BPHTB, and total closing costs for leasehold and PT PMA structures (Tier 2)",
+        url: "https://emerhub.com/bali/property-investment-in-bali/",
+      },
+    ],
+  },
 ];
