@@ -1714,7 +1714,7 @@
     },
     {
       "id": "bali-notary-closing-costs",
-      "status": "drafting",
+      "status": "published",
       "priority": 67,
       "theme": "tax",
       "atpType": "what",
@@ -1734,8 +1734,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-29",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/105"
     },
     {
       "id": "long-term-vs-short-term-rental-bali",
