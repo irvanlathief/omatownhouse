@@ -4804,4 +4804,72 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "long-term-vs-short-term-rental-bali-villa",
+    title: "Long-Term vs Short-Term Villa Rental in Bali",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 77,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-08-30",
+    metaDescription:
+      "Short-term Bali villa rental yields 8-15% gross; long-term 4-7%. Compare permits, net income, and tax to pick the right strategy as a foreign owner.",
+    body: `<p>Short-term nightly rental through platforms such as Airbnb or Booking.com typically generates a higher gross yield than a fixed annual lease, but the gap narrows once you account for management fees and platform commissions. In established Bali tourism corridors such as Canggu and Seminyak, short-term rental can produce gross yields in the 8 to 15 percent range, while a long-term residential lease to an expatriate or working professional typically falls in the 4 to 7 percent range, based on market data from <a href="https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q1-2026-bali-hotel" data-external="true">Colliers' Q1 2026 Bali Hotel and Villa Market Report</a> and established Bali property operators.</p><p>The cost structure is where the comparison gets real. A full-service short-term rental management company in Bali charges 20 to 30 percent of gross revenue, and Airbnb or Booking.com then takes a further 15 percent in platform commissions. On a villa earning IDR 400 million gross per year through nightly lets, combined fees can absorb IDR 140 to 180 million before taxes. A long-term lease has minimal ongoing costs by comparison: no OTA commissions, no daily housekeeping at scale, and no Pondok Wisata permit to maintain. The net yield gap between the two strategies is often closer than the headline gross figures suggest, and in quieter periods with lower occupancy, a steady monthly lease can outperform a half-occupied Airbnb listing on a net basis.</p><p>The permit requirements differ substantially. Short-term rental requires a Pondok Wisata accommodation license, a valid SLF building feasibility certificate, and a PT PMA company registered under KBLI code 55193 for villa accommodation. <a href="https://ilaglobalconsulting.com/foreigners-rent-out-property-bali/" data-external="true">ILA Global Consulting</a> and <a href="https://emerhub.com/bali/renting-out-villa-in-bali/" data-external="true">Emerhub</a> outline the full licensing process. Long-term residential rental to a tenant for six months or more avoids the Pondok Wisata requirement, though a valid lease agreement and the right ownership structure still apply. For the full short-term permit process, see our <a href="/blog/short-term-rental-permit-bali-villa">Pondok Wisata permit guide</a>. Zoning is also decisive: properties in tourist zones can run either strategy, while a villa on green or agricultural zoning is restricted to long-term residential use. See our <a href="/blog/bali-land-use-zoning-for-villa-investors">land use zoning guide</a> for how to check a plot before buying.</p><p>Tax treatment does not change based on strategy. A foreign owner who is not an Indonesian tax resident pays 20 percent Article 26 withholding on gross rental income, whether that income comes from nightly bookings or a fixed monthly lease, under UU No. 36 of 2008. A tax resident pays 10 percent final PPh under Article 4(2) as set by Government Regulation <a href="https://www.pajak.go.id/en/node/34297" data-external="true">PP 34/2017</a>, published by the Directorate General of Taxes. Through a PT PMA, all rental income feeds into the company's corporate income tax position at 22 percent of net profit.</p><p>Switching between the two strategies after purchase is possible but involves permit changes. Moving from short-term to long-term requires surrendering the Pondok Wisata license; moving the other way requires obtaining one from scratch, including the SLF certificate. Plan your strategy before signing the off-plan contract so the PT PMA KBLI code and permits are aligned from the start. This is general information and not financial or legal advice; consult a qualified Indonesian legal adviser before deciding on a rental strategy.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "What yield difference can I expect between a Bali long-term lease and Airbnb?",
+        answer:
+          "Short-term rental through platforms like Airbnb typically generates gross yields of 8 to 15 percent in Bali's established tourism corridors, while a long-term residential lease to an expatriate or professional typically yields 4 to 7 percent gross. However, short-term rental carries 20 to 30 percent management fees and 15 percent OTA platform commissions. After those costs and taxes, the net yield advantage of short-term over long-term can narrow to 2 to 4 percentage points, and in low-occupancy periods, a steady annual lease can match or exceed nightly rental on a net basis. These are market ranges, not guaranteed returns. This is not financial advice.",
+      },
+      {
+        question: "What permit do I need for long-term residential rental of a Bali villa?",
+        answer:
+          "Long-term residential rental to a tenant for six months or more does not require a Pondok Wisata accommodation license. You still need a valid lease agreement and the right ownership structure, such as a leasehold or a PT PMA. Short-term nightly rental, by contrast, requires a Pondok Wisata license, an SLF certificate of building feasibility, and a PT PMA registered under KBLI code 55193. Your villa's zoning also determines which strategy is possible: tourist zone land can operate both; green or agricultural zone land is restricted to long-term residential rental only.",
+      },
+      {
+        question: "Can I switch my Bali villa between short-term and long-term rental easily?",
+        answer:
+          "Switching is possible but not instant. Moving from short-term to long-term rental requires surrendering the Pondok Wisata license, and moving from long-term to short-term requires obtaining one from scratch, which includes an SLF building feasibility certificate and PT PMA registration under the correct KBLI code. The best approach is to decide your rental strategy before signing the off-plan agreement, so the company structure, KBLI code, and permits are correct from day one.",
+      },
+    ],
+    heroImage: "/blog/villa-tropical-pool-gazebo.webp",
+    gallery: [
+      {
+        url: "/blog/villa-rental-income-comparison-chart.webp",
+        alt: "A revenue report bar chart with a magnifying glass, showing monthly income data from January through April, representing the income comparison between short-term and long-term villa rental strategies in Bali",
+        credit: "Leeloo The First / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7947759/",
+      },
+      {
+        url: "/blog/villa-long-term-lease-signing.webp",
+        alt: "A young man signs a lease agreement document while a woman in a red blazer witnesses, representing a long-term villa rental contract being executed in Bali",
+        credit: "RDNE Stock project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8962684/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Colliers Quarterly Property Market Report Q1 2026 Bali Hotel - villa and hotel market data including occupancy and yield context for Bali short-term rental (Tier 2)",
+        url: "https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q1-2026-bali-hotel",
+      },
+      {
+        label:
+          "ILA Global Consulting: How To Rent Out Property As A Foreign Investor In Bali - short-term vs long-term licensing requirements and Pondok Wisata process (Tier 2)",
+        url: "https://ilaglobalconsulting.com/foreigners-rent-out-property-bali/",
+      },
+      {
+        label:
+          "Directorate General of Taxes: PPh Pasal 4 ayat 2 (rental of land and buildings) - final 10% tax on rental income for Indonesian tax residents under PP 34/2017 (Tier 1)",
+        url: "https://www.pajak.go.id/en/node/34297",
+      },
+      {
+        label:
+          "Emerhub: A Guide to Renting out Villas in Bali as a Foreign Investor - PT PMA KBLI requirements and management cost benchmarks for Bali villa rental (Tier 2)",
+        url: "https://emerhub.com/bali/renting-out-villa-in-bali/",
+      },
+    ],
+  },
 ];
