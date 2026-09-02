@@ -4872,4 +4872,75 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "remote-work-bali-tax-residency-us-uae",
+    title: "Working Remotely from Bali: Tax for US and UAE Citizens",
+    category: "lifestyle",
+    imageUrl: null,
+    sortOrder: 78,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-09-02",
+    metaDescription:
+      "Staying over 183 days in Bali triggers Indonesian tax residency. Here is what US and UAE citizens working remotely from Bali must know about tax obligations.",
+    body: `<p>Working remotely from Bali becomes a tax event when you cross the 183-day mark. Under Article 2 of Indonesia's Income Tax Law (Law No. 36 of 2008, as amended by the Omnibus Law in 2021), spending 183 days or more in Indonesia within any rolling 12-month period makes you an Indonesian tax resident. Cross that threshold and Indonesia taxes your worldwide income at progressive rates of 5 to 35 percent, not just what you earn locally.</p><p>The key protection for most digital nomads is the expert exemption introduced by the Omnibus Law and detailed in <a href="https://ilaglobalconsulting.com/digital-nomad-tax-bali/" data-external="true">Ministry of Finance Regulation PMK 18/PMK.03/2021</a>. If you meet the qualifying-expertise criteria, you pay Indonesian tax only on Indonesian-source income for your first four tax years as a resident. A remote worker paid by clients or an employer registered outside Indonesia typically has no Indonesian-source income, which can translate to a near-zero Indonesian income tax bill during that window.</p><p>The E33G Remote Worker Visa formalizes your stay for up to one year and requires at least $60,000 in annual income sourced from a company registered outside Indonesia. The visa does not itself change your tax position. The 183-day count runs regardless of the visa type you hold, and shorter trips that add up cumulatively count the same as a continuous stay.</p><p>For US citizens, filing a federal return each year is mandatory regardless of where you live. The Foreign Earned Income Exclusion (FEIE) on Form 2555 shelters up to $130,000 of foreign-earned income for the 2025 tax year (rising to $132,900 for 2026), provided you pass the physical presence test (330 full days outside the US in a 12-month period) or the bona fide residence test. A US-Indonesia income tax treaty has been in place since 1988, but its savings clause limits the benefits available to US citizens. The Foreign Tax Credit is usually the more practical tool for reducing double taxation. No US-Indonesia totalization agreement exists, so self-employed Americans still owe US self-employment tax even when they owe nothing to Indonesia.</p><p>For UAE residents, the UAE levies no personal income tax. Under PMK 18/2021, the first four years of Indonesian tax residency can be ring-fenced to Indonesian-source income only. A remote worker paid from abroad in that situation may owe minimal or zero income tax in both countries. A UAE-Indonesia double taxation agreement is in place and can further reduce withholding on any Indonesian-source income that does arise.</p><p>Tax rules here interact across multiple jurisdictions and change over time. Track your days carefully, and consult a qualified Indonesian tax adviser before you exceed the 183-day mark. This article is for general information only and is not tax or legal advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Does staying in Bali for more than 183 days make me an Indonesian tax resident?",
+        answer:
+          "Yes. Under Article 2 of Indonesia's Income Tax Law (Law No. 36 of 2008), physical presence in Indonesia for 183 days or more within any rolling 12-month period triggers Indonesian tax residency. The days are cumulative, not consecutive, and the count runs regardless of the visa you hold. As a tax resident you are subject to Indonesian income tax on your worldwide income at progressive rates of 5 to 35 percent. The expert exemption in PMK 18/PMK.03/2021 can limit your exposure to Indonesian-source income only for the first four tax years if you meet the qualifying-expertise criteria.",
+      },
+      {
+        question:
+          "How does working remotely from Bali affect my US or UAE tax obligations?",
+        answer:
+          "US citizens must file a US federal return every year regardless of where they live. The Foreign Earned Income Exclusion (FEIE) shelters up to $130,000 of foreign-earned income for 2025 (rising to $132,900 for 2026) if you meet the physical presence or bona fide residence test. No US-Indonesia totalization agreement exists, so self-employed Americans still owe US self-employment tax. UAE residents face no UAE personal income tax. Under the PMK 18/2021 expert exemption, the first four years of Indonesian residency may only tax Indonesian-source income, which for a remote worker paid from abroad can mean near-zero liability in both jurisdictions.",
+      },
+      {
+        question:
+          "What is the Indonesia E33G digital nomad visa and does it change my tax status?",
+        answer:
+          "The E33G Remote Worker Visa lets digital nomads stay in Bali for up to one year while working for a company registered outside Indonesia. Requirements include at least $60,000 in annual income and documented employment or business activity outside Indonesia. The visa does not create or change your Indonesian tax status. Tax residency is determined separately by physical presence: 183 days or more in any rolling 12-month period triggers it. The E33G simply formalizes your legal right to stay.",
+      },
+    ],
+    heroImage: "/blog/remote-work-laptop-professional-cafe.webp",
+    gallery: [
+      {
+        url: "/blog/tax-deadline-calendar-planning.webp",
+        alt: "A planner open to a monthly calendar with a sticky note reading Tax Deadline, alongside financial documents and glasses on a desk, representing the tax planning obligations for remote workers in Bali",
+        credit: "Nataliya Vaitkevich / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8962478/",
+      },
+      {
+        url: "/blog/irs-tax-form-foreign-national.webp",
+        alt: "An IRS W-7 form for Individual Taxpayer Identification Number displayed on a clipboard with a gold pen and calendar, representing US tax filing obligations for Americans working remotely from Bali",
+        credit: "Nataliya Vaitkevich / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/6929025/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesia Directorate General of Taxes: Tax Return Reporting for Foreign Citizens in Indonesia - Article 2 residency threshold and worldwide income rules (Tier 1)",
+        url: "https://www.pajak.go.id/en/artikel/tax-return-reporting-foreign-citizens-indonesia",
+      },
+      {
+        label:
+          "ILA Global Consulting: Do You Need to Pay Taxes as a Digital Nomad in Bali? - PMK 18/2021 expert exemption and digital nomad tax position (Tier 2)",
+        url: "https://ilaglobalconsulting.com/digital-nomad-tax-bali/",
+      },
+      {
+        label:
+          "Emerhub: Do Digital Nomads Pay Tax in Bali? Residency, DTAs, and the Four-Year Exemption - Indonesia 183-day rule and Omnibus Law expert exemption (Tier 2)",
+        url: "https://emerhub.com/bali/digital-nomad-tax-in-bali/",
+      },
+      {
+        label:
+          "Tricor Global: Indonesia Omnibus Law Individual Tax Subjects - changes to domestic tax subject rules and foreign expert exemption under the Job Creation Law (Tier 2)",
+        url: "https://www.tricorglobal.com/blog/indonesias-omnibus-law-individual-tax-subjects",
+      },
+    ],
+  },
 ];
