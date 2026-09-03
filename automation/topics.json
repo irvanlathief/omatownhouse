@@ -1789,7 +1789,7 @@
     },
     {
       "id": "bali-property-dispute-resolution",
-      "status": "drafting",
+      "status": "published",
       "priority": 70,
       "theme": "investment",
       "atpType": "what",
@@ -1809,8 +1809,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-03",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/110"
     },
     {
       "id": "kaba-kaba-beaches-tabanan-coast",
