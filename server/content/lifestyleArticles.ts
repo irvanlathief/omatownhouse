@@ -5009,4 +5009,86 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "beaches-near-kaba-kaba-tabanan-bali",
+    title: "Beaches Near Kaba Kaba, Tabanan: What to Expect",
+    category: "location",
+    imageUrl: null,
+    sortOrder: 80,
+    isInsight: false,
+    author: "OMA Townhouse",
+    publishedAt: "2026-09-04",
+    metaDescription:
+      "Kaba Kaba sits 10 to 15 minutes from Tabanan's black-sand coast. Tanah Lot, Kedungu surf beach, and Kelating are the closest options from the village.",
+    body: `<p>Kaba Kaba sits about 10 to 15 minutes by road from the nearest beaches on Tabanan's black-sand southwest coast. The closest coastal landmark is <a href="https://lovebali.baliprov.go.id/destination/detail/327" data-external="true">Tanah Lot</a>, one of Bali's most recognisable sea temples, roughly 10 minutes south by motorbike or car. For an open surf and swimming beach, Kedungu is the first practical option, about 15 to 20 minutes away.</p><p>Tanah Lot sits on a small coral island that becomes accessible on foot at low tide. It is a functioning Hindu temple rather than a swim spot, and an entry fee applies for visitors. The surrounding area has food stalls and the coastal walk at low tide gives a clear sense of the raw Tabanan shoreline. Sunset is busy; early afternoon is noticeably quieter.</p><p>Kedungu Beach is the main surf and leisure beach in the area. It lies between Tanah Lot and Canggu and offers a beginner-friendly sand and rock beach break on a wide stretch of black volcanic sand. Board hire and surf lessons are available directly on the beach. The crowd is smaller than Echo Beach or Batu Bolong in Canggu, with fewer vendors and a more local atmosphere. Families with children who want to try a first surf lesson often come here rather than the busier Canggu breaks.</p><p>Kelating Beach, further north along the Tabanan coast, is quieter with fewer facilities. The flat foreshore is easy to walk, but rips and swell can run strong, so check conditions before entering the water. It suits a picnic or a long walk rather than a casual swim.</p><p>Getting between Kaba Kaba and any of these beaches is straightforward. A hired motorbike gives the most flexibility. Most approach roads are paved. Expect heavier traffic toward Tanah Lot around sunset, so morning or early afternoon visits tend to be less congested.</p>`,
+    venues: [
+      {
+        name: "Tanah Lot Temple",
+        distance: "10-15 min",
+        coords: "-8.6215,115.0868",
+        url: "https://lovebali.baliprov.go.id/destination/detail/327",
+      },
+      {
+        name: "Kedungu Beach",
+        distance: "15-20 min",
+        coords: "-8.5981,115.1083",
+        url: "https://www.tripadvisor.com/Attraction_Review-g608496-d13009711-Reviews-Kedungu_Beach-Tabanan_Bali.html",
+      },
+      {
+        name: "Kelating Beach",
+        distance: "20-25 min",
+        coords: "-8.5476,115.0777",
+        url: "https://visitbali.id/property/kelating-beach-natural-beauty-of-black-sand-beach",
+      },
+    ],
+    faq: [
+      {
+        question: "How far is Kaba Kaba from the nearest beach?",
+        answer:
+          "The nearest beach access from Kaba Kaba is about 10 to 15 minutes by road along the Tabanan coast. Tanah Lot, the sea temple on a small coral island, is the closest coastal landmark. For an open surf and swimming beach, Kedungu is roughly 15 to 20 minutes away. All nearby beaches have black volcanic sand, typical of Bali's southwest coast.",
+      },
+      {
+        question: "Is Tanah Lot near Kaba Kaba and can you surf there?",
+        answer:
+          "Tanah Lot is about 10 minutes from Kaba Kaba and easy to reach by motorbike or car. It is a functioning Hindu temple on a small coral island and is not a surf or swimming beach. For surfing, Kedungu Beach is the nearest practical option at roughly 15 to 20 minutes from Kaba Kaba. Kedungu has a beginner-friendly beach break with board hire and lessons available on site.",
+      },
+      {
+        question: "Which Tabanan beach is best for families staying near Kaba Kaba?",
+        answer:
+          "Kedungu Beach works well for families. The main break is beginner-friendly when conditions are small, surf schools operate on the beach, and basic warungs are nearby. For a non-surfing outing, Tanah Lot is worth visiting in the morning before the sunset crowds arrive. Kelating Beach further north is undeveloped and good for a coastal walk, though there are no facilities and the water can be rough.",
+      },
+    ],
+    heroImage: "/blog/tabanan-black-sand-beach-waves-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/tanah-lot-temple-rocky-shore-sunset.webp",
+        alt: "Tanah Lot sea temple perched on a rocky coral island off the Tabanan coast at sunset, with visitors walking the shoreline and ocean waves below, about 10 to 15 minutes from Kaba Kaba",
+        credit: "Patrick Gamelkoorn / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/tanah-lot-on-sea-shore-in-indonesia-18144498/",
+      },
+      {
+        url: "/blog/bali-west-coast-surfers-waves.webp",
+        alt: "Three surfers riding waves on Bali's west coast near Tabanan, representing the beginner-friendly surf conditions at Kedungu Beach about 15 to 20 minutes from Kaba Kaba",
+        credit: "Lucien Schreiber / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/30067464/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Bali Provincial Government Tourism (lovebali.baliprov.go.id): Soka Beach - official tourism listing for the Tabanan coast beaches (Tier 1)",
+        url: "https://lovebali.baliprov.go.id/destination/detail/327/pantai-soka",
+      },
+      {
+        label:
+          "TripAdvisor: Kedungu Beach, Tabanan - visitor reviews documenting surf conditions, beginner suitability, and facilities at Kedungu (Tier 3)",
+        url: "https://www.tripadvisor.com/Attraction_Review-g608496-d13009711-Reviews-Kedungu_Beach-Tabanan_Bali.html",
+      },
+      {
+        label:
+          "Visit Bali (visitbali.id): Kelating Beach - official Bali tourism site listing for Kelating Beach in Tabanan (Tier 1)",
+        url: "https://visitbali.id/property/kelating-beach-natural-beauty-of-black-sand-beach",
+      },
+    ],
+  },
 ];
