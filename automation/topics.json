@@ -1814,7 +1814,7 @@
     },
     {
       "id": "kaba-kaba-beaches-tabanan-coast",
-      "status": "drafting",
+      "status": "published",
       "priority": 71,
       "theme": "lifestyle",
       "atpType": "what",
@@ -1834,8 +1834,8 @@
       "category": "location",
       "isInsight": false,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-04",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/111"
     },
     {
       "id": "bali-vs-canary-islands-property",
