@@ -5091,4 +5091,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-canary-islands-property-investment",
+    title: "Bali vs Canary Islands Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 81,
+    metaDescription:
+      "Bali vs Canary Islands property for foreign investors in 2026: comparing freehold ownership, rental yields, taxes, and entry prices in both markets.",
+    body: `<p>The Canary Islands let any foreign buyer, including US and UAE citizens, own property outright in their own name under full Spanish title. In Bali, foreigners cannot hold Sertifikat Hak Milik (freehold) directly and must use a leasehold of 25 to 30 years or a <a href="/blog/pt-pma-setup-bali-property">PT PMA company structure</a>. That ownership difference is the sharpest line between the two markets.</p><p>Entry prices reflect two very different cost tiers. Residential property on Tenerife averaged around EUR 3,845 per sqm in mid-2026, with Gran Canaria at roughly EUR 2,970 per sqm. Land in Bali's emerging Tabanan corridor sits below USD 250 per sqm, while prime Canggu runs USD 530 to 1,560 per sqm. A comparable villa build in Tabanan can come in well under a Canary Islands equivalent, which draws investors willing to navigate the leasehold or PT PMA route.</p><p>Rental yields tell a similar story. Long-term lets in the Canary Islands typically produce 4 to 7% gross yield. Short-term vacation rentals can reach 7% or higher, though <a href="https://www.boe.es/buscar/doc.php?id=BOC-a-2025-139-1044" data-external="true">Canary Law 6/2025</a> now requires a 60% community building vote before a tourist rental license is granted, and several municipalities have already suspended new licenses. Bali villas with professional management in well-positioned areas report gross yields of 8 to 15%, supported by a tourism market that recorded nearly 7 million foreign arrivals in 2025.</p><p>Tax treatment favors Bali for US and UAE buyers. Non-EU, non-EEA owners in the Canary Islands pay a flat 24% Spanish non-resident income tax on rental earnings. In Bali, the equivalent rate is 10% final withholding. The Canary Islands purchase transfer tax is 6.5% ITP on resale properties; Bali's buyer-side BPHTB is 5%. Capital gains on a Canary Islands sale are taxed at 19% for non-residents under Spanish IRNR rules.</p><p>The Canary Islands offer freehold security, Euro-denominated stability, and EU legal protections backed by Spanish courts. Bali offers higher potential yields, a lower entry price in emerging areas like Tabanan, and exposure to one of Asia's fastest-growing tourism markets. This is not financial advice; yield and return figures are indicative ranges that depend on location, management quality, and market conditions.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own freehold property in the Canary Islands more easily than in Bali?",
+        answer:
+          "Yes. The Canary Islands are Spanish territory, so any foreigner, including US and UAE citizens, can buy and register a full freehold title deed with no restrictions. In Bali, foreigners cannot hold Sertifikat Hak Milik directly and must instead use a leasehold of 25 to 30 years or a PT PMA company structure to hold property.",
+      },
+      {
+        question:
+          "Are Bali or Canary Islands rental yields higher for holiday villas?",
+        answer:
+          "Bali villas with professional management in well-located areas report gross yields of 8 to 15%, higher than the typical 4 to 7% for long-term lets and up to 7% for short-term rentals in the Canary Islands. Canary Law 6/2025 has also made new short-term rental licenses significantly harder to obtain in many municipalities, adding regulatory risk to Canary Islands holiday-rental returns.",
+      },
+      {
+        question:
+          "How do taxes compare for foreign property owners in the Canary Islands vs Bali?",
+        answer:
+          "Non-EU buyers, including US and UAE citizens, pay 24% Spanish non-resident income tax on Canary Islands rental income. In Bali, the rate is 10% final withholding for non-residents. Purchase transfer taxes are 6.5% ITP in the Canary Islands and 5% BPHTB for the buyer in Bali. Capital gains on a Canary Islands property sale are taxed at 19% for non-residents under IRNR rules.",
+      },
+    ],
+    publishedAt: "2026-09-05",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/tenerife-coastal-town-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/gran-canaria-valley-village-aerial.webp",
+        alt: "Traditional white-walled village houses terraced on a steep hillside in Gran Canaria with layered mountain ridges behind, showing the Canary Islands residential landscape",
+        credit: "Victor de Dompablo / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/aerial-view-of-houses-in-the-valley-on-gran-canaria-canary-islands-spain-20828519/",
+      },
+      {
+        url: "/blog/tenerife-beach-resort-aerial.webp",
+        alt: "Aerial view of a Tenerife beach resort strip showing hotels, apartment blocks, and a dark-sand beach lined with sun loungers and Atlantic Ocean in the foreground",
+        credit: "Atlantic Ambience / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/aerial-view-of-tenerife-beach-canary-islands-29668129/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "ITP, IGIC and AJD taxes when buying property in the Canary Islands - Canary Inmobiliaria (Tier 2 property agency)",
+        url: "https://canaryinmobiliaria.com/en/itp-igic-ajd-canary-islands-property-taxes/",
+      },
+      {
+        label:
+          "Non-resident rental income tax in Spain (19% EU, 24% non-EU) - EBF Consulting (Tier 2 tax adviser)",
+        url: "https://www.ebfconsulting.com/non-residents-tax-on-rental-income/",
+      },
+      {
+        label:
+          "Tenerife real estate prices 2026 (EUR 3,845 per sqm) - Tenerife-real.estate (Tier 2 market data)",
+        url: "https://tenerife-real.estate/en/tenerife-real-estate-prices",
+      },
+      {
+        label:
+          "Bali property prices 2026 by area (Tabanan below USD 250 per sqm, Canggu USD 530 to 1,560 per sqm) - Magnum Estate (Tier 2 Bali agency)",
+        url: "https://magnumestate.com/blog/bali-property-prices-2026",
+      },
+    ],
+  },
 ];
