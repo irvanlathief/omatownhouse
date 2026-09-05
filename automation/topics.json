@@ -1839,7 +1839,7 @@
     },
     {
       "id": "bali-vs-canary-islands-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 72,
       "theme": "investment",
       "atpType": "vs",
@@ -1859,8 +1859,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-05",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/113"
     },
     {
       "id": "bali-villa-sinking-fund-hoa",
