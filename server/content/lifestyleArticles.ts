@@ -5164,4 +5164,65 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-villa-sinking-fund-shared-costs",
+    title: "Sinking Funds and Shared Costs in Bali Villa Developments",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 82,
+    metaDescription:
+      "What is a sinking fund in a Bali villa development and what shared costs do owners pay? Learn which costs are legally required, what the PPJB must say, and how to budget.",
+    body: `<p>In a Bali villa development, a sinking fund is a maintenance reserve that owners contribute to each year, held to pay for major capital work on shared facilities: pool resurfacing, access road repairs, perimeter walls, and similar items that arise every few years rather than every month. Whether your development charges one, and how much each unit pays, depends entirely on what the purchase agreement says. Indonesian law mandates sinking funds only for registered strata-title buildings, not for the leasehold or <a href="/blog/pt-pma-setup-bali-property">PT PMA</a> villa compounds that most foreign off-plan buyers use.</p><p>Under Government Regulation No. 4 of 1988 on Condominiums (GR 4/1988), every owner in a strata building must pay a service charge to the owners association (PPPSRS), which typically includes a sinking fund component for future capital repairs. Villa compounds sit outside that framework. The developer sets the service charge and reserve terms in the sale and purchase agreement (<a href="/blog/ppjb-contract-bali-off-plan-explained">PPJB</a>) or a separate estate deed, and there is no central oversight body in Bali that audits or caps those charges. A well-structured off-plan development will include a clearly defined sinking fund; others do not, and the difference only becomes apparent when a major repair bill arrives.</p><p>Shared costs in a Bali villa compound typically cover common-area pool and garden maintenance, security and gatehouse staffing, access road and car park upkeep, shared utility bills for communal lighting, and the sinking fund reserve itself. These are split across owners, usually in proportion to unit size or by equal share. Costs linked to each unit's own private pool, garden, and staff are charged separately by the villa manager. In a compound of five to ten villas, the shared portion can meaningfully reduce per-unit running costs compared with a fully standalone property, because expenses like security and external landscaping are shared.</p><p>Before signing any off-plan contract, ask the developer to provide the projected monthly service charge, the sinking fund rate and who holds the reserve account, how both figures are calculated (per unit, by built-up area, or another basis), how the account is audited, what vote or approval is needed to draw on it, and what happens if an owner does not pay. US buyers will recognise this review as similar to reviewing an HOA disclosure document. Dubai buyers will notice that Bali lacks the RERA-style regulated service charge budgets mandated in the UAE. The PPJB is where your protection sits, so independent legal advice before signing is strongly recommended. Operating costs vary by development, exchange rate, and management model, so treat any developer estimate as a planning guide rather than a guarantee.`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Do Bali off-plan developments legally require a sinking fund or maintenance reserve?",
+        answer:
+          "Not for villa compounds. Indonesian law (Government Regulation No. 4 of 1988) mandates service charges only for strata-title condominium buildings. For leasehold and PT PMA villa developments, the sinking fund and service charge are set by the developer in the PPJB or estate deed. A good off-plan contract will include a defined reserve fund with a clear rate and audit process. Checking this before signing is essential.",
+      },
+      {
+        question:
+          "What ongoing shared costs should I budget for in a Bali villa complex?",
+        answer:
+          "Shared costs in a Bali villa compound typically cover common-area pool and garden maintenance, security and gatehouse staffing, access road and car park upkeep, shared communal lighting and utility bills, estate administration, and a sinking fund contribution for future capital repairs. Individual villa pool, garden, and household staff costs are billed separately by the villa manager and are not part of the shared charge.",
+      },
+      {
+        question:
+          "How are shared facility costs handled in a Bali leasehold versus a PT PMA development?",
+        answer:
+          "The ownership structure does not change how shared costs work in practice. Both leasehold and PT PMA structures can sit within a villa compound that charges a service fee and sinking fund. What matters is the estate agreement or PPJB, which sets obligations regardless of how the underlying title is held. In a PT PMA structure the company bears the payment obligation rather than the individual shareholder, but the economic cost is the same.",
+      },
+    ],
+    publishedAt: "2026-09-06",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/villa-complex-shared-pool.webp",
+    gallery: [
+      {
+        url: "/blog/tropical-resort-pool-aerial.webp",
+        alt: "Aerial view of a tropical villa development showing multiple villa units arranged around shared pools and lush communal gardens, illustrating how shared facility costs are divided across owners in a Bali compound",
+        credit: "Cau Duong Viet Nam / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/33059531/",
+      },
+      {
+        url: "/blog/resort-gardens-pools-aerial.webp",
+        alt: "Top-down aerial view of a luxury villa resort complex with multiple shared pools, landscaped gardens, sun lounger areas, and communal walkways showing the shared infrastructure investors contribute to via service charges",
+        credit: "Enes Celik / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7748791/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Government Regulation No. 4 of 1988 on Condominiums (GR 4/1988), Article 16 - mandates service charges for strata-title unit owners in Indonesia (Tier 1: Indonesian government regulation)",
+        url: "https://indonesiarealestatelaw.com/obligations-of-paying-service-charge-by-the-owner-of-condominium-units/",
+      },
+      {
+        label:
+          "Law No. 16 of 1985 on Condominiums (Undang-Undang No. 16 Tahun 1985) - establishes the owners association (PPPSRS) and the legal framework for shared-cost management in Indonesian strata buildings (Tier 1)",
+        url: "https://www.hbtlaw.com/insights/2019-01/indonesia-update-new-strata-title-regulation-diminishes-influence-developers-and",
+      },
+    ],
+  },
 ];
