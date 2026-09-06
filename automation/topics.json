@@ -1864,7 +1864,7 @@
     },
     {
       "id": "bali-villa-sinking-fund-hoa",
-      "status": "pending",
+      "status": "published",
       "priority": 73,
       "theme": "investment",
       "atpType": "what",
@@ -1884,8 +1884,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-06",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/114"
     }
   ]
 }
