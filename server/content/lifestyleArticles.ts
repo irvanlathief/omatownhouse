@@ -5225,4 +5225,75 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-philippines-property-investment",
+    title: "Bali vs Philippines Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 83,
+    metaDescription:
+      "Bali vs Philippines property for foreign investors: ownership rules, rental yields, tax rates, and visa options compared side by side for 2026 buyers.",
+    body: `<p>The key structural difference between Bali and the Philippines for a foreign buyer comes down to title. In the Philippines, foreigners can hold a freehold Condominium Certificate of Title (CCT) with no expiry date under <a href="https://chanrobles.com/republicactno4726.html" data-external="true">Republic Act 4726</a>, provided the project's total foreign ownership does not exceed 40 percent. Land cannot be owned by foreigners directly under the 1987 Philippine Constitution. In Bali, the options are a leasehold (typically 25 years renewable for a further 25 years), Hak Pakai for holders of a valid KITAS (up to 75 years total), or a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> holding Hak Guna Bangunan title (80 years, renewable). Neither market gives a foreign individual direct freehold land ownership.</p><p>On rental yield, the two markets are far apart. Metro Manila condos return roughly 4 to 7 percent gross depending on location, with Cebu's IT Park area reaching around 5 to 7 percent gross. Net yields, after management fees, vacancy, and local tax, typically come in 2 to 4 percentage points below the gross figure. Bali villas in active tourism corridors such as Canggu, Uluwatu, and the Tabanan coast return 8 to 15 percent gross, with net yields typically in the 6 to 10 percent range for a well-managed asset. These are ranges based on current market data, not guaranteed returns. Actual performance depends on location, occupancy, and management quality.</p><p>Tax treatment differs materially. The Philippines applies a 25 percent final withholding tax on gross rental income for non-resident aliens not engaged in trade or business in the country, under Section 25(A)(2) of the National Internal Revenue Code as amended by the TRAIN Law. Indonesia applies a 10 percent final income tax on gross rental income. On a sale, the Philippines charges 6 percent capital gains tax on the higher of the sale price or government zonal value. In Indonesia, a seller structured through a PT PMA pays 2.5 percent PPh on the gross sale value. Foreign individuals selling directly in either country face a different calculation and should take local tax advice before structuring an exit.</p><p>Entry prices overlap in some brackets. Philippine condos in secondary Metro Manila locations start from roughly USD 80,000 to 120,000. Off-plan villas in the Tabanan corridor, including the area around <a href="/blog/where-is-kaba-kaba-bali">Kaba Kaba</a>, start from approximately USD 120,000 to 200,000 for a one- or two-bedroom unit bought off-plan.</p><p>Both markets have pathways to longer stays. The Philippines Special Retiree Resident Visa (SRRV) requires a time deposit of USD 15,000 to 50,000 depending on age and pension status, and grants permanent multiple-entry residency. Bali's Second Home Visa gives a five-year stay permit but requires equivalent assets of around USD 130,000. Investors using a <a href="/blog/pt-pma-setup-bali-property">PT PMA structure</a> in Bali can also apply for a director KITAS, which is renewable annually. For a buyer who prioritises freehold title simplicity and a lower minimum ticket, the Philippines condo market is more accessible. For a buyer focused on rental yield and comfortable with a leasehold or PT PMA structure, Bali's returns are materially higher. This is for general information only and is not financial or legal advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own property in the Philippines more easily than in Bali?",
+        answer:
+          "It depends on the property type. In the Philippines, foreigners can own a condominium unit outright through a freehold CCT under Republic Act 4726, as long as total foreign ownership in the project does not exceed 40 percent. Foreigners cannot own Philippine land directly. In Bali, the main legal routes are a leasehold (25 to 25 years renewable), Hak Pakai for KITAS holders, or a PT PMA company structure. The Philippines condominium market has simpler title mechanics, but Bali's villa market offers significantly higher rental yields.",
+      },
+      {
+        question:
+          "Are Bali or Philippines rental yields higher for foreign investors?",
+        answer:
+          "Bali yields are significantly higher. Manila condos return roughly 4 to 7 percent gross and Cebu's IT Park area 5 to 7 percent gross, with net yields typically 2 to 4 percentage points below those figures. Bali villas in active tourism areas generate 8 to 15 percent gross, with net yields typically in the 6 to 10 percent range for a well-managed property. The gap reflects the difference between a condo rental market and a premium short-term villa market driven by Bali's tourism demand. These are market ranges, not guaranteed returns.",
+      },
+      {
+        question:
+          "How does rental income tax for foreigners compare in Bali vs the Philippines?",
+        answer:
+          "The Philippines applies a 25 percent final withholding tax on gross rental income for non-resident aliens not engaged in trade or business in the country, under the National Internal Revenue Code. Indonesia applies a 10 percent final income tax on gross rental income. The Philippines rate is substantially higher and directly reduces the effective net yield for a non-resident foreign owner. Both rates are final taxes, meaning the income is not added again to an annual return once correctly withheld.",
+      },
+    ],
+    publishedAt: "2026-09-07",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/manila-skyline-aerial-cityscape.webp",
+    gallery: [
+      {
+        url: "/blog/palawan-island-turquoise-aerial.webp",
+        alt: "Top-down aerial view of a tropical Philippine island in Palawan with white sand beach, traditional outrigger boats, beach loungers under palm trees, and vivid turquoise water, showing the Philippines short-term tourism and investment appeal",
+        credit: "Ferdie Cayanga / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/3507996/",
+      },
+      {
+        url: "/blog/manila-sunset-makati-cityscape.webp",
+        alt: "Manila cityscape at sunset showing high-rise condominium towers against a vivid red and purple sky with Manila Bay in the background, representing the Philippines urban property market where foreigners can hold freehold condo title",
+        credit: "Pixabay / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/210367/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Republic Act No. 4726 (Condominium Act of the Philippines) - establishes foreign freehold condo ownership rights and the 40 percent foreign ownership cap per project (Tier 1: Philippine statute via Chan Robles Law Library)",
+        url: "https://chanrobles.com/republicactno4726.html",
+      },
+      {
+        label:
+          "Philippines NIRC Section 25(A)(2) as amended by the TRAIN Law (RA 10963) - 25 percent final withholding tax on Philippine-source income of non-resident aliens not engaged in trade or business (Tier 1: Philippine tax code)",
+        url: "https://www.respicio.ph/commentaries/rental-income-tax-in-the-philippines-who-pays-and-who-withholds",
+      },
+      {
+        label:
+          "Philippines residential rental yields by city 2026 (Manila 4-7% gross, Cebu IT Park 5-7% gross) - IQI Global Philippines market insights (Tier 2: international property consultancy)",
+        url: "https://iqiglobal.com/in/global-market-insights/philippines",
+      },
+      {
+        label:
+          "Philippine Retirement Authority (PRA) - SRRV program requirements including USD 15,000 to 50,000 time deposit tiers for Special Retiree Resident Visa (Tier 1: official Philippine government agency)",
+        url: "https://www.pra.gov.ph",
+      },
+    ],
+  },
 ];
