@@ -1889,7 +1889,7 @@
     },
     {
       "id": "bali-vs-philippines-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 74,
       "theme": "investment",
       "atpType": "vs",
@@ -1909,8 +1909,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-07",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/116"
     },
     {
       "id": "bali-natural-disaster-risk-property",
