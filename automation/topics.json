@@ -1886,6 +1886,206 @@
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
+    },
+    {
+      "id": "bali-vs-philippines-property",
+      "status": "drafting",
+      "priority": 74,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Philippines for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Philippines property investment",
+        "Bali or Cebu for investment",
+        "Philippines condominium foreigners vs Bali leasehold"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own property in the Philippines more easily than in Bali?",
+        "Are Bali or Philippines rental yields higher for villa and condo investors?",
+        "How does buying property in the Philippines differ from buying in Bali?"
+      ],
+      "proposedSlug": "bali-vs-philippines-property-investment",
+      "proposedTitle": "Bali vs Philippines Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-natural-disaster-risk-property",
+      "status": "pending",
+      "priority": 75,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What natural disaster risks (earthquake, volcano, flood) should a foreign property investor assess before buying in Bali?",
+      "targetKeywords": [
+        "Bali natural disaster risk property",
+        "Bali earthquake flood risk villa",
+        "buying property near Bali volcano"
+      ],
+      "relatedQuestions": [
+        "How does Bali volcanic and seismic risk compare to other Southeast Asian property markets?",
+        "Can I insure a Bali villa against earthquake and flood?",
+        "Which areas of Bali have the lowest natural disaster risk for property buyers?"
+      ],
+      "proposedSlug": "bali-natural-disaster-risk-property-investors",
+      "proposedTitle": "Bali Natural Disaster Risks: What Property Investors Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-payment-stages",
+      "status": "pending",
+      "priority": 76,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "What are the typical payment plan stages for an off-plan Bali villa purchase?",
+      "targetKeywords": [
+        "Bali off-plan payment stages",
+        "off-plan villa payment schedule Bali",
+        "Bali developer installment plan"
+      ],
+      "relatedQuestions": [
+        "How are off-plan payments structured from booking deposit to handover in Bali?",
+        "What percentage do Bali developers typically charge at each construction milestone?",
+        "Can I negotiate a customized payment plan on an off-plan Bali villa?"
+      ],
+      "proposedSlug": "bali-off-plan-villa-payment-stages",
+      "proposedTitle": "Off-Plan Villa Payment Stages in Bali: What to Expect",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-expat-utilities-villa",
+      "status": "pending",
+      "priority": 77,
+      "theme": "lifestyle",
+      "atpType": "what",
+      "primaryQuestion": "What utilities and infrastructure should a foreign investor expect in a Bali villa: electricity, water, and internet?",
+      "targetKeywords": [
+        "Bali villa electricity internet utilities",
+        "PLN power Bali villa investment",
+        "water supply Bali villa expat"
+      ],
+      "relatedQuestions": [
+        "Is the electricity supply reliable in a Bali villa and what is a typical PLN bill?",
+        "What internet speeds and providers are available in Kaba Kaba and Tabanan?",
+        "Do Bali villas use well water, PDAM piped water, or deliveries?"
+      ],
+      "proposedSlug": "bali-villa-utilities-infrastructure-guide",
+      "proposedTitle": "Bali Villa Utilities: Electricity, Water, and Internet",
+      "category": "lifestyle",
+      "isInsight": false,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-investor-kitas-visa",
+      "status": "pending",
+      "priority": 78,
+      "theme": "lifestyle",
+      "atpType": "how",
+      "primaryQuestion": "How does a foreign property investor qualify for a KITAS investor visa to live in Bali?",
+      "targetKeywords": [
+        "Bali investor KITAS visa",
+        "KITAS B211A investor Indonesia",
+        "Bali residency visa PT PMA director"
+      ],
+      "relatedQuestions": [
+        "What is the difference between a KITAS investor visa and the Bali Second Home Visa?",
+        "Does owning a Bali property through a PT PMA qualify me for a KITAS investor visa?",
+        "How long does a KITAS investor visa last and can it be renewed?"
+      ],
+      "proposedSlug": "bali-investor-kitas-visa-guide",
+      "proposedTitle": "Bali Investor KITAS: Residency Through a PT PMA",
+      "category": "lifestyle",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-resale-liquidity",
+      "status": "pending",
+      "priority": 79,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How liquid is the Bali property resale market for foreign investors and how long does it typically take to sell?",
+      "targetKeywords": [
+        "Bali property resale market liquidity",
+        "how long to sell Bali villa",
+        "Bali leasehold resale time"
+      ],
+      "relatedQuestions": [
+        "How do resale timelines for Bali villas compare to Dubai or Portugal?",
+        "What factors make a Bali leasehold easier or harder to resell?",
+        "Is the Bali off-plan resale market more active in certain price brackets?"
+      ],
+      "proposedSlug": "bali-property-resale-market-liquidity",
+      "proposedTitle": "How Liquid Is the Bali Property Resale Market?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-zanzibar-property",
+      "status": "pending",
+      "priority": 80,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Zanzibar for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Zanzibar property investment",
+        "Zanzibar real estate foreigners",
+        "Bali or Zanzibar for investment"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own property in Zanzibar the same way as Bali?",
+        "How do Bali and Zanzibar rental yields compare for villa investors?",
+        "What visa does buying property in Zanzibar give versus Bali?"
+      ],
+      "proposedSlug": "bali-vs-zanzibar-property-investment",
+      "proposedTitle": "Bali vs Zanzibar Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-cost-of-living-comparison",
+      "status": "pending",
+      "priority": 81,
+      "theme": "lifestyle",
+      "atpType": "how",
+      "primaryQuestion": "How does the cost of living in Bali compare to Dubai and major US cities for a foreign resident?",
+      "targetKeywords": [
+        "Bali cost of living vs Dubai",
+        "Bali living costs US expat",
+        "monthly budget living Bali expat"
+      ],
+      "relatedQuestions": [
+        "What does it cost per month to live comfortably in Bali as an expat?",
+        "How much cheaper is Bali than Dubai or Miami for a long-term stay?",
+        "What are the main living costs in Bali: rent, food, transport, healthcare?"
+      ],
+      "proposedSlug": "bali-cost-of-living-vs-dubai-us",
+      "proposedTitle": "Bali Cost of Living vs Dubai and US Cities",
+      "category": "lifestyle",
+      "isInsight": false,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
