@@ -5296,4 +5296,70 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "vat-ppn-new-bali-villa-purchase",
+    title: "VAT on a New Bali Villa: What Buyers Pay and When",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 84,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-09-08",
+    metaDescription:
+      "Buying a new Bali villa from a developer triggers PPN (VAT) at an effective 11%. Learn when it applies, how the PPnBM luxury tax works, and whether a PT PMA can recover it.",
+    body: `<p>When you buy a new villa or off-plan unit directly from a registered developer in Bali, PPN (Indonesia's VAT, or Pajak Pertambahan Nilai) applies at an effective rate of 11 percent of the purchase price. Resale purchases from private individuals do not attract PPN.</p><p>The 11 percent effective rate comes from <a href="https://ortax.org/resmi-pmk-131-2024-atur-ppn-12-persen-hanya-untuk-barang-mewah" data-external="true">PMK 131/2024</a>, the Ministry of Finance regulation that set Indonesia's statutory VAT at 12 percent from January 2025. For most goods and services, including residential property, the rate applies to a reduced tax base known as DPP Nilai Lain, which is 11/12 of the selling price. The arithmetic produces an effective 11 percent. The full 12 percent applies only to items that qualify separately as luxury goods.</p><p>PPN is triggered only when the seller is a PKP, meaning a VAT-registered entrepreneur or company. Off-plan developers are typically PKP-registered businesses, so buying off-plan triggers PPN. Buying the same villa later from an individual owner in a secondary sale does not trigger PPN, though BPHTB (the buyer's acquisition duty, generally 5 percent of the transaction value) still applies in both cases. Always check your purchase agreement to confirm whether the developer's quoted price is inclusive or exclusive of PPN. Many developers list prices before PPN, meaning a IDR 5 billion villa may close at IDR 5.55 billion once VAT is added.</p><p>If the purchase price reaches IDR 30 billion or more (roughly USD 2 million at mid-2026 exchange rates), a separate luxury goods tax called PPnBM applies at 20 percent on top of PPN. Most Bali off-plan villas marketed to foreign buyers sit well below that threshold, so PPnBM is rarely relevant in practice.</p><p>A PT PMA that is registered as a PKP can credit the PPN paid at purchase as input tax against PPN it collects on rental income from guests. When the company issues VAT-compliant tax invoices (faktur pajak) for each guest stay, the PPN paid at acquisition offsets the ongoing output VAT liability, reducing the effective net cost of the levy over time. A PT PMA must register as PKP once annual gross revenue exceeds IDR 4.8 billion, but can register voluntarily before reaching that level. This input tax recovery is a meaningful advantage of the PT PMA structure over a personal leasehold, where no PPN offset is available. This article does not constitute financial or tax advice; consult a licensed Indonesian tax adviser for your specific situation.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Does PPN apply to both off-plan and completed villa purchases from a developer?",
+        answer:
+          "Yes. PPN at an effective 11 percent applies to any new property sold by a PKP-registered developer, whether the villa is off-plan (bought during construction) or newly completed. The trigger is the developer's registration as a VAT entrepreneur (PKP), not the stage of construction. Resale purchases from private individuals do not attract PPN, though BPHTB still applies.",
+      },
+      {
+        question:
+          "At what price does the PPnBM luxury goods tax apply to a Bali villa?",
+        answer:
+          "PPnBM applies when the property purchase price reaches IDR 30 billion or more, roughly USD 2 million at current exchange rates. The PPnBM rate for qualifying luxury real estate is 20 percent, charged on top of PPN. Most Bali off-plan villas marketed to foreign investors fall well below this threshold, so PPnBM is not a practical concern for the majority of buyers.",
+      },
+      {
+        question:
+          "Can a PT PMA recover the 11 percent PPN paid when buying a Bali villa?",
+        answer:
+          "Yes, if the PT PMA is registered as a PKP (taxable entrepreneur), it can treat the PPN paid at purchase as creditable input tax. As the company issues VAT-compliant invoices for rental stays, the PPN paid on the villa acquisition offsets the PPN owed on those rental receipts, reducing the net VAT cost over time. PKP registration is mandatory once annual gross revenue exceeds IDR 4.8 billion, but voluntary registration is possible before that threshold, which is useful during the capital-intensive early phase before rental income begins.",
+      },
+    ],
+    heroImage: "/blog/ppn-vat-property-tax-form-calculator.webp",
+    gallery: [
+      {
+        url: "/blog/new-developer-villa-pool-complex.webp",
+        alt: "New developer villa complex with white modern houses surrounding a large shared swimming pool under a blue sky, representing the type of newly built property from a developer where PPN VAT applies in Bali",
+        credit: "Senfoni Real Estate / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/14548470/",
+      },
+      {
+        url: "/blog/property-vat-invoice-paid-due-calculator.webp",
+        alt: "White papers labeled Paid and Due alongside a black calculator and reading glasses on a clean desk, illustrating the property tax payment obligations including PPN VAT when completing a Bali villa purchase from a developer",
+        credit: "Tara Winstead / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7111490/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "PMK 131/2024 - Indonesian Ministry of Finance regulation setting the 12 percent statutory VAT rate and the DPP Nilai Lain (11/12 tax base) mechanism that produces the 11 percent effective rate on non-luxury goods and services from January 2025 (Tier 1: official DJP publication)",
+        url: "https://ortax.org/resmi-pmk-131-2024-atur-ppn-12-persen-hanya-untuk-barang-mewah",
+      },
+      {
+        label:
+          "ILA Global Consulting: 2026 Guide to Property Tax in Indonesia - PPN applicability to developer sales, PPnBM luxury property threshold at IDR 30 billion, and BPHTB obligations for buyers (Tier 2: established Indonesian legal and company-setup advisory)",
+        url: "https://ilaglobalconsulting.com/property-tax-in-indonesia/",
+      },
+      {
+        label:
+          "Emerhub: Indonesia VAT (PPN) Calculator and PKP registration guide - PKP threshold at IDR 4.8 billion annual revenue, voluntary registration, and input VAT credit mechanism for PT PMA villa operators (Tier 2: established Indonesia market-entry advisory)",
+        url: "https://emerhub.com/indonesia/ppn-calculator/",
+      },
+    ],
+  },
 ];

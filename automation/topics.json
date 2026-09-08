@@ -1439,7 +1439,7 @@
     },
     {
       "id": "vat-ppn-new-bali-villa",
-      "status": "drafting",
+      "status": "published",
       "priority": 56,
       "theme": "tax",
       "atpType": "what",
@@ -1459,7 +1459,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-08",
       "prUrl": null
     },
     {
