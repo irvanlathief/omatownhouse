@@ -1914,7 +1914,7 @@
     },
     {
       "id": "bali-natural-disaster-risk-property",
-      "status": "pending",
+      "status": "published",
       "priority": 75,
       "theme": "investment",
       "atpType": "what",
@@ -1934,8 +1934,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-09",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/118"
     },
     {
       "id": "bali-off-plan-payment-stages",

@@ -5362,4 +5362,71 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-natural-disaster-risk-property-investors",
+    title: "Bali Natural Disaster Risks for Property Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 85,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-09-09",
+    metaDescription:
+      "Bali has 26 active fault lines, two active volcanoes, and seasonal flooding. Here is what foreign property investors need to assess and insure before buying.",
+    body: `<p>Foreign property investors in Bali need to assess three overlapping risks before buying: seismic activity from the island's 26 active fault lines, volcanic exposure from Mount Agung and Mount Batur, and seasonal flooding in low-lying areas. All three are real, well-monitored, and insurable. Where you buy and what riders your policy carries matter as much as the headline risk level.</p><p>On seismic risk, <a href="https://www.bmkg.go.id/" data-external="true">BMKG</a>, Indonesia's national meteorology and geophysics agency, recorded 547 earthquakes in Bali Province in 2025. Only 10 of those were felt at the surface; the rest fell below magnitude 3 or occurred at depths greater than 60 km. The largest event that year reached magnitude 5.4. Bali sits above the Sunda subduction zone, and researchers regard a major megathrust earthquake as a long-term probability. Buildings constructed to Indonesia's SNI 1726 seismic standard carry meaningful structural resilience. Ask your developer for written confirmation that the structural design follows current SNI requirements before you sign.</p><p>On volcanic risk, Mount Agung (3,031 m) erupted in 2017 and 2018 after a 50-year dormancy. Mount Batur, in the north-central caldera, is also active. Kaba Kaba and the broader Tabanan regency sit roughly 50 km west of Agung, outside the primary pyroclastic and lava hazard zones mapped by Indonesia's volcanology authority, <a href="https://vsi.esdm.go.id/" data-external="true">PVMBG</a>. The main practical effect of a moderate Agung eruption on western Bali is ash fall and temporary airport disruption. Direct lava and pyroclastic risk is concentrated in villages on Agung's eastern and southern slopes.</p><p>On flood risk, Bali's wet season runs from November to April. Heavy rainfall causes periodic flooding in river flood plains, coastal lowlands, and poorly drained urban areas. Elevated inland plots in Kaba Kaba and much of Tabanan carry lower flood exposure than beachfront or river-adjacent sites. Check the plot elevation and the developer's site drainage plan before committing.</p><p>To insure all three hazard categories, add two riders to a standard Indonesian FLEXAS or Property All Risks base policy: EQVET, which covers earthquake, volcanic eruption, and tsunami, and FTSWD, which covers flood, storm, and wind damage. Annual base premiums run roughly 0.1 to 0.35 percent of the insured rebuild value before riders are added. This is not financial advice; consult a licensed Indonesian insurance broker to quote the full rider cost for your specific property. A villa that reaches handover without earthquake and flood cover has a gap in protection that no investor should accept.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "How does Bali's seismic and volcanic risk compare to other Southeast Asian property markets?",
+        answer:
+          "The Philippines faces more active volcanic systems and regular typhoons, giving it higher combined natural disaster exposure than Bali. Vietnam and Thailand have significant seasonal flood and tropical storm risk along their coastlines. Bali's seismic event count is high, but most recorded earthquakes are sub-felt microseismic activity. The key differentiator is that Bali's hazards are thoroughly documented, continuously monitored by BMKG and PVMBG, and fully insurable through standard Indonesian policy riders.",
+      },
+      {
+        question: "Can I insure a Bali villa against earthquake and flood?",
+        answer:
+          "Yes. A standard Indonesian FLEXAS or PAR policy covers fire and related perils by default but excludes earthquake, tsunami, and flood. You add two riders: EQVET (earthquake, volcanic eruption, and tsunami) and FTSWD (flood, storm, wind, and damage). Annual base premiums run roughly 0.1 to 0.35 percent of the insured rebuild value before riders are priced in. Get a formal quote from a licensed Indonesian insurance broker, and confirm both riders are active before you accept handover from the developer.",
+      },
+      {
+        question:
+          "Which areas of Bali have the lowest natural disaster risk for property buyers?",
+        answer:
+          "Elevated inland locations in Tabanan and Gianyar tend to carry lower flood and tsunami exposure than low-lying coastal or river-adjacent plots. No part of Bali sits outside the island's seismic zone, but western and central Bali are well away from Mount Agung's primary lava and pyroclastic hazard zones. Coastal properties in south Bali face the greatest combined exposure to tsunami inundation, storm surge, and seasonal flooding.",
+      },
+    ],
+    heroImage: "/blog/bali-mount-batur-volcano-sunset.webp",
+    gallery: [
+      {
+        url: "/blog/tropical-flood-aerial-neighborhood.webp",
+        alt: "Aerial drone view of a tropical Southeast Asian neighborhood with houses partially surrounded by floodwater during a wet season flood event, illustrating the type of seasonal flooding risk that property investors in low-lying Bali areas need to assess before buying",
+        credit: "Pok Rie / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/aerial-view-of-houses-surrounded-by-water-14823614/",
+      },
+      {
+        url: "/blog/indonesia-volcanic-landscape-bromo.webp",
+        alt: "Aerial view of Mount Bromo volcanic crater in East Java surrounded by mist and clouds, illustrating Indonesia's active volcanic landscape and Ring of Fire geology that property investors need to factor into their natural disaster risk assessment for Bali",
+        credit: "Bence Szemerey / Pexels",
+        sourceUrl:
+          "https://www.pexels.com/photo/clouds-over-volcanoes-10290196/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "BMKG (Indonesia Meteorology, Climatology and Geophysics Agency) - seismic monitoring data for Bali Province, including 547 earthquakes recorded in 2025 and continuous fault line hazard mapping (Tier 1: Indonesian government scientific agency)",
+        url: "https://www.bmkg.go.id/",
+      },
+      {
+        label:
+          "PVMBG (Indonesian Center for Volcanology and Geological Hazard Mitigation) - Mount Agung and Mount Batur hazard zone mapping, eruption monitoring, and pyroclastic risk zones (Tier 1: Indonesian Ministry of Energy and Mineral Resources)",
+        url: "https://vsi.esdm.go.id/",
+      },
+      {
+        label:
+          "Be Protected Indonesia - property insurance structure for foreign villa owners in Bali including FLEXAS base policy, EQVET rider (earthquake, volcanic eruption, tsunami), FTSWD rider (flood, storm, wind), and indicative premium ranges (Tier 2: licensed Indonesian insurance broker)",
+        url: "https://www.beprotectedindonesia.com/property-insurance",
+      },
+    ],
+  },
 ];
