@@ -5429,4 +5429,76 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-off-plan-villa-payment-stages",
+    title: "Off-Plan Villa Payment Stages in Bali: What to Expect",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 86,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-09-10",
+    metaDescription:
+      "Bali off-plan villa payments typically split across 5 to 6 construction milestones. Here is what each stage covers, what triggers it, and how it compares to Dubai escrow rules.",
+    body: `<p>The payment plan for a Bali off-plan villa typically splits across five to six stages, from a small reservation fee to a final handover payment, each tied to a verified construction milestone rather than a calendar date. This structure lets you manage cash flow over a build period of 12 to 24 months instead of committing the full purchase price upfront.</p><p>The first stage is a reservation or booking fee, usually 5 to 10 percent of the purchase price, paid to take the unit off the market while you review the land certificate, building permit (PBG), and PPJB draft. Many developers also accept a fixed amount such as USD 5,000 at this stage. Once you sign the PPJB (Perjanjian Pengikatan Jual Beli, the binding pre-sale agreement), the first major tranche of 20 to 30 percent becomes due. This payment is what makes the deal legally documented under Indonesian civil law, so your lawyer should verify the agreement before funds transfer.</p><p>From there, payments track the build: typically 15 to 20 percent when foundations are poured and inspected, 15 to 20 percent when the structural frame and roof are in place, and 10 to 15 percent at finishing and fit-out (tiling, joinery, pool). The final 5 to 10 percent releases at handover, ideally conditional on the developer producing the Sertifikat Laik Fungsi (SLF), the building feasibility certificate that confirms the structure meets safety and zoning standards.</p><p>One important difference from markets like Dubai: <a href="https://dubailand.gov.ae/en/rera/" data-external="true">Dubai's Real Estate Regulatory Agency (RERA)</a> mandates that off-plan deposits go into a dedicated escrow account, released to the developer only as construction progresses. Indonesia has no equivalent law for residential villas. Your payments go directly to the developer's account. This makes the milestone triggers in your PPJB your primary protection. If each payment is conditional on a verifiable build event rather than a fixed date, you retain leverage if the developer falls behind.</p><p>Ask for a construction-linked plan rather than a time-based one. A time-based plan requires payment on fixed calendar dates regardless of how much work has been completed, which transfers the schedule risk to you. Also confirm whether the handover payment is tied to SLF issuance, and what penalty the PPJB specifies if the long-stop handover date slips. Delays of three to six months are common on Bali builds due to permit, labour, and material factors. This is not financial or legal advice; review every payment stage with an independent Indonesian property lawyer before signing.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is the typical payment structure for a Bali off-plan villa?",
+        answer:
+          "Most Bali off-plan developers use a 5 to 6 stage payment plan: roughly 5 to 10 percent reservation fee, 20 to 30 percent on PPJB signing, 15 to 20 percent at foundation, 15 to 20 percent at structure and roof, 10 to 15 percent at finishing and fit-out, and 5 to 10 percent at handover. The exact split varies by developer and is often negotiable, particularly the first and final tranches.",
+      },
+      {
+        question:
+          "What is the difference between a construction-linked and a time-based Bali payment plan?",
+        answer:
+          "A construction-linked plan releases each tranche when a named milestone is completed and verified, such as foundations poured or roof installed. A time-based plan requires payments on fixed calendar dates regardless of build progress. Construction-linked plans are safer for buyers because you are not funding work that has not yet happened and you retain more leverage if the build slips.",
+      },
+      {
+        question:
+          "Does Indonesia require Bali off-plan developers to use an escrow account?",
+        answer:
+          "No. Unlike Dubai, where RERA mandates a dedicated escrow account for off-plan deposits, Indonesia has no equivalent regulation for residential villas. Milestone payments in Bali typically go directly to the developer. This makes the milestone triggers in your PPJB, combined with a developer with a verified track record, the main protections available to you as a buyer.",
+      },
+      {
+        question:
+          "Can I negotiate the payment stages on a Bali off-plan villa?",
+        answer:
+          "Yes. Developers present a standard payment schedule but most will negotiate, especially for cash buyers or buyers committing to a larger upfront tranche. Cash buyers often receive an additional 5 to 10 percent discount in exchange for front-loading the payments. If you need a longer spread, discuss this before signing the PPJB rather than after, as amendments to an existing agreement are more complicated.",
+      },
+    ],
+    heroImage: "/blog/off-plan-payment-schedule-blueprint-contract.webp",
+    gallery: [
+      {
+        url: "/blog/tropical-construction-site-steel-frame-forest.webp",
+        alt: "Construction workers building a steel-frame structure surrounded by tropical forest, showing the mid-construction stage that triggers a milestone payment in a Bali off-plan villa purchase",
+        credit: "Amar Preciado / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/31688485/",
+      },
+      {
+        url: "/blog/off-plan-milestone-inspection-professionals-blueprints.webp",
+        alt: "Three professionals wearing hard hats reviewing architectural blueprints inside a newly constructed building, illustrating a buyer milestone inspection visit before releasing a payment tranche in a Bali off-plan purchase",
+        credit: "Thirdman / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8470039/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Exotiq Property: Buying Off-Plan Property in Bali (2026) - overview of milestone-based payment schedules, construction-linked versus time-based plans, and buyer protections in PPJB agreements (Tier 2: established Bali real estate agency operating since 2005)",
+        url: "https://www.exotiqproperty.com/blog/buying-off-plan-property-in-bali",
+      },
+      {
+        label:
+          "Seven Stones Indonesia: PPJB Indonesia - legal structure of the Perjanjian Pengikatan Jual Beli, milestone payment obligations, and the binding nature of pre-sale agreements under Indonesian civil law (Tier 2: established Indonesian legal and property advisory firm)",
+        url: "https://sevenstonesindonesia.com/blog/ppjb-indonesia/",
+      },
+      {
+        label:
+          "Dubai Land Department / RERA: Off-Plan Property Escrow Account regulations - RERA mandatory escrow requirements for Dubai off-plan deposits, providing a contrast to Bali's unregulated direct-payment model for residential villas (Tier 1: official Dubai real estate regulatory authority)",
+        url: "https://dubailand.gov.ae/en/rera/",
+      },
+    ],
+  },
 ];

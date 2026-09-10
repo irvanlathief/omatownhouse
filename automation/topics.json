@@ -1939,7 +1939,7 @@
     },
     {
       "id": "bali-off-plan-payment-stages",
-      "status": "pending",
+      "status": "drafting",
       "priority": 76,
       "theme": "off-plan",
       "atpType": "how",
