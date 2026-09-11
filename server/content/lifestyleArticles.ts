@@ -5501,4 +5501,85 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-villa-utilities-infrastructure-guide",
+    title: "Bali Villa Utilities: Electricity, Water, and Internet",
+    category: "lifestyle",
+    imageUrl: null,
+    sortOrder: 87,
+    metaDescription:
+      "What electricity, water, and internet can a Bali villa investor expect? PLN tariffs, PDAM vs bore well, IndiHome vs Starlink - a practical guide for US and UAE buyers.",
+    body: `<p>A Bali villa owner in Kaba Kaba or Tabanan draws electricity from PLN (Perusahaan Listrik Negara), Indonesia's state grid, at roughly IDR 1,444 per kWh for the residential R-2 band (3,500 to 5,500 VA), the range most investment villas fall into. For a 2 to 3 bedroom rental with air conditioning running through the day and a pool pump, expect a monthly electricity bill of IDR 1,500,000 to IDR 4,000,000 (about USD 90 to USD 245 at current rates), rising further for larger properties with continuous AC use. PLN tariffs for non-subsidized customers are reviewed quarterly against macroeconomic benchmarks set by the Minister of Energy and Mineral Resources.</p><p>Grid reliability in established parts of south and southwest Bali is generally good, with short, infrequent outages rather than hours-long blackouts. Rural plots in Tabanan and the Kaba Kaba corridor can see longer outages during heavy rain, so many larger villa developments add a generator or a diesel backup for guest-facing units. Solar panels are becoming more common on investor villas: a rooftop array can offset 30 to 60 percent of daytime consumption, though any grid export arrangement still requires PLN approval.</p><p>Water supply depends on where the land sits. Properties within reach of PDAM Tirta Amertha Jati (the Tabanan regency water utility) pay metered rates of roughly IDR 4,000 to IDR 8,500 per cubic metre, giving a typical monthly bill of IDR 100,000 to IDR 250,000 for a household. Many rural villas outside the PDAM service area rely instead on a private bore well, 20 to 70 metres deep depending on the water table. The bore well incurs a one-time drilling cost and no ongoing water charge beyond the pump's electricity draw. Neither PDAM water nor bore well water is drinkable directly: villa guests and residents use refillable 19-litre galon bottles (brands such as Aqua and Club are available within 10 minutes of Kaba Kaba). Water filters or a UV purification unit are standard in any well-managed rental villa.</p><p>For internet, <a href="https://www.telkomsel.com/en/indihome/internet" data-external="true">Telkom IndiHome</a> fiber reaches Tabanan regency and covers most of the Kaba Kaba area. Basic fiber plans start around IDR 230,000 per month for 50 Mbps and scale to IDR 325,000 for 150 Mbps, though peak-hour speeds in rural nodes can drop below the advertised headline. Biznet, which offers more consistent real-world speeds, is available in parts of Tabanan but coverage is patchier the further you move from main roads - confirm availability at the specific plot before committing. <a href="https://bali.live/p/starlink-internet-in-bali-indonesia" data-external="true">Starlink</a> is a viable backup for properties where fiber has not yet arrived, though reported Indonesian download speeds have fallen from around 42 Mbps at launch to closer to 16 Mbps as subscriber numbers have grown. A well-run rental villa typically budgets USD 20 to USD 65 per month for a primary fiber connection, with a 4G mobile data SIM as a failover. When assessing an off-plan project, confirm with the developer what ISP infrastructure they plan to install and whether dedicated business-grade fiber is included in the common-area budget.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Is the PLN electricity supply reliable in Kaba Kaba and Tabanan?",
+        answer:
+          "Reliability in the Kaba Kaba and Tabanan corridor is generally good for a rural area of Bali, with short outages during storms rather than extended cuts. Investment-grade villa developments typically install a backup generator for guest-facing units as a precaution. PLN service quality continues to improve across southwest Bali as tourist and residential demand grows.",
+      },
+      {
+        question:
+          "What is the difference between PDAM water and a bore well in a Bali villa?",
+        answer:
+          "PDAM is the state-run piped water utility. Where it reaches your plot, you pay a metered rate of roughly IDR 4,000 to IDR 8,500 per cubic metre. A bore well draws groundwater from 20 to 70 metres below the surface at a one-time drilling cost, with no ongoing water bill beyond pump electricity. Neither source is drinkable without filtration; 19-litre galon bottles or a UV filter are standard. In rural Tabanan, many villas use a bore well because PDAM pressure does not always reach outlying plots.",
+      },
+      {
+        question: "What internet options are available near Kaba Kaba?",
+        answer:
+          "IndiHome fiber (Telkom) covers Tabanan regency including most of the Kaba Kaba area, with plans from around IDR 230,000 per month for 50 Mbps. Biznet is faster where available but has spottier rural coverage. Starlink is an option for plots not yet on fiber. Budget USD 20 to USD 65 per month for a primary connection and confirm ISP availability at the specific land plot before you sign. A 4G SIM as a failover is cheap insurance for rental guests.",
+      },
+      {
+        question:
+          "How much does electricity cost for a 2-bedroom Bali rental villa?",
+        answer:
+          "A 2-bedroom villa with daily air conditioning and a pool pump typically uses IDR 1,500,000 to IDR 3,000,000 per month in electricity (roughly USD 90 to USD 185 at current exchange rates). Larger 3 to 4 bedroom villas with continuous AC can reach IDR 4,000,000 to IDR 6,000,000 per month. PLN bills non-subsidized residential customers at around IDR 1,444 per kWh for connections in the 3,500 to 5,500 VA range, adjusted quarterly for macroeconomic changes.",
+      },
+    ],
+    publishedAt: "2026-09-11",
+    isInsight: false,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-villa-solar-panel-roof-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/pln-electricity-meter-box-wall.webp",
+        alt: "PLN electricity meter boxes mounted on a white wall, typical of Indonesian residential and villa properties",
+        credit: "Shubham Prajapat via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/30144993/",
+      },
+      {
+        url: "/blog/rooftop-water-tank-storage-villa.webp",
+        alt: "White plastic water storage tanks on a rooftop, a common solution for water supply in Bali villas where PDAM pressure is low",
+        credit: "Shubham Prajapat via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/27566315/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "PT PLN (Persero): Official Electricity Tariff Schedule December 2025 - non-subsidized residential tariffs R-1, R-2, R-3 per kWh, including the quarterly review mechanism under Minister of Energy Regulation No. 7 of 2024 (Tier 1: Indonesian state electricity utility)",
+        url: "https://web.pln.co.id/cms/media/2025/12/tarif-listrik/",
+      },
+      {
+        label:
+          "GlobalPetrolPrices.com: Indonesia Electricity Prices December 2025 - IDR 1,444.70 per kWh residential rate confirmed for non-subsidized households (Tier 2: international energy price database with government-sourced data)",
+        url: "https://www.globalpetrolprices.com/Indonesia/electricity_prices/",
+      },
+      {
+        label:
+          "Petromindo: Indonesian government keeps electricity tariffs unchanged for Q2 2026 - confirms PLN quarterly review mechanism and tariff stability into mid-2026 (Tier 2: Indonesian energy industry news source)",
+        url: "https://www.petromindo.com/news/article/government-keeps-electricity-tariffs-unchanged-for-q2-2026",
+      },
+      {
+        label:
+          "Telkom IndiHome: Internet Plans and Pricing 2025 - fiber broadband packages for residential and villa connections across Bali including Tabanan regency (Tier 2: national telecommunications provider)",
+        url: "https://www.telkomsel.com/en/indihome/internet",
+      },
+      {
+        label:
+          "Databoks/Katadata: Starlink Indonesia download speed drops after one year of operation - reported decline from 42 Mbps at launch to 15.8 Mbps in 2025 as subscriber base grew (Tier 2: Indonesian data journalism platform with cited telco data)",
+        url: "https://databoks.katadata.co.id/en/technology-telecommunications/statistics/68f0ce68d7cee/starlink-internet-speed-drops-after-a-year-of-operation-in-indonesia",
+      },
+    ],
+  },
 ];
