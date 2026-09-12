@@ -1989,7 +1989,7 @@
     },
     {
       "id": "bali-investor-kitas-visa",
-      "status": "drafting",
+      "status": "published",
       "priority": 78,
       "theme": "lifestyle",
       "atpType": "how",
@@ -2009,8 +2009,8 @@
       "category": "lifestyle",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-12",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/122"
     },
     {
       "id": "bali-property-resale-liquidity",
