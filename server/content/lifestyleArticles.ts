@@ -5582,4 +5582,75 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-investor-kitas-visa-guide",
+    title: "Bali Investor KITAS: Residency Through a PT PMA",
+    category: "lifestyle",
+    imageUrl: null,
+    sortOrder: 88,
+    metaDescription:
+      "How does a foreign investor get an investor KITAS to live in Bali? PT PMA capital requirements, duration, renewal, and how it compares to the Second Home Visa.",
+    body: `<p>The investor KITAS (Kartu Izin Tinggal Terbatas, or Temporary Stay Permit) is the main long-stay residency route for foreign nationals who hold a director, commissioner, or shareholder position in an Indonesian PT PMA company. It allows you to live in Indonesia for two years at a time, renewable without a fixed upper limit, and gives you the right to work within the sponsoring company.</p><p>To qualify, your PT PMA must meet the investor KITAS capital threshold. Under <a href="https://sasbali.com/bkpm-regulation-no-5-of-2025-new-pt-pma-capital-rules-explained/" data-external="true">BKPM Regulation No. 5 of 2025</a>, the minimum paid-up capital to incorporate a PT PMA dropped to IDR 2.5 billion, but the threshold to obtain an investor KITAS remained at IDR 10 billion, approximately USD 600,000 to USD 630,000 at current exchange rates. The company must also have a valid NIB (Nomor Induk Berusaha) issued through Indonesia's <a href="https://oss.go.id" data-external="true">OSS system</a>, plus proof of paid-up capital and a registered business address.</p><p>For most property investors who set up a PT PMA to hold a Bali villa in the USD 200,000 to USD 500,000 range, the IDR 10 billion capital bar is a real hurdle. Many of these structures are incorporated at or near the IDR 2.5 billion minimum, which is well short of what the investor KITAS requires.</p><p>A practical alternative is the <a href="/blog/bali-visa-property-owner-investor">Second Home Visa (E33)</a>. It gives five-year renewable residency and requires either a deposit of IDR 2 billion (roughly USD 130,000) held in your own name at an Indonesian state bank, or a qualifying Hak Pakai property valued at USD 1 million or more. No PT PMA, no business activity, and no minimum capital beyond the bank deposit or property threshold. For US and UAE investors whose main goal is long-stay access to Bali, this route is usually more accessible.</p><p>If your PT PMA does meet the IDR 10 billion paid-up capital requirement and you also need the right to work within the company, sign contracts, or draw a director's salary, the investor KITAS makes more sense. After holding it for a qualifying period and meeting a further IDR 15 billion capital threshold, you can apply for a KITAP, Indonesia's permanent stay permit.</p><p>Visa conditions and capital rules can change independently. Confirm current requirements with a licensed Indonesian immigration adviser such as <a href="https://emerhub.com/indonesia/visas/second-home-visa/" data-external="true">Emerhub</a> or <a href="https://ilaglobalconsulting.com/new-pt-pma-registration-rules/" data-external="true">ILA Global Consulting</a> before deciding. This article is for general information only and is not immigration or legal advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is the difference between an investor KITAS and the Bali Second Home Visa?",
+        answer:
+          "The investor KITAS ties your residency to a PT PMA directorship or shareholding and requires IDR 10 billion in paid-up share capital. It permits you to work inside the company. The Second Home Visa (E33) is a financial-threshold test only: you need IDR 2 billion held in your name at an Indonesian state bank, or a qualifying Hak Pakai property worth USD 1 million. It gives five-year renewable residency without requiring any company structure or active business.",
+      },
+      {
+        question:
+          "Does owning a Bali property through a PT PMA qualify me for an investor KITAS?",
+        answer:
+          "Not automatically. The PT PMA must have at least IDR 10 billion in paid-up share capital to sponsor an investor KITAS. PT PMA companies incorporated mainly to hold a single villa often have paid-up capital at the IDR 2.5 billion minimum, which is well below the KITAS threshold. If your capital falls short, the Second Home Visa is the more practical long-stay route.",
+      },
+      {
+        question:
+          "How long does the Bali investor KITAS last and can it be renewed?",
+        answer:
+          "The standard investor KITAS is issued for two years and can be renewed without a fixed limit. After holding an investor KITAS for a qualifying period and meeting a higher capital threshold of IDR 15 billion, you may apply for a KITAP, which is Indonesia's permanent stay permit for investors.",
+      },
+    ],
+    publishedAt: "2026-09-12",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/investor-kitas-application-signing.webp",
+    gallery: [
+      {
+        url: "/blog/investor-kitas-permit-document-review.webp",
+        alt: "Professional investor in a grey suit reviewing official permit documents, representing the process of applying for an investor KITAS residency permit through a PT PMA company in Bali",
+        credit: "A Darmel / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7641840/",
+      },
+      {
+        url: "/blog/bali-villa-jungle-pool-residency.webp",
+        alt: "Tropical jungle infinity pool at a Bali villa surrounded by lush greenery, showing the lifestyle benefit of long-term investor residency through an investor KITAS permit",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/39472110/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "BKPM Regulation No. 5 of 2025 (via SAS Bali Advisory): reduced PT PMA minimum paid-up capital from IDR 10 billion to IDR 2.5 billion, while retaining the IDR 10 billion capital requirement for investor KITAS and IDR 15 billion for investor KITAP (Tier 1: Ministry of Investment / BKPM official regulation)",
+        url: "https://sasbali.com/bkpm-regulation-no-5-of-2025-new-pt-pma-capital-rules-explained/",
+      },
+      {
+        label:
+          "Emerhub: Indonesia Second Home Visa (E33) 2026 - IDR 2 billion bank deposit or USD 1 million Hak Pakai property requirement, five-year duration, renewal to ten years (Tier 2: established Indonesia legal and company-setup advisory firm listed in SOURCES.md)",
+        url: "https://emerhub.com/indonesia/visas/second-home-visa/",
+      },
+      {
+        label:
+          "ILA Global Consulting: New PT PMA Registration Rules 2025 Update - NIB via OSS, paid-up capital requirements, and investor KITAS eligibility criteria (Tier 2: Indonesian foreign investment advisory firm listed in SOURCES.md)",
+        url: "https://ilaglobalconsulting.com/new-pt-pma-registration-rules/",
+      },
+      {
+        label:
+          "Permitindo: What is KITAS and Investor KITAS in Indonesia - explanation of the temporary stay permit framework, investor eligibility, and two-year renewable permit structure (Tier 2: established Indonesian business immigration consultancy)",
+        url: "https://www.permitindo.com/news/what-is-kitas-and-investor-kitas-in-indonesia-business",
+      },
+    ],
+  },
 ];
