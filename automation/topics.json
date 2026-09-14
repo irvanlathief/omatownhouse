@@ -2014,7 +2014,7 @@
     },
     {
       "id": "bali-property-resale-liquidity",
-      "status": "drafting",
+      "status": "published",
       "priority": 79,
       "theme": "investment",
       "atpType": "how",
@@ -2034,8 +2034,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-14",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/123"
     },
     {
       "id": "bali-vs-zanzibar-property",
