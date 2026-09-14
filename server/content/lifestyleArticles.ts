@@ -5653,4 +5653,70 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-property-resale-market-liquidity",
+    title: "How Liquid Is the Bali Property Resale Market?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 89,
+    metaDescription:
+      "Bali property resale takes 3 to 6 months in active areas like Canggu. Learn what affects sale speed, how lease length drives price, and how Bali compares to Dubai.",
+    body: `<p>Bali's property resale market is active, but selling takes longer than most investors expect. A leasehold villa in a high-demand area like Canggu or Berawa can attract a buyer in 3 to 6 months from listing. Allow an additional 4 to 8 weeks for the notarial deed of assignment and tax clearance, so planning a complete exit over 6 to 12 months is realistic.</p><p>Location drives how fast you sell. Canggu and Berawa hold the largest share of Bali villa transactions, attracting digital nomads and lifestyle buyers year-round. Seminyak commands strong prices in the luxury segment with a narrower buyer pool. Areas further from the established tourist corridor, including parts of Tabanan and the Kaba Kaba area, have been growing steadily but still carry a smaller universe of ready buyers, which can extend your timeline.</p><p>Remaining lease term is the single biggest lever on both speed and price. <a href="https://www.exotiqproperty.com/blog/leasehold-title-bali" data-external="true">Leasehold (Hak Sewa)</a> accounts for roughly 82% of supply on the island, and buyers comparison-shop carefully on this point. A villa with 15 years left is a difficult sale. The same property with 35 to 40 years remaining sells faster and at a better price. Legal advisers consistently recommend extending the lease before you list, not during buyer negotiations, to avoid the landowner using that moment to renegotiate renewal terms.</p><p>Sellers who hold through a <a href="/blog/pt-pma-setup-bali-property">PT PMA structure</a> have an alternative exit: transferring company shares to the buyer rather than assigning the lease directly. This sidesteps the landowner consent requirement that can introduce friction in a standard leasehold assignment, and the legal transfer is often quicker to execute when both parties are comfortable with the company structure.</p><p>Compared to Dubai, where the Dubai Land Department's digital title registry allows transfers to close in a matter of weeks, Bali moves more slowly. Documentation, landowner consent, and tax clearance all add time. This is a reasonable trade-off for a market that has seen strong capital growth in well-located corridors, but liquidity should factor into your exit plan from day one. This article provides general information and is not financial or legal advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "How do resale timelines for Bali villas compare to Dubai or Portugal?",
+        answer:
+          "Dubai's Dubai Land Department digital registry allows title transfers to complete in a matter of weeks once a buyer is found, making it one of the fastest property markets in the world. Portugal typically takes 3 to 9 months from listing to completion. Bali sits in a similar range to Portugal for marketing time, but the legal process, particularly obtaining landowner consent on a leasehold assignment and completing the notarial deed of assignment, adds weeks beyond a straightforward European transaction.",
+      },
+      {
+        question:
+          "What factors make a Bali leasehold easier or harder to resell?",
+        answer:
+          "Remaining lease term matters most. Properties with 30 or more years left sell faster and at stronger prices. Location is the second key factor: Canggu and Berawa have the deepest buyer pools on the island. Clean paperwork, including a valid PBG building permit, an SLF feasibility certificate, and a lease contract that explicitly includes an assignment clause, removes the kind of documentation friction that can stall a deal for months.",
+      },
+      {
+        question:
+          "Is the Bali off-plan resale market more active in certain price brackets?",
+        answer:
+          "The sub-USD 400,000 bracket moves fastest, matching the broadest pool of international buyers entering the Bali market for the first time. Villas priced above USD 800,000 attract a narrower buyer pool and can take 12 months or longer to find the right counterparty. Lease term and location still matter at every price point, but the asking price is the first filter for most buyers.",
+      },
+    ],
+    publishedAt: "2026-09-14",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/property-market-liquidity-analysis-chart.webp",
+    gallery: [
+      {
+        url: "/blog/bali-villa-for-sale-listing-signage.webp",
+        alt: "A for sale sign posted in front of a property, representing a Bali villa listed on the resale market by a foreign investor",
+        credit: "Kindel Media / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/for-sale-sign-in-front-of-a-house-7578855/",
+      },
+      {
+        url: "/blog/bali-property-resale-deal-handshake-sold.webp",
+        alt: "Two people shaking hands in front of a sold property sign, representing the completion of a Bali villa resale transaction between a foreign seller and a new buyer",
+        credit: "Kindel Media / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/people-in-dress-shirt-shaking-hands-7578902/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Exotiq Property: Leasehold Title in Bali 2026 Guide - structure of Hak Sewa leasehold, typical durations of 25 to 30 years, assignment clause requirements, and impact of remaining lease term on resale value (Tier 2: established Bali property agency listed in SOURCES.md)",
+        url: "https://www.exotiqproperty.com/blog/leasehold-title-bali",
+      },
+      {
+        label:
+          "Colliers Indonesia: Quarterly Property Market Reports Bali 2025 - Bali villa transaction volumes, area-by-area market activity, and market trends through Q4 2025 (Tier 2: international property adviser with Indonesia coverage listed in SOURCES.md)",
+        url: "https://www.colliers.com/en-id/research/colliers-quarterly-property-market-report-q4-2025-bali-hotel",
+      },
+      {
+        label:
+          "Invest Land Bali: Bali Real Estate Market 2026 - Canggu transaction share, median pricing, leasehold supply percentages, and exit window analysis for foreign investors (Tier 3: established Bali property market analysis platform)",
+        url: "https://investlandbali.com/bali-real-estate-market",
+      },
+    ],
+  },
 ];
