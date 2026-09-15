@@ -5719,4 +5719,60 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-zanzibar-property-investment",
+    title: "Bali vs Zanzibar Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 90,
+    metaDescription: "Bali vs Zanzibar property for foreign investors: leasehold terms, rental yields, residency permits, and tax compared side by side for 2026.",
+    body: `<p>Both Bali and Zanzibar restrict foreign buyers to leasehold, not freehold. In Zanzibar, the Land Tenure Act of 1992 vests all land in the state, and foreigners hold registered leases of up to 99 years through the <a href="https://www.zipa.go.tz/" data-external="true">Zanzibar Investment Promotion Authority (ZIPA)</a>. In Bali, the practical leasehold term runs 25 to 30 years, renewable, or foreigners can hold property via a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> on a Hak Guna Bangunan title. The longer Zanzibar lease term is a genuine structural advantage; Bali's corporate ownership route and deeper resale market partially offset it.</p><p>Beachfront villas in Zanzibar's prime areas (Nungwi, Paje) carry published gross rental yields of 10 to 15%, with high-season occupancy above 90%. Zanzibar welcomed 917,000 international visitors in 2025, a 25% increase year on year. Bali's established corridors in Canggu and Seminyak show gross yields of 8 to 12%, backed by a larger, more liquid short-term rental market and a longer track record of management data. Both sets of figures are before management fees of 20 to 25% and ongoing running costs. This article is general information and not financial advice.</p><p>Purchasing in a ZIPA-approved project for USD 100,000 or more qualifies a buyer for Zanzibar's Residence Permit Class C-11, a two-year renewable card covering the buyer, a spouse, and up to four children. In Bali, the <a href="/blog/bali-visa-property-owner-investor">Second Home Visa</a> requires proof of funds of around USD 130,000; it does not require a property purchase. Foreign investors who own through a PT PMA can apply for a <a href="/blog/bali-investor-kitas-visa-guide">KITAS investor visa</a> tied to a director role in that company.</p><p>Tax treatment differs at two points. Zanzibar taxes non-resident rental income at 15% withholding on gross receipts; a foreign seller pays 10% on capital gains. Bali applies 10% final withholding on gross rental income for non-resident individuals; when you sell, the PPh final tax is 2.5% of the full transaction price regardless of actual profit. Neither regime typically reduces double-taxation exposure for US investors without cross-border tax advice.</p><p>Bali has more than two decades of verifiable short-term rental data and a licensed management infrastructure that Zanzibar is still building. Zanzibar's foreign-buyer market opened around 2010 and gained further legal clarity under the Zanzibar Investment Act of 2023 and updated 2025 regulations. Tanzania's removal from the FATF grey list in 2025 reduced compliance friction for international buyers. Both destinations suit a tropical leasehold investor, but they differ in market depth, legal track record, and resale liquidity.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own property in Zanzibar the same way as Bali?",
+        answer: "Both markets limit foreigners to leasehold, not freehold, but the structures differ. In Zanzibar, ZIPA approves leases of up to 99 years; foreigners can also hold condominium unit titles under the Condominium Act No. 10 of 2010. In Bali, leaseholds typically run 25 to 30 years and are held personally or through a PT PMA company, which can hold Hak Guna Bangunan (right to build) title. Neither country permits freehold land ownership by foreigners.",
+      },
+      {
+        question: "How do Bali and Zanzibar rental yields compare for villa investors?",
+        answer: "Zanzibar's published gross yields for beachfront villas in Nungwi and Paje run 10 to 15% annually. Bali's comparable areas in Canggu and Seminyak show 8 to 12% gross. Both figures are before management fees of 20 to 25% and running costs, which reduce net returns materially. Zanzibar's higher stated yields partly reflect a younger, faster-growing market with less historical data than Bali. Neither figure is a guaranteed return.",
+      },
+      {
+        question: "What visa does buying property in Zanzibar give versus Bali?",
+        answer: "In Zanzibar, investing at least USD 100,000 in a ZIPA-approved project qualifies you for Residence Permit Class C-11, renewable every two years and extendable as long as you hold the property; it covers a spouse and up to four children. In Bali, property ownership does not directly grant a visa, but you can apply for the Second Home Visa (requiring proof of funds, not a property purchase) or obtain a KITAS investor visa by directing a PT PMA company that holds your property.",
+      },
+    ],
+    publishedAt: "2026-09-15",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/zanzibar-stone-town-coastline-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/zanzibar-aerial-turquoise-coast.webp",
+        alt: "Aerial view of a Zanzibar beach showing turquoise Indian Ocean water, white sand, and a traditional wooden dhow boat anchored near the shore",
+        credit: "Saila Holidays Zanzibar / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/25706804/",
+      },
+      {
+        url: "/blog/zanzibar-nungwi-beach-resort-aerial.webp",
+        alt: "Aerial view of Nungwi village on the northern tip of Zanzibar at sunset, showing beachfront resort buildings, turquoise water, and the busy beach below",
+        credit: "Limonovdigital / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8765693/",
+      },
+    ],
+    citations: [
+      {
+        label: "Zanzibar Investment Promotion Authority (ZIPA) - official foreign investment gateway for Zanzibar; administers the 99-year leasehold registration process and the Residence Permit Class C-11 minimum investment threshold of USD 100,000 (Tier 1: Zanzibar government regulatory body)",
+        url: "https://www.zipa.go.tz/",
+      },
+      {
+        label: "RSM Tanzania Tax Guide 2025/26 - rental income withholding tax rate for non-residents (15%), capital gains tax on property sales by foreign sellers (10%), and Tanzania Revenue Authority framework for Zanzibar-based property income (Tier 2: RSM is one of the world's top 10 audit and tax networks)",
+        url: "https://www.rsm.global/tanzania/sites/default/files/media/documents/RSMTZ_Tanzania%20Tax%20Guide%202025-26.pdf",
+      },
+      {
+        label: "Vela Zanzibar: Zanzibar Property Investment Statistics 2025 - beachfront villa gross yields of 10 to 15%, high-season occupancy above 90%, and 917,000 international visitor arrivals in 2025 (25% year-on-year growth) (Tier 2 equivalent: established Zanzibar property agency with published market reports)",
+        url: "https://www.vela-zanzibar.com/blog/zanzibar-property-investment-statistics",
+      },
+    ],
+  },
 ];
