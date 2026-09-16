@@ -2064,7 +2064,7 @@
     },
     {
       "id": "bali-cost-of-living-comparison",
-      "status": "drafting",
+      "status": "published",
       "priority": 81,
       "theme": "lifestyle",
       "atpType": "how",
@@ -2084,8 +2084,8 @@
       "category": "lifestyle",
       "isInsight": false,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-16",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/125"
     }
   ]
 }
