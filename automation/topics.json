@@ -2086,6 +2086,231 @@
       "suggestedVenues": [],
       "publishedAt": "2026-09-16",
       "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/125"
+    },
+    {
+      "id": "bali-vs-italy-property-investment",
+      "status": "published",
+      "priority": 82,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Italy (Tuscany, Amalfi Coast) for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Italy property investment",
+        "Bali or Tuscany for investment",
+        "Italy vs Bali rental yield foreigners"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Italy more easily than in Bali?",
+        "Are Bali or Italian coastal rental yields higher for villas?",
+        "How do taxes compare for foreign property owners in Italy vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-italy-property-investment",
+      "proposedTitle": "Bali vs Italy Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-09-17",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/127"
+    },
+    {
+      "id": "bali-off-plan-assignment-before-completion",
+      "status": "pending",
+      "priority": 83,
+      "theme": "off-plan",
+      "atpType": "can",
+      "primaryQuestion": "Can I resell or assign my Bali off-plan villa to another buyer before construction is complete?",
+      "targetKeywords": [
+        "Bali off-plan assignment before completion",
+        "sell Bali off-plan contract early",
+        "pre-completion resale Bali villa"
+      ],
+      "relatedQuestions": [
+        "Is it legal to assign a Bali PPJB contract to a new buyer before handover?",
+        "What taxes apply when assigning an off-plan Bali contract to another buyer?",
+        "Does the developer need to approve an off-plan assignment in Bali?"
+      ],
+      "proposedSlug": "bali-off-plan-assignment-before-completion",
+      "proposedTitle": "Can You Sell a Bali Off-Plan Contract Before Completion?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-coastal-setback-rules-villa",
+      "status": "pending",
+      "priority": 84,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What are the coastal setback rules in Bali and can you build a villa close to the beach?",
+      "targetKeywords": [
+        "Bali coastal setback rules villa",
+        "building near beach Bali regulations",
+        "Bali beachfront property restrictions"
+      ],
+      "relatedQuestions": [
+        "How far from the shoreline must a Bali villa be built?",
+        "Does the Bali coastal setback rule apply differently to Tabanan vs Canggu?",
+        "What happens to a Bali villa built inside the protected coastal zone?"
+      ],
+      "proposedSlug": "bali-coastal-setback-rules-beachfront-villa",
+      "proposedTitle": "Bali Coastal Setback Rules: Can You Build Near the Beach?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-construction-defect-warranty",
+      "status": "pending",
+      "priority": 85,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What construction defect warranty does a Bali off-plan developer give and how do you enforce it?",
+      "targetKeywords": [
+        "Bali off-plan construction warranty",
+        "developer defect liability Bali villa",
+        "Bali villa defect after handover"
+      ],
+      "relatedQuestions": [
+        "How long is the typical defect warranty period on a new Bali villa?",
+        "What PPJB clauses protect a buyer against construction defects in Bali?",
+        "What can a buyer do if a Bali developer refuses to fix defects after handover?"
+      ],
+      "proposedSlug": "bali-villa-construction-defect-warranty",
+      "proposedTitle": "Bali Off-Plan Defect Warranty: What Buyers Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-rental-villa-seasonality",
+      "status": "pending",
+      "priority": 86,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What are Bali's peak and off-peak rental seasons and how should villa owners prepare?",
+      "targetKeywords": [
+        "Bali villa rental seasonality",
+        "Bali peak rental season months",
+        "Bali off-peak rental income"
+      ],
+      "relatedQuestions": [
+        "When is high season for Bali villa rentals and what rates can I charge?",
+        "How much does Bali villa income drop in the low season?",
+        "What strategies do Bali villa owners use to fill occupancy in low season?"
+      ],
+      "proposedSlug": "bali-villa-rental-seasonality-guide",
+      "proposedTitle": "Bali Villa Rental Seasonality: Peak Months and Income Planning",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-sri-lanka-property-investment",
+      "status": "pending",
+      "priority": 87,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Sri Lanka for foreign property investors: how do they compare in 2026?",
+      "targetKeywords": [
+        "Bali vs Sri Lanka property investment",
+        "Sri Lanka real estate foreigners 2026",
+        "Bali or Galle Sri Lanka for investment"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own property in Sri Lanka the same way as in Bali?",
+        "How do Bali and Sri Lanka rental yields compare for villa investors?",
+        "Is Sri Lanka recovering fast enough to be a viable investment alongside Bali?"
+      ],
+      "proposedSlug": "bali-vs-sri-lanka-property-investment",
+      "proposedTitle": "Bali vs Sri Lanka Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "us-tax-reporting-bali-property",
+      "status": "pending",
+      "priority": 88,
+      "theme": "tax",
+      "atpType": "what",
+      "primaryQuestion": "What US tax forms does an American need to file when owning a Bali rental property?",
+      "targetKeywords": [
+        "US tax Bali property owner FBAR FATCA",
+        "American owning Bali villa US tax reporting",
+        "Form 8938 Indonesia property US citizen"
+      ],
+      "relatedQuestions": [
+        "Does a US citizen need to file an FBAR for an Indonesian bank account holding Bali property income?",
+        "How does a US owner report Indonesian rental income on a US tax return?",
+        "Can a US owner claim a foreign tax credit for Indonesian rental income tax paid?"
+      ],
+      "proposedSlug": "us-tax-reporting-bali-property-owner",
+      "proposedTitle": "US Tax Reporting for Bali Property Owners: FBAR, FATCA, and Form 8938",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-cambodia-property-investment",
+      "status": "pending",
+      "priority": 89,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Cambodia for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Cambodia property investment",
+        "Phnom Penh Siem Reap real estate foreigners",
+        "Bali or Cambodia for investment"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own property in Cambodia more easily than in Bali?",
+        "Are Bali or Cambodia rental yields higher for villa and condo investors?",
+        "How stable is the Cambodian property market compared to Bali?"
+      ],
+      "proposedSlug": "bali-vs-cambodia-property-investment",
+      "proposedTitle": "Bali vs Cambodia Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-outlook-2027",
+      "status": "pending",
+      "priority": 90,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What does the Bali property market look like for 2027 and what should investors watch?",
+      "targetKeywords": [
+        "Bali property market outlook 2027",
+        "Bali real estate forecast 2027",
+        "Bali property investment trends 2027"
+      ],
+      "relatedQuestions": [
+        "Are Bali property prices expected to keep rising in 2027?",
+        "Which Bali areas are forecast to see the strongest growth in 2027?",
+        "What macro risks could slow Bali property growth in 2027?"
+      ],
+      "proposedSlug": "bali-property-market-outlook-2027",
+      "proposedTitle": "Bali Property Market Outlook for 2027",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }

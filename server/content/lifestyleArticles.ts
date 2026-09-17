@@ -5831,4 +5831,60 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-italy-property-investment",
+    title: "Bali vs Italy Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 92,
+    metaDescription: "Bali vs Italy for US and UAE property investors in 2026: freehold ownership, rental yields, annual taxes, and entry prices compared side by side.",
+    body: `<p>Italy lets US and UAE buyers own property freehold in their own name, with no company structure needed. Bali does not. In Bali, foreigners must hold a <a href="/blog/freehold-vs-leasehold-bali">leasehold</a> (typically 25 plus 25 plus 30 years), a Hak Pakai use right, or property via a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a>, each carrying ongoing compliance costs and renewal risk. Italy is structurally simpler for any buyer who wants clean, perpetual title.</p><p>Entry prices sit at different levels. Prime coastal Tuscany runs EUR 3,000 to EUR 10,000 per square metre, and a three-bedroom villa near Forte dei Marmi or on the Amalfi Coast regularly exceeds EUR 2 million. Bali off-plan villas in areas like Kaba Kaba and Tabanan start around USD 200,000 for a two-bedroom, while Canggu completed stock typically runs USD 350,000 to 800,000.</p><p>Purchase costs are broadly similar. Italian second homes from private sellers pay <em>imposta di registro</em> at 9 percent of cadastral value, or 10 percent VAT when buying from a developer; total acquisition costs land at roughly 10 to 15 percent. Bali leasehold buyers pay <a href="/blog/bali-property-transfer-taxes-bphtb">BPHTB at around 5 percent</a> plus notary fees, with the seller's PPh of 2.5 percent folded into the price, totalling roughly 8 to 12 percent.</p><p>Annual holding costs favour Bali. Italian non-residents pay IMU at 0.86 to 1.06 percent of cadastral value per year. Indonesia's PBB land tax is just 0.1 to 0.5 percent of government assessed value. Rental income tax is the larger gap: <a href="https://www.agenziaentrate.gov.it/portale/le-locazioni-brevi-e-la-cedolare-secca" data-external="true">Italy's cedolare secca</a> is 21 percent for a first rental property and 26 percent from a second property onward, both on gross income. Indonesia levies a flat 10 percent final tax on gross rental receipts.</p><p>Rental yields also tilt toward Bali. <a href="https://www.knightfrank.com/research/article/2026/4/europe-prime-housing-markets" data-external="true">Knight Frank's 2026 European prime markets analysis</a> places Italy's best holiday yields at 8 to 9 percent gross in Sicily and Puglia; Tuscany and Amalfi typically show 5 to 6 percent gross given high land prices. Bali's Canggu and Seminyak markets consistently publish 8 to 12 percent gross; Tabanan and Kaba Kaba run 6 to 9 percent. On disposal, Italy charges 26 percent on profit from sales within five years and then exempts gains entirely, while Indonesia applies a flat 2.5 percent final PPh on the gross sale price at any time regardless of holding period.</p><p>Italy's clearest advantage is freehold title security and a potential path to long-stay European residency. Bali's advantages are lower entry prices, higher rental yields, a simpler 10 percent income tax on gross rental receipts, and a tourism market growing faster than southern Europe. Neither destination offers a guaranteed return; independent legal and tax advice in both countries is essential before committing.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own freehold property in Italy more easily than in Bali?",
+        answer: "Yes. US and UAE nationals can buy freehold property in Italy directly in their own name with no company or trust structure required. Italy's land registry system is transparent and title is legally secure under EU property law. In Bali, foreigners cannot hold Hak Milik (freehold) under any circumstances. Their options are a leasehold of up to 25 plus 25 plus 30 years, a Hak Pakai right of use (which requires a valid Indonesian residency permit), or property held through a PT PMA company under Hak Guna Bangunan title. Each Bali structure carries ongoing compliance costs and renewal risk that direct Italian freehold ownership does not.",
+      },
+      {
+        question: "Are Bali or Italian coastal rental yields higher for villas?",
+        answer: "Bali typically delivers higher gross yields for comparable holiday villa assets. Knight Frank's 2026 prime markets analysis shows Italy's strongest holiday yields at 8 to 9 percent gross in Sicily and Puglia, while Tuscany and Amalfi typically show 5 to 6 percent gross because high land prices compress returns. Bali's Canggu and Seminyak short-term rental markets consistently publish 8 to 12 percent gross, and Tabanan and Kaba Kaba run 6 to 9 percent. Both sets of figures are gross before management fees of 20 to 25 percent and running costs, and neither represents a guaranteed return.",
+      },
+      {
+        question: "How do taxes compare for foreign property owners in Italy vs Bali?",
+        answer: "Italy's tax burden on foreign rental owners is materially higher. Rental income in Italy is taxed at 21 percent cedolare secca for a first property and 26 percent from a second property, with IMU annual property tax adding 0.86 to 1.06 percent of cadastral value per year. Indonesia taxes rental income at a flat 10 percent final PPh on gross receipts, and PBB annual land tax is just 0.1 to 0.5 percent of government assessed value. On disposal, Italy charges 26 percent on profit from sales within five years then exempts gains entirely; Indonesia applies a flat 2.5 percent final PPh on the gross sale price at any time, regardless of profit made.",
+      },
+    ],
+    publishedAt: "2026-09-17",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/tuscany-rolling-hills-cypress-trees.webp",
+    gallery: [
+      {
+        url: "/blog/amalfi-coast-cliffside-village-aerial.webp",
+        alt: "Aerial view of the Amalfi Coast in Ravello, Italy, showing cliffside houses with terracotta roofs cascading toward the turquoise Tyrrhenian Sea with mountain ridges in the background",
+        credit: "Small Steps / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-houses-along-the-amalfi-coast-in-italy-19990892/",
+      },
+      {
+        url: "/blog/tuscany-countryside-sunset-hills.webp",
+        alt: "Classic Tuscan countryside at dusk showing a winding cypress-tree lined driveway leading to a farmhouse estate on rolling golden hills near Siena in the Val d'Orcia, Italy",
+        credit: "Dante Munoz / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/sunset-over-rolling-tuscan-hills-and-cypress-trees-28821763/",
+      },
+    ],
+    citations: [
+      {
+        label: "Agenzia delle Entrate (Italian Revenue Agency) - Le locazioni brevi e la cedolare secca: official guidance on the cedolare secca substitute tax at 21% for a first rental property and 26% from a second property, applying to short-term and standard residential leases (Tier 1 equivalent: Italian national tax authority)",
+        url: "https://www.agenziaentrate.gov.it/portale/le-locazioni-brevi-e-la-cedolare-secca",
+      },
+      {
+        label: "GREM Capital: Property Taxes for Foreign Buyers in Italy 2026 - imposta di registro at 9% for second homes from private sellers; 10% VAT from developers; IMU annual property tax 0.86 to 1.06% of cadastral value for non-resident owners; total acquisition costs typically 10 to 15% (Tier 2 equivalent: international property investment advisory)",
+        url: "https://home.grem.capital/en/guides/property-taxes-for-foreign-buyers-in-italy-2026",
+      },
+      {
+        label: "Knight Frank: Europe's Prime Housing Markets 2026 - prime Italian holiday rental yield ranges for Tuscany, Amalfi Coast, Sicily, and Puglia; prime coastal Tuscany price data and year-on-year appreciation (Tier 2: Knight Frank is an established international property adviser listed in SOURCES.md)",
+        url: "https://www.knightfrank.com/research/article/2026/4/europe-prime-housing-markets",
+      },
+    ],
+  },
 ];
