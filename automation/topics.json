@@ -2089,7 +2089,7 @@
     },
     {
       "id": "bali-vs-japan-property-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 82,
       "theme": "investment",
       "atpType": "vs",
@@ -2109,8 +2109,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-19",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/128"
     },
     {
       "id": "singapore-holding-company-bali-property",
