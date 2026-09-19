@@ -5831,4 +5831,69 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-japan-property-investment",
+    title: "Bali vs Japan Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 92,
+    metaDescription:
+      "Bali vs Japan property for foreign investors: ownership rules, rental yields, entry costs, taxes, and residency compared for US and UAE buyers.",
+    body: `<p>The core difference between Bali and Japan for a foreign buyer is ownership. In Japan, foreigners hold freehold land and buildings with no restrictions, no minimum spend, and no government approval. Since April 2026, non-residents must file a post-purchase report under Japan's Foreign Exchange and Foreign Trade Act, but this is a transparency requirement, not an ownership barrier. In Bali, foreigners cannot hold freehold land directly; they use a personal leasehold (typically 25 to 30 years initial term, extendable) or a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> holding Hak Guna Bangunan rights for up to 80 years effective tenure. If clean legal title with no renewal risk is your main criterion, Japan is simpler. If rental yield and entry cost are the priority, Bali competes harder.</p><p><strong>Entry price.</strong> Used condominiums in Tokyo average around JPY 30 million (roughly USD 194,000), with outer-ward apartments in areas such as Adachi or Edogawa starting around USD 150,000 to 260,000 for investment-grade units. In Bali, off-plan villas in emerging corridors such as Kaba Kaba and Tabanan start around USD 160,000 to 250,000; established tourist-zone units range from USD 300,000 to 550,000. Both markets are accessible below USD 500,000.</p><p><strong>Rental yields.</strong> Tokyo central-ward properties return roughly 3.4 to 5.4 percent gross; outer Tokyo and Osaka apartments can reach 5 to 7 percent gross. Bali villa marketing commonly cites 12 to 20 percent gross; a realistic net return after management fees, tax, and maintenance sits closer to 6 to 10 percent. On raw yield, Bali runs two to three times higher than Japan, but it demands more management involvement and has a less liquid resale market.</p><p><strong>Taxes.</strong> Japan's property taxes are nationality-blind: a foreign owner pays the same rates as a Japanese buyer. Capital gains on property held more than five years (measured as of 1 January in the year of sale) are taxed at 20.315 percent of the gain; short-term gains on property held five years or less face 39.63 percent. Corporate tenants are required to withhold 20.42 percent of rent paid to a non-resident individual; individual tenants renting for personal residential use are not required to do so. In Bali, a non-resident seller pays PPh at 2.5 percent of the gross sale price on a leasehold assignment; rental income is typically subject to a 10 percent final tax on gross receipts.</p><p><strong>Residency.</strong> Japan has no property visa: buying real estate creates no immigration right. The only investor-linked residence route is the Business Manager visa, which requires a capital injection of at least JPY 5 million into an active operating business with a physical office in Japan. Bali's Indonesia Second Home Visa grants five to ten years of legal stay against a bank deposit of IDR 2 billion (roughly USD 130,000) or qualifying Hak Pakai property. If residency access through your investment is important, Bali is the clearer path.</p><p>Savills forecasts Tokyo prime residential values rising 4 to 5.9 percent in 2026 after a roughly 30 percent surge in 2025, partly driven by yen weakness drawing international capital. Both markets carry real currency risk: yen volatility and rupiah moves against the dollar can materially affect USD-denominated returns in either direction. <em>This article is for general information only and is not financial or legal advice.</em></p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own freehold property in Japan more easily than in Bali?",
+        answer:
+          "Yes. Japan places no restrictions on foreign property ownership of any kind. Foreigners hold freehold land and buildings on exactly the same legal terms as Japanese nationals, with no government approval, no minimum investment, and no reciprocity condition. Since April 2026, non-residents must file a post-purchase transparency report under the Foreign Exchange and Foreign Trade Act, but this does not restrict ownership. In Bali, foreigners cannot hold freehold land directly. The main legal routes are a personal leasehold (typically 25 to 30 years initial term, extendable) or a PT PMA company holding Hak Guna Bangunan rights for up to 80 years effective tenure.",
+      },
+      {
+        question:
+          "How do Japan and Bali rental yields compare for foreign investors?",
+        answer:
+          "Tokyo central-ward properties yield roughly 3.4 to 5.4 percent gross; outer Tokyo and Osaka apartments can reach 5 to 7 percent gross. Bali villa marketing commonly cites gross yields of 12 to 20 percent, though realistic net returns after management fees, tax, and maintenance sit closer to 6 to 10 percent depending on location and occupancy. Bali yields are higher in absolute terms, but they come with more management intensity, a less liquid resale market, and a more complex ownership structure. Neither figure is a guarantee; treat any projection as a range. This is not financial advice.",
+      },
+      {
+        question: "Does buying property in Japan give a visa or residency?",
+        answer:
+          "No. Purchasing residential property in Japan creates no immigration right. Japan has no golden visa or property-linked residency programme. The only investor-linked pathway is the Business Manager visa, which requires a minimum capital of JPY 5 million in an active Japanese operating business with a physical office, and generally requires genuine business activity rather than passive property holding. In Bali, Indonesia's Second Home Visa grants five to ten years of legal stay against either a bank deposit of IDR 2 billion (roughly USD 130,000) or qualifying Hak Pakai property worth at least USD 1 million.",
+      },
+    ],
+    publishedAt: "2026-09-19",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/tokyo-aerial-shinjuku-cityscape.webp",
+    gallery: [
+      {
+        url: "/blog/tokyo-apartment-twilight.webp",
+        alt: "Japanese residential apartment building illuminated from within at twilight in Tokyo, showing the multi-storey freehold residential property structure available to foreign investors in Japan",
+        credit: "Iban Lopez Luna / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/38172681/",
+      },
+      {
+        url: "/blog/tokyo-apartment-building-modern.webp",
+        alt: "Close-up of a Japanese mid-rise apartment building in Tokyo showing individual balconies and residential units, representing the type of investment property foreigners can buy freehold in Japan",
+        credit: "Iban Lopez Luna / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/38051271/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Housing Japan: Can Foreigners Buy Property in Japan? - confirms foreigners hold freehold land and buildings with no restrictions, no minimum investment, and no government approval requirement (Tier 2: established Tokyo real estate agency)",
+        url: "https://housingjapan.com/resources/can-foreigners-buy-property-in-japan/",
+      },
+      {
+        label:
+          "National Tax Agency Japan: Real Estate Income of Non-Residents (12014) - withholding tax rate of 20.42% applied by corporate tenants to rent paid to non-resident individuals (Tier 1: Japanese government authority)",
+        url: "https://www.nta.go.jp/english/taxes/individual/12014.htm",
+      },
+      {
+        label:
+          "Tokyo Portfolio: Japan Real Estate Market Trends 2026 - Savills forecast of Tokyo prime residential values rising 4 to 5.9 percent in 2026 after roughly 30 percent surge in 2025; central Tokyo yields 3.3 to 5.4 percent gross (Tier 2: market report citing Savills Japan research)",
+        url: "https://tokyoportfolio.com/articles/japan-real-estate-market-trends/",
+      },
+    ],
+  },
 ];
