@@ -1589,7 +1589,7 @@
     },
     {
       "id": "bali-vs-maldives-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 62,
       "theme": "investment",
       "atpType": "vs",
@@ -1609,7 +1609,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-08-23",
       "prUrl": null
     },
     {
@@ -1689,7 +1689,7 @@
     },
     {
       "id": "bali-vs-vietnam-property-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 66,
       "theme": "investment",
       "atpType": "vs",
@@ -1709,8 +1709,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-08-28",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/104"
     },
     {
       "id": "bali-notary-closing-costs",
@@ -1839,7 +1839,7 @@
     },
     {
       "id": "bali-vs-canary-islands-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 72,
       "theme": "investment",
       "atpType": "vs",
@@ -1859,12 +1859,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-05",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/113"
     },
     {
       "id": "bali-villa-sinking-fund-hoa",
-      "status": "drafting",
+      "status": "published",
       "priority": 73,
       "theme": "investment",
       "atpType": "what",
@@ -1884,12 +1884,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-06",
       "prUrl": null
     },
     {
       "id": "bali-vs-philippines-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 74,
       "theme": "investment",
       "atpType": "vs",
@@ -1909,8 +1909,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-07",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/116"
     },
     {
       "id": "bali-natural-disaster-risk-property",
@@ -1939,7 +1939,7 @@
     },
     {
       "id": "bali-off-plan-payment-stages",
-      "status": "drafting",
+      "status": "published",
       "priority": 76,
       "theme": "off-plan",
       "atpType": "how",
@@ -1959,12 +1959,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-10",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/119"
     },
     {
       "id": "bali-expat-utilities-villa",
-      "status": "drafting",
+      "status": "published",
       "priority": 77,
       "theme": "lifestyle",
       "atpType": "what",
@@ -1984,7 +1984,7 @@
       "category": "lifestyle",
       "isInsight": false,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-11",
       "prUrl": null
     },
     {
@@ -2014,7 +2014,7 @@
     },
     {
       "id": "bali-property-resale-liquidity",
-      "status": "drafting",
+      "status": "published",
       "priority": 79,
       "theme": "investment",
       "atpType": "how",
@@ -2034,12 +2034,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-14",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/123"
     },
     {
       "id": "bali-vs-zanzibar-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 80,
       "theme": "investment",
       "atpType": "vs",
@@ -2059,8 +2059,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-15",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/124"
     },
     {
       "id": "bali-cost-of-living-comparison",
@@ -2086,6 +2086,256 @@
       "suggestedVenues": [],
       "publishedAt": "2026-09-16",
       "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/125"
+    },
+    {
+      "id": "bali-vs-japan-property-investment",
+      "status": "drafting",
+      "priority": 82,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Japan for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Japan property investment",
+        "Japan property foreigners freehold",
+        "Bali or Japan for investment"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Japan more easily than in Bali?",
+        "How do Japan and Bali rental yields compare for foreign investors?",
+        "Does buying property in Japan give residency or a visa?"
+      ],
+      "proposedSlug": "bali-vs-japan-property-investment",
+      "proposedTitle": "Bali vs Japan Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "singapore-holding-company-bali-property",
+      "status": "pending",
+      "priority": 83,
+      "theme": "foreign-ownership",
+      "atpType": "can",
+      "primaryQuestion": "Can foreigners use a Singapore or offshore holding company to buy Bali property instead of a PT PMA?",
+      "targetKeywords": [
+        "Singapore holding company Bali property",
+        "offshore company Bali villa ownership",
+        "Singapore LLC buy Bali real estate"
+      ],
+      "relatedQuestions": [
+        "Is a Singapore Pte Ltd a valid structure for holding Bali property?",
+        "What are the risks of using an offshore SPV instead of a PT PMA in Bali?",
+        "How does an offshore company ownership of Bali property affect tax and transfers?"
+      ],
+      "proposedSlug": "singapore-company-bali-property-ownership",
+      "proposedTitle": "Can a Singapore Company Buy Bali Property Instead of a PT PMA?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "us-fbar-bali-pt-pma-tax-reporting",
+      "status": "pending",
+      "priority": 84,
+      "theme": "tax",
+      "atpType": "what",
+      "primaryQuestion": "What US tax forms does an American citizen file for Bali rental income or a PT PMA investment?",
+      "targetKeywords": [
+        "US FBAR Bali property",
+        "FATCA PT PMA reporting US investor",
+        "Form 5471 Bali PT PMA US citizen"
+      ],
+      "relatedQuestions": [
+        "Does a US citizen need to file an FBAR for a PT PMA bank account in Indonesia?",
+        "What is Form 5471 and does a PT PMA trigger it for a US investor?",
+        "How does Bali rental income earned through a PT PMA appear on a US tax return?"
+      ],
+      "proposedSlug": "us-fbar-fatca-bali-pt-pma-reporting",
+      "proposedTitle": "US Tax Filing for Bali Property: FBAR, FATCA, and PT PMA",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-defect-liability-warranty",
+      "status": "pending",
+      "priority": 85,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What construction defect warranty does a Bali off-plan developer owe the buyer at handover?",
+      "targetKeywords": [
+        "Bali off-plan construction warranty",
+        "developer defect liability Bali villa",
+        "Bali off-plan handover defects"
+      ],
+      "relatedQuestions": [
+        "What Indonesian law covers construction defect liability for new villas?",
+        "How long is a Bali developer liable for defects after handover?",
+        "What snag list process should a Bali off-plan buyer follow at handover?"
+      ],
+      "proposedSlug": "bali-off-plan-construction-defect-warranty",
+      "proposedTitle": "Bali Off-Plan Defect Warranty: What Buyers Can Expect",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-leasehold-sublease-rules",
+      "status": "pending",
+      "priority": 86,
+      "theme": "foreign-ownership",
+      "atpType": "can",
+      "primaryQuestion": "Can I sublease my Bali leasehold to a business, management company, or third party?",
+      "targetKeywords": [
+        "Bali leasehold sublease rules",
+        "subletting Bali villa leasehold",
+        "Bali management company sublease contract"
+      ],
+      "relatedQuestions": [
+        "Does a Bali leasehold allow the tenant to sublease to a villa management company?",
+        "What clauses in a Bali lease deed allow or restrict subleasing?",
+        "Can a PT PMA sublease a property it holds under HGB to a short-term rental operator?"
+      ],
+      "proposedSlug": "bali-leasehold-sublease-rules-investors",
+      "proposedTitle": "Bali Leasehold Subleasing: What Foreign Owners Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-sale-proceeds-repatriation",
+      "status": "pending",
+      "priority": 87,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How do I repatriate sale proceeds after selling a Bali property as a foreign investor?",
+      "targetKeywords": [
+        "repatriate Bali property sale proceeds",
+        "transfer money out of Indonesia property sale",
+        "Bank Indonesia sale proceeds foreign investor"
+      ],
+      "relatedQuestions": [
+        "What Bank Indonesia documentation is required to transfer large sale proceeds overseas?",
+        "How long does it take to move property sale proceeds from Indonesia to a US or UAE account?",
+        "Are there limits on how much a foreign investor can repatriate from a Bali property sale?"
+      ],
+      "proposedSlug": "bali-property-sale-proceeds-repatriation",
+      "proposedTitle": "Repatriating Bali Property Sale Proceeds: A Foreign Investor Guide",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-fit-out-rental-ready-cost",
+      "status": "pending",
+      "priority": 88,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What does it cost to furnish and fit out a new Bali off-plan villa ready for short-term rental?",
+      "targetKeywords": [
+        "Bali villa fit out cost",
+        "furnish new Bali villa rental ready",
+        "Bali off-plan fit out budget"
+      ],
+      "relatedQuestions": [
+        "How much should I budget to furnish a 2-bedroom Bali off-plan villa for Airbnb?",
+        "What fit-out items does a Bali developer include versus what the buyer pays for?",
+        "Which villa features most improve rental income in Bali: pool, AC, kitchen, or design?"
+      ],
+      "proposedSlug": "bali-villa-fit-out-cost-rental-ready",
+      "proposedTitle": "Bali Villa Fit-Out Costs: What It Takes to Go Rental-Ready",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-croatia-property-investment",
+      "status": "pending",
+      "priority": 89,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Croatia for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Croatia property investment",
+        "Bali or Dalmatian coast for investment",
+        "Croatia vs Bali rental yield foreigners"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Croatia more easily than in Bali?",
+        "Are Bali or Croatia rental yields higher for coastal villas?",
+        "How do taxes compare for foreign property owners in Croatia vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-croatia-property-investment",
+      "proposedTitle": "Bali vs Croatia Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-first-time-buyer-mistakes-foreigners",
+      "status": "pending",
+      "priority": 90,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What are the most common mistakes foreign first-time buyers make when purchasing Bali property?",
+      "targetKeywords": [
+        "Bali property first-time buyer mistakes",
+        "common errors buying Bali villa foreigner",
+        "Bali off-plan pitfalls foreigners"
+      ],
+      "relatedQuestions": [
+        "What legal mistakes do foreign buyers most often make in a Bali property deal?",
+        "Is it a mistake to skip a local lawyer when buying Bali property?",
+        "What due diligence steps do first-time Bali buyers most often miss?"
+      ],
+      "proposedSlug": "bali-property-buyer-mistakes-guide",
+      "proposedTitle": "Bali Property Mistakes: What First-Time Foreign Buyers Get Wrong",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-spatial-planning-rdtr-development",
+      "status": "pending",
+      "priority": 91,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is Indonesia RDTR spatial planning and how does it affect off-plan villa development near Kaba Kaba?",
+      "targetKeywords": [
+        "RDTR Bali spatial planning villa",
+        "Indonesia RDTR property zoning",
+        "Tabanan RDTR development rules"
+      ],
+      "relatedQuestions": [
+        "What is an RDTR map and how do I read it before buying land in Bali?",
+        "How does RDTR zoning differ from the older RTRW in Bali?",
+        "Can a Bali plot zoned for residential use under RDTR still be used for a rental villa?"
+      ],
+      "proposedSlug": "bali-rdtr-spatial-planning-villa-investors",
+      "proposedTitle": "RDTR Spatial Planning in Bali: What Villa Investors Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
