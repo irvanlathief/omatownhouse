@@ -1589,7 +1589,7 @@
     },
     {
       "id": "bali-vs-maldives-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 62,
       "theme": "investment",
       "atpType": "vs",
@@ -1609,7 +1609,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-20",
       "prUrl": null
     },
     {

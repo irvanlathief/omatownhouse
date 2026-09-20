@@ -5831,4 +5831,60 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-maldives-property-investment",
+    title: "Bali vs Maldives Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 92,
+    metaDescription: "Bali vs Maldives property compared for foreign buyers: ownership rules, leasehold terms, entry price, rental yield, visa options, and lifestyle tradeoffs.",
+    body: `<p>Both Bali and the Maldives offer foreign buyers access to tropical property through leasehold structures, but they work very differently in practice. Bali gives you genuine standalone villa ownership under a leasehold, Hak Pakai, or PT PMA structure, with off-plan entry prices starting around USD 150,000 to 300,000. The Maldives restricts all foreign property to resort-managed units within approved tourism developments, with the market starting closer to USD 500,000 and most meaningful projects priced at USD 1 million or more.</p><p>Neither market allows foreigners to hold freehold land directly. In Bali, the practical pathways are a personal leasehold (typically 25 to 30 years with extension options to around 80 years), Hak Pakai in your own name if you hold an active KITAS, or a PT PMA company that holds a Hak Guna Bangunan title. In the Maldives, the Constitution prohibits direct foreign land ownership entirely. All resort property investment is structured as a long-term head lease from the Ministry of Tourism, typically 50 years with a 50-year extension option, capped at 99 years total, as confirmed by the <a href="https://www.state.gov/reports/2025-investment-climate-statements/maldives" data-external="true">U.S. State Department 2025 Investment Climate Statements for the Maldives</a>.</p><p>On residency, Bali's Second Home Visa grants a renewable stay of 5 to 10 years against a USD 130,000 deposit held in an Indonesian bank account. The Maldives launched its first investor visa in July 2025 through a partnership with Henley and Partners, offering five-year renewable residency for approved investments starting at around USD 250,000, according to <a href="https://www.imidaily.com/asia-pacific/maldives-to-launch-250000-investor-visa-program/" data-external="true">IMI Daily</a>. Neither program requires a minimum physical stay.</p><p>Rental yield comparisons are difficult because the two products are fundamentally different. In Bali, a well-managed villa in Canggu or Tabanan can generate a gross yield in the range of 10 to 15%, with a net yield of 6 to 10% after management fees and Indonesian income tax on rental. Maldives resort operators market projected gross yields of 12 to 14%, but revenue is pooled and split under the hotel operator's revenue-sharing formula, which makes individual unit returns harder to verify independently. This is not financial advice. Yields depend on occupancy, management quality, and market conditions, and are not guaranteed.</p><p>The lifestyle difference may matter most for a buyer who plans to use the property personally. Bali offers a full expat infrastructure: coworking spaces, international schools, restaurants, and a permanent local economy across Canggu, Seminyak, and the Tabanan coast near Kaba Kaba. The Maldives is resort-only by design. There is no local urban environment to embed in, and extended stays mean living within a resort setting. For an investor who wants a second home that is also genuinely rentable at an accessible entry price, Bali gives you flexibility the Maldives cannot match.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own property in the Maldives the same way as in Bali?",
+        answer: "No. In Bali, foreigners can hold genuine standalone villa property through a personal leasehold, Hak Pakai (with an active KITAS), or a PT PMA company structure with HGB title. In the Maldives, the Constitution prohibits direct foreign land ownership entirely. All foreign investment is structured as a long-term head lease from the Ministry of Tourism within an approved resort development, typically 50 years with a 50-year extension option to a maximum of 99 years. Individual unit ownership within a Maldives resort is a sub-leasehold tied to the resort operator, not a separate freestanding title.",
+      },
+      {
+        question: "How do Bali and Maldives rental yields compare for villa or resort property?",
+        answer: "Bali standalone villas in well-managed locations such as Canggu or the Tabanan coast typically generate gross yields in the range of 10 to 15%, with net yields of 6 to 10% after management fees and Indonesian income tax. Maldives resort operators market projected gross yields of 12 to 14%, but returns are pooled across the property under the hotel operator's revenue-sharing formula, which can make individual unit returns harder to predict. Neither figure is a guarantee, and both depend on occupancy, management, and market conditions.",
+      },
+      {
+        question: "What visa does buying property give you in Bali versus the Maldives?",
+        answer: "Bali's Second Home Visa offers a renewable stay of 5 to 10 years for a USD 130,000 deposit held in an Indonesian bank account. The Maldives launched its first investor visa in July 2025 through a partnership with Henley and Partners, granting five-year renewable residency for approved investments starting at around USD 250,000. Bali also offers a KITAS investor visa for PT PMA directors, which provides one to two years of renewable residency tied to the company. Neither program imposes a minimum physical presence requirement.",
+      },
+    ],
+    publishedAt: "2026-09-20",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/maldives-sunset-water-villas.webp",
+    gallery: [
+      {
+        url: "/blog/maldives-beach-huts-overwater.webp",
+        alt: "Ground-level view of Maldives overwater bungalows on a wooden jetty over clear turquoise water, representing the resort-leasehold investment structure available to foreign buyers in the Maldives",
+        credit: "Asad Photo Maldives / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/beach-huts-on-the-sea-in-maldives-9080918/",
+      },
+      {
+        url: "/blog/bali-beachfront-resort-aerial-maldives-compare.webp",
+        alt: "Aerial view of a Bali beachfront resort tucked beneath a forested cliff, with a pool, sandy beach, and turquoise water in the foreground, illustrating Bali's accessible beachfront property market compared to the Maldives",
+        credit: "Tom Fisk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-beachfront-resort-in-bali-36496673/",
+      },
+    ],
+    citations: [
+      {
+        label: "U.S. State Department 2025 Investment Climate Statements: Maldives - confirms foreign land ownership is prohibited by the Maldivian Constitution; all foreign property investment is structured as a long-term leasehold from the Ministry of Tourism, typically 50 years with a 50-year extension option to a maximum of 99 years (Tier 1: U.S. government country-level investment analysis citing Maldivian law)",
+        url: "https://www.state.gov/reports/2025-investment-climate-statements/maldives",
+      },
+      {
+        label: "IMI Daily: Maldives to Launch USD 250,000 Investor Visa Program - details of the July 2025 Maldives investor visa, minimum investment threshold of approximately USD 250,000 in approved property projects, and five-year renewable residency terms (Tier 2: IMI Daily is the leading investment migration industry news source)",
+        url: "https://www.imidaily.com/asia-pacific/maldives-to-launch-250000-investor-visa-program/",
+      },
+      {
+        label: "Coco Development Group: Bali Property Investment Report 2026 - rental yield ranges for Bali villas, gross yields of 10 to 15% in well-managed locations, net yield of 6 to 10% after management fees and tax (Tier 2: established Bali developer and investment consultancy with published market reports)",
+        url: "https://cocodevelopmentgroup.com/blog/bali-property-investment-report/",
+      },
+    ],
+  },
 ];
