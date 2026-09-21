@@ -1589,7 +1589,7 @@
     },
     {
       "id": "bali-vs-maldives-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 62,
       "theme": "investment",
       "atpType": "vs",
@@ -1609,7 +1609,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-08-23",
       "prUrl": null
     },
     {
@@ -1689,7 +1689,7 @@
     },
     {
       "id": "bali-vs-vietnam-property-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 66,
       "theme": "investment",
       "atpType": "vs",
@@ -1709,7 +1709,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-08-28",
       "prUrl": null
     },
     {
@@ -1839,7 +1839,7 @@
     },
     {
       "id": "bali-vs-canary-islands-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 72,
       "theme": "investment",
       "atpType": "vs",
@@ -1859,12 +1859,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-05",
       "prUrl": null
     },
     {
       "id": "bali-villa-sinking-fund-hoa",
-      "status": "drafting",
+      "status": "published",
       "priority": 73,
       "theme": "investment",
       "atpType": "what",
@@ -1884,12 +1884,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-06",
       "prUrl": null
     },
     {
       "id": "bali-vs-philippines-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 74,
       "theme": "investment",
       "atpType": "vs",
@@ -1909,7 +1909,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-07",
       "prUrl": null
     },
     {
@@ -1939,7 +1939,7 @@
     },
     {
       "id": "bali-off-plan-payment-stages",
-      "status": "drafting",
+      "status": "published",
       "priority": 76,
       "theme": "off-plan",
       "atpType": "how",
@@ -1959,12 +1959,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-10",
       "prUrl": null
     },
     {
       "id": "bali-expat-utilities-villa",
-      "status": "drafting",
+      "status": "published",
       "priority": 77,
       "theme": "lifestyle",
       "atpType": "what",
@@ -1984,7 +1984,7 @@
       "category": "lifestyle",
       "isInsight": false,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-11",
       "prUrl": null
     },
     {
@@ -2014,7 +2014,7 @@
     },
     {
       "id": "bali-property-resale-liquidity",
-      "status": "drafting",
+      "status": "published",
       "priority": 79,
       "theme": "investment",
       "atpType": "how",
@@ -2034,12 +2034,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-14",
       "prUrl": null
     },
     {
       "id": "bali-vs-zanzibar-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 80,
       "theme": "investment",
       "atpType": "vs",
@@ -2059,7 +2059,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-09-15",
       "prUrl": null
     },
     {
@@ -2086,6 +2086,231 @@
       "suggestedVenues": [],
       "publishedAt": "2026-09-16",
       "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/125"
+    },
+    {
+      "id": "bali-villa-seasonal-income",
+      "status": "drafting",
+      "priority": 82,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What impact does Bali tourist seasonality have on villa rental income for investors?",
+      "targetKeywords": [
+        "Bali peak season villa rental income",
+        "Bali high season occupancy rate",
+        "Bali villa rental off-peak"
+      ],
+      "relatedQuestions": [
+        "When is Bali peak tourist season and how does it affect villa rental rates?",
+        "How much lower is Bali villa occupancy in the off-peak months?",
+        "How do investors plan cash flow around Bali seasonal demand?"
+      ],
+      "proposedSlug": "bali-villa-seasonal-rental-income-peak-off-peak",
+      "proposedTitle": "Bali Villa Rental Income: Peak vs Off-Peak Season",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-wire-transfer-purchase",
+      "status": "pending",
+      "priority": 83,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How do you send money to Indonesia to pay for a Bali property purchase as a foreign investor?",
+      "targetKeywords": [
+        "send money Indonesia property purchase",
+        "wire transfer Bali villa USD",
+        "international payment Bali property"
+      ],
+      "relatedQuestions": [
+        "What is the cheapest way to transfer USD or AED to Indonesia for a Bali property purchase?",
+        "Does Bank Indonesia require documentation for large inward remittances for property?",
+        "Can I use Wise or a US bank to wire money to a Bali developer?"
+      ],
+      "proposedSlug": "sending-money-to-indonesia-bali-property-purchase",
+      "proposedTitle": "Sending Money to Indonesia for a Bali Property Purchase",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-handover-checklist",
+      "status": "pending",
+      "priority": 84,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What happens at the handover of a Bali off-plan villa and what should you check before signing?",
+      "targetKeywords": [
+        "Bali off-plan villa handover",
+        "Bali property handover checklist",
+        "off-plan Bali completion sign-off"
+      ],
+      "relatedQuestions": [
+        "What documents should a buyer receive at a Bali off-plan villa handover?",
+        "What defects inspection is standard at Bali off-plan handover?",
+        "Can a buyer delay handover acceptance if the SLF is not yet issued?"
+      ],
+      "proposedSlug": "bali-off-plan-villa-handover-process-checklist",
+      "proposedTitle": "Bali Off-Plan Villa Handover: What to Check at Completion",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-japan-property",
+      "status": "pending",
+      "priority": 85,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Japan for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Japan property investment",
+        "Bali or Tokyo for investment",
+        "Japan freehold foreigners vs Bali leasehold"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Japan more easily than in Bali?",
+        "Are Bali or Japan rental yields higher for foreign villa investors?",
+        "How do taxes compare for foreign property owners in Japan vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-japan-property-investment",
+      "proposedTitle": "Bali vs Japan Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-rdtr-spatial-plan-check",
+      "status": "pending",
+      "priority": 86,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How do you verify the RDTR zoning and spatial plan for a Bali plot before buying?",
+      "targetKeywords": [
+        "Bali RDTR zoning check",
+        "Bali spatial plan land use investor",
+        "verify Bali land zoning before purchase"
+      ],
+      "relatedQuestions": [
+        "What is the RDTR and who issues it in Bali?",
+        "How do you check that a Bali parcel is zoned for villas and not green zone or agriculture?",
+        "What happens if you buy Bali land and later discover it is in a restricted zone?"
+      ],
+      "proposedSlug": "bali-rdtr-zoning-spatial-plan-how-to-check",
+      "proposedTitle": "How to Check RDTR Zoning Before Buying Bali Land",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-pt-pma-nominee-director",
+      "status": "pending",
+      "priority": 87,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What is a PT PMA nominee director in Bali and what risks does it create for a foreign owner?",
+      "targetKeywords": [
+        "PT PMA nominee director Bali",
+        "local director PT PMA Indonesia",
+        "nominee shareholder PT PMA Bali risk"
+      ],
+      "relatedQuestions": [
+        "Does a PT PMA in Indonesia need a local Indonesian director?",
+        "What is the legal risk of using a nominee director in a Bali PT PMA?",
+        "How do foreign owners protect themselves from PT PMA nominee director disputes?"
+      ],
+      "proposedSlug": "pt-pma-nominee-director-bali-risks-explained",
+      "proposedTitle": "PT PMA Nominee Directors in Bali: Risks Explained",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-staging-rental-impact",
+      "status": "pending",
+      "priority": 88,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How much does villa staging and professional photography affect Bali short-term rental income?",
+      "targetKeywords": [
+        "Bali villa staging rental rates",
+        "villa photography Airbnb Bali income",
+        "Bali villa interior design rental ROI"
+      ],
+      "relatedQuestions": [
+        "What design features drive higher nightly rates for Bali Airbnb villas?",
+        "Is it worth spending on professional photography for a Bali rental villa?",
+        "What renovation upgrades give the best ROI for a Bali rental villa?"
+      ],
+      "proposedSlug": "bali-villa-staging-photography-rental-income-impact",
+      "proposedTitle": "How Staging and Photography Affect Bali Villa Rental Income",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-oman-property",
+      "status": "pending",
+      "priority": 89,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Oman for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Oman property investment",
+        "Bali or Muscat real estate investor",
+        "Oman integrated tourism complex foreigners vs Bali"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Oman more easily than in Bali?",
+        "How do Bali and Oman rental yields compare for resort villa investors?",
+        "Does buying property in Oman give a residency visa like Bali Second Home Visa?"
+      ],
+      "proposedSlug": "bali-vs-oman-property-investment",
+      "proposedTitle": "Bali vs Oman Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-rent-villa-before-slf",
+      "status": "pending",
+      "priority": 90,
+      "theme": "off-plan",
+      "atpType": "can",
+      "primaryQuestion": "Can you operate a Bali off-plan villa as a short-term rental before the SLF certificate is issued?",
+      "targetKeywords": [
+        "Bali SLF rental operations",
+        "rent Bali villa before SLF certificate",
+        "Bali villa Airbnb before SLF"
+      ],
+      "relatedQuestions": [
+        "Is it legal to list a Bali villa on Airbnb before the SLF is obtained?",
+        "What fines apply if a Bali villa operates without an SLF?",
+        "How long after PBG issuance can an owner expect to receive the SLF?"
+      ],
+      "proposedSlug": "bali-villa-rental-operations-before-slf-certificate",
+      "proposedTitle": "Can You Rent a Bali Villa Before the SLF Is Issued?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }

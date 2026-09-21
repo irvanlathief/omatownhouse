@@ -5831,4 +5831,56 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-villa-seasonal-rental-income-peak-off-peak",
+    title: "Bali Villa Rental Income: Peak vs Off-Peak Season",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 92,
+    metaDescription: "Bali villa rental income peaks in July and December, earning roughly 2x the February low. How seasonal occupancy and nightly rates affect annual yield.",
+    body: `<p>A managed two-bedroom villa in Canggu or Seminyak can gross USD 7,000 to 9,000 per month in July or August, and USD 2,500 to 3,500 per month in February or March. The gap comes from two compounding factors: nightly rates are 30 to 50% higher in peak months, and occupancy rises from roughly 45 to 60% off-peak to 75 to 90% at the height of the season. If you are modelling a purchase, use a blended rate across all 12 months, not the peak figure.</p><p>Bali's seasonality is well-documented. According to <a href="https://bali.bps.go.id/" data-external="true">BPS Bali (Indonesia's Statistics Bureau)</a>, international arrivals in Bali reached 6,948,754 in 2025, up 9.72% year on year. July 2025 alone brought 697,107 arrivals, the highest single month of the year. December showed an 18.5% jump over November as holiday travellers arrived, confirming the dual-peak pattern. Those visitor curves translate almost directly into rental demand.</p><p>Two peak windows matter most. The main peak runs from late June through August, driven by European and Australian school holidays. The secondary peak covers mid-December to early January. Shoulder months, April to June and September to October, typically see occupancy of 55 to 70% with rates about 15 to 20% below peak. These are manageable months. The genuine soft spots are February and March, when many villa operators aggressively discount to fill nights.</p><p>Gross yields of 8 to 12% are cited by <a href="https://www.balipropertygroup.com/" data-external="true">Bali Property Group</a> and other established Bali agencies for well-located managed villas in high-demand areas. Those figures represent gross revenue before management fees of 20 to 25%, maintenance, utilities, and platform commissions. After costs, net yields typically land 4 to 7 percentage points lower. This is not financial advice; actual income depends on management quality, the specific location, villa specification, and booking-channel mix.</p><p>The most effective way to narrow the seasonal gap is channel diversification combined with dynamic pricing. Booking.com and Airbnb attract different traveller profiles with different booking windows. A villa that also has a direct website and an email list of repeat guests sustains occupancy through shoulder months at a higher margin per night. Off-peak guests tend to stay longer, which cuts cleaning and platform costs per night. Some operators in Pererenan and Berawa now report year-round occupancy above 70% using this approach.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "When is Bali peak tourist season and how does it affect villa rental rates?",
+        answer: "Bali has two main peak windows. The primary peak runs from late June through August, when European and Australian school holidays drive a surge in arrivals. A secondary peak covers mid-December to early January. During these periods, BPS data shows single-month international arrivals above 600,000 to 700,000. Villa nightly rates typically run 30 to 50% above off-peak levels, and occupancy in well-managed properties can reach 75 to 90%.",
+      },
+      {
+        question: "How much lower is Bali villa occupancy in the off-peak months?",
+        answer: "February and March are the softest months. Occupancy can drop to 45 to 60% for a typical managed villa, compared to 75 to 90% at peak. Shoulder months such as April to June and September to October sit in between, at roughly 55 to 70%. Annual yield modelling should use a blended rate across all 12 months rather than the peak monthly figure.",
+      },
+      {
+        question: "How do investors plan cash flow around Bali seasonal demand?",
+        answer: "Most Bali villa investors plan for income to concentrate in July to August and December to January, with shoulder months carrying the operation and off-peak months covering only basic costs. Building a 3 to 4 month operating reserve before handover is common practice. Channel diversification across Airbnb, Booking.com, and direct bookings, combined with dynamic pricing in shoulder months, helps lift year-round occupancy. Any income projection should be treated as an estimate, not a guarantee.",
+      },
+    ],
+    publishedAt: "2026-09-21",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-beach-tourists-peak-season.webp",
+    gallery: [
+      {
+        url: "/blog/bali-beach-low-season-relaxing.webp",
+        alt: "A quieter Bali beach scene with a small group of people relaxing on the sand, showing a typical off-peak day compared to the crowded peak season",
+        credit: "Tomi Saputra / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/39233943/",
+      },
+      {
+        url: "/blog/tropical-villa-pool-sunset-evening.webp",
+        alt: "A tropical resort infinity pool at sunset reflecting golden clouds and palm tree silhouettes, illustrating the villa amenities that command premium rates in peak season",
+        credit: "Asad Photo Maldives / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/28408327/",
+      },
+    ],
+    citations: [
+      {
+        label: "BPS Bali (Statistics Indonesia - Bali Province): international visitor arrivals data 2025 showing 6,948,754 total arrivals, July peak of 697,107, and December 18.5% surge over November (Tier 1: Indonesian government official statistics bureau)",
+        url: "https://bali.bps.go.id/",
+      },
+      {
+        label: "Bali Property Group: villa rental yield and occupancy benchmarks for Canggu and Seminyak; gross yields of 8 to 12% cited for well-located managed villas before management fees and operating costs (Tier 2: established Bali real estate agency listed in SOURCES.md)",
+        url: "https://www.balipropertygroup.com/",
+      },
+    ],
+  },
 ];
