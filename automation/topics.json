@@ -2089,7 +2089,7 @@
     },
     {
       "id": "bali-villa-seasonal-income",
-      "status": "drafting",
+      "status": "published",
       "priority": 82,
       "theme": "investment",
       "atpType": "what",
@@ -2109,8 +2109,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-21",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/130"
     },
     {
       "id": "bali-wire-transfer-purchase",
