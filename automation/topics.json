@@ -2089,7 +2089,7 @@
     },
     {
       "id": "us-indonesia-tax-treaty-bali",
-      "status": "drafting",
+      "status": "published",
       "priority": 82,
       "theme": "tax",
       "atpType": "does",
@@ -2109,8 +2109,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-22",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/131"
     },
     {
       "id": "bali-vs-oman-property",
