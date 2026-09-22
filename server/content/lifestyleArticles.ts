@@ -5831,4 +5831,64 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "us-indonesia-tax-treaty-bali-property",
+    title: "US-Indonesia Tax Treaty and Your Bali Investment",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 92,
+    metaDescription: "The US-Indonesia tax treaty (in force since 1990) reduces PT PMA dividend withholding to 10-15% and lets you claim a Foreign Tax Credit to avoid double taxation on Bali rental income.",
+    body: `<p>The US-Indonesia Income Tax Convention, signed in 1988 and in force since 1990, prevents American investors from paying full tax twice on the same Bali income. Under Article 26 of Indonesia's Income Tax Law, non-resident foreign shareholders normally face a 20% withholding on dividends. The treaty reduces that to 15%, or to 10% when a US company owns at least 25% of the Indonesian entity paying the dividend.</p><p>Rental income from Indonesian property is taxed at a flat 10% final rate under Government Regulation No. 34 of 2017 (PP 34/2017). A US investor collecting rent through a PT PMA pays that 10% withheld at source by the tenant or managing agent. It is a final tax: no additional Indonesian income tax is owed on the same rental. Back in the US, the same rental income is subject to ordinary income tax, but <a href="https://www.irs.gov/businesses/international-businesses/indonesia-tax-treaty-documents" data-external="true">IRS Form 1116</a> lets you claim a Foreign Tax Credit for the Indonesian tax already paid. Most American Bali landlords end up paying only the higher of the two rates rather than both stacked.</p><p>Capital gains on selling Indonesian property are treated differently. The treaty preserves Indonesia's right to tax under Article 13, and for non-resident sellers the Article 26 formula applies: a 5% effective rate on the gross sale price (20% withholding applied to a deemed 25% net gain). The Foreign Tax Credit can offset that Indonesian payment against your US federal tax on the same sale. Get independent tax advice before signing any sale agreement, because the outcome shifts with your entity structure and sale price.</p><p>To apply the reduced treaty rates at source, a US investor needs a Certificate of Domicile: <a href="https://www.irs.gov/businesses/international-businesses/indonesia-tax-treaty-documents" data-external="true">IRS Form 6166</a>, a residency certification letter. Without it, the Indonesian withholding agent may default to the 20% non-resident rate. UAE-based investors sit under the separate Indonesia-UAE Double Taxation Agreement, in force since 1995. The UAE has no personal income tax, so UAE resident individuals typically owe nothing extra at home on Bali income. If you hold your PT PMA under a UAE company, take separate advice on the UAE Corporate Tax that took effect in June 2023, and whether your structure qualifies for available exemptions.</p><p>None of this is financial or legal advice. Tax obligations vary with your entity structure, residency status, and the specific agreements that apply to your situation. Consult a qualified tax adviser before making ownership or distribution decisions.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Does the treaty eliminate double taxation on Bali rental income for American investors?",
+        answer: "It does not eliminate the Indonesian 10% final tax under PP 34/2017. What it does is reduce dividend withholding from the default 20% Article 26 rate to 15% (or 10% for qualifying corporate shareholders), and it lets you file IRS Form 1116 to claim a Foreign Tax Credit for Indonesian taxes paid. The credit offsets your US tax dollar for dollar, so you typically end up paying only the higher of the two rates rather than both in full.",
+      },
+      {
+        question: "What dividend withholding rate does a US investor pay on PT PMA profits?",
+        answer: "The treaty rate is 15% on dividends paid to a US shareholder, or 10% if a US company owns at least 25% of the Indonesian entity. Without a valid treaty claim backed by a Certificate of Domicile (IRS Form 6166), the default Article 26 withholding rate is 20%. Your Indonesian tax adviser should submit the treaty rate request in writing before any distribution is made.",
+      },
+      {
+        question: "What do UAE-based Bali property investors owe since UAE has no income tax?",
+        answer: "UAE resident individuals generally owe nothing extra in the UAE on Bali rental income or capital gains, because the UAE has no personal income tax and the Indonesia-UAE Double Taxation Agreement has been in force since 1995. If you hold your PT PMA through a UAE company, you may need to consider the UAE Corporate Tax that took effect in June 2023. Get advice on whether your structure qualifies for available exemptions before distributing profits.",
+      },
+      {
+        question: "How do I claim the Foreign Tax Credit for Indonesian taxes on my US return?",
+        answer: "File IRS Form 1116 with your annual US tax return. You report the Indonesian rental tax (10% under PP 34/2017) or withholding tax as a foreign tax paid, and it reduces your US federal income tax on the same income. Keep records of every withheld amount: your PT PMA administrator or property manager should issue annual statements showing tax withheld. The credit applies per-country and per-income-category, so accurate record-keeping matters.",
+      },
+    ],
+    publishedAt: "2026-09-22",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/treaty-document-exchange-tax-advisors.webp",
+    gallery: [
+      {
+        url: "/blog/us-1040-tax-return-form-individual.webp",
+        alt: "Close-up of a US Form 1040 Individual Income Tax Return on a wooden surface, representing the US tax filing obligations for American owners of Indonesian property",
+        credit: "RDNE Stock project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7821551/",
+      },
+      {
+        url: "/blog/jakarta-financial-district-indonesia.webp",
+        alt: "Jakarta Indonesia central business district showing a wide multi-lane road lined with modern glass-and-steel high-rise office towers, representing Indonesia as the source country in the US-Indonesia income tax treaty",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/32096047/",
+      },
+    ],
+    citations: [
+      {
+        label: "IRS Indonesia Tax Treaty Documents - official US IRS page listing the US-Indonesia Income Tax Convention (signed 1988, in force 1990) and its protocols (Tier 1: US federal government source)",
+        url: "https://www.irs.gov/businesses/international-businesses/indonesia-tax-treaty-documents",
+      },
+      {
+        label: "Directorate General of Taxes (DJP) - Income Tax Article 26 - official Indonesian tax authority page explaining Article 26 withholding on income paid to non-resident foreign taxpayers, including the default 20% rate and treaty reductions (Tier 1: Indonesian government source)",
+        url: "https://www.pajak.go.id/en/income-tax-article-26-income-tax-foreign-taxpayers",
+      },
+      {
+        label: "InvestInAsia: Indonesia Rental Tax Guide - explanation of the 10% final PPh rate under Government Regulation No. 34 of 2017 (PP 34/2017) on rental income from land and buildings in Indonesia (Tier 2: established Indonesia business consultancy)",
+        url: "https://investinasia.id/blog/indonesia-rental-tax-guide/",
+      },
+    ],
+  },
 ];
