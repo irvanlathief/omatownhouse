@@ -2086,6 +2086,256 @@
       "suggestedVenues": [],
       "publishedAt": "2026-09-16",
       "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/125"
+    },
+    {
+      "id": "us-indonesia-tax-treaty-bali",
+      "status": "drafting",
+      "priority": 82,
+      "theme": "tax",
+      "atpType": "does",
+      "primaryQuestion": "Does the US-Indonesia tax treaty protect American Bali property owners from double taxation?",
+      "targetKeywords": [
+        "US Indonesia tax treaty Bali property",
+        "double taxation Bali investment American",
+        "Foreign Tax Credit Indonesia rental income"
+      ],
+      "relatedQuestions": [
+        "Does the US-Indonesia income tax treaty reduce withholding on PT PMA dividends?",
+        "How does a US investor claim a Foreign Tax Credit for Indonesian rental tax paid?",
+        "What does the US-Indonesia treaty say about capital gains on selling a Bali property?"
+      ],
+      "proposedSlug": "us-indonesia-tax-treaty-bali-property",
+      "proposedTitle": "US-Indonesia Tax Treaty and Your Bali Investment",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-oman-property",
+      "status": "pending",
+      "priority": 83,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Oman for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Oman property investment",
+        "Muscat Oman real estate foreigners",
+        "Bali or Oman for investment"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Oman easier than in Bali?",
+        "How do Bali and Oman rental yields compare for villa investors?",
+        "What visa does buying property in Oman give versus Bali?"
+      ],
+      "proposedSlug": "bali-vs-oman-property-investment",
+      "proposedTitle": "Bali vs Oman Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "north-bali-airport-property-impact",
+      "status": "pending",
+      "priority": 84,
+      "theme": "location",
+      "atpType": "how",
+      "primaryQuestion": "How will the new North Bali International Airport affect property values in Tabanan and nearby areas?",
+      "targetKeywords": [
+        "North Bali airport property values",
+        "Bali Utara airport Tabanan real estate",
+        "new Bali airport property investment"
+      ],
+      "relatedQuestions": [
+        "When is the new North Bali airport expected to open?",
+        "Which Bali areas will benefit most from the new airport?",
+        "Has the North Bali airport project affected land prices in Tabanan?"
+      ],
+      "proposedSlug": "north-bali-airport-property-impact",
+      "proposedTitle": "North Bali Airport: What It Means for Property Values",
+      "category": "location",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "build-custom-villa-vs-off-plan-bali",
+      "status": "pending",
+      "priority": 85,
+      "theme": "off-plan",
+      "atpType": "vs",
+      "primaryQuestion": "Should a foreign investor build a custom villa in Bali from scratch or buy off-plan?",
+      "targetKeywords": [
+        "build custom villa Bali foreigners",
+        "build vs buy off-plan Bali",
+        "custom villa construction Bali cost"
+      ],
+      "relatedQuestions": [
+        "What does it cost to build a villa in Bali from scratch versus buying off-plan?",
+        "How long does it take to build a custom villa in Bali?",
+        "What are the legal risks of a self-build versus an off-plan purchase in Bali?"
+      ],
+      "proposedSlug": "build-custom-villa-vs-buy-off-plan-bali",
+      "proposedTitle": "Build a Custom Bali Villa or Buy Off-Plan? A Cost Comparison",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-wet-season-villa-rental",
+      "status": "pending",
+      "priority": 86,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How does Bali's wet season affect villa rental income and how do owners manage the quiet months?",
+      "targetKeywords": [
+        "Bali wet season rental income villas",
+        "Bali rainy season occupancy rates",
+        "Bali villa income off-peak management"
+      ],
+      "relatedQuestions": [
+        "How much does Bali villa occupancy drop during the wet season?",
+        "What strategies do villa owners use to maintain income in the Bali off-season?",
+        "Is the Bali wet season still worth renting out, or should I close for maintenance?"
+      ],
+      "proposedSlug": "bali-wet-season-villa-rental-income",
+      "proposedTitle": "Bali Wet Season: How It Affects Villa Rental Income",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-foreign-trust",
+      "status": "pending",
+      "priority": 87,
+      "theme": "foreign-ownership",
+      "atpType": "can",
+      "primaryQuestion": "Can a US or UAE investor hold Bali property inside a foreign trust for estate planning?",
+      "targetKeywords": [
+        "Bali property foreign trust estate planning",
+        "trust hold Indonesia property",
+        "PT PMA trust structure Bali"
+      ],
+      "relatedQuestions": [
+        "Does Indonesia recognize a foreign discretionary trust as a property holder?",
+        "Can a US living trust own shares in a PT PMA that holds a Bali villa?",
+        "What are the tax implications of holding a PT PMA inside a foreign trust?"
+      ],
+      "proposedSlug": "bali-property-foreign-trust-estate-planning",
+      "proposedTitle": "Can a Foreign Trust Hold Your Bali Property?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-costa-rica-property",
+      "status": "pending",
+      "priority": 88,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Costa Rica for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Costa Rica property investment",
+        "Bali or Costa Rica for investment",
+        "Costa Rica villa rental yield foreigners"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Costa Rica more easily than in Bali?",
+        "Are Bali or Costa Rica rental yields higher for villa investors?",
+        "How do taxes compare for foreign property owners in Costa Rica vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-costa-rica-property-investment",
+      "proposedTitle": "Bali vs Costa Rica Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "indonesia-crs-fatca-foreign-investors",
+      "status": "pending",
+      "priority": 89,
+      "theme": "tax",
+      "atpType": "what",
+      "primaryQuestion": "What do foreign Bali property investors need to know about Indonesia's CRS and FATCA reporting obligations?",
+      "targetKeywords": [
+        "Indonesia CRS reporting foreign investors",
+        "FATCA Indonesia Bali property",
+        "Indonesia automatic exchange of information"
+      ],
+      "relatedQuestions": [
+        "Does Indonesia share my PT PMA financial information with the IRS or US Treasury?",
+        "What is the Common Reporting Standard and how does it affect a foreign Bali property owner?",
+        "Do I need to report a PT PMA bank account to FINCEN under FBAR rules?"
+      ],
+      "proposedSlug": "indonesia-crs-fatca-bali-investor-reporting",
+      "proposedTitle": "Indonesia CRS and FATCA: Reporting Rules for Bali Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-rtrw-spatial-plan-investors",
+      "status": "pending",
+      "priority": 90,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is Bali's RTRW spatial plan and how does it affect where foreign investors can buy or build?",
+      "targetKeywords": [
+        "Bali RTRW spatial plan 2023 property",
+        "Bali regional planning law investors",
+        "Bali land use plan 2023 villa"
+      ],
+      "relatedQuestions": [
+        "What does Bali's 2023 to 2043 RTRW spatial plan say about tourist zone land?",
+        "Can a foreign investor check land use classification before buying in Bali?",
+        "What happened to existing villas on land reclassified under the new Bali RTRW?"
+      ],
+      "proposedSlug": "bali-rtrw-spatial-plan-property-investors",
+      "proposedTitle": "Bali's RTRW Spatial Plan: What Property Investors Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "construction-loan-bali-villa-foreigner",
+      "status": "pending",
+      "priority": 91,
+      "theme": "investment",
+      "atpType": "can",
+      "primaryQuestion": "Can a foreigner get a construction loan to build a villa in Bali?",
+      "targetKeywords": [
+        "construction loan Bali villa foreigner",
+        "Bali villa build financing",
+        "bank loan build villa Indonesia"
+      ],
+      "relatedQuestions": [
+        "What Indonesian banks or lenders offer construction financing for foreign-owned projects?",
+        "Can a PT PMA borrow from an Indonesian bank to fund a villa build in Bali?",
+        "What alternatives exist to bank construction loans for a Bali villa project?"
+      ],
+      "proposedSlug": "construction-loan-bali-villa-foreigners",
+      "proposedTitle": "Can Foreigners Get a Construction Loan to Build a Bali Villa?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
