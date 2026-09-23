@@ -5831,4 +5831,61 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-common-mistakes-foreign-property-buyers",
+    title: "Bali Property Buying Mistakes Foreign Investors Make",
+    category: "investment",
+    imageUrl: "/blog/foreign-buyer-property-mistake-consultation.webp",
+    sortOrder: 92,
+    metaDescription: "The most common mistakes foreign buyers make in Bali: nominee arrangements, skipping KKPR zoning, using only the developer's notary, and more. Avoid costly errors.",
+    body: `<p>The single most expensive mistake foreign buyers make in Bali is using a nominee arrangement, where an Indonesian citizen holds the land title on your behalf. Bali Regional Regulation 4/2026 explicitly criminalised this structure, meaning the local nominee can revoke the title at any time and you have no legal recourse.</p><p>The second costliest error is skipping KKPR (zoning conformity) verification before signing anything. A KKPR check costs roughly USD 100 to 300 through an Indonesian notary or land consultant, and it confirms whether the parcel is zoned for the use you intend. Agricultural green-zone land cannot be legally developed for a villa. Buyers who skip this step sometimes discover the problem only at the building permit stage, after paying a full deposit.</p><p>Third: relying solely on the developer's notary. The developer's PPAT (land deed official) represents the developer's interests. Hiring your own independent PPAT to review the PPJB (binding sale and purchase agreement) costs around USD 200 to 500 and gives you someone whose only obligation is to you.</p><p>Fourth, most leasehold contracts are sold for 25 to 30 years with an option to extend. Buyers who do not negotiate the extension clause, including the renewal price formula, into the original agreement often face steep renegotiation costs when the initial term ends.</p><p>Fifth, many buyers accept handover without checking for the SLF (Sertifikat Laik Fungsi), the occupancy certificate. Without it, the building technically cannot be legally occupied or rented, and rental platforms can delist the property.</p><p>A straightforward due-diligence process, verifying the land certificate directly at the local BPN (National Land Agency) office, completing KKPR, and hiring an independent PPAT, adds roughly USD 500 to 1,200 to a transaction. That is a small amount relative to the purchase price of most Bali villa investments. This article is informational only and does not constitute legal or financial advice. Consult a licensed Indonesian property lawyer before transacting.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Is a nominee arrangement still used in Bali and is it safe?",
+        answer: "Nominee arrangements, where an Indonesian citizen holds land title on behalf of a foreigner, were already legally risky before 2026. Bali Regional Regulation 4/2026 explicitly criminalised the practice. The arrangement gives the nominee full legal title and no Indonesian court will enforce the side agreement in the foreigner's favour. The safe alternatives are leasehold (Hak Sewa), Hak Pakai (right of use), or ownership through a foreign-investment company (PT PMA) holding HGB title.",
+      },
+      {
+        question: "What is KKPR and why do I need it before buying property in Bali?",
+        answer: "KKPR (Kesesuaian Kegiatan Pemanfaatan Ruang) is a zoning conformity document issued by the local government. It confirms whether the land parcel is zoned for the activity you intend, such as villa construction or commercial rental. Without KKPR approval, a building permit (PBG) cannot be issued. Buyers who skip this check before signing a deposit agreement sometimes find they have committed funds to land that cannot be legally built on as planned.",
+      },
+      {
+        question: "Should I use the developer's notary when buying off-plan in Bali?",
+        answer: "You can use the developer's PPAT for the deed itself, but you should hire your own independent Indonesian PPAT or property lawyer to review the PPJB (binding sale and purchase agreement) before you sign. The developer's notary acts for the developer. An independent reviewer costs roughly USD 200 to 500 and protects your interests on payment milestones, cancellation terms, and handover conditions.",
+      },
+      {
+        question: "What is the SLF certificate and why does it matter at handover?",
+        answer: "The SLF (Sertifikat Laik Fungsi) is the Indonesian occupancy certificate confirming the completed building meets construction and safety standards. Without it, the building cannot legally be occupied, and short-term rental platforms can delist the property. Always request evidence of a submitted SLF application before accepting handover, and withhold the final payment until the certificate is issued.",
+      },
+    ],
+    publishedAt: "2026-09-23",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/foreign-buyer-property-mistake-consultation.webp",
+    gallery: [
+      {
+        url: "/blog/property-contract-agent-document-review.webp",
+        alt: "A property professional reviewing a legal document at a desk, representing the independent contract review step buyers should take before signing a PPJB in Bali",
+        credit: "RDNE Stock project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/7641840/",
+      },
+      {
+        url: "/blog/bali-green-zone-agricultural-settlement-aerial.webp",
+        alt: "Aerial view of a Balinese settlement surrounded by green rice paddies, illustrating why KKPR zoning verification matters before buying land in Bali",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/4861031/",
+      },
+    ],
+    citations: [
+      {
+        label: "Emerhub: Property Due Diligence in Bali - steps including BPN certificate verification, KKPR zoning check, and independent PPAT review for foreign buyers (Tier 2: Emerhub is a Jakarta-based business and relocation consultancy listed in SOURCES.md)",
+        url: "https://emerhub.com/bali/property-due-diligence-in-bali/",
+      },
+      {
+        label: "ILA Global Consulting: Property Contract Due Diligence Indonesia - guidance on PPJB review, nominee risks, and SLF occupancy certificate requirements for foreign property buyers (Tier 2: ILA Global Consulting is a Bali-based legal and property advisory firm listed in SOURCES.md)",
+        url: "https://ilaglobalconsulting.com/property-contract-due-diligence-indonesia/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
