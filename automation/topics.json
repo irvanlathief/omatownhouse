@@ -2086,6 +2086,231 @@
       "suggestedVenues": [],
       "publishedAt": "2026-09-16",
       "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/125"
+    },
+    {
+      "id": "bali-vs-costa-rica-property",
+      "status": "published",
+      "priority": 82,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Costa Rica for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Costa Rica property investment",
+        "Bali or Costa Rica for investment",
+        "Costa Rica freehold vs Bali leasehold"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Costa Rica but not Bali?",
+        "Are Bali or Costa Rica rental yields higher for villa investors?",
+        "What residency can I get from buying property in Costa Rica vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-costa-rica-property-investment",
+      "proposedTitle": "Bali vs Costa Rica Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-09-24",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/133"
+    },
+    {
+      "id": "us-tax-reporting-bali-rental-income",
+      "status": "pending",
+      "priority": 83,
+      "theme": "tax",
+      "atpType": "how",
+      "primaryQuestion": "How do I report Bali rental income on my US federal tax return?",
+      "targetKeywords": [
+        "US tax return Bali rental income",
+        "FBAR Bali property US citizen",
+        "foreign tax credit Indonesia US investor"
+      ],
+      "relatedQuestions": [
+        "Do I need to file an FBAR or Form 8938 for a Bali PT PMA account?",
+        "Can I claim a US foreign tax credit for Indonesian withholding tax paid on Bali rental income?",
+        "How do I report PT PMA income on a US tax return?"
+      ],
+      "proposedSlug": "us-tax-reporting-bali-rental-income",
+      "proposedTitle": "Reporting Bali Rental Income on Your US Tax Return",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-cambodia-property",
+      "status": "pending",
+      "priority": 84,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Cambodia for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Cambodia property investment",
+        "Bali or Phnom Penh Siem Reap for investment",
+        "Cambodia LMAP title foreigners vs Bali leasehold"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own property in Cambodia the same way as Bali?",
+        "Are Bali or Cambodia rental yields higher for villa investors?",
+        "How does buying property in Cambodia differ from buying in Bali?"
+      ],
+      "proposedSlug": "bali-vs-cambodia-property-investment",
+      "proposedTitle": "Bali vs Cambodia Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "negotiate-bali-off-plan-price",
+      "status": "pending",
+      "priority": 85,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How do you negotiate an off-plan villa price in Bali as a foreign buyer?",
+      "targetKeywords": [
+        "negotiate Bali off-plan price",
+        "Bali villa price negotiation tips",
+        "off-plan discount Bali developer"
+      ],
+      "relatedQuestions": [
+        "How much discount can you negotiate on an off-plan Bali villa at launch?",
+        "What is the best time to buy off-plan in Bali for the lowest price?",
+        "What negotiating tactics work with Bali property developers?"
+      ],
+      "proposedSlug": "negotiate-off-plan-bali-villa-price",
+      "proposedTitle": "How to Negotiate an Off-Plan Bali Villa Price",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "nusa-penida-vs-bali-mainland-property",
+      "status": "pending",
+      "priority": 86,
+      "theme": "location",
+      "atpType": "vs",
+      "primaryQuestion": "Nusa Penida vs Bali mainland for property investment: is the island worth buying?",
+      "targetKeywords": [
+        "Nusa Penida property investment",
+        "buy property Nusa Penida vs Bali",
+        "Nusa Penida real estate foreigners"
+      ],
+      "relatedQuestions": [
+        "Can foreigners buy property on Nusa Penida the same way as Bali?",
+        "Are Nusa Penida rental yields higher than Bali mainland areas?",
+        "What infrastructure and access challenges exist for Nusa Penida property?"
+      ],
+      "proposedSlug": "nusa-penida-vs-bali-mainland-property",
+      "proposedTitle": "Nusa Penida vs Bali Mainland Property: Worth the Island Premium?",
+      "category": "location",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "what-happens-bali-leasehold-landowner-dies",
+      "status": "pending",
+      "priority": 87,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What happens to my Bali leasehold if the landowner dies before the term ends?",
+      "targetKeywords": [
+        "Bali leasehold landowner dies",
+        "Bali lease security landowner death",
+        "leasehold risk Bali estate transfer"
+      ],
+      "relatedQuestions": [
+        "Does a Bali leasehold survive the death of the landowner?",
+        "How should the PPJB be worded to protect a buyer if the landowner dies?",
+        "Can a Bali landowner's heirs cancel a leasehold early?"
+      ],
+      "proposedSlug": "bali-leasehold-landowner-dies-what-happens",
+      "proposedTitle": "What Happens to Your Bali Leasehold if the Landowner Dies?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-vs-reit-passive-income",
+      "status": "pending",
+      "priority": 88,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali property vs REITs for passive income: which builds wealth faster for a US investor?",
+      "targetKeywords": [
+        "Bali property vs REIT investment",
+        "direct real estate vs REIT Bali",
+        "passive income Bali villa vs stock market"
+      ],
+      "relatedQuestions": [
+        "How do Bali villa yields compare to US REIT dividend yields?",
+        "Is a Bali villa more tax-efficient than a US REIT for a foreign investor?",
+        "What are the liquidity differences between a Bali property and a US REIT?"
+      ],
+      "proposedSlug": "bali-property-vs-reit-passive-income",
+      "proposedTitle": "Bali Property vs REITs: Which Builds More Passive Income?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-oman-property",
+      "status": "pending",
+      "priority": 89,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Oman for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Oman property investment",
+        "Muscat real estate foreigners vs Bali",
+        "Oman ITC freehold foreigners"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Oman through an Integrated Tourism Complex?",
+        "How do Bali and Oman rental yields compare for holiday villas?",
+        "What residency does buying property in Oman give versus Bali?"
+      ],
+      "proposedSlug": "bali-vs-oman-property-investment",
+      "proposedTitle": "Bali vs Oman Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-resale-before-handover",
+      "status": "pending",
+      "priority": 90,
+      "theme": "off-plan",
+      "atpType": "can",
+      "primaryQuestion": "Can I sell a Bali off-plan villa before it is completed and handed over?",
+      "targetKeywords": [
+        "Bali off-plan resale before completion",
+        "sell Bali off-plan contract pre-handover",
+        "flip Bali off-plan investment"
+      ],
+      "relatedQuestions": [
+        "How does a pre-completion assignment of a Bali off-plan contract work legally?",
+        "What tax applies when you resell a Bali off-plan contract before handover?",
+        "Is there a market for pre-completion Bali off-plan resales?"
+      ],
+      "proposedSlug": "bali-off-plan-resale-before-completion",
+      "proposedTitle": "Can You Sell a Bali Off-Plan Villa Before Completion?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }

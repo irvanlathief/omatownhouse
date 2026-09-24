@@ -5831,4 +5831,68 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-costa-rica-property-investment",
+    title: "Bali vs Costa Rica Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 92,
+    metaDescription: "Bali vs Costa Rica property for foreign investors: ownership rules, freehold vs leasehold, rental yields, taxes, and residency options compared.",
+    body: `<p>Costa Rica lets foreigners own property outright with freehold title registered in their own name, while Bali requires either a leasehold or a company structure. That single difference shapes almost everything else in the comparison.</p><p>Outside Costa Rica's maritime zone, any foreigner can register property in the <a href="https://www.registronacional.go.cr" data-external="true">Registro Nacional</a> with no minimum purchase and no residency requirement, holding the same rights as a citizen. The coastal maritime zone is the main exception: the seaward 50 meters is public land, and the next 150 meters can only be held via a municipal concession. Under Ley 6043, foreigners must have resided in Costa Rica for at least five years before holding a concession share, so beachfront titles near tourist towns are often leasehold-style arrangements rather than freehold. In Bali, foreigners cannot hold freehold (SHM title) under any circumstances. Options are a personal leasehold of 25 to 30 years, extendable, or a Hak Guna Bangunan title via a PT PMA company structure.</p><p>On rental yields, both markets reward investors in tourist zones, but Bali can run higher. Gross rental yields in Costa Rica average 7.63% nationally and reach 8 to 12% in beach destinations like Guanacaste and Tamarindo (Global Property Guide, Q2 2026). Short-term occupancy in Guanacaste beach towns averages 45 to 55% annually. Bali short-term rentals in Canggu, Seminyak, and the Tabanan corridor target 8 to 15% gross in well-managed properties. Neither figure is guaranteed; actual returns depend on location, management quality, and seasonality. This is not financial advice.</p><p>Transaction and holding costs differ meaningfully. In Costa Rica, buyer-side purchase costs run roughly 3 to 5%, covering transfer stamps, registration, and notary fees, with an annual property tax of 0.25% of assessed value. Non-resident rental income is taxed at 15% of gross receipts under the simplified capital income regime. In Bali, all-in purchase costs typically reach 10 to 12%: BPHTB acquisition duty of 5%, the seller's PPh income tax of 2.5% (often absorbed into the asking price), and legal or notary fees. Indonesian rental income tax for foreign-owned property is a 10% final withholding on gross rental receipts.</p><p>Residency options also differ. Costa Rica's Inversionista visa lets any foreigner who invests USD 200,000 or more in property registered personally apply for legal residency; maintaining status requires just one day per year in-country. Indonesia offers a Second Home Visa backed by a USD 130,000 deposit in an Indonesian state bank, or an investor KITAS through a PT PMA directorship. For US-based investors, Costa Rica also has the geography advantage: Guanacaste is 5 to 6 hours from the US East Coast by direct flight, compared to 21 hours or more for Bali via a connection.</p><p>For a US investor who wants freehold title, straightforward legal ownership, a lower purchase tax burden, and close proximity to home, Costa Rica is a strong comparison point. Bali suits investors who are comfortable with a leasehold or company structure and are targeting higher gross yields in a Southeast Asian market driven by global tourism and digital nomad demand.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can I own beachfront property in Costa Rica outright as a foreigner?",
+        answer: "Beachfront land within the 200-meter maritime zone is not available for freehold ownership. The seaward 50 meters is public land. The next 150 meters can be held under a municipal concession, but foreigners must have lived in Costa Rica for at least five years to hold a concession share under Ley 6043. Property outside the maritime zone can be held in full freehold by any foreigner with no residency requirement.",
+      },
+      {
+        question: "Which has higher rental yields, Bali or Costa Rica?",
+        answer: "Both markets can deliver competitive yields in tourist zones. Costa Rica beach towns average 8 to 12% gross, with the national average around 7.63% (Global Property Guide, Q2 2026). Bali prime areas like Canggu and Tabanan target 8 to 15% gross for well-managed short-term rentals. Net yields depend on occupancy, management fees, and local taxes. Returns are not guaranteed and this is not financial advice.",
+      },
+      {
+        question: "What residency can I get by buying property in Costa Rica vs Bali?",
+        answer: "In Costa Rica, a USD 200,000 property registered in your personal name qualifies you for the Inversionista residency visa, with a minimum one day per year in-country to maintain status. In Bali, buying property does not directly trigger a visa. Options include Indonesia's Second Home Visa (backed by a USD 130,000 deposit in an Indonesian state bank, not a property purchase) or an investor KITAS by directing a PT PMA company.",
+      },
+      {
+        question: "How do transaction costs compare when buying in Costa Rica vs Bali?",
+        answer: "In Costa Rica, buyer-side costs run roughly 3 to 5% of the purchase price, covering transfer stamps, registration, and notary fees. In Bali, all-in purchase costs typically reach 10 to 12% when adding BPHTB acquisition duty of 5%, the seller's PPh of 2.5%, and legal or notary fees. Annual property tax in Costa Rica is 0.25% of assessed value; in Bali, the equivalent PBB tax is typically 0.1 to 0.5% of the government-assessed value (NJOP).",
+      },
+    ],
+    publishedAt: "2026-09-24",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/costa-rica-guanacaste-coast-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/costa-rica-manuel-antonio-coast-aerial.webp",
+        alt: "Aerial view of Manuel Antonio National Park in Costa Rica showing forested peninsulas, white sand beaches, and vivid blue Pacific Ocean waters, representing the Costa Rica coastal property market",
+        credit: "Costa Rica Drone Tours / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/13501101/",
+      },
+      {
+        url: "/blog/costa-rica-la-fortuna-rainforest.webp",
+        alt: "Aerial view of La Fortuna Waterfall plunging through dense Costa Rica rainforest canopy, representing the tropical natural environment that makes Costa Rica an attractive property investment destination",
+        credit: "Edgar Arroyo / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/16863800/",
+      },
+    ],
+    citations: [
+      {
+        label: "Global Property Guide: Gross Rental Yields in Costa Rica - national average 7.63% in Q2 2026, tourist zone beach towns 8-12% (Guanacaste, Tamarindo, Jaco); occupancy in beach towns averages 45-55% annually (Tier 2 cross-country yield database widely cited by international property media)",
+        url: "https://www.globalpropertyguide.com/latin-america/costa-rica/rental-yields",
+      },
+      {
+        label: "Global Property Guide: Property Taxes, Fees and Costs in Costa Rica - buyer-side transaction costs roughly 3-5%, annual municipal property tax 0.25% of assessed value, non-resident rental income taxed at 15% of gross (simplified capital income regime)",
+        url: "https://www.globalpropertyguide.com/latin-america/costa-rica/taxes-and-costs",
+      },
+      {
+        label: "Farmstead Collection / Pacific Properties: Costa Rica Investor Residency - Inversionista visa minimum investment reverted to USD 200,000 for applications after July 14 2026; property must be registered in applicant's personal name in the Registro Nacional (Tier 3 - corroborated by multiple Costa Rica real estate sources)",
+        url: "https://farmsteadcollection.com/costa-rica-investor-residency-real-estate/",
+      },
+      {
+        label: "Ley 6043 / Zona Maritimo Terrestre: Costa Rica Maritime Zone Law - seaward 50m public zone inalienable, next 150m available only by municipal concession; foreigners without 5 years residency cannot hold concession shares under Article 47 (Tier 1: Costa Rican legislation)",
+        url: "https://osalandoffice.com/costa-rica-property-laws-guide-2026/",
+      },
+    ],
+  },
 ];
