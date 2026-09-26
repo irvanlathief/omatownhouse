@@ -5895,4 +5895,68 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "us-tax-reporting-bali-rental-income",
+    title: "Reporting Bali Rental Income on Your US Tax Return",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 93,
+    metaDescription: "US citizens with Bali rental income report it on Schedule E of Form 1040, claim a foreign tax credit on Form 1116, and may need to file an FBAR. Here is what to report.",
+    body: `<p>If you are a US citizen or green card holder with rental income from a Bali property, you report it on Schedule E of Form 1040 every year, regardless of whether the money stays in Indonesia. The IRS taxes worldwide income, and foreign rental property is no exception.</p><p>Rental receipts and deductible expenses go on Schedule E in US dollars, converted using the IRS-approved annual average exchange rate or the spot rate on each payment date. Allowable deductions include property management fees, insurance, and repairs. One difference from US property: the IRS requires foreign residential rental property to be depreciated over 30 years rather than the 27.5 years that applies to US rentals.</p><p>Indonesia withholds a final tax on rental income: 20% of gross receipts for non-resident individuals under Article 26 of the Income Tax Law (PPh), and 10% of gross receipts for property held through a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a>. Under the 1988 US-Indonesia income tax treaty, that Indonesian tax is creditable. You claim it on Form 1116, which reduces your US liability dollar for dollar up to the credit limit. In practice this prevents most dual-resident investors from paying full tax twice on the same income.</p><p>Beyond the 1040, there are two disclosure forms you should know. If the combined balance of your Indonesian bank accounts or PT PMA accounts exceeded $10,000 at any point during the calendar year, you must file FinCEN Form 114 (the FBAR) by April 15, with an automatic extension to October 15. If specified foreign financial assets exceeded $50,000 at year-end or $75,000 at any point during the year (thresholds double for married couples filing jointly), you also attach Form 8938 to your 1040 under FATCA.</p><p>A US person who owns 50% or more of a PT PMA's shares may additionally be dealing with a Controlled Foreign Corporation under Subpart F. That triggers a Form 5471 filing requirement and may require you to include certain passive income in gross income each year before any dividend is paid. The interaction between Indonesian and US tax rules at this level is genuinely complex, and the cost of a CPA who specializes in international tax compliance is usually worth it. This article is general information only and is not financial or tax advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Do I need to file an FBAR for my Bali PT PMA bank account?",
+        answer: "Yes, if the combined balance of your Bali PT PMA account and any other foreign financial accounts exceeded $10,000 at any single point during the calendar year, you must file FinCEN Form 114 (the FBAR) by April 15, with an automatic extension to October 15. An Indonesian PT PMA corporate bank account counts as a foreign financial account under Bank Secrecy Act rules. Penalties for non-filing can reach $16,536 per violation (2025 IRS figure) for non-willful failures.",
+      },
+      {
+        question: "Can I claim a US foreign tax credit for Indonesian withholding tax on my Bali rental income?",
+        answer: "Yes. Under the 1988 US-Indonesia income tax treaty, Indonesian withholding tax paid on Bali rental income is creditable against your US tax liability. You claim it on Form 1116 of your 1040. The credit is limited to the lower of the foreign tax paid or the US tax otherwise due on that income, so it reduces but may not fully eliminate US tax if your US rate is higher. Keep records of the Indonesian PPh withheld each year as evidence for Form 1116.",
+      },
+      {
+        question: "How do I report income from a Bali PT PMA on my US tax return?",
+        answer: "A US person who owns 50% or more of a PT PMA is likely a US shareholder of a Controlled Foreign Corporation. That requires filing Form 5471 with your annual 1040 and may require you to include Subpart F passive income (such as rental income earned by the company) in your gross income each year, even before the PT PMA pays a dividend. A PT PMA that primarily earns rental income will often generate Subpart F passive income. Seek advice from a CPA experienced in international tax before finalizing your ownership structure.",
+      },
+    ],
+    publishedAt: "2026-09-26",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/us-tax-1040-form-filing-bali-rental.webp",
+    gallery: [
+      {
+        url: "/blog/us-tax-schedule-e-foreign-rental-income.webp",
+        alt: "Two copies of IRS Form 1040 US Individual Income Tax Return laid on a green surface with pencils and paperclips, representing the Schedule E foreign rental income reporting requirement for Bali property owners",
+        credit: "Nataliya Vaitkevich / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/tax-documents-on-the-table-6863190/",
+      },
+      {
+        url: "/blog/us-expat-tax-reporting-income-documents.webp",
+        alt: "Accountant reviewing US dollar banknotes and financial report spreadsheets with a calculator and laptop, representing the process of calculating and reporting foreign rental income on a US tax return",
+        credit: "Tima Miroshnichenko / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/an-accountant-s-workspace-6694492/",
+      },
+    ],
+    citations: [
+      {
+        label: "IRS 2025 Instructions for Schedule E (Form 1040) - foreign rental property reported on Schedule E in USD; 30-year MACRS depreciation for foreign residential rental property; deductible expenses include management fees, insurance, and repairs (Tier 1)",
+        url: "https://www.irs.gov/instructions/i1040se",
+      },
+      {
+        label: "IRS Form 8938 (FATCA) - Statement of Specified Foreign Financial Assets; filing thresholds $50,000 at year-end / $75,000 at any time for single filers, doubled for married filing jointly; attached to annual 1040 (Tier 1)",
+        url: "https://www.irs.gov/forms-pubs/about-form-8938",
+      },
+      {
+        label: "FinCEN / IRS - Foreign Bank Account Report (FBAR, FinCEN Form 114): file if foreign accounts exceeded $10,000 aggregate at any point during the calendar year; due April 15 with automatic extension to October 15 (Tier 1)",
+        url: "https://www.irs.gov/newsroom/details-on-reporting-foreign-bank-and-financial-accounts",
+      },
+      {
+        label: "Greenback Tax Services - Reporting Rental Income from Foreign Property: IRS worldwide income requirement, Schedule E filing, Form 1116 foreign tax credit for taxes paid to Indonesia, 30-year depreciation for foreign property (Tier 2 established expat tax firm)",
+        url: "https://www.greenbacktaxservices.com/knowledge-center/report-rental-income-foreign-property/",
+      },
+      {
+        label: "US-Indonesia Income Tax Treaty (1988, as amended) - Article on foreign tax credit and relief from double taxation for US citizens earning Indonesian-source income including rental income (Tier 1: IRS treaty documents)",
+        url: "https://www.irs.gov/businesses/international-businesses/indonesia-tax-treaty-documents",
+      },
+    ],
+  },
 ];
