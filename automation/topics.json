@@ -2139,7 +2139,7 @@
     },
     {
       "id": "bali-vs-cambodia-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 84,
       "theme": "investment",
       "atpType": "vs",
@@ -2159,8 +2159,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-27",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/135"
     },
     {
       "id": "negotiate-bali-off-plan-price",
