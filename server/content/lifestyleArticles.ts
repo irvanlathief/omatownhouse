@@ -5959,4 +5959,64 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-cambodia-property-investment",
+    title: "Bali vs Cambodia Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 94,
+    metaDescription: "Bali vs Cambodia property for foreigners: Cambodia offers strata-title condo ownership; Bali offers higher villa yields via leasehold or PT PMA. Here is how they compare.",
+    body: `<p>Bali and Cambodia both attract foreign buyers, but the ownership structures and market dynamics are quite different. In Cambodia, foreigners can hold a strata title to a condominium unit outright under the 2010 Foreign Ownership Law, buying a unit above the ground floor in a building where foreigners collectively own no more than 70 percent of units. In Bali, direct freehold ownership is not available to foreigners. The standard routes are a registered leasehold or holding property through a <a href="/blog/pt-pma-setup-bali-property" >PT PMA</a> (foreign-owned company).</p><p>On yield, Bali's established villa market in areas like <a href="/blog/canggu-vs-tabanan-property-investment" >Canggu and Tabanan</a> has delivered gross rental yields in the 8 to 12 percent range for well-managed properties, though outcomes vary and past performance is not a guarantee of future returns. In Cambodia, <a href="https://ips-cambodia.com/cambodia-real-estate-investment-for-foreign-buyers-2026/" data-external="true">IPS Cambodia</a> reports gross yields in Phnom Penh's prime BKK1 district running 7 to 8 percent for modern condominiums, with Siem Reap averaging 5 to 7 percent and subject to sharp seasonal swings tied to Angkor Wat tourism. This article is general information, not financial advice.</p><p>Purchase costs differ too. Cambodia charges a 4 percent stamp duty on the transaction value, with no foreigner surcharge. From January 2026, Cambodia also applies a flat 20 percent capital gains tax on real estate sale gains, a rule introduced by Sub-Decree No. 72 (2021) and fully extended to residential property in 2026. Bali buyers face a 5 percent transfer tax (BPHTB) on the purchase side and a 2.5 percent final income tax on the seller's gross proceeds. There is currently no separate capital gains tax for foreigners selling a leasehold assignment in Indonesia.</p><p>Cambodia's market has a more frontier character. Phnom Penh's condominium sector has matured, but the coastal city of Sihanoukville experienced a severe boom-bust cycle between 2017 and 2020 tied to casino investment that collapsed, wiping out many foreign buyers. The Siem Reap market depends almost entirely on Angkor Wat tourism, which has not fully recovered to its 2019 peak of 2.2 million international arrivals. Bali's tourism base is more diversified across luxury travel, wellness, surf, and cultural tourism, and international visitor numbers recovered strongly after 2022.</p><p>For a US or UAE investor who wants a short-term rental villa with established management, Bali's market is more liquid and the infrastructure is more tested. Cambodia suits a buyer who wants simpler outright condo ownership, is comfortable with a frontier market, and targets Phnom Penh's expatriate rental pool rather than leisure tourism income. Legal advice from a licensed Indonesian or Cambodian lawyer is essential before committing to either market.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own property in Cambodia the same way as in Bali?",
+        answer: "Not exactly. In Cambodia, foreigners can hold a strata title to a condominium unit outright on the first floor or above, as long as foreigners collectively own no more than 70 percent of the units in that building. This is a form of direct ownership that is not available in Bali, where foreigners must use a leasehold or a PT PMA company structure. In both countries, foreigners cannot own freehold land directly.",
+      },
+      {
+        question: "Are Bali or Cambodia rental yields higher for villa investors?",
+        answer: "Bali's established villa market has delivered gross yields in the 8 to 12 percent range in well-located areas like Canggu and Tabanan, though results vary widely by property and management quality. Cambodia's Phnom Penh condo market runs roughly 7 to 8 percent gross in prime districts. Siem Reap yields are lower at 5 to 7 percent and seasonal. Neither market guarantees returns. This is general information, not financial advice.",
+      },
+      {
+        question: "How does buying property in Cambodia differ from buying in Bali?",
+        answer: "The main difference is the ownership vehicle. In Cambodia, you can buy a condominium unit with a strata title in your own name, paying a 4 percent stamp duty with no foreigner surcharge. A 20 percent capital gains tax on sale applies from January 2026. In Bali, foreigners typically sign a leasehold or set up a PT PMA to hold the property, paying a 5 percent transfer tax as buyer. Bali's resale market is dominated by villas rather than condominiums, and the tourism market is more established.",
+      },
+    ],
+    publishedAt: "2026-09-27",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/phnom-penh-skyline-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/angkor-wat-siem-reap-cambodia.webp",
+        alt: "Angkor Wat temple complex in Siem Reap, Cambodia, the country's main tourism draw and the primary driver of rental demand in the Siem Reap property market",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/angkor-wat-temple-under-clear-blue-sky-37251709/",
+      },
+      {
+        url: "/blog/phnom-penh-independence-monument-night.webp",
+        alt: "Aerial night view of Phnom Penh, Cambodia, showing the illuminated Independence Monument, the Tonle Sap and Mekong rivers, and modern high-rise development including The Peak tower, illustrating the city's growing real estate market",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-phnom-penh-cambodia-at-twilight-19063351/",
+      },
+    ],
+    citations: [
+      {
+        label: "Cambodia Law on Foreign Property Ownership (2010) - foreigners may hold strata title to condominium units on floors above ground level, with foreigners capped at 70% of units per building (Tier 1: Cambodian legislation explained via realestate.com.kh)",
+        url: "https://www.realestate.com.kh/investment-guide/foreign-property-ownership-mechanisms/",
+      },
+      {
+        label: "IPS Cambodia Real Estate Investment Guide 2026 - Phnom Penh gross rental yields 7-8% in prime districts; Cambodia average gross yield approximately 7.68% (Q3 2025) (Tier 2: established Cambodia real estate agency)",
+        url: "https://ips-cambodia.com/cambodia-real-estate-investment-for-foreign-buyers-2026/",
+      },
+      {
+        label: "Khmer Times - Cambodia Property Taxes 2025: 4% stamp duty on property transfers, no foreigner surcharge; capital gains tax of 20% extended to real estate transactions from January 2026 (Tier 3: corroborated by PWC Cambodia tax summaries)",
+        url: "https://www.khmertimeskh.com/501645163/cambodian-property-taxes-in-2025-what-you-need-to-know-when-buying/",
+      },
+      {
+        label: "PwC Worldwide Tax Summaries - Cambodia: capital gains tax rate 20% flat; real estate transactions included from January 2026 under Sub-Decree No. 72 (Tier 1: major professional services firm Cambodia tax reference)",
+        url: "https://taxsummaries.pwc.com/cambodia/corporate/other-taxes",
+      },
+    ],
+  },
 ];
