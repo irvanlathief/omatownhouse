@@ -6019,4 +6019,60 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "negotiate-off-plan-bali-villa-price",
+    title: "How to Negotiate an Off-Plan Bali Villa Price",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 95,
+    metaDescription: "Negotiate an off-plan Bali villa price with confidence. Phase 1 buyers save 10-20% vs completion value. Cash buyers save an extra 5-8%. Here is what else to ask for.",
+    body: `<p>The biggest discount on a Bali off-plan villa comes before construction starts. Buying in Phase 1 or a pre-launch VIP allocation typically places you 10 to 20 percent below the projected market value at handover, and some founders rounds go deeper still. By the time a project reaches Phase 3 with 60 percent of the build complete, the same unit type often costs 20 to 30 percent more than the Phase 1 list price, according to Bali agency data from <a href="https://www.exotiqproperty.com/blog/buying-off-plan-property-in-bali" data-external="true">Exotiq Property</a> and <a href="https://balivillarealty.com/blog/benefits-of-buying-off-plan-property-in-bali/" data-external="true">Bali Villa Realty</a>.</p><p>Cash payment is the next most reliable lever. A buyer who settles the full purchase price upfront rather than taking a staged payment plan can usually negotiate an additional 5 to 8 percent off the headline price, plus furniture and finish packages (sometimes called FF&amp;E) that the developer prefers to offer in kind rather than cut from the reported sale figure. Cash reduces the developer's construction financing risk, which is why they discount for it.</p><p>Beyond price, the payment schedule is worth negotiating. Professional developers in Bali accept a grace period of three to six months before late-delivery penalties apply. Get this in writing inside the <a href="/blog/ppjb-contract-bali-off-plan-explained">PPJB</a> (the binding sale and purchase agreement). You can also push on the booking deposit size, the milestone percentages tied to construction phases, and whether a five-percent retention is held until the <a href="/blog/bali-villa-slf-certificate-handover">SLF building-feasibility certificate</a> is issued at handover.</p><p>Buying two or more units in the same project adds bundle leverage. Most developers extend the cash-discount tier across multiple units even if only one is settled fully in cash, because a combined deal delivers revenue certainty and faster sell-through for the project. Some developers also offer informal referral discounts of 1 to 3 percent for buyers introduced through previous owners.</p><p>Market timing shapes your position. You have more leverage early in a project when the developer needs sales to justify construction financing, and far less when a project is 80 percent sold and the next phase price list is already set. Before negotiating, ask what percentage of units remain in the current phase and whether the developer plans a price increase when the next phase launches.</p><p>None of these tactics replace due diligence. Have an independent Indonesian property lawyer review the PPJB before paying any booking deposit. A well-negotiated price matters less if the underlying land certificate or <a href="/blog/bali-villa-building-permit-pbg-explained">building permit</a> has a problem you did not catch. This article is general information, not financial advice. Outcomes depend on the project, location, and market conditions at the time of purchase.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "How much discount can I get buying off-plan in Bali at Phase 1?",
+        answer: "Phase 1 or pre-launch pricing typically sits 10 to 20 percent below the projected completion market value, with some founders allocations reaching 25 to 30 percent below. Prices usually rise by 20 to 30 percent from Phase 1 to handover as construction progresses and remaining units become scarcer. This is general information, not financial advice.",
+      },
+      {
+        question: "Does paying cash improve my negotiating position on a Bali off-plan villa?",
+        answer: "Yes. Full upfront cash payment generally unlocks an additional 5 to 8 percent off the headline price, plus furniture and finish upgrades in kind. Cash reduces the developer's construction financing cost and speeds their cash drawdowns, which is why they discount for it. Payment plans with a large initial deposit sometimes achieve a partial version of this.",
+      },
+      {
+        question: "What else can I negotiate besides the price on a Bali off-plan villa?",
+        answer: "Payment schedule flexibility (milestone dates and percentages), a grace period of three to six months before late-delivery penalties apply, the booking deposit size, furniture and fixture packages, and a five-percent retention held until the SLF certificate is issued are all negotiating points that experienced buyers raise. The PPJB should capture any agreed terms in writing.",
+      },
+      {
+        question: "When is the best time to buy off-plan in Bali to get the lowest price?",
+        answer: "The lowest price is almost always during the pre-launch or Phase 1 window, before construction begins and before the developer raises prices for subsequent phases. The trade-off is more uncertainty about the finished product at that stage. Checking the developer's completed projects and reviewing their track record before committing is important.",
+      },
+    ],
+    publishedAt: "2026-09-28",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/off-plan-price-negotiation-calculator-documents.webp",
+    gallery: [
+      {
+        url: "/blog/buyers-signing-off-plan-contract-new-build.webp",
+        alt: "Couple signing an off-plan property purchase contract with their agent inside a new build space, representing the final stage of negotiating and committing to a Bali off-plan villa",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com",
+      },
+      {
+        url: "/blog/off-plan-property-floor-plan-review.webp",
+        alt: "Architectural floor plans and a rendered elevation drawing spread on a white surface, representing the off-plan development documentation buyers review before committing to a Bali villa purchase",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com",
+      },
+    ],
+    citations: [
+      {
+        label: "Exotiq Property - Buying Off-Plan Property in Bali: Phase 1 buyers typically pay 10-20% below projected completion value; price rises of 20-30% from Phase 1 to handover are common in established projects (Tier 2: established Bali real estate agency)",
+        url: "https://www.exotiqproperty.com/blog/buying-off-plan-property-in-bali",
+      },
+      {
+        label: "Bali Villa Realty - Investing in Off-Plan Villa Bali 2026: pre-launch and early-phase buyers can save 15-30% below completed market value; cash buyers command additional 5-8% headline discount plus FF&E concessions (Tier 2: established Bali agency market commentary)",
+        url: "https://balivillarealty.com/blog/benefits-of-buying-off-plan-property-in-bali/",
+      },
+    ],
+  },
 ];
