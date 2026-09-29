@@ -2164,7 +2164,7 @@
     },
     {
       "id": "negotiate-bali-off-plan-price",
-      "status": "drafting",
+      "status": "published",
       "priority": 85,
       "theme": "off-plan",
       "atpType": "how",
@@ -2184,8 +2184,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-09-29",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/137"
     },
     {
       "id": "nusa-penida-vs-bali-mainland-property",
