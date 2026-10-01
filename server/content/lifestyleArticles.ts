@@ -6079,4 +6079,64 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "nusa-penida-vs-bali-mainland-property",
+    title: "Nusa Penida vs Bali Mainland Property: Worth Buying?",
+    category: "location",
+    imageUrl: null,
+    sortOrder: 96,
+    metaDescription: "Nusa Penida land costs 30 to 40% less than Canggu with gross villa yields of 8 to 14%. What US and UAE buyers need to know before choosing the island.",
+    body: `<p>Nusa Penida follows the same foreign ownership rules as Bali mainland: foreigners hold property through leasehold or a PT PMA company, and Hak Milik freehold stays off-limits to non-Indonesians. The island falls under Klungkung Regency, so the same Indonesian land law applies as in Canggu or Tabanan, including the requirement to engage a licensed notary (PPAT) for any title transfer.</p><p>Entry prices are the headline advantage. Land on Nusa Penida runs roughly $8,000 to $30,000 per 100 m2 depending on location and sea view, against $53,000 to $80,000 per 100 m2 in Canggu. Gross rental yields for well-managed villas are quoted at 8 to 14% by agencies active on the island, ahead of the 6 to 10% typical in Canggu and Seminyak. International visitor demand for Kelingking Beach, Crystal Bay, and Broken Beach drives occupancy for on-island stays, not just day trips from the mainland. Net returns after management fees, Indonesian income tax withholding, and maintenance will be lower than gross figures suggest. Nothing in this article is financial advice.</p><p>The crossing to the mainland is a 30-minute fast-boat ride from <a href="https://www.nowbali.co.id/new-sanur-harbour-2022/" data-external="true">Sanur port</a>, which opened a purpose-built pier and air-conditioned terminal in November 2022. Multiple operators run year-round daily services. Nusa Penida has no commercial airport and no road link to Bali, so all building materials, appliances, and furnishings cross by boat. That typically pushes construction costs 15 to 25% above an equivalent mainland build, narrowing the land-price saving.</p><p>Zoning and due diligence require more care than on the mainland. The island falls within a marine protected area, with coastal setback rules restricting permanent structures within 30 to 100 meters of the high-tide line. Enforcement tightened in 2025, when a development at Kelingking was ordered demolished after environmental and zoning violations. Land boundaries are also less well-mapped than in Badung or Tabanan, and local legal and agency infrastructure is thinner. The lower entry price is genuine, but so is the added complexity. For most US or Dubai-based buyers, Nusa Penida makes more sense after gaining experience with a mainland Indonesian property transaction and building a trusted local legal team first.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners buy property on Nusa Penida the same way as Bali?",
+        answer: "Yes. Nusa Penida falls under Klungkung Regency and is subject to the same Indonesian land law as the rest of Bali. Foreigners hold property through a leasehold title or via a PT PMA company with Hak Guna Bangunan. Freehold (Hak Milik) is reserved for Indonesian citizens, the same as on the mainland. The same due diligence steps apply: verify the land certificate, confirm zoning, and engage a licensed PPAT notary.",
+      },
+      {
+        question: "Are Nusa Penida rental yields higher than Bali mainland areas?",
+        answer: "Agencies active on the island quote gross yields of 8 to 14% for well-managed villas, ahead of the 6 to 10% typical in Canggu and Seminyak. The premium reflects strong international visitor demand for Kelingking Beach, Crystal Bay, and Broken Beach. Net returns after management fees, Indonesian income tax withholding, and maintenance will be considerably lower. Yields vary by property, location, and management quality. Nothing here is financial advice.",
+      },
+      {
+        question: "What infrastructure and access challenges exist for Nusa Penida property?",
+        answer: "Nusa Penida has no road connection to Bali and no commercial airport. All access is by fast boat, a 30-minute crossing from Sanur with multiple daily departures. Building materials, appliances, and furnishings all travel by boat, which typically adds 15 to 25% to construction and renovation costs versus equivalent mainland projects. Healthcare, international schools, and large retail are limited on the island, making it more suitable as a rental investment than as a primary family residence.",
+      },
+    ],
+    publishedAt: "2026-10-01",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/nusa-penida-kelingking-beach-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/nusa-penida-island-cliffs-turquoise-water.webp",
+        alt: "Aerial view of the iconic T-rex shaped Kelingking Beach peninsula on Nusa Penida showing dramatic limestone cliffs dropping into turquoise ocean waters, one of Indonesia's most photographed coastal formations and a key driver of short-term rental demand on the island",
+        credit: "Kai / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/stunning-aerial-view-of-nusa-penida-island-coast-29215600/",
+      },
+      {
+        url: "/blog/nusa-penida-natural-arch-ocean.webp",
+        alt: "Natural rock arch at Broken Beach on Nusa Penida framed by dry coastal vegetation and calm ocean water, illustrating the island's distinctive geological formations that attract international visitors and support villa rental occupancy year-round",
+        credit: "Max Ravier / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/nusa-penida-island-2253813/",
+      },
+    ],
+    citations: [
+      {
+        label: "ILA Global Consulting - How to Invest in Nusa Penida (2025 Legal Guide): foreign ownership via leasehold or PT PMA; same Indonesian land law under Klungkung Regency; zoning and title due diligence requirements (Tier 2: established Bali legal and company-setup firm)",
+        url: "https://ilaglobalconsulting.com/how-to-invest-in-nusa-penida/",
+      },
+      {
+        label: "Magnum Estate - Bali Property Prices 2026: Canggu land IDR 9 to 14 million per m2 (~$53,000 to $80,000 per 100 m2); Nusa Penida land 30 to 40% lower than Canggu and Seminyak; island gross yields 8 to 14% (Tier 2: established Bali property agency)",
+        url: "https://magnumestate.com/blog/bali-property-prices-2026",
+      },
+      {
+        label: "NOW! Bali - New Sanur Harbour November 2022: purpose-built pier and air-conditioned terminal improving fast-boat access to Nusa Penida; 30-minute crossing from Sanur (Tier 3: major Bali lifestyle publication)",
+        url: "https://www.nowbali.co.id/new-sanur-harbour-2022/",
+      },
+      {
+        label: "Villa Bali Sale - Nusa Penida Glass Elevator Cancelled 2026: 2025 zoning enforcement at Kelingking Beach; coastal setback and environmental violation orders; tightening regulations for island developments (Tier 3: Bali real estate publication)",
+        url: "https://www.villabalisale.com/blog/nusa-penida-glass-elevator-cancelled-2026",
+      },
+    ],
+  },
 ];
