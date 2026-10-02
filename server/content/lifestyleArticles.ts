@@ -6139,4 +6139,64 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-leasehold-landowner-dies-what-happens",
+    title: "What Happens to Your Bali Leasehold if the Landowner Dies?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 97,
+    metaDescription: "Your Bali leasehold survives the landowner's death, but only if the contract includes a succession clause binding heirs. Here is what foreign buyers must know.",
+    body: `<p>Your Bali leasehold survives the death of the Indonesian landowner. Under <a href="https://www.bkpm.go.id/en/regulation/detail/akta/3" data-external="true">UUPA No. 5/1960</a> (Indonesia's Agrarian Law), the landowner's heirs inherit both the land and all existing contractual obligations, including the lease. The critical point is that Hak Sewa (leasehold right) is a private contractual agreement, not a registered title at the BPN land registry, so the quality of your contract determines how easily that right is enforced against heirs who may not share the original owner's goodwill.</p><p>The most common failure point is a lease that says nothing about succession. If the landowner dies and leaves multiple heirs, each inherits a fractional claim on the land under Indonesian inheritance law. A well-drafted lease prevents that situation from becoming your problem. The contract must include an explicit clause binding the landowner's ahli waris (heirs) and any successor-in-title, stating that the lease terms continue unchanged regardless of ownership transfer through death or sale. Without that language, enforcing the lease against reluctant heirs may require a civil court process, which is slow and uncertain in Indonesia.</p><p>Notarization strengthens that protection significantly. A lease authenticated before a licensed PPAT notary is a binding civil instrument under the Indonesian Civil Code (KUHPerdata). A private handshake agreement is still contractually valid, but much easier for heirs to dispute or ignore in practice. If the landowner is elderly or the land is held by a family group, ask your Indonesian lawyer to identify the likely heirs now and obtain their written acknowledgment of the lease before you sign. That step costs little and eliminates the negotiation problem at the source.</p><p>For US and UAE investors accustomed to registered title systems, the distinction matters. In the US and in Dubai, a buyer's registered interest survives ownership changes at the government land registry level. A Bali Hak Sewa rests on contract law alone. Two alternatives offer more registered protection: <a href="/blog/hak-pakai-bali-foreign-buyers">Hak Pakai</a>, which is registered at BPN and binds successors through the land registry rather than just through a private contract (though it requires a KITAS or KITAP visa), or a <a href="/blog/pt-pma-setup-bali-property">PT PMA structure</a>, where the company holds the land and continuity depends on corporate law rather than the landowner's lifespan.</p><p>Returns on Bali property vary by location, management, and market conditions. Nothing in this article is financial or legal advice. Engage a licensed Indonesian property lawyer and a PPAT notary to review any lease before signing.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Does a Bali leasehold survive the death of the landowner?",
+        answer: "Yes. Under UUPA No. 5/1960, the landowner's heirs inherit both the land and all contractual obligations attached to it, including an existing lease. The lease does not end automatically when the owner dies. However, enforcement depends on the quality of the contract: a properly notarized lease with an explicit succession clause binding the heirs is far easier to enforce than an informal written agreement that says nothing about what happens on death.",
+      },
+      {
+        question: "How should a Bali leasehold contract be worded to protect a buyer if the landowner dies?",
+        answer: "The lease should include a clause stating that all terms are binding on the landowner's ahli waris (heirs) and any successor-in-title, whether ownership transfers through death or sale. It should also state that heirs cannot terminate the lease early or demand renegotiation of terms. Where possible, ask the landowner's likely heirs to sign a written acknowledgment of the lease at the time of the original agreement. This pre-emptive step is far simpler than pursuing enforcement through an Indonesian civil court after the fact.",
+      },
+      {
+        question: "Can a Bali landowner's heirs cancel a leasehold early?",
+        answer: "Not legally, provided the contract is properly structured. A notarized lease with a succession clause binds heirs to honor the remaining term. They cannot unilaterally cancel it or raise the rent. In practice, a dispute may arise if multiple heirs disagree among themselves or if the contract is poorly documented. A legitimate heir who refuses to honor a valid notarized lease can be sued for damages under Indonesian civil law, but litigation is slow. The far better approach is prevention: get a well-drafted contract and, where practical, written heir acknowledgment before you sign.",
+      },
+      {
+        question: "Is there a safer alternative to leasehold if I am worried about the landowner's death?",
+        answer: "Two alternatives offer stronger title continuity. Hak Pakai (Right to Use) is registered at the BPN land registry and binds successors through the government record rather than a private contract, though foreigners need a KITAS or KITAP residence permit to hold it. A PT PMA company structure is the other route: the company holds a Hak Guna Bangunan title and ownership of the company, rather than the underlying land title, is what changes hands. Neither route eliminates all risk, but both provide protections that a simple leasehold agreement does not.",
+      },
+    ],
+    publishedAt: "2026-10-02",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/leasehold-succession-contract-signing-notary.webp",
+    gallery: [
+      {
+        url: "/blog/law-firm-justice-scales-lease-legal.webp",
+        alt: "Lady Justice bronze statue on a lawyer's desk alongside property lease documents and legal files, representing the Indonesian civil law framework that governs leasehold obligations when a Bali landowner dies",
+        credit: "Sora Shimazaki / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/lady-justice-on-table-7876093/",
+      },
+      {
+        url: "/blog/lease-legal-consultation-clause-review.webp",
+        alt: "Property lawyer pointing to a specific clause in a leasehold contract document during a consultation with a client at a formal boardroom table, illustrating the review of succession clauses that bind a Bali landowner's heirs to honor the lease term",
+        credit: "August de Richelieu / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/man-in-gray-jacket-reviewing-document-8729814/",
+      },
+    ],
+    citations: [
+      {
+        label: "UUPA No. 5/1960 (Indonesian Agrarian Law) Articles 44-45: legal foundation for Hak Sewa (leasehold right); who may hold leasehold; that the right is contractual, not a registered BPN title (Tier 1: Indonesian government primary legislation)",
+        url: "https://www.bkpm.go.id/en/regulation/detail/akta/3",
+      },
+      {
+        label: "ILA Global Consulting - How to Buy Property in Bali (2025 Legal Guide): leasehold notarization requirements; succession clause best practice for foreign buyers; PPAT role in authenticating lease agreements binding on heirs (Tier 2: established Bali legal and company-setup firm)",
+        url: "https://ilaglobalconsulting.com/how-to-buy-property-in-bali/",
+      },
+      {
+        label: "Emerhub - Comprehensive Guide to Building a Leasehold Villa in Bali: PPAT notarization of leasehold contracts; contractual obligations binding on landowner's heirs; Hak Pakai as a registered-title alternative for long-term foreign residents (Tier 2: established Indonesia company-setup and legal advisory firm)",
+        url: "https://emerhub.com/bali/comprehensive-guide-to-building-a-leasehold-villa-in-bali/",
+      },
+    ],
+  },
 ];
