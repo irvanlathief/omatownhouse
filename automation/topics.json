@@ -2214,7 +2214,7 @@
     },
     {
       "id": "what-happens-bali-leasehold-landowner-dies",
-      "status": "drafting",
+      "status": "published",
       "priority": 87,
       "theme": "foreign-ownership",
       "atpType": "what",
@@ -2234,8 +2234,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-02",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/139"
     },
     {
       "id": "bali-property-vs-reit-passive-income",
