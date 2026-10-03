@@ -6199,4 +6199,74 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-property-vs-reit-passive-income",
+    title: "Bali Property vs REITs: Which Builds More Passive Income?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 98,
+    metaDescription: "Bali rental villas can yield 6 to 11 percent gross versus roughly 4 percent for US REIT ETFs, but the tax and liquidity gap matters. Here is how to compare.",
+    body: `<p>For a US investor comparing passive income options, a Bali rental villa and a US REIT ETF differ on yield, tax, and liquidity. Bali villas in managed rental programs currently post gross yields of 6 to 11 percent depending on location and operator, while the <a href="https://www.reit.com" data-external="true">FTSE Nareit All Equity REITs index</a> delivered a 10-year annualized total return of roughly 6.5 percent through mid-2026, income and price appreciation combined.</p><p>The tax gap is often the bigger story. US REIT dividends are taxed as ordinary income at up to 37 to 39.6 percent at the federal level (the Section 199A deduction can reduce the effective top rate to about 29.6 percent, plus a potential 3.8 percent net investment income surtax). Indonesian rental income paid to a foreign non-resident owner carries a flat 10 percent final withholding tax. US investors owe US tax on global income but can generally claim a foreign tax credit for the Indonesian tax already paid, reducing the combined burden. UAE-based investors pay no personal income tax in the UAE on top of the Indonesian withholding.</p><p>Liquidity is where REITs win clearly. You can sell a REIT ETF on any trading day within seconds. Selling a Bali leasehold or <a href="/blog/pt-pma-setup-bali-property">PT PMA structure</a> typically takes 6 to 18 months, involves a 2.5 percent PPh Final seller tax on the gross transaction value, and requires coordinating with a local Indonesian notary and legal team. Annual villa management fees run roughly 20 to 30 percent of rental revenue for professionally managed properties in Canggu or Tabanan.</p><p>Capital appreciation can tilt the comparison. Bali land prices in active corridors have risen at roughly 7 to 15 percent per year on average in recent years, with emerging areas near Tabanan and Seseh showing around 10 to 20 percent gains since 2022. US REITs averaged around 6.5 percent annualized total returns over the past decade. A well-located, well-managed Bali villa can deliver combined income and capital return that exceeds a broad REIT index, but the range is wide and outcomes depend heavily on management quality, lease structure, and local market timing.</p><p>Neither route guarantees the figures cited here. This is not financial or legal advice. Consult a qualified adviser before making any investment decision.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "How do Bali villa yields compare to US REIT dividend yields?",
+        answer: "US equity REITs averaged a dividend yield of roughly 4 percent in 2026 according to NAREIT data, with popular ETFs like Vanguard VNQ yielding around 3.5 to 3.7 percent. Bali rental villas in managed programs post gross yields of 6 to 11 percent, with net yields after management fees, Indonesian income tax, and vacancy typically landing between 5 and 8 percent in Canggu and 4 to 7 percent in emerging areas like Tabanan. These are ranges from current market reports, not guarantees.",
+      },
+      {
+        question: "What tax does a US investor pay on Bali rental income versus REIT dividends?",
+        answer: "Indonesian rental income paid to a foreign non-resident is subject to a flat 10 percent final withholding tax at source. US investors must also report the income on their US federal return but can claim a foreign tax credit for the Indonesian tax already paid. By contrast, US REIT dividends are taxed as ordinary income at up to 37 to 39.6 percent federally, though the Section 199A deduction can reduce the effective top rate to roughly 29.6 percent. UAE-based investors pay no personal income tax in the UAE on top of the Indonesian withholding.",
+      },
+      {
+        question: "How liquid is a Bali property investment versus a US REIT?",
+        answer: "A REIT ETF trades on US exchanges and can be sold within seconds on any market day. A Bali villa or leasehold typically takes 6 to 18 months to sell, requires a licensed PPAT notary and local legal team, and the seller pays a 2.5 percent PPh Final tax on the gross transaction value. For investors who may need capital within a short window, that illiquidity is a material risk to factor in.",
+      },
+      {
+        question: "Is Bali property a better inflation hedge than a US REIT?",
+        answer: "Bali land prices in active corridors have risen at roughly 7 to 15 percent annually in recent years, potentially ahead of both US inflation and REIT total returns over the same period. However, Bali property values are shaped by local factors including Indonesian tourism demand, regulatory changes, and USD/IDR exchange rate movements, which can differ substantially from US inflation trends. US REITs also hold real assets and historically have kept pace with inflation over long time horizons, with the added benefit of instant liquidity. Neither is a guaranteed inflation hedge.",
+      },
+    ],
+    publishedAt: "2026-10-03",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/reit-stock-market-trading-screen.webp",
+    gallery: [
+      {
+        url: "/blog/passive-income-investment-planning-book.webp",
+        alt: "Flat lay of a book titled 'Passive Income' on a white surface with a coffee cup, representing the passive income comparison between Bali rental villas and US REIT investments for foreign investors",
+        credit: "Kaderdygnn / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aesthetic-flat-lay-of-a-coffee-cup-on-a-book-8345644/",
+      },
+      {
+        url: "/blog/reit-market-analytics-candlestick-screen.webp",
+        alt: "Close-up of a digital trading screen showing candlestick chart bars in teal and pink with moving average trend lines, representing the market analytics data behind US REIT index total returns",
+        credit: "Tima Miroshnichenko / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/close-up-of-a-digital-stock-market-chart-7567223/",
+      },
+      {
+        url: "/blog/bali-jungle-villa-pool-tropical.webp",
+        alt: "Private plunge pool at a Bali villa surrounded by dense tropical jungle with tall palms and colourful foliage, illustrating the type of rental property that can generate 6 to 11 percent gross yields for foreign investors in Bali",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/a-serene-jungle-view-from-a-luxury-pool-in-bali-indonesia-lush-greenery-surrounds-39472110/",
+      },
+    ],
+    citations: [
+      {
+        label: "NAREIT FTSE U.S. Real Estate Index Returns (May 2026): FTSE Nareit All Equity REITs 10-year annualized total return 6.53%; US equity REIT average dividend yield approximately 3.97 to 3.98% as of April 2026 (Tier 2: NAREIT, the US REIT industry association)",
+        url: "https://www.reit.com/sites/default/files/returns/DomesticReturns.pdf",
+      },
+      {
+        label: "Business Hub Asia - Tax in Indonesia for Foreigners Real Estate (2026): flat 10% final withholding tax on Indonesian-source rental income for non-resident foreign individuals; 2.5% PPh Final seller tax on gross property transaction value; Article 26 withholding for non-resident corporate income (Tier 2: established Indonesia business and tax advisory firm)",
+        url: "https://businesshubasia.com/tax-in-indonesia-for-foreigners-real-estate/",
+      },
+      {
+        label: "Exotiq Property Bali - Land Price Trends: What Investors Need to Know (2025): Bali prime corridor land prices 7 to 15% annual growth on average; Canggu land appreciation approximately 40 to 60% since 2020; emerging Tabanan and Seseh corridor 10 to 20% annual growth 2022 to 2025 (Tier 2: established Bali property agency with published market analysis)",
+        url: "https://www.exotiqproperty.com/blog/bali-land-price-trends-what-investors-need-to-know",
+      },
+      {
+        label: "Villa Bali Sale - How Much Can You Earn Renting a Villa in Bali (2025): Canggu gross rental yields 9 to 11%; net yields after management fees, Indonesian income tax and vacancy 6 to 8%; Tabanan/Seseh corridor gross yields 6 to 9%, net 5 to 7% (Tier 2: established Bali villa agency with published rental yield data)",
+        url: "https://www.villabalisale.com/blog/bali-villa-rental-2025-how-much-can-you-earn-from-renting-a-villa-in-bali",
+      },
+    ],
+  },
 ];
