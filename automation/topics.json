@@ -2264,7 +2264,7 @@
     },
     {
       "id": "bali-vs-oman-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 89,
       "theme": "investment",
       "atpType": "vs",
@@ -2284,8 +2284,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-04",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/141"
     },
     {
       "id": "bali-off-plan-resale-before-handover",
