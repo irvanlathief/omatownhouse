@@ -6269,4 +6269,64 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-oman-property-investment",
+    title: "Bali vs Oman Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 99,
+    metaDescription: "Oman offers ITC freehold with zero rental tax; Bali offers leasehold or PT PMA with tourism-driven yields. How yields, taxes, and residency compare.",
+    body: `<p>Oman and Bali both allow foreign investors to buy residential property, but the ownership structures are fundamentally different. Oman offers genuine freehold title inside government-approved <a href="https://www.omanpropertyinvestment.com/en/buy-to-let-oman" data-external="true">Integrated Tourism Complexes (ITCs)</a>, meaning you own the property outright with no expiry date. Bali offers a registered leasehold of 25 to 30 years, extendable, or building rights held through a <a href="/blog/pt-pma-setup-bali-property">PT PMA foreign-owned company</a>. Individual foreigners cannot hold freehold land in Bali under any structure.</p><p>In Oman, Royal Decree 12/2006 gives non-Omani nationals the right to buy freehold or long-term usufruct (up to 99 years in some zones) within approved ITCs such as Al Mouj Muscat, Muscat Bay, Jebel Sifah, and Hawana Salalah. These are planned communities combining residences with hotels, marinas, and managed facilities. Outside ITCs, foreign purchase is not permitted. Foreign real estate activity in Oman rose 19.4 percent in 2024 versus 2023, and total real estate transactions reached OMR 3.38 billion, a 29.5 percent year-on-year increase, according to National Centre for Statistics and Information data cited by Arab News.</p><p>Entry-level ITC apartments in Oman start from roughly OMR 45,000 to 55,000 (approximately USD 117,000 to 143,000) in areas like Jebel Sifah. Savills' Q1 2026 Oman market report puts gross yields at 5.6 to 8.3 percent, with Al Mouj two-bedroom apartments averaging OMR 710 per month. Bali villa and townhouse leases in Tabanan and the emerging Canggu corridor start from roughly USD 80,000 to 200,000 depending on size and spec. Published Bali agency data shows gross yields of 6 to 11 percent in Canggu and 6 to 9 percent in Tabanan. On a gross basis the two markets look similar.</p><p>The tax gap changes the net picture. Oman charges no income tax on rental profits, no capital gains tax, and no annual property tax. Indonesia withholds 10 percent as a flat final tax on rental income paid to a non-resident foreign individual, and a seller pays a 2.5 percent PPh Final tax on the gross transaction value when disposing of a Bali property. US investors can generally claim a foreign tax credit for Indonesian withholding against their US federal tax liability. UAE-based investors pay no personal income tax on top of the Indonesian withholding, narrowing the gap.</p><p>Residency works differently in each market. Oman's 2025 Golden Visa update grants the buyer and immediate family a 10-year renewable residency permit on a qualifying property investment of OMR 200,000 (approximately USD 520,000). Bali's Second Home Visa requires a USD 130,000 deposit in a designated Indonesian bank rather than a property purchase, so a leasehold villa does not automatically deliver long-term residency. Foreign directors of a PT PMA can apply for a KITAS investor visa, renewable annually while the company is active.</p><p>Oman suits investors who want permanent freehold, zero tax drag, and stable corporate or diplomatic rental demand. Bali suits those comfortable with leasehold or PT PMA structures and who want tourism-driven short-term rental yields from one of the world's most visited islands at a lower cost of entry in many sub-markets. These are ranges drawn from current market data, not guarantees, and this is not financial or legal advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own freehold property in Oman through an Integrated Tourism Complex?",
+        answer: "Yes. Under Royal Decree 12/2006, non-Omani nationals can buy freehold or up to 99-year usufruct rights within government-approved ITCs such as Al Mouj Muscat, Muscat Bay, Jebel Sifah, Hawana Salalah, and AIDA/Yiti. Outside these zones, foreigners cannot register or hold Omani real estate. In Bali, no individual foreign ownership route gives freehold; the options are leasehold (25 to 30 years extendable) or a PT PMA company holding HGB building rights.",
+      },
+      {
+        question: "How do Bali and Oman rental yields compare for villas?",
+        answer: "On a gross basis the ranges overlap. Savills' Q1 2026 Oman market report puts gross residential yields at 5.6 to 8.3 percent, with villa segments toward the lower end and apartments toward the higher end. Bali agencies report gross yields of 6 to 11 percent in Canggu and 6 to 9 percent in Tabanan for short-term tourist rental villas. The key difference is tax treatment: Oman's rental income is entirely tax-free, while Indonesia withholds 10 percent on rental income paid to non-resident foreign owners, which reduces the net yield accordingly. Neither figure is a guarantee.",
+      },
+      {
+        question: "What residency does buying property in Oman give versus Bali?",
+        answer: "Oman's 2025 Golden Visa grants a 10-year renewable residency permit to buyers who invest OMR 200,000 (approximately USD 520,000) or more in qualifying Omani real estate, covering the buyer and their immediate family. Buying a Bali property does not automatically give long-term residency. Bali's Second Home Visa is a separate product that requires a USD 130,000 bank deposit, while foreign directors of a Bali PT PMA company can apply for a KITAS investor visa renewable annually.",
+      },
+    ],
+    publishedAt: "2026-10-04",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/muscat-coastline-waterfront-sunset.webp",
+    gallery: [
+      {
+        url: "/blog/muscat-city-palm-trees-mountains.webp",
+        alt: "Panoramic view of Muscat, Oman with rows of white low-rise buildings, tall date palms in the foreground, and the Hajar Mountains rising behind the city under a clear blue sky",
+        credit: "Sirokad / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/scenic-cityscape-with-mountains-and-palm-trees-38014529/",
+      },
+      {
+        url: "/blog/oman-fort-wall-coastal-bay.webp",
+        alt: "View across the turquoise bay at Sur, Oman, with the Al Ayjah lighthouse, a traditional suspension bridge, and fishing boats in the foreground, representing the coastal character of Omani towns near ITC investment zones",
+        credit: "Dani A M / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/stunning-coastal-view-with-fort-wall-in-oman-28739750/",
+      },
+    ],
+    citations: [
+      {
+        label: "Savills Oman Market Report Q1 2026: gross residential yields 5.6 to 8.3 percent; Al Mouj 2BR average monthly rent OMR 710 (+3%); Al Mouj 4BR villa average monthly rent OMR 1,770 (+2%); GCC buy-to-let investors drawn by tax-free income and 5 to 8 percent gross yields (Tier 2: Savills, established international property adviser with Oman office)",
+        url: "https://pdf.euro.savills.co.uk/oman/oman-market-report-q1-2026.pdf",
+      },
+      {
+        label: "Arab News / NCSI - Oman's property market expands 29.5% as foreign investment grows (2024): total Oman real estate transactions reached OMR 3.38 billion in 2024, up 29.5% YoY; foreign investment contributed 70% of total sector investments through September 2024; foreign real estate trading grew 19.4% versus 2023 (Tier 1: National Centre for Statistics and Information, Oman Ministry of Housing and Urban Planning)",
+        url: "https://www.arabnews.com/node/2589216/business-economy",
+      },
+      {
+        label: "Oman Investment Authority / OCIPED - Royal Decree 12/2006 enabling foreign freehold ownership in Integrated Tourism Complexes; updated by Royal Decree 38/2025 expanding qualifying development categories; freehold and up to 99-year usufruct rights for non-Omani nationals (Tier 1: Oman government investment regulator)",
+        url: "https://investoman.gov.om/",
+      },
+      {
+        label: "Veles Club - Oman Golden Visa 2025: OMR 200,000 qualifying real estate investment for 10-year renewable residency permit; covers investor and immediate family; property must be in approved ITC or qualifying development (Tier 2: established residency advisory firm with Oman coverage)",
+        url: "https://veles-club.com/blog/oman-residency-2025-golden-visa-10-year-requirements-benefits",
+      },
+    ],
+  },
 ];
