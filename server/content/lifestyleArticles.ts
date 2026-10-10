@@ -6329,4 +6329,60 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-off-plan-resale-before-completion",
+    title: "Can You Sell a Bali Off-Plan Villa Before Completion?",
+    category: "investment",
+    imageUrl: "/blog/off-plan-villa-for-sale-new-build-hardhat.webp",
+    sortOrder: 100,
+    metaDescription: "Sell a Bali off-plan villa before completion by assigning your PPJB. Learn how the assignment works, what taxes apply, and what developer consent is needed.",
+    body: `<p>Yes, you can sell a Bali off-plan villa before it is completed and handed over, by assigning your PPJB (the preliminary sale and purchase agreement) to a new buyer. This transfer of contractual rights is the main legal route for pre-completion resales in Indonesia.</p><p>The mechanism is called cessie, the assignment of contractual rights under Article 613 of Indonesia's Civil Code. A PPAT (the official Indonesian property notary) draws up an addendum to the original PPJB naming the new buyer as the contracting party. You step out, they step in. The developer remains bound by the same construction and handover obligations to the incoming party.</p><p>Most PPJBs require the developer's written consent before any assignment can proceed. Some developers charge a transfer or administration fee of 1% to 5% of the transaction value. Check the consent clause in your specific PPJB before you begin marketing the unit, because a developer can refuse, and some do.</p><p>Two taxes apply at the point of assignment. The seller pays <a href="https://ortax.org/pahami-ketentuan-pph-final-pengalihan-tanah-dan-bangunan" data-external="true">PPh Final income tax</a> at 2.5% of the gross transfer price. This payment must be made and validated electronically before the PPJB addendum can be notarised; only after validation can the PPAT sign the document. The incoming buyer pays BPHTB, the land and building acquisition tax, at 5% of the transaction value less the local tax-exempt threshold (NJOPTKP). Notary and PPAT fees typically add another 0.5% to 1% of the transaction value. These figures are for general reference and are not financial advice; tax treatment can vary by ownership structure and residency status.</p><p>There is a secondary market for pre-completion off-plan contracts in Bali, concentrated in Canggu, Seminyak, Uluwatu, and Tabanan regency. Most sellers are early-phase investors who want to capture price appreciation before handover, or who need to exit mid-construction for personal reasons. Pricing at assignment depends on construction progress, local demand, and how much of the development gain the original purchase price has already captured.</p><p>If your PPJB prohibits assignment or the developer withholds consent, your exit options before the AJB (the formal sale deed that transfers title) are limited. Always obtain a legal review of your PPJB and confirm the developer's consent position before putting the unit on the market.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "How does a pre-completion assignment of a Bali off-plan contract work legally?",
+        answer: "You assign your PPJB rights to the new buyer under Article 613 of Indonesia's Civil Code (cessie). A PPAT draws up an addendum naming the incoming buyer as the new contracting party in place of you. The seller first pays 2.5% PPh Final income tax and has it validated electronically before the addendum can be notarised.",
+      },
+      {
+        question: "What tax applies when you resell a Bali off-plan contract before handover?",
+        answer: "The seller pays 2.5% PPh Final income tax on the gross transfer price, which must be paid and validated before signing. The buyer pays 5% BPHTB (land and building acquisition tax) on the transaction value less the local tax-exempt threshold. Notary fees are additional, typically 0.5% to 1% of the transaction value. This is not financial or tax advice; consult a licensed PPAT before transacting.",
+      },
+      {
+        question: "Is there a market for pre-completion Bali off-plan resales?",
+        answer: "Yes, though it is smaller and less formalised than in markets like Dubai. Activity is concentrated in Canggu, Seminyak, Uluwatu, and Tabanan regency. Most sellers are early-phase investors capturing appreciation before handover, or investors who need liquidity during the construction period.",
+      },
+      {
+        question: "Does the developer have to agree to an off-plan assignment in Bali?",
+        answer: "Most PPJB contracts include a consent clause requiring the developer's written approval before any assignment. Some developers also charge a transfer fee of 1% to 5% of the transaction value. Check the consent provisions in your PPJB before marketing the unit, as developers can and do refuse.",
+      },
+    ],
+    publishedAt: "2026-10-10",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/off-plan-villa-for-sale-new-build-hardhat.webp",
+    gallery: [
+      {
+        url: "/blog/sale-pending-sold-real-estate-signs.webp",
+        alt: "Real estate agent holding Sale Pending and SOLD property signs",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8292794/",
+      },
+      {
+        url: "/blog/property-assignment-contract-signing-consultation.webp",
+        alt: "Buyer and adviser reviewing a property assignment contract at a desk",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/5668858/",
+      },
+    ],
+    citations: [
+      {
+        label: "Ortax Tax Guide: PPh Final Pengalihan Hak atas Tanah dan Bangunan - PPJB assignment scenario: assignor pays 2.5% PPh Final on gross transfer value before PPJB addendum can be notarised; payment code MAP 411128 Jenis Setoran 402; validation governed by PER-08/PJ/2025 (Tier 2: Ortax, specialist Indonesian tax reference)",
+        url: "https://ortax.org/pahami-ketentuan-pph-final-pengalihan-tanah-dan-bangunan",
+      },
+      {
+        label: "Bali Villa Realty: What Are the Annual Real Estate Taxes in Bali - BPHTB 5% on acquisition value less NJOPTKP; PPh Final 2.5% for registered Indonesian taxpayer sellers; overview of all Bali property transaction taxes (Tier 2: established Bali property agency with licensed agents)",
+        url: "https://balivillarealty.com/blog/bali-property-taxes/",
+      },
+    ],
+  },
 ];
