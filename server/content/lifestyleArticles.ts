@@ -6329,4 +6329,68 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-off-plan-resale-before-completion",
+    title: "Can You Sell a Bali Off-Plan Villa Before Completion?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 100,
+    metaDescription: "You can sell a Bali off-plan villa before handover by assigning your PPJB contract. Here is how it works, what tax you pay, and what to check first.",
+    body: `<p>Yes, you can sell a Bali off-plan villa before it is built and handed over. The mechanism is an assignment of your preliminary sale and purchase agreement, known as a PPJB, to a new buyer. You transfer your contractual position to a third party, the developer signs off on the change, and the new buyer steps into your shoes. You do not need to wait for the completed property or the final title deed (AJB) to be signed.</p><p>The assignment requires a notary-drafted addendum, often called a cessie or pengalihan hak under Indonesian contract law. Most PPJBs require the developer's written consent before you can transfer your rights to someone else, so the first step is to check your contract and approach the developer directly. Developers may charge a transfer or administration fee for the assignment; the amount and process should be set out in your PPJB. Once the developer agrees, a notary prepares the assignment deed and the new buyer takes over your payment obligations from that point.</p><p>Tax applies to both sides of the transaction. Under <a href="https://jdih.kemenkeu.go.id/fulltext/2016/34TAHUN2016PP.htm" data-external="true">Government Regulation No. 34 of 2016</a>, the original buyer (the assignor) pays a 2.5 percent final income tax (PPh Final) on the gross assignment price. This is the same rate that applies to any direct property transfer in Indonesia; it is calculated on the full transaction value, not on your profit margin. When the new buyer eventually receives the completed villa and signs the AJB deed at handover, they pay <a href="https://taxsummaries.pwc.com/indonesia/corporate/other-taxes" data-external="true">BPHTB (land and building acquisition duty)</a> at 5 percent of the acquisition value above the non-taxable threshold set by the local regional government.</p><p>There is a secondary market for pre-completion PPJB rights in Bali, particularly in active corridors like Canggu, Pererenan, and parts of Tabanan. Buyers who purchased at early-stage or launch pricing sometimes list their PPJB position at a premium before handover, banking on price growth during the construction period. <a href="https://balivillarealty.com/blog/benefits-of-buying-off-plan-property-in-bali/" data-external="true">Bali off-plan listings represented about 37 percent of the total Bali property market in early 2025</a>, which indicates a large pool of early-stage buyers and potential assignors. That said, Bali entered 2025 with rising inventory in some price bands, so the size of any paper gain depends on the specific development, its location, and how the market moved while you held the PPJB.</p><p>Bali has no equivalent to Dubai's RERA framework, which requires off-plan resales to go through a formal registry and deposits to be held in escrow. In Bali, a pre-completion assignment depends entirely on what your PPJB says and whether the developer will cooperate. Before you sign any off-plan contract, ask the developer explicitly whether assignment is permitted and under what conditions, and make sure the transfer rights are written into the PPJB. These are informational ranges drawn from current market practice and Indonesian tax regulations, not financial or legal advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "How does a pre-completion assignment of a Bali off-plan contract work legally?",
+        answer: "You, the developer, and the new buyer sign a notary-drafted addendum that replaces you as the buyer. The new buyer inherits your PPJB rights and takes over the remaining payment schedule. Developer written consent is required under most PPJBs. A notary (PPAT) prepares the assignment deed. The assignment does not transfer title; that still happens at the AJB deed stage when the villa is completed.",
+      },
+      {
+        question: "What tax applies when you resell a Bali off-plan contract before handover?",
+        answer: "Under Government Regulation No. 34 of 2016, the original buyer (the assignor) pays a 2.5 percent final income tax (PPh Final) on the gross assignment price. This applies to the full value, not just the gain. The new buyer will later pay BPHTB (land and building acquisition duty) at 5 percent of the acquisition value above the non-taxable threshold set by the regional government when the AJB deed is signed at handover.",
+      },
+      {
+        question: "Is there a market for pre-completion Bali off-plan resales?",
+        answer: "Yes, particularly in high-demand corridors like Canggu, Pererenan, and parts of Tabanan. Buyers who purchased at launch pricing sometimes sell their PPJB rights at a premium before handover. Off-plan listings accounted for roughly 37 percent of the total Bali property market in early 2025 according to REID data, which means the pool of potential assignors is large. The market is active but not liquid; finding a qualified buyer can take time, and outcomes depend on how much the broader market moved during construction.",
+      },
+      {
+        question: "How does selling a Bali off-plan contract before completion compare to Dubai?",
+        answer: "Dubai's off-plan market is regulated by RERA, which requires deposits to be held in approved escrow accounts and any pre-completion resale (via a No Objection Certificate) to be registered through the Dubai Land Department. Bali has no equivalent regulatory body or escrow requirement for off-plan. Pre-completion assignment in Bali depends entirely on what the PPJB says and the developer's willingness to cooperate, which makes it more dependent on due diligence before you sign the original contract.",
+      },
+    ],
+    publishedAt: "2026-10-11",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/off-plan-sold-sign-blueprints-hardhat.webp",
+    gallery: [
+      {
+        url: "/blog/villa-construction-bamboo-scaffolding-tropical.webp",
+        alt: "A villa under construction with bamboo scaffolding against a clear blue sky, with tropical foliage and frangipani in the foreground, showing mid-construction progress on an off-plan property",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/34629416/",
+      },
+      {
+        url: "/blog/off-plan-contract-assignment-signing.webp",
+        alt: "Person signing an offer to purchase real estate document at a table with two other people present, representing the contract assignment process in a Bali off-plan pre-completion resale",
+        credit: "RDNE Stock Project / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/8292838/",
+      },
+    ],
+    citations: [
+      {
+        label: "Government Regulation No. 34 of 2016 (PP 34/2016) on Final Income Tax from Transfer of Land and Building Rights and Conditional Sale and Purchase Agreements: 2.5% final PPh on gross transfer value for standard properties; applies to PPJB signings and amendments including assignments (Tier 1: Indonesian Ministry of Finance / State Gazette)",
+        url: "https://jdih.kemenkeu.go.id/fulltext/2016/34TAHUN2016PP.htm",
+      },
+      {
+        label: "DDTC Tax News - KJS for PPJB Final Income Tax Amended, Ends Overbooking for Developers: amendment to payment code for PPh final on PPJB; 2.5% rate confirmed for PPJB and addenda including assignment deeds; paid under the assignor's tax ID (Tier 2: DDTC, established Indonesian tax analysis and advisory firm)",
+        url: "https://news.ddtc.co.id/en/news/1821560/kjs-for-ppjb-final-income-tax-amended-ends-overbooking-for-developers",
+      },
+      {
+        label: "PwC Indonesia Tax Summaries - Other Taxes: BPHTB (land and building acquisition duty) at 5% of the acquisition value above the non-taxable threshold; paid by the buyer on acquisition of land or building rights including through PPJB and AJB deeds (Tier 2: PwC, international professional services firm with Indonesia practice)",
+        url: "https://taxsummaries.pwc.com/indonesia/corporate/other-taxes",
+      },
+      {
+        label: "Bali Villa Realty - Investing in Off-Plan Villas Bali 2026: off-plan listings reached approximately 37% of Bali's total property market, up 180% year-on-year; early-bird buyers may achieve capital appreciation before handover (Tier 2/3: established Bali property agency with published market data)",
+        url: "https://balivillarealty.com/blog/benefits-of-buying-off-plan-property-in-bali/",
+      },
+    ],
+  },
 ];
