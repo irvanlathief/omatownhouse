@@ -2289,7 +2289,7 @@
     },
     {
       "id": "bali-off-plan-resale-before-handover",
-      "status": "pending",
+      "status": "published",
       "priority": 90,
       "theme": "off-plan",
       "atpType": "can",
@@ -2309,8 +2309,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-11",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/143"
     }
   ]
 }
