@@ -2311,6 +2311,256 @@
       "suggestedVenues": [],
       "publishedAt": "2026-10-11",
       "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/143"
+    },
+    {
+      "id": "bali-vs-bahrain-property-investment",
+      "status": "drafting",
+      "priority": 91,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Bahrain for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Bahrain property investment",
+        "Bahrain real estate foreigners",
+        "Bali or Bahrain for investment"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Bahrain more easily than in Bali?",
+        "How do Bali and Bahrain rental yields compare for investors?",
+        "What residency or visa does buying property in Bahrain give versus Bali?"
+      ],
+      "proposedSlug": "bali-vs-bahrain-property-investment",
+      "proposedTitle": "Bali vs Bahrain Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-best-time-to-buy-property",
+      "status": "pending",
+      "priority": 92,
+      "theme": "investment",
+      "atpType": "when",
+      "primaryQuestion": "When is the best time to buy Bali property for the lowest price?",
+      "targetKeywords": [
+        "best time to buy Bali property",
+        "Bali property market timing",
+        "off-plan launch pricing Bali"
+      ],
+      "relatedQuestions": [
+        "Do Bali property prices change by season or market cycle?",
+        "Is it cheaper to buy early in a Bali off-plan project launch?",
+        "How do global interest rate cycles affect Bali property buying windows?"
+      ],
+      "proposedSlug": "best-time-to-buy-bali-property",
+      "proposedTitle": "When Is the Best Time to Buy Bali Property?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "uluwatu-vs-seminyak-property-investment",
+      "status": "pending",
+      "priority": 93,
+      "theme": "location",
+      "atpType": "vs",
+      "primaryQuestion": "Uluwatu vs Seminyak for property investment: which is better for a foreign buyer?",
+      "targetKeywords": [
+        "Uluwatu vs Seminyak property",
+        "buy property Uluwatu or Seminyak Bali",
+        "Uluwatu rental yield vs Seminyak"
+      ],
+      "relatedQuestions": [
+        "Are Uluwatu or Seminyak rental yields higher for villas?",
+        "How do land prices in Uluwatu compare to Seminyak?",
+        "Which Bali area is seeing faster price growth: Uluwatu or Seminyak?"
+      ],
+      "proposedSlug": "uluwatu-vs-seminyak-property-investment",
+      "proposedTitle": "Uluwatu vs Seminyak for Property Investment in Bali",
+      "category": "location",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-townhouse-vs-standalone-villa",
+      "status": "pending",
+      "priority": 94,
+      "theme": "off-plan",
+      "atpType": "vs",
+      "primaryQuestion": "Townhouse vs standalone villa for an off-plan Bali investment: which makes more financial sense?",
+      "targetKeywords": [
+        "Bali off-plan townhouse vs villa",
+        "townhouse investment Bali",
+        "Bali off-plan product comparison"
+      ],
+      "relatedQuestions": [
+        "Are townhouses or standalone villas easier to rent out in Bali?",
+        "How do off-plan townhouse prices compare to standalone villas in Bali?",
+        "What are the maintenance cost differences between a townhouse and a villa in Bali?"
+      ],
+      "proposedSlug": "bali-off-plan-townhouse-vs-standalone-villa",
+      "proposedTitle": "Townhouse vs Standalone Villa for Off-Plan Bali Investment",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-market-outlook-2027",
+      "status": "pending",
+      "priority": 95,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What does the Bali property market outlook look like going into 2027?",
+      "targetKeywords": [
+        "Bali property market outlook 2027",
+        "Bali real estate forecast 2027",
+        "Bali land price growth 2027"
+      ],
+      "relatedQuestions": [
+        "Will Bali property prices keep rising in 2027?",
+        "What macro factors will drive or slow Bali real estate growth in 2027?",
+        "Which Bali areas are best positioned for price growth in 2027?"
+      ],
+      "proposedSlug": "bali-property-market-outlook-2027",
+      "proposedTitle": "Bali Property Market Outlook for 2027",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-digital-nomad-rental-demand-villas",
+      "status": "pending",
+      "priority": 96,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How is the digital nomad wave reshaping rental demand and nightly rates for Bali villas?",
+      "targetKeywords": [
+        "digital nomad Bali villa rental demand",
+        "Bali remote work rental market",
+        "Bali villa monthly stays digital nomads"
+      ],
+      "relatedQuestions": [
+        "Do digital nomads prefer short-term or monthly stays in Bali?",
+        "How has the remote work trend changed occupancy for Bali villas since 2022?",
+        "Which Bali areas benefit most from digital nomad demand for villa rentals?"
+      ],
+      "proposedSlug": "bali-digital-nomad-villa-rental-demand",
+      "proposedTitle": "How Digital Nomads Are Reshaping Bali Villa Rental Demand",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-handover-inspection-defects",
+      "status": "pending",
+      "priority": 97,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How do I inspect a Bali off-plan villa at handover and what defects should I look for?",
+      "targetKeywords": [
+        "Bali villa handover inspection",
+        "off-plan snagging list Bali",
+        "Bali villa defect check handover"
+      ],
+      "relatedQuestions": [
+        "What is a snagging list and do Bali developers accept one at handover?",
+        "What are the most common defects found in newly built Bali villas?",
+        "What happens if a Bali developer refuses to fix defects found at handover?"
+      ],
+      "proposedSlug": "bali-off-plan-villa-handover-inspection-guide",
+      "proposedTitle": "Bali Off-Plan Villa Handover: Inspection and Defect Guide",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "buy-bali-property-personal-use-vs-rental-income",
+      "status": "pending",
+      "priority": 98,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Buying Bali property for personal use vs rental income: what changes for a foreign owner?",
+      "targetKeywords": [
+        "Bali property personal use vs rental investment",
+        "own-use villa Bali tax permit",
+        "Bali rental permit personal property"
+      ],
+      "relatedQuestions": [
+        "Do I need a different permit to rent my Bali villa out versus using it personally?",
+        "How does intended use (personal vs rental) affect the PT PMA structure in Bali?",
+        "Can I use my Bali villa part of the year personally and rent it the rest?"
+      ],
+      "proposedSlug": "bali-property-personal-use-vs-rental-investment",
+      "proposedTitle": "Bali Property: Personal Use vs Rental Investment",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-eco-sustainable-villa-investment-value",
+      "status": "pending",
+      "priority": 99,
+      "theme": "investment",
+      "atpType": "are",
+      "primaryQuestion": "Are eco-friendly and sustainable Bali villas a better investment than conventional builds?",
+      "targetKeywords": [
+        "eco villa Bali investment",
+        "sustainable villa Bali resale value",
+        "green building Bali rental premium"
+      ],
+      "relatedQuestions": [
+        "Do eco villas command higher nightly rates in Bali than conventional villas?",
+        "What makes a Bali villa count as sustainable and does it affect resale value?",
+        "What are the upfront and ongoing cost differences for a green-built Bali villa?"
+      ],
+      "proposedSlug": "eco-sustainable-villa-bali-investment-value",
+      "proposedTitle": "Are Eco-Friendly Bali Villas a Better Investment?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-abu-dhabi-property-investment",
+      "status": "pending",
+      "priority": 100,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Abu Dhabi for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Abu Dhabi property investment",
+        "Abu Dhabi freehold foreigners vs Bali leasehold",
+        "Bali or Abu Dhabi for investment"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Abu Dhabi more easily than in Bali?",
+        "How do Bali and Abu Dhabi rental yields compare for residential investors?",
+        "What visa does buying property in Abu Dhabi give versus Bali?"
+      ],
+      "proposedSlug": "bali-vs-abu-dhabi-property-investment",
+      "proposedTitle": "Bali vs Abu Dhabi Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
