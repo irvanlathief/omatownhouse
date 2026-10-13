@@ -6393,4 +6393,68 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-bahrain-property-investment",
+    title: "Bali vs Bahrain Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 101,
+    metaDescription: "Bali vs Bahrain for foreign investors: freehold ownership rules, tax, Golden Residency, and rental yields compared side by side. Not financial advice.",
+    body: `<p>For a US or UAE investor weighing a tropical-lifestyle market against a Gulf financial hub, Bali and Bahrain offer very different value propositions. Bahrain lets foreign nationals hold freehold title in designated zones and charges no personal income tax on rental receipts. Bali is a leasehold-first market with higher published gross rental yields and strong lifestyle demand, but it requires more legal structure to own correctly.</p><p>In Bahrain, non-GCC nationals can buy freehold property in government-designated areas including <a href="https://www.trowers.com/insights/2026/april/foreign-real-estate-ownership-in-bahrain-and-saudi-arabia-2026-reforms-explained" data-external="true">Amwaj Islands, Juffair, Reef Island, Bahrain Bay, and Durrat Al Bahrain</a>, under a framework established by Legislative Decree No. 43 of 2003 and subsequently amended. No local partner or residency is required before purchase. In Bali, foreigners cannot hold Hak Milik freehold title. The two standard routes are a leasehold (typically 25 to 30 years, extendable by agreement) or a PT PMA foreign-owned company that holds Hak Guna Bangunan title. Each adds legal and annual compliance costs that Bahrain freehold does not carry.</p><p>On tax, the gap between the two markets is significant. Bahrain has no personal income tax and no capital gains tax, so rental income flows to the individual owner with minimal local deduction. A registration fee of roughly 1.7 to 2 percent applies at purchase. In Bali, a foreign owner operating through a PT PMA pays 10 percent final withholding tax on gross rental revenue, plus annual PBB land and building tax (typically below 0.5 percent of assessed value). The buyer also covers BPHTB acquisition duty at 5 percent of the transaction value above the regional exemption threshold.</p><p>On residency, Bahrain's Golden Residency programme was expanded in November 2025: the minimum qualifying real estate investment was cut from BHD 200,000 to <a href="https://tools.prnewswire.com/en-us/live/20813/release/20251126EN33899" data-external="true">BHD 130,000, roughly USD 345,000</a>, granting a renewable 10-year permit for the buyer and their immediate family with no employer sponsorship required. Bali's Second Home Visa requires a deposit of IDR 2 billion (around USD 130,000) in an Indonesian state bank and covers up to five years, renewable. The Bali route has a lower financial entry point but ties up liquid capital in a bank deposit rather than an owned asset.</p><p>On yield, the two markets diverge sharply. <a href="https://www.cbre.bh/insights/figures/bahrain-real-estate-market-review-h2-2025" data-external="true">CBRE's H2 2025 Bahrain review</a> reported quoted apartment rents declined 1.4 percent year-on-year and villa rents declined 4.1 percent, reflecting an oversupplied market. Indicative gross yields in Juffair and Seef run 5 to 7 percent. Bali villa gross yields in corridors such as Canggu and Tabanan typically run 8 to 15 percent, though net yield after management fees, tax, and holding costs is materially lower. Neither range is a guarantee, and actual returns depend on occupancy, management quality, and location. This is not financial advice.</p><p>Bahrain suits investors who want freehold title, a familiar GCC regulatory environment, tax transparency, and a USD-pegged currency with no exchange-rate exposure. Bali suits those who want high rental demand from tourism and digital nomads, personal-use flexibility, and access to an off-plan market that still offers launch-price discounts. For a UAE-based buyer already comfortable with Gulf property norms, Bahrain is the lower-friction choice. Bali is a fundamentally different asset category.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own freehold property in Bahrain?",
+        answer: "Yes, in government-designated zones including Amwaj Islands, Juffair, Reef Island, Bahrain Bay, and Durrat Al Bahrain. The legal basis is Legislative Decree No. 43 of 2003 as amended, most recently by Edict No. 38 of 2023. No local partner and no prior Bahrain residency is required. Outside these zones, freehold ownership is not available to non-GCC nationals.",
+      },
+      {
+        question: "What is the minimum investment for Bahrain's Golden Residency?",
+        answer: "From November 2025, the minimum qualifying real estate investment is BHD 130,000, roughly USD 345,000, down from BHD 200,000. The permit is renewable every 10 years, covers the buyer and immediate family, and requires no employer sponsorship. The announcement came from Bahrain's Nationality, Passports and Residence Affairs (NPRA) at the Ministry of Interior.",
+      },
+      {
+        question: "How do Bali and Bahrain rental yields compare?",
+        answer: "Indicative gross yields in Bahrain's Juffair and Seef districts run 5 to 7 percent, though CBRE's H2 2025 data showed rents declining year-on-year. Bali villa gross yields in Canggu and Tabanan typically run 8 to 15 percent. Net yields on both sides are lower after costs: tax, management, and annual compliance in Bali; registration and service charges in Bahrain. Neither range is a guarantee. Not financial advice.",
+      },
+      {
+        question: "Do foreigners pay income tax on Bahrain rental income vs Bali?",
+        answer: "In Bahrain, there is no personal income tax, so rental income received by an individual foreign owner is not taxed locally. In Bali, a foreign owner operating through a PT PMA pays a 10 percent final withholding tax on gross rental revenue, collected at source before the income is remitted. The tax difference is one of the most significant cost-of-ownership factors when comparing the two markets.",
+      },
+    ],
+    publishedAt: "2026-10-13",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/manama-skyline-sunset-bahrain.webp",
+    gallery: [
+      {
+        url: "/blog/bahrain-wtc-night-reflection.webp",
+        alt: "Bahrain World Trade Center twin towers illuminated at night, reflected in the still waters of Manama Lagoon, with surrounding city lights visible",
+        credit: "Abdullah Jaafar / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/6188071/",
+      },
+      {
+        url: "/blog/bahrain-central-bank-wtc-manama.webp",
+        alt: "The Bahrain Central Bank building towers above waterfront gardens in Manama with the Bahrain World Trade Center visible in the background against a cloudy sky",
+        credit: "Yousif / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/11647421/",
+      },
+    ],
+    citations: [
+      {
+        label: "Trowers and Hamlins - Foreign Real Estate Ownership in Bahrain and Saudi Arabia, 2026 Reforms Explained: designated zones for non-GCC freehold ownership confirmed; legislative framework Legislative Decree No. 43/2003 as amended by Edict No. 67/2006 and Edict No. 38/2023; no local partner required in eligible zones (Tier 2: international law firm with active Bahrain practice)",
+        url: "https://www.trowers.com/insights/2026/april/foreign-real-estate-ownership-in-bahrain-and-saudi-arabia-2026-reforms-explained",
+      },
+      {
+        label: "PR Newswire / Bahrain NPRA - Bahrain Lowers Minimum Real Estate Investment for Golden Residency to USD 345,000 (November 2025): minimum reduced from BHD 200,000 to BHD 130,000; 10-year renewable permit; no employer sponsorship required; covers buyer and immediate family (Tier 1: official government press release via NPRA Ministry of Interior)",
+        url: "https://tools.prnewswire.com/en-us/live/20813/release/20251126EN33899",
+      },
+      {
+        label: "CBRE Bahrain - Real Estate Market Review H2 2025: quoted apartment rents declined 1.4% year-on-year; villa rents declined 4.1% year-on-year; total registered transactions reached 29,777 in 2025, up 19.8% versus 2024 (Tier 2: CBRE, international real estate adviser with Bahrain market coverage)",
+        url: "https://www.cbre.bh/insights/figures/bahrain-real-estate-market-review-h2-2025",
+      },
+      {
+        label: "PropertFinder Bahrain - Guide to Buying Property in Bahrain: registration fee approximately 1.7% within 60 days of contract or 2% after; freehold and leasehold options in designated investment zones; mortgage available for expatriates at 60 to 70% LTV (Tier 2: established regional property portal with Bahrain coverage)",
+        url: "https://www.propertyfinder.bh/blog/guide-buying-property-in-bahrain/",
+      },
+    ],
+  },
 ];
