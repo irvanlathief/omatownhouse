@@ -2339,7 +2339,7 @@
     },
     {
       "id": "bali-best-time-to-buy-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 92,
       "theme": "investment",
       "atpType": "when",
@@ -2359,8 +2359,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-14",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/145"
     },
     {
       "id": "uluwatu-vs-seminyak-property-investment",
