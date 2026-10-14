@@ -6457,4 +6457,64 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "best-time-to-buy-bali-property",
+    title: "When Is the Best Time to Buy Bali Property?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 102,
+    metaDescription: "Find out when is the best time to buy Bali property: off-plan launch pricing, market cycle timing, and exchange rate factors for US and UAE investors.",
+    body: `<p>The clearest price advantage in Bali property comes not from a season or a month, but from when in a project's life cycle you buy. Buying at the launch phase of an off-plan development typically costs 10 to 30 percent less than the completed villa in the same area, because developers price early units to fund construction and attract anchor buyers. Each subsequent phase is priced higher, so the earliest buyers capture the widest discount.</p><p>Beyond the off-plan window, the broader market cycle matters. <a href="https://www.bi.go.id/en/publikasi/laporan/Documents/Residential-Property-Survey-Quarter-1-2026.pdf" data-external="true">Bank Indonesia's Residential Property Price Survey for Q1 2026</a> recorded the slowest annual price growth since records began in 2003: the national residential index rose just 0.62 percent year-on-year and primary-market sales contracted by about 26 percent. That combination of flat prices and falling volume shifts negotiating leverage toward buyers. Q2 2026 data showed a modest recovery, with annual growth edging to 0.69 percent and sales contracting by a shallower 2.36 percent.</p><p>Bali does not have strong seasonal price swings like a US spring-summer selling season. Transaction volumes fluctuate with the tourism calendar to some degree, but not enough to give a short-term buyer a clear monthly edge. The more durable seasonal factor is rental demand: high season runs roughly from July to August and from December to January, so properties with proven yield during those months may carry a slight price premium from sellers who know their occupancy story.</p><p>For a USD or AED buyer, the exchange rate adds another variable. A period of rupiah weakness improves purchasing power in dollar terms: the same USD amount buys more square meters. USD/IDR traded at historically weak rupiah levels through 2025 and into 2026. The caveat is that rupiah weakness also reduces rental income when you convert it back, so the currency effect cuts both ways.</p><p>The practical answer: buy when the deal is structurally sound, the title is clean, the developer has a verified track record, and the price reflects local market conditions. Time in the market consistently outperforms attempts to time the market. That said, entering at a project launch in an area that still has capital inflows puts you in the strongest structural position. This is not financial advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Do Bali property prices change by season or market cycle?",
+        answer: "Bali does not follow strong seasonal price patterns the way US or European markets do. Prices move more with the economic cycle. Bank Indonesia data for Q1 2026 showed national residential price growth of just 0.62 percent year-on-year, the slowest since records began in 2003, and sales contracted by about 26 percent. A soft patch like that creates negotiating leverage for buyers across the island, which is more meaningful than any month-by-month variation.",
+      },
+      {
+        question: "Is it cheaper to buy early in a Bali off-plan project launch?",
+        answer: "Yes, consistently. Developers release units in stages and price each phase higher as construction progresses and risk reduces. Buying at launch typically puts you 10 to 30 percent below what the same villa will cost at completion, according to established Bali property agencies. The trade-off is construction risk and a wait of roughly 12 to 18 months for handover. Verify the developer's track record and check that the PPJB ties payments to real construction milestones before committing.",
+      },
+      {
+        question: "How do global interest rate cycles affect Bali property buying windows?",
+        answer: "Most foreign buyers in Bali buy without Indonesian bank financing, so local rates have less direct impact than they would in a US mortgage market. The indirect effect is on the rupiah. When Bank Indonesia raises rates to defend the currency, the IDR can stabilize and the USD purchasing-power benefit narrows. Falling global rates can weaken the rupiah and boost dollar-denominated buying power, while also pushing investors toward higher-yield assets like Bali villas. Watch the USD/IDR rate alongside interest rate moves.",
+      },
+      {
+        question: "What is the best month to buy Bali property?",
+        answer: "There is no reliably best month. The more useful frame is: buy during the early phase of a project launch when the developer is still offering launch pricing; buy when the market cycle is soft, as Bank Indonesia data showed for 2025 to 2026; and buy when the USD/IDR rate offers purchasing power. Getting those three factors aligned matters far more than picking a specific calendar month.",
+      },
+    ],
+    publishedAt: "2026-10-14",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/property-market-analysis-houses-chart.webp",
+    gallery: [
+      {
+        url: "/blog/property-selection-decision-choose.webp",
+        alt: "A hand picks a bright pink miniature house from a row of identical dark grey models, representing a buyer selecting a property at the right point in the market cycle",
+        credit: "jakubzerdzicki / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/28053206/",
+      },
+      {
+        url: "/blog/off-plan-development-coastal-site-aerial.webp",
+        alt: "Aerial view of a coastal off-plan villa development site showing cleared plots, one completed show villa, and active construction equipment with sea and islands visible in the background",
+        credit: "Kim Hort / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/27026916/",
+      },
+    ],
+    citations: [
+      {
+        label: "Bank Indonesia - Residential Property Price Survey Q1 2026 (SHPR Tw I 2026): national residential price index grew 0.62% yoy in Q1 2026, the slowest since the survey began in 2003; primary-market sales contracted 25.67% yoy; quarterly growth 0.04% (Tier 1: Bank Indonesia official quarterly survey)",
+        url: "https://www.bi.go.id/en/publikasi/laporan/Documents/Residential-Property-Survey-Quarter-1-2026.pdf",
+      },
+      {
+        label: "Bank Indonesia - Residential Property Price Survey Q2 2026 (SHPR Tw II 2026): national residential price index grew 0.69% yoy in Q2 2026, a slight recovery; primary-market sales contracted 2.36% yoy, shallower than Q1 2026 (Tier 1: Bank Indonesia official quarterly survey)",
+        url: "https://www.bi.go.id/en/publikasi/laporan/Documents/SHPR_Tw_II_2026-EN.pdf",
+      },
+      {
+        label: "Bali Home Immo - Investing in Off-Plan Property in Bali: developers offer an initial discount at project launch to attract early buyers and fund construction; each subsequent phase is priced higher as build risk reduces; off-plan properties typically 10 to 30 percent below completed villas (Tier 2/3: established Bali property agency with active listings and market commentary)",
+        url: "https://bali-home-immo.com/blog/bali-villa/investment-in-bali-investing-in-off-plan-property",
+      },
+    ],
+  },
 ];
