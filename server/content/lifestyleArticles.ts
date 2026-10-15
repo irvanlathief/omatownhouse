@@ -6517,4 +6517,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "uluwatu-vs-seminyak-property-investment",
+    title: "Uluwatu vs Seminyak for Property Investment in Bali",
+    category: "location",
+    imageUrl: null,
+    sortOrder: 103,
+    metaDescription: "Uluwatu vs Seminyak for Bali property investment: compare land prices, rental yields, airport access, and which market suits a foreign buyer in 2026.",
+    body: `<p>Uluwatu costs less to enter and quotes higher rental yields than Seminyak; Seminyak offers more established infrastructure, better airport access, and stronger resale liquidity. Both are on the west coast of Bali but serve different investor profiles, and the right choice depends on your budget, target guest, and holding horizon.</p><p>Standard land in Seminyak runs roughly $900 to $1,900 per square metre, the most expensive on the island. Uluwatu land typically falls in the $310 to $940 per square metre range for non-cliff-front plots, based on 2026 agency survey data. That lower entry price is a key driver of the yield gap: agents quote 12 to 17 percent gross for Uluwatu versus 8 to 12 percent gross for <a href="https://www.seminyak.bali.com" data-external="true">Seminyak</a> (IQI Global, February 2026). Net yields, after management fees, maintenance, and Indonesian income tax, land considerably lower than gross. Treat any quoted gross figure as a ceiling rather than a probable outcome. This is general information, not financial advice.</p><p>Price growth has favoured Uluwatu. Real Estate 3.0's analysis of REID transaction data in Q1 2025 described Uluwatu as "breaking out" while the broader island market was maturing. <a href="https://www.colliers.com/en-id/research/colliers-annual-property-market-report-2025-bali-apartment" data-external="true">Colliers Indonesia's Annual Property Market Report 2025</a> named Canggu and Uluwatu as Bali's primary residential development clusters. Seminyak, by contrast, faces villa oversupply pressure that has compressed occupancy rates and forced more aggressive pricing across its existing stock.</p><p>Access differs in a way that affects short-stay rental income. Seminyak sits about 10 to 12 km from <a href="https://www.baliairport.com" data-external="true">Ngurah Rai International Airport</a>, a 15 to 25 minute drive off-peak. Uluwatu is 20 to 25 km out and takes 40 to 60 minutes off-peak, rising above 90 minutes during afternoon peak when traffic through Jimbaran backs up. For guests arriving on long-haul flights, the extra transit time is a real factor in booking decisions.</p><p>Seminyak draws older, affluent repeat visitors who prioritise fine dining, boutique shopping, and established beach clubs. Uluwatu attracts surfers, honeymooners, and a growing luxury wellness market. Neither profile guarantees a specific yield. Foreign buyers in both areas must use a leasehold structure (typically 25 to 50 years, renewable) or a PT PMA company holding HGB title. Unlike Dubai, where designated zones allow outright freehold for foreigners, or US markets with no nationality restrictions on ownership, Bali requires additional legal setup that adds both upfront cost and ongoing compliance obligations.</p>`,
+    venues: [
+      {
+        name: "Uluwatu Temple",
+        distance: "45-60 min from Seminyak",
+        coords: "-8.8292,115.0849",
+        url: "https://www.uluwatu.co.id",
+      },
+      {
+        name: "Seminyak Beach",
+        distance: "15-25 min from airport",
+        coords: "-8.6923,115.1566",
+        url: "https://www.seminyak.bali.com",
+      },
+    ],
+    faq: [
+      {
+        question: "Are Uluwatu or Seminyak rental yields higher for villas?",
+        answer: "Uluwatu is currently quoted at 12 to 17 percent gross by major agency sources versus 8 to 12 percent for Seminyak. The lower land entry price in Uluwatu drives the higher return on capital. Net yields island-wide typically fall in the 4 to 9 percent range after management fees, maintenance, and Indonesian income tax are deducted. These are ranges, not guarantees.",
+      },
+      {
+        question: "How do land prices in Uluwatu compare to Seminyak?",
+        answer: "Standard Uluwatu plots run roughly $310 to $940 per square metre for non-cliff-front land. Seminyak is the most expensive area on the island at $900 to $1,900 per square metre. A comparable plot in Seminyak can cost two to four times more than in Uluwatu.",
+      },
+      {
+        question: "Which area is seeing faster property price growth: Uluwatu or Seminyak?",
+        answer: "Uluwatu. REID market data from 2024 and Q1 2025, analysed by Real Estate 3.0, identifies Uluwatu and the Bukit Peninsula as Bali's fastest-growing sub-market. Seminyak is at a mature stage and faces villa oversupply pressure weighing on both yield growth and price appreciation.",
+      },
+    ],
+    publishedAt: "2026-10-15",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/seminyak-beach-sunset-bali.webp",
+    gallery: [
+      {
+        url: "/blog/uluwatu-cliffs-aerial-bali.webp",
+        alt: "Aerial view of Uluwatu's limestone cliffs covered in green vegetation with the Indian Ocean below and visitors gathering at the cliff edge at sunset, Bali Indonesia",
+        credit: "Tom Fisk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-uluwatu-cliffs-in-bali-indonesia-36407456/",
+      },
+      {
+        url: "/blog/seminyak-beach-aerial-bali.webp",
+        alt: "Aerial view of Seminyak beach at sunset showing densely packed beach chairs and colourful umbrellas stretching along Bali's west coast tourist corridor",
+        credit: "Tom Fisk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-vibrant-beach-in-bali-indonesia-36284645/",
+      },
+    ],
+    citations: [
+      {
+        label: "IQI Global - Bali Property Market Report February 2026: gross rental yields by area, Uluwatu/Bingin/Bukit 12 to 17 percent, Seminyak/Petitenget 8 to 12 percent (Tier 2: international real estate advisory with Indonesia operations and active Bali transaction data)",
+        url: "https://iqiglobal.com/blog/bali-property-market-feb-2026",
+      },
+      {
+        label: "Real Estate 3.0 / REID Q1 2025 Bali Report - 'The Market is Maturing and Uluwatu is Breaking Out': median villa prices, transaction volumes, and Uluwatu identified as fastest-growing sub-market (Tier 2: analysis of REID transaction dataset, the most comprehensive villa sales registry in Bali)",
+        url: "https://realestate3-0.beehiiv.com/p/bali-real-estate-q1-2025-report-the-market-is-maturing-and-uluwatu-is-breaking-out-3ce1",
+      },
+      {
+        label: "Colliers Indonesia Annual Property Market Report 2025 - Bali Apartment: Canggu and Uluwatu named as Bali's primary residential development clusters with dynamic lifestyle appeal and robust tourism activity (Tier 1: Colliers International is a globally recognised property consultancy)",
+        url: "https://www.colliers.com/en-id/research/colliers-annual-property-market-report-2025-bali-apartment",
+      },
+      {
+        label: "Bali Home Immo / REID H1 2026 Bali Villa Market Report: 4,220 villa sales recorded, median price IDR 5.27 billion, year-on-year price growth 3.1 percent, transaction volume down 21 percent year-on-year (Tier 2: established Bali agency citing REID dataset)",
+        url: "https://bali-home-immo.com/blog/bali-property-market-h1-2026",
+      },
+    ],
+  },
 ];
