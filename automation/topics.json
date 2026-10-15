@@ -2364,7 +2364,7 @@
     },
     {
       "id": "uluwatu-vs-seminyak-property-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 93,
       "theme": "location",
       "atpType": "vs",
@@ -2384,8 +2384,8 @@
       "category": "location",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-15",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/146"
     },
     {
       "id": "bali-off-plan-townhouse-vs-standalone-villa",
