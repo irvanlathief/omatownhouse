@@ -2389,7 +2389,7 @@
     },
     {
       "id": "bali-off-plan-townhouse-vs-standalone-villa",
-      "status": "pending",
+      "status": "published",
       "priority": 94,
       "theme": "off-plan",
       "atpType": "vs",
@@ -2409,7 +2409,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-10-16",
       "prUrl": null
     },
     {

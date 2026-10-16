@@ -6590,4 +6590,76 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-off-plan-townhouse-vs-standalone-villa",
+    title: "Townhouse vs Standalone Villa for Off-Plan Bali Investment",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 104,
+    metaDescription:
+      "Off-plan Bali townhouse vs standalone villa: compare entry price, rental yield, maintenance costs, and remote management for foreign investors.",
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-10-16",
+    heroImage: "/blog/bali-standalone-villa-aerial-rice-field.webp",
+    gallery: [
+      {
+        url: "/blog/blog-community-dining.webp",
+        alt: "Shared community dining area typical of a managed Bali townhouse development",
+      },
+      {
+        url: "/blog/blog-gym-fitness.webp",
+        alt: "Fitness amenities in a managed Bali villa complex",
+      },
+    ],
+    body: `<p>Off-plan townhouses in Bali typically undercut standalone villas at launch because land, pool, and landscaping costs are distributed across several units rather than falling on one buyer. For a foreign investor comparing the two products, that lower entry price comes paired with simpler day-to-day management, though a standalone villa offers more design freedom and the expectation of stronger capital appreciation on a private plot.</p>
+
+<p>The price gap traces back to shared infrastructure. A standalone villa sits on its own 200 to 350 sqm plot with a private pool, perimeter walls, and a garden that the owner alone must maintain. A townhouse development spreads those construction and land costs across multiple units, which allows a developer to price each unit noticeably lower for comparable living space. The saving at entry is real, though the extent varies by location, developer, and specification. Buyers should compare specific projects rather than assuming a fixed discount.</p>
+
+<p>Rental yields for a well-managed unit can reach 10 to 15 percent gross in high-demand areas such as Canggu and Berawa, and 12 to 17 percent gross in Uluwatu, according to <a href="https://www.iqiglobal.com/blog/bali-property-market-feb-2026" data-external="true">IQI Global's February 2026 Bali property market report</a>. Both product types can achieve those ranges when occupancy is strong, but a managed townhouse complex often handles bookings centrally, which can support occupancy during shoulder season when a standalone villa owner might bear the full cost of a vacant month. Yield figures are gross, before management fees and taxes. Past performance is not a guarantee of future returns and nothing here constitutes financial advice.</p>
+
+<p>Running costs are where the product difference matters most for a remote owner. A standalone villa typically requires an independent property manager at 15 to 20 percent of gross rental income, plus annual upkeep running to around 1 to 2 percent of the property's value, according to <a href="https://www.ownpropertyabroad.com/indonesia/property-management-cost-and-pricing" data-external="true">OwnPropertyAbroad</a> and <a href="https://bukitvista.com/?p=108460" data-external="true">BukitVista's 2025 property management guide</a>. A townhouse in a managed complex usually consolidates those costs into a single service charge, simplifying budgeting for an owner based overseas.</p>
+
+<p>The legal structures available to foreign buyers are the same for both product types: a <a href="/blog/freehold-vs-leasehold-bali">25 to 30 year leasehold</a> with extendable terms, or ownership through a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> for Hak Guna Bangunan title. Neither product qualifies for Hak Milik freehold ownership under current Indonesian law. For most passive investors buying a single unit, the leasehold route is simpler; a PT PMA structure suits those planning multiple acquisitions or active commercial use.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Are townhouses or standalone villas easier to rent out in Bali?",
+        answer:
+          "Townhouses in a managed complex often benefit from centralized booking and shared guest services, which can reduce vacancy during slower months. A well-located standalone villa with a recognized operator can outperform on peak-season rates. The easier-to-manage option for a remote owner is usually the managed townhouse, as it requires less day-to-day involvement from abroad.",
+      },
+      {
+        question: "How do off-plan townhouse prices compare to standalone villas in Bali?",
+        answer:
+          "Off-plan townhouses typically enter at a lower price than standalone villas in the same submarket because land, pool, and landscaping costs are divided across several units. The size of the gap varies by location, developer, and the specification of each project. Buyers should compare individual projects directly rather than assuming a fixed percentage discount.",
+      },
+      {
+        question: "What are the maintenance cost differences between a townhouse and a villa in Bali?",
+        answer:
+          "A standalone villa typically costs 1 to 2 percent of its value in annual maintenance for the pool, garden, and building fabric, plus 15 to 20 percent of gross rental income for a property manager. A townhouse in a managed complex consolidates most of those costs into a single service charge, which makes budgeting more predictable and reduces the coordination work for an owner based overseas.",
+      },
+      {
+        question: "Can foreigners buy both townhouses and standalone villas off-plan in Bali?",
+        answer:
+          "Yes. Both product types are available to foreign buyers under the same structures: a leasehold agreement or ownership through a PT PMA company. Neither qualifies for Hak Milik freehold title, which is reserved for Indonesian citizens. Most foreign buyers use a 25 to 30 year leasehold with extendable terms for a straightforward purchase.",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "IQI Global - Bali Property Market Report February 2026: gross rental yields of 10 to 15 percent in Canggu and Berawa, 12 to 17 percent in Uluwatu (Tier 2: established international property agency with Indonesia market coverage)",
+        url: "https://www.iqiglobal.com/blog/bali-property-market-feb-2026",
+      },
+      {
+        label:
+          "OwnPropertyAbroad - Indonesia Property Management Cost and Pricing: professional management fees typically 15 to 20 percent of gross rental income (Tier 2: established property advisory with Indonesia coverage)",
+        url: "https://www.ownpropertyabroad.com/indonesia/property-management-cost-and-pricing",
+      },
+      {
+        label:
+          "BukitVista - Bali Property Management Guide 2025: annual maintenance costs for a Bali villa typically 1 to 2 percent of property value (Tier 2: established Bali property management operator with published market data)",
+        url: "https://bukitvista.com/?p=108460",
+      },
+    ],
+  },
 ];
