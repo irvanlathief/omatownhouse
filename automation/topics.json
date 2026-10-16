@@ -2389,7 +2389,7 @@
     },
     {
       "id": "bali-off-plan-townhouse-vs-standalone-villa",
-      "status": "pending",
+      "status": "published",
       "priority": 94,
       "theme": "off-plan",
       "atpType": "vs",
@@ -2409,8 +2409,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-16",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/147"
     },
     {
       "id": "bali-property-market-outlook-2027",
