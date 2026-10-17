@@ -6590,4 +6590,60 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-off-plan-townhouse-vs-standalone-villa",
+    title: "Townhouse vs Standalone Villa for Off-Plan Bali Investment",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 104,
+    metaDescription: "Townhouse vs standalone villa for Bali off-plan investment: compare entry prices, maintenance costs, rental yields, and which product suits your budget.",
+    body: `<p>A townhouse in a multi-unit Bali development costs less to enter and carries lower ongoing maintenance than a standalone villa; a standalone villa commands higher nightly rates and gives guests full privacy with their own pool. The right choice depends on your budget, target guest, and appetite for running costs. Neither product is categorically better for all investors.</p><p>Off-plan properties in Bali are typically priced 10 to 30 percent below comparable completed units, according to <a href="https://bali-home-immo.com/blog/bali-villa/investment-in-bali-investing-in-off-plan-property" data-external="true">Bali Home Immo's off-plan investment guide</a>. Within that bracket, townhouses sit at the lower end because land cost and shared facilities are split across multiple units. One Bali agency comparison put a smaller off-plan villa at around USD 140,000 against USD 220,000 for a completed equivalent. Townhouses in developing areas outside Seminyak and Canggu can open below USD 150,000. These are illustrative agency figures, not transaction data, so treat them as a starting range rather than a guarantee.</p><p>The running cost gap matters more over a 25-year holding period. A standalone villa puts the full bill for pool maintenance, garden upkeep, pest control, security, and structural repairs on the owner alone. A townhouse development spreads those costs across all units through a service charge, which reduces the per-unit monthly burden but removes your control over standards, contractors, and timing. Read the service charge agreement carefully before you sign, and check whether the rate can be revised at the developer's discretion.</p><p>On the rental side, standalone villas earn a premium because guests pay for exclusivity. A private pool and no shared spaces produce the kind of photos that drive bookings on luxury short-stay platforms. Townhouses attract a different profile: couples, smaller groups, and longer-stay guests who want resort-style access at a more accessible nightly rate. Both segments are active in Bali. The trade-off is a higher nightly rate for standalone villas versus potentially more consistent occupancy for well-located townhouses.</p><p>Net rental yields in Bali, after management fees (typically 25 to 40 percent of gross revenue), Indonesian income tax, and maintenance, run in the 4 to 7 percent range for well-managed properties in established areas, according to <a href="https://rumavi.com/en/property-guides/bali-villa-roi-in-2025-what-foreign-investors-should-expect-from-indonesias-property-market" data-external="true">Rumavi's conservative analysis</a>. Management quality and location drive yield far more than product label. For ownership structure, there is no legal difference between the two formats: a townhouse and a standalone villa can both be held via leasehold (typically 25 to 50 years, renewable by agreement) or through a PT PMA company holding HGB title. Foreign buyers cannot hold SHM freehold land directly in either case. This is general information, not financial or legal advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Are townhouses or standalone villas easier to rent out in Bali?",
+        answer: "Both rent well, but to different guests. A standalone villa with a private pool attracts premium short-stay guests who pay higher nightly rates for exclusivity. A townhouse in a managed complex appeals to couples, smaller groups, and monthly-stay guests who want resort-style amenities at a lower price point. Location and management quality matter more than the product type.",
+      },
+      {
+        question: "How do off-plan townhouse prices compare to standalone villas in Bali?",
+        answer: "Townhouses in multi-unit off-plan developments typically enter at a lower price than comparable standalone villas in the same area. Off-plan prices across both categories run roughly 10 to 30 percent below completed equivalents, based on established Bali agency data. In practice, townhouses outside core tourist corridors can open below USD 150,000, while off-plan standalone villas typically start from USD 140,000 to USD 200,000 and rise quickly for larger builds.",
+      },
+      {
+        question: "What are the maintenance cost differences between a townhouse and a villa in Bali?",
+        answer: "A standalone villa places the full cost of pool, garden, pest control, security, and structural maintenance on the individual owner. A townhouse development spreads those costs across multiple owners through a service charge, reducing the per-unit burden. The trade-off is reduced control over standards and timing. Check what the service charge covers and whether the rate can change before signing any development agreement.",
+      },
+    ],
+    publishedAt: "2026-10-17",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-townhouse-shared-pool-aerial-resort.webp",
+    gallery: [
+      {
+        url: "/blog/bali-balinese-villa-aerial-garden-pool.webp",
+        alt: "Aerial view of a Balinese villa with traditional pitched tiled roof, surrounded by tropical garden, with a compact private pool set between two wing structures, illustrating the standalone villa format in Bali",
+        credit: "i Nci Cinaroglu / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/aerial-view-of-balinese-villas-34054904/",
+      },
+      {
+        url: "/blog/bali-standalone-villa-pool-palms-aerial.webp",
+        alt: "Aerial view of a standalone Bali villa with a small private pool surrounded by palm trees, sun loungers and a large white umbrella, set among traditional Balinese rooftops in a compact residential plot",
+        credit: "Betch Tyblades / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/tropical-villa-with-private-pool-and-gardens-2480608/",
+      },
+    ],
+    citations: [
+      {
+        label: "Bali Home Immo - Investing in Off-Plan Property in Bali: developers offer an initial discount at project launch; each subsequent phase is priced higher as build risk reduces; off-plan properties typically 10 to 30 percent below completed villas (Tier 2/3: established Bali property agency with active listings and market commentary)",
+        url: "https://bali-home-immo.com/blog/bali-villa/investment-in-bali-investing-in-off-plan-property",
+      },
+      {
+        label: "Bali Villa Realty - Off-Plan vs Turnkey Bali Villa Investment: agency example puts off-plan villa at USD 140,000 against USD 220,000 for a completed equivalent, build period approximately 18 months (Tier 2/3: established Bali sales agency with active off-plan listings)",
+        url: "https://balivillarealty.com/blog/built-vs-off-plan-investment/",
+      },
+      {
+        label: "Rumavi - Bali Villa ROI: net returns after management fees, tax and maintenance average 4 to 6 percent; management fees 25 to 40 percent of gross revenue; gross yield advertising overstates realised returns (Tier 2/3: Bali property advisory with conservative, cost-adjusted yield methodology)",
+        url: "https://rumavi.com/en/property-guides/bali-villa-roi-in-2025-what-foreign-investors-should-expect-from-indonesias-property-market",
+      },
+    ],
+  },
 ];
