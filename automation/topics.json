@@ -2414,7 +2414,7 @@
     },
     {
       "id": "bali-property-market-outlook-2027",
-      "status": "drafting",
+      "status": "published",
       "priority": 95,
       "theme": "investment",
       "atpType": "what",
@@ -2434,8 +2434,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-18",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/149"
     },
     {
       "id": "bali-digital-nomad-rental-demand-villas",
