@@ -6646,4 +6646,60 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-property-market-outlook-2027",
+    title: "Bali Property Market Outlook for 2027",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 105,
+    metaDescription: "Bali property market outlook for 2027: tourism growth, price trends, oversupply risks, and the North Bali airport catalyst. What foreign investors need to know.",
+    body: `<p>Heading into 2027, the Bali property market shows continued growth in supply-constrained areas alongside rising visitor numbers, while oversupplied villa segments face rate pressure. <a href="https://bali.bps.go.id/en/pressrelease/2026/08/03/718054/perkembangan-pariwisata-provinsi-bali-juni-2026.html" data-external="true">BPS Bali</a> recorded 3.2 million foreign tourist arrivals in the first half of 2026, and star-rated hotel occupancy stood at 61.16 percent in May 2026, both pointing to a tourism base that continues to expand.</p><p>Prices in established areas such as Canggu and Seminyak grew at roughly 5 to 8 percent through 2026 for prime, well-managed units. The overall REID transaction-level figure came in at 3.1 percent year-on-year across 4,220 villa sales in H1 2026, per data cited by <a href="https://bali-home-immo.com/blog/bali-property-market-h1-2026" data-external="true">Bali Home Immo</a>. The Mengwi corridor has been the fastest-moving sub-market by transaction volume. Generic or poorly located stock held flat or gave back ground as completions piled up.</p><p>The single largest structural catalyst for 2027 is the North Bali International Airport (BIBU), which the Indonesian government approved and included in the 2025 to 2029 national infrastructure plan. Construction is targeted to start in 2027, with partial operations aimed at around 2028. The project, sited in Kubutambahan, Buleleng, will give northern Bali its first direct-access international gateway and is likely to lift land values across that regency.</p><p>The main risk heading into 2027 is continued oversupply. Around 38 percent of active Bali listings are off-plan, and completions are expected to keep coming through 2027. Well-managed villas in supply-constrained areas with a valid Pondok Wisata short-term rental permit are most likely to hold occupancy and nightly rates. Generic units in saturated corridors face vacancy risk and downward rate pressure. Yield figures quoted by developers, often 10 to 15 percent gross, need to be reduced by management fees (typically 25 to 40 percent of revenue), Indonesian income tax, and maintenance costs before comparing with alternatives. This is not financial advice.</p><p>The legal framework for foreign buyers has not changed. Leasehold (typically 25 to 50 years, renewable) and a PT PMA company holding HGB title remain the two main routes into the Bali market. Hak Pakai is available to holders of a valid KITAS. A qualified Indonesian notary (PPAT) should review any purchase documents before you commit.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Will Bali property prices keep rising in 2027?",
+        answer: "The most likely scenario for 2027 is continued modest growth of 3 to 8 percent in prime, supply-constrained areas such as Canggu, Seminyak, and Uluwatu, based on 2026 transaction data from the REID dataset. Oversupplied segments, particularly newer villa corridors with heavy off-plan completion pipelines, may see flat or negative price movement. No source can guarantee future appreciation, and this is not financial advice.",
+      },
+      {
+        question: "What macro factors will drive or slow Bali real estate growth in 2027?",
+        answer: "Key tailwinds are continued growth in international arrivals (3.2 million in H1 2026 alone per BPS Bali), the North Bali Airport groundbreaking targeted for 2027, and Indonesia's expanding digital nomad visa program. Key risks are a global demand slowdown that cuts tourism, ongoing oversupply from off-plan completions, and any tightening of foreign ownership or rental permit rules.",
+      },
+      {
+        question: "Which Bali areas are best positioned for price growth in 2027?",
+        answer: "Supply-constrained corridors where land for new development is largely exhausted, such as central Seminyak, tend to hold values well. The Mengwi corridor has been the fastest-growing sub-market by transaction volume. Tabanan and the Kaba Kaba area sit at a lower price-per-are entry point and are drawing buyer interest as Canggu prices push investors further west. Northern Bali around Buleleng could see above-average appreciation if the airport project breaks ground as planned.",
+      },
+    ],
+    publishedAt: "2026-10-18",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-property-market-forecast-keys-analytics.webp",
+    gallery: [
+      {
+        url: "/blog/bali-coastline-construction-development-aerial.webp",
+        alt: "Aerial drone view of Bali's scenic coastline showing active construction of a new development next to a beachfront plot, illustrating the pace of property development along the island's southern shore",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/12715984/",
+      },
+      {
+        url: "/blog/bali-seminyak-kuta-beachfront-aerial-property.webp",
+        alt: "Aerial view of the Seminyak and Kuta beachfront strip in Bali, showing a dense mix of hotels, resort villas, and residential rooftops running alongside a wide sandy beach and the Indian Ocean",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/10472242/",
+      },
+    ],
+    citations: [
+      {
+        label: "BPS Bali Province - Tourism Overview June 2026: 3.2 million foreign tourist arrivals in H1 2026; star-rated hotel occupancy 61.16 percent in May 2026 (Tier 1: Statistics Indonesia official provincial data)",
+        url: "https://bali.bps.go.id/en/pressrelease/2026/08/03/718054/perkembangan-pariwisata-provinsi-bali-juni-2026.html",
+      },
+      {
+        label: "Bali Home Immo / REID H1 2026 Bali Villa Market Report: 4,220 villa sales recorded, median price IDR 5.27 billion, year-on-year price growth 3.1 percent (Tier 2: established Bali agency citing REID transaction dataset, the most comprehensive villa sales registry in Bali)",
+        url: "https://bali-home-immo.com/blog/bali-property-market-h1-2026",
+      },
+      {
+        label: "PwC Indonesia Infrastructure News - North Bali Airport: Indonesian government included BIBU in 2025-2029 national development plan; construction targeted to begin 2027, partial operations aimed at 2028 (Tier 2: PwC Indonesia infrastructure advisory)",
+        url: "https://pwc.com/id/en/media-centre/infrastructure-news/november-2024/transportation-infrastructure--north-bali-airport-remains-an-opt.html",
+      },
+    ],
+  },
 ];
