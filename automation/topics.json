@@ -2439,7 +2439,7 @@
     },
     {
       "id": "bali-digital-nomad-rental-demand-villas",
-      "status": "drafting",
+      "status": "published",
       "priority": 96,
       "theme": "investment",
       "atpType": "how",
@@ -2459,8 +2459,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-19",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/150"
     },
     {
       "id": "bali-off-plan-handover-inspection-defects",
