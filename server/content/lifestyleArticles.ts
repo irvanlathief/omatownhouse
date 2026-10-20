@@ -6762,4 +6762,68 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-off-plan-villa-handover-inspection-guide",
+    title: "Bali Off-Plan Villa Handover: Inspection and Defect Guide",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 107,
+    metaDescription:
+      "How to inspect a Bali off-plan villa at handover, what defects to look for, and your rights under Indonesian law if the developer will not fix them.",
+    body: `<p>At Bali villa handover, do not sign the handover document before you have worked through the property room by room with a written snagging list. The most common defects in newly built Bali villas are moisture intrusion through walls or rooflines, ungrounded electrical sockets, and gaps around window and door frames.</p><p>Waterproofing is the most important single item to check in a tropical climate. Indonesia's wet season puts every roof, balcony, and window frame under sustained pressure. Signs of inadequate waterproofing include damp patches at ceiling corners, water marks on concrete slab undersides, seepage where window frames meet the render, and any smell of mold on arrival. If handover falls in the dry season, a moisture-meter check can reveal hidden damp before the first rains confirm it. Run all taps, showers, and toilet flushes. Test each electrical socket and the residual current device in the fuse panel. Switch every light fitting and air conditioning unit on and off. Check that tiles are flat, grouted cleanly, and hollow-free by tapping them. Open and close every door and window to confirm frames are true and latches seat correctly.</p><p>A thorough handover inspection of a three to four bedroom villa typically takes two to four hours. Bringing an independent inspector rather than relying on the developer's walkthrough gives you a dated, photographed report that can be sent back to the developer as a formal defect notice. Many Bali buyers negotiate to hold back five to ten percent of the total purchase price until the developer has rectified the defects recorded at handover. Any developer who resists this arrangement warrants extra scrutiny before you sign.</p><p>Indonesian law gives you more leverage than many buyers realise. If a developer fails to deliver a property that matches the agreed specifications, Articles 1266 and 1267 of the Indonesian Civil Code entitle the buyer to demand performance, contract termination, or compensation. The Consumer Protection Law (Law No. 8 of 1999) places the burden on the developer to remedy defects in goods and services supplied, and the Housing Law (Law No. 1 of 2011) sets construction quality obligations for residential property sales. Before signing the handover form, make sure any agreed defect remediation timeline is written down and countersigned. Once you sign an unconditional handover document, enforcing repairs becomes significantly harder.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "What is a snagging list and do Bali developers accept one at handover?",
+        answer:
+          "A snagging list is a written record of defects, incomplete work, and items that do not match the agreed specification, compiled during the handover walkthrough. Reputable Bali developers will accept a formal snagging list and agree a timeline to fix each item before or shortly after handover. Photograph every defect, date the report, and ask the developer to countersign it. Avoid signing an unconditional handover form until the most significant defects are resolved or a written fix schedule is in place.",
+      },
+      {
+        question: "What are the most common defects found in newly built Bali villas?",
+        answer:
+          "Moisture intrusion is the most common and most costly defect in Bali's tropical climate, showing up as damp patches, roof leaks, or window seepage. Electrical issues include ungrounded sockets and incorrectly wired panels. Other frequent findings are poorly laid or hollow tiles, misaligned door and window frames, inadequate drainage grading on terraces and balconies, and incomplete grouting or render. A post-rain walkthrough or a moisture-meter test during a dry-season handover is the most reliable way to surface water problems before they cause damage.",
+      },
+      {
+        question: "What happens if a Bali developer refuses to fix defects found at handover?",
+        answer:
+          "Under Articles 1266 and 1267 of the Indonesian Civil Code, a buyer can demand that the developer perform its contractual obligations, seek contract termination, or claim compensation for losses caused by the defects. The Consumer Protection Law (Law No. 8 of 1999) also places a duty on the developer to remedy defects in goods or services supplied. In practice, the strongest leverage is a PPJB that ties a portion of the purchase price to satisfactory defect resolution. Arbitration through BANI (the Indonesian Arbitration Board) is faster than the Indonesian court system for most defect claims.",
+      },
+    ],
+    publishedAt: "2026-10-20",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/villa-handover-inspection-hardhat-clipboard.webp",
+    gallery: [
+      {
+        url: "/blog/villa-snagging-checklist-inspector.webp",
+        alt: "A building inspector in a high-visibility vest holds a detailed home inspection checklist on a clipboard, representing the snagging process at a new Bali villa handover",
+        credit: "Pexels / RDNE Stock project",
+        sourceUrl: "https://www.pexels.com/photo/8293680/",
+      },
+      {
+        url: "/blog/buyers-agent-inspect-unfinished-property.webp",
+        alt: "A couple and their agent walk through the bare concrete interior of an unfinished off-plan property, reviewing the space before accepting handover",
+        credit: "Pexels / Pavel Danilyuk",
+        sourceUrl: "https://www.pexels.com/photo/7937362/",
+      },
+    ],
+    citations: [
+      {
+        label: "Bali Home Inspector - common villa defect types including moisture intrusion, ungrounded sockets, and exterior wall gaps; inspection duration two to four hours (Tier 2: established Bali building inspection service)",
+        url: "https://balihomeinspector.com/",
+      },
+      {
+        label: "Bukit Vista - Bali Villa Construction Issues 2025: inadequate waterproofing as leading defect category in tropical climate; signs include roof and balcony leaks and window seepage (Tier 2: established Bali property management operator with direct build experience)",
+        url: "https://www.bukitvista.com/?p=111576",
+      },
+      {
+        label: "Indonesian Civil Code (KUHPerdata) Articles 1266-1267: buyer rights to demand performance, seek contract termination, or claim compensation when a developer fails to deliver per specification (Tier 1: Indonesian statute)",
+        url: "https://peraturan.bpk.go.id/Details/33739",
+      },
+      {
+        label: "Indonesia Consumer Protection Law No. 8 of 1999 (UU Perlindungan Konsumen): developer obligation to remedy defects in goods and services supplied to consumers (Tier 1: Indonesian statute)",
+        url: "https://peraturan.bpk.go.id/Details/44558",
+      },
+    ],
+  },
 ];
