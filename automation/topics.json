@@ -2464,7 +2464,7 @@
     },
     {
       "id": "bali-off-plan-handover-inspection-defects",
-      "status": "drafting",
+      "status": "published",
       "priority": 97,
       "theme": "off-plan",
       "atpType": "how",
@@ -2484,8 +2484,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-20",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/152"
     },
     {
       "id": "buy-bali-property-personal-use-vs-rental-income",
