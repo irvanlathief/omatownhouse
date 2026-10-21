@@ -2489,7 +2489,7 @@
     },
     {
       "id": "buy-bali-property-personal-use-vs-rental-income",
-      "status": "drafting",
+      "status": "published",
       "priority": 98,
       "theme": "investment",
       "atpType": "vs",
@@ -2509,8 +2509,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-21",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/153"
     },
     {
       "id": "bali-eco-sustainable-villa-investment-value",
