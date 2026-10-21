@@ -6826,4 +6826,75 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-property-personal-use-vs-rental-investment",
+    title: "Bali Property: Personal Use vs Rental Investment",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 108,
+    metaDescription:
+      "Buying Bali property for personal use vs rental income changes your permit, ownership structure, and tax position. Here is what every foreign buyer needs to know.",
+    body: `<p>The key difference is legal structure and tax. If you buy a Bali villa purely for personal stays, a leasehold in your own name is enough and no rental permit is required. The moment you charge guests for any night's stay, you need a rental operating license and, as a foreign buyer, a PT PMA company to hold that license legally.</p><p>Under Indonesian law, the Pondok Wisata license that covers small-scale short-term villa rentals can only be held by Indonesian citizens. A foreign buyer cannot obtain one directly. To operate a rental legally, a foreigner must use a <a href="https://emerhub.com/bali/pt-pma-setup/" data-external="true">PT PMA</a> (foreign-owned limited liability company) with the appropriate tourism business registration. The villa is then held under Hak Guna Bangunan (HGB) title in the PT PMA's name. Minimum paid-up capital for a PT PMA operating a villa is generally IDR 2.5 billion, and the structure carries ongoing annual compliance costs of roughly USD 2,000 to 5,000.</p><p>The tax treatment also changes depending on use. A villa you hold personally and occupy yourself does not generate taxable rental income. Once you start receiving rent, Indonesian final income tax (PPh Final Article 4(2)) applies at 10 percent of gross rental receipts for a PT PMA or Indonesian tax resident. If you are a non-resident individual receiving rent without a local corporate structure, PPh Article 26 withholds 20 percent at source. The US and Indonesia do not have a comprehensive income tax treaty, so US investors cannot use a treaty rate to reduce that withholding below the standard level. UAE investors face similar treatment, as Indonesia's treaty with the UAE covers limited categories of income.</p><p>Hybrid use, owning the villa for personal enjoyment part of the year and renting it for the rest, is legal and common among Bali investors. The rental permit and PT PMA structure must already be in place before any commercial booking is accepted. Only the periods during which the villa generates rental income trigger tax obligations. Weeks you spend at the property as the owner do not count as taxable rental income.</p><p>If there is any chance you will ever earn rental income from the property, setting up the PT PMA and obtaining the rental license before purchase is the smarter sequence. Converting a personal leasehold to a PT PMA structure after the fact is possible but involves additional notary fees, a new leasehold agreement, and fresh transfer costs. Getting the structure right from day one costs less overall. This is not financial or legal advice; confirm the right structure with an Indonesian tax consultant and a licensed notary before committing.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Do I need a different permit to rent my Bali villa out versus using it personally?",
+        answer:
+          "Yes. For personal use only, no rental permit is required. For any commercial rental, foreigners must operate through a PT PMA with a tourism business license. The Pondok Wisata license that covers small-scale short-term rentals in Bali is restricted to Indonesian citizens and cannot be obtained directly by a foreign buyer or a foreign-owned company.",
+      },
+      {
+        question:
+          "How does intended use (personal vs rental) affect the PT PMA structure in Bali?",
+        answer:
+          "If you plan to use the villa purely for personal stays, a leasehold in your own name is sufficient, and you avoid the PT PMA setup costs (roughly USD 2,000 to 5,000) and annual compliance fees. If any rental income is planned, the PT PMA is necessary: it holds the property under HGB title, employs villa staff legally, holds the rental license, and acts as the tax entity that pays the 10 percent PPh Final on gross rental receipts.",
+      },
+      {
+        question:
+          "Can I use my Bali villa part of the year personally and rent it the rest?",
+        answer:
+          "Yes, hybrid use is common and legal. The rental structure and permit must be in place before accepting any paid booking. Indonesian tax applies only to the rental periods. Weeks you occupy the villa yourself do not generate rental income tax obligations. The PT PMA's annual accounts reflect both rental income and owner-use periods, which a local accountant will track for you.",
+      },
+    ],
+    publishedAt: "2026-10-21",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-traditional-villa-pool-personal-use.webp",
+    gallery: [
+      {
+        url: "/blog/villa-aerial-view-private-pool-owner.webp",
+        alt: "Aerial drone view of a private villa with a small pool set within tropical greenery, with the owner floating in the water, illustrating personal use of a vacation property",
+        credit: "Pexels / IslandHopper X",
+        sourceUrl: "https://www.pexels.com/photo/15214460/",
+      },
+      {
+        url: "/blog/villa-pool-sun-loungers-tropical-rental.webp",
+        alt: "A modern tropical villa with a pool, sun loungers, and outdoor seating arranged for guests, representing a short-term rental setup",
+        credit: "Pexels / Alef Morais",
+        sourceUrl: "https://www.pexels.com/photo/34277699/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Emerhub - Pondok Wisata license in Bali: restricted to Indonesian citizens; foreigners cannot hold one directly and must use a PT PMA with a tourism business registration to operate short-term rentals (Tier 2: established Indonesia company-setup consultancy)",
+        url: "https://emerhub.com/bali/pondok-wisata-license/",
+      },
+      {
+        label:
+          "Emerhub - Renting out a villa in Bali as a foreigner: PT PMA required with appropriate KBLI tourism code; villa held under HGB title; minimum paid-up capital IDR 2.5 billion (Tier 2: established Indonesia company-setup consultancy)",
+        url: "https://emerhub.com/bali/renting-out-villa-in-bali/",
+      },
+      {
+        label:
+          "Pajak.com - PPh Final Article 4(2) rental income tax: 10 percent of gross rent on land and buildings, paid by the 10th of the following month; final tax, not included in annual return (Tier 2: Indonesian tax news and guidance site with DJP-aligned guidance)",
+        url: "https://www.pajak.com/pajak/sewakan-tanah-atau-bangunan-kena-pph-final-ini-tarif-dan-contoh-penghitungannya/",
+      },
+      {
+        label:
+          "Indonesian Directorate General of Taxes (DJP) - PPh Article 26: 20 percent withholding on Indonesian-source income paid to non-resident foreign taxpayers without a domestic corporate structure (Tier 1: Indonesian tax authority)",
+        url: "https://www.pajak.go.id/id/pph-pasal-26",
+      },
+    ],
+  },
 ];
