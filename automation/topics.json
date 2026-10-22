@@ -2514,7 +2514,7 @@
     },
     {
       "id": "bali-eco-sustainable-villa-investment-value",
-      "status": "pending",
+      "status": "published",
       "priority": 99,
       "theme": "investment",
       "atpType": "are",
@@ -2534,8 +2534,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-22",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/155"
     },
     {
       "id": "bali-vs-abu-dhabi-property-investment",
