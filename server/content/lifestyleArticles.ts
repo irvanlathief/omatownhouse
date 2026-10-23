@@ -6963,4 +6963,80 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-abu-dhabi-property-investment",
+    title: "Bali vs Abu Dhabi Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 110,
+    metaDescription:
+      "Bali vs Abu Dhabi property: freehold rules, rental yields, entry prices, Golden Visa vs Second Home Visa, and tax. A plain comparison for foreign investors.",
+    body: `<p>Both Bali and Abu Dhabi let foreign nationals buy property, but the legal structures, entry prices and yield profiles differ markedly. Abu Dhabi offers freehold title inside designated investment zones, while Bali restricts foreigners to leasehold or a company-based structure. Which market makes more sense for you depends on your budget, tax position and intended use of the asset.</p><p>In Abu Dhabi, foreigners can hold freehold title inside designated investment zones established under <a href="https://www.modon.com/real-estate/blog/a-complete-guide-to-buying-property-in-abu-dhabi" data-external="true">Law No. 13 of 2019</a>, administered by the Abu Dhabi Real Estate Centre (ADREC). The main zones include Saadiyat Island, Yas Island, Reem Island, Al Maryah Island, Al Reef, Raha Beach and Hudayriyat Island. Outside these zones, ownership remains restricted to UAE and GCC nationals. The registration fee is 2% of the purchase price. In Bali, foreigners cannot hold freehold (Hak Milik) title directly. The two main routes are a personal leasehold (typically 25 plus 25 years, extendable) or buying through a foreign-owned company (PT PMA), which can hold land under a Hak Guna Bangunan title. See our <a href="/blog/freehold-vs-leasehold-bali">guide to freehold vs leasehold in Bali</a> for a full breakdown.</p><p>Abu Dhabi's gross rental yields average roughly 5 to 8% across the city, with apartments outperforming villas. <a href="https://www.globalpropertyguide.com/middle-east/united-arab-emirates/rental-yields" data-external="true">Global Property Guide</a> put the UAE average at around 4.9% in mid-2026. Bali gross yields vary more widely: established agencies cite 8 to 15% for well-located short-term rental villas in prime corridors, though net yields after management fees, tax and maintenance are lower. The entry price gap is significant. Saadiyat Island apartments traded at roughly AED 33,000 per sqm (around USD 9,000 per sqm) in early 2025, according to portal data. Bali off-plan villas and townhouses in emerging corridors such as Tabanan and Kaba Kaba start from around USD 150,000 to USD 250,000.</p><p>Buying property in Abu Dhabi worth AED 2 million or more (approximately USD 545,000 at the current peg) qualifies for the <a href="https://adro.gov.ae/Visas/Types-of-Visas/Abu-Dhabi-Golden-Visa/Investors" data-external="true">UAE Golden Visa</a>, a 10-year renewable residency. Bali's Second Home Visa requires a minimum deposit of USD 130,000 in an Indonesian bank account and gives a stay of up to 10 years; it is not tied to property title. On tax, the UAE levies no personal income tax on rental earnings. In Indonesia, foreign individual landlords typically pay 10% withholding tax on gross rental income. See our <a href="/blog/tax-for-foreign-property-owners-bali">Bali rental income tax guide</a> for details.</p><p>Currency is a further consideration. The UAE dirham is pegged to the US dollar at AED 3.67, removing exchange-rate risk for USD-based investors. Bali property deals are often USD-denominated at the sales stage, but rental income and operating costs flow in Indonesian rupiah, so exchange-rate movement affects net returns. Abu Dhabi suits buyers who want freehold title, a larger capital commitment, the Golden Visa and a liquid, dollar-pegged market. Bali suits buyers seeking higher gross yields, a lower entry cost and a lifestyle-driven asset with strong short-term rental demand. This is not financial advice; returns depend on location, management and individual tax circumstances.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own freehold property in Abu Dhabi more easily than in Bali?",
+        answer:
+          "Yes, within limits. Abu Dhabi allows foreign nationals to hold freehold title inside designated investment zones (Law No. 13 of 2019, ADREC). Key zones include Saadiyat Island, Yas Island and Reem Island. Outside those zones, ownership is restricted to UAE and GCC nationals. In Bali, foreigners cannot hold freehold (Hak Milik) title under any structure. The options are a personal leasehold or a PT PMA company holding HGB title.",
+      },
+      {
+        question:
+          "How do Bali and Abu Dhabi rental yields compare for residential investors?",
+        answer:
+          "Abu Dhabi gross yields average roughly 5 to 8% city-wide, with apartments typically outperforming villas. Global Property Guide put the UAE average at around 4.9% in mid-2026. Bali gross yields for well-managed short-term rental villas in prime areas are cited at 8 to 15% by established agencies, though net yields after management fees, tax and maintenance are materially lower. Neither figure is a guarantee; results depend on location, management and occupancy.",
+      },
+      {
+        question:
+          "What visa does buying property in Abu Dhabi give versus Bali?",
+        answer:
+          "Buying property in Abu Dhabi worth AED 2 million or more (roughly USD 545,000) qualifies for the UAE Golden Visa, a 10-year renewable residency that covers spouses and children. In Bali, the Second Home Visa is not linked to property title: it requires a USD 130,000 minimum deposit held in an Indonesian bank account and gives up to a 10-year stay. Investors holding a PT PMA company in Indonesia can qualify for a KITAS investor visa through that company instead.",
+      },
+    ],
+    publishedAt: "2026-10-23",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/abu-dhabi-skyline-gulf-waterfront.webp",
+    gallery: [
+      {
+        url: "/blog/abu-dhabi-etihad-towers-glass-facade.webp",
+        alt: "Close-up of the Etihad Towers in Abu Dhabi, showing the distinctive curved glass and steel facade of one of the emirate's most recognizable luxury residential and commercial towers",
+        credit: "Lucas P. Carlini via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/2883603/",
+      },
+      {
+        url: "/blog/abu-dhabi-etihad-towers-city-dusk.webp",
+        alt: "Abu Dhabi street scene at dusk with the Etihad Towers and other high-rise buildings lit up against a golden sunset sky, with palm trees and traffic on the foreground boulevard",
+        credit: "m7kk via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/5045851/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Abu Dhabi Real Estate Centre (ADREC) - Law No. 13 of 2019: foreign freehold ownership inside designated investment zones (Saadiyat, Yas, Reem, Al Maryah, Al Reef, Raha Beach, Hudayriyat, Al Ghadeer); 2% registration fee on purchase; administered by ADREC (Tier 1: Abu Dhabi government framework; cited via Modon Real Estate comprehensive 2025 guide)",
+        url: "https://www.modon.com/real-estate/blog/a-complete-guide-to-buying-property-in-abu-dhabi",
+      },
+      {
+        label:
+          "Abu Dhabi Real Estate Investor Visa (Golden Visa) - Abu Dhabi Residents Office (ADRO): property valued at AED 2,000,000 or more qualifies for a 10-year renewable residency; covers spouses and children; off-plan requires evidence of at least AED 2,000,000 in payments made to the developer (Tier 1: official Abu Dhabi government residency portal)",
+        url: "https://adro.gov.ae/Visas/Types-of-Visas/Abu-Dhabi-Golden-Visa/Investors",
+      },
+      {
+        label:
+          "Global Property Guide - UAE Rental Yields: UAE city average gross residential yield approximately 4.94% as of Q2 2026; methodology based on advertised rent versus sales price comparisons across Abu Dhabi and Dubai (Tier 2: established international residential property yield data portal)",
+        url: "https://www.globalpropertyguide.com/middle-east/united-arab-emirates/rental-yields",
+      },
+      {
+        label:
+          "Engel and Volkers Abu Dhabi Property Investment Guide 2026: average rental yields across Abu Dhabi typically range from 5 to 8% gross; apartments outperform villas; Saadiyat and Yas Island classified as premium with highest capital appreciation (Tier 2: established international real estate agency with Abu Dhabi office and market reports)",
+        url: "https://www.engelvoelkers.com/ae/en/resources/abu-dhabi-property-investment",
+      },
+      {
+        label:
+          "Economy Middle East citing Savills Q1 2025 Abu Dhabi data: average sales price AED 16,200 per sqm, up 13.4% year-on-year; Saadiyat apartment prices approximately AED 3,081 per sq ft (around AED 33,200 per sqm) per Dubizzle annual market report 2025 (Tier 2: Savills international consultancy data cited in regional business press)",
+        url: "https://economymiddleeast.com/news/abu-dhabi-real-estate-property-prices-surge-13-4-percent-amid-supply-constraints-in-q1-2025",
+      },
+    ],
+  },
 ];
