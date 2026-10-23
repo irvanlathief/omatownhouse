@@ -2539,7 +2539,7 @@
     },
     {
       "id": "bali-vs-abu-dhabi-property-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 100,
       "theme": "investment",
       "atpType": "vs",
@@ -2559,8 +2559,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-23",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/156"
     }
   ]
 }
