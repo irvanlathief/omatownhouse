@@ -2539,7 +2539,7 @@
     },
     {
       "id": "bali-vs-abu-dhabi-property-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 100,
       "theme": "investment",
       "atpType": "vs",
@@ -2556,6 +2556,206 @@
       ],
       "proposedSlug": "bali-vs-abu-dhabi-property-investment",
       "proposedTitle": "Bali vs Abu Dhabi Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-10-23",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/156"
+    },
+    {
+      "id": "bali-vs-sri-lanka-property-investment",
+      "status": "pending",
+      "priority": 101,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Sri Lanka for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Sri Lanka property investment",
+        "Bali or Sri Lanka for investment",
+        "Sri Lanka real estate foreigners vs Bali leasehold"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own property in Sri Lanka more easily than in Bali?",
+        "How do Bali and Sri Lanka rental yields compare for villa investors?",
+        "What risks should a US or UAE investor know before buying in Sri Lanka vs Bali?"
+      ],
+      "proposedSlug": "bali-vs-sri-lanka-property-investment",
+      "proposedTitle": "Bali vs Sri Lanka Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-turkey-property-investment",
+      "status": "pending",
+      "priority": 102,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Turkey for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Turkey property investment",
+        "Bali or Bodrum Istanbul for investment",
+        "Turkey citizenship by investment vs Bali leasehold"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Turkey more easily than in Bali?",
+        "How do Bali and Turkey rental yields compare for villa investors?",
+        "Does buying property in Turkey give citizenship while Bali gives residency?"
+      ],
+      "proposedSlug": "bali-vs-turkey-property-investment",
+      "proposedTitle": "Bali vs Turkey Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "indonesia-us-tax-treaty-bali-property",
+      "status": "pending",
+      "priority": 103,
+      "theme": "tax",
+      "atpType": "how",
+      "primaryQuestion": "How does the Indonesia-US tax treaty affect rental income and gains for American Bali property investors?",
+      "targetKeywords": [
+        "Indonesia US tax treaty Bali property",
+        "double tax agreement Indonesia USA",
+        "foreign tax credit Bali rental income USA"
+      ],
+      "relatedQuestions": [
+        "Does the US-Indonesia tax treaty reduce withholding tax on Bali rental income for Americans?",
+        "Can a US investor claim a foreign tax credit for Indonesian property taxes on their federal return?",
+        "How does the US-Indonesia treaty affect capital gains when selling a Bali property?"
+      ],
+      "proposedSlug": "indonesia-us-tax-treaty-bali-property-investors",
+      "proposedTitle": "Indonesia-US Tax Treaty and Your Bali Property Investment",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-furnishing-setup-cost",
+      "status": "pending",
+      "priority": 104,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How much does it cost to furnish and set up an off-plan Bali villa for short-term rental?",
+      "targetKeywords": [
+        "Bali villa furnishing cost",
+        "set up Bali villa rental ready",
+        "off-plan Bali interior fit-out cost"
+      ],
+      "relatedQuestions": [
+        "What is a typical budget for furnishing a 2-bedroom Bali villa for Airbnb?",
+        "Which items in a Bali villa furnishing budget give the best ROI for rental?",
+        "How long does it take to furnish and list a Bali villa after handover?"
+      ],
+      "proposedSlug": "bali-villa-furnishing-setup-cost",
+      "proposedTitle": "How Much Does It Cost to Furnish a Bali Rental Villa?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "pt-pma-wind-down-bali-property",
+      "status": "pending",
+      "priority": 105,
+      "theme": "foreign-ownership",
+      "atpType": "how",
+      "primaryQuestion": "How do you wind down a Bali PT PMA and extract the remaining assets?",
+      "targetKeywords": [
+        "wind down PT PMA Bali property",
+        "close PT PMA Indonesia",
+        "PT PMA liquidation Bali villa exit"
+      ],
+      "relatedQuestions": [
+        "What is the process and cost to dissolve a PT PMA that holds a Bali property?",
+        "Can I transfer a PT PMA's Bali property to a new owner without winding down the company?",
+        "What tax applies when a PT PMA is dissolved and its Bali villa is sold?"
+      ],
+      "proposedSlug": "pt-pma-wind-down-bali-property-exit",
+      "proposedTitle": "How to Wind Down a Bali PT PMA and Extract Your Assets",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "gili-islands-vs-bali-property-investment",
+      "status": "pending",
+      "priority": 106,
+      "theme": "location",
+      "atpType": "vs",
+      "primaryQuestion": "Gili Islands vs Bali for property investment: is the island premium worth it for a foreign buyer?",
+      "targetKeywords": [
+        "Gili Islands property investment",
+        "buy property Gili Islands vs Bali",
+        "Gili Trawangan real estate foreigners"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own property on the Gili Islands the same way as in Bali?",
+        "Are Gili Islands rental yields higher than Bali for short-term villa rentals?",
+        "What infrastructure and access risks does the Gili Islands present for property investors?"
+      ],
+      "proposedSlug": "gili-islands-vs-bali-property-investment",
+      "proposedTitle": "Gili Islands vs Bali for Property Investment",
+      "category": "location",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-airport-expansion-property-values",
+      "status": "pending",
+      "priority": 107,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How will Bali's second international airport project affect property values in Tabanan and North Bali?",
+      "targetKeywords": [
+        "Bali second airport property values",
+        "Bali Buleleng airport investment",
+        "North Bali airport real estate impact"
+      ],
+      "relatedQuestions": [
+        "Where is the proposed second Bali airport located and when is it expected to open?",
+        "Which Bali areas will benefit most from a second airport in terms of property prices?",
+        "Has the Bali airport expansion already driven land price increases in the north?"
+      ],
+      "proposedSlug": "bali-second-airport-property-values-impact",
+      "proposedTitle": "Bali's Second Airport and Its Impact on Property Values",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-portfolio-diversification",
+      "status": "pending",
+      "priority": 108,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How should a US or UAE investor think about Bali property as part of a diversified portfolio?",
+      "targetKeywords": [
+        "Bali property portfolio diversification US investor",
+        "Bali real estate asset allocation",
+        "alternative investment Bali villa portfolio"
+      ],
+      "relatedQuestions": [
+        "What share of an investment portfolio is reasonable to allocate to Bali real estate?",
+        "How does Bali property correlate with US and Dubai real estate for diversification?",
+        "What liquidity constraints should a portfolio investor understand before buying in Bali?"
+      ],
+      "proposedSlug": "bali-property-portfolio-diversification-us-uae",
+      "proposedTitle": "Bali Property as a Portfolio Diversifier for US and UAE Investors",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
