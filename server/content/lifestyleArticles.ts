@@ -7039,4 +7039,67 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-sri-lanka-property-investment",
+    title: "Bali vs Sri Lanka Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 111,
+    metaDescription:
+      "Bali vs Sri Lanka property for foreign investors: ownership structures, rental yields, entry prices and economic risk. A plain comparison for US and UAE buyers.",
+    body: `<p>Both Bali and Sri Lanka bar foreigners from holding freehold land directly, so the ownership structure question comes first. Bali offers a cleaner company route than Sri Lanka, a deeper short-term rental market and a more stable macro backdrop. Those three differences explain why most yield-focused buyers choose Bali over Colombo or Galle, even though Sri Lanka is a genuine recovery play for buyers comfortable with frontier-market volatility.</p><p>Sri Lanka's <a href="https://lankalaw.net/wp-content/uploads/2025/03/Land-Restrictions-on-Alienation-Consolidated-2024.pdf" data-external="true">Land Restrictions on Alienation Act (No. 38 of 2014, operative from January 1, 2013)</a> bans freehold transfers to foreigners and to companies with more than 50% foreign ownership. The two practical routes are a long-term land lease or purchasing through a locally incorporated company where the foreign shareholder holds no more than 49%. A 2018 amendment also permits foreigners to buy condominium units at any floor, provided the full purchase price is paid in foreign currency. In Bali, the same freehold ban applies under Indonesian law (Hak Milik is restricted to Indonesian nationals), but Bali's PT PMA structure allows 100% foreign ownership of the operating entity. That removes the need for a local majority shareholder and gives the investor full control and a cleaner exit path. See our guide to <a href="/blog/pt-pma-setup-bali-property">setting up a PT PMA to buy Bali property</a> for the steps involved.</p><p>Sri Lanka's property market suffered a sharp correction in 2022 when the country defaulted on external debt for the first time in its history and entered an IMF rescue program. Recovery is real: land values in the Western Province rose roughly 12% year-on-year in 2025, with some Colombo suburban areas up closer to 20%. Coastal beachfront plots in the south are attracting foreign interest again. However, no local bank financing is available to foreign buyers, so purchases must be funded entirely from abroad. Bali off-plan villas and townhouses in corridors like Kaba Kaba and Tabanan start from around USD 150,000 to USD 250,000. Sri Lanka entry prices range widely by location and product type.</p><p>Published residential yields for Colombo sit at roughly 3 to 6% gross for long-term lets, with limited published data on coastal short-term villa returns. Bali gross yields for well-managed short-term rental villas in prime locations are typically quoted at 8 to 15% by established agencies, with net yields lower after management fees, tax and maintenance. Indonesia levies a 10% withholding tax on gross rental income for individual foreign landlords. Sri Lanka also taxes nonresident rental income; rates have shifted with recent fiscal reforms, so consult a Sri Lanka Inland Revenue-registered tax adviser for current figures before proceeding. Neither yield figure is a guarantee. This is not financial advice; outcomes depend on location, management quality and your individual tax position.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own property in Sri Lanka more easily than in Bali?",
+        answer:
+          "Neither market allows foreigners to hold freehold land directly. Sri Lanka's Land Restrictions on Alienation Act (No. 38 of 2014) bans freehold transfers to foreigners and to companies with more than 50% foreign ownership, so the company route caps foreign shareholding at 49%. Condominiums at any floor are available to foreigners since a 2018 amendment, paid entirely in foreign currency. In Bali, foreigners also cannot hold freehold (Hak Milik), but the PT PMA company structure allows 100% foreign ownership, giving an investor full control without a local majority partner.",
+      },
+      {
+        question: "How do Bali and Sri Lanka rental yields compare for villa investors?",
+        answer:
+          "Published long-term residential yields in Colombo are roughly 3 to 6% gross. Bali gross yields for well-managed short-term rental villas in prime locations are typically quoted at 8 to 15% by established agencies, though net yields after management fees, tax and maintenance are materially lower. Coastal short-term villa data for Sri Lanka is limited and hard to benchmark. Neither figure is a guarantee; results depend on occupancy, location and management.",
+      },
+      {
+        question: "What risks should a US or UAE investor know before buying in Sri Lanka vs Bali?",
+        answer:
+          "Sri Lanka experienced a sovereign debt default and severe economic crisis in 2022, with the rupee losing roughly 45% of its value against the USD. The IMF program and falling interest rates have stabilised the market, but currency and political risk remain higher than in Bali. Bali's investment environment is more established, with a mature short-term rental ecosystem and property deals commonly denominated in USD. Both markets require local legal advice; Sri Lanka additionally requires a careful look at the 49% foreign ownership cap on company structures before committing.",
+      },
+    ],
+    publishedAt: "2026-10-24",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/sri-lanka-palm-beach-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/colombo-skyline-lotus-tower.webp",
+        alt: "Aerial daytime view of Colombo city skyline with the iconic Lotus Tower rising above the urban landscape, Beira Lake in the foreground, representing Sri Lanka's commercial capital and its property market",
+        credit: "Sofiia Asmi via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/33511789/",
+      },
+      {
+        url: "/blog/sri-lanka-tropical-coastline-aerial.webp",
+        alt: "Aerial view of a Sri Lankan southern coastal town with turquoise sea, sandy beach, and lush palm tree-covered land showing the beachfront property landscape that attracts foreign investors",
+        credit: "Hilmy Naz via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/18072131/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Land Restrictions on Alienation Act No. 38 of 2014 (Sri Lanka), consolidated 2024 edition: prohibits freehold transfers to foreigners, foreign companies, and Sri Lankan companies with more than 50% foreign shareholding; operative from January 1, 2013; 2018 amendment removed the fourth-floor restriction on condominium purchases by foreigners (Tier 1: Sri Lanka statute published on LankaLaw.net legal database)",
+        url: "https://lankalaw.net/wp-content/uploads/2025/03/Land-Restrictions-on-Alienation-Consolidated-2024.pdf",
+      },
+      {
+        label:
+          "LankaPropertyWeb / Biz English Ada Derana - Real Estate Market Outlook 2025: Western Province land prices up approximately 12% year-on-year; Colombo suburban areas (Piliyandala, Athurugiriya, Homagama) up 14 to 16%; some areas up ~20%; roughly 25 new residential developments and 2,500 units launched in the prior year; beachfront land in southern coastal areas in demand from foreign buyers (Tier 2: established Sri Lankan property listing platform annual market report)",
+        url: "https://bizenglish.adaderana.lk/land-prices-surge-up-to-20-as-real-estate-market-responds-to-lower-rates-and-economic-stability",
+      },
+      {
+        label:
+          "Global Property Guide - Sri Lanka residential overview: country does not publish official house price statistics; long-term residential yields in Colombo historically in the 3 to 6% gross range; no local bank mortgage financing available to foreign buyers; purchases must be funded entirely from abroad (Tier 2: established international residential property data portal)",
+        url: "https://www.globalpropertyguide.com/Asia/Sri-Lanka",
+      },
+    ],
+  },
 ];
