@@ -7102,4 +7102,72 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-turkey-property-investment",
+    title: "Bali vs Turkey Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 112,
+    metaDescription:
+      "Bali vs Turkey property for foreign investors: freehold ownership, citizenship by investment, rental yields and closing costs compared for US and UAE buyers.",
+    body: `<p>Turkey lets foreigners hold freehold title (Tapu Senedi) directly in their own name, without a company structure. Indonesian law does not permit this for Bali property. That structural difference is the most practical starting point for comparing the two markets.</p><p>Under Turkey's Land Registry and Cadastre rules, foreign individuals can buy, register and hold Turkish real estate in their name. The main restrictions are a ban on purchases in military or security zones, a 30-hectare nationwide cap per person, and a rule that foreigners cannot collectively own more than 10% of private land in any district. In Bali, foreigners cannot hold Hak Milik (SHM freehold) under Indonesian law. The practical routes are a long-term leasehold or acquiring property through a <a href="/blog/pt-pma-setup-bali-property">PT PMA</a>, a 100% foreign-owned Indonesian company that adds around $2,000 to $5,000 to set up and roughly $1,000 to $1,500 per year to maintain in compliance costs.</p><p>Turkey's citizenship-by-investment program is a significant differentiator. A minimum property investment of $400,000 held for at least three years qualifies the buyer and their immediate family for Turkish citizenship. Bali offers no equivalent citizenship pathway. The best long-term options for property owners in Bali are Indonesia's <a href="/blog/bali-visa-property-owner-investor">Second Home Visa</a> (five years, renewable) and an investor KITAS through PT PMA directorship.</p><p><a href="https://www.globalpropertyguide.com/europe/turkey/rental-yields" data-external="true">Global Property Guide</a> data for Q3 2026 puts average gross residential yields in Turkey at 7.86% nationally, with Istanbul apartments averaging 9.92% gross. Bali gross yields for well-managed short-term rental villas in prime locations are typically quoted at 8 to 15% by established agencies, with net yields materially lower after management fees, tax and maintenance. Turkey's lira inflation has pushed nominal yields higher, but USD-denominated returns depend on how the lira holds against the dollar. Bali transactions are widely priced in USD, which reduces currency drag for US and UAE buyers.</p><p>Turkey's title deed transfer tax (tapu devir ucreti) runs 4% of the declared transaction value, typically split equally between buyer and seller, though by local convention the buyer often pays the full 4%. Bali buyers pay BPHTB at 5% of the purchase price minus a land value exemption; sellers pay income tax (PPh) at 2.5% of the gross sale price. These are not guarantees of outcome. This is not financial advice; consult a qualified Turkish or Indonesian lawyer before committing to either market.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own freehold property in Turkey more easily than in Bali?",
+        answer:
+          "Yes. Turkish law allows foreign individuals to register real estate (Tapu Senedi) directly in their own name, without a company structure. The main limits are a ban on military zones, a 30-hectare per-person nationwide cap, and a 10% district cap on total foreign land holdings. In Bali, foreigners cannot hold SHM freehold under Indonesian law. The legal routes are a long-term leasehold or acquiring through a PT PMA company, which requires ongoing annual compliance costs.",
+      },
+      {
+        question: "How do Bali and Turkey rental yields compare for villa investors?",
+        answer:
+          "Global Property Guide data for Q3 2026 puts average gross residential yields in Turkey at 7.86% nationally, with Istanbul apartments averaging 9.92% gross. Bali gross yields for well-managed short-term rental villas in prime locations are typically quoted at 8 to 15% by established agencies, with net yields materially lower after management fees, tax and maintenance. Turkey yields are partly inflated by lira depreciation; USD-based returns are lower than lira-denominated figures suggest. Neither figure is a guarantee.",
+      },
+      {
+        question: "Does buying property in Turkey give citizenship while Bali gives only residency?",
+        answer:
+          "Yes. Turkey's citizenship-by-investment program requires a minimum $400,000 property purchase held for at least three years, after which the buyer and their immediate family can apply for Turkish citizenship. Bali has no citizenship-by-investment program. Foreign property owners in Bali can obtain the Indonesia Second Home Visa (five years, renewable) or, through a PT PMA directorship, an investor KITAS residency permit. Neither visa leads to Indonesian citizenship.",
+      },
+    ],
+    publishedAt: "2026-10-25",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/istanbul-bosphorus-bridge-skyline.webp",
+    gallery: [
+      {
+        url: "/blog/bodrum-castle-marina-aegean.webp",
+        alt: "View from Bodrum Castle over the marina and turquoise Aegean Sea, with traditional sailing boats anchored in the harbour and white hillside buildings of the Turkish coastal town beyond",
+        credit: "Lensloji via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/28406858/",
+      },
+      {
+        url: "/blog/istanbul-residential-aerial-bosphorus.webp",
+        alt: "Aerial drone view of Istanbul's Uskudar residential district with densely packed apartment buildings and the Bosphorus waterfront visible along the right edge, showing Turkey's property market landscape",
+        credit: "Julien Goettelmann via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/19797677/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Global Property Guide - Turkey Rental Yields (Q3 2026): average gross residential yield 7.86% nationally; Istanbul 1-bedroom apartments average 9.92% gross; net yields typically 1.5 to 2 percentage points lower after tax, management and maintenance (Tier 2: established international residential property yield data portal)",
+        url: "https://www.globalpropertyguide.com/europe/turkey/rental-yields",
+      },
+      {
+        label:
+          "Global Property Guide - Turkey Buying Guide 2026: foreigners may hold freehold title (Tapu Senedi) directly; 30-hectare per-person nationwide cap; 10% district foreign-ownership cap; 4% title deed transfer tax on declared value; mandatory valuation report for foreign-involved sales since 2019 (Tier 2: established international residential property data portal)",
+        url: "https://www.globalpropertyguide.com/europe/turkey/buying-guide",
+      },
+      {
+        label:
+          "Deal-TR - Turkish Citizenship by Real Estate Investment 2025: minimum $400,000 property investment with a 3-year no-sale annotation on the Tapu title deed; buyer and immediate family qualify for Turkish citizenship; eligible properties restricted to buildings and apartments per December 2023 amendments (Tier 2: established Turkish real estate investment advisory)",
+        url: "https://www.deal-tr.com/en/blog/how-can-i-obtain-turkish-citizenship-through-investment",
+      },
+      {
+        label:
+          "Ongur Partners - Understanding Turkish Real Estate Law 2025: foreign buyers may register property in their own name without a local company; restrictions include military zone exclusions, 30-hectare national cap, 10% district cap on foreign land holdings; 4% tapu transfer tax standard; mandatory valuation report required for all foreign-involved transactions (Tier 2: Turkish law firm practitioner guide)",
+        url: "https://www.ongurpartners.com/understanding-turkish-real-estate-law-a-legal-guide-for-2025.html",
+      },
+    ],
+  },
 ];
