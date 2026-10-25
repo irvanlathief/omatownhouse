@@ -2589,7 +2589,7 @@
     },
     {
       "id": "bali-vs-turkey-property-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 102,
       "theme": "investment",
       "atpType": "vs",
@@ -2609,8 +2609,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-25",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/158"
     },
     {
       "id": "indonesia-us-tax-treaty-bali-property",
