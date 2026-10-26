@@ -7170,4 +7170,75 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "indonesia-us-tax-treaty-bali-property-investors",
+    title: "Indonesia-US Tax Treaty and Your Bali Property Investment",
+    category: "investment",
+    imageUrl: "/blog/international-tax-planning-financial-documents.webp",
+    sortOrder: 113,
+    metaDescription:
+      "US-Indonesia tax treaty: what American Bali property investors need to know about rental income tax, capital gains, and the Form 1116 Foreign Tax Credit.",
+    body: `<p>The Indonesia-US tax treaty, signed in 1988 and in force since January 1, 1990, does not reduce the Indonesian taxes on Bali rental income or property sales for American investors. What it does is prevent double taxation: the Indonesian taxes you pay can be credited dollar for dollar against your US federal liability through the <a href="https://www.irs.gov/credits-deductions/individuals/foreign-tax-credit" data-external="true">Foreign Tax Credit on Form 1116</a>.</p><p>Under Article 6 of the <a href="https://www.irs.gov/pub/irs-trty/indo.pdf" data-external="true">US-Indonesia treaty</a>, Indonesia retains the right to tax income from property situated within its borders, including Bali villa rent, regardless of whether you have a permanent establishment there. The default rate for non-residents is a 20% final withholding under PPh Article 26, applied to gross rental receipts. To elect taxation on net income instead, you must present a valid Certificate of Domicile to the Indonesian tax authority; without one, the 20% gross withholding applies automatically.</p><p>When you sell a Bali property, Indonesia levies a final income tax of 2.5% of the transaction value under the seller's PPh obligation. Article 14 of the treaty confirms that Indonesia may tax gains arising from Indonesian real property. That 2.5% is generally creditable on Form 1116, offsetting the US federal tax owed on the same gain.</p><p>The treaty includes a savings clause: the US retains the right to tax its citizens on worldwide income regardless of any treaty provision. Rental income and gains from your Bali investment must still be reported on your US return, on Schedule E for rent and Schedule D for property sales. If you hold Indonesian assets above certain reporting thresholds, you may also need to file an FBAR (FinCEN 114) and Form 8938 under FATCA rules.</p><p>In practice, you pay Indonesia first and claim the credit in the US. The 2.5% PPh on a property sale is a flat, predictable cost. The rental income position is more nuanced: if your operating costs run high relative to gross rent, an adviser familiar with both US and Indonesian tax rules can help you decide between the 20% gross withholding and the net-income election. This article is for information only and does not constitute tax advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Does the US-Indonesia tax treaty reduce withholding on Bali rental income for Americans?",
+        answer:
+          "No. The treaty preserves Indonesia's right to tax rental income from property within its borders. The default rate for non-residents is 20% of gross receipts under PPh Article 26. The main treaty benefit for American investors is the Foreign Tax Credit on Form 1116, which offsets those Indonesian taxes against your US federal bill.",
+      },
+      {
+        question:
+          "Can a US investor claim a foreign tax credit for Indonesian taxes on their federal return?",
+        answer:
+          "Yes. Indonesian income taxes, including the PPh withholding on rental income, can be credited on Form 1116 against your US federal tax liability. Transaction levies such as the BPHTB acquisition duty are generally not creditable because they are not income taxes, only income taxes qualify for the credit.",
+      },
+      {
+        question:
+          "How does the US-Indonesia treaty handle capital gains when selling a Bali property?",
+        answer:
+          "Article 14 of the treaty confirms Indonesia may tax gains from Indonesian real property. Sellers pay a final PPh of 2.5% of the transaction value. The US also taxes the same gain as part of worldwide income, but the Foreign Tax Credit on Form 1116 offsets the Indonesian tax already paid, preventing double taxation in most cases.",
+      },
+    ],
+    publishedAt: "2026-10-26",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/international-tax-planning-financial-documents.webp",
+    gallery: [
+      {
+        url: "/blog/us-passport-visa-stamps-investor.webp",
+        alt: "US passport with visa documents and US dollar bills, representing an American investor with international cross-border assets",
+        credit: "DAVE GARCIA via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/39356213/",
+      },
+      {
+        url: "/blog/tax-calculation-coins-calculator-notebook.webp",
+        alt: "Calculator, gold coins and notebook on a green background with TAXES spelled out in letter tiles, illustrating property tax calculations",
+        credit: "Karolina Grabowska via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/6863180/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "IRS - US-Indonesia Tax Treaty (1988, in force 1990): Article 6 preserves Indonesia's right to tax income from immovable property; Article 14 preserves Indonesia's right to tax gains from Indonesian real property; savings clause retains US right to tax citizens on worldwide income (Tier 1: official IRS treaty publication)",
+        url: "https://www.irs.gov/pub/irs-trty/indo.pdf",
+      },
+      {
+        label:
+          "PwC Tax Summaries - Indonesia Withholding Taxes: non-resident rental income from Indonesian land and buildings subject to PPh Article 26 at 20% of gross; Certificate of Domicile required to access treaty rates; without CoD, 20% gross withholding applies by default (Tier 2: Big 4 accounting firm country tax guide)",
+        url: "https://taxsummaries.pwc.com/indonesia/corporate/withholding-taxes",
+      },
+      {
+        label:
+          "Global Property Guide - Indonesia Taxes and Costs: seller pays income tax (PPh) at 2.5% of gross transaction value on sale of land and buildings; BPHTB acquisition duty at 5% payable by buyer (Tier 2: established international residential property data portal)",
+        url: "https://www.globalpropertyguide.com/asia/indonesia/taxes-and-costs",
+      },
+      {
+        label:
+          "IRS - Foreign Tax Credit (Form 1116): US citizens may credit foreign income taxes paid to reduce US federal tax on the same income; passive income (including rental income) uses a separate limitation basket; transaction taxes that are not income taxes do not qualify (Tier 1: official IRS guidance)",
+        url: "https://www.irs.gov/credits-deductions/individuals/foreign-tax-credit",
+      },
+    ],
+  },
 ];
