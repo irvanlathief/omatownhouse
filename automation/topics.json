@@ -2614,7 +2614,7 @@
     },
     {
       "id": "indonesia-us-tax-treaty-bali-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 103,
       "theme": "tax",
       "atpType": "how",
@@ -2634,8 +2634,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-26",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/159"
     },
     {
       "id": "bali-villa-furnishing-setup-cost",
