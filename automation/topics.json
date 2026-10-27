@@ -2639,7 +2639,7 @@
     },
     {
       "id": "bali-villa-furnishing-setup-cost",
-      "status": "drafting",
+      "status": "published",
       "priority": 104,
       "theme": "investment",
       "atpType": "how",
@@ -2659,8 +2659,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-27",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/161"
     },
     {
       "id": "pt-pma-wind-down-bali-property",
