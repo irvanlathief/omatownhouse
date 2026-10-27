@@ -7241,4 +7241,70 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-villa-furnishing-setup-cost",
+    title: "How Much Does It Cost to Furnish a Bali Rental Villa?",
+    category: "investment",
+    imageUrl: "/blog/bali-villa-living-room-furnished-interior.webp",
+    sortOrder: 114,
+    metaDescription:
+      "Budget $5,000 to $23,000+ to furnish a Bali rental villa. Learn what local vs imported furniture costs, which items drive guest reviews, and how to plan your setup.",
+    body: `<p>Budget roughly $5,000 to $10,000 for a basic setup, $13,000 to $23,000 for a mid-range furnishing package, and $32,000 or more for a luxury fitout on a typical two-bedroom Bali villa. Furnishing is always a separate line item from the build cost; your builder's per-square-metre rate covers the shell and finishes, not the furniture.</p><p>Bali villa manager <a href="https://www.bukitvista.com/blog/furniture-in-bali-that-attract-guests" data-external="true">Bukit Vista</a> breaks the cost into three tiers. The basic tier, roughly IDR 75 to 150 million (about $5,000 to $10,000 at mid-2025 rates), covers functional essentials: beds, sofas, a dining set, and basic kitchen appliances. The mid-range tier, IDR 200 to 350 million (about $13,000 to $23,000), adds stylish furniture, modern appliances, and curated decor. A luxury fitout runs IDR 500 million or more (over $32,000) and includes designer pieces and custom millwork.</p><p>What you spend directly shapes what you earn. Well-furnished villas command stronger occupancy and support higher nightly rates. For short-term rental, the items that most influence guest reviews are quality mattresses and bedding, reliable air conditioning in every bedroom, a fully equipped kitchen, and comfortable outdoor seating near the pool. Guests call these out by name in reviews; weak AC or a thin mattress shows up in low ratings that drag down your listing on Airbnb and Booking.com.</p><p>Bali has a mature furniture-making industry. Craftsmen in Gianyar, Tabanan, and the Denpasar furniture belt produce rattan, teak, and bamboo pieces that suit the tropical climate and cost far less than imported alternatives. A local interior consultant can source a complete mid-range package from these suppliers. Start the furniture order before handover, once the floor plan is confirmed, to cut the gap between keys and first booking.</p><p>These figures are indicative planning ranges and are not a guaranteed cost or return. Prices vary by location, specification, and exchange rates. This article is for information only and does not constitute financial or investment advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is a typical furnishing budget for a 2-bedroom Bali rental villa?",
+        answer:
+          "A mid-range furnishing package for a 2-bedroom Bali villa runs IDR 200 to 350 million, roughly $13,000 to $23,000 at mid-2025 exchange rates. A basic setup with functional essentials costs IDR 75 to 150 million ($5,000 to $10,000), and a luxury package with designer pieces costs IDR 500 million or more (over $32,000). These figures are separate from construction costs.",
+      },
+      {
+        question:
+          "Is local or imported furniture better for a Bali rental villa?",
+        answer:
+          "Local Bali furniture made from rattan, teak, and bamboo is generally the better choice for a rental villa. It is significantly cheaper than imported equivalents, holds up well in tropical humidity, and fits the aesthetic that short-term rental guests expect. Furniture workshops in Gianyar and Tabanan supply much of the Bali villa market.",
+      },
+      {
+        question:
+          "How long does it take to go from villa handover to a live rental listing?",
+        answer:
+          "The timeline depends on how much furniture is custom-made versus off-the-shelf. Budget several weeks after handover for furniture delivery, installation, professional photography, and listing setup on platforms like Airbnb and Booking.com. Placing the furniture order before handover, once the floor plan is confirmed, reduces this waiting period significantly.",
+      },
+    ],
+    publishedAt: "2026-10-27",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-villa-living-room-furnished-interior.webp",
+    gallery: [
+      {
+        url: "/blog/bali-villa-bedroom-rental-ready.webp",
+        alt: "Elegantly furnished Bali villa bedroom with wooden flooring, white linen bedding, and bamboo ceiling panels, showing a rental-ready interior",
+        credit: "Beautiful Bali Villas via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/5649731/",
+      },
+      {
+        url: "/blog/bali-villa-outdoor-wooden-sofa-garden.webp",
+        alt: "Outdoor wooden sofa with linen cushions in a Bali villa garden, showing the teak outdoor furniture common in short-term rental villa setups",
+        credit: "Didi Lecatompessy via Pexels",
+        sourceUrl: "https://www.pexels.com/photo/30766942/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Bukit Vista - Furnishing a Rental Property in Bali: three cost tiers for furnishing a Bali villa; basic IDR 75-150 million ($5,000-$10,000), mid-range IDR 200-350 million ($13,000-$23,000), luxury IDR 500 million+ ($32,000+); well-furnished villas support higher occupancy and nightly rates; furnishing is separate from construction cost (Tier 2: established Bali villa management company)",
+        url: "https://www.bukitvista.com/blog/furniture-in-bali-that-attract-guests",
+      },
+      {
+        label:
+          "Bukit Vista - Villa Construction Costs 2026: furniture and fit-out listed separately from the per-sqm build rate; confirms furnishing is not included in the standard construction budget quoted by Bali builders (Tier 2: established Bali villa management company)",
+        url: "https://www.bukitvista.com/blog/villa-construction-costs-2026",
+      },
+      {
+        label:
+          "Own Property Abroad - Furniture Costs in Bali: per-item price ranges for common villa furniture (bed frames $91-$915, sofas $85-$1,220); notes that prices vary by design, material, and supplier; recommends verifying with local stores (Tier 2: established international property advisory portal)",
+        url: "https://ownpropertyabroad.com/indonesia/bali/buy-furniture-in-bali-costs",
+      },
+    ],
+  },
 ];
