@@ -7307,4 +7307,70 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "pt-pma-wind-down-bali-property-exit",
+    title: "How to Wind Down a Bali PT PMA and Extract Your Assets",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 115,
+    metaDescription:
+      "Foreign investor guide to closing a Bali PT PMA: share transfer vs formal dissolution, timelines from 3 to 24 months, costs, and the taxes that apply on exit.",
+    body: `<p>To wind down a Bali PT PMA that holds a property, you have two main routes: sell the company shares to a new buyer, or formally dissolve the PT PMA and sell the underlying asset. Choosing the right path depends on how quickly you need to exit, the company's liability history, and the tax you are prepared to absorb.</p><p>A share transfer is typically the faster exit. The buyer acquires your PT PMA shares and the company's Hak Guna Bangunan (HGB) title stays in place, so no property title transfer is required and BPHTB acquisition duty is not triggered at the property level. The deal can close in a matter of weeks. The trade-off is that the buyer takes on all of the company's historical liabilities, so any buyer will require thorough due diligence on the PT PMA's financial records, tax filings, and <a href="https://www.bkpm.go.id/" data-external="true">BKPM</a> LKPM reporting compliance before agreeing to the transfer.</p><p>A formal dissolution follows a set sequence under Law No. 40 of 2007 on Limited Liability Companies. Shareholders representing at least three-quarters of issued shares must vote in favour of dissolution at a notarized meeting. A liquidator is then appointed, a public notice opens a 60-day creditor claim window, and the company applies to the Directorate General of Taxes for tax clearance. Tax clearance commonly triggers a formal audit, which is often the longest stage. Once cleared, the company deregisters with the Ministry of Law and Human Rights, the OSS licensing system, and the tax office. According to <a href="https://ilaglobalconsulting.com/closing-a-pt-pma-in-indonesia/" data-external="true">ILA Global Consulting</a>, the process takes 3 to 12 months in a straightforward case and 12 to 24 months when a tax audit occurs.</p><p>Professional fees for the dissolution itself, covering the notary, liquidation report, and required newspaper announcements, run roughly IDR 15 million to IDR 35 million, or about USD 900 to USD 2,100 at current exchange rates. Tax penalties or accounting arrears uncovered in the audit add to that cost unpredictably.</p><p>On the tax side, when the PT PMA sells the Bali villa as part of its wind-down, a 2.5% PPh Final applies to the gross sale price under Government Regulation PP 34/2016. The buyer pays 5% BPHTB on the transaction value. Any profit at the company level is also subject to Indonesia's 22% corporate income tax. This makes dissolution more tax-heavy than a share transfer for most sellers, though a share transfer may attract capital gains obligations in your home jurisdiction. Always consult an Indonesian tax adviser and your home-country accountant before choosing a route; this is not financial advice.</p><p>One point to keep in mind: a dormant PT PMA that has simply stopped trading still carries full obligations, including quarterly LKPM investment reporting and annual tax filings. As <a href="https://www.cekindo.com/blog/pt-pma-dissolution" data-external="true">Cekindo</a> notes, a company left dormant without a formal wind-down continues to accrue penalties until it is properly closed.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is the process and cost to dissolve a PT PMA that holds a Bali property?",
+        answer:
+          "Dissolution requires a notarized shareholder resolution with at least three-quarters approval, appointment of a liquidator, a 60-day public creditor notice, tax clearance from the Directorate General of Taxes, and deregistration with the Ministry of Law and Human Rights and OSS. Professional fees for the process typically run IDR 15 million to IDR 35 million (roughly USD 900 to USD 2,100). A tax audit during clearance can push the total timeline to 12 to 24 months and significantly increase costs.",
+      },
+      {
+        question:
+          "Can I transfer a PT PMA's Bali property to a new owner without winding down the company?",
+        answer:
+          "Yes. A share transfer lets the buyer acquire your PT PMA shares rather than the property itself. The company's HGB title stays in place, so no property title transfer is required and the buyer does not pay BPHTB at the property level. The process can close in weeks rather than months. The buyer must conduct full due diligence on the company's liability and compliance history before agreeing.",
+      },
+      {
+        question:
+          "What tax applies when a PT PMA is dissolved and its Bali villa is sold?",
+        answer:
+          "When the PT PMA sells the villa as part of liquidation, a 2.5% PPh Final (PP 34/2016) applies to the gross sale price, and the buyer pays 5% BPHTB on the transaction value. Any gain at the company level is also subject to Indonesia's 22% corporate income tax. A share transfer generally avoids these property-level taxes but may trigger capital gains obligations in your home country. This is not financial advice; consult a qualified adviser for your situation.",
+      },
+    ],
+    publishedAt: "2026-10-28",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/pt-pma-company-dissolution-documents-signing.webp",
+    gallery: [
+      {
+        url: "/blog/corporate-share-transfer-handshake-documents.webp",
+        alt: "Business handshake over corporate financial documents representing a PT PMA share transfer",
+        credit: "Tiger Lily",
+        sourceUrl: "https://www.pexels.com/photo/7109292/",
+      },
+      {
+        url: "/blog/bali-villa-exterior-investment-property.webp",
+        alt: "Traditional Balinese thatched-roof villa exterior surrounded by tropical garden, representing the underlying asset in a PT PMA wind-down",
+        credit: "ksu-eli-studio",
+        sourceUrl: "https://www.pexels.com/photo/8680960/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "ILA Global Consulting - Closing a PT PMA in Indonesia: formal dissolution steps (shareholder resolution, liquidator, 60-day creditor notice, tax clearance, Kemenkumham deregistration); typical timeline 3 to 12 months, or 12 to 24 months when a DJP tax audit is triggered (Tier 2: specialist Indonesian legal and company advisory firm)",
+        url: "https://ilaglobalconsulting.com/closing-a-pt-pma-in-indonesia/",
+      },
+      {
+        label:
+          "Cekindo - PT PMA Dissolution: legal basis in Law No. 40/2007 on Limited Liability Companies; 3/4 shareholder vote required; dormant PT PMAs continue to accrue penalties until formally closed; tax clearance commonly the longest stage (Tier 2: established Indonesian business services firm)",
+        url: "https://www.cekindo.com/blog/pt-pma-dissolution",
+      },
+      {
+        label:
+          "Bali Property Rules - Exit Strategies for Foreign Investors: share transfer vs asset sale comparison; share transfer avoids BPHTB at property level and can close in weeks; asset sale triggers 2.5% PPh Final (PP 34/2016) and 5% BPHTB for buyer; dissolution exposes gains to 22% corporate income tax (Tier 2: established Bali real estate advisory resource)",
+        url: "https://balipropertyrules.com/guides/bali-property-exit-strategies-foreigners/",
+      },
+    ],
+  },
 ];

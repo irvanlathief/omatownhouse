@@ -2664,7 +2664,7 @@
     },
     {
       "id": "pt-pma-wind-down-bali-property",
-      "status": "pending",
+      "status": "published",
       "priority": 105,
       "theme": "foreign-ownership",
       "atpType": "how",
@@ -2684,8 +2684,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-28",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/162"
     },
     {
       "id": "gili-islands-vs-bali-property-investment",
