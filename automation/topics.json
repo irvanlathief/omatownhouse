@@ -2689,7 +2689,7 @@
     },
     {
       "id": "gili-islands-vs-bali-property-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 106,
       "theme": "location",
       "atpType": "vs",
@@ -2709,8 +2709,8 @@
       "category": "location",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-29",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/163"
     },
     {
       "id": "bali-airport-expansion-property-values",
