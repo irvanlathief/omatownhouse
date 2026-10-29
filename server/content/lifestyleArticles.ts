@@ -7373,4 +7373,69 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "gili-islands-vs-bali-property-investment",
+    title: "Gili Islands vs Bali for Property Investment",
+    category: "location",
+    imageUrl: "/blog/gili-islands-aerial-beach-west-nusa-tenggara.webp",
+    sortOrder: 116,
+    metaDescription:
+      "Gili Islands vs Bali for foreign property investors: ownership structures, access logistics, visitor volumes, and resale liquidity compared for US and UAE buyers.",
+    body: `<p>The Gili Islands appeal to a very different buyer than Bali does, and the investment case reflects that. Bali has stronger legal infrastructure, a far larger resale pool, and roughly eight times the visitor volume. The Gilis offer a car-free island setting that draws divers, couples, and short-stay guests, but come with access logistics and legal risks that a Bali purchase does not.</p>
+<p>Gili Trawangan, Gili Air, and Gili Meno sit in North Lombok Regency, West Nusa Tenggara (NTB) province. They are not part of Bali. The same national Indonesian property law applies everywhere: foreigners cannot hold freehold (SHM) title, so the structures available are leasehold (Hak Sewa), Hak Pakai with a valid residency permit, or a PT PMA company holding HGB title. The practical difference is the legal ecosystem around these deals. Fewer Indonesian notaries and lawyers specialize in Gili Island transactions, and leasehold agreements here are often not registered at the National Land Agency (BPN). An unregistered lease carries more counterparty risk than a notarized, BPN-registered Bali lease.</p>
+<p>Access is a more tangible constraint. No cars or motorbikes operate on any of the three islands. Reaching Trawangan from Bali takes about two hours by fast boat from Padang Bai or Serangan, or 20 to 30 minutes by boat from Senggigi on Lombok. Every furniture delivery, building supply run, and maintenance call follows the same route. Construction and fit-out costs per square metre run higher than on the Bali mainland for this reason alone.</p>
+<p>On visitor volume, a 2024 study by hotel consultancy <a href="https://c9hotelworks.com/news/lomboks-gili-island-rising-as-tourism-alternative-to-bali/" data-external="true">C9 Hotelworks</a> found the three Gili Islands received 773,148 visitors in 2024, up 26 percent on 2019, with Gili Trawangan drawing 541,199 of those. Bali recorded roughly 6.3 million international arrivals in the same year. Gili demand is concentrated in the peak dive months of July to August and December to January, with a steeper low-season trough than most Bali zones.</p>
+<p>No established agency or official body publishes verified yield data for the Gilis. Beachfront land on Trawangan is offered at roughly IDR 350 million to IDR 550 million per are (100 square metres) in listings from <a href="https://harcourtspurbabali.com/property/9000-sqm-of-prime-beachfront-land-gili-trawangan/" data-external="true">Harcourts Purba Bali</a>, broadly in the Canggu midrange price band, but with a smaller buyer pool and longer resale timelines. Any return projection you see from a local Gili agent is an estimate, not a guarantee. This is not financial advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own property on the Gili Islands the same way as in Bali?",
+        answer:
+          "Yes, the same national Indonesian property law applies. Foreigners cannot hold freehold (SHM) title anywhere in Indonesia, so the options are leasehold, Hak Pakai with a residency permit, or a PT PMA company holding HGB title. The key difference is that the Gili Islands fall under North Lombok Regency in West Nusa Tenggara province, not Bali province. That means a different pool of local notaries, lawyers, and government offices handles the transaction, and leasehold contracts here are often not registered at the BPN land registry, which increases counterparty risk.",
+      },
+      {
+        question:
+          "Are Gili Islands rental yields higher than Bali for short-term villa rentals?",
+        answer:
+          "No verified yield data from an established agency or official Indonesian source exists for the Gili Islands. Demand is more seasonal and narrower than in Canggu or Seminyak, driven mainly by dive tourism. Bali attracts roughly eight times more international visitors per year, giving it a deeper and more year-round rental base. Any yield figure cited by a local Gili seller should be treated as a projection, not a guarantee.",
+      },
+      {
+        question:
+          "What infrastructure and access risks does the Gili Islands present for property investors?",
+        answer:
+          "No motorized vehicles operate on any of the three Gili Islands, so every item from furniture to building materials arrives by boat. That raises construction and maintenance costs compared to a Bali villa with road access. Fast boat services from Bali take roughly two hours each way, meaning every owner visit and contractor call requires more planning. Electricity supply on the smaller islands has historically relied on generators in some locations, adding further operational complexity for a rental property.",
+      },
+    ],
+    publishedAt: "2026-10-29",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/gili-islands-aerial-beach-west-nusa-tenggara.webp",
+    gallery: [
+      {
+        url: "/blog/gili-air-crystal-clear-turquoise-waters.webp",
+        alt: "Crystal clear turquoise water at Gili Air with a traditional wooden boat moored offshore and the Lombok mountains visible in the distance",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/36956255/",
+      },
+      {
+        url: "/blog/fast-boat-gili-islands-aerial-blue-sea.webp",
+        alt: "Aerial view of a fast passenger boat crossing deep blue water near a small Indonesian island, representing the boat-only access route to the Gili Islands",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/29810523/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "C9 Hotelworks - Gili Islands Rising as Tourism Alternative to Bali: total visitor count 773,148 in 2024 (up 26% vs 2019); Gili Trawangan share 541,199 visitors. Tier 2: established hotel and tourism consultancy with Southeast Asia coverage.",
+        url: "https://c9hotelworks.com/news/lomboks-gili-island-rising-as-tourism-alternative-to-bali/",
+      },
+      {
+        label:
+          "Harcourts Purba Bali - 9,000 sqm Gili Trawangan Beachfront Land Listing: asking price data indicating beachfront land at approximately IDR 350M to IDR 550M per are range. Tier 2: established Indonesian real estate agency with Bali and Lombok coverage.",
+        url: "https://harcourtspurbabali.com/property/9000-sqm-of-prime-beachfront-land-gili-trawangan/",
+      },
+    ],
+  },
 ];
