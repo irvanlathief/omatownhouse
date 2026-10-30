@@ -2714,7 +2714,7 @@
     },
     {
       "id": "bali-airport-expansion-property-values",
-      "status": "drafting",
+      "status": "published",
       "priority": 107,
       "theme": "investment",
       "atpType": "how",
@@ -2734,8 +2734,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-30",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/165"
     },
     {
       "id": "bali-property-portfolio-diversification",
