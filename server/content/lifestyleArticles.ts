@@ -7438,4 +7438,70 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-second-airport-property-values-impact",
+    title: "Bali's Second Airport and Its Impact on Property Values",
+    category: "investment",
+    imageUrl: "/blog/north-bali-buleleng-coast-aerial.webp",
+    sortOrder: 117,
+    metaDescription:
+      "Bali's second international airport in North Bali: project status, timeline risks, and what the airport means for property values in Buleleng and Tabanan.",
+    body: `<p>The proposed second Bali airport sits in Kubutambahan district, Buleleng Regency, in the north of the island, roughly two hours by road from Denpasar. That geography matters for investors: property near the planned site is in North Bali, not in Tabanan, which lies on the southwest coast and operates on a different demand cycle.</p>
+<p>The project carries National Strategic Project (PSN) status under <a href="https://jdih.setneg.go.id/viewpdfperaturan/P23082021120613" data-external="true">Presidential Decree No. 109 of 2020</a>. In July 2025 President Prabowo Subianto approved construction, and project developer PT BIBU Panji Sakti has signed an agreement with Chinese firm ChangYe Construction Group for an investment of approximately Rp 50 trillion (roughly US$3 billion), <a href="https://www.thestar.com.my/business/business-news/2024/11/27/bali-airport-developer-signs-agreement-with-chinese-company" data-external="true">as reported by The Star Malaysia</a>. State-Owned Enterprises Minister Erick Thohir said in November 2024 that construction is expected to begin in 2027.</p>
+<p>For North Bali property, the practical question is: what stage of the cycle is this? Presidential approval has been granted, but actual groundbreaking has not yet occurred. The airport has appeared on planning lists since at least 2016, and earlier projected completion dates have passed without a sod being turned. That history means the current land-price discount in Buleleng reflects real execution risk, not just undiscovery. North Bali is quieter on rental demand than the south coast because the visitor infrastructure, the roads, the co-working spaces, and the management companies are still sparse. A bet on the airport is a land-banking play with a potentially long and uncertain hold period, not a short-term yield strategy.</p>
+<p>For Tabanan, the strongest drivers right now are the southward overflow from Canggu and the growing footprint of <a href="/blog/what-is-nuanu-creative-city">Nuanu Creative City</a> near Kaba Kaba. The second airport, if built, could over time reduce road congestion from Ngurah Rai and lift sentiment across the island, but Tabanan's proximity to south Bali means that effect is indirect. Any projected price uplift tied specifically to a North Bali airport should be treated as speculative until groundbreaking is confirmed and a delivery date is realistic. This is not financial advice.</p>`,
+    venues: [],
+    showMap: true,
+    mapCoords: "-8.10,115.16",
+    faq: [
+      {
+        question:
+          "Where is the proposed second Bali airport and when is it expected to open?",
+        answer:
+          "The airport is planned for Kubutambahan district in Buleleng Regency, on Bali's north coast, about two hours by road from Denpasar. It carries National Strategic Project status under Presidential Decree No. 109 of 2020, and President Prabowo approved construction in July 2025. The SOE Minister stated in November 2024 that construction is targeted to begin in 2027. Earlier projections put completion at 2025, a date that passed without groundbreaking, so the timeline carries execution risk.",
+      },
+      {
+        question:
+          "Which Bali areas will benefit most from the second airport in terms of property prices?",
+        answer:
+          "North Bali, specifically Buleleng Regency around the Kubutambahan site, stands to benefit most if the airport is built. Tabanan, on the southwest coast, is not in the direct catchment area. That said, a new international gateway serving the whole island would reduce pressure on Ngurah Rai and could support broader Bali sentiment over the long term. No verified, independent data yet shows a measurable price increase in Buleleng linked to the airport announcement.",
+      },
+      {
+        question:
+          "Has the Bali second airport already driven land price increases in North Bali?",
+        answer:
+          "No established agency has published verified data showing a price uplift specifically linked to the airport announcement. North Bali land prices remain significantly below south coast equivalents, reflecting thin rental demand, limited infrastructure, and the project's long history of delays. The discount is partly an opportunity and partly a risk premium. A confirmed construction start and a credible delivery date would be the events most likely to move prices in Buleleng.",
+      },
+    ],
+    publishedAt: "2026-10-30",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/north-bali-buleleng-coast-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/bali-airport-traditional-gate-plane.webp",
+        alt: "Traditional Balinese split gate (candi bentar) at Ngurah Rai International Airport with an Emirates aircraft visible on the apron behind it, illustrating Bali's existing gateway and the context for a proposed second airport",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/4208212/",
+      },
+      {
+        url: "/blog/maldives-coastal-airport-aerial-sunset.webp",
+        alt: "Aerial view at sunset of Male city in the Maldives with a runway extending into turquoise coastal water, illustrating the concept of a tropical island international airport",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/12858465/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesian Government - Presidential Regulation No. 109 of 2020 on National Strategic Projects (Proyek Strategis Nasional): designates the North Bali International Airport in Kubutambahan, Buleleng as a PSN. Tier 1: official Indonesian government regulation (Setneg JDIH).",
+        url: "https://jdih.setneg.go.id/viewpdfperaturan/P23082021120613",
+      },
+      {
+        label:
+          "The Star Malaysia - Bali airport developer signs agreement with Chinese company (November 2024): PT BIBU Panji Sakti MoU with ChangYe Construction Group; Rp 50 trillion investment figure; SOE Minister Erick Thohir statement on 2027 construction start. Tier 2: established regional business newspaper.",
+        url: "https://www.thestar.com.my/business/business-news/2024/11/27/bali-airport-developer-signs-agreement-with-chinese-company",
+      },
+    ],
+  },
 ];
