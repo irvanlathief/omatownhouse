@@ -7504,4 +7504,69 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-property-portfolio-diversification-us-uae",
+    title: "Bali Property as a Portfolio Diversifier",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 118,
+    metaDescription:
+      "Should US or UAE investors add Bali property to their portfolio? Here is what to know about yields, ownership structures, and liquidity before committing.",
+    body: `<p>Bali property can serve as a small alternative allocation within a diversified portfolio, offering rental income potential and a different demand cycle from US equities or Dubai real estate. Before sizing any position, you need to understand three things: the ownership structure you will use, the gap between gross and net yield, and how illiquid the exit can be. This is general information, not financial advice.</p>
+<p>Bali's rental income runs on international leisure tourism, not on the same macroeconomic forces that move US housing prices or Dubai commercial yields. That is the practical diversification argument. The exposure does come with a currency layer: most Bali villas are priced and rented in US dollars, while operating costs such as staffing, maintenance, and utilities are paid in Indonesian rupiah. A sustained rupiah appreciation would compress dollar-denominated returns, so the currency risk runs in both directions. For more on this, see our article on the <a href="/blog/usd-idr-exchange-rate-bali-property">USD/IDR exchange rate and Bali property</a>.</p>
+<p>Well-managed short-term rental villas in established areas like <a href="/blog/canggu-vs-tabanan-property-investment">Canggu and Tabanan</a> deliver gross yields in the 8 to 12 percent range, according to <a href="https://iqiglobal.com/blog/bali-property-market-feb-2026" data-external="true">IQI Global's February 2026 Bali market update</a>. After deducting management fees (typically 25 to 35 percent of gross revenue), Indonesian rental income tax at 10 percent on gross for non-residents, and maintenance and insurance, net yields settle considerably lower. A realistic net figure for a competently managed property is 5 to 7 percent in a well-run year. Past performance does not guarantee future returns.</p>
+<p>Foreigners cannot hold freehold land in Indonesia. The standard routes for a US or UAE investor are a registered leasehold, typically 25 to 50 years and renewable by agreement with the landowner, or a <a href="/blog/pt-pma-setup-bali-property">PT PMA</a>, a foreign-owned Indonesian company that can hold building title under Hak Guna Bangunan. <a href="https://emerhub.com/bali/property-investment-in-bali/" data-external="true">Emerhub's Bali property investment guide</a> covers both structures in detail. The PT PMA adds set-up cost and annual compliance but removes the term-limited nature of a personal leasehold. The right choice depends on your intended holding period and home-country tax treatment.</p>
+<p>Bali is an illiquid market. A competitively priced leasehold in a well-connected area near Canggu typically takes 3 to 12 months to find a buyer. In quieter coastal or hillside locations, allow 12 months or more. Do not put capital into Bali property that you may need to access within three years. For most US or UAE investors, a Bali villa fits best in the alternatives sleeve of a portfolio, as one asset within a broader real estate allocation rather than the whole of it. Treat any position as capital committed for at least five to seven years.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What share of my investment portfolio should I put into Bali property?",
+        answer:
+          "No standard rule applies to every investor. Most financial planners treat international illiquid real estate as part of an alternatives sleeve, which is often capped at 10 to 20 percent of a total portfolio. Within that sleeve, a single Bali asset would be one position among several. The illiquidity of a Bali leasehold or PT PMA structure means you should size the position so that a five to seven year hold does not constrain your broader plan. This is general information, not financial advice.",
+      },
+      {
+        question:
+          "How does Bali property income correlate with US or Dubai real estate?",
+        answer:
+          "No formal correlation study on Bali real estate versus US or Dubai markets has been published. The underlying demand drivers are structurally different: Bali income depends on international leisure tourism, US housing on local employment and mortgage rates, and Dubai on regional capital flows and expatriate demand. That structural difference suggests the day-to-day correlation is low, though it is not zero. A global travel shock, like the 2020 pandemic, would affect all three markets simultaneously.",
+      },
+      {
+        question:
+          "What liquidity constraints should I understand before buying Bali property?",
+        answer:
+          "A Bali leasehold or PT PMA structure does not trade on an exchange, so exit depends on finding a willing buyer and completing a notarized assignment or company share transfer. In well-connected areas near Canggu, this typically takes 3 to 12 months. In quieter locations, allow 12 months or more. The shorter the remaining lease term, the smaller the pool of buyers. Do not commit capital to Bali property that you may need within three years.",
+      },
+    ],
+    publishedAt: "2026-10-31",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/portfolio-allocation-pie-chart-planning.webp",
+    gallery: [
+      {
+        url: "/blog/real-estate-portfolio-key-charts-investment.webp",
+        alt: "A house-shaped key fob and two gold keys hanging above a model house filled with rolled euro banknotes, with colourful investment charts spread beneath them on a table, representing real estate as part of a financial portfolio",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/30139610/",
+      },
+      {
+        url: "/blog/bali-villa-aerial-pool-rice-fields-investment.webp",
+        alt: "Aerial drone view of a Bali villa with a rectangular turquoise pool and terracotta-roofed buildings surrounded by dense tropical trees and a green rice field, representing the real estate component of an investment portfolio",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/36965360/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "IQI Global - Bali Property Market February 2026: commercial prices continued rising; villas and short-term rentals stayed in high demand among local and foreign buyers; gross yields in established areas in the 8 to 12 percent range. Tier 2: established international real estate advisory firm with Southeast Asia coverage.",
+        url: "https://iqiglobal.com/blog/bali-property-market-feb-2026",
+      },
+      {
+        label:
+          "Emerhub - Property Investment in Bali: leasehold and PT PMA ownership structures for foreigners, typical leasehold terms of 25 to 50 years, Hak Guna Bangunan title under a PT PMA. Tier 2: established Indonesian company-setup and legal advisory firm.",
+        url: "https://emerhub.com/bali/property-investment-in-bali/",
+      },
+    ],
+  },
 ];
