@@ -2739,7 +2739,7 @@
     },
     {
       "id": "bali-property-portfolio-diversification",
-      "status": "drafting",
+      "status": "published",
       "priority": 108,
       "theme": "investment",
       "atpType": "how",
@@ -2759,8 +2759,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-10-31",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/167"
     }
   ]
 }
