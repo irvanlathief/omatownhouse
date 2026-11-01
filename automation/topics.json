@@ -2761,6 +2761,206 @@
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
+    },
+    {
+      "id": "nusa-dua-vs-canggu-property",
+      "status": "drafting",
+      "priority": 109,
+      "theme": "location",
+      "atpType": "vs",
+      "primaryQuestion": "Nusa Dua vs Canggu for property investment: which is better for a foreign buyer?",
+      "targetKeywords": [
+        "Nusa Dua vs Canggu property investment",
+        "buy property Nusa Dua or Canggu Bali",
+        "Canggu property yields vs Nusa Dua"
+      ],
+      "relatedQuestions": [
+        "Which has higher rental yields, Nusa Dua or Canggu?",
+        "Can foreigners own property in Nusa Dua and Canggu the same way?",
+        "Is Nusa Dua or Canggu better for a foreign property investor?"
+      ],
+      "proposedSlug": "nusa-dua-vs-canggu-property-investment",
+      "proposedTitle": "Nusa Dua vs Canggu for Property Investment in Bali",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-management-contract-key-clauses",
+      "status": "pending",
+      "priority": 110,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What should a Bali villa management contract include and what clauses protect the owner?",
+      "targetKeywords": [
+        "Bali villa management contract",
+        "Bali property manager agreement clauses",
+        "villa management contract Bali protect owner"
+      ],
+      "relatedQuestions": [
+        "What fee structure should I expect in a Bali villa management contract?",
+        "What termination and exclusivity clauses matter most in a Bali villa management agreement?",
+        "Can I terminate a Bali villa management contract early if the manager underperforms?"
+      ],
+      "proposedSlug": "bali-villa-management-contract-guide",
+      "proposedTitle": "What a Bali Villa Management Contract Should Include",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-purchase-timeline",
+      "status": "pending",
+      "priority": 111,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How long does the entire Bali property purchase process take from signing to registered title?",
+      "targetKeywords": [
+        "Bali property purchase timeline",
+        "how long to buy property Bali",
+        "Bali property closing process duration"
+      ],
+      "relatedQuestions": [
+        "What are the stages of a Bali property purchase from PPJB to AJB to title registration?",
+        "How long does notary (PPAT) registration take for a Bali leasehold or PT PMA purchase?",
+        "What commonly delays the Bali property closing process for foreign buyers?"
+      ],
+      "proposedSlug": "bali-property-purchase-timeline-process",
+      "proposedTitle": "How Long Does Buying Bali Property Take: The Full Timeline",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "tabanan-local-taxes-villa-owners",
+      "status": "pending",
+      "priority": 112,
+      "theme": "tax",
+      "atpType": "what",
+      "primaryQuestion": "What local regency taxes and fees do villa owners in Tabanan or Badung pay each year?",
+      "targetKeywords": [
+        "Tabanan regency property taxes villa",
+        "Badung local taxes Bali villa owner",
+        "retribusi daerah Bali villa investor"
+      ],
+      "relatedQuestions": [
+        "Is the local PBB property tax different in Tabanan versus Badung for a villa?",
+        "Do Bali villa owners pay a regency tourism levy on top of central government taxes?",
+        "How are local regency taxes calculated for a foreign-owned PT PMA villa in Bali?"
+      ],
+      "proposedSlug": "tabanan-badung-local-taxes-bali-villa",
+      "proposedTitle": "Local Regency Taxes for Bali Villa Owners: Tabanan and Badung",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-land-certificate-bpn-check",
+      "status": "pending",
+      "priority": 113,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How do I verify a Bali land certificate with the National Land Agency (BPN) before buying?",
+      "targetKeywords": [
+        "Bali land certificate BPN check",
+        "verify land title Indonesia ATR BPN",
+        "Bali sertifikat tanah due diligence"
+      ],
+      "relatedQuestions": [
+        "What is a land certificate check (pengecekan sertifikat) at BPN in Bali?",
+        "Can a foreign buyer or their lawyer request a BPN certificate check directly?",
+        "What red flags does a BPN land certificate check reveal before buying in Bali?"
+      ],
+      "proposedSlug": "bali-land-certificate-bpn-check-guide",
+      "proposedTitle": "How to Check a Bali Land Certificate with BPN Before Buying",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-custom-design-villa-off-plan",
+      "status": "pending",
+      "priority": 114,
+      "theme": "off-plan",
+      "atpType": "can",
+      "primaryQuestion": "Can I commission a custom-designed villa built to my own specifications off-plan in Bali?",
+      "targetKeywords": [
+        "custom design villa off-plan Bali",
+        "bespoke villa build Bali foreign buyer",
+        "commission villa construction Bali"
+      ],
+      "relatedQuestions": [
+        "What is the process for commissioning a fully custom villa design in Bali as a foreigner?",
+        "How does a custom-build Bali villa contract differ from buying a developer off-plan product?",
+        "What should a contract for a custom Bali villa build include to protect the buyer?"
+      ],
+      "proposedSlug": "custom-design-villa-off-plan-bali",
+      "proposedTitle": "Can I Commission a Custom-Designed Villa Off-Plan in Bali?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-oss-rental-license-compliance",
+      "status": "pending",
+      "priority": 115,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How do I register my Bali villa rental license in the OSS system for legal compliance?",
+      "targetKeywords": [
+        "Bali villa rental license OSS",
+        "Indonesia OSS online single submission villa",
+        "Bali short-term rental legal compliance registration"
+      ],
+      "relatedQuestions": [
+        "What is the OSS (Online Single Submission) system and what licenses does a Bali villa need on it?",
+        "Can a PT PMA owner register a Pondok Wisata license through OSS without visiting Indonesia?",
+        "What are the consequences of operating a Bali villa without OSS-registered licenses?"
+      ],
+      "proposedSlug": "bali-villa-rental-oss-license-registration",
+      "proposedTitle": "Registering a Bali Villa Rental License in the OSS System",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-infrastructure-property-impact-2027",
+      "status": "pending",
+      "priority": 116,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "What infrastructure projects near Bali are expected to drive property values in 2027 and beyond?",
+      "targetKeywords": [
+        "Bali infrastructure property values 2027",
+        "Bali toll road real estate impact",
+        "PSN strategic project Bali investment"
+      ],
+      "relatedQuestions": [
+        "Which Bali and West Bali infrastructure projects are classified as PSN (Proyek Strategis Nasional)?",
+        "How does a new toll road or expressway in Bali affect nearby land prices?",
+        "What are the key infrastructure catalysts for property price growth in Tabanan and North Bali?"
+      ],
+      "proposedSlug": "bali-infrastructure-property-values-2027",
+      "proposedTitle": "Bali Infrastructure Projects and Their Impact on Property Values",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
