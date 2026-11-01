@@ -7569,4 +7569,70 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "nusa-dua-vs-canggu-property-investment",
+    title: "Nusa Dua vs Canggu for Property Investment in Bali",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 119,
+    metaDescription:
+      "Nusa Dua vs Canggu property investment compared: yields, land prices, ownership structures, and market type for foreign buyers in Bali 2026.",
+    body: `<p>For Bali property investment, Canggu and Nusa Dua sit at opposite ends of the market. Canggu suits buyers chasing higher rental yields and a liquid resale market; Nusa Dua suits those who want stable income in a government-managed luxury corridor at lower risk and lower return.</p><p><strong>Canggu: yield and market depth.</strong> The Canggu corridor, covering Berawa, Echo Beach, and Batu Bolong, accounts for roughly one-third of all Bali property transactions and has the most active resale market on the island. Its tenant base is wide: digital nomads, surfers, younger holiday travellers, and long-stay expats. Established Bali agencies report gross rental yields of 12 to 18 percent for well-managed Canggu villas, with net returns of 8 to 12 percent after management fees, tax, and maintenance. Land prices in prime Canggu sub-areas have reached IDR 1.5 billion to IDR 2.5 billion per are (100 sqm). Buyers who want similar demand at a lower entry price increasingly look to emerging corridors like Kaba Kaba and Tabanan, which benefit from the same tourism spill-over from central Canggu.</p><p><strong>Nusa Dua: stability in a controlled zone.</strong> Nusa Dua is a planned tourism enclave administered by <a href="https://btid.co.id" data-external="true">PT BTID</a>, the state-owned development corporation. Development within the core zone is tightly controlled, which limits private villa supply and supports capital values over time. The guest profile skews toward business travellers, families, and luxury resort visitors. Gross yields in Nusa Dua typically run at 7 to 10 percent. A large share of what is marketed as "Nusa Dua" is technically in adjacent Tanjung Benoa or Jimbaran, where supply and pricing are more open.</p><p><strong>Ownership structures.</strong> Foreign buyers access both areas via a PT PMA company holding <a href="/blog/hak-guna-bangunan-bali-pt-pma">Hak Guna Bangunan</a> rights or a direct <a href="/blog/freehold-vs-leasehold-bali">leasehold</a>. Nusa Dua's land base is classified as HPL (state management-rights land) held by PT BTID. HGB titles there are sub-licenced from this HPL, which adds a layer to the title structure; confirm the exact classification with a notary before buying.</p><p>Canggu suits buyers optimising for yield and exit flexibility in the USD 200,000 to USD 500,000 range. Nusa Dua suits a smaller pool of buyers seeking capital preservation in a supply-constrained luxury zone at a higher entry price. Treat published yield figures as projections that depend on management quality and occupancy, not guarantees. <em>This article is for general information only and is not financial or legal advice.</em></p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Which has higher rental yields, Nusa Dua or Canggu?",
+        answer:
+          "Canggu. Established Bali agencies report gross rental yields of 12 to 18 percent for well-managed Canggu villas, with net returns of 8 to 12 percent after fees, tax, and maintenance. Nusa Dua gross yields typically run at 7 to 10 percent, reflecting its higher entry price and a narrower, more predictable guest demographic. Neither figure is a guarantee; actual returns depend on the property, management quality, and occupancy rate.",
+      },
+      {
+        question:
+          "Can foreigners own property in Nusa Dua and Canggu the same way?",
+        answer:
+          "The same ownership routes apply in both areas: a PT PMA company holding Hak Guna Bangunan rights or a personal leasehold. The key difference in Nusa Dua is that the core enclave's land is state management-rights land (HPL) held by PT BTID. HGB titles there are sub-licenced from this HPL, which adds a layer to the title structure. Have a notary confirm the exact land classification before buying in the Nusa Dua zone.",
+      },
+      {
+        question:
+          "Is Nusa Dua or Canggu better for a foreign property investor?",
+        answer:
+          "It depends on your goal. Canggu delivers higher gross yields, more transactions, and a more liquid resale market, which suits income-focused buyers who want exit flexibility within a few years. Nusa Dua suits buyers who prioritise capital preservation in a government-managed, supply-constrained zone and accept lower yields in return. Canggu-adjacent areas like Kaba Kaba and Tabanan give access to similar tourism demand at a lower entry price than established Canggu sub-areas.",
+      },
+    ],
+    publishedAt: "2026-11-01",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/nusa-dua-bali-resort-aerial-sunset.webp",
+    gallery: [
+      {
+        url: "/blog/echo-beach-canggu-palm-swing.webp",
+        alt: "Tropical beach scene at Echo Beach in Canggu, Bali, with palm trees and a wooden swing over the sand, representing the surf-town atmosphere that drives Canggu short-term rental demand",
+        credit: "Yasin Aydin / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/36528006/",
+      },
+      {
+        url: "/blog/bali-resort-poolside-ocean-view.webp",
+        alt: "Luxury seaside resort in Bali with a swimming pool and sun loungers overlooking the ocean, representing the upscale hotel-corridor character of the Nusa Dua and Tanjung Benoa property market",
+        credit: "Tom Fisk / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/35236021/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Bali Villa Realty: Best Locations to Invest in Bali - rental yield ranges and market character for Canggu (12 to 18 percent gross), Nusa Dua (7 to 10 percent gross), and other key Bali areas. Tier 2: established Bali property agency.",
+        url: "https://balivillarealty.com/blog/best-locations-invest-bali/",
+      },
+      {
+        label:
+          "Emerhub: Best Areas to Invest in Property in Bali - Canggu market volume, transaction share, and ownership structures for foreign buyers. Tier 2: established Indonesia advisory and company-setup firm.",
+        url: "https://emerhub.com/bali/best-areas-to-invest-in-bali/",
+      },
+      {
+        label:
+          "PT BTID (Bali Tourism Development Corporation): corporate and enclave overview confirming state-ownership structure and development controls within the Nusa Dua zone. Tier 1: government-owned development corporation.",
+        url: "https://btid.co.id",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
