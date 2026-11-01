@@ -2764,7 +2764,7 @@
     },
     {
       "id": "nusa-dua-vs-canggu-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 109,
       "theme": "location",
       "atpType": "vs",
@@ -2784,8 +2784,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-01",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/168"
     },
     {
       "id": "bali-villa-management-contract-key-clauses",
