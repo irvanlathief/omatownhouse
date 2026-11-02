@@ -2761,6 +2761,256 @@
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
+    },
+    {
+      "id": "girik-title-bali-land",
+      "status": "drafting",
+      "priority": 109,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What is a Girik certificate and is it safe to buy Girik-titled land in Bali?",
+      "targetKeywords": [
+        "Girik title Bali land",
+        "buy Girik land Bali safe",
+        "Girik certificate Indonesia property"
+      ],
+      "relatedQuestions": [
+        "What is the difference between a Girik and an SHM land certificate in Indonesia?",
+        "How do I convert Girik-titled Bali land to a formal SHM certificate?",
+        "Should a Bali off-plan developer already have converted Girik land to SHM or HGB?"
+      ],
+      "proposedSlug": "girik-title-bali-land-what-buyers-need-to-know",
+      "proposedTitle": "Girik Land Title in Bali: What Buyers Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-launch-price-vs-completion",
+      "status": "pending",
+      "priority": 110,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How much do Bali off-plan property prices typically rise between the launch price and completion?",
+      "targetKeywords": [
+        "Bali off-plan price increase from launch to completion",
+        "Bali off-plan capital appreciation construction",
+        "off-plan discount Bali vs completed value"
+      ],
+      "relatedQuestions": [
+        "How much do Bali developers typically discount off-plan prices at launch versus finished value?",
+        "What drives off-plan price growth in Bali during the construction period?",
+        "Is the off-plan price lift in Bali comparable to Dubai pre-completion gains?"
+      ],
+      "proposedSlug": "bali-off-plan-price-appreciation-launch-to-completion",
+      "proposedTitle": "Bali Off-Plan: How Much Do Prices Rise from Launch to Completion?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "build-villa-from-scratch-vs-buy-off-plan-bali",
+      "status": "pending",
+      "priority": 111,
+      "theme": "off-plan",
+      "atpType": "vs",
+      "primaryQuestion": "Building a villa from scratch vs buying off-plan in Bali: which makes more sense for a foreign investor?",
+      "targetKeywords": [
+        "build villa from scratch Bali vs buy off-plan",
+        "Bali custom villa build cost foreign investor",
+        "self-build vs developer villa Bali"
+      ],
+      "relatedQuestions": [
+        "How much does it cost to build a villa in Bali from scratch versus buying off-plan?",
+        "What legal and permit challenges does a self-build Bali villa create for a foreign owner?",
+        "Which is faster: building your own Bali villa or buying off-plan from a developer?"
+      ],
+      "proposedSlug": "build-bali-villa-from-scratch-vs-buy-off-plan",
+      "proposedTitle": "Build vs Buy Off-Plan in Bali: Which Is Better for Foreign Investors?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "apostille-bali-property-purchase",
+      "status": "pending",
+      "priority": 112,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is an Apostille and when does a foreign property buyer in Bali need one?",
+      "targetKeywords": [
+        "Apostille Bali property purchase",
+        "apostille Indonesia notary documents",
+        "foreign document authentication Bali property"
+      ],
+      "relatedQuestions": [
+        "Do I need an Apostille on my passport copy or power of attorney for a Bali property purchase?",
+        "How do I get an Apostille on a US or UAE document for use in Indonesia?",
+        "Which foreign documents must be apostilled before a Bali notary will accept them?"
+      ],
+      "proposedSlug": "apostille-bali-property-purchase-when-needed",
+      "proposedTitle": "Do You Need an Apostille to Buy Bali Property?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-rental-income-by-month",
+      "status": "pending",
+      "priority": 113,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How does Bali villa rental income vary by month and how should investors plan for seasonality?",
+      "targetKeywords": [
+        "Bali villa rental income by month seasonality",
+        "Bali high season low season rental yield",
+        "Bali villa peak season booking rates"
+      ],
+      "relatedQuestions": [
+        "When is peak rental season for Bali villas and how much more do rates rise?",
+        "How does the Bali shoulder season compare to peak for short-term villa rental income?",
+        "How should a Bali villa investor budget for low-season occupancy gaps?"
+      ],
+      "proposedSlug": "bali-villa-rental-income-seasonality-monthly",
+      "proposedTitle": "Bali Villa Rental Income by Month: Planning for Seasonality",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-adat-customary-land-villa-risk",
+      "status": "pending",
+      "priority": 114,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What is adat customary land in Bali and why does it create legal risk for villa investors?",
+      "targetKeywords": [
+        "Bali adat land villa investment risk",
+        "customary land Bali property dispute",
+        "desa adat land Bali foreigners"
+      ],
+      "relatedQuestions": [
+        "Can a foreign investor legally buy or lease land that is under adat (customary) control in Bali?",
+        "How do I check whether a plot of land in Bali is subject to adat community claims?",
+        "What is the difference between tanah adat and tanah negara in Bali and which is safer to buy?"
+      ],
+      "proposedSlug": "bali-adat-customary-land-risk-villa-investors",
+      "proposedTitle": "Adat Land in Bali: Legal Risks for Villa Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-price-growth-5-year-comparison",
+      "status": "pending",
+      "priority": 115,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How has Bali property price growth over the last five years compared to Dubai, Thailand, and the US?",
+      "targetKeywords": [
+        "Bali property price growth 5 years",
+        "Bali vs Dubai property appreciation comparison",
+        "Bali real estate capital growth history"
+      ],
+      "relatedQuestions": [
+        "How much have Bali land prices risen from 2020 to 2025?",
+        "Did Bali property outperform Dubai or Phuket in capital growth since 2020?",
+        "What caused the sharp rise in Bali villa prices after 2022?"
+      ],
+      "proposedSlug": "bali-property-price-growth-5-year-comparison",
+      "proposedTitle": "Bali Property Price Growth: 5-Year Comparison with Dubai and Thailand",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-access-road-right-of-way",
+      "status": "pending",
+      "priority": 116,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is a right-of-way issue with Bali property access roads and how do you check before buying?",
+      "targetKeywords": [
+        "Bali property access road right of way",
+        "gang road Bali villa access",
+        "land-locked Bali property legal issue"
+      ],
+      "relatedQuestions": [
+        "How do I verify that a Bali villa or plot has legal road access before signing a lease?",
+        "What is a gang (access lane) and how does shared access affect a Bali villa's value?",
+        "Can a Bali neighbour block access to a villa I have already leased or purchased?"
+      ],
+      "proposedSlug": "bali-villa-access-road-right-of-way-check",
+      "proposedTitle": "Access Road and Right-of-Way Checks for Bali Property",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-villa-interior-design-yield",
+      "status": "pending",
+      "priority": 117,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How does villa design, fit-out quality, and photography affect nightly rates and occupancy in Bali?",
+      "targetKeywords": [
+        "Bali villa interior design rental yield",
+        "villa photography nightly rate Bali",
+        "fit-out quality Bali off-plan rental performance"
+      ],
+      "relatedQuestions": [
+        "Does a premium interior fit-out actually increase nightly rates for a Bali rental villa?",
+        "What design features do guests most value in a Bali villa listing?",
+        "How much should I budget for photography and listing setup when launching a new Bali villa?"
+      ],
+      "proposedSlug": "bali-villa-design-photography-rental-yield-impact",
+      "proposedTitle": "How Villa Design and Photography Affect Your Bali Rental Income",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-management-diy-vs-agency",
+      "status": "pending",
+      "priority": 118,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Self-managing a Bali villa vs hiring a management agency: what is the real cost difference?",
+      "targetKeywords": [
+        "self-manage Bali villa vs management agency",
+        "DIY Bali villa management cost",
+        "Bali villa management fee comparison self-managed"
+      ],
+      "relatedQuestions": [
+        "Can I self-manage a Bali villa rental from the US or Dubai without a management company?",
+        "What tasks does a Bali villa management company handle that a remote owner cannot?",
+        "Is it worth paying a 20 to 30 percent management fee for a Bali villa versus self-managing?"
+      ],
+      "proposedSlug": "bali-villa-self-manage-vs-agency-cost",
+      "proposedTitle": "Bali Villa Self-Management vs Agency: Real Cost Comparison",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
