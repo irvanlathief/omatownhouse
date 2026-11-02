@@ -2764,7 +2764,7 @@
     },
     {
       "id": "girik-title-bali-land",
-      "status": "drafting",
+      "status": "published",
       "priority": 109,
       "theme": "foreign-ownership",
       "atpType": "what",
@@ -2784,8 +2784,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-02",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/169"
     },
     {
       "id": "bali-off-plan-launch-price-vs-completion",
