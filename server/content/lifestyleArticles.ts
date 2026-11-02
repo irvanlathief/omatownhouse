@@ -7569,4 +7569,67 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "girik-title-bali-land-what-buyers-need-to-know",
+    title: "Girik Land Title in Bali: What Buyers Need to Know",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 119,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-11-02",
+    heroImage: "/blog/indonesia-rice-field-village-land-plots-aerial.webp",
+    metaDescription:
+      "A Girik certificate in Bali is a pre-1960 tax record, not a land title. Learn why it was invalidated in 2026, how PTSL converts it, and what to check before buying.",
+    body: `<p>A Girik is not a land title. It is a pre-1960 village tax record showing who paid ground tax on a plot, but it was never registered at the National Land Agency (<a href="https://www.atrbpn.go.id/" data-external="true">ATR/BPN</a>). As of February 2, 2026, ATR/BPN formally invalidated Girik as proof of land ownership across Indonesia, including Bali. Any land sale relying on a Girik certificate alone has no legal standing from that date forward.</p><p>The government program that converts Girik plots into proper titles is called PTSL (Pendaftaran Tanah Sistematis Lengkap), a mass land certification effort run by ATR/BPN at the village level. Owners who complete PTSL receive either a Hak Milik (SHM) certificate for individual citizens or a registered leasehold certificate for eligible parties. The process involves a physical survey, a history check, and a certificate issuance from the local BPN office. Completion times vary by district from a few months to over a year depending on queue length.</p><p>For a foreign buyer, the Girik situation creates a straightforward rule: never purchase off-plan or completed property if the developer's underlying land still holds only a Girik. A reputable developer converts the land to SHM (for individual Indonesian land owners) or HGB (Hak Guna Bangunan, for a PT PMA company) before releasing units for sale. Ask for the certificate number, issuing BPN office, and date. Your notary (PPAT) can verify the title at the local BPN office before you sign anything.</p><p>If a seller offers land at a steep discount and explains it away as "Girik land that can easily be certified," treat that as a serious red flag. PTSL conversion is not guaranteed, disputes over the physical boundary or historical chain of custody can block certification, and heirs of the original tax payer may still surface claims. Existing off-plan projects with properly registered HGB or SHM titles carry none of this exposure. This is general information only and is not legal advice; engage a licensed Indonesian notary and land lawyer before any purchase.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Is it safe to buy land with a Girik certificate in Bali in 2026?",
+        answer:
+          "No. ATR/BPN invalidated Girik as proof of land ownership on February 2, 2026. A Girik is a pre-1960 village tax record, not a registered title. Land sold on the basis of a Girik certificate alone has no legal ownership standing. You should only purchase land backed by a registered BPN title such as SHM, HGB, or Hak Pakai.",
+      },
+      {
+        question: "What is the PTSL program and can it fix a Girik title?",
+        answer:
+          "PTSL (Pendaftaran Tanah Sistematis Lengkap) is the government's mass land certification program. It can convert a Girik plot into a registered BPN title, but completion is not automatic: the plot must pass a physical survey, boundary check, and historical ownership review. Processing times range from a few months to over a year depending on the local BPN office queue and any disputes over the plot.",
+      },
+      {
+        question: "What title should an off-plan developer have before selling units?",
+        answer:
+          "A trustworthy developer should hold either SHM (Hak Milik, if an individual Indonesian citizen owns the master land) or HGB (Hak Guna Bangunan, issued to the developer's PT PMA or Indonesian PT company) before releasing units for sale. Ask for the BPN certificate number and issuing office. Your notary (PPAT) can verify it directly at the local land office before you sign a purchase agreement.",
+      },
+    ],
+    gallery: [
+      {
+        url: "/blog/girik-old-handwritten-land-registry-records.webp",
+        alt: "Open handwritten ledger from a historic land registry, representing the pre-modern record-keeping system that Girik certificates derive from",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/2355408/",
+      },
+      {
+        url: "/blog/indonesia-village-farmland-aerial-land-parcels.webp",
+        alt: "Aerial view of Indonesian farmland divided into distinct land parcels with a village settlement visible between the plots",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/6801571/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "ATR/BPN - Girik No Longer Recognized as Proof of Land Ownership from 2 February 2026 (Tier 1: Indonesian National Land Agency official statement).",
+        url: "https://www.atrbpn.go.id/",
+      },
+      {
+        label:
+          "HHP Law Firm - Girik Certificates as Land Ownership Documentation: status before and after the February 2026 ATR/BPN ruling. Tier 2: Indonesian law firm specializing in property and land law.",
+        url: "https://www.hhp.co.id/en/insight/girik-as-land-ownership/",
+      },
+      {
+        label:
+          "Cekindo - Land Ownership in Indonesia: overview of SHM, HGB, Hak Pakai, and Girik status for foreign buyers. Tier 2: established Indonesian business setup and legal advisory firm.",
+        url: "https://www.cekindo.com/blog/land-ownership-in-indonesia",
+      },
+    ],
+  },
 ];
