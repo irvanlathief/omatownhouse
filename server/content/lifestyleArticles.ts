@@ -7569,4 +7569,81 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
     ],
   },
+  {
+    slug: "bali-vs-penang-malaysia-property-investment",
+    title: "Bali vs Penang Malaysia Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 119,
+    metaDescription:
+      "Bali vs Penang property investment compared: freehold access, rental yields, capital gains taxes, and residency paths for US and UAE buyers.",
+    body: `<p>Penang gives foreign buyers something Bali cannot: the right to hold freehold property in their own name. That difference matters, but ownership structure is only one of several factors separating these two markets for a US or UAE investor.</p><p><strong>Ownership structure.</strong> In Malaysia, foreigners can hold freehold title directly with no company structure required, provided the property meets the state minimum price. On Penang Island, that minimum is RM 1,000,000 (roughly USD 213,000) for a strata condominium and RM 3,000,000 (roughly USD 640,000) for landed residential property. In Bali, foreigners cannot hold freehold land under any structure. The two legal routes are a personal leasehold (Hak Sewa, typically 25 to 30 years initial term, extendable) or a PT PMA company holding <a href="/blog/hak-guna-bangunan-bali-pt-pma">Hak Guna Bangunan (HGB)</a> rights for up to 80 years of effective tenure.</p><p><strong>Entry cost and transaction taxes.</strong> From January 2026, foreign buyers in Malaysia pay an 8 percent federal stamp duty plus a Penang state levy of around 3 percent on the purchase price, so total transaction costs for a foreign buyer run to roughly 11 percent on top of the purchase price. Bali off-plan villas in emerging corridors like Kaba Kaba and Tabanan start from around USD 160,000 to USD 250,000, with combined transfer taxes of roughly 5 percent. Both markets have a comparable price floor for a qualifying foreign purchase, but the Bali product is typically a standalone villa with a private pool rather than a strata apartment unit.</p><p><strong>Rental yields.</strong> Penang Island condominiums returned gross yields of approximately 4 to 6 percent in 2025, with net returns closer to 3 to 4 percent after vacancy, maintenance, and management costs. Bali villas commonly cite gross yields of 8 to 15 percent; realistic net returns sit closer to 6 to 10 percent after management fees, tax, and property costs. Bali's higher gross yield reflects the short-term rental model and strong leisure tourism demand: Bali drew 6.95 million international visitors in 2025, up 9.7 percent year on year.</p><p><strong>Capital gains and residency.</strong> Malaysia levies Real Property Gains Tax (RPGT) of 30 percent on gains from sales within the first five years and 10 percent thereafter; foreigners never reach the zero-percent rate that Malaysian citizens access. Indonesia levies a final withholding tax of 2.5 percent of the transaction price on the seller regardless of actual gain or hold period. On residency, Malaysia's <a href="https://mishu.my/blog/visa/mm2h-requirements/" data-external="true">My Second Home (MM2H) programme</a> grants a 5-year renewable visa with no minimum stay requirement, with a property purchase now mandatory. Indonesia's Second Home Visa gives 5 to 10 years of legal stay, requiring either a deposit of IDR 2 billion (roughly USD 130,000) in an Indonesian bank account or evidence of qualifying Hak Pakai property.</p><p>For a buyer who values freehold title and legal simplicity, Penang is the cleaner structure. For a buyer seeking higher rental yield from a standalone villa in a market growing on leisure tourism, Bali competes on return potential despite the leasehold restriction. Neither investment guarantees income; treat any yield figure as a projection dependent on management quality and occupancy. <em>This article is for general information only and is not financial or legal advice.</em></p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "Can foreigners own freehold property in Penang more easily than in Bali?",
+        answer:
+          "Yes. Malaysia allows foreigners to hold freehold title directly in their own name without setting up a company, provided the property meets the state minimum purchase price. On Penang Island, that threshold is RM 1,000,000 (roughly USD 213,000) for a strata condominium and RM 3,000,000 for landed residential property. In Bali, foreigners cannot hold freehold land under any structure; the only legal options are a personal leasehold or a PT PMA company holding Hak Guna Bangunan rights.",
+      },
+      {
+        question:
+          "Are Bali or Penang rental yields higher for investment properties?",
+        answer:
+          "Bali yields are typically higher. Penang Island condominiums returned gross yields of approximately 4 to 6 percent in 2025, with net returns closer to 3 to 4 percent after vacancy and costs. Bali villas commonly cite gross yields of 8 to 15 percent, with net returns in the 6 to 10 percent range after management, tax, and maintenance. Bali's higher gross reflects the short-term villa rental model and strong leisure tourism demand. Neither figure is a guarantee; actual returns depend on location, management quality, and occupancy.",
+      },
+      {
+        question:
+          "What does the Malaysia My Second Home visa give versus the Bali Second Home Visa?",
+        answer:
+          "Both give multi-year renewable residency with no minimum stay requirement. Malaysia's MM2H programme grants a 5-year renewable visa; the 2025 revamp made a property purchase mandatory, with minimums starting at RM 600,000 for the Silver tier. Indonesia's Second Home Visa gives 5 to 10 years of legal stay; the requirement is either a deposit of IDR 2 billion (roughly USD 130,000) in an Indonesian bank account or evidence of qualifying Hak Pakai property. The Bali visa does not require buying a specific product type, giving more flexibility in how you meet the deposit or property requirement.",
+      },
+    ],
+    publishedAt: "2026-11-03",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/penang-cityscape-sunrise-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/penang-tanjung-tokong-condo-skyline.webp",
+        alt: "Penang's Tanjung Tokong condo skyline viewed from a hillside, showing a cluster of high-rise residential towers rising above lush tropical greenery against a backdrop of mountain ridges and blue sky, representing the foreign-buyer property market on Penang Island",
+        credit: "Jun Lei Lim / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/11484007/",
+      },
+      {
+        url: "/blog/penang-night-aerial-cityscape.webp",
+        alt: "Night aerial view of George Town, Penang, showing the UNESCO-listed heritage district with low-rise shophouses lit by streetlights in the foreground and the Penang Strait with port lights and the Penang mainland skyline visible across the water in the background",
+        credit: "Wilfried Strang / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/31019129/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "IQI Global - Penang Rental Yield Gross vs Net: Penang Island condominiums averaging approximately 5.74 percent gross in 2026, with net yields lower after vacancy and operating costs. Tier 2: established international real estate advisory firm with Southeast Asia coverage.",
+        url: "https://iqiglobal.com/blog/penang-rental-yield-gross-vs-net",
+      },
+      {
+        label:
+          "propcashflow.my - Minimum Property Price for Foreigners by State: Penang Island minimum of RM 1,000,000 for strata property and RM 3,000,000 for landed residential; Penang mainland minimums lower. Tier 2: Malaysia property advisory with state-by-state price floor data.",
+        url: "https://propcashflow.my/blog/minimum-price-foreigner-property-by-state/",
+      },
+      {
+        label:
+          "propcashflow.my - RPGT Foreigner Malaysia 2026: 30 percent RPGT on gains within first 5 years of ownership, 10 percent from year 6 onwards; foreigners do not reach the zero-percent rate available to Malaysian citizens. Tier 2: Malaysia property advisory.",
+        url: "https://propcashflow.my/blog/rpgt-foreigner-malaysia-2026/",
+      },
+      {
+        label:
+          "mishu.my - MM2H Requirements 2025: three-tier MM2H structure (Silver, Gold, Platinum), 5-year renewable visa, mandatory property purchase requirement, no minimum stay. Tier 2: Malaysia immigration and company-setup specialist.",
+        url: "https://mishu.my/blog/visa/mm2h-requirements/",
+      },
+      {
+        label:
+          "Polarius Real Estate - Bali Real Estate Market Insights 2026: Bali visitor arrivals 6.95 million in 2025, up 9.7 percent year on year; net villa yields of 6 to 10 percent; off-plan entry prices USD 160,000 to USD 250,000 in emerging corridors. Tier 2: Bali property market data.",
+        url: "https://polariusrealestate.com/en/market/bali-real-estate-market-insights-2026",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];

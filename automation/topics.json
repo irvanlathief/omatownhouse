@@ -2761,6 +2761,206 @@
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
+    },
+    {
+      "id": "bali-vs-penang-malaysia-property",
+      "status": "drafting",
+      "priority": 109,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Penang Malaysia for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Penang property investment",
+        "Bali or Penang Malaysia for investment",
+        "Malaysia freehold vs Bali leasehold"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Penang more easily than in Bali?",
+        "Are Bali or Penang rental yields higher for investment properties?",
+        "What does the Malaysia My Second Home visa give versus the Bali Second Home Visa?"
+      ],
+      "proposedSlug": "bali-vs-penang-malaysia-property-investment",
+      "proposedTitle": "Bali vs Penang Malaysia Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-earthquake-volcanic-risk-property",
+      "status": "pending",
+      "priority": 110,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What earthquake and volcanic risk should a foreign buyer consider before investing in Bali property?",
+      "targetKeywords": [
+        "Bali earthquake risk property",
+        "Bali volcanic risk investment",
+        "natural disaster Bali villa insurance"
+      ],
+      "relatedQuestions": [
+        "How often do earthquakes affect Bali compared to the rest of Indonesia?",
+        "Does Mount Agung volcanic activity affect Bali property values?",
+        "How do I insure a Bali villa against earthquake and natural disaster damage?"
+      ],
+      "proposedSlug": "bali-earthquake-volcanic-risk-property-investors",
+      "proposedTitle": "Bali Earthquake and Volcanic Risk: What Property Investors Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-personal-use-rental-tax",
+      "status": "pending",
+      "priority": 111,
+      "theme": "tax",
+      "atpType": "can",
+      "primaryQuestion": "Can I use my Bali villa personally and still claim rental income tax deductions in Indonesia?",
+      "targetKeywords": [
+        "Bali villa personal use rental tax",
+        "mixed use villa Bali tax deductions",
+        "Bali vacation home rental income tax"
+      ],
+      "relatedQuestions": [
+        "How does Indonesia treat a Bali villa that is partly rented and partly used by the owner?",
+        "Can I deduct villa operating costs if I stay there myself some of the year?",
+        "What proportion of the year does a Bali villa need to be rented to claim expenses?"
+      ],
+      "proposedSlug": "bali-villa-personal-use-rental-tax-deductions",
+      "proposedTitle": "Personal Use vs Rental Income: Tax Rules for a Bali Villa",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-ppat-notary-property-deal",
+      "status": "pending",
+      "priority": 112,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is a PPAT notary in Bali and what do they handle in a property purchase?",
+      "targetKeywords": [
+        "PPAT notary Bali property",
+        "Bali property notary PPAT role",
+        "notary fees Bali villa purchase"
+      ],
+      "relatedQuestions": [
+        "What is the difference between a notary and a PPAT in an Indonesian property deal?",
+        "How much does a PPAT notary charge for a Bali property transaction?",
+        "Should a foreign buyer use their own PPAT or the developer's in a Bali off-plan deal?"
+      ],
+      "proposedSlug": "bali-ppat-notary-property-purchase-explained",
+      "proposedTitle": "What Is a PPAT Notary in Bali and What Do They Do?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-koh-samui-property",
+      "status": "pending",
+      "priority": 113,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Koh Samui for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Koh Samui property investment",
+        "Bali or Koh Samui for investment",
+        "Thailand villa foreigners Koh Samui"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own property in Koh Samui more easily than in Bali?",
+        "Are Bali or Koh Samui rental yields higher for holiday villas?",
+        "How do infrastructure and accessibility compare between Bali and Koh Samui?"
+      ],
+      "proposedSlug": "bali-vs-koh-samui-property-investment",
+      "proposedTitle": "Bali vs Koh Samui for Foreign Property Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-tourism-downturn-risk",
+      "status": "pending",
+      "priority": 114,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What happened to Bali property values and rental income during the 2020 tourism shutdown and what does it mean for investors today?",
+      "targetKeywords": [
+        "Bali property value pandemic 2020",
+        "Bali villa rental income tourism downturn",
+        "Bali real estate resilience after COVID"
+      ],
+      "relatedQuestions": [
+        "How did Bali property prices change during the 2020 COVID travel ban?",
+        "Did Bali villa rental income fall to zero during the pandemic closure?",
+        "How quickly did Bali rental yields recover after borders reopened in 2022?"
+      ],
+      "proposedSlug": "bali-property-tourism-downturn-2020-covid-recovery",
+      "proposedTitle": "How Bali Property Performed During COVID: Lessons for Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-rtrw-spatial-plan-villa",
+      "status": "pending",
+      "priority": 115,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is Bali's RTRW spatial plan and how does it determine where a villa can be built?",
+      "targetKeywords": [
+        "Bali RTRW spatial plan villa",
+        "Bali zoning plan 2023 villa",
+        "tourist zone Bali villa permitted areas"
+      ],
+      "relatedQuestions": [
+        "What is the RTRW and how does it differ from local village zoning in Bali?",
+        "How do I find out if a specific plot in Bali is zoned for tourism use?",
+        "What changed under the revised Bali RTRW and does it affect villa rentals?"
+      ],
+      "proposedSlug": "bali-rtrw-spatial-plan-villa-development-guide",
+      "proposedTitle": "Bali's RTRW Spatial Plan: How Zoning Affects Villa Development",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "can-foreigner-buy-land-bali",
+      "status": "pending",
+      "priority": 116,
+      "theme": "foreign-ownership",
+      "atpType": "can",
+      "primaryQuestion": "Can a foreign investor buy raw land in Bali rather than an existing villa?",
+      "targetKeywords": [
+        "foreigner buy land Bali",
+        "raw land purchase Bali foreigners",
+        "PT PMA buy land Bali develop villa"
+      ],
+      "relatedQuestions": [
+        "Can a PT PMA company buy undeveloped land in Bali to build a villa?",
+        "What are the restrictions on foreign-controlled land ownership in Bali?",
+        "How is purchasing land and building different from buying an off-plan villa in Bali?"
+      ],
+      "proposedSlug": "can-foreigner-buy-raw-land-bali",
+      "proposedTitle": "Can a Foreigner Buy Raw Land in Bali and Build a Villa?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
