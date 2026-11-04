@@ -7646,4 +7646,76 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-earthquake-volcanic-risk-property-investors",
+    title: "Bali Earthquake and Volcanic Risk for Property Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 120,
+    metaDescription:
+      "Bali recorded 547 earthquakes in 2025, almost all unfelt. Here is what the 2017-18 Agung eruption taught investors about seismic risk and insurance.",
+    body: `<p>The core earthquake and volcanic risks for a Bali property buyer are well-documented and insurable. <a href="https://www.bmkg.go.id/" data-external="true">BMKG</a>, Indonesia's meteorology and geophysics agency, recorded 547 earthquakes in Bali Province in 2025, but only 10 of those broke the threshold needed to be felt at the surface. The largest reached magnitude 5.4. Bali sits on the Sunda subduction zone, yet its seismic activity is frequent in count and low in destructive impact compared to Java or Sumatra, where proximity to different fault geometries produces larger surface events more often.</p><p>The 2017 to 2018 Mount Agung eruption is the clearest case study of how volcanic activity plays out for a Bali property investment. When Agung entered its first significant eruption in 50 years in November 2017, Ngurah Rai airport closed for approximately two to three days, disrupting around 445 flights. A Bank Indonesia survey covering Q4 2017 found that residential rents across Bali remained stable during the acute phase of the crisis. The property resale market did not record a confirmed price collapse. Rental income from active short-term villa listings dropped during airport closure days, then recovered as alert levels fell.</p><p>For properties in Tabanan and the Kaba Kaba corridor, the meaningful volcanic risk from Agung is ash fall, not lava or pyroclastic flow. <a href="https://magma.esdm.go.id/" data-external="true">PVMBG</a>, Indonesia's volcanology authority, maps the primary lava and pyroclastic hazard zones on Agung's eastern and southern slopes; western Bali sits outside those zones. PVMBG uses four alert levels: Level I Normal, Level II Waspada (Watch), Level III Siaga (Standby), and Level IV Awas (Warning). The Level IV declaration in November 2017 triggered mandatory evacuations and the airport closure. As of late 2025, Agung's official status on the MAGMA Indonesia platform was Level I. Investors can monitor current status directly on that platform before visits or during active management of a rental property.</p><p>To cover both seismic and volcanic exposure, add an EQVET rider (Earthquake, Volcanic Eruption, and Tsunami) to a standard Indonesian Property All Risks base policy. Indonesia's financial regulator, <a href="https://www.maybank.co.id/en/premier/aset-proteksi-umum/asuransi-gempa-bumi" data-external="true">OJK</a>, sets reference premium rates by province; for a residential villa in Bali, the indicative EQVET rate is around 0.135 percent of the insured rebuild value per year before risk adjustments. Pairing it with an FTSWD rider also covers flood, storm, and wind. This is not financial advice; consult a licensed Indonesian insurance broker for a property-specific quote and confirm both riders are active before accepting handover from a developer.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "How often do earthquakes affect Bali compared to the rest of Indonesia?",
+        answer:
+          "BMKG recorded 547 earthquakes in Bali Province in 2025, of which only 10 were felt at the surface. By comparison, Sumatra and Java experience larger-magnitude damaging events more frequently because they sit closer to the most active fault segments of the Sunda subduction system. Bali's seismic activity is high in raw event count but low in felt impact, with most energy released at depth. The main structural risk comes from periodic M4 to M5 events that can cause minor building damage in poorly constructed structures, which is why asking your developer for confirmation that the design follows Indonesia's SNI 1726 seismic building standard matters.",
+      },
+      {
+        question:
+          "Does Mount Agung volcanic activity affect Bali property values?",
+        answer:
+          "The 2017 to 2018 eruption, Agung's first significant activity in 50 years, provides the best real-world data point. Airport closures lasted two to three days in November 2017, disrupting around 445 flights and causing short-term rental income losses for affected villa owners. A Bank Indonesia survey found residential rents remained stable in Q4 2017 and no confirmed property price collapse occurred. The market recovered as alert levels fell. The main lesson is that short-duration volcanic events compress income temporarily without destroying asset values, particularly in areas like Tabanan and Kaba Kaba that lie outside the primary lava and pyroclastic hazard zones mapped by PVMBG.",
+      },
+      {
+        question:
+          "How do I insure a Bali villa against earthquake and volcanic damage?",
+        answer:
+          "Add an EQVET rider (Earthquake, Volcanic Eruption, and Tsunami) to a standard Indonesian Property All Risks or FLEXAS base policy. OJK, Indonesia's financial regulator, sets reference rates for the EQVET rider by province; for a Bali residential villa, the indicative rate is approximately 0.135 percent of the insured rebuild value per year before property-specific risk adjustments. Also add an FTSWD rider for flood, storm, and wind. Get a formal quote from a licensed Indonesian insurance broker once you have the rebuild cost assessment from your developer or an independent valuer, and confirm both riders are active before handover.",
+      },
+    ],
+    publishedAt: "2026-11-04",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/indonesia-mount-bromo-volcanic-steam-sunrise.webp",
+    gallery: [
+      {
+        url: "/blog/indonesia-bromo-volcanic-landscape-steam.webp",
+        alt: "Panoramic view of Mount Bromo caldera at sunrise with thin white steam rising from the active crater, Mount Semeru visible in the background above a band of cloud, representing Indonesia's active volcanic landscape and seismic risk context for Bali property investors",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/6863992/",
+      },
+      {
+        url: "/blog/indonesia-bromo-caldera-wide-landscape.webp",
+        alt: "Wide daytime aerial view of the full Mount Bromo volcanic complex showing the caldera ash desert, the Bromo crater cone with wisps of volcanic steam, Batok cone, and Mount Semeru in the far background under a blue sky, illustrating the scale of active volcanic geology in Indonesia",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/32644515/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "BMKG (BBMKG3) - 2025 Bali earthquake data: 547 earthquakes recorded in Bali Province in 2025, 10 felt, strongest magnitude 5.4. Tier 1: Indonesia's national meteorology and geophysics agency, Bali regional office.",
+        url: "https://www.bmkg.go.id/",
+      },
+      {
+        label:
+          "PVMBG / MAGMA Indonesia - Volcanic alert level system: four-level classification (Normal, Waspada, Siaga, Awas) under ESDM Ministerial Regulation No. 15/2011; current status of all active Indonesian volcanoes including Mount Agung and Mount Batur. Tier 1: Indonesia's volcanology and geological disaster mitigation agency.",
+        url: "https://magma.esdm.go.id/",
+      },
+      {
+        label:
+          "OJK / Maybank Indonesia - EQVET earthquake insurance: OJK-regulated reference premium rate of approximately 0.135 percent of insured sum per year for residential property in Bali; covers earthquake, volcanic eruption, and tsunami. Tier 1 regulation, Tier 2 product description.",
+        url: "https://www.maybank.co.id/en/premier/aset-proteksi-umum/asuransi-gempa-bumi",
+      },
+      {
+        label:
+          "ReTalkAsia / Bank Indonesia - Bali property market Q4 2017: Bank Indonesia survey finding residential rents stable in Bali during the peak Mount Agung alert period; hotel room rates fell but residential property values held. Tier 2: Bank Indonesia data reported by regional real estate analytics outlet.",
+        url: "https://www.retalkasia.com/node/6950",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
