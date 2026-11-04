@@ -2789,7 +2789,7 @@
     },
     {
       "id": "bali-earthquake-volcanic-risk-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 110,
       "theme": "investment",
       "atpType": "what",
@@ -2809,8 +2809,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-04",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/172"
     },
     {
       "id": "bali-villa-personal-use-rental-tax",
