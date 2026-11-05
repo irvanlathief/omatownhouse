@@ -2814,7 +2814,7 @@
     },
     {
       "id": "bali-villa-personal-use-rental-tax",
-      "status": "drafting",
+      "status": "published",
       "priority": 111,
       "theme": "tax",
       "atpType": "can",
@@ -2834,8 +2834,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-05",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/173"
     },
     {
       "id": "bali-ppat-notary-property-deal",
