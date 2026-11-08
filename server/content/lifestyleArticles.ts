@@ -7718,4 +7718,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-villa-personal-use-rental-tax-deductions",
+    title: "Personal Use vs Rental Income: Tax Rules for a Bali Villa",
+    category: "investment",
+    imageUrl: "/blog/bali-villa-rental-tax-tropical-resort-pool.webp",
+    sortOrder: 121,
+    metaDescription:
+      "Indonesia taxes only actual rental receipts from your Bali villa. Personal-use days create no liability. Learn how PP 34/2017 and PT PMA affect what you owe.",
+    body: `<p>Under Indonesian tax law, the days you spend in your own Bali villa do not affect the rental income tax you owe. Only actual rental receipts trigger a tax liability. There is no equivalent to the US Section 280A "14-day rule" or any personal-use threshold that limits your deductions or increases your tax rate.</p><p>When a villa is held in a personal name, <a href="https://www.pajak.go.id/" data-external="true">Government Regulation PP 34/2017</a> imposes a flat 10 percent final tax on gross rental receipts. No operating expenses are deductible against that base: management fees, maintenance, pool cleaning, and platform commissions do not reduce the taxable amount. If you collect IDR 500 million in rent over a year, you owe IDR 50 million in tax regardless of running costs or personal nights stayed.</p><p>The calculation changes inside a <a href="https://emerhub.com/indonesia/pt-pma/" data-external="true">PT PMA (foreign-owned company)</a>. A PT PMA pays 22 percent corporate income tax on net taxable profit, so allowable operating costs reduce the taxable base. Personal use by a director-shareholder is treated as a non-deductible benefit rather than a rental expense, so only commercial rental days drive revenue and cost recognition. Depending on the villa's cost structure, the effective rate under PT PMA may be lower than 10 percent of gross revenue once legitimate deductions are applied.</p><p>Non-residents face a different withholding rate. If you are not an Indonesian tax resident (the threshold is 183 or more days in Indonesia within a 12-month period), rental income falls under PPh Pasal 26 at 20 percent of gross receipts by default. The US-Indonesia tax treaty can reduce that rate for US-based owners; UAE residents should verify whether the Indonesia-UAE tax treaty applies to their structure and income type.</p><p>Keep clear records of rental check-ins separate from personal stays, work with an Indonesian tax adviser to register under the correct regime, and confirm whether your holding structure affects both the deductions available and the withholding your property manager must remit. This article is for general information only and is not tax or legal advice. Consult a qualified Indonesian tax professional before making any decisions.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "How does Indonesia treat a Bali villa that is partly rented and partly used by the owner?",
+        answer:
+          "Indonesia taxes only the rental receipts. Personal-use days create no tax event, so there is no prorated deduction loss or added liability tied to the nights you stay. The 10 percent flat final tax under PP 34/2017 applies only to amounts actually collected from paying guests.",
+      },
+      {
+        question:
+          "Can I deduct villa operating costs against rental income in my personal name?",
+        answer:
+          "No. The PP 34/2017 final tax is levied on gross rental receipts, not net profit. Expenses such as management fees, maintenance, and platform commissions are not deductible. Only a PT PMA structure allows the villa to report net taxable profit after legitimate operating costs are accounted for.",
+      },
+      {
+        question:
+          "What proportion of the year does a Bali villa need to be rented to claim expense deductions?",
+        answer:
+          "Indonesian tax law has no minimum rental proportion requirement for a personal-name owner. Under PP 34/2017, you simply owe 10 percent of whatever gross rental income you collect. Expense deductions are not available under that regime regardless of occupancy proportion. Only a PT PMA can claim them, and there is no minimum rental ratio required there either.",
+      },
+      {
+        question:
+          "What tax rate applies if I am not an Indonesian tax resident?",
+        answer:
+          "Non-residents are subject to PPh Pasal 26 withholding at 20 percent of gross rental receipts by default. The US-Indonesia double-taxation agreement can reduce that rate for qualifying US-based owners. Consult an Indonesian tax adviser to confirm whether the reduced treaty rate applies to your structure before assuming it does.",
+      },
+    ],
+    publishedAt: "2026-11-05",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-villa-rental-tax-tropical-resort-pool.webp",
+    gallery: [
+      {
+        url: "/blog/indonesia-rental-tax-accountant-calculator.webp",
+        alt: "Tax accountant reviewing rental income documents with a calculator, representing Indonesia's PP 34/2017 final tax calculation on gross villa rental receipts",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/",
+      },
+      {
+        url: "/blog/bali-property-investment-legal-documents.webp",
+        alt: "Legal gavel resting next to a laptop and printed documents, representing the Indonesian regulatory framework for foreign property ownership and rental tax compliance",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Direktorat Jenderal Pajak (DJP) / Peraturan Pemerintah No. 34 Tahun 2017 (PP 34/2017): 10 percent final income tax on gross rental receipts from land and buildings for individual taxpayers; no expense deductions permitted under this regime. Tier 1: Indonesia's official tax authority and the regulation itself.",
+        url: "https://www.pajak.go.id/",
+      },
+      {
+        label:
+          "Emerhub - PT PMA Indonesia: foreign-owned company structure under Indonesian investment law; 22 percent corporate income tax on net taxable profit; operating expenses deductible from taxable base; personal use by director-shareholders treated as non-deductible benefit. Tier 2: established Indonesian business setup and advisory firm.",
+        url: "https://emerhub.com/indonesia/pt-pma/",
+      },
+      {
+        label:
+          "ILA Global Consulting - Indonesian Tax for Foreign Property Investors: PPh Pasal 26 non-resident withholding rate of 20 percent on gross rental receipts; US-Indonesia and UAE-Indonesia double-taxation agreement overview for property rental income. Tier 2: Indonesia legal and tax advisory firm serving foreign investors.",
+        url: "https://ilaglobal.com/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
