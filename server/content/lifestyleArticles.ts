@@ -7791,4 +7791,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-ppat-notary-property-purchase-explained",
+    title: "What Is a PPAT Notary in Bali and What Do They Do?",
+    category: "investment",
+    imageUrl: "/blog/ppat-notary-scales-gavel-legal-desk.webp",
+    sortOrder: 122,
+    metaDescription:
+      "A PPAT is Indonesia's land deed official who signs the AJB transfer deed. Learn what a PPAT does, what fees to expect, and how to pick one for your Bali property purchase.",
+    body: `<p>A PPAT (Pejabat Pembuat Akta Tanah) is a government-appointed land deed official in Indonesia who prepares and signs the Akta Jual Beli (AJB), the deed of sale and purchase that legally transfers title at the National Land Agency (BPN). Without a PPAT, ownership cannot be formally registered. A Notaris (Notary) can draft the preliminary sale and purchase agreement (PPJB) and authenticate documents, but only a PPAT can execute the AJB that moves the certificate to your name or structure.</p><p>The two roles often overlap: many PPAT practitioners are also licensed Notaries, so you may work with one professional wearing both hats. That said, they are legally distinct credentials with separate authority under <a href="https://peraturan.bpk.go.id/Details/5765/pp-no-24-tahun-2016" data-external="true">Government Regulation No. 24 of 2016 (PP 24/2016)</a>. For off-plan deals, a developer typically engages a PPAT to handle the final AJB once the building is complete and the certificate is ready for transfer.</p><p>PPAT fees are capped at 1 percent of the transaction value under <a href="https://www.atrbpn.go.id/" data-external="true">Ministry of ATR/BPN Regulation No. 33 of 2021 (Permen ATR/BPN 33/2021)</a>. In practice many PPATs charge 0.5 to 1 percent, negotiated before signing. The fee covers deed preparation, BPN filing, and coordination with the buyer and seller for tax-payment receipts: the PPAT cannot sign the AJB until both parties show proof of BPHTB (land acquisition tax, paid by the buyer) and PPh (income tax on the sale, paid by the seller).</p><p>As a foreign buyer, you can and generally should appoint your own PPAT rather than relying solely on the developer's PPAT. Your PPAT acts in your interest, reviews the certificate for encumbrances, checks zoning status with BPN, and confirms the seller's right to sell. For a leasehold structure, the PPAT draws the Akta Perjanjian Sewa (long-term lease deed). For a foreign-owned PT PMA buying on Hak Guna Bangunan (HGB), the PPAT files the HGB certificate in the company's name. Ask an Indonesian property lawyer or a Tier 2 advisory firm such as Emerhub or ILA Global Consulting to recommend a PPAT with active BPN credentials in Tabanan Regency, where Kaba Kaba is located.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is the difference between a Notary and a PPAT in an Indonesian property deal?",
+        answer:
+          "A Notaris (Notary) can authenticate documents and draft preliminary agreements such as the PPJB, but only a PPAT (Pejabat Pembuat Akta Tanah) is authorized to prepare the AJB deed of sale that is filed with BPN to register the ownership transfer. Many practitioners hold both licenses, but the PPAT credential is the one that matters for the final transfer step.",
+      },
+      {
+        question:
+          "How much does a PPAT charge for a Bali property transaction?",
+        answer:
+          "PPAT fees are capped at 1 percent of the transaction value under Permen ATR/BPN No. 33/2021. Most PPATs in Bali charge between 0.5 and 1 percent, agreed in advance. The fee covers AJB preparation, BPN filing, and coordination of tax-payment receipts from both parties. It does not cover the buyer's BPHTB or the seller's PPh income tax, which are separate.",
+      },
+      {
+        question:
+          "Should a foreign buyer use their own PPAT or the developer's PPAT in a Bali off-plan deal?",
+        answer:
+          "You can appoint your own PPAT, and doing so is recommended. The developer's PPAT is engaged by the developer and primarily serves the developer's side of the transaction. Your own PPAT checks the certificate, verifies zoning, confirms no liens exist, and acts in your interest throughout the BPN filing process. The cost is a small share of the deal value and reduces legal risk significantly.",
+      },
+      {
+        question:
+          "When in the off-plan purchase process does a PPAT get involved?",
+        answer:
+          "For off-plan purchases, the PPAT typically gets involved at two stages. Early on, a Notary (who may also be a PPAT) prepares the PPJB preliminary agreement and receives the deposit. The PPAT's formal role at BPN happens at completion, once the building certificate is issued and both parties have paid the required taxes, at which point the AJB is signed and BPN records the transfer.",
+      },
+    ],
+    publishedAt: "2026-11-09",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/ppat-notary-scales-gavel-legal-desk.webp",
+    gallery: [
+      {
+        url: "/blog/ppat-deed-signing-consultation-office.webp",
+        alt: "Client signing a property deed document while a professional official watches across the desk, representing a PPAT deed-signing session in a Bali notary office",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/",
+      },
+      {
+        url: "/blog/property-deal-handshake-documents-desk.webp",
+        alt: "Two professionals shaking hands over a desk with property documents and a laptop, representing the completion of an Indonesian property deal after PPAT signs the AJB deed",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Ministry of ATR/BPN - Permen ATR/BPN No. 33 of 2021: sets the maximum PPAT fee at 1 percent of transaction value; sets out deed-preparation and BPN-filing obligations. Tier 1: Indonesia's National Land Agency and the regulation itself.",
+        url: "https://www.atrbpn.go.id/",
+      },
+      {
+        label:
+          "Government Regulation No. 24 of 2016 (PP 24/2016) on PPAT: defines PPAT authority to prepare AJB and other land-rights deeds; distinguishes PPAT from Notary functions. Tier 1: Indonesian government regulation.",
+        url: "https://peraturan.bpk.go.id/Details/5765/pp-no-24-tahun-2016",
+      },
+      {
+        label:
+          "Emerhub - PT PMA Indonesia: PPAT role in HGB certificate transfers for foreign-owned companies; interaction between PT PMA structure and BPN land registration. Tier 2: established Indonesian business setup and advisory firm.",
+        url: "https://emerhub.com/indonesia/pt-pma/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
