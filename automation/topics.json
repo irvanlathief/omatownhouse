@@ -2839,7 +2839,7 @@
     },
     {
       "id": "bali-ppat-notary-property-deal",
-      "status": "pending",
+      "status": "published",
       "priority": 112,
       "theme": "off-plan",
       "atpType": "what",
@@ -2859,8 +2859,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-09",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/175"
     },
     {
       "id": "bali-vs-koh-samui-property",
