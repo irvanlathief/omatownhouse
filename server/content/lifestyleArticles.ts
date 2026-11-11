@@ -7864,4 +7864,78 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-vs-koh-samui-property-investment",
+    title: "Bali vs Koh Samui for Foreign Property Investors",
+    category: "investment",
+    imageUrl: "/blog/koh-samui-ang-thong-islands-aerial.webp",
+    sortOrder: 123,
+    metaDescription:
+      "Bali vs Koh Samui property comparison: ownership rules, rental yields, tourism scale, and costs for US and UAE investors deciding between the two islands.",
+    body: `<p>Bali and Koh Samui are two of Southeast Asia's most recognisable holiday villa markets, but they differ meaningfully on ownership rules, tourism scale, and market depth. For most foreign investors, Bali offers more ownership routes and a larger visitor base; Koh Samui suits buyers who want direct access to Thailand's market and are comfortable with a narrower legal framework.</p><p>On ownership, neither country permits foreigners to hold land freehold directly. In Thailand, the standard foreign route for a villa is a registered 30-year leasehold under the Land Code. Extensions beyond 30 years are contractual rather than statutory, so a "30+30+30" structure depends entirely on what your lease agreement says. Condominium units are the exception: foreigners can hold a freehold condo title under Thailand's Condominium Act, subject to a 49 percent foreign-quota cap per building. Thai company structures carry legal risk under the Foreign Business Act if a Thai nominee holds shares on paper for a foreign buyer. In Indonesia, options are broader: a notarial leasehold (Hak Sewa) of up to 25 years with renewals, Hak Pakai (Right of Use) for foreign residents with a valid stay permit, or Hak Guna Bangunan (HGB) title held through a legally established PT PMA foreign-owned company. For a full breakdown see the <a href="/blog/freehold-vs-leasehold-bali">leasehold vs freehold guide</a>.</p><p>Tourism volumes favour Bali by a large margin. Bali recorded roughly 6.33 million international arrivals in 2024 according to <a href="https://bali.bps.go.id/en/pressrelease/2024/08/01/717896/perkembangan-pariwisata-provinsi-bali-juni-2024.html" data-external="true">BPS Bali</a>. Koh Samui's Samui International Airport handled around 2.46 million passengers in the same period, a mix of domestic and international traffic, and connectivity is dominated by Bangkok Airways with limited direct international routes. Wider tourist numbers translate to a bigger addressable rental market for Bali villa owners.</p><p>Rental yields on Koh Samui are reported by villa management operator Staylar at roughly 7.2 to 7.5 percent net, with occupancy around 68 to 70 percent, though supply pressure is rising: listings on the island grew approximately 34 percent year-on-year to around 3,055 units and average nightly rates fell about 11 percent in Q1 2025 according to <a href="https://www.hospitalitynet.org/news/4128409.html" data-external="true">C9 Hotelworks data via Hospitality Net</a>. Bali villas in established rental corridors are commonly quoted at 8 to 15 percent gross and 5 to 12 percent net depending on management quality and location. Treat both ranges as indicative, not guaranteed. This is not financial advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own property in Koh Samui more easily than in Bali?",
+        answer:
+          "Neither country allows foreigners to hold land freehold in their own name. In Koh Samui the standard structure is a registered 30-year leasehold under Thai land law, with any renewal beyond 30 years dependent on the lease contract rather than statute. In Bali, foreigners can choose between a notarial leasehold (Hak Sewa), Hak Pakai (Right of Use) for residents, or a PT PMA company holding HGB title. The PT PMA structure gives broader rights and a clearer renewal path than a Thai leasehold for most foreign villa investors.",
+      },
+      {
+        question: "Are Bali or Koh Samui rental yields higher for holiday villas?",
+        answer:
+          "Koh Samui villa managers report net yields of roughly 7.2 to 7.5 percent with occupancy around 68 to 70 percent, though new supply is growing quickly. Bali villas in active rental corridors such as Canggu are commonly quoted at 8 to 15 percent gross and 5 to 12 percent net, backed by roughly 6.3 million international arrivals per year versus Koh Samui's roughly 2.5 million total passenger throughput. Both figures are ranges and depend heavily on location, management, and market conditions. This is not financial advice.",
+      },
+      {
+        question: "How do infrastructure and accessibility compare between Bali and Koh Samui?",
+        answer:
+          "Bali's Ngurah Rai International Airport receives direct international flights from across Asia, Australia, the Middle East, and Europe, with dozens of airlines. Koh Samui's airport is dominated by Bangkok Airways, meaning most international visitors connect through Bangkok, adding a transit leg. That connectivity gap affects the breadth of the tourism market each island can capture and is a factor when comparing rental demand.",
+      },
+      {
+        question: "What is the difference between a Thai leasehold and a Bali leasehold for a foreign buyer?",
+        answer:
+          "A Thai leasehold under the Land Code is registered for a maximum of 30 years at the Land Office. Any extension is a matter of contract between the landowner and tenant, not a statutory right. A Bali notarial leasehold (Hak Sewa) is typically structured for 25 years with renewal options written into the deed, and renewal terms can be negotiated upfront. Neither automatically converts to ownership, but both give secured use rights for the agreed term.",
+      },
+    ],
+    publishedAt: "2026-11-11",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/koh-samui-ang-thong-islands-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/koh-samui-thai-villa-pool-elephant.webp",
+        alt: "Resort pool villa with tropical garden on Koh Samui, Thailand, showing the style of holiday villa available to foreign rental investors on the island",
+        credit: "sergei morkovine / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/31705537/",
+      },
+      {
+        url: "/blog/koh-samui-coastal-road-sea-view.webp",
+        alt: "Winding coastal road on Koh Samui with sea views, showing the island road infrastructure that connects villa locations to beaches and the airport",
+        credit: "Anetta Kolesnikova / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/33271606/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "BPS Bali - International Tourist Arrivals June 2024: Bali recorded approximately 6.33 million international visitors in 2024, source for the tourism scale comparison. Tier 1: Statistics Indonesia, Bali province.",
+        url: "https://bali.bps.go.id/en/pressrelease/2024/08/01/717896/perkembangan-pariwisata-provinsi-bali-juni-2024.html",
+      },
+      {
+        label:
+          "C9 Hotelworks via Hospitality Net - Koh Samui villa market: villa listings grew 34 percent year-on-year to 3,055 units; average nightly rate fell 11 percent in Q1 2025 to THB 13,012. Tier 2: C9 Hotelworks is an established hotel and real estate advisory firm in Thailand.",
+        url: "https://www.hospitalitynet.org/news/4128409.html",
+      },
+      {
+        label:
+          "Emerhub - Foreigners Buying Property in Thailand: 30-year leasehold limit under Thai Land Code; condominium 49 percent foreign quota; risks of Thai nominee structures. Tier 2: established business advisory firm covering Indonesia and Thailand.",
+        url: "https://emerhub.com/thailand/foreigners-guide-to-buying-property-in-thailand/",
+      },
+      {
+        label:
+          "ASEAN Briefing - Thailand Land Ownership Rules for Foreigners: confirms 30-year maximum registered leasehold, freehold condo options, and legal risks of nominee structures under the Foreign Business Act. Tier 2: ASEAN Briefing is an established business law publication.",
+        url: "https://www.aseanbriefing.com/news/thailands-land-ownership-rules-for-foreigners-a-comprehensive-guide/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
