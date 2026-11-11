@@ -2864,7 +2864,7 @@
     },
     {
       "id": "bali-vs-koh-samui-property",
-      "status": "pending",
+      "status": "published",
       "priority": 113,
       "theme": "investment",
       "atpType": "vs",
@@ -2884,7 +2884,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
+      "publishedAt": "2026-11-11",
       "prUrl": null
     },
     {
