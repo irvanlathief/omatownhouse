@@ -2889,7 +2889,7 @@
     },
     {
       "id": "bali-property-tourism-downturn-risk",
-      "status": "drafting",
+      "status": "published",
       "priority": 114,
       "theme": "investment",
       "atpType": "what",
@@ -2909,8 +2909,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-12",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/177"
     },
     {
       "id": "bali-rtrw-spatial-plan-villa",
