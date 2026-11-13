@@ -8007,4 +8007,78 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-rtrw-spatial-plan-villa-development-guide",
+    title: "Bali RTRW Spatial Plan: Zoning for Villa Development",
+    category: "investment",
+    imageUrl: "/blog/bali-agricultural-farmland-green-zone-aerial.webp",
+    sortOrder: 125,
+    metaDescription:
+      "Bali's RTRW spatial plan assigns every plot to a zone. Only tourist-zone land allows a commercial rental villa. Here is what each zone means and how to check before you buy.",
+    body: `<p>Bali's RTRW (Rencana Tata Ruang Wilayah) is the provincial spatial plan that assigns every parcel of land to a zone, and that zone determines whether a villa can be built, permitted, and licensed as a short-term rental. The current plan, <a href="https://pasal.id/peraturan/perda/perda-provinsi-bali-no-2-tahun-2023" data-external="true">Perda Provinsi Bali No. 2 Tahun 2023</a>, was approved by Bali's provincial parliament (DPRD) in early 2023 and runs through 2043. Any purchase that skips a zoning check risks buying land where a PBG building permit or SLF certificate of feasibility cannot legally be issued.</p><p>Agents in Bali use color shorthand drawn from the RTRW and the regency-level RDTR (Rencana Detail Tata Ruang). Pink zones (Kawasan Pariwisata, or Tourism Zone) are where commercial short-term rentals are permitted and where a Pondok Wisata license can be obtained. Yellow zones (Kawasan Permukiman, Residential Zone) allow a private villa but restrict commercial rental licenses, with restrictions varying by each regency's own RDTR. Green zones (Kawasan Pertanian or Kawasan Lindung, Agricultural or Protected Zone) prohibit construction: a villa built there cannot receive a PBG under Government Regulation 16/2021 or the SLF certificate required before handover, making it non-compliant from day one.</p><p>The RTRW sets the province-wide framework; the RDTR is the regency-level detailed plan that governs a specific plot. Badung, Gianyar, and Tabanan each have their own Perda RDTR. If a regency has not finalized an RDTR, the land falls into a holding zone under the provincial RTRW, which can delay or block permitting. Customary village rules (awig-awig) can add setback or buffer requirements on top of the formal government hierarchy, but these are enforced by the village, not the regency planning office.</p><p>As a buyer, you have three ways to verify a plot's zone before signing. Check the Ministry of ATR/BPN portal <a href="https://gistaru.atrbpn.go.id" data-external="true">GISTARU</a> or the Bali provincial portal <a href="https://tarubali.baliprov.go.id" data-external="true">TARUBALI</a> for the Rencana Pola Ruang layer. For a binding written confirmation, request a Keterangan Rencana Kabupaten/Kota (KRK) from the regency planning office (Dinas PUPR). An online map is a first screen only; a licensed PPAT notary or Indonesian property lawyer should review the zone code before you commit. This is not legal advice; consult a qualified Indonesian property lawyer before purchasing.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "What is the RTRW and how does it differ from local village zoning in Bali?",
+        answer:
+          "The RTRW is Bali's provincial spatial master plan, currently Perda No. 2/2023 running to 2043, which sets zone categories across the whole island. Each regency then publishes a more detailed RDTR (Rencana Detail Tata Ruang) that governs specific plots. On top of both, Balinese customary villages (Desa Adat) can impose their own awig-awig rules for setbacks and ceremonial buffers, enforced locally rather than by the government planning hierarchy.",
+      },
+      {
+        question: "How do I find out if a specific plot in Bali is zoned for tourism use?",
+        answer:
+          "Start with the Ministry of ATR/BPN portal GISTARU (gistaru.atrbpn.go.id) or the Bali provincial portal TARUBALI (tarubali.baliprov.go.id) and look at the Rencana Pola Ruang layer for the parcel. For a legally binding written confirmation, request a Keterangan Rencana Kabupaten/Kota (KRK) letter from the regency planning office (Dinas PUPR). An online map check is a screening tool, not a permit. Have your PPAT notary or property lawyer verify the zone code before signing any agreement.",
+      },
+      {
+        question: "What changed under the revised Bali RTRW and does it affect villa rentals?",
+        answer:
+          "Perda No. 2/2023 replaced the previous Bali RTRW and runs to 2043. It formalized Kawasan Pariwisata (Tourism Zone) designations across the main tourism belt, strengthened protections for LP2B (protected productive farmland), and introduced a holding-zone category for areas where regency RDTR plans are still pending. For investors, the practical effect is that agricultural land protection has tightened: any villa built on green-zone land after this revision faces clearer legal exposure, including inability to obtain a PBG or SLF and potential restoration orders.",
+      },
+      {
+        question: "Can I build a rental villa on agricultural or green-zone land in Bali?",
+        answer:
+          "No. A villa on Kawasan Pertanian (Agricultural Zone) or Kawasan Lindung (Protected Zone) land cannot obtain a PBG building permit under Government Regulation 16/2021 or an SLF certificate of feasibility. Without both, the structure is legally non-compliant, cannot be commercially licensed as a Pondok Wisata, and may be subject to demolition or restoration orders. Agents sometimes advertise green-zone land at a price that looks attractive, but the lack of a buildable path is the reason. Always verify the zone designation with a KRK letter before purchase.",
+      },
+    ],
+    publishedAt: "2026-11-13",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-agricultural-farmland-green-zone-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/spatial-plan-zoning-drawing-review.webp",
+        alt: "Two professionals reviewing architectural planning drawings on a table, representing zoning document review before a Bali property purchase",
+        credit: "Alena Darmel / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/people-pointing-at-a-floor-plan-7642088/",
+      },
+      {
+        url: "/blog/land-surveyor-gps-tropical-site-indonesia.webp",
+        alt: "Land surveyor in high-visibility vest and hard hat using GPS equipment on a tropical green site in Indonesia, representing field due diligence before buying land in Bali",
+        credit: "D'riva Motiva / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/39235160/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Perda Provinsi Bali No. 2 Tahun 2023 - Bali Provincial Spatial Plan (RTRW) 2023 to 2043: the governing regulation for land use zones across Bali, including Kawasan Pariwisata, Kawasan Permukiman, Kawasan Pertanian, and Kawasan Lindung designations. Tier 1: Bali Provincial Government.",
+        url: "https://pasal.id/peraturan/perda/perda-provinsi-bali-no-2-tahun-2023",
+      },
+      {
+        label:
+          "ANTARA Bali - DPRD Bali Setujui Raperda RTRWP 2023-2043: confirms Bali's provincial parliament approved the new RTRW covering the period 2023 to 2043. Tier 1-sourced news report.",
+        url: "https://bali.antaranews.com/berita/306540/dprd-bali-setujui-raperda-rtrwp-2023-2043",
+      },
+      {
+        label:
+          "ATR/BPN GISTARU - National Spatial Planning Information System: the official government GIS portal where buyers can query the Rencana Pola Ruang zoning layer for any Bali parcel by province and regency. Tier 1: Ministry of Agrarian Affairs and Spatial Planning.",
+        url: "https://gistaru.atrbpn.go.id",
+      },
+      {
+        label:
+          "Seven Stones Indonesia - Understanding Bali Land Zoning Regulations for Commercial Villas: explains the color-coded zone system (pink tourist, yellow residential, green agricultural), Pondok Wisata licensing requirements, and consequences of building in a prohibited zone. Tier 2: established Indonesia legal and property advisory firm.",
+        url: "https://realestate.sevenstonesindonesia.com/understanding-bali-land-zoning-regulations-for-commercial-villas",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
