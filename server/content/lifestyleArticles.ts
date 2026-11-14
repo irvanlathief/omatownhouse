@@ -8081,4 +8081,78 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "can-foreigner-buy-raw-land-bali",
+    title: "Can a Foreigner Buy Raw Land in Bali and Build a Villa?",
+    category: "investment",
+    imageUrl: "/blog/indonesia-raw-land-plots-aerial-banten.webp",
+    sortOrder: 126,
+    metaDescription:
+      "Foreigners cannot hold freehold land in Bali directly. A PT PMA with HGB title is the standard route to buy raw land and build a villa. Here is how it works.",
+    body: `<p>A foreign investor cannot hold raw land in Bali in their own name. Under Indonesia's Basic Agrarian Law (UUPA No. 5/1960), freehold ownership (Hak Milik) is reserved exclusively for Indonesian citizens. That does not close the door. Three legal structures give a foreigner access to an undeveloped plot, and one of them is the standard choice for anyone who wants to build a villa.</p><p>A leasehold (Hak Sewa) lets an individual foreigner lease a plot from a local landowner, typically for 25 to 30 years with an optional renewal, but a leasehold does not carry automatic building rights of its own. <a href="/blog/hak-pakai-bali-foreign-buyers">Hak Pakai</a> (Right to Use) is available to foreigners who hold a valid KITAS or KITAP residency permit, granting a fixed-term personal right that can be used for a residential property. For a foreign investor who wants to develop a villa, the standard structure is a <a href="/blog/pt-pma-setup-bali-property">PT PMA</a>, an Indonesian foreign-owned limited liability company, which can hold a Hak Guna Bangunan (HGB) title. Under Government Regulation PP No. 18/2021, HGB runs for an initial 30 years, extendable by 20 years, and renewable for a further 30 years, giving a potential total of 80 years.</p><p>Before acquiring any plot, zoning is the first check. The land must sit in a Kawasan Pariwisata (Tourism Zone) or a zone that permits a commercial rental license. Agricultural and protected zones cannot receive a <a href="/blog/bali-villa-building-permit-pbg-explained">PBG building permit</a> under Government Regulation 16/2021 or the SLF certificate of feasibility required before handover. The Ministry of ATR/BPN's <a href="https://gistaru.atrbpn.go.id" data-external="true">GISTARU portal</a> and the Bali provincial <a href="https://tarubali.baliprov.go.id" data-external="true">TARUBALI</a> system are the starting points for a zoning check. See the guide to the <a href="/blog/bali-rtrw-spatial-plan-villa-development-guide">Bali RTRW spatial plan</a> for a fuller explanation of zone categories and how to get a binding KRK letter from the regency planning office.</p><p>Buying raw land and building your own villa gives more design control and can allow a lower entry price than a completed property, but it adds meaningful complexity. You must set up a PT PMA before purchasing (typically 4 to 8 weeks), commission an architect, obtain a PBG permit, manage the build, and arrange an SLF certificate before the property can be legally occupied or rented. An off-plan purchase shifts that burden to the developer. Neither route is inherently superior; the right choice depends on budget, timeline, and appetite for managing a build from the ground up. This is not financial or legal advice; consult a licensed Indonesian property lawyer and a registered PPAT notary before proceeding.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can a PT PMA company buy undeveloped land in Bali to build a villa?",
+        answer:
+          "Yes. A PT PMA (foreign-owned Indonesian company) can hold a Hak Guna Bangunan (HGB) title on undeveloped land, which is the building-rights title that permits construction. Under Government Regulation PP No. 18/2021, HGB runs for a potential total of 80 years: an initial 30 years, extendable by 20 years, and renewable for a further 30 years. The PT PMA must be established before the land purchase and must hold the HGB in the company name, not in the individual shareholder's name.",
+      },
+      {
+        question: "What are the main restrictions on a foreigner buying raw land in Bali?",
+        answer:
+          "Three restrictions apply. First, an individual foreigner cannot hold freehold (Hak Milik) title in their own name; that title is reserved for Indonesian citizens under UUPA No. 5/1960. Second, the land must sit in a zone that permits the intended use; agricultural and protected green-zone land cannot receive a PBG building permit. Third, HGB title can only be held by a PT PMA or an Indonesian citizen, not by a foreign individual directly. A personal leasehold is possible but does not carry automatic building rights.",
+      },
+      {
+        question: "How is buying land and building a villa different from buying off-plan in Bali?",
+        answer:
+          "With an off-plan purchase, the developer owns the land, holds the title, secures the PBG permit, manages the construction, and delivers a finished unit. The buyer pays in installments and receives a leasehold or PT PMA title on handover. With a land purchase, the buyer's PT PMA acquires the plot, hires an architect and contractor, applies for the PBG permit, and manages the entire build. This gives more design flexibility and can be cheaper per square metre, but it typically adds 12 to 24 months and requires hands-on oversight or a trusted local project manager.",
+      },
+      {
+        question: "How do I check the zoning of a raw land plot in Bali before buying?",
+        answer:
+          "Start with the Ministry of ATR/BPN's GISTARU portal (gistaru.atrbpn.go.id) and the Bali provincial TARUBALI portal (tarubali.baliprov.go.id). Search the Rencana Pola Ruang layer for the parcel to see the zone classification. For a binding written ruling, request a Keterangan Rencana Kabupaten/Kota (KRK) letter from the regency planning office (Dinas PUPR). An online map result is a screening tool only; have a licensed PPAT notary or Indonesian property lawyer confirm the zone before signing any agreement.",
+      },
+    ],
+    publishedAt: "2026-11-14",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/indonesia-raw-land-plots-aerial-banten.webp",
+    gallery: [
+      {
+        url: "/blog/indonesia-land-surveyor-theodolite-tropical-beach.webp",
+        alt: "Land surveyor using a yellow theodolite instrument on a tropical beach in Indonesia, with palm trees in the background, representing land measurement and site due diligence before buying a plot in Bali",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/39106296/",
+      },
+      {
+        url: "/blog/villa-foundation-concrete-tropical-build.webp",
+        alt: "Workers levelling fresh concrete for a building foundation at a tropical construction site, representing the development phase after a foreign investor's PT PMA acquires raw land in Bali",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/2219024/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesia Basic Agrarian Law UUPA No. 5/1960 - Article 21: Hak Milik (freehold) can only be held by Indonesian citizens (Warga Negara Indonesia). Land nominally held by a foreign national reverts to the state. Tier 1: Ministry of Agrarian Affairs and Spatial Planning / ATR/BPN.",
+        url: "https://www.atrbpn.go.id/regulasi/undang-undang",
+      },
+      {
+        label:
+          "Government Regulation PP No. 18/2021 on Land Rights, Apartment Units, and Land Registration - Articles 34 to 36: HGB is granted for an initial 30 years, extendable by 20 years, renewable for 30 years; Hak Pakai for foreigners with valid immigration status is granted for up to 30 years. Tier 1: Indonesian Central Government via JDIH.",
+        url: "https://jdih.setneg.go.id/viewpdfperaturan/PP182021.pdf",
+      },
+      {
+        label:
+          "Ministry of ATR/BPN - GISTARU National Spatial Planning Portal: the official government GIS tool for querying zoning classifications (Rencana Pola Ruang) on any parcel, including land in Bali. Tier 1: Ministry of Agrarian Affairs and Spatial Planning.",
+        url: "https://gistaru.atrbpn.go.id",
+      },
+      {
+        label:
+          "Emerhub - Buying Property in Bali as a Foreigner: explains the PT PMA route, HGB title terms, and the land purchase process for foreign investors; confirms the UUPA freehold restriction and the Hak Pakai residency requirement. Tier 2: established Indonesia company-setup and legal advisory firm.",
+        url: "https://emerhub.com/bali/buying-property-in-bali-as-foreigner/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
