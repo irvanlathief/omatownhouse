@@ -2939,7 +2939,7 @@
     },
     {
       "id": "can-foreigner-buy-land-bali",
-      "status": "drafting",
+      "status": "published",
       "priority": 116,
       "theme": "foreign-ownership",
       "atpType": "can",
@@ -2959,8 +2959,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-14",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/179"
     }
   ]
 }
