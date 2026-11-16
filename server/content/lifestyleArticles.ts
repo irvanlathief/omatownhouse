@@ -8155,4 +8155,77 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-vs-japan-property-investment",
+    title: "Bali vs Japan Property for Foreign Investors",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 127,
+    metaDescription: "Bali vs Japan property for foreign investors: ownership rules, rental yields, minpaku day caps, taxes, and which market suits your goals.",
+    body: `<p>Japan and Bali sit at opposite ends of the foreign-ownership spectrum in Asia. Japan lets foreigners own land and buildings outright, with no residency requirement and no nationality restriction. Bali reserves freehold land for Indonesian citizens; a foreign buyer accesses property through a leasehold or a <a href="/blog/pt-pma-setup-bali-property">PT PMA company</a> instead. The practical question is whether Bali's higher yield potential or Japan's simpler ownership structure better suits your investment goal.</p><p><strong>Ownership.</strong> In Japan, a foreigner buys property in their own name under the same title system as a Japanese national. Land and building ownership is fully unrestricted. From 2026, all property buyers in Japan must file a post-purchase nationality-disclosure report under Japan's Foreign Exchange and Foreign Trade Act, but this is a compliance step, not a barrier to purchase. In Bali, the main routes for a foreign investor are a direct leasehold (Hak Sewa) for 25 to 30 years, extendable by negotiation, or a PT PMA company holding <a href="/blog/hak-guna-bangunan-bali-pt-pma">Hak Guna Bangunan (HGB)</a> rights for an initial 30 years, extendable by 20 years, and renewable for a further 30 years.</p><p><strong>Rental yields and the minpaku cap.</strong> Japan's nationwide average gross rental yield was about 4.55 percent in Q1 2026, with Osaka averaging about 4.78 percent, according to <a href="https://www.globalpropertyguide.com/asia/japan/rental-yields" data-external="true">Global Property Guide</a>. For short-term rental, Japan's Private Lodging Business Act caps operating days at 180 per year nationally, and local municipalities can restrict this further. Some Kyoto residential zones allow as few as 60 days per year. That cap is a material constraint on annual rental income. Bali imposes no equivalent day cap: a licensed PT PMA villa can be rented continuously under a <a href="/blog/short-term-rental-permit-bali-villa">Pondok Wisata accommodation license</a>. Bali marketing commonly cites gross yields of 12 to 20 percent in prime areas; a realistic net yield after management fees, tax, and maintenance sits closer to 6 to 10 percent depending on location and occupancy.</p><p><strong>Tax on sale.</strong> When a non-resident sells Japanese property held for more than five years (measured as of January 1 of the sale year), the national capital gains tax rate is 15.315 percent; for shorter-hold sales it rises to 30.63 percent, plus local income taxes in both cases. In Bali, the seller pays 2.5 percent final income tax (PPh) on the gross transaction value and the buyer pays 5 percent BPHTB transfer duty on the acquisition value above the tax-free threshold.</p><p>For a buyer who wants clear freehold title, a strong legal system, and affordable rural entry prices, Japan is a compelling case. For a buyer who wants higher income yields, a tropical short-term rental market, and flexibility in ownership duration, Bali offers a different profile alongside more complex structuring. Neither market guarantees rental income; treat yield figures as a planning range, not a promise. This article is for general information only and is not financial or legal advice.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "Can foreigners own land freehold in Japan but not in Bali?",
+        answer:
+          "Yes. Japan imposes no nationality or residency restriction on property ownership: a foreigner can buy land and buildings in their own name under the same title system as a Japanese citizen. In Bali, freehold ownership (Hak Milik) is reserved for Indonesian citizens under the Basic Agrarian Law. Foreign buyers in Bali use a leasehold (Hak Sewa), Hak Pakai (with a valid Indonesian residency permit), or a PT PMA company holding HGB rights.",
+      },
+      {
+        question: "How does Japan's 180-day minpaku cap affect rental income compared to Bali?",
+        answer:
+          "Under Japan's Private Lodging Business Act, a property may only be rented out as private accommodation for up to 180 nights per year. Local councils can reduce this further: some Kyoto residential zones allow as few as 60 nights per year. Bali has no equivalent annual day cap. A Bali villa holding a Pondok Wisata license can accept guests year-round. The Japan cap directly reduces the maximum number of paid nights, which compresses gross rental income relative to a comparable Bali villa operating at full occupancy.",
+      },
+      {
+        question: "Are Bali rental yields higher than Japan's?",
+        answer:
+          "In general, yes. Japan's national average gross yield was about 4.55 percent in Q1 2026 according to Global Property Guide, with Osaka at about 4.78 percent. Bali villa gross yields in well-managed tourist areas are commonly quoted at 12 to 20 percent, though realistic net yields after management fees, tax, and maintenance run closer to 6 to 10 percent. Neither figure is a guarantee; actual returns depend on occupancy, pricing, operating costs, and market conditions. This is not financial advice.",
+      },
+      {
+        question: "What capital gains tax does a non-resident pay when selling Japanese property versus Bali property?",
+        answer:
+          "In Japan, a non-resident selling a property held for more than five years pays 15.315 percent national capital gains tax on net profit, rising to 30.63 percent for shorter holding periods, plus local taxes. In Bali, the seller pays a flat 2.5 percent income tax on the gross transaction value (not the profit), regardless of how long the property was held. Bali's flat gross-value basis can mean a lower absolute tax on a profitable sale but offers no deduction for purchase costs.",
+      },
+    ],
+    publishedAt: "2026-11-16",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/tokyo-skytree-aerial-skyline.webp",
+    gallery: [
+      {
+        url: "/blog/kyoto-traditional-street-kimono.webp",
+        alt: "Two women in traditional kimono walking along a cobblestone street lined with aged wooden machiya townhouses in Kyoto, Japan, illustrating the cultural and architectural character of the Japanese property market",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/5745824/",
+      },
+      {
+        url: "/blog/tokyo-city-lights-twilight-aerial.webp",
+        alt: "Aerial view of Tokyo illuminated at twilight, with the Tokyo Tower glowing red-orange against a dramatic sunset sky, representing Japan's dense urban real estate market and the contrast with Bali's resort villa investment landscape",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/31048512/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Japan Ministry of Land, Infrastructure, Transport and Tourism (MLIT) - Overview of the Private Lodging Business Act (Minpaku): the national law capping private short-term rental (minpaku) accommodation at 180 days per year, in force since June 15, 2018, with the annual operating period running April 1 to March 31. Local municipal ordinances may impose stricter limits. Tier 1: Japan national government.",
+        url: "https://www.mlit.go.jp/kankocho/minpaku/overview/minpaku/law1_en.html",
+      },
+      {
+        label:
+          "Global Property Guide - Gross Rental Yields in Japan (Q1 2026): Japan's national average gross yield stood at 4.55%, with Osaka at 4.78% and Tokyo at 3.27%, based on median asking rents and list prices. Tier 2: established international property research database.",
+        url: "https://www.globalpropertyguide.com/asia/japan/rental-yields",
+      },
+      {
+        label:
+          "Housing Japan - Can Foreigners Buy Property in Japan?: confirms that foreigners can own land and buildings in Japan in their own name with no nationality, residency, or visa requirement, under the same title system as Japanese nationals. Tier 2: established Japan-focused property advisory.",
+        url: "https://housingjapan.com/resources/can-foreigners-buy-property-in-japan/",
+      },
+      {
+        label:
+          "Indonesia Basic Agrarian Law UUPA No. 5/1960 - Article 21: Hak Milik (freehold) can only be held by Indonesian citizens. Any land nominally held by a foreign national reverts to the state. Tier 1: Ministry of Agrarian Affairs and Spatial Planning / ATR/BPN.",
+        url: "https://www.atrbpn.go.id/regulasi/undang-undang",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
