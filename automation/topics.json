@@ -2961,6 +2961,256 @@
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
+    },
+    {
+      "id": "bali-vs-japan-property-investment",
+      "status": "published",
+      "priority": 117,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Japan for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Japan property investment",
+        "Bali or Japan for investment",
+        "Japan freehold foreigners vs Bali leasehold"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Japan but not in Bali?",
+        "Are Bali or Japan rental yields higher for short-term rental investors?",
+        "How does the Japan minpaku 180-day cap affect rental income compared to Bali?"
+      ],
+      "proposedSlug": "bali-vs-japan-property-investment",
+      "proposedTitle": "Bali vs Japan Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-11-16",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/180"
+    },
+    {
+      "id": "bali-off-plan-defect-warranty",
+      "status": "pending",
+      "priority": 118,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What defect warranty does a Bali off-plan developer owe after handover?",
+      "targetKeywords": [
+        "Bali villa defect warranty developer",
+        "off-plan Bali post-handover warranty",
+        "construction defect liability Indonesia villa"
+      ],
+      "relatedQuestions": [
+        "How long is the warranty period on a newly built Bali villa?",
+        "What structural defects is a Bali developer legally required to fix after handover?",
+        "What PPJB clauses protect a buyer against post-handover construction defects in Bali?"
+      ],
+      "proposedSlug": "bali-off-plan-villa-defect-warranty",
+      "proposedTitle": "Bali Off-Plan Villa Defect Warranty: What Developers Owe You",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "wire-money-to-buy-bali-property",
+      "status": "pending",
+      "priority": 119,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How do I transfer money internationally to buy Bali property from the US or UAE?",
+      "targetKeywords": [
+        "wire money Bali property purchase",
+        "international transfer Indonesia property",
+        "SWIFT transfer USD IDR Bali villa"
+      ],
+      "relatedQuestions": [
+        "What are the cheapest ways to transfer USD or AED to Indonesia for a Bali property purchase?",
+        "Does Bank Indonesia require me to report a large inbound transfer for property?",
+        "Can I use Wise or Revolut to send money for a Bali property deposit?"
+      ],
+      "proposedSlug": "how-to-wire-money-bali-property-purchase",
+      "proposedTitle": "How to Transfer Money to Buy Bali Property from the US or UAE",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-singapore-property-investment",
+      "status": "pending",
+      "priority": 120,
+      "theme": "investment",
+      "atpType": "vs",
+      "primaryQuestion": "Bali vs Singapore for foreign property investors: how do they compare?",
+      "targetKeywords": [
+        "Bali vs Singapore property investment",
+        "Bali or Singapore for investment",
+        "Singapore Additional Buyer Stamp Duty foreigners vs Bali leasehold"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Singapore more easily than in Bali?",
+        "How do Bali and Singapore rental yields compare for residential investors?",
+        "What Additional Buyer Stamp Duty does Singapore charge foreigners and how does it compare to Bali acquisition costs?"
+      ],
+      "proposedSlug": "bali-vs-singapore-property-investment",
+      "proposedTitle": "Bali vs Singapore Property for Foreign Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-currency-hedging-usd-idr",
+      "status": "pending",
+      "priority": 121,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How can a foreign Bali property investor hedge USD/IDR currency exposure?",
+      "targetKeywords": [
+        "Bali property currency hedge USD IDR",
+        "rupiah risk Bali investment hedge",
+        "how to hedge Indonesia currency exposure"
+      ],
+      "relatedQuestions": [
+        "What tools are available to a US or UAE investor to hedge rupiah risk on a Bali villa?",
+        "Does pricing a Bali villa in USD fully protect an investor from rupiah depreciation?",
+        "How do Bali developers structure USD-denominated contracts to reduce currency risk?"
+      ],
+      "proposedSlug": "bali-currency-hedging-usd-idr-investor",
+      "proposedTitle": "How to Hedge USD/IDR Currency Risk on a Bali Property Investment",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-gifting-transfer-family",
+      "status": "pending",
+      "priority": 122,
+      "theme": "foreign-ownership",
+      "atpType": "can",
+      "primaryQuestion": "Can I gift or transfer my Bali property to a spouse or family member without selling?",
+      "targetKeywords": [
+        "Bali property gift transfer spouse",
+        "transfer Bali villa family member",
+        "Indonesia property transfer gift tax"
+      ],
+      "relatedQuestions": [
+        "What tax applies when gifting a Bali leasehold or PT PMA shares to a family member?",
+        "Can a foreign owner transfer a Bali PT PMA to their spouse without triggering property sale tax?",
+        "How does adding a co-owner to a Bali property or PT PMA work legally?"
+      ],
+      "proposedSlug": "bali-property-gift-transfer-family-member",
+      "proposedTitle": "Can You Gift or Transfer a Bali Property to a Family Member?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-branded-resort-villa-investment",
+      "status": "pending",
+      "priority": 123,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What is a branded Bali resort villa and is it a better investment than an independent villa?",
+      "targetKeywords": [
+        "branded resort villa Bali investment",
+        "Bali hotel branded villa buy",
+        "Alila Hyatt Bali villa ownership"
+      ],
+      "relatedQuestions": [
+        "What are the advantages and disadvantages of buying a villa inside a branded Bali resort?",
+        "How do yields from a branded Bali resort unit compare to a self-managed villa?",
+        "What restrictions does a branded resort operator place on owner personal use?"
+      ],
+      "proposedSlug": "bali-branded-resort-villa-investment",
+      "proposedTitle": "Branded Resort Villas in Bali: Are They a Better Investment?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-buying-checklist-step-by-step",
+      "status": "pending",
+      "priority": 124,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What is the complete step-by-step process for buying an off-plan villa in Bali as a foreigner?",
+      "targetKeywords": [
+        "Bali property buying process step by step",
+        "buying Bali villa checklist foreigner",
+        "off-plan Bali purchase stages A to Z"
+      ],
+      "relatedQuestions": [
+        "What documents does a foreign buyer need at each stage of a Bali off-plan purchase?",
+        "How long does the entire process take from first inquiry to receiving keys in Bali?",
+        "What professionals should a foreign buyer have on their team when buying in Bali?"
+      ],
+      "proposedSlug": "bali-off-plan-buying-process-step-by-step",
+      "proposedTitle": "Buying an Off-Plan Villa in Bali: Step-by-Step Guide",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-developer-penalty-delay-clause",
+      "status": "pending",
+      "priority": 125,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "What penalty clauses protect a Bali off-plan buyer if the developer delivers late?",
+      "targetKeywords": [
+        "Bali off-plan developer delay penalty",
+        "PPJB late delivery clause Bali",
+        "construction delay compensation Bali villa"
+      ],
+      "relatedQuestions": [
+        "What is a typical late-delivery penalty in a Bali PPJB and how is it calculated?",
+        "Can a Bali off-plan buyer cancel and get a refund if the developer delays?",
+        "How does the Bali developer delay clause compare to Dubai's RERA off-plan protections?"
+      ],
+      "proposedSlug": "bali-off-plan-developer-delay-penalty-clause",
+      "proposedTitle": "Bali Off-Plan Delay Penalties: What Your PPJB Should Include",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "how-to-read-bali-land-certificate",
+      "status": "pending",
+      "priority": 126,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How do I read and verify a Bali land certificate (SHM or HGB) before buying?",
+      "targetKeywords": [
+        "Bali land certificate SHM HGB verify",
+        "read Indonesia land certificate foreigner",
+        "check Bali land title before buying"
+      ],
+      "relatedQuestions": [
+        "What information does a Bali SHM or HGB certificate contain and what should I check?",
+        "How do I verify a Bali land certificate is genuine and unencumbered?",
+        "Can a foreign buyer check the status of a Bali land certificate online?"
+      ],
+      "proposedSlug": "how-to-read-verify-bali-land-certificate",
+      "proposedTitle": "How to Read and Verify a Bali Land Certificate Before Buying",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
