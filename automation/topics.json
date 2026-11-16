@@ -2964,7 +2964,7 @@
     },
     {
       "id": "bali-vs-japan-property-investment",
-      "status": "drafting",
+      "status": "published",
       "priority": 117,
       "theme": "investment",
       "atpType": "vs",
@@ -2984,8 +2984,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-16",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/180"
     },
     {
       "id": "bali-off-plan-defect-warranty",
