@@ -8155,4 +8155,70 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "uae-resident-bali-rental-income-tax",
+    title: "Bali Rental Tax for UAE Residents: What You Keep",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 127,
+    isInsight: true,
+    author: "OMA Townhouse",
+    publishedAt: "2026-11-17",
+    heroImage: "/blog/uae-investor-financial-analysis-rental-tax.webp",
+    metaDescription:
+      "UAE residents pay a 10% Indonesian final withholding on Bali rental income and nothing at home. How the Indonesia-UAE DTA applies and what you keep.",
+    body: `<p>For a UAE resident holding a Bali villa under leasehold, the tax picture is simpler than many investors expect. Indonesia withholds 10 percent of gross rental income at source under PPh Article 4(2), and the UAE imposes no personal income tax on individuals, so that Indonesian withholding is your entire tax obligation on the rental.</p><p>The 10 percent rate applies to the gross rent with no deductions for operating costs, maintenance or management fees. If a villa earns IDR 500 million in annual gross rent, the PPh 4(2) tax deducted is IDR 50 million. Your management company collects the full rent, withholds the 10 percent, and remits it directly to the Directorate General of Taxes. You receive the gross rent minus that 10 percent, then separately settle management fees from your share. The process is a final settlement: no Indonesian income tax return needs to be filed, and the withholding certificate (bukti potong) is your documentation of the tax paid.</p><p>Indonesia and the UAE have a bilateral Double Tax Agreement in force since January 2022, ratified under <a href="https://peraturan.bpk.go.id/Details/169052/perpres-no-34-tahun-2021" data-external="true">Presidential Regulation No. 34 of 2021</a> and confirmed by DGT Circular SE-57/PJ/2021. Under the DTA's immovable property article, Indonesia retains full taxing rights over rental income from property in Indonesia. The domestic 10 percent rate therefore applies in full. The DTA's most useful benefit for Bali investors is in a PT PMA company structure: it reduces dividend withholding for UAE shareholders from 20 to 10 percent (see our <a href="/blog/pt-pma-profit-repatriation-bali">PT PMA profit repatriation guide</a>).</p><p>If you hold the villa through a PT PMA rather than under a direct leasehold, the calculation changes. The company pays Indonesian corporate income tax at 22 percent on net taxable profit, with operating expenses deductible before the tax base is set. Dividends to a UAE shareholder then face the 10 percent DTA rate, and a 2025 ministerial regulation (PMK 112/2025) requires that the qualifying ownership stake have been held continuously for at least 365 days before the dividend date to access the reduced rate. Whether the PT PMA route produces a lower total tax depends on the villa's cost structure. Run the numbers with an Indonesian tax adviser before committing to a structure.</p><p>As a UAE individual, you have no income tax return to file in the UAE for Bali rental income. If you hold the investment through a UAE company rather than personally, UAE Corporate Tax rules may apply; a UAE adviser should confirm your position. This article is general context, not tax advice. Rates and treaty terms can change. Confirm current rules with a qualified Indonesian and UAE adviser before you sign.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What tax rate applies to Bali rental income for a UAE resident?",
+        answer:
+          "Indonesia deducts a 10 percent final withholding tax on gross rental income from land and buildings under PPh Article 4(2). The UAE imposes no personal income tax on individuals, so the Indonesian 10 percent is the total tax cost on direct leasehold rental income. No expenses can be deducted from the base.",
+      },
+      {
+        question:
+          "Does the Indonesia-UAE DTA reduce the 10 percent rental withholding below 10 percent?",
+        answer:
+          "No. The DTA's immovable property article gives Indonesia full taxing rights over rental income from property in Indonesia. The domestic 10 percent rate applies in full. No certificate of domicile from the UAE is needed to claim a reduced rental rate, because the DTA sets no lower cap. The DTA benefit for Bali investors is instead on dividends: it reduces PT PMA dividend withholding for UAE shareholders from 20 to 10 percent.",
+      },
+      {
+        question:
+          "Does a UAE individual need to report Bali rental income in the UAE?",
+        answer:
+          "No. The UAE has not introduced personal income tax for individuals. A UAE individual receiving Bali rental income has no income tax filing obligation in the UAE for that income. Keep the Indonesian withholding certificate (bukti potong) as a record of the 10 percent tax deducted. If the investment is held through a UAE company, UAE Corporate Tax rules may apply, so verify with a UAE tax adviser.",
+      },
+    ],
+    gallery: [
+      {
+        url: "/blog/bali-villa-pool-tropical-resort-sunlit.webp",
+        alt: "Spacious resort swimming pool surrounded by palm trees and tropical villa buildings under a bright sky, representing a Bali rental property generating income for a UAE investor",
+        credit: "Boonkong Boonpeng / Pexels",
+        sourceUrl: "https://www.pexels.com/photo/a-resort-pool-with-tropical-views-1134176/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Indonesia DGT (pajak.go.id): PPh Article 4(2) - Final withholding tax at 10% on rental income from land and buildings in Indonesia, deducted by the tenant or manager and remitted to the DGT (Tier 1)",
+        url: "https://www.pajak.go.id/en/article-4-paragraph-2-income-tax",
+      },
+      {
+        label:
+          "BPK RI: Presidential Regulation No. 34 of 2021 ratifying the Indonesia-UAE Double Tax Avoidance Agreement (Perpres 34/2021) (Tier 1)",
+        url: "https://peraturan.bpk.go.id/Details/169052/perpres-no-34-tahun-2021",
+      },
+      {
+        label:
+          "Ortax: Indonesia-UAE Double Tax Avoidance Agreement - full treaty text, effective January 1 2022 per DGT Circular SE-57/PJ/2021 (Tier 1)",
+        url: "https://datacenter.ortax.org/ortax/treaty/show/87",
+      },
+      {
+        label:
+          "ILA Global Consulting: Dubai to Bali - Indonesia-UAE Tax Treaty for Property Investors, covering immovable property and dividend withholding rates (Tier 2)",
+        url: "https://ilaglobalconsulting.com/tax-treaty-dubai-bali/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
