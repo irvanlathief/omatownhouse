@@ -2914,7 +2914,7 @@
     },
     {
       "id": "bali-rtrw-spatial-plan-villa",
-      "status": "drafting",
+      "status": "published",
       "priority": 115,
       "theme": "off-plan",
       "atpType": "what",
@@ -2934,12 +2934,12 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-13",
+      "prUrl": "merged directly to main (commit 70fb351)"
     },
     {
       "id": "can-foreigner-buy-land-bali",
-      "status": "drafting",
+      "status": "published",
       "priority": 116,
       "theme": "foreign-ownership",
       "atpType": "can",
@@ -2956,6 +2956,256 @@
       ],
       "proposedSlug": "can-foreigner-buy-raw-land-bali",
       "proposedTitle": "Can a Foreigner Buy Raw Land in Bali and Build a Villa?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-11-14",
+      "prUrl": "merged directly to main (commit d191c4f)"
+    },
+    {
+      "id": "uae-resident-bali-rental-tax",
+      "status": "published",
+      "priority": 117,
+      "theme": "tax",
+      "atpType": "how",
+      "primaryQuestion": "How is Bali rental income taxed for a UAE resident investor with no personal income tax at home?",
+      "targetKeywords": [
+        "UAE resident Bali rental income tax",
+        "Indonesia UAE tax treaty rental",
+        "Bali villa tax for Dubai investor"
+      ],
+      "relatedQuestions": [
+        "Does Indonesia withhold tax on rental income paid to a UAE company or individual?",
+        "Can a UAE resident use the Indonesia-UAE DTA to reduce withholding on Bali rental income?",
+        "Does the UAE resident need to report Bali rental income anywhere at home?"
+      ],
+      "proposedSlug": "uae-resident-bali-rental-income-tax",
+      "proposedTitle": "Bali Rental Tax for UAE Residents: What You Keep",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": "2026-11-17",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/181"
+    },
+    {
+      "id": "bali-villa-defect-liability-warranty",
+      "status": "pending",
+      "priority": 118,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What warranty or defect liability period applies when buying an off-plan villa in Bali?",
+      "targetKeywords": [
+        "Bali villa defect liability period",
+        "off-plan villa warranty Bali",
+        "PPJB snagging defects Indonesia"
+      ],
+      "relatedQuestions": [
+        "How long does a Bali developer have to fix defects after handover?",
+        "What is covered by the Indonesian construction warranty law?",
+        "How should a buyer document defects at a Bali villa handover inspection?"
+      ],
+      "proposedSlug": "bali-off-plan-villa-defect-liability-warranty",
+      "proposedTitle": "Bali Off-Plan Defect Liability: What the Law Says",
+      "category": "investment",
+      "isInsight": false,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-water-rights-pdam",
+      "status": "pending",
+      "priority": 119,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How is water supplied to a Bali villa and what rights or permits does a developer need?",
+      "targetKeywords": [
+        "Bali villa water rights PDAM",
+        "borehole well permit Bali villa",
+        "water connection Bali new villa development"
+      ],
+      "relatedQuestions": [
+        "Does a Bali villa development connect to the PDAM municipal water network or use a borehole well?",
+        "What permit does a developer need to drill a well in Bali?",
+        "How does water supply reliability vary across Bali villa locations?"
+      ],
+      "proposedSlug": "bali-villa-water-supply-rights-pdam",
+      "proposedTitle": "Bali Villa Water Supply: PDAM, Wells and Permits Explained",
+      "category": "lifestyle",
+      "isInsight": false,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-force-majeure-clause",
+      "status": "pending",
+      "priority": 120,
+      "theme": "off-plan",
+      "atpType": "what",
+      "primaryQuestion": "What force majeure protections should a Bali off-plan contract include and what happens if the developer cannot complete?",
+      "targetKeywords": [
+        "Bali off-plan force majeure clause",
+        "developer default Bali villa refund",
+        "PPJB force majeure Indonesia"
+      ],
+      "relatedQuestions": [
+        "What does force majeure cover in a Bali PPJB contract?",
+        "Can a buyer get a refund if a Bali villa developer fails to complete on time?",
+        "How is earthquake or eruption risk handled in Bali off-plan contracts?"
+      ],
+      "proposedSlug": "bali-off-plan-force-majeure-developer-default",
+      "proposedTitle": "Force Majeure and Developer Default in Bali Off-Plan Contracts",
+      "category": "investment",
+      "isInsight": false,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-solar-villa-electricity-cost",
+      "status": "pending",
+      "priority": 121,
+      "theme": "lifestyle",
+      "atpType": "how",
+      "primaryQuestion": "How much does solar power reduce electricity costs for a Bali villa and what does a system cost?",
+      "targetKeywords": [
+        "Bali villa solar panel cost",
+        "solar electricity Bali villa investment",
+        "PLN electricity cost Bali villa"
+      ],
+      "relatedQuestions": [
+        "What is the PLN electricity tariff for a Bali villa and how is it metered?",
+        "How much does a solar panel system for a 2-3 bedroom Bali villa cost in 2025?",
+        "Does solar reduce the PLN bill and what is the net metering rule in Indonesia?"
+      ],
+      "proposedSlug": "bali-villa-solar-electricity-cost",
+      "proposedTitle": "Solar Power for Bali Villas: Costs and Savings in 2025",
+      "category": "lifestyle",
+      "isInsight": false,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-vs-montenegro-property",
+      "status": "pending",
+      "priority": 122,
+      "theme": "comparison",
+      "atpType": "comparison",
+      "primaryQuestion": "How does buying property in Bali compare to Montenegro for a US or UAE investor seeking rental yield and lifestyle?",
+      "targetKeywords": [
+        "Bali vs Montenegro property investment",
+        "Montenegro villa rental yield",
+        "Bali Montenegro foreign ownership compare"
+      ],
+      "relatedQuestions": [
+        "Can foreigners own freehold property in Montenegro?",
+        "How do Bali and Montenegro compare on rental yields and entry prices?",
+        "What are the main tax differences for a US or UAE buyer in Bali vs Montenegro?"
+      ],
+      "proposedSlug": "bali-vs-montenegro-property-investment",
+      "proposedTitle": "Bali vs Montenegro: Off-Plan Property Investment Compared",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "indonesia-negative-investment-list-bali",
+      "status": "pending",
+      "priority": 123,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What sectors are closed or restricted to foreign investors in Indonesia and how does this affect Bali villa rentals?",
+      "targetKeywords": [
+        "Indonesia negative investment list 2025",
+        "BKPM restricted sectors Bali villa",
+        "foreign ownership restrictions Indonesia 2025"
+      ],
+      "relatedQuestions": [
+        "Is the short-term villa rental business in Bali open to foreign-owned PT PMA companies?",
+        "What KBLI business codes apply to renting a Bali villa through a PT PMA?",
+        "Did the Omnibus Law change foreign ownership rules for Bali hospitality businesses?"
+      ],
+      "proposedSlug": "indonesia-foreign-investment-restrictions-bali-villa",
+      "proposedTitle": "Indonesia's Investment Restrictions: What They Mean for Bali Villa Owners",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-renovation-roi",
+      "status": "pending",
+      "priority": 124,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How much does villa renovation or refurbishment cost in Bali and what return should an investor expect?",
+      "targetKeywords": [
+        "Bali villa renovation cost per sqm",
+        "villa refurbishment ROI Bali",
+        "Bali villa upgrade rental yield improvement"
+      ],
+      "relatedQuestions": [
+        "What does it cost to renovate a Bali villa from shell to rentable in 2025?",
+        "Which upgrades most improve a Bali villa's rental rate or occupancy?",
+        "How long does a Bali villa renovation take and who manages the build remotely?"
+      ],
+      "proposedSlug": "bali-villa-renovation-cost-roi",
+      "proposedTitle": "Bali Villa Renovation: Costs and Rental ROI in 2025",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-property-inheritance-foreign-owner",
+      "status": "pending",
+      "priority": 125,
+      "theme": "foreign-ownership",
+      "atpType": "how",
+      "primaryQuestion": "How does a foreign investor pass on a Bali property to heirs after death?",
+      "targetKeywords": [
+        "Bali villa inheritance foreign owner",
+        "PT PMA shares inheritance Indonesia",
+        "leasehold Bali succession death"
+      ],
+      "relatedQuestions": [
+        "Can a foreign leasehold in Bali be inherited by a non-Indonesian heir?",
+        "How are PT PMA company shares passed to heirs and what taxes apply?",
+        "What documents should a foreign Bali property owner have in place for succession?"
+      ],
+      "proposedSlug": "bali-property-inheritance-foreign-investor",
+      "proposedTitle": "Inheriting a Bali Property as a Foreign Owner: What to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-short-term-rental-license-vhap",
+      "status": "pending",
+      "priority": 126,
+      "theme": "tax",
+      "atpType": "what",
+      "primaryQuestion": "What licenses does a Bali villa need to legally operate as a short-term rental and collect guests?",
+      "targetKeywords": [
+        "Bali villa short-term rental license",
+        "VHAP Bali villa accommodation permit",
+        "Bali villa NIB OSS permit rental"
+      ],
+      "relatedQuestions": [
+        "What is the VHAP and which villa rentals in Bali require it?",
+        "Does a PT PMA villa need a different license than a leasehold villa to rent short-term?",
+        "What happens if a Bali villa is rented out without the proper accommodation permit?"
+      ],
+      "proposedSlug": "bali-villa-short-term-rental-license-vhap",
+      "proposedTitle": "Bali Villa Rental Licenses: VHAP, NIB and OSS Explained",
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
