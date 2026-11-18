@@ -2964,7 +2964,7 @@
     },
     {
       "id": "bali-villa-peak-season-rental-income",
-      "status": "drafting",
+      "status": "published",
       "priority": 117,
       "theme": "investment",
       "atpType": "what",
@@ -2984,8 +2984,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-18",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/182"
     },
     {
       "id": "bali-minimum-property-price-foreigners",
