@@ -2961,6 +2961,206 @@
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
+    },
+    {
+      "id": "bali-villa-peak-season-rental-income",
+      "status": "drafting",
+      "priority": 117,
+      "theme": "investment",
+      "atpType": "what",
+      "primaryQuestion": "What months are peak season for Bali villa rentals and how much does seasonality affect income?",
+      "targetKeywords": [
+        "Bali villa peak season rental income",
+        "Bali peak tourist season months",
+        "Bali villa rental seasonality"
+      ],
+      "relatedQuestions": [
+        "When is peak season for Bali villa rentals?",
+        "How much does rental income drop in Bali's off-peak months?",
+        "How should investors model annual income given Bali's seasonal demand?"
+      ],
+      "proposedSlug": "bali-villa-peak-season-rental-income",
+      "proposedTitle": "Bali Villa Peak Season: When Rental Income Spikes",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-minimum-property-price-foreigners",
+      "status": "pending",
+      "priority": 118,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "Is there a minimum property purchase price for foreigners buying in Bali?",
+      "targetKeywords": [
+        "minimum property price foreigners Bali",
+        "Bali Hak Pakai minimum price",
+        "Indonesia foreign property threshold"
+      ],
+      "relatedQuestions": [
+        "What is the minimum investment amount for a foreigner to buy Bali property?",
+        "Does the minimum price differ for Hak Pakai versus PT PMA in Bali?",
+        "Are minimum property thresholds set by national or regional rules in Indonesia?"
+      ],
+      "proposedSlug": "bali-minimum-property-price-foreigners",
+      "proposedTitle": "Minimum Property Price for Foreigners Buying in Bali",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "joint-ownership-bali-property-two-foreigners",
+      "status": "pending",
+      "priority": 119,
+      "theme": "foreign-ownership",
+      "atpType": "can",
+      "primaryQuestion": "Can two foreigners buy Bali property together and how should they structure the ownership?",
+      "targetKeywords": [
+        "joint ownership Bali property two foreigners",
+        "co-buy Bali villa two investors",
+        "PT PMA joint foreign shareholders Bali"
+      ],
+      "relatedQuestions": [
+        "Can a married couple of different nationalities jointly own Bali property?",
+        "How do two foreign business partners structure joint Bali villa ownership?",
+        "What happens to jointly owned Bali property if one owner wants to sell?"
+      ],
+      "proposedSlug": "joint-ownership-bali-property-two-foreigners",
+      "proposedTitle": "Can Two Foreigners Buy Bali Property Together?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "independent-property-valuation-bali",
+      "status": "pending",
+      "priority": 120,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How do I get an independent property valuation in Bali before buying?",
+      "targetKeywords": [
+        "independent property valuation Bali",
+        "Bali villa appraisal before buying",
+        "KJPP property appraiser Indonesia"
+      ],
+      "relatedQuestions": [
+        "Who are licensed property appraisers (KJPP) in Bali and how do I hire one?",
+        "How much does an independent property valuation cost in Bali?",
+        "Is an independent valuation required for a Bali off-plan purchase?"
+      ],
+      "proposedSlug": "independent-property-valuation-bali-buying",
+      "proposedTitle": "Getting an Independent Property Valuation in Bali",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-title-transfer-timeline",
+      "status": "pending",
+      "priority": 121,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How long does the title transfer process take after a Bali off-plan villa is handed over?",
+      "targetKeywords": [
+        "Bali off-plan title transfer timeline",
+        "how long title transfer Bali villa",
+        "AJB title deed Bali handover process"
+      ],
+      "relatedQuestions": [
+        "What steps happen between off-plan handover and title transfer in Bali?",
+        "What causes delays in a Bali property title transfer after handover?",
+        "How does the title transfer process differ for a leasehold versus a PT PMA HGB in Bali?"
+      ],
+      "proposedSlug": "bali-off-plan-title-transfer-timeline-process",
+      "proposedTitle": "Bali Off-Plan Title Transfer: Timeline After Handover",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-bedroom-count-nightly-rate",
+      "status": "pending",
+      "priority": 122,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How does bedroom count affect Bali villa nightly rates and rental yield?",
+      "targetKeywords": [
+        "Bali villa bedroom count nightly rate",
+        "2 bedroom vs 3 bedroom Bali villa yield",
+        "Bali villa size rental income comparison"
+      ],
+      "relatedQuestions": [
+        "Do 3-bedroom Bali villas earn more per night than 2-bedroom ones?",
+        "What is the nightly rate premium per extra bedroom for a Bali villa?",
+        "Which bedroom count gives the best rental yield per dollar invested in Bali?"
+      ],
+      "proposedSlug": "bali-villa-bedroom-count-nightly-rate-yield",
+      "proposedTitle": "Bedroom Count and Bali Villa Nightly Rates: What the Data Shows",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-pool-impact-rental-income",
+      "status": "pending",
+      "priority": 123,
+      "theme": "investment",
+      "atpType": "does",
+      "primaryQuestion": "Does a private pool on a Bali villa meaningfully increase rental income and resale value?",
+      "targetKeywords": [
+        "Bali villa private pool rental income impact",
+        "does pool increase Bali villa yield",
+        "private pool premium Bali short-term rental"
+      ],
+      "relatedQuestions": [
+        "How much more can a Bali villa with a private pool charge per night?",
+        "Is adding a pool to a Bali villa worth the investment cost?",
+        "Do Bali villa guests specifically filter for private pool in OTA searches?"
+      ],
+      "proposedSlug": "bali-villa-private-pool-rental-income-value",
+      "proposedTitle": "Does a Private Pool Boost Bali Villa Rental Income?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-off-plan-unit-specification-customization",
+      "status": "pending",
+      "priority": 124,
+      "theme": "off-plan",
+      "atpType": "can",
+      "primaryQuestion": "Can a buyer customize or upgrade an off-plan Bali villa during construction?",
+      "targetKeywords": [
+        "customize off-plan villa Bali construction",
+        "Bali off-plan upgrades specification changes",
+        "buyer modifications Bali villa during build"
+      ],
+      "relatedQuestions": [
+        "What layout or finish changes can a buyer typically request on an off-plan Bali villa?",
+        "At what stage during construction can a Bali off-plan buyer no longer make changes?",
+        "Do specification upgrades cost extra and how are they documented in the PPJB?"
+      ],
+      "proposedSlug": "bali-off-plan-villa-customization-upgrades",
+      "proposedTitle": "Can You Customize an Off-Plan Bali Villa During Construction?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
