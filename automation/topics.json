@@ -2961,6 +2961,206 @@
       "suggestedVenues": [],
       "publishedAt": null,
       "prUrl": null
+    },
+    {
+      "id": "find-property-lawyer-bali-foreigners",
+      "status": "drafting",
+      "priority": 117,
+      "theme": "off-plan",
+      "atpType": "how",
+      "primaryQuestion": "How do I find a reliable property lawyer in Bali as a foreign buyer?",
+      "targetKeywords": [
+        "property lawyer Bali foreigners",
+        "find Bali real estate lawyer",
+        "Bali property legal advice foreign buyer"
+      ],
+      "relatedQuestions": [
+        "What is the difference between a Bali property lawyer and a PPAT notary?",
+        "How do I verify a property lawyer or notary is licensed in Indonesia?",
+        "How much does a property lawyer charge for a Bali villa transaction?"
+      ],
+      "proposedSlug": "find-property-lawyer-bali-foreign-buyers",
+      "proposedTitle": "How to Find a Property Lawyer in Bali as a Foreign Buyer",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-usd-idr-contract-pricing",
+      "status": "pending",
+      "priority": 118,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "Should a foreign buyer sign a Bali off-plan contract priced in USD or IDR?",
+      "targetKeywords": [
+        "Bali off-plan contract USD or IDR",
+        "dollar pricing Bali property",
+        "currency contract Bali off-plan"
+      ],
+      "relatedQuestions": [
+        "What are the currency risks of a Bali property contract in IDR versus USD?",
+        "Can a Bali off-plan developer legally price a contract in US dollars?",
+        "How does USD vs IDR pricing affect payment transfers and exchange costs?"
+      ],
+      "proposedSlug": "bali-off-plan-contract-usd-or-idr-pricing",
+      "proposedTitle": "Bali Off-Plan Contract: Should You Pay in USD or IDR?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-condotel-investment-foreigners",
+      "status": "pending",
+      "priority": 119,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What is a condotel in Bali and can foreigners invest in one?",
+      "targetKeywords": [
+        "condotel Bali foreigners",
+        "Bali condo hotel investment",
+        "apartment hotel Bali foreign owner"
+      ],
+      "relatedQuestions": [
+        "How is a Bali condotel structured differently from a standard villa leasehold?",
+        "What yields do condotel units in Bali generate versus standalone villas?",
+        "What are the risks of buying a condotel unit in Bali off-plan?"
+      ],
+      "proposedSlug": "bali-condotel-investment-foreign-buyers",
+      "proposedTitle": "Bali Condotel Investment: What Foreign Buyers Need to Know",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-price-per-sqm-valuation",
+      "status": "pending",
+      "priority": 120,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How is a Bali villa priced per square metre and what drives the valuation?",
+      "targetKeywords": [
+        "Bali villa price per sqm",
+        "how much Bali villa costs per square metre",
+        "Bali off-plan villa valuation"
+      ],
+      "relatedQuestions": [
+        "What is the average price per square metre for a villa in Canggu, Tabanan, and Ubud?",
+        "What features add the most value to a Bali villa sale price?",
+        "How does off-plan pricing compare to completed villa prices per sqm in Bali?"
+      ],
+      "proposedSlug": "bali-villa-price-per-sqm-valuation",
+      "proposedTitle": "Bali Villa Pricing: What Drives the Price Per Square Metre?",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-cipta-kerja-omnibus-law-property",
+      "status": "pending",
+      "priority": 121,
+      "theme": "foreign-ownership",
+      "atpType": "how",
+      "primaryQuestion": "How does Indonesia's Cipta Kerja Omnibus Law affect foreign property investment in Bali?",
+      "targetKeywords": [
+        "Cipta Kerja Omnibus Law Bali property",
+        "Indonesia Job Creation Law foreign investment",
+        "PP 18 2021 property Bali foreigners"
+      ],
+      "relatedQuestions": [
+        "What property ownership changes did the Cipta Kerja law introduce for foreigners in Bali?",
+        "Did the Omnibus Law improve Hak Pakai rights for foreign property owners in Indonesia?",
+        "How did PP No. 18/2021 change land title durations for foreigners in Bali?"
+      ],
+      "proposedSlug": "cipta-kerja-omnibus-law-bali-property-foreigners",
+      "proposedTitle": "Indonesia's Omnibus Law and What It Changed for Bali Property Investors",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-pt-pma-annual-compliance",
+      "status": "pending",
+      "priority": 122,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What annual compliance does a PT PMA need to maintain in Indonesia to stay in good standing?",
+      "targetKeywords": [
+        "PT PMA annual compliance Indonesia",
+        "PT PMA reporting requirements Bali",
+        "maintain PT PMA Indonesia cost"
+      ],
+      "relatedQuestions": [
+        "What are the annual tax and financial reporting obligations for a Bali PT PMA?",
+        "What happens if a PT PMA misses its Indonesian compliance obligations?",
+        "How much does it cost per year to maintain a PT PMA that holds a Bali villa?"
+      ],
+      "proposedSlug": "pt-pma-annual-compliance-indonesia-bali",
+      "proposedTitle": "PT PMA Annual Compliance in Indonesia: What Owners Must Do",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-villa-amenities-rental-yield-impact",
+      "status": "pending",
+      "priority": 123,
+      "theme": "investment",
+      "atpType": "how",
+      "primaryQuestion": "How do villa pool, outdoor kitchen, and other amenities affect rental yield in Bali?",
+      "targetKeywords": [
+        "Bali villa pool rental yield impact",
+        "villa amenities rental premium Bali",
+        "Bali villa pool size return"
+      ],
+      "relatedQuestions": [
+        "Does a private pool increase nightly rate significantly for a Bali villa?",
+        "Which villa features command the highest rental premium in Bali?",
+        "Is it worth adding a gym or spa to a Bali investment villa to increase yield?"
+      ],
+      "proposedSlug": "bali-villa-amenities-rental-yield-impact",
+      "proposedTitle": "How Villa Amenities Affect Rental Yield in Bali",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
+    },
+    {
+      "id": "bali-adat-customary-land-foreign-buyers",
+      "status": "pending",
+      "priority": 124,
+      "theme": "foreign-ownership",
+      "atpType": "what",
+      "primaryQuestion": "What is adat customary land in Bali and why does it matter for foreign property buyers?",
+      "targetKeywords": [
+        "adat land Bali foreigners",
+        "customary land Bali property risks",
+        "tanah adat Bali buying"
+      ],
+      "relatedQuestions": [
+        "What is the difference between registered (SHM) land and adat land in Bali?",
+        "Can a foreigner safely buy a leasehold on adat land in Bali?",
+        "How do I check if a Bali plot has adat land claims before buying?"
+      ],
+      "proposedSlug": "bali-adat-customary-land-foreign-buyers",
+      "proposedTitle": "Adat Land in Bali: What Foreign Buyers Must Understand",
+      "category": "investment",
+      "isInsight": true,
+      "suggestedVenues": [],
+      "publishedAt": null,
+      "prUrl": null
     }
   ]
 }
