@@ -8229,4 +8229,71 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-off-plan-contract-usd-or-idr-pricing",
+    title: "Bali Off-Plan Contract: Should You Pay in USD or IDR?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 128,
+    metaDescription:
+      "Most Bali off-plan developers quote prices in USD, but Indonesian law requires IDR settlement. What that means for your contract currency and exchange rate risk.",
+    body: `<p>Most Bali off-plan developers quote prices in US dollars, but Indonesian law requires domestic transactions to settle in rupiah (IDR), so your PPJB will ultimately need an IDR equivalent figure regardless of the headline currency. Understanding the gap between those two things is one of the more important steps before you sign anything.</p>
+<p>Bank Indonesia Regulation No. 17/3/PBI/2015, which took effect on 1 July 2015 and is implemented by Circular Letter No. 17/11/DKSP, requires all parties inside Indonesia to use rupiah for domestic payments and prohibits price quotation in a foreign currency without a formal exemption. For off-plan buyers, the practical result is that your international wire transfer arrives in USD, the developer's Indonesian bank account converts it to IDR at the spot rate on that day, and the PPJB is typically notarised with an IDR amount alongside any USD reference figure.</p>
+<p>If your PPJB is denominated in IDR, your dollar cost changes with each payment tranche. A stronger dollar means you pay fewer dollars for the same IDR amount; a weaker dollar costs you more. If the contract is in USD, the IDR equivalent is calculated at the spot rate on each transfer date, which moves the exchange risk to the developer or notary at settlement. Either way, staged off-plan payments spread over 12 to 18 months mean the exchange rate on each milestone is a real variable for US and UAE buyers.</p>
+<p>Before signing, ask the developer two specific questions: which currency the PPJB uses as its primary denomination, and how the exchange rate is handled between signing and each payment date. Some developers fix a reference rate; others use a floating spot rate. For each tranche, a specialist FX provider may allow you to book a forward rate in advance, which can reduce the spread and lock your cost on the home-currency leg. The IDR conversion on arrival inside Indonesia is unavoidable. This post is not financial or legal advice; speak to a qualified Indonesian lawyer and a licensed FX adviser before committing to any payment structure.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "What are the currency risks of a Bali property contract in IDR versus USD?",
+        answer:
+          "An IDR-denominated PPJB means your dollar outlay for each tranche shifts with the exchange rate. A USD contract fixes your dollar cost per tranche but the IDR amount on arrival varies by the spot rate on transfer day. Either way, staged off-plan payments over 12 to 18 months give you multiple conversion events, each at a different rate.",
+      },
+      {
+        question: "Can a Bali off-plan developer legally price a contract in US dollars?",
+        answer:
+          "Bank Indonesia Regulation PBI No. 17/3/PBI/2015 requires domestic transactions to use rupiah, and Circular Letter No. 17/11/DKSP prohibits price quotation in foreign currencies for domestic transactions without an exemption. Many developers still list prices in USD for a foreign-buyer audience, but the PPJB settlement must convert to IDR. Ask to see the PPJB draft before paying any reservation fee.",
+      },
+      {
+        question: "How does USD vs IDR pricing affect payment transfers and exchange costs?",
+        answer:
+          "Whether your PPJB is in USD or IDR, an international wire passes through at least one conversion: your home currency to USD, then USD to IDR as it enters the Indonesian banking system. Each conversion carries a spread. Specialist FX providers typically offer tighter spreads than retail banks for the upstream leg, and some allow you to book a forward rate for each staged payment milestone.",
+      },
+    ],
+    publishedAt: "2026-11-20",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/usd-idr-dollar-rupiah-currency-contrast.webp",
+    gallery: [
+      {
+        url: "/blog/property-payment-floor-plan-currency-handover.webp",
+        alt: "A buyer handing cash to a property agent over an architectural floor plan with house keys on a clipboard, representing the property payment stage in a Bali off-plan purchase",
+        credit: "Pexels / Pavel Danilyuk",
+        sourceUrl: "https://www.pexels.com/photo/7937717/",
+      },
+      {
+        url: "/blog/currency-converter-app-forex-dollar-exchange.webp",
+        alt: "A smartphone showing a currency converter app with USD exchange rates, surrounded by dollar and euro banknotes, representing the currency conversion steps a foreign buyer takes when paying for Bali property",
+        credit: "Pexels",
+        sourceUrl: "https://www.pexels.com/photo/31035096/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Bank Indonesia Circular Letter No. 17/11/DKSP (2015): implements the mandatory use of rupiah for domestic transactions and prohibits price quotation in foreign currencies, based on BI Regulation No. 17/3/PBI/2015 and Law No. 7/2011 on Currency. Tier 1: Bank Indonesia official publication.",
+        url: "https://www.bi.go.id/en/publikasi/peraturan/Pages/se_171115.aspx",
+      },
+      {
+        label:
+          "ABNR Law - Regulation on Mandatory Use of Rupiah and Prohibition of Dual Price Denomination: explains PBI No. 17/3/PBI/2015 scope, exemptions, and enforcement for businesses operating in Indonesia. Tier 2: established Indonesian law firm.",
+        url: "https://www.abnrlaw.com/news/regulation-on-mandatory-use-of-rupiah-and-prohibition-of-dual-price-denomination",
+      },
+      {
+        label:
+          "Emerhub - How to Buy a Villa in Bali as a Foreigner: covers PPJB structure, payment mechanics, and the role of a notary (PPAT) in Bali villa transactions, including how international transfers interact with IDR settlement. Tier 2: established Indonesia legal advisory and company-setup firm.",
+        url: "https://emerhub.com/bali/how-to-buy-a-villa-in-bali-as-a-foreigner/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
