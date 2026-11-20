@@ -2989,7 +2989,7 @@
     },
     {
       "id": "bali-usd-idr-contract-pricing",
-      "status": "drafting",
+      "status": "published",
       "priority": 118,
       "theme": "investment",
       "atpType": "how",
@@ -3009,8 +3009,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-20",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/184"
     },
     {
       "id": "bali-condotel-investment-foreigners",
