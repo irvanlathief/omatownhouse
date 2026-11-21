@@ -3014,7 +3014,7 @@
     },
     {
       "id": "bali-condotel-investment-foreigners",
-      "status": "drafting",
+      "status": "published",
       "priority": 119,
       "theme": "foreign-ownership",
       "atpType": "what",
@@ -3034,8 +3034,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-21",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/185"
     },
     {
       "id": "bali-villa-price-per-sqm-valuation",
