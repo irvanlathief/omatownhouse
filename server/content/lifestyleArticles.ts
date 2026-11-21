@@ -8296,4 +8296,75 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-condotel-investment-foreign-buyers",
+    title: "Bali Condotel Investment: What Foreign Buyers Need to Know",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 129,
+    metaDescription:
+      "Foreigners can invest in a Bali condotel via Hak Pakai with KITAS or a PT PMA. Revenue is pooled; here is how yields and risks compare to standalone villas.",
+    body: `<p>A condotel (condo-hotel) is a building where individual investors each own a strata-title unit, and all units are pooled and operated as a hotel by a professional management company. Foreigners can invest in Bali condotels through three main routes: holding a strata-title unit directly with a valid Indonesian stay permit (KITAS or KITAP), through a <a href="/blog/pt-pma-setup-bali-property">PT PMA</a>, or via a leasehold contract.</p>
+<p>Under Indonesia's Flats Law (UU No. 20/2011 on Rumah Susun) and the land title changes introduced by PP No. 18/2021 implementing the Cipta Kerja Omnibus Law, a foreign national holding a valid KITAS or KITAP may own one strata-title unit per building (SHMSRS) in their personal name, provided the building sits on Hak Pakai or HGB land. If the land beneath the building carries Hak Milik (freehold) status, foreigners cannot hold the unit directly and must use a PT PMA instead. A PT PMA can own units commercially and does not require a personal stay permit, making it the more practical route for investors who do not reside in Indonesia.</p>
+<p>Revenue in a condotel works differently from a standalone villa rental. The hotel operator controls all bookings, sets the nightly rate, and distributes a share of the net room revenue to unit owners. Developer marketing commonly cites gross annual returns of 6 to 12 percent, often with a guaranteed return for an opening period of one to two years backed only by the developer, not any government scheme or escrow. Actual net income depends on the operator's occupancy rate and fee structure. Unlike a standalone villa, you cannot list your unit on Airbnb, choose your own manager, or change your pricing strategy while the hotel operator contract runs; typical hotel management agreements span 10 to 25 years. This is not financial advice.</p>
+<p>Before committing, verify four things: the land certificate type under the building (must be Hak Pakai or HGB, not Hak Milik), the unit certificate type (SHMSRS), the building's accommodation business license (IUPA), and the operator contract terms covering your revenue share, personal-use entitlement, and exit mechanism. The <a href="/blog/bali-property-due-diligence-checklist">off-plan due diligence checklist</a> covers the broader title and permit checks that apply here too.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "How is a Bali condotel structured differently from a standard villa leasehold?",
+        answer:
+          "A villa leasehold gives you personal rights to an individual property for a fixed term, with the option to self-manage or choose your own operator. A condotel unit is a strata-title share in a hotel building; all units are pooled under a single hotel management company under long-term contract. You cannot self-list, pick your own manager, or change pricing independently. Your rental income is a proportional share of the building's overall revenue, not your specific unit's nightly rate.",
+      },
+      {
+        question:
+          "What yields do condotel units in Bali generate versus standalone villas?",
+        answer:
+          "Developer marketing for Bali condotels commonly cites gross returns of 6 to 12 percent annually, often including a guaranteed rate for the first one to two years. Standalone villas with professional management typically show gross yields of 8 to 15 percent in high-demand areas, with net yields significantly lower after management fees, tax, and maintenance. Any projected return is not financial advice; treat figures as scenarios that depend on the operator's actual occupancy and fee structure.",
+      },
+      {
+        question:
+          "What are the risks of buying a condotel unit in Bali off-plan?",
+        answer:
+          "Five main risks: revenue pooling (your income rises and falls with the whole building), long management lock-in (hotel operator contracts often run 10 to 25 years), guaranteed-return claims backed only by the developer's solvency, title risk if the building sits on Hak Milik land where foreigners cannot hold strata title directly, and limited resale liquidity compared to standalone villas.",
+      },
+    ],
+    publishedAt: "2026-11-21",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/condotel-hotel-building-balconies-tropical.webp",
+    gallery: [
+      {
+        url: "/blog/condotel-resort-towers-shared-pool-tropical.webp",
+        alt: "Aerial view of a tropical condo-hotel resort complex showing multiple high-rise towers with individual unit balconies surrounding a large shared pool, illustrating the multi-unit pooled structure of a Bali condotel investment",
+        credit: "Pexels / Ian Panelo",
+        sourceUrl:
+          "https://www.pexels.com/photo/swimming-pool-near-high-rise-buildings-3454077/",
+      },
+      {
+        url: "/blog/condotel-hotel-unit-balconies-rows.webp",
+        alt: "Close-up facade of a hotel building showing rows of identical individual unit balconies with chairs and tropical plants, representing the stacked strata-title unit structure common to Bali condotels",
+        credit: "Pexels / Jan van der Wolf",
+        sourceUrl: "https://www.pexels.com/photo/hotel-with-balconies-16159744/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Ministry of ATR/BPN - official portal for Indonesian land rights and property regulations, including PP No. 18/2021 implementing the Cipta Kerja Omnibus Law, which updated strata-title (SHMSRS) rights for foreign nationals and legal entities. Tier 1: Indonesian Ministry of Agrarian Affairs and Spatial Planning.",
+        url: "https://www.atrbpn.go.id",
+      },
+      {
+        label:
+          "UNCTAD Investment Policy Monitor - Indonesia: New Regulation Expands Strata-Title Rights for Foreign Citizens and Legal Entities (PP No. 18/2021): summarises the Cipta Kerja changes allowing foreigners with KITAS/KITAP and PT PMA entities to hold strata-title apartment units in Indonesia. Tier 2: UNCTAD investment policy database.",
+        url: "https://investmentpolicy.unctad.org/investment-policy-monitor/measures/3701/indonesia-new-regulation-expands-strata-title-rights-for-foreign-citizens-and-legal-entities",
+      },
+      {
+        label:
+          "Emerhub - How to Buy a Villa in Bali as a Foreigner: covers ownership structures including PT PMA, Hak Pakai, and leasehold routes applicable to condotel and other property investments in Bali. Tier 2: established Indonesia legal advisory and company-setup firm.",
+        url: "https://emerhub.com/bali/how-to-buy-a-villa-in-bali-as-a-foreigner/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
