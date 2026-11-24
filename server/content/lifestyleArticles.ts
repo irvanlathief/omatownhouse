@@ -8296,4 +8296,74 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-condotel-investment-foreign-buyers",
+    title: "Bali Condotel Investment: What Foreign Buyers Need to Know",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 129,
+    metaDescription:
+      "A condotel in Bali is a condo-hotel where you buy a unit placed into a hotel rental pool. Foreigners can invest via PT PMA or strata title with KITAS.",
+    body: `<p>A condotel in Bali is a hotel building sold unit by unit to individual investors, who place their units into a shared rental pool operated by a professional hotel management company. Foreigners can invest, but the right ownership structure depends on whether you hold Indonesian residency: a buyer with a valid KITAS or KITAP can hold strata title (SHMSRS) in their own name, while a non-resident must use a PT PMA company holding HGB title.</p>
+<p>Government Regulation No. 18/2021, introduced under Indonesia's Cipta Kerja Omnibus Law, expanded strata title rights for foreigners. Qualifying buyers can now hold full strata ownership (Sertifikat Hak Milik Satuan Rumah Susun, or SHMSRS) rather than the lesser "right to use" strata title that existed before. The key condition is that the underlying land must be on Hak Pakai or HGB title, not freehold SHM. Without a valid KITAS or KITAP, a PT PMA is the standard route. Keep in mind that registering a PT PMA carries a minimum notional paid-up capital of Rp 10 billion (roughly USD 600,000 to 700,000 at current rates), which may exceed the entry cost of a single low-priced unit.</p>
+<p>The management company handles bookings, staffing, and maintenance. As an investor you receive a share of rental revenue after operating costs, management fees, and reserve contributions. Marketing claims of 10 to 12 percent gross yield are common for Bali condotels, but after a 10 percent rental income tax and full operating costs the realistic net yield typically falls in the 5 to 8 percent range. No independent audit of condotel-specific yields in Bali is publicly available, so treat any developer projection as an estimate, not a guarantee. This post is for general information only and is not financial or legal advice.</p>
+<p>Two risks deserve attention before you sign. First, the hotel operating license (Izin Usaha Pariwisata) may not transfer automatically when you resell, which can delay or complicate a future exit. Second, the rental pool model means your unit's income is blended across the whole building, so a well-located unit may subsidize lower performers. Before committing any funds, verify the rental pool structure, distribution formula, management fee percentage, and exit terms in the contract, and have an independent Indonesian lawyer review the documents.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "How is a Bali condotel structured differently from a standard villa leasehold?",
+        answer:
+          "A villa leasehold is a bilateral agreement between a landowner and you, covering a specific plot for a fixed term (typically 25 to 30 years, extendable). A condotel unit is registered as strata title on a multi-unit building that sits on HGB or Hak Pakai land, and your unit is placed into a hotel rental pool managed by an operator. Income is shared across all units in the pool, not earned individually from your specific unit.",
+      },
+      {
+        question:
+          "What yields do condotel units in Bali generate versus standalone villas?",
+        answer:
+          "Developer marketing commonly cites gross yields of 10 to 12 percent for Bali condotels, versus 8 to 10 percent for standalone short-term rentals. After a 10 percent rental income tax, management fees, and operating reserve contributions, net yields typically land in the 5 to 8 percent range for both product types. No independently audited comparison exists for the Bali market. These are ranges, not guarantees.",
+      },
+      {
+        question:
+          "What are the risks of buying a condotel unit in Bali off-plan?",
+        answer:
+          "The main risks are operator dependency (income falls sharply if the management company underperforms or exits), license transfer gaps (the hotel operating license may not carry to a new owner when you resell), rental pool dilution (your unit's income is blended with all other units), and the PT PMA minimum capital requirement of Rp 10 billion (roughly USD 600,000 to 700,000) for buyers without Indonesian residency.",
+      },
+    ],
+    publishedAt: "2026-11-24",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/condotel-towers-shared-pool-tropical.webp",
+    gallery: [
+      {
+        url: "/blog/condotel-high-rise-tower-pool-palms.webp",
+        alt: "A multi-storey condo-hotel tower with a shared tropical pool and palm trees, illustrating the shared amenity structure of a Bali condotel investment",
+        credit: "Pexels / Ian Panelo",
+        sourceUrl: "https://www.pexels.com/photo/33688144/",
+      },
+      {
+        url: "/blog/condotel-investor-contract-signing-agent.webp",
+        alt: "A real estate agent reviewing a purchase contract with two investors at a table, representing the condotel unit purchase process for a foreign buyer in Bali",
+        credit: "Pexels / Mart Production",
+        sourceUrl: "https://www.pexels.com/photo/7415057/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "UNCTAD Investment Policy Monitor - Indonesia Government Regulation No. 18/2021: documents the expansion of strata title rights (SHMSRS) for foreign citizens and legal entities under the Cipta Kerja Omnibus Law, including Hak Pakai and HGB land requirements. Tier 1 source: official government regulation.",
+        url: "https://investmentpolicy.unctad.org/investment-policy-monitor/measures/3701/indonesia-new-regulation-expands-strata-title-rights-for-foreign-citizens-and-legal-entities",
+      },
+      {
+        label:
+          "ASEAN Briefing - Indonesia Omnibus Law Relaxed Foreign Ownership Laws on Real Estate: explains how GR No. 18/2021 changed strata title rights, Hak Pakai eligibility, and minimum price thresholds for foreigners buying property in Indonesia. Tier 2: established regional business advisory publication.",
+        url: "https://aseanbriefing.com/news/indonesias-omnibus-law-relaxed-foreign-ownership-laws-on-real-estate",
+      },
+      {
+        label:
+          "Emerhub - Buying Property in Indonesia: covers PT PMA ownership structure, minimum capital requirements, HGB title for company-held property, and legal routes for foreigners who lack Indonesian residency. Tier 2: established Indonesia legal advisory and company-setup firm.",
+        url: "https://emerhub.com/indonesia/buying-property-in-indonesia/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
