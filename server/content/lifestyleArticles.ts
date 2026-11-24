@@ -8296,4 +8296,74 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-condotel-investment-foreign-buyers",
+    title: "Bali Condotel Investment: What Foreigners Need to Know",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 129,
+    metaDescription:
+      "A Bali condotel is a hotel-branded unit you own individually but operate via a revenue pool. Find out how foreigners can buy one, what title they get, and what yields to expect.",
+    body: `<p>A condotel in Bali is a condominium unit inside a hotel-branded development, sold individually but operated collectively by a hotel management company under a revenue-pooling arrangement. Foreigners can invest in one, but the route they use and the title they receive differ from a standard leasehold villa.</p>
+<p>Under Law No. 20/2011 on Flats, a condotel unit is classed as HMSRS (Hak Milik atas Satuan Rumah Susun), a form of strata title. Government Regulation No. 18/2021 extended HMSRS eligibility to foreign nationals holding a valid KITAS or KITAP, limited to one unit per residential building. The catch for most Bali buyers is that full foreign HMSRS ownership is restricted to designated economic zones and free trade zones. Standard tourism areas in South Bali, Ubud, and Tabanan fall outside those zones. Outside the designated zones, the most practical legal vehicle for foreign ownership of a condotel unit is a PT PMA (foreign investment company), which holds the underlying HGB title and can own property without zone restrictions.</p>
+<p>Revenue pooling means your return depends on the entire hotel's occupancy, not just the performance of your specific unit. Developers in Bali typically market gross yields of 7 to 15 percent, but after management fees, operational costs, and maintenance reserves, net yields on well-run condotel projects tend to run in the range of 4 to 7 percent annually. Those figures are not guaranteed and vary significantly by operator, location, and market conditions. This post is not financial advice.</p>
+<p>The key difference from a villa leasehold is operational control. Leasehold villa buyers typically choose their management company and can occupy their property freely outside rental periods. Condotel buyers surrender operational control to the hotel management company and may face restrictions on personal use. Before purchasing, verify the title type the developer is offering, confirm the zone classification of the land, and check whether the management agreement allows the yield splits and exit conditions you are expecting.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "How is a Bali condotel structured differently from a standard villa leasehold?",
+        answer:
+          "A villa leasehold gives you a time-limited right to occupy and rent a specific freestanding property, often with your own management company. A condotel unit is individually owned strata title inside a hotel building, but all units are operated collectively by the hotel management company under a revenue-pooling agreement. You receive a share of the pool, not the revenue your specific unit generates, and personal use is usually restricted by the management terms.",
+      },
+      {
+        question:
+          "What yields do condotel units in Bali generate versus standalone villas?",
+        answer:
+          "Developers typically market gross yields of 7 to 15 percent for Bali condotel units. After hotel management fees, operational reserves, and maintenance costs, net yields on well-run projects historically land in the range of 4 to 7 percent per year. Standalone villa leaseholds with active short-term rental management can generate similar or higher gross figures, but management costs and vacancy risk are borne directly by the owner. Neither structure guarantees a fixed return.",
+      },
+      {
+        question:
+          "What are the risks of buying a condotel unit in Bali off-plan?",
+        answer:
+          "The main risks are title type confusion (confirm whether the offer is HMSRS strata title, a leasehold interest, or a PT PMA share structure before signing), zone restrictions (full foreign HMSRS ownership is limited to designated economic zones, not standard Bali tourism areas), revenue pool dependency (your return is tied to the hotel operator's performance across all units, not your unit alone), and developer delivery risk on off-plan projects. Always have an independent Indonesian property lawyer review the PPJB before paying any reservation fee.",
+      },
+    ],
+    publishedAt: "2026-11-22",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-condotel-apartment-hotel-poolside.webp",
+    gallery: [
+      {
+        url: "/blog/managed-resort-pool-modern-architecture.webp",
+        alt: "A multi-story managed resort complex with an outdoor pool, sun loungers, palm trees, and a hammock, representing the hotel-branded managed accommodation model of a Bali condotel development",
+        credit: "Pexels / Margo Evardson",
+        sourceUrl: "https://www.pexels.com/photo/35681353/",
+      },
+      {
+        url: "/blog/condotel-unit-bedroom-living-interior.webp",
+        alt: "A modern hotel apartment studio unit with a double bed on one side and a living area with sofa and television on the other, representing the interior of an individually owned condotel unit in Bali",
+        credit: "Pexels / Nguyen Thi Minh Nghi",
+        sourceUrl: "https://www.pexels.com/photo/9877452/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Government Regulation No. 18/2021 on Management Rights, Use Rights, and Strata Title (PP 18/2021): establishes the current framework for Hak Pakai and HMSRS eligibility for foreign nationals and the zone restrictions that apply to foreign strata title ownership. Tier 1: official Indonesian government regulation.",
+        url: "https://peraturan.bpk.go.id/Details/163055/pp-no-18-tahun-2021",
+      },
+      {
+        label:
+          "Law No. 20/2011 on Flats (Undang-Undang tentang Rumah Susun): defines Hak Milik atas Satuan Rumah Susun (HMSRS) as the ownership right over an individual strata unit and sets out the legal basis for condotel unit ownership in Indonesia. Tier 1: official Indonesian statute.",
+        url: "https://peraturan.bpk.go.id/Details/38662/uu-no-20-tahun-2011",
+      },
+      {
+        label:
+          "Emerhub - How Foreigners Can Own Property in Bali: explains PT PMA as the standard foreign ownership vehicle for condotel and villa investments in standard Bali zones outside designated economic areas, and covers the HGB title held by a PT PMA. Tier 2: established Indonesia legal advisory and company-setup firm.",
+        url: "https://emerhub.com/bali/how-to-buy-a-villa-in-bali-as-a-foreigner/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
