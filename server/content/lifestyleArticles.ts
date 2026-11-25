@@ -8366,4 +8366,69 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "bali-villa-price-per-sqm-valuation",
+    title: "Bali Villa Pricing: What Drives the Price Per Square Metre?",
+    category: "investment",
+    imageUrl: null,
+    sortOrder: 130,
+    metaDescription:
+      "Bali villa prices range from $250/sqm in Tabanan to over $4,000/sqm in Canggu. What drives the valuation: leasehold term, views, build quality, and permits.",
+    body: `<p>Bali villa prices vary widely by location, finish, and leasehold term. As of 2026, completed leasehold villas trade at roughly $250 to $1,691 per square metre in Tabanan, $400 to $1,771 per sqm in Ubud, $1,200 to $3,126 per sqm in Seminyak, and $1,600 to $4,200 per sqm in Canggu and Berawa. Those ranges reflect the spread between a basic build on a quiet road and a high-specification villa with sea or rice paddy views. This post is for general information only and is not financial or legal advice.</p>
+<p>The single biggest lever on per-sqm value is the remaining length of the leasehold. A villa with fewer than 15 years left on its title sells at a steep discount because a buyer has limited time to generate income or reassign the asset before needing to renegotiate with the landowner. Always check the remaining term before comparing two properties on a per-sqm basis.</p>
+<p>Beyond the lease, views command the most reliable premium. Rice paddy or ocean views typically add 30 to 50 percent to a comparable inland or road-facing villa. Build quality also drives a large share of the number: investment-grade construction in Bali currently costs roughly $1,000 to $1,800 per sqm to deliver, so a villa built to a lower specification should trade below that threshold. A valid PBG building permit and an SLF Certificate of Feasibility matter as well, because a property that cannot produce clean permits carries legal risk that buyers will price in.</p>
+<p>Off-plan pricing tends to sit below the equivalent completed price at the same specification, often by 15 to 30 percent at the launch stage. The gap narrows as construction progresses and construction risk falls. For the Tabanan corridor and areas like <a href="/blog/where-is-kaba-kaba-bali">Kaba Kaba</a>, land costs remain far below Canggu, with raw land trading under $250 per sqm, which allows off-plan pricing to stay competitive while delivering a comparable finish.</p>
+<p>When comparing two villas on a per-sqm basis, check the remaining leasehold term, the view orientation, the build quality, and whether both properties hold clean permits. A lower per-sqm figure does not always mean better value.</p>`,
+    venues: [],
+    faq: [
+      {
+        question:
+          "What is the average price per square metre for a villa in Canggu, Tabanan, and Ubud?",
+        answer:
+          "In 2026, completed leasehold villas trade at roughly $1,600 to $4,200 per sqm in Canggu and Berawa, $400 to $1,771 per sqm in Ubud, and $250 to $1,691 per sqm in the Tabanan corridor. The wide range within each area reflects remaining leasehold years, build quality, views, and permit status. Off-plan units at the same specification typically launch at 15 to 30 percent below the equivalent completed price.",
+      },
+      {
+        question: "What features add the most value to a Bali villa sale price?",
+        answer:
+          "The remaining leasehold term is the largest single factor: a villa with under 15 years left sells at a significant discount regardless of condition. After that, ocean or rice paddy views add 30 to 50 percent over a comparable no-view villa. Build quality and specification also matter heavily, with investment-grade construction costing $1,000 to $1,800 per sqm to deliver. Clean permits (a valid PBG and SLF) remove legal risk and support the full asking price.",
+      },
+      {
+        question:
+          "How does off-plan pricing compare to completed villa prices per sqm in Bali?",
+        answer:
+          "Off-plan units typically launch at 15 to 30 percent below the price of a comparable finished villa, reflecting the construction and delivery risk the buyer takes on. As the build progresses toward completion, that discount narrows. In lower-land-cost areas like Tabanan, the off-plan entry price can remain competitive even at later stages because the underlying land cost is a fraction of what it is in Canggu or Seminyak.",
+      },
+    ],
+    publishedAt: "2026-11-25",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/bali-villa-luxury-cliffside-aerial.webp",
+    gallery: [
+      {
+        url: "/blog/villa-pricing-review-architectural-plans.webp",
+        alt: "A person reviewing architectural floor plans on a laptop, representing the process of evaluating villa specifications and build cost per square metre before a Bali property purchase",
+        credit: "Pexels / Thirdman",
+        sourceUrl: "https://www.pexels.com/photo/8470773/",
+      },
+      {
+        url: "/blog/bali-paddy-view-aerial-tabanan.webp",
+        alt: "Aerial view of lush green rice terraces and palm trees in Bali, illustrating the paddy view premium that can add 30 to 50 percent to a comparable villa's per-sqm valuation",
+        credit: "Pexels / Tom Fisk",
+        sourceUrl: "https://www.pexels.com/photo/35428411/",
+      },
+    ],
+    citations: [
+      {
+        label:
+          "Balitecture Realty - Price Per Square Metre by Area in Bali (2026): provides a detailed breakdown of villa and land prices per sqm across Canggu, Seminyak, Ubud, and Tabanan, based on active listings and completed transactions. Tier 2: established Bali real estate agency.",
+        url: "https://www.balitecturerealty.com/how-much-does-a-house-in-bali-cost-price-per-m%C2%B2-by-area/",
+      },
+      {
+        label:
+          "Balitecture Realty - Real Estate Appraisal in Bali: What Your Villa or Land Is Really Worth (2026): explains the key valuation drivers for Bali property including remaining leasehold term, view premium (30 to 50 percent for paddy or ocean views), build quality cost benchmarks, and the importance of clean permits (PBG and SLF). Tier 2: established Bali real estate agency.",
+        url: "https://www.balitecturerealty.com/real-estate-appraisal-in-bali-what-your-villa-or-land-is-really-worth-2026/",
+      },
+    ],
+    layoutVariant: "qa",
+  },
 ];
