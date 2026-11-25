@@ -3039,7 +3039,7 @@
     },
     {
       "id": "bali-villa-price-per-sqm-valuation",
-      "status": "drafting",
+      "status": "published",
       "priority": 120,
       "theme": "investment",
       "atpType": "how",
@@ -3059,8 +3059,8 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": null,
-      "prUrl": null
+      "publishedAt": "2026-11-25",
+      "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/187"
     },
     {
       "id": "bali-cipta-kerja-omnibus-law-property",
