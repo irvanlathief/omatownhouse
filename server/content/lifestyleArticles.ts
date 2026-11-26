@@ -8431,4 +8431,62 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     ],
     layoutVariant: "qa",
   },
+  {
+    slug: "cipta-kerja-omnibus-law-bali-property-foreigners",
+    title: "Indonesia's Omnibus Law: What Changed for Bali Property Investors",
+    category: "investment",
+    imageUrl: "/blog/indonesia-flag-government-building-modern.webp",
+    sortOrder: 131,
+    metaDescription: "Indonesia's Cipta Kerja Omnibus Law and PP No. 18/2021 extended land title terms for foreigners. Here is what changed for Hak Pakai and PT PMA holders in Bali.",
+    body: `<p>Indonesia's Cipta Kerja Omnibus Law (Law No. 11 of 2020, consolidated as Law No. 6 of 2023) and its key implementing regulation, <a href="https://peraturan.bpk.go.id/Home/Details/161848/pp-no-18-tahun-2021" data-external="true">Government Regulation PP No. 18 of 2021</a>, made two practical changes that matter for foreign buyers in Bali: longer land title terms and a new apartment ownership category for special economic zones.</p>
+<p>Under the old rules, Hak Pakai (Right of Use) for individual foreigners who hold a valid Indonesian stay permit ran for a maximum of 25 years, with one extension of 20 years, then one renewal of 25 years, totalling 70 years. PP No. 18/2021 raised those limits. Article 51 now sets the initial grant at 30 years, extendable by 20, then renewable for a further 30, bringing the ceiling to 80 years. The requirement to hold a valid Indonesian stay permit in order to qualify has not changed.</p>
+<p>For foreign-investment companies (PT PMA) holding property through Hak Guna Bangunan (Right to Build, or HGB), the same 30 plus 20 plus 30 structure applies, also capping at 80 years. This is the structure a PT PMA typically uses when purchasing a villa or plot in Bali: the company holds HGB, and the foreign shareholder controls the company. The underlying freehold title (Hak Milik) remains off-limits for foreigners under Article 21(1) of Indonesia's Basic Agrarian Law of 1960, which PP 18/2021 did not change.</p>
+<p>PP No. 18/2021 also introduced a new title category: Hak Milik Satuan Rumah Susun (HMSRS), or apartment strata title for foreigners. In principle this lets a qualifying foreigner hold a strata unit outright. The catch for most Bali buyers is that the regulation limits HMSRS to officially designated Special Economic Zones and certain other designated areas. Bali has limited such zones, and the standard resort villa and townhouse market falls outside them, so HMSRS is not yet a practical option for most off-plan purchases.</p>
+<p>Minimum purchase values for foreigners also remain in force under existing Ministry of Agrarian Affairs guidance. For Bali, the floor for a residential property acquired under Hak Pakai is IDR 5 billion (roughly USD 300,000 at current rates). These minimums are designed to prevent foreigners from competing with local buyers at the lower end of the market.</p>
+<p>In practice, most foreign investors buying in Bali still use a PT PMA, which gives clear corporate ownership, the ability to earn rental income through a formal legal structure, and an HGB title now extendable to 80 years. The 2021 regulation made the timeline more attractive; the fundamental ownership structure did not change. This is a summary for general information and not financial or legal advice. Speak with an Indonesian property lawyer before proceeding.</p>`,
+    venues: [],
+    faq: [
+      {
+        question: "What property ownership changes did Indonesia's Omnibus Law introduce for foreigners in Bali?",
+        answer: "PP No. 18/2021 extended the maximum Hak Pakai term for individual foreigners from 70 years (25 plus 20 plus 25) to 80 years (30 plus 20 plus 30). The same 80-year ceiling now applies to HGB held by a PT PMA. It also introduced HMSRS apartment strata title for foreigners, but this is restricted to designated Special Economic Zones and does not cover the standard Bali villa market.",
+      },
+      {
+        question: "Did the Omnibus Law improve Hak Pakai rights for foreign property owners in Indonesia?",
+        answer: "Yes. Under PP No. 18/2021 Article 51, the initial Hak Pakai grant rose from 25 to 30 years, the extension stayed at 20 years, and the renewal rose from 25 to 30 years, giving a 80-year ceiling. The residency requirement (you must hold a valid Indonesian stay permit) was not changed.",
+      },
+      {
+        question: "How did PP No. 18/2021 change land title durations for foreigners in Bali?",
+        answer: "For individual foreigners on Hak Pakai, the total maximum term went from 70 years to 80 years under PP No. 18/2021. For PT PMA companies on HGB, the structure is also now 30 plus 20 plus 30, capped at 80 years. Freehold Hak Milik still cannot be held by a foreigner or a foreign-owned company.",
+      },
+    ],
+    publishedAt: "2026-11-26",
+    isInsight: true,
+    author: "OMA Townhouse",
+    heroImage: "/blog/indonesia-flag-government-building-modern.webp",
+    gallery: [
+      {
+        url: "/blog/indonesia-property-document-signing-desk.webp",
+        alt: "A person signing property documents at a desk, representing the legal process of acquiring property in Bali under Indonesia's updated land title regulations",
+        credit: "Pexels / Simply Thrilled",
+        sourceUrl: "https://www.pexels.com/photo/38961901/",
+      },
+      {
+        url: "/blog/indonesia-luxury-villas-banten-aerial.webp",
+        alt: "Aerial view of Indonesian luxury villas with a swimming pool, illustrating the type of off-plan property foreign investors can acquire via PT PMA and HGB title in Indonesia",
+        credit: "Pexels / Tom Fisk",
+        sourceUrl: "https://www.pexels.com/photo/4203783/",
+      },
+    ],
+    citations: [
+      {
+        label: "BPK Law Database: Government Regulation PP No. 18 of 2021 (Peraturan Pemerintah Nomor 18 Tahun 2021) - the primary implementing regulation for land rights under the Cipta Kerja Omnibus Law; Articles 51 to 57 govern Hak Pakai for foreigners and HGB terms. Tier 1: Indonesian government official gazette.",
+        url: "https://peraturan.bpk.go.id/Home/Details/161848/pp-no-18-tahun-2021",
+      },
+      {
+        label: "ILA Global Consulting - Foreign Property Ownership in Indonesia (2024): explains the PT PMA structure, Hak Pakai eligibility requirements, minimum property values, and the HMSRS apartment title category introduced by PP 18/2021. Tier 2: established Indonesian legal and corporate advisory firm.",
+        url: "https://www.ilaglobal.com/foreign-ownership-property-indonesia/",
+      },
+    ],
+    layoutVariant: "standard",
+  },
 ];
