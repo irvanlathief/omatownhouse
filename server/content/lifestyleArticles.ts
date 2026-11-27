@@ -8435,7 +8435,7 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     slug: "cipta-kerja-omnibus-law-bali-property-foreigners",
     title: "Indonesia's Omnibus Law and Bali Property Investors",
     category: "investment",
-    imageUrl: null,
+    imageUrl: "/blog/indonesia-flag-government-building-modern.webp",
     sortOrder: 131,
     metaDescription: "Indonesia's Cipta Kerja Omnibus Law (PP 18/2021) extended HGB to 80 years and opened strata-title apartments to foreigners. Here is what changed for Bali property investors.",
     body: `<p>Indonesia's Cipta Kerja Omnibus Law (Law No. 11/2020, later revised as Law No. 6/2023) and its implementing regulation <a href="https://peraturan.bpk.go.id/Home/Details/161848/pp-no-18-tahun-2021" data-external="true">Government Regulation No. 18/2021 (PP 18/2021)</a> changed three things that directly affect foreign property investment in Bali: it extended the maximum HGB term, it codified the Hak Pakai structure for foreign individuals, and it opened strata-title apartment ownership to foreigners holding a valid KITAS or KITAP.</p>
@@ -8465,24 +8465,24 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     publishedAt: "2026-11-27",
     isInsight: true,
     author: "OMA Townhouse",
-    heroImage: "/blog/omnibus-law-investor-property-signing.webp",
+    heroImage: "/blog/indonesia-flag-government-building-modern.webp",
     gallery: [
       {
-        url: "/blog/bali-villa-aerial-greenery-tabanan.webp",
-        alt: "Aerial view of a luxury villa surrounded by lush tropical greenery in Bali, illustrating the type of landed property investment that remains subject to HGB and Hak Pakai title structures under PP 18/2021",
-        credit: "Pexels / Tom Fisk",
-        sourceUrl: "https://www.pexels.com/photo/35386131/",
+        url: "/blog/indonesia-property-document-signing-desk.webp",
+        alt: "A person signing property documents at a desk, representing the legal process of acquiring property in Bali under Indonesia's updated land title regulations",
+        credit: "Pexels / Simply Thrilled",
+        sourceUrl: "https://www.pexels.com/photo/38961901/",
       },
       {
-        url: "/blog/bali-cliffside-villa-infinity-pool.webp",
-        alt: "Luxury cliffside villa in Bali with an infinity pool overlooking the ocean, representing the high-specification properties that PT PMA and Hak Pakai structures can now hold for up to 80 years under Indonesia's revised land title regulations",
+        url: "/blog/indonesia-luxury-villas-banten-aerial.webp",
+        alt: "Aerial view of Indonesian luxury villas with a swimming pool, illustrating the type of off-plan property foreign investors can acquire via PT PMA and HGB title in Indonesia",
         credit: "Pexels / Tom Fisk",
-        sourceUrl: "https://www.pexels.com/photo/35043038/",
+        sourceUrl: "https://www.pexels.com/photo/4203783/",
       },
     ],
     citations: [
       {
-        label: "Indonesian Government - PP No. 18 of 2021 (official text via BPK): the full text of Government Regulation No. 18/2021 implementing Cipta Kerja land rights provisions, including the revised HGB and Hak Pakai structures. Tier 1 source.",
+        label: "BPK Law Database: Government Regulation PP No. 18 of 2021 (Peraturan Pemerintah Nomor 18 Tahun 2021) - the primary implementing regulation for land rights under the Cipta Kerja Omnibus Law; Articles 51 to 57 govern Hak Pakai for foreigners and HGB terms. Tier 1: Indonesian government official gazette.",
         url: "https://peraturan.bpk.go.id/Home/Details/161848/pp-no-18-tahun-2021",
       },
       {
