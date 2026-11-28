@@ -8442,6 +8442,7 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
     body: `<p>Indonesia's <a href="https://peraturan.bpk.go.id/Details/161852/uu-no-11-tahun-2020" data-external="true">Cipta Kerja Omnibus Law (Law No. 11/2020)</a>, and its successor <a href="https://peraturan.bpk.go.id/Details/236483/perpu-no-2-tahun-2022" data-external="true">Law No. 6/2023</a>, made the most significant change to foreign property rights in Bali since the 1960 Basic Agrarian Law by extending the maximum Hak Pakai (Right to Use) term for foreigners from 25 years to 80 years under <a href="https://peraturan.bpk.go.id/Details/163676/pp-no-18-tahun-2021" data-external="true">Government Regulation PP No. 18/2021</a>. This post is for general information only and is not financial or legal advice.</p>
 <p>Under the previous framework set by PP No. 40/1996, a foreigner holding Hak Pakai could get an initial 25-year grant, extendable once for 20 years, and then renewed for a further 25 years if the landowner agreed. The old three-stage ceiling was 70 years. PP No. 18/2021 restructured that to 30 years on initial grant, 20 years on extension, and 30 years on renewal, raising the ceiling to 80 years. HGB (Hak Guna Bangunan) held by a PT PMA company follows the same 30+20+30 structure.</p>
 <p>Several things did not change. Hak Milik (freehold) remains closed to foreigners. Nominee arrangements, where a foreign buyer uses a local Indonesian as the named titleholder, are still illegal and courts have consistently refused to enforce them. To hold Hak Pakai directly you still need a valid KITAS or KITAP (Indonesian residence permit). The minimum property value thresholds the government sets for foreign purchases also remain in force: as of 2024, IDR 5 billion for landed property in Bali and IDR 2 billion for a strata-title apartment.</p>
+<p>PP 18/2021 also introduced HMSRS (Hak Milik atas Satuan Rumah Susun), a strata-title right that allows foreigners with a valid KITAS or KITAP to own one apartment unit per building in designated economic areas. This mainly applies to condotel and apartment projects in Bali's tourism zones rather than landed villas.</p>
 <p>For off-plan investors buying into a development like <a href="/blog/what-is-off-plan-property-bali">an off-plan Bali project</a>, the practical impact of the law is a longer usable title on completion. A fresh 30-year initial grant now delivers a first extension and renewal cycle out to 80 years if all terms are met, which improves the asset's long-term income and resale position compared with the old 25-year starting point. The key step is verifying that the developer's land title and the agreed ownership structure are legally compliant before you sign.</p>`,
     venues: [],
     faq: [
@@ -8449,7 +8450,7 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
         question:
           "What property ownership changes did the Cipta Kerja law introduce for foreigners in Bali?",
         answer:
-          "The Cipta Kerja Omnibus Law, through implementing regulation PP No. 18/2021, restructured Hak Pakai (Right to Use) terms for foreigners from the old 25+20+25 structure to 30+20+30, raising the maximum title duration from 70 years to 80 years. HGB held by a PT PMA company follows the same new structure. Hak Milik (freehold) and nominee arrangements remain unchanged and are still not available to foreigners.",
+          "The Cipta Kerja Omnibus Law, through implementing regulation PP No. 18/2021, restructured Hak Pakai (Right to Use) terms for foreigners from the old 25+20+25 structure to 30+20+30, raising the maximum title duration from 70 years to 80 years. HGB held by a PT PMA company follows the same new structure. It also introduced HMSRS strata-title rights for apartment units. Hak Milik (freehold) and nominee arrangements remain unchanged and are still not available to foreigners.",
       },
       {
         question:
@@ -8462,6 +8463,12 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
           "How did PP No. 18/2021 change land title durations for foreigners in Bali?",
         answer:
           "PP No. 18/2021 replaced the old PP No. 40/1996 framework. The old structure allowed 25 years initial, 20 years extension, 25 years renewal. The new structure is 30 years initial, 20 years extension, 30 years renewal, for a maximum of 80 years. Each stage still requires the landowner or relevant authority to agree, so the 80-year figure is a ceiling, not a guarantee.",
+      },
+      {
+        question:
+          "Can foreigners own a strata-title apartment in Bali under the new law?",
+        answer:
+          "PP 18/2021 allows foreigners with a valid KITAS or KITAP to hold HMSRS (strata-title) rights on one apartment unit per building in designated economic areas. In Bali this mainly applies to condotel and apartment projects in tourism zones. Outside those designated zones a PT PMA is still required to hold the developer's HGB first. This is a general summary and not legal advice.",
       },
     ],
     publishedAt: "2026-11-28",
@@ -8495,8 +8502,8 @@ export const LIFESTYLE_ARTICLES: LifestyleArticleSeed[] = [
       },
       {
         label:
-          "Okusi Associates - Property Ownership in Bali for Foreigners via PT PMA: explains the HGB and Hak Pakai structures for PT PMA companies and foreign individuals under the post-Omnibus Law framework. Tier 2: established Indonesian legal and corporate services firm.",
-        url: "https://okusi.id/property-ownership-bali-foreigners/",
+          "ICLG - Indonesia Real Estate Laws and Regulations 2024: authoritative cross-jurisdictional reference covering Indonesian land title types, foreign ownership restrictions, and the impact of the Cipta Kerja reforms. Tier 2 source.",
+        url: "https://iclg.com/practice-areas/real-estate-laws-and-regulations/indonesia",
       },
     ],
     layoutVariant: "qa",
