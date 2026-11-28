@@ -3064,7 +3064,7 @@
     },
     {
       "id": "bali-cipta-kerja-omnibus-law-property",
-      "status": "drafting",
+      "status": "published",
       "priority": 121,
       "theme": "foreign-ownership",
       "atpType": "how",
@@ -3084,7 +3084,7 @@
       "category": "investment",
       "isInsight": true,
       "suggestedVenues": [],
-      "publishedAt": "2026-11-27",
+      "publishedAt": "2026-11-28",
       "prUrl": "https://github.com/irvanlathief/omatownhouse/pull/188"
     },
     {
